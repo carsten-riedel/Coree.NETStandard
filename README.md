@@ -1,1 +1,1 @@
-# Coree.NETStandard compatible library
+# Coree.NETStandard
