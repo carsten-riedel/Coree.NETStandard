@@ -8,10 +8,10 @@
     <Owners>Carsten Riedel</Owners>
     <Company></Company>
     <Copyright>Copyright © Carsten Riedel 2024</Copyright>
-    <PackageId>Coree.Hosting.NETStandard</PackageId>
+    <PackageId>Coree.NETStandard</PackageId>
     <PackageTags>dotnet;class;library</PackageTags>
-    <PackageProjectUrl>https://github.com/carsten-riedel/Coree.Hosting.NETStandard</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/carsten-riedel/Coree.Hosting.NETStandard</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETStandard</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETStandard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
 
     <VersionMajor>0</VersionMajor>
