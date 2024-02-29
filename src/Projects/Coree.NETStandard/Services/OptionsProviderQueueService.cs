@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coree.Hosting.NETStandard.Services
+namespace Coree.NETStandard
 {
     public interface IOptionsProviderQueue<T>
     {

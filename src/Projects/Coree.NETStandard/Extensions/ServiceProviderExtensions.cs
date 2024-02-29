@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Coree.Hosting.NETStandard.Services
+namespace Coree.NETStandard
 {
     public static class ServiceProviderExtensions
     {

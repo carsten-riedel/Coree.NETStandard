@@ -4,7 +4,7 @@ using System;
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace Coree.Hosting.NETStandard.Services
+namespace Coree.NETStandard
 {
 
     public class HostedServiceSampleImplementationOptions

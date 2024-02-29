@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Coree.Hosting.NETStandard.Services
+namespace Coree.NETStandard
 {
     public class ServiceActivatorSingletonHostedBackground : IHostedService
     {

@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace Coree.Hosting.Generic.Services
+namespace Coree.NETStandard
 {
     public interface IRuntimeInsights
     {
