@@ -1,1 +1,1 @@
-# Coree.Hosting.NetCore
+# Coree.NETStandard compatible library
