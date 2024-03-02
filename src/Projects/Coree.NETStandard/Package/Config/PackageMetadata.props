@@ -7,9 +7,9 @@
     <Authors>Carsten Riedel</Authors>
     <Owners>Carsten Riedel</Owners>
     <Company></Company>
-    <Copyright>Copyright © Carsten Riedel 2024</Copyright>
+    <Copyright>Copyright © 2024 Carsten Riedel</Copyright>
     <PackageId>Coree.NETStandard</PackageId>
-    <PackageTags>dotnet;class;library</PackageTags>
+    <PackageTags>dotnet;class;library;NETStandard</PackageTags>
     <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETStandard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETStandard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>

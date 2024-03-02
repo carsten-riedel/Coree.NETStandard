@@ -3,8 +3,9 @@ using Microsoft.Extensions.Logging;
 using System;
 using System.Threading.Tasks;
 using System.Threading;
+using Coree.NETStandard.Options;
 
-namespace Coree.NETStandard
+namespace Coree.NETStandard.HostedService
 {
 
     public class HostedServiceSampleImplementationOptions

@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Coree.NETStandard.Extensions;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
@@ -6,7 +7,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Coree.NETStandard
+namespace Coree.NETStandard.HostedService
 {
     public class ServiceActivatorSingletonHostedBackground : IHostedService
     {
@@ -49,7 +50,7 @@ namespace Coree.NETStandard
         {
             foreach (var item in UniqueServiceTypes)
             {
-                
+
                 var services = serviceProvider.GetServices(item);
                 foreach (var service in services)
                 {

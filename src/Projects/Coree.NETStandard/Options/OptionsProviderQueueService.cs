@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coree.NETStandard
+namespace Coree.NETStandard.Options
 {
     public interface IOptionsProviderQueue<T>
     {
@@ -25,12 +25,12 @@ namespace Coree.NETStandard
 
         public void Enqueue(T item)
         {
-            this.OptionsQueue.Enqueue(item);
+            OptionsQueue.Enqueue(item);
         }
 
         public T Dequeue()
         {
-            var result = this.OptionsQueue.TryDequeue(out T? resultItem);
+            var result = OptionsQueue.TryDequeue(out T? resultItem);
             if (!result)
             {
                 return new T();
@@ -40,12 +40,12 @@ namespace Coree.NETStandard
 
         public IEnumerator<T> GetEnumerator()
         {
-            return this.OptionsQueue.GetEnumerator();
+            return OptionsQueue.GetEnumerator();
         }
 
         System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
         {
-            return this.GetEnumerator();
+            return GetEnumerator();
         }
 
         public void Add(T item)

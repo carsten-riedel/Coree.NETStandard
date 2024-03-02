@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Coree.NETStandard.Logging;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Text;
@@ -23,6 +24,7 @@ namespace Coree.NETStandard.Options
 
         public T NextOption()
         {
+            Logger.Log.Verbose("verboselogging");
             var result = OptionsQueue.TryDequeue(out T? resultItem);
             if (!result)
             {
