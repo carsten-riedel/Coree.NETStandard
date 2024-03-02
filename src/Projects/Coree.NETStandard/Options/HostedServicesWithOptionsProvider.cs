@@ -1,4 +1,5 @@
 ﻿using Coree.NETStandard.Logging;
+using Serilog;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -24,7 +25,7 @@ namespace Coree.NETStandard.Options
 
         public T NextOption()
         {
-            Logger.Log.Verbose("verboselogging");
+            Log.Logger.ForContext<HostedServicesWithOptionsProvider<T>>().Verbose("verboselogging");
             var result = OptionsQueue.TryDequeue(out T? resultItem);
             if (!result)
             {

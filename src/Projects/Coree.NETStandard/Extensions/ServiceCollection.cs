@@ -1,10 +1,11 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Coree.NETStandard.Logging;
+using Coree.NETStandard.Options;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System.Linq;
-using Coree.NETStandard.Options;
+using Serilog;
 using System.Collections.Generic;
-using Coree.NETStandard.Logging;
+using System.Linq;
 
 namespace Coree.NETStandard.Extensions
 {
@@ -21,19 +22,19 @@ namespace Coree.NETStandard.Extensions
 
         public static IServiceCollection AddHostedServices<T>(this IServiceCollection services) where T : class, IHostedService
         {
-           Logger.Log.Verbose("AddHostedServices");
             return services.AddSingleton<IHostedService, T>();
         }
 
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
-            Logger.Log.Verbose("AddHostedServices");
+            
+            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
             return AddHostedServicesWithOptions<T, K>(services, values.ToArray());
         }
 
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, K[] values) where K : class, new() where T : class, IHostedService
         {
-            Logger.Log.Verbose("AddHostedServices");
+            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
             var optionsProvider = new HostedServicesWithOptionsProvider<K>();
             foreach (var value in values)
             {
@@ -51,7 +52,7 @@ namespace Coree.NETStandard.Extensions
 
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, IConfiguration configuration, string sectionName) where K : class, new() where T : class, IHostedService
         {
-            Logger.Log.Verbose("AddHostedServices");
+            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
             var optionsProvider = new HostedServicesWithOptionsProvider<K>();
             services.AddSingleton<IHostedServicesWithOptionsProvider<K>>(optionsProvider);
 

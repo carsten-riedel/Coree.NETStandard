@@ -17,6 +17,7 @@ namespace Coree.NETStandard
         string? ProcessArchitecture { get; }
         string? EnvironmentCommandLine { get; }
         string? CurrentDirectory { get; }
+        string? Username { get; }
     }
 
     public class RuntimeInsightsService : IRuntimeInsights
@@ -32,6 +33,7 @@ namespace Coree.NETStandard
         public string? ProcessArchitecture { get; private set; }
         public string? EnvironmentCommandLine { get; private set; }
         public string? CurrentDirectory { get; private set; }
+        public string? Username { get; private set; }
 
         public RuntimeInsightsService(ILogger<IRuntimeInsights> logger)
         {
@@ -50,6 +52,7 @@ namespace Coree.NETStandard
             ProcessArchitecture = GetProcessArchitecture();
             EnvironmentCommandLine = GetEnvironmentCommandLine();
             CurrentDirectory = GetCurrentDirectory();
+            Username = GetUserName();
         }
 
         private string GetEntryAssemblyName()
@@ -202,6 +205,11 @@ namespace Coree.NETStandard
                 logger.LogError(ex, "Failed to get current directory due to an exception.");
                 return "Exception";
             }
+        }
+
+        private string GetUserName()
+        {
+                return Environment.UserName;
         }
     }
 }

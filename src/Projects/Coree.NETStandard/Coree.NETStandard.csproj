@@ -13,7 +13,9 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
+    <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
+    <None Remove="Logging\Enricher.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
   </ItemGroup>
   
