@@ -35,11 +35,13 @@ namespace Coree.NETStandard.Extensions
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, K[] values) where K : class, new() where T : class, IHostedService
         {
             Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
+
             var optionsProvider = new HostedServicesWithOptionsProvider<K>();
             foreach (var value in values)
             {
                 optionsProvider.Enqueue(value);
             }
+
             services.AddSingleton<IHostedServicesWithOptionsProvider<K>>(optionsProvider);
 
             for (int i = 0; i < values.Length; i++)

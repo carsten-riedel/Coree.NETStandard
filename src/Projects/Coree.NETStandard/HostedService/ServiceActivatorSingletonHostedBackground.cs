@@ -36,7 +36,6 @@ namespace Coree.NETStandard.HostedService
     .Distinct() // This might need a custom equality comparer if you want to ensure uniqueness based on both properties
     .ToList();
 
-
             UniqueServiceTypes = srv
 .Where(descriptor => descriptor.Lifetime == ServiceLifetime.Singleton // Singleton services
                      && typeof(IHostedService).IsAssignableFrom(descriptor.ServiceType) // Implements IHostedService
@@ -50,7 +49,6 @@ namespace Coree.NETStandard.HostedService
         {
             foreach (var item in UniqueServiceTypes)
             {
-
                 var services = serviceProvider.GetServices(item);
                 foreach (var service in services)
                 {
@@ -63,8 +61,6 @@ namespace Coree.NETStandard.HostedService
                 var service = serviceProvider.GetRequiredKeyedService(item.ServiceType, item.ServiceKey);
                 await ((IHostedService)service).StartAsync(cancellationToken);
             }
-
-
         }
 
         public async Task StopAsync(CancellationToken cancellationToken)

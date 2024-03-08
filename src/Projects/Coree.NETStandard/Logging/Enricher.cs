@@ -12,30 +12,19 @@ using System.IO;
 
 namespace Coree.NETStandard.Logging
 {
-
-    public class FromLogContextEmpty : ILogEventEnricher
-    {
-        private readonly string alternativeSourceContext;
-
-        public FromLogContextEmpty(string alternativeSourceContext)
-        {
-            this.alternativeSourceContext = alternativeSourceContext;
-        }
-
-        public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
-        {
-            if (!logEvent.Properties.TryGetValue("SourceContext", out LogEventPropertyValue value))
-            {
-                // Create a new property with the modified value and add/update it in the log event.
-                var modifiedProperty = propertyFactory.CreateProperty("SourceContext", alternativeSourceContext);
-                logEvent.AddOrUpdateProperty(modifiedProperty);
-            }
-        }
-    }
-
     public class EnhancedSourceContextShortEnricher : ILogEventEnricher
     {
         private readonly List<string> suffixesToRemove = new List<string>() { "Service", "Services" };
+        private readonly bool cutTTypes;
+        private readonly bool removeDots;
+        private readonly bool removeSuffixes;
+
+        public EnhancedSourceContextShortEnricher(bool cutTTypes = true, bool removeDots = true, bool removeSuffixes = true)
+        {
+            this.cutTTypes = cutTTypes;
+            this.removeDots = removeDots;
+            this.removeSuffixes = removeSuffixes;
+        }
 
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
         {
@@ -45,24 +34,34 @@ namespace Coree.NETStandard.Logging
                 {
                     var shortSourceContext = sourceContext;
 
-                    var TType = shortSourceContext.IndexOf("`1");
-                    if (TType > -1)
+                    if (cutTTypes)
                     {
-                        shortSourceContext = shortSourceContext.Substring(0, TType);
-                    }
-
-                    var shortSourceContexts = shortSourceContext.Split('.');
-                    shortSourceContext = shortSourceContexts[shortSourceContexts.Length - 1];
-
-                    // Check and remove any of the specified suffixes
-                    foreach (var suffix in suffixesToRemove)
-                    {
-                        if (shortSourceContext.EndsWith(suffix))
+                        var TType = shortSourceContext.IndexOf("`1");
+                        if (TType > -1)
                         {
-                            shortSourceContext = shortSourceContext.Substring(0, shortSourceContext.Length - suffix.Length);
-                            break; // Assuming you only want to remove the first matching suffix
+                            shortSourceContext = shortSourceContext.Substring(0, TType);
                         }
                     }
+
+                    if (removeDots)
+                    {
+                        var shortSourceContexts = shortSourceContext.Split('.');
+                        shortSourceContext = shortSourceContexts[shortSourceContexts.Length - 1];
+                    }
+
+                    if (removeSuffixes)
+                    {
+                        // Check and remove any of the specified suffixes
+                        foreach (var suffix in suffixesToRemove)
+                        {
+                            if (shortSourceContext.EndsWith(suffix))
+                            {
+                                shortSourceContext = shortSourceContext.Substring(0, shortSourceContext.Length - suffix.Length);
+                                break; // Assuming you only want to remove the first matching suffix
+                            }
+                        }
+                    }
+
                     shortSourceContext = shortSourceContext.PadRight(35);
                     // Create a new property with the modified value and add/update it in the log event.
                     var modifiedProperty = propertyFactory.CreateProperty("SourceContext", shortSourceContext);

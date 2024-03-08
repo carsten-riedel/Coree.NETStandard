@@ -40,7 +40,7 @@ namespace Coree.NETStandard.Extensions
             config
                 .Enrich.FromLogContext()
                 .Enrich.WithProcessId()
-                .Enrich.With(new EnhancedSourceContextShortEnricher())
+                .Enrich.With(new EnhancedSourceContextShortEnricher(true,false,true))
                 .Enrich.WithThreadId()
                 .Enrich.WithMachineName()
                 .Enrich.WithEnvironmentUserName()
@@ -51,21 +51,12 @@ namespace Coree.NETStandard.Extensions
 
         public static string CommonConsoleConfigOutputTemplate()
         {
-            return "{Timestamp:HH:mm:ss} {Level:u3}|{SourceContext}| {ThreadId} | {MachineName} | {EnvironmentUserName} | {EnvironmentName} | {Message:lj}{NewLine}{Exception}";
+            return "{Timestamp:HH:mm:ss.ffff} {Level:u3}|{SourceContext}| {EnvironmentUserName} | {EnvironmentName} | {Message:l}{NewLine} {Exception}";
         }
 
         public static ILogger ForSourceContext(this ILogger logger,string? sourceContext)
         {
             return logger.ForContext("SourceContext", sourceContext);
-        }
-
-        public static LoggerConfiguration FromLogContextEmpty(this LoggerEnrichmentConfiguration enrich, string parameter = "")
-        {
-            if (enrich == null) throw new ArgumentNullException(nameof(enrich));
-
-            // Assuming FromLogContextEmpty is your custom enricher that takes a string parameter
-            var enricher = new FromLogContextEmpty(parameter);
-            return enrich.With(enricher);
         }
     }
 }
