@@ -7,8 +7,6 @@ namespace Coree.NETStandard.Extensions
 {
     public static class ServiceProviderExtensions
     {
-        
-
         public static List<ServiceDescriptor> GetRegisteredServices(this IServiceProvider serviceProvider)
         {
             List<ServiceDescriptor> serviceDescriptors = [];

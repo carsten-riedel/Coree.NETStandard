@@ -7,14 +7,14 @@ using System.Text;
 
 namespace Coree.NETStandard.Options
 {
-    public interface IHostedServicesWithOptionsProvider<T>
+    public interface IHostedServicesCollectionOptionsProvider<T>
     {
         void Enqueue(T item);
 
-        T NextOption();
+        T MoveNext();
     }
 
-    public class HostedServicesWithOptionsProvider<T> : IHostedServicesWithOptionsProvider<T> where T : new()
+    public class HostedServicesCollectionOptionsProvider<T> : IHostedServicesCollectionOptionsProvider<T> where T : new()
     {
         private ConcurrentQueue<T> OptionsQueue { get; set; } = new ConcurrentQueue<T>();
 
@@ -23,9 +23,8 @@ namespace Coree.NETStandard.Options
             OptionsQueue.Enqueue(item);
         }
 
-        public T NextOption()
+        public T MoveNext()
         {
-            Log.Logger.ForContext<HostedServicesWithOptionsProvider<T>>().Verbose("verboselogging");
             var result = OptionsQueue.TryDequeue(out T? resultItem);
             if (!result)
             {

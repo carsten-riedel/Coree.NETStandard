@@ -16,6 +16,7 @@
     <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
     <None Remove="Logging\Enricher.cs" />
+    <None Remove="Options\HostedServicesCollectionOptionsProvider.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
   </ItemGroup>
   
@@ -33,7 +34,6 @@
   </ItemGroup>
   
   <ItemGroup>
-    <Folder Include="Services\" />
     <Folder Include="Template\" />
   </ItemGroup>
   

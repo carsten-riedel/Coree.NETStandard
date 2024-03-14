@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace Coree.NETStandard
+namespace Coree.NETStandard.Services
 {
     public interface IRuntimeInsights
     {
@@ -209,7 +209,7 @@ namespace Coree.NETStandard
 
         private string GetUserName()
         {
-                return Environment.UserName;
+            return Environment.UserName;
         }
     }
 }

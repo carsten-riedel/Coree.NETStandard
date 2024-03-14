@@ -17,32 +17,31 @@ namespace Coree.NETStandard.Extensions
                 services.AddHostedServicesWithOptions<SingletonHostedServiceManager, SingletonHostedServiceManagerOptions>(new[] { new SingletonHostedServiceManagerOptions() {  Name = "service1" } , new SingletonHostedServiceManagerOptions() { Name = "service2" } });
                 services.AddHostedServicesWithOptions<SingletonHostedServiceManager, SingletonHostedServiceManagerOptions>(context.Configuration, "ServiceConfigurations");
             });
-         */
-
-
-        public static IServiceCollection AddHostedServices<T>(this IServiceCollection services) where T : class, IHostedService
-        {
-            return services.AddSingleton<IHostedService, T>();
-        }
+         
 
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
-            
-            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
+
+            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Verbose("aaaaa");
             return AddHostedServicesWithOptions<T, K>(services, values.ToArray());
         }
+        */
 
-        public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, K[] values) where K : class, new() where T : class, IHostedService
+        public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
-            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
+            
+            return AddHostedServicesCollection<T, K>(services, values.ToArray());
+        }
 
-            var optionsProvider = new HostedServicesWithOptionsProvider<K>();
+        public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, K[] values) where K : class, new() where T : class, IHostedService
+        {
+            var optionsProvider = new HostedServicesCollectionOptionsProvider<K>();
             foreach (var value in values)
             {
                 optionsProvider.Enqueue(value);
             }
 
-            services.AddSingleton<IHostedServicesWithOptionsProvider<K>>(optionsProvider);
+            services.AddSingleton<IHostedServicesCollectionOptionsProvider<K>>(optionsProvider);
 
             for (int i = 0; i < values.Length; i++)
             {
@@ -52,11 +51,10 @@ namespace Coree.NETStandard.Extensions
             return services;
         }
 
-        public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, IConfiguration configuration, string sectionName) where K : class, new() where T : class, IHostedService
+        public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, IConfiguration configuration, string sectionName) where K : class, new() where T : class, IHostedService
         {
-            Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Warning("aaaaa");
-            var optionsProvider = new HostedServicesWithOptionsProvider<K>();
-            services.AddSingleton<IHostedServicesWithOptionsProvider<K>>(optionsProvider);
+            var optionsProvider = new HostedServicesCollectionOptionsProvider<K>();
+            services.AddSingleton<IHostedServicesCollectionOptionsProvider<K>>(optionsProvider);
 
             var configSection = configuration.GetSection(sectionName);
             foreach (var childSection in configSection.GetChildren())

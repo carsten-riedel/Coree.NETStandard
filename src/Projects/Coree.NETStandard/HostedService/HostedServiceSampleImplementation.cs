@@ -19,9 +19,9 @@ namespace Coree.NETStandard.HostedService
         private readonly Guid _guid;
         private readonly HostedServiceSampleImplementationOptions hostedSampleimpOptions;
 
-        public HostedServiceSampleImplementation(ILogger<HostedServiceSampleImplementation> logger, IOptionsProviderQueue<HostedServiceSampleImplementationOptions> optionsList)
+        public HostedServiceSampleImplementation(IHostedServicesCollectionOptionsProvider<HostedServiceSampleImplementationOptions> optionsList, ILogger<HostedServiceSampleImplementation> logger)
         {
-            hostedSampleimpOptions = optionsList.Dequeue();
+            hostedSampleimpOptions = optionsList.MoveNext();
             _logger = logger;
             _guid = Guid.NewGuid();
         }
