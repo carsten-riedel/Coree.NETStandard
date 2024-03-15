@@ -29,7 +29,7 @@ jobs:
     - name: AddSource
       run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
     - name: Push
-      run: dotnet nuget push "bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
+      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
       
 
    
