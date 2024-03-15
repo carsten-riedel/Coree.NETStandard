@@ -23,6 +23,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./src
     - name: Build
-      run: dotnet build ./src --no-restore
-    - name: Build
-      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true
+      run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+    - name: Pack
+      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
