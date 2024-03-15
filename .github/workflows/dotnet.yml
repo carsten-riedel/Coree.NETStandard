@@ -27,4 +27,6 @@ jobs:
     - name: Pack
       run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
     - name: PushRelease
-      run: dotnet nuget push "bin/Pack/Coree.NETStandard.*.nupkg" --source "github"
+      run: dotnet nuget push "bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
+
+   
