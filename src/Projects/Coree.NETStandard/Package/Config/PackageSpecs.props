@@ -15,7 +15,7 @@
 
  <PropertyGroup>
     <PackageOutputPath Condition=" '$(PackageOutputPath)' == '' ">$(MSBuildProjectDirectory)\bin\Pack</PackageOutputPath>
-    <LocalPackagesDir>C:\Users\Valgrind\source\packages</LocalPackagesDir>
+    <LocalPackagesDir></LocalPackagesDir>
  </PropertyGroup>
   
  <Target Name="CopyToLocalPackages" AfterTargets="Pack" Condition="'$(LocalPackagesDir)'!=''">
