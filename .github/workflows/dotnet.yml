@@ -28,8 +28,9 @@ jobs:
       run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
     - name: AddSource
       run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    - name: Push
+    - name: PushToGitHub
       run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
-      
+    - name: PushToNuget
+      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://apiint.nugettest.org/v3/index.json
 
    
