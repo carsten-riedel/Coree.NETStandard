@@ -7,7 +7,7 @@ using Serilog;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Coree.NETStandard.Extensions
+namespace Coree.NETStandard.Extensions.ServiceCollection
 {
     public static class ServiceCollectionExtensions
     {
@@ -21,7 +21,6 @@ namespace Coree.NETStandard.Extensions
 
         public static IServiceCollection AddHostedServicesWithOptions<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
-
             Log.Logger.ForSourceContext(nameof(AddHostedServicesWithOptions)).Verbose("aaaaa");
             return AddHostedServicesWithOptions<T, K>(services, values.ToArray());
         }
@@ -29,8 +28,7 @@ namespace Coree.NETStandard.Extensions
 
         public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
-            
-            return AddHostedServicesCollection<T, K>(services, values.ToArray());
+            return services.AddHostedServicesCollection<T, K>(values.ToArray());
         }
 
         public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, K[] values) where K : class, new() where T : class, IHostedService
