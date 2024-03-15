@@ -31,6 +31,6 @@ jobs:
     - name: PushToGitHub
       run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
     - name: PushToNuget
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://apiint.nugettest.org/v3/index.json
+      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
 
    
