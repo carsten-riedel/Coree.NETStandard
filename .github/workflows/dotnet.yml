@@ -26,3 +26,5 @@ jobs:
       run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
     - name: Pack
       run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+    - name: PushRelease
+      run: dotnet nuget push "bin/Pack/Coree.NETStandard.*.nupkg" --source "github"
