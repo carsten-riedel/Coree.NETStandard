@@ -41,22 +41,6 @@ jobs:
 
     # Execute powershell workflow.ps1
     - name: Starting the powershell workflow
-      run: pwsh .github/workflows/workflow.ps1 -server "sdfgfdg"
+      run: pwsh .github/workflows/workflow.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}"
 
-    # Push packagaes
-    - name: Add github nuget source
-      run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-      
-    - name: Push nupkg to github repository
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
-      
-    - name: Push nupkg to nupkg repository
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
-
-    
-    # Dispatch other workflows
-    - name: Dispatch a other workflow (Deploy static content to Pages)
-      run: |
-        curl -X POST -H "Authorization: token ${{ secrets.PAT }}" -H "Accept: application/vnd.github.v3+json" \
-        https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches \
-        -d '{"event_type": "trigger-other-workflow"}'
+ 

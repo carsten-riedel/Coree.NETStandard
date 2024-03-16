@@ -5,5 +5,5 @@ echo Change to git toplevel directory: %topLevelDirectory%
 echo install powershell as dotnet tool
 dotnet tool install --global PowerShell --version 7.4.1
 echo starting the
-pwsh .github/workflows/workflow.ps1 -server "sdfgfdg"
+pwsh .github/workflows/workflow.ps1 "sdfgfdg" "sdgsdg"
 pause
