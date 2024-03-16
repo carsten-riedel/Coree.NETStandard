@@ -88,25 +88,49 @@ function Log-Block {
         [string]$Section,
         [string]$Task
     )
+    Write-Output "_"
     Write-Output "=================================================================================="
     if (-not [string]::IsNullOrEmpty($Stage)) {
         $output =  "Stage: {0} Section: {1} Task: {2} " -f $Stage.PadRight(15), $Section.PadRight(20), $Task.PadRight(35)
         Write-Output $output
     }
     Write-Output "=================================================================================="
-    Write-Output "."
 }
+
+function Test-VariableSet {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$VariableName,
+        
+        [Parameter(Mandatory = $true)]
+        [AllowEmptyString()]
+        [AllowNull()]
+        [string]$VariableValue
+    )
+    process {
+        if ([string]::IsNullOrEmpty($VariableValue)) {
+            Write-Output ("VariableName: {0} is not set." -f $VariableName.PadRight(30))
+        }
+        else {
+            Write-Output ("VariableName: {0} is set." -f $VariableName.PadRight(30))
+        }
+    }
+}
+
 
 Log-Block -Stage "Prepare" -Section "Commandline" -Task "Check for availability"
 Ensure-CommandAvailability -CommandName "dotnet"
 Ensure-CommandAvailability -CommandName "git"
 Ensure-CommandAvailability -CommandName "curl"
 
-
 Log-Block -Stage "Prepare" -Section "EnviromentVariables" -Task "Resolve and set"
 $gitroot = git rev-parse --show-toplevel 2>&1
 Set-Location -Path $gitroot
+
 $gitBranch = git rev-parse --abbrev-ref HEAD
+Write-Output ("Name: {0} Value: {1}" -f "`$gitroot".PadRight(20), $gitroot )
+Write-Output ("Name: {0} Value: {1}" -f "`$gitBranch".PadRight(20), $gitBranch )
+Write-Output ("Name: {0} Value: {1}" -f "GetLocation".PadRight(20), $(Get-Location) )
 
 Log-Block -Stage "Prepare" -Section "Secrets" -Task "Import or commandline"
 $SECRETS_PAT = $args[0]
@@ -118,22 +142,13 @@ $secretsPath = ".github/workflows/secrets.ps1"
 # Check if the secrets file exists before importing
 if (Test-Path $secretsPath) {
     . $secretsPath
-    Write-Output "Imported secrets from: $secretsPath"
-} else {
-    Write-Output "Secrets file not found at: $secretsPath"
 }
-
-
-# Output the server parameter, the git branch name, and if available, the $FOO variable from secrets.ps1
-$fooOutput = if ($null -ne $FOO) { $FOO } else { "FOO not set" }
-Write-Output "Server: $server, Git Branch: $gitBranch, FOO: $fooOutput, Git root: $gitroot"
-
-
+Test-VariableSet -VariableName "`$SECRETS_PAT" -VariableValue "$SECRETS_PAT"
+Test-VariableSet -VariableName "`$SECRETS_NUGET_PAT" -VariableValue "$SECRETS_NUGET_PAT"
+Test-VariableSet -VariableName "`$SECRETS_NUGET_TEST_PAT" -VariableValue "$SECRETS_NUGET_TEST_PAT"
 
 Log-Block -Stage "Prepare" -Section "Install" -Task "Installing dotnet tool docfx."
 dotnet tool install --global docfx --version 2.74.1
-
-
 
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 dotnet restore ./src
@@ -143,7 +158,6 @@ Log-Block -Stage "Build" -Section "Pack" -Task "Createing the nuget package."
 dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 Log-Block -Stage "Build" -Section "Docfx" -Task "Generating the docfx files."
 docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
-
 
 Log-Block -Stage "Copy files" -Section "Docfx" -Task "Copying files from the docfx output to docs/docfx"
 Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
@@ -166,22 +180,3 @@ Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
 curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
 
-<#
-   # Push packagaes
-    - name: Add github nuget source
-      run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-      
-    - name: Push nupkg to github repository
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
-      
-    - name: Push nupkg to nupkg repository
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
-
-    
-    # Dispatch other workflows
-    - name: Dispatch a other workflow (Deploy static content to Pages)
-      run: |
-        curl -X POST -H "Authorization: token ${{ secrets.PAT }}" -H "Accept: application/vnd.github.v3+json" \
-        https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches \
-        -d '{"event_type": "trigger-other-workflow"}'
-#>
