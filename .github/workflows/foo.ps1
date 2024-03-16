@@ -23,7 +23,11 @@ $gitBranch = git rev-parse --abbrev-ref HEAD
 $fooOutput = if ($null -ne $FOO) { $FOO } else { "FOO not set" }
 Write-Output "Server: $server, Git Branch: $gitBranch, FOO: $fooOutput, Git root: $gitroot"
 
+dotnet tool install --global docfx --version 2.74.1
 
 dotnet restore ./src
 dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+
+docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
+

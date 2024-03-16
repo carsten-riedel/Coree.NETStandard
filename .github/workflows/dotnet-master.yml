@@ -39,16 +39,9 @@ jobs:
     - name: Dotnet tool install powershell
       run: dotnet tool install --global PowerShell --version 7.4.1
 
-    # Dotnet tools install docfx
-    - name: Dotnet tool install docfx
-      run: dotnet tool install --global docfx --version 2.74.1
-
     # Powershell foo.ps1
     - name: Powershell foo
       run: pwsh .github/workflows/foo.ps1 -server "sdfgfdg"
-      
-    - name: Dotnet Docfx
-      run: docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 
     # Post 
     - name: Copy files to docs/docfx
