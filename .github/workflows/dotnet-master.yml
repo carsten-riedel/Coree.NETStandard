@@ -42,7 +42,7 @@ jobs:
       run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
       
     - name: Dotnet Docfx
-      run: dotnet docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
+      run: docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 
     # Post 
     - name: Copy Subfolder to /docs
