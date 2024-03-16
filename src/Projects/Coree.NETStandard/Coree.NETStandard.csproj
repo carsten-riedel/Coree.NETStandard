@@ -12,6 +12,10 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
+
+  <Target Name="ToolRestore" BeforeTargets="PreBuildEvent">
+    <Exec Command="dotnet tool restore" />
+  </Target>
   
   <ItemGroup>
     <None Remove="Extensions\Serilog.cs" />
