@@ -46,16 +46,6 @@ jobs:
     # Powershell foo.ps1
     - name: Powershell foo
       run: pwsh .github/workflows/foo.ps1 -server "sdfgfdg"
-    
-    # Dotnet build chain
-    - name: Dotnet restore
-      run: dotnet restore ./src
-      
-    - name: Dotnet build
-      run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-      
-    - name: Dotnet pack
-      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
       
     - name: Dotnet Docfx
       run: docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
