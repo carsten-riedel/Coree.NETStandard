@@ -89,15 +89,15 @@ function Log-Block {
         [string]$Task
     )
     Write-Output "_"
-    Write-Output "=================================================================================="
+    Write-Output "==============================================================================================================="
     if (-not [string]::IsNullOrEmpty($Stage)) {
         $output =  "Stage: {0} Section: {1} Task: {2} " -f $Stage.PadRight(15), $Section.PadRight(20), $Task.PadRight(35)
         Write-Output $output
     }
-    Write-Output "=================================================================================="
+    Write-Output "==============================================================================================================="
 }
 
-function Test-VariableSet {
+function Ensure-VariableSet {
     param (
         [Parameter(Mandatory = $true)]
         [string]$VariableName,
@@ -109,7 +109,9 @@ function Test-VariableSet {
     )
     process {
         if ([string]::IsNullOrEmpty($VariableValue)) {
-            Write-Output ("VariableName: {0} is not set." -f $VariableName.PadRight(30))
+            $output = "VariableName: {0} is not set." -f $VariableName.PadRight(30)
+            Write-Output $output
+            throw "$output";
         }
         else {
             Write-Output ("VariableName: {0} is set." -f $VariableName.PadRight(30))
@@ -143,9 +145,10 @@ $secretsPath = ".github/workflows/secrets.ps1"
 if (Test-Path $secretsPath) {
     . $secretsPath
 }
-Test-VariableSet -VariableName "`$SECRETS_PAT" -VariableValue "$SECRETS_PAT"
-Test-VariableSet -VariableName "`$SECRETS_NUGET_PAT" -VariableValue "$SECRETS_NUGET_PAT"
-Test-VariableSet -VariableName "`$SECRETS_NUGET_TEST_PAT" -VariableValue "$SECRETS_NUGET_TEST_PAT"
+
+Ensure-VariableSet -VariableName "`$SECRETS_PAT" -VariableValue "$SECRETS_PAT"
+Ensure-VariableSet -VariableName "`$SECRETS_NUGET_PAT" -VariableValue "$SECRETS_NUGET_PAT"
+Ensure-VariableSet -VariableName "`$SECRETS_NUGET_TEST_PAT" -VariableValue "$SECRETS_NUGET_TEST_PAT"
 
 Log-Block -Stage "Prepare" -Section "Install" -Task "Installing dotnet tool docfx."
 dotnet tool install --global docfx --version 2.74.1
