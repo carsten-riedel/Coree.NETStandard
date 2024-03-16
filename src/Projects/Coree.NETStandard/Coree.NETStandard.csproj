@@ -9,6 +9,7 @@
     <DebugType>embedded</DebugType>
   </PropertyGroup>
 
+  
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
