@@ -45,7 +45,7 @@ jobs:
 
     # Dotnet tools install docfx
     - name: Dotnet tool install docfx
-      run: pwsh .github\workflows\foo.ps1 -server "sdfgfdg"
+      run: pwsh .github/workflows/foo.ps1 -server "sdfgfdg"
     
     # Dotnet build chain
     - name: Dotnet restore
