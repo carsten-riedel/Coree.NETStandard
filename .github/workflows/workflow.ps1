@@ -84,32 +84,31 @@ function Ensure-CommandAvailability {
 
 function Log-Block {
     param (
-        [string]$Title,
-        [string]$Content = $null
+        [string]$Stage,
+        [string]$Section,
+        [string]$Task
     )
     Write-Output "=================================================================================="
-    if (-not [string]::IsNullOrEmpty($Title)) {
-        Write-Output "$Title"
-        Write-Output "----------------------------------------------------------------------------------"
-    }
-    if (-not [string]::IsNullOrEmpty($Content)) {
-        Write-Output $Content
+    if (-not [string]::IsNullOrEmpty($Stage)) {
+        $output =  "Stage: {0} Section: {1} Task: {2} " -f $Stage.PadRight(15), $Section.PadRight(20), $Task.PadRight(35)
+        Write-Output $output
     }
     Write-Output "=================================================================================="
-    Write-Output ""
+    Write-Output "."
 }
 
+Log-Block -Stage "Prepare" -Section "Commandline" -Task "Check for availability"
 Ensure-CommandAvailability -CommandName "dotnet"
 Ensure-CommandAvailability -CommandName "git"
 Ensure-CommandAvailability -CommandName "curl"
 
 
-Log-Block -Title "Stage: Prepare environment" -Content "Setting currentdir to git root directory"
+Log-Block -Stage "Prepare" -Section "EnviromentVariables" -Task "Resolve and set"
 $gitroot = git rev-parse --show-toplevel 2>&1
 Set-Location -Path $gitroot
 $gitBranch = git rev-parse --abbrev-ref HEAD
 
-Log-Block -Title "Stage: Prepare secrets environment"
+Log-Block -Stage "Prepare" -Section "Secrets" -Task "Import or commandline"
 $SECRETS_PAT = $args[0]
 $SECRETS_NUGET_PAT = $args[1]
 $SECRETS_NUGET_TEST_PAT = $args[2]
@@ -130,24 +129,26 @@ $fooOutput = if ($null -ne $FOO) { $FOO } else { "FOO not set" }
 Write-Output "Server: $server, Git Branch: $gitBranch, FOO: $fooOutput, Git root: $gitroot"
 
 
-Log-Block -Title "Stage: Tool" -Content "Install docfx"
+
+Log-Block -Stage "Prepare" -Section "Install" -Task "Installing dotnet tool docfx."
 dotnet tool install --global docfx --version 2.74.1
 
-Log-Block -Title "Stage: Dotnet" -Content "Building the application..."
-Log-Block -Title "Restore"
+
+
+Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 dotnet restore ./src
-Log-Block -Title "Build"
+Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-Log-Block -Title "Pack"
+Log-Block -Stage "Build" -Section "Pack" -Task "Createing the nuget package."
 dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-Log-Block -Title "Docs"
+Log-Block -Stage "Build" -Section "Docfx" -Task "Generating the docfx files."
 docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 
 
-Log-Block -Title "Copy docs"
+Log-Block -Stage "Copy files" -Section "Docfx" -Task "Copying files from the docfx output to docs/docfx"
 Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
 
-Log-Block -Title "Commit and push"
+Log-Block -Stage "Commit and Push" -Section "Docfx" -Task "Commit and Push docs/docfx"
 
 git config --global user.name 'Updated form Workflow'
 git config --global user.email 'carstenriedel@outlook.com'
@@ -155,13 +156,13 @@ git add docs/docfx
 git commit -m "Updated form Workflow"
 git push origin master
 
-Log-Block -Title "Package push"
+Log-Block -Stage "Publish" -Section "Packages" -Task "dotnet nuget push"
 
 dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_PAT --source "github"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_NUGET_PAT --source https://api.nuget.org/v3/index.json
 
-Log-Block -Title "Curl"
+Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
 curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
 
