@@ -59,13 +59,6 @@ function Copy-Directory {
     }
 }
 
-$source = "src/Projects/Coree.NETStandard/Docfx/result/local/"
-$destination = "docs/docfx"
-$exclusions = @('.git', '.github')
-
-# Copy items from source to destination, excluding specified directories
-Copy-Directory -sourceDir $source -destinationDir $destination -exclusions $exclusions
-
 $secretsPath = ".github/workflows/secrets.ps1"
 
 # Check if the secrets file exists before importing
@@ -93,8 +86,15 @@ Write-Output "Dotnet build"
 dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 Write-Output "Dotnet pack"
 dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-
+Write-Output "Docfx create docs"
 docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
+
+$source = "src/Projects/Coree.NETStandard/Docfx/result/local/"
+$destination = "docs/docfx"
+$exclusions = @('.git', '.github')
+
+# Copy items from source to destination, excluding specified directories
+Copy-Directory -sourceDir $source -destinationDir $destination -exclusions $exclusions
 
 
 
