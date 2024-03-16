@@ -66,6 +66,14 @@ function Copy-Directory {
     }
 }
 
+function Block {
+    param ()
+    Write-Output ""
+    Write-Output "=================================================================================="
+    Write-Output "=================================================================================="
+    Write-Output ""
+}
+
 $secretsPath = ".github/workflows/secrets.ps1"
 
 # Check if the secrets file exists before importing
@@ -87,6 +95,8 @@ Write-Output "Server: $server, Git Branch: $gitBranch, FOO: $fooOutput, Git root
 Write-Output "Docfx install"
 dotnet tool install --global docfx --version 2.74.1
 
+Block
+
 Write-Output "Dotnet restore"
 dotnet restore ./src
 Write-Output "Dotnet build"
@@ -99,6 +109,10 @@ docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 # Copy items from source to destination, excluding specified directories
 Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
 
+Block
+
+git config --global user.name 'Updated form Workflow'
+git config --global user.email 'carstenriedel@outlook.com'
 git add docs/docfx
 git commit -m "Updated form Workflow"
 git push origin master
