@@ -45,17 +45,17 @@ jobs:
       run: docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 
     # Post 
-    - name: Copy Subfolder to /docs
+    - name: Copy files to docs/docfx
       run: |
         # Replace 'subfolder' with the actual subfolder you want to copy
-        rsync -av --progress src/Projects/Coree.NETStandard/Docfx/result/local/ docs/ --exclude .git --exclude .github
+        rsync -av --progress src/Projects/Coree.NETStandard/Docfx/result/local/ docs/docfx --exclude .git --exclude .github
       
-    - name: Commit and Push Changes
+    - name: Commit and Push Changes to docs/docfx
       run: |
-        git config --global user.name 'Your Name'
+        git config --global user.name 'Updated form Workflow'
         git config --global user.email 'your.email@example.com'
-        git add docs
-        git commit -m "Update docs [skip actions]" || echo "No changes to commit"
+        git add docs/docfx
+        git commit -m "Updated form Workflow" || echo "No changes to commit"
         git push origin master
 
     # Push packagaes
