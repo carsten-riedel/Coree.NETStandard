@@ -66,13 +66,28 @@ function Copy-Directory {
     }
 }
 
-function Block {
-    param ()
+function Log-Block {
+    param (
+        [string]$Title,
+        [string]$Content = $null
+    )
     Write-Output ""
     Write-Output "=================================================================================="
+    if (-not [string]::IsNullOrEmpty($Title)) {
+        Write-Output " $Title"
+        Write-Output "----------------------------------------------------------------------------------"
+    }
+    if (-not [string]::IsNullOrEmpty($Content)) {
+        Write-Output $Content
+    }
     Write-Output "=================================================================================="
     Write-Output ""
 }
+
+# Example usage
+Log-Block -Title "Stage: Build" -Content "Building the application..."
+Log-Block -Title "Test Results"
+
 
 $secretsPath = ".github/workflows/secrets.ps1"
 
