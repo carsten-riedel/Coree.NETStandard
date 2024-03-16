@@ -43,8 +43,8 @@ jobs:
     - name: Dotnet tool install docfx
       run: dotnet tool install --global docfx --version 2.74.1
 
-    # Dotnet tools install docfx
-    - name: Dotnet tool install docfx
+    # Powershell foo.ps1
+    - name: Powershell foo
       run: pwsh .github/workflows/foo.ps1 -server "sdfgfdg"
     
     # Dotnet build chain
