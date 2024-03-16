@@ -7,8 +7,8 @@ on:
   push:
     branches:
       - 'master'
-    paths-ignore:
-      - 'docs/**'
+    paths:
+      - 'src/**'
   pull_request:
     branches: [ "master" ]
 
@@ -26,19 +26,25 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
-    - name: Restore dependencies
-      run: dotnet restore ./src
-    - name: Build
-      run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-    - name: Pack
-      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-    - name: AddSource
-      run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    - name: PushToGitHub
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
-    - name: PushToNuget
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
 
+    # Dotnet tools install
+    - name: Restore dependencies
+      run: dotnet tool install docfx --version 2.74.1
+    
+    # Dotnet build chain
+    - name: Dotnet restore
+      run: dotnet restore ./src
+      
+    - name: Dotnet build
+      run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+      
+    - name: Dotnet pack
+      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+      
+    - name: Dotnet Docfx
+      run: dotnet docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
+
+    # Post 
     - name: Copy Subfolder to /docs
       run: |
         # Replace 'subfolder' with the actual subfolder you want to copy
@@ -51,13 +57,20 @@ jobs:
         git add docs
         git commit -m "Update docs [skip actions]" || echo "No changes to commit"
         git push origin master
-    - name: Push Changes hgh
-      run: |
-        git push origin master
-      env:
-        GITHUB_TOKEN: ${{ secrets.PAT }}
+
+    # Push packagaes
+    - name: Add github nuget source
+      run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+      
+    - name: Push nupkg to github repository
+      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
+      
+    - name: Push nupkg to nupkg repository
+      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
+
     
-    - name: Docs
+    # Dispatch other workflows
+    - name: Dispatch a other workflow (Deploy static content to Pages)
       run: |
         curl -X POST -H "Authorization: token ${{ secrets.PAT }}" -H "Accept: application/vnd.github.v3+json" \
         https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches \
