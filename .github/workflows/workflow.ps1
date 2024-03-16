@@ -96,7 +96,7 @@ if (Test-Path $secretsPath) {
     Write-Output "Secrets file not found at: $secretsPath"
 }
 
-
+throw "This is an error message."
 
 # Output the server parameter, the git branch name, and if available, the $FOO variable from secrets.ps1
 $fooOutput = if ($null -ne $FOO) { $FOO } else { "FOO not set" }
