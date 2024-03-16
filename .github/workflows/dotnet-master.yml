@@ -40,8 +40,8 @@ jobs:
       run: dotnet tool install --global PowerShell --version 7.4.1
 
     # Powershell foo.ps1
-    - name: Powershell foo
-      run: pwsh .github/workflows/foo.ps1 -server "sdfgfdg"
+    - name: Starting the powershell workflow
+      run: pwsh .github/workflows/workflow.ps1 -server "sdfgfdg"
 
     # Post 
     - name: Copy files to docs/docfx
