@@ -99,5 +99,7 @@ docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 # Copy items from source to destination, excluding specified directories
 Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
 
-
+git add docs/docfx
+git commit -m "Updated form Workflow"
+git push origin master
 
