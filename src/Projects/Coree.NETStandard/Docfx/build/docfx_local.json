@@ -30,8 +30,8 @@
     ],
     "output": "../result/local",
     "template": [
-      "default",
-      "modern"
+      "statictoc",
+      "../_exported_templates/override"
     ],
     "globalMetadata": {
       "_appName": "Coree.NETStandard",

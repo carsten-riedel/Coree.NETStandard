@@ -19,7 +19,7 @@
 
   <!-- Note index.md toc.yml and docs folder will be used for rendering the output _site, statictoc is needed for start the index.html locally  -->
   <Target Name="BuildDocfx" AfterTargets="PostBuildEvent">
-    <Exec Command="dotnet docfx Docfx/build/docfx_local.json -t statictoc" />
+    <Exec Command="dotnet docfx Docfx/build/docfx_local.json" />
   </Target>
 
   <ItemGroup>
@@ -47,6 +47,10 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="Docfx\result\" />
   </ItemGroup>
   
 </Project>
