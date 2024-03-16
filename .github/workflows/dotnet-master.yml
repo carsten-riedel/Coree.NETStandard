@@ -51,6 +51,11 @@ jobs:
         git add docs
         git commit -m "Update docs [skip actions]" || echo "No changes to commit"
         git push origin master
+    - name: Push Changes hgh
+      run: |
+        git push origin master
+      env:
+        GITHUB_TOKEN: ${{ secrets.PAT }}
     
     - name: Docs
       run: |
