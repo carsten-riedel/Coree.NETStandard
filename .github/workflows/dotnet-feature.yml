@@ -1,13 +1,13 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: .NET
+name: Feature .NET
 
 on:
   push:
     branches: [ "feature" , "feature/**" ]
   pull_request:
-    branches: [ "master" ]
+    branches: [ "feature" ]
 
 jobs:
   build:
@@ -24,13 +24,5 @@ jobs:
       run: dotnet restore ./src
     - name: Build
       run: dotnet build ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-    - name: Pack
-      run: dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
-    - name: AddSource
-      run: dotnet nuget add source --username carsten-riedel --password ${{ secrets.PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    - name: PushToGitHub
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
-    - name: PushToNuget
-      run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
 
    
