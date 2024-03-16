@@ -41,6 +41,6 @@ jobs:
 
     # Execute powershell workflow.ps1
     - name: Starting the powershell workflow
-      run: pwsh .github/workflows/workflow.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}"
+      run: pwsh .github/workflows/workflow.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" ""${{ secrets.NUGET_TEST_PAT }}"
 
  

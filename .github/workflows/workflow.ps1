@@ -1,4 +1,4 @@
-
+$ErrorActionPreference = 'Stop'
 
 # Custom function to copy files, excluding specified directories
 function Copy-Directory {
@@ -84,6 +84,7 @@ $gitBranch = git rev-parse --abbrev-ref HEAD
 Log-Block -Title "Stage: Prepare secrets environment"
 $SECRETS_PAT = $args[0]
 $SECRETS_NUGET_PAT = $args[1]
+$SECRETS_NUGET_TEST_PAT = $args[2]
 
 $secretsPath = ".github/workflows/secrets.ps1"
 
