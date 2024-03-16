@@ -15,14 +15,17 @@ function Copy-Directory {
         [string[]]$exclusions
     )
 
-        # Ensure that $sourceDir and $destinationDir are absolute paths
-        if (-not [System.IO.Path]::IsPathRooted($sourceDir)) {
-            $sourceDir = Join-Path (Get-Location) $sourceDir
-        }
-    
-        if (-not [System.IO.Path]::IsPathRooted($destinationDir)) {
-            $destinationDir = Join-Path (Get-Location) $destinationDir
-        }
+    $sourceDirParam = $sourceDir
+    $destinationDirParam = $destinationDir
+
+    # Ensure that $sourceDir and $destinationDir are absolute paths
+    if (-not [System.IO.Path]::IsPathRooted($sourceDir)) {
+        $sourceDir = Join-Path (Get-Location) $sourceDir
+    }
+
+    if (-not [System.IO.Path]::IsPathRooted($destinationDir)) {
+        $destinationDir = Join-Path (Get-Location) $destinationDir
+    }
 
     # Ensure paths end with a directory separator for consistent behavior
     $sourceDir = [System.IO.Path]::GetFullPath($sourceDir)
@@ -45,6 +48,10 @@ function Copy-Directory {
             $relativePath = [System.IO.Path]::GetRelativePath($sourceDir, $item.FullName)
             $targetPath = Join-Path -Path $destinationDir -ChildPath $relativePath
 
+
+            $relativeSource = Join-Path -Path $sourceDirParam -ChildPath $relativePath
+            $relativeDestination = Join-Path -Path $destinationDirParam -ChildPath $relativePath
+
             if ($item.PSIsContainer) {
                 # Create directory if it doesn't exist
                 if (-not (Test-Path -Path $targetPath)) {
@@ -53,7 +60,7 @@ function Copy-Directory {
             } else {
                 # Copy file
                 Copy-Item -Path $item.FullName -Destination $targetPath -Force
-                Write-Output "Copyied: $($item.FullName) to $($targetPath)"
+                Write-Output "Copyied: $($relativeSource) --> $($relativeDestination)"
             }
         }
     }
@@ -89,12 +96,8 @@ dotnet pack ./src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 Write-Output "Docfx create docs"
 docfx src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json
 
-$source = "src/Projects/Coree.NETStandard/Docfx/result/local/"
-$destination = "docs/docfx"
-$exclusions = @('.git', '.github')
-
 # Copy items from source to destination, excluding specified directories
-Copy-Directory -sourceDir $source -destinationDir $destination -exclusions $exclusions
+Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "docs/docfx" -exclusions @('.git', '.github')
 
 
 
