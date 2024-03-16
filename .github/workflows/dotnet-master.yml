@@ -26,10 +26,22 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+        
+    - name: Extract branch name
+      shell: bash
+      run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
+      id: extract_branch
+      
+    - name: Echo branch name
+      run: echo ${{ steps.extract_branch.outputs.branch }}
 
-    # Dotnet tools install
+    # Dotnet tools install powershell
     - name: Dotnet tool install docfx
-      run: dotnet tool install docfx --global --version 2.74.1
+      run: dotnet tool install --global PowerShell --version 7.4.1
+
+    # Dotnet tools install docfx
+    - name: Dotnet tool install docfx
+      run: dotnet tool install --global docfx --version 2.74.1
     
     # Dotnet build chain
     - name: Dotnet restore
