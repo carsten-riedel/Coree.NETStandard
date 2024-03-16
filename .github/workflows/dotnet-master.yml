@@ -36,12 +36,16 @@ jobs:
       run: echo ${{ steps.extract_branch.outputs.branch }}
 
     # Dotnet tools install powershell
-    - name: Dotnet tool install docfx
+    - name: Dotnet tool install powershell
       run: dotnet tool install --global PowerShell --version 7.4.1
 
     # Dotnet tools install docfx
     - name: Dotnet tool install docfx
       run: dotnet tool install --global docfx --version 2.74.1
+
+    # Dotnet tools install docfx
+    - name: Dotnet tool install docfx
+      run: pwsh .github\workflows\foo.ps1 -server "sdfgfdg"
     
     # Dotnet build chain
     - name: Dotnet restore
