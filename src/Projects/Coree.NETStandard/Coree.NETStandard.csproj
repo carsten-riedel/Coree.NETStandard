@@ -16,6 +16,12 @@
   <Target Name="ToolRestore" BeforeTargets="PreBuildEvent">
     <Exec Command="dotnet tool restore" />
   </Target>
+
+  <ItemGroup>
+    <Compile Remove="Template\**" />
+    <EmbeddedResource Remove="Template\**" />
+    <None Remove="Template\**" />
+  </ItemGroup>
   
   <ItemGroup>
     <None Remove="Extensions\Serilog.cs" />
@@ -36,10 +42,6 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-  </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Template\" />
   </ItemGroup>
   
 </Project>
