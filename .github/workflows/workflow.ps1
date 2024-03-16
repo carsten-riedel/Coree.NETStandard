@@ -155,11 +155,13 @@ git add docs/docfx
 git commit -m "Updated form Workflow"
 git push origin master
 
-
+Log-Block -Title "Package push"
 
 dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_PAT --source "github"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_NUGET_PAT --source https://api.nuget.org/v3/index.json
+
+Log-Block -Title "Curl"
 
 curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
 
