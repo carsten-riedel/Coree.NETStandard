@@ -1,0 +1,656 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Coree.NETStandard.Extensions
+  name: Coree.NETStandard.Extensions
+  href: api/Coree.NETStandard.Extensions.html
+  commentId: N:Coree.NETStandard.Extensions
+  fullName: Coree.NETStandard.Extensions
+  nameWithType: Coree.NETStandard.Extensions
+- uid: Coree.NETStandard.Extensions.SerilogExtensions
+  name: SerilogExtensions
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.SerilogExtensions
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions
+  nameWithType: SerilogExtensions
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
+  name: CommonConsoleConfig(LoggerConfiguration)
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfig_Serilog_LoggerConfiguration_
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
+  nameWithType: SerilogExtensions.CommonConsoleConfig(LoggerConfiguration)
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig*
+  name: CommonConsoleConfig
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfig_
+  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig
+  nameWithType: SerilogExtensions.CommonConsoleConfig
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
+  name: CommonConsoleConfigOutputTemplate()
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfigOutputTemplate
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate()
+  nameWithType: SerilogExtensions.CommonConsoleConfigOutputTemplate()
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate*
+  name: CommonConsoleConfigOutputTemplate
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfigOutputTemplate_
+  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
+  nameWithType: SerilogExtensions.CommonConsoleConfigOutputTemplate
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger,System.String)
+  name: ForSourceContext(ILogger, string?)
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_ForSourceContext_Serilog_ILogger_System_String_
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger,System.String)
+  name.vb: ForSourceContext(ILogger, String)
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger, string?)
+  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger, String)
+  nameWithType: SerilogExtensions.ForSourceContext(ILogger, string?)
+  nameWithType.vb: SerilogExtensions.ForSourceContext(ILogger, String)
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext*
+  name: ForSourceContext
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_ForSourceContext_
+  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext
+  nameWithType: SerilogExtensions.ForSourceContext
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger,System.Action{Serilog.LoggerConfiguration})
+  name: UseConfigurationMethod(ILogger, Action<LoggerConfiguration>?)
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_Serilog_ILogger_System_Action_Serilog_LoggerConfiguration__
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger,System.Action{Serilog.LoggerConfiguration})
+  name.vb: UseConfigurationMethod(ILogger, Action(Of LoggerConfiguration))
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger, System.Action<Serilog.LoggerConfiguration>?)
+  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger, System.Action(Of Serilog.LoggerConfiguration))
+  nameWithType: SerilogExtensions.UseConfigurationMethod(ILogger, Action<LoggerConfiguration>?)
+  nameWithType.vb: SerilogExtensions.UseConfigurationMethod(ILogger, Action(Of LoggerConfiguration))
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration,System.Action{Serilog.LoggerConfiguration})
+  name: UseConfigurationMethod(LoggerConfiguration, Action<LoggerConfiguration>?)
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_Serilog_LoggerConfiguration_System_Action_Serilog_LoggerConfiguration__
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration,System.Action{Serilog.LoggerConfiguration})
+  name.vb: UseConfigurationMethod(LoggerConfiguration, Action(Of LoggerConfiguration))
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration, System.Action<Serilog.LoggerConfiguration>?)
+  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration, System.Action(Of Serilog.LoggerConfiguration))
+  nameWithType: SerilogExtensions.UseConfigurationMethod(LoggerConfiguration, Action<LoggerConfiguration>?)
+  nameWithType.vb: SerilogExtensions.UseConfigurationMethod(LoggerConfiguration, Action(Of LoggerConfiguration))
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod*
+  name: UseConfigurationMethod
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_
+  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod
+  nameWithType: SerilogExtensions.UseConfigurationMethod
+- uid: Coree.NETStandard.Extensions.ServiceCollection
+  name: Coree.NETStandard.Extensions.ServiceCollection
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.html
+  commentId: N:Coree.NETStandard.Extensions.ServiceCollection
+  fullName: Coree.NETStandard.Extensions.ServiceCollection
+  nameWithType: Coree.NETStandard.Extensions.ServiceCollection
+- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
+  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection*
+  name: AddHostedServicesCollection
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection_
+  commentId: Overload:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection
+- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
+  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
+- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_List___1__
+  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
+  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List<K>)
+  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List(Of K))
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
+- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, K[])
+  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection___1___
+  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
+  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, K[])
+  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, K())
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, K[])
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
+- uid: Coree.NETStandard.Extensions.ServiceProviderExtensions
+  name: ServiceProviderExtensions
+  href: api/Coree.NETStandard.Extensions.ServiceProviderExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.ServiceProviderExtensions
+  fullName: Coree.NETStandard.Extensions.ServiceProviderExtensions
+  nameWithType: ServiceProviderExtensions
+- uid: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices(System.IServiceProvider)
+  name: GetRegisteredServices(IServiceProvider)
+  href: api/Coree.NETStandard.Extensions.ServiceProviderExtensions.html#Coree_NETStandard_Extensions_ServiceProviderExtensions_GetRegisteredServices_System_IServiceProvider_
+  commentId: M:Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices(System.IServiceProvider)
+  fullName: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices(System.IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetRegisteredServices(IServiceProvider)
+- uid: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices*
+  name: GetRegisteredServices
+  href: api/Coree.NETStandard.Extensions.ServiceProviderExtensions.html#Coree_NETStandard_Extensions_ServiceProviderExtensions_GetRegisteredServices_
+  commentId: Overload:Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices
+  nameWithType: ServiceProviderExtensions.GetRegisteredServices
+- uid: Coree.NETStandard.HostedService
+  name: Coree.NETStandard.HostedService
+  href: api/Coree.NETStandard.HostedService.html
+  commentId: N:Coree.NETStandard.HostedService
+  fullName: Coree.NETStandard.HostedService
+  nameWithType: Coree.NETStandard.HostedService
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation
+  name: HostedServiceSampleImplementation
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html
+  commentId: T:Coree.NETStandard.HostedService.HostedServiceSampleImplementation
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation
+  nameWithType: HostedServiceSampleImplementation
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider{Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions},Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.HostedService.HostedServiceSampleImplementation})
+  name: HostedServiceSampleImplementation(IHostedServicesCollectionOptionsProvider<HostedServiceSampleImplementationOptions>, ILogger<HostedServiceSampleImplementation>)
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation__ctor_Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions__Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_HostedService_HostedServiceSampleImplementation__
+  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider{Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions},Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.HostedService.HostedServiceSampleImplementation})
+  name.vb: New(IHostedServicesCollectionOptionsProvider(Of HostedServiceSampleImplementationOptions), ILogger(Of HostedServiceSampleImplementation))
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.HostedServiceSampleImplementation(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions>, Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.HostedService.HostedServiceSampleImplementation>)
+  fullName.vb: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.New(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions), Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.HostedService.HostedServiceSampleImplementation))
+  nameWithType: HostedServiceSampleImplementation.HostedServiceSampleImplementation(IHostedServicesCollectionOptionsProvider<HostedServiceSampleImplementationOptions>, ILogger<HostedServiceSampleImplementation>)
+  nameWithType.vb: HostedServiceSampleImplementation.New(IHostedServicesCollectionOptionsProvider(Of HostedServiceSampleImplementationOptions), ILogger(Of HostedServiceSampleImplementation))
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor*
+  name: HostedServiceSampleImplementation
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation__ctor_
+  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.HostedServiceSampleImplementation
+  fullName.vb: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.New
+  nameWithType: HostedServiceSampleImplementation.HostedServiceSampleImplementation
+  nameWithType.vb: HostedServiceSampleImplementation.New
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StartAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
+  nameWithType: HostedServiceSampleImplementation.StartAsync(CancellationToken)
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync*
+  name: StartAsync
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StartAsync_
+  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync
+  nameWithType: HostedServiceSampleImplementation.StartAsync
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StopAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
+  nameWithType: HostedServiceSampleImplementation.StopAsync(CancellationToken)
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync*
+  name: StopAsync
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StopAsync_
+  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync
+  nameWithType: HostedServiceSampleImplementation.StopAsync
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
+  name: HostedServiceSampleImplementationOptions
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html
+  commentId: T:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
+  nameWithType: HostedServiceSampleImplementationOptions
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
+  name: Option1
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions_Option1
+  commentId: P:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
+  nameWithType: HostedServiceSampleImplementationOptions.Option1
+- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1*
+  name: Option1
+  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions_Option1_
+  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
+  nameWithType: HostedServiceSampleImplementationOptions.Option1
+- uid: Coree.NETStandard.Logging
+  name: Coree.NETStandard.Logging
+  href: api/Coree.NETStandard.Logging.html
+  commentId: N:Coree.NETStandard.Logging
+  fullName: Coree.NETStandard.Logging
+  nameWithType: Coree.NETStandard.Logging
+- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
+  name: EnhancedSourceContextShortEnricher
+  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html
+  commentId: T:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
+  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
+  nameWithType: EnhancedSourceContextShortEnricher
+- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  name: EnhancedSourceContextShortEnricher(bool, bool, bool)
+  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_
+  commentId: M:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean)
+  name.vb: New(Boolean, Boolean, Boolean)
+  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher(bool, bool, bool)
+  fullName.vb: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.New(Boolean, Boolean, Boolean)
+  nameWithType: EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher(bool, bool, bool)
+  nameWithType.vb: EnhancedSourceContextShortEnricher.New(Boolean, Boolean, Boolean)
+- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor*
+  name: EnhancedSourceContextShortEnricher
+  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher__ctor_
+  commentId: Overload:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher
+  fullName.vb: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.New
+  nameWithType: EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher
+  nameWithType.vb: EnhancedSourceContextShortEnricher.New
+- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  commentId: M:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  nameWithType: EnhancedSourceContextShortEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich*
+  name: Enrich
+  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher_Enrich_
+  commentId: Overload:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich
+  isSpec: "True"
+  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich
+  nameWithType: EnhancedSourceContextShortEnricher.Enrich
+- uid: Coree.NETStandard.Options
+  name: Coree.NETStandard.Options
+  href: api/Coree.NETStandard.Options.html
+  commentId: N:Coree.NETStandard.Options
+  fullName: Coree.NETStandard.Options
+  nameWithType: Coree.NETStandard.Options
+- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1
+  name: HostedServicesCollectionOptionsProvider<T>
+  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html
+  commentId: T:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1
+  name.vb: HostedServicesCollectionOptionsProvider(Of T)
+  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>
+  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T)
+  nameWithType: HostedServicesCollectionOptionsProvider<T>
+  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T)
+- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  name: Enqueue(T)
+  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_Enqueue__0_
+  commentId: M:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.Enqueue(T)
+  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
+  nameWithType: HostedServicesCollectionOptionsProvider<T>.Enqueue(T)
+  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
+- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue*
+  name: Enqueue
+  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_Enqueue_
+  commentId: Overload:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue
+  isSpec: "True"
+  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.Enqueue
+  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).Enqueue
+  nameWithType: HostedServicesCollectionOptionsProvider<T>.Enqueue
+  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).Enqueue
+- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
+  name: MoveNext()
+  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_MoveNext
+  commentId: M:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
+  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.MoveNext()
+  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).MoveNext()
+  nameWithType: HostedServicesCollectionOptionsProvider<T>.MoveNext()
+  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).MoveNext()
+- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext*
+  name: MoveNext
+  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_MoveNext_
+  commentId: Overload:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
+  isSpec: "True"
+  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.MoveNext
+  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).MoveNext
+  nameWithType: HostedServicesCollectionOptionsProvider<T>.MoveNext
+  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).MoveNext
+- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1
+  name: IHostedServicesCollectionOptionsProvider<T>
+  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html
+  commentId: T:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1
+  name.vb: IHostedServicesCollectionOptionsProvider(Of T)
+  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>
+  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T)
+  nameWithType: IHostedServicesCollectionOptionsProvider<T>
+  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T)
+- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  name: Enqueue(T)
+  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_Enqueue__0_
+  commentId: M:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.Enqueue(T)
+  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
+  nameWithType: IHostedServicesCollectionOptionsProvider<T>.Enqueue(T)
+  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
+- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue*
+  name: Enqueue
+  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_Enqueue_
+  commentId: Overload:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue
+  isSpec: "True"
+  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.Enqueue
+  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).Enqueue
+  nameWithType: IHostedServicesCollectionOptionsProvider<T>.Enqueue
+  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).Enqueue
+- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
+  name: MoveNext()
+  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_MoveNext
+  commentId: M:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
+  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.MoveNext()
+  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).MoveNext()
+  nameWithType: IHostedServicesCollectionOptionsProvider<T>.MoveNext()
+  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).MoveNext()
+- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext*
+  name: MoveNext
+  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_MoveNext_
+  commentId: Overload:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
+  isSpec: "True"
+  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.MoveNext
+  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).MoveNext
+  nameWithType: IHostedServicesCollectionOptionsProvider<T>.MoveNext
+  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).MoveNext
+- uid: Coree.NETStandard.Services
+  name: Coree.NETStandard.Services
+  href: api/Coree.NETStandard.Services.html
+  commentId: N:Coree.NETStandard.Services
+  fullName: Coree.NETStandard.Services
+  nameWithType: Coree.NETStandard.Services
+- uid: Coree.NETStandard.Services.IRuntimeInsights
+  name: IRuntimeInsights
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html
+  commentId: T:Coree.NETStandard.Services.IRuntimeInsights
+  fullName: Coree.NETStandard.Services.IRuntimeInsights
+  nameWithType: IRuntimeInsights
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName
+  nameWithType: IRuntimeInsights.CallingAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName*
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CallingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CallingAssemblyName
+  nameWithType: IRuntimeInsights.CallingAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory
+  nameWithType: IRuntimeInsights.CurrentDirectory
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory*
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentDirectory_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentDirectory
+  nameWithType: IRuntimeInsights.CurrentDirectory
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename
+  nameWithType: IRuntimeInsights.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename*
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentProcessMainModuleFilename_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleFilename
+  nameWithType: IRuntimeInsights.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName
+  nameWithType: IRuntimeInsights.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName*
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_CurrentProcessMainModuleName_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.CurrentProcessMainModuleName
+  nameWithType: IRuntimeInsights.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName
+  nameWithType: IRuntimeInsights.EntryAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName*
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_EntryAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.EntryAssemblyName
+  nameWithType: IRuntimeInsights.EntryAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine
+  nameWithType: IRuntimeInsights.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine*
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_EnvironmentCommandLine_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.EnvironmentCommandLine
+  nameWithType: IRuntimeInsights.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName
+  nameWithType: IRuntimeInsights.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName*
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_ExecutingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.ExecutingAssemblyName
+  nameWithType: IRuntimeInsights.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_OSArchitecture
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture
+  nameWithType: IRuntimeInsights.OSArchitecture
+- uid: Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture*
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_OSArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.OSArchitecture
+  nameWithType: IRuntimeInsights.OSArchitecture
+- uid: Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture
+  nameWithType: IRuntimeInsights.ProcessArchitecture
+- uid: Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture*
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_ProcessArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.ProcessArchitecture
+  nameWithType: IRuntimeInsights.ProcessArchitecture
+- uid: Coree.NETStandard.Services.IRuntimeInsights.Username
+  name: Username
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_Username
+  commentId: P:Coree.NETStandard.Services.IRuntimeInsights.Username
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.Username
+  nameWithType: IRuntimeInsights.Username
+- uid: Coree.NETStandard.Services.IRuntimeInsights.Username*
+  name: Username
+  href: api/Coree.NETStandard.Services.IRuntimeInsights.html#Coree_NETStandard_Services_IRuntimeInsights_Username_
+  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsights.Username
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IRuntimeInsights.Username
+  nameWithType: IRuntimeInsights.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService
+  name: RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService
+  nameWithType: RuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.IRuntimeInsights})
+  name: RuntimeInsightsService(ILogger<IRuntimeInsights>)
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_IRuntimeInsights__
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.IRuntimeInsights})
+  name.vb: New(ILogger(Of IRuntimeInsights))
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.IRuntimeInsights>)
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.IRuntimeInsights))
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService(ILogger<IRuntimeInsights>)
+  nameWithType.vb: RuntimeInsightsService.New(ILogger(Of IRuntimeInsights))
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.#ctor*
+  name: RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.New
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService
+  nameWithType.vb: RuntimeInsightsService.New
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName*
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CallingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory*
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentDirectory_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename*
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentProcessMainModuleFilename_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName*
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_CurrentProcessMainModuleName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName*
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_EntryAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine*
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_EnvironmentCommandLine_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName*
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_ExecutingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_OSArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture*
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_OSArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture*
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_ProcessArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.Username
+  name: Username
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_Username
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.Username
+  nameWithType: RuntimeInsightsService.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.Username*
+  name: Username
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_Username_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.Username
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.Username
+  nameWithType: RuntimeInsightsService.Username
