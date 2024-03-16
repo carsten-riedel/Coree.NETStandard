@@ -38,6 +38,20 @@ jobs:
       run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.PAT }} --source "github"
     - name: PushToNuget
       run: dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key ${{ secrets.NUGET_PAT }} --source https://api.nuget.org/v3/index.json
+
+    - name: Copy Subfolder to /docs
+      run: |
+        # Replace 'subfolder' with the actual subfolder you want to copy
+        rsync -av --progress src/Projects/Coree.NETStandard/Docfx/result/local/ docs/ --exclude .git --exclude .github
+      
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name 'Your Name'
+        git config --global user.email 'your.email@example.com'
+        git add docs
+        git commit -m "Update docs [skip actions]" || echo "No changes to commit"
+        git push origin master
+    
     - name: Docs
       run: |
         curl -X POST -H "Authorization: token ${{ secrets.PAT }}" -H "Accept: application/vnd.github.v3+json" \
