@@ -59,6 +59,29 @@ function Copy-Directory {
     }
 }
 
+function Ensure-CommandAvailability {
+    param (
+        [Parameter(Mandatory = $true)]
+        [string]$CommandName
+    )
+    process {
+        $isAvailible = $false
+
+        try {
+            $commandInfo = Get-Command $CommandName -ErrorAction Stop
+            $isAvailible = $true
+            $output = "Command is available   : {0}" -f $CommandName
+            Write-Output $output
+        }
+        catch {}        
+        if ($isAvailible -eq $false)
+        {
+            $output = "Command is not available : {0}" -f $CommandName
+            throw "$output";
+        }
+    }
+}
+
 function Log-Block {
     param (
         [string]$Title,
@@ -75,6 +98,11 @@ function Log-Block {
     Write-Output "=================================================================================="
     Write-Output ""
 }
+
+Ensure-CommandAvailability -CommandName "dotnet"
+Ensure-CommandAvailability -CommandName "git"
+Ensure-CommandAvailability -CommandName "curl"
+
 
 Log-Block -Title "Stage: Prepare environment" -Content "Setting currentdir to git root directory"
 $gitroot = git rev-parse --show-toplevel 2>&1
@@ -96,7 +124,6 @@ if (Test-Path $secretsPath) {
     Write-Output "Secrets file not found at: $secretsPath"
 }
 
-throw "This is an error message."
 
 # Output the server parameter, the git branch name, and if available, the $FOO variable from secrets.ps1
 $fooOutput = if ($null -ne $FOO) { $FOO } else { "FOO not set" }
@@ -127,6 +154,14 @@ git config --global user.email 'carstenriedel@outlook.com'
 git add docs/docfx
 git commit -m "Updated form Workflow"
 git push origin master
+
+
+
+dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_PAT --source "github"
+dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_NUGET_PAT --source https://api.nuget.org/v3/index.json
+
+curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
 
 <#
    # Push packagaes
