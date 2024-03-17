@@ -8,4 +8,4 @@ As Coree.NETStandard is exclusively a library project, you can thoroughly explor
 
 [Coree.NETStandard Docfx API](https://carsten-riedel.github.io/Coree.NETStandard/docfx/api/Coree.NETStandard.Services.html)
 
-[![Master build](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml)
+[![Master .NET](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml)
