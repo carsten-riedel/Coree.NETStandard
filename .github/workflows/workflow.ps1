@@ -282,20 +282,3 @@ foreach ($item in $ListedIgnoreNewest)
     Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
     Write-Output "Unlisted package $($item.version)"
 }
-
-
-
-
-<#
-$response = Invoke-RestMethod -Uri "https://azuresearch-usnc.nuget.org/query?q=Coree.NETStandard&prerelease=false"
-$VersionArray = $response.data.versions
-$sortedVersionArray = $VersionArray | Sort-Object -Property @{Expression={ [System.Version]($_.version) }; Ascending=$false} | Select-Object -skip 5
-foreach ($item in $sortedVersionArray)
-{
-    $headers = @{
-        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
-    }
-    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers
-}
-
-#>
