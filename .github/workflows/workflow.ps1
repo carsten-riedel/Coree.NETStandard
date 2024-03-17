@@ -141,6 +141,15 @@ function Clear-BinObjDirectories {
     $binFolderPath = Join-Path -Path $sourceDirectory -ChildPath "bin"
     $objFolderPath = Join-Path -Path $sourceDirectory -ChildPath "obj"
 
+    # Ensure that $sourceDir and $destinationDir are absolute paths
+    if (-not [System.IO.Path]::IsPathRooted($binFolderPath)) {
+        $binFolderPath = Join-Path (Get-Location) $binFolderPath
+    }
+
+    if (-not [System.IO.Path]::IsPathRooted($objFolderPath)) {
+        $objFolderPath = Join-Path (Get-Location) $objFolderPath
+    }
+
     # Function to delete files and directory
     function Delete-DirectoryContents {
         param(
@@ -148,21 +157,21 @@ function Clear-BinObjDirectories {
         )
 
         if ($directory.Exists) {
-            $files = Get-ChildItem -Path $directory.FullName -Recurse
+            $files = Get-ChildItem -Path $directory.FullName -Recurse -File
             foreach ($file in $files) {
                 try {
                     Remove-Item $file.FullName -Force
-                    Write-Host "Deleted file: $($file.FullName)."
+                    Write-Output "Deleted file: $($file.FullName)."
                 } catch {
-                    Write-Host "Could not delete file: $($file.FullName)."
+                    Write-Output "Could not delete file: $($file.FullName)."
                 }
             }
 
             try {
                 Remove-Item $directory.FullName -Recurse -Force
-                Write-Host "Deleted directory: $($directory.FullName)."
+                Write-Output "Deleted directory: $($directory.FullName)."
             } catch {
-                Write-Host "Could not delete directory: $($directory.FullName)."
+                Write-Output"Could not delete directory: $($directory.FullName)."
             }
         }
     }
@@ -176,6 +185,7 @@ function Clear-BinObjDirectories {
     Delete-DirectoryContents -directory $objFolder
 }
 
+dotnet --version
 
 $NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
 $NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
@@ -251,10 +261,12 @@ git add docs/docfx
 git commit -m "Updated form Workflow"
 git push origin master
 
-Log-Block -Stage "Publish" -Section "Packages" -Task "dotnet nuget push"
+Log-Block -Stage "Publish" -Section "Packages" -Task "dotnet nuget push github"
 
 dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_PAT --source "github"
+
+Log-Block -Stage "Publish" -Section "Packages" -Task "dotnet nuget push nuget"
 dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.nupkg" --api-key $SECRETS_NUGET_PAT --source https://api.nuget.org/v3/index.json
 
 Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
@@ -274,6 +286,7 @@ foreach ($item in $ListedIgnoreNewest)
         'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
     }
     Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
+    Write-Output "Unlisted package $($item.version)"
 }
 
 <#
