@@ -267,6 +267,7 @@ foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
     Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/Coree.NETStandard/versions/$PackageId" -Headers $headers | Out-Null
+    Write-Output "Unlisted package Coree.NETStandard $($item.name)"
 }
 
 Log-Block -Stage "Cleanup" -Section "Packages" -Task "clean old nuget.org packages"
@@ -280,5 +281,5 @@ foreach ($item in $ListedIgnoreNewest)
         'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
     }
     Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
-    Write-Output "Unlisted package $($item.version)"
+    Write-Output "Unlisted package Coree.NETStandard $($item.version)"
 }
