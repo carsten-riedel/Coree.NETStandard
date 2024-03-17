@@ -132,6 +132,63 @@ function Ensure-VariableSet {
     }
 }
 
+function Clear-BinObjDirectories {
+    param(
+        [string]$sourceDirectory = "source"
+    )
+
+    # Define bin and obj folder paths
+    $binFolderPath = Join-Path -Path $sourceDirectory -ChildPath "bin"
+    $objFolderPath = Join-Path -Path $sourceDirectory -ChildPath "obj"
+
+    # Function to delete files and directory
+    function Delete-DirectoryContents {
+        param(
+            [System.IO.DirectoryInfo]$directory
+        )
+
+        if ($directory.Exists) {
+            $files = Get-ChildItem -Path $directory.FullName -Recurse
+            foreach ($file in $files) {
+                try {
+                    Remove-Item $file.FullName -Force
+                    Write-Host "Deleted file: $($file.FullName)."
+                } catch {
+                    Write-Host "Could not delete file: $($file.FullName)."
+                }
+            }
+
+            try {
+                Remove-Item $directory.FullName -Recurse -Force
+                Write-Host "Deleted directory: $($directory.FullName)."
+            } catch {
+                Write-Host "Could not delete directory: $($directory.FullName)."
+            }
+        }
+    }
+
+    # Create DirectoryInfo objects
+    $binFolder = [System.IO.DirectoryInfo]::new($binFolderPath)
+    $objFolder = [System.IO.DirectoryInfo]::new($objFolderPath)
+
+    # Delete contents of bin and obj directories
+    Delete-DirectoryContents -directory $binFolder
+    Delete-DirectoryContents -directory $objFolder
+}
+
+
+$NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
+$NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
+$Listed = $NugetPackageList | Where-Object { $_.'listed' -eq $true }
+$ListedIgnoreNewest = ($Listed[-1..-($Listed.Count)] | Select-Object -Skip 5)
+foreach ($item in $ListedIgnoreNewest)
+{
+    $headers = @{
+        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
+    }
+    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
+}
+
 
 Log-Block -Stage "Prepare" -Section "Commandline" -Task "Check for availability"
 Ensure-CommandAvailability -CommandName "dotnet"
@@ -169,6 +226,10 @@ if (-not (Test-CommandAvailability -CommandName "docfx"))
     dotnet tool install --global docfx --version 2.74.1
 }
 
+Log-Block -Stage "Build" -Section "Clean" -Task "Clean output directorys"
+
+
+Clear-BinObjDirectories -sourceDirectory "src/Projects/Coree.NETStandard"
 
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 dotnet restore ./src
@@ -199,6 +260,21 @@ dotnet nuget push "src/Projects/Coree.NETStandard/bin/Pack/Coree.NETStandard.*.n
 Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
 curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
+
+
+Log-Block -Stage "Cleanup" -Section "Packages" -Task "dotnet nuget push"
+
+$NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
+$NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
+$Listed = $NugetPackageList | Where-Object { $_.'listed' -eq $true }
+$ListedIgnoreNewest = ($Listed[-1..-($Listed.Count)] | Select-Object -Skip 5)
+foreach ($item in $ListedIgnoreNewest)
+{
+    $headers = @{
+        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
+    }
+    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
+}
 
 <#
 $response = Invoke-RestMethod -Uri "https://azuresearch-usnc.nuget.org/query?q=Coree.NETStandard&prerelease=false"
