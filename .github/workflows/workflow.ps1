@@ -82,6 +82,19 @@ function Ensure-CommandAvailability {
     }
 }
 
+function Test-CommandAvailability {
+    param (
+        [string]$CommandName
+    )
+
+    try {
+        $null = Get-Command $CommandName -ErrorAction Stop
+        return $true
+    } catch {
+        return $false
+    }
+}
+
 function Log-Block {
     param (
         [string]$Stage,
@@ -150,8 +163,12 @@ Ensure-VariableSet -VariableName "`$SECRETS_PAT" -VariableValue "$SECRETS_PAT"
 Ensure-VariableSet -VariableName "`$SECRETS_NUGET_PAT" -VariableValue "$SECRETS_NUGET_PAT"
 Ensure-VariableSet -VariableName "`$SECRETS_NUGET_TEST_PAT" -VariableValue "$SECRETS_NUGET_TEST_PAT"
 
-Log-Block -Stage "Prepare" -Section "Install" -Task "Installing dotnet tool docfx."
-dotnet tool install --global docfx --version 2.74.1
+if (-not (Test-CommandAvailability -CommandName "docfx"))
+{
+    Log-Block -Stage "Prepare" -Section "Install" -Task "Installing dotnet tool docfx."
+    dotnet tool install --global docfx --version 2.74.1
+}
+
 
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 dotnet restore ./src
@@ -167,7 +184,6 @@ Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -
 
 Log-Block -Stage "Commit and Push" -Section "Docfx" -Task "Commit and Push docs/docfx"
 
-git config --global user.name 'Updated form Workflow'
 git config --global user.email 'carstenriedel@outlook.com'
 git add docs/docfx
 git commit -m "Updated form Workflow"
@@ -183,3 +199,16 @@ Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
 curl -X POST -H "Authorization: token $SECRETS_PAT" -H "Accept: application/vnd.github.v3+json" https://api.github.com/repos/carsten-riedel/Coree.NETStandard/dispatches -d '{"event_type": "trigger-other-workflow"}'
 
+<#
+$response = Invoke-RestMethod -Uri "https://azuresearch-usnc.nuget.org/query?q=Coree.NETStandard&prerelease=false"
+$VersionArray = $response.data.versions
+$sortedVersionArray = $VersionArray | Sort-Object -Property @{Expression={ [System.Version]($_.version) }; Ascending=$false} | Select-Object -skip 5
+foreach ($item in $sortedVersionArray)
+{
+    $headers = @{
+        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
+    }
+    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers
+}
+
+#>
