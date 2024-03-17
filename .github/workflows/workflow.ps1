@@ -184,6 +184,7 @@ Copy-Directory -sourceDir "src/Projects/Coree.NETStandard/Docfx/result/local/" -
 
 Log-Block -Stage "Commit and Push" -Section "Docfx" -Task "Commit and Push docs/docfx"
 
+git config --global user.name 'Updated form Workflow'
 git config --global user.email 'carstenriedel@outlook.com'
 git add docs/docfx
 git commit -m "Updated form Workflow"
