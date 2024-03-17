@@ -26,6 +26,15 @@ namespace Coree.NETStandard.Extensions.ServiceCollection
         }
         */
 
+        /// <summary>
+        /// Adds a collection of hosted services to the specified IServiceCollection. Each hosted service
+        /// type <typeparamref name="T"/> is configured with an instance of type <typeparamref name="K"/>.
+        /// </summary>
+        /// <typeparam name="T">The type of the hosted service. This type must implement IHostedService.</typeparam>
+        /// <typeparam name="K">The configuration type for the hosted service. This type must be a class and have a parameterless constructor.</typeparam>
+        /// <param name="services">The IServiceCollection to add the hosted services to.</param>
+        /// <param name="values">A list of configuration values of type <typeparamref name="K"/> for the hosted services.</param>
+        /// <returns>The original IServiceCollection instance, with the hosted services added.</returns>
         public static IServiceCollection AddHostedServicesCollection<T, K>(this IServiceCollection services, List<K> values) where K : class, new() where T : class, IHostedService
         {
             return services.AddHostedServicesCollection<T, K>(values.ToArray());
