@@ -8,6 +8,7 @@
     <Nullable>enable</Nullable>
     <DebugType>embedded</DebugType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>IDE0090;IDE0028;IDE0305</NoWarn>
   </PropertyGroup>
   
   <!-- NuGet Package configuration -->
@@ -23,6 +24,7 @@
   <ItemGroup>
     <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
+    <None Remove="Extensions\ThreadSafeCollection.cs" />
     <None Remove="Logging\Enricher.cs" />
     <None Remove="Options\HostedServicesCollectionOptionsProvider.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
