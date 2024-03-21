@@ -12,7 +12,7 @@ namespace Coree.NETStandard.Services
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    internal interface IFileService
+    public interface IFileService
     {
         string? GetCorrectCasedPath(string? path);
         string? IsCommandAvailable(string? command);
