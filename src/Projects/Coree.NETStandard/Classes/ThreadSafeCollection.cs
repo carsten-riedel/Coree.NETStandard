@@ -287,6 +287,28 @@ namespace Coree.NETStandard.Classes
             }
         }
 
+        /// <summary>
+        /// Finds and removes all items matching the given predicate from the collection in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// Synchronizes access to the collection to safely remove the items, supporting concurrent modifications.
+        /// Returns an empty enumerable if no items match the predicate.
+        /// </remarks>
+        /// <param name="predicate">The predicate used to find the items to remove.</param>
+        /// <returns>An enumerable of all items that were removed from the collection.</returns>
+        public IEnumerable<T?> TakeAll(Func<T?, bool> predicate)
+        {
+            lock (syncRoot)
+            {
+                var itemsToRemove = items.Where(predicate).ToList();
+                foreach (var item in itemsToRemove)
+                {
+                    items.Remove(item);
+                }
+                return itemsToRemove;
+            }
+        }
+
 
 
         /// <summary>
