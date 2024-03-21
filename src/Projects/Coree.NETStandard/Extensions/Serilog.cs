@@ -40,7 +40,7 @@ namespace Coree.NETStandard.Extensions
             config
                 .Enrich.FromLogContext()
                 .Enrich.WithProcessId()
-                .Enrich.With(new EnhancedSourceContextShortEnricher(true,false,true))
+                .Enrich.With(new SourceContextShortEnricher(true,true,true))
                 .Enrich.WithThreadId()
                 .Enrich.WithMachineName()
                 .Enrich.WithEnvironmentUserName()
@@ -52,6 +52,11 @@ namespace Coree.NETStandard.Extensions
         public static string CommonConsoleConfigOutputTemplate()
         {
             return "{Timestamp:HH:mm:ss.ffff} {Level:u3}|{SourceContext}| {EnvironmentUserName} | {EnvironmentName} | {Message:l}{NewLine} {Exception}";
+        }
+
+        public static string SimpleOutputTemplate()
+        {
+            return "{Timestamp:HH:mm:ss.ffff} | {Level:u3} | {SourceContextShort} | {Message:l}{NewLine}{Exception}";
         }
 
         public static ILogger ForSourceContext(this ILogger logger,string? sourceContext)

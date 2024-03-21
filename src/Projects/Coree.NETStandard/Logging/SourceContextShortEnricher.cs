@@ -1,29 +1,28 @@
-﻿using Serilog.Configuration;
-using Serilog;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
 using Serilog.Core;
 using Serilog.Events;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using System.IO;
 
 namespace Coree.NETStandard.Logging
 {
-    public class EnhancedSourceContextShortEnricher : ILogEventEnricher
+    public class SourceContextShortEnricher : ILogEventEnricher
     {
-        private readonly List<string> suffixesToRemove = new List<string>() { "Service", "Services" };
+        private readonly List<string> suffixesToRemove = new List<string>() { "Service", "Services" , "AsyncCommand", "Command"  };
         private readonly bool cutTTypes;
         private readonly bool removeDots;
         private readonly bool removeSuffixes;
+        private readonly int padding;
 
-        public EnhancedSourceContextShortEnricher(bool cutTTypes = true, bool removeDots = true, bool removeSuffixes = true)
+        public SourceContextShortEnricher(bool cutTTypes = true, bool removeDots = true, bool removeSuffixes = true,int padding = 15)
         {
             this.cutTTypes = cutTTypes;
             this.removeDots = removeDots;
             this.removeSuffixes = removeSuffixes;
+            this.padding = padding; 
         }
 
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
@@ -62,9 +61,9 @@ namespace Coree.NETStandard.Logging
                         }
                     }
 
-                    shortSourceContext = shortSourceContext.PadRight(35);
+                    shortSourceContext = shortSourceContext.PadRight(padding);
                     // Create a new property with the modified value and add/update it in the log event.
-                    var modifiedProperty = propertyFactory.CreateProperty("SourceContext", shortSourceContext);
+                    var modifiedProperty = propertyFactory.CreateProperty("SourceContextShort", shortSourceContext);
                     logEvent.AddOrUpdateProperty(modifiedProperty);
                 }
             }

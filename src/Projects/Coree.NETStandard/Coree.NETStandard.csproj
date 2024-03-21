@@ -20,13 +20,18 @@
     <EmbeddedResource Remove="Template\**" />
     <None Remove="Template\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Extensions\Class1.cs" />
+  </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Extensions\Enumerable\EnumerableString.cs" />
     <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
     <None Remove="Extensions\ThreadSafeCollection.cs" />
-    <None Remove="Logging\Enricher.cs" />
     <None Remove="Options\HostedServicesCollectionOptionsProvider.cs" />
+    <None Remove="Services\FileService.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
   </ItemGroup>
   
@@ -45,6 +50,10 @@
   
   <ItemGroup>
     <Folder Include="Docfx\result\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="Extensions\Enumerable\EnumerableT.cs" />
   </ItemGroup>
   
 </Project>
