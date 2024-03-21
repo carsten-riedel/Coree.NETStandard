@@ -1,7 +1,27 @@
 {
-  "source_base_path": "C:/Users/Valgrind/source/VCS/github.com/carsten-riedel/Coree.NETStandard/src/Projects/Coree.NETStandard/Docfx/build",
+  "source_base_path": "/home/runner/work/Coree.NETStandard/Coree.NETStandard/src/Projects/Coree.NETStandard/Docfx/build",
   "xrefmap": "xrefmap.yml",
   "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.ThreadSafeCollection-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.html"
+        }
+      },
+      "version": ""
+    },
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.yml",
