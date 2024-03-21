@@ -377,6 +377,50 @@ references:
   commentId: N:Coree.NETStandard.Extensions
   fullName: Coree.NETStandard.Extensions
   nameWithType: Coree.NETStandard.Extensions
+- uid: Coree.NETStandard.Extensions.Enumerable
+  name: Coree.NETStandard.Extensions.Enumerable
+  href: api/Coree.NETStandard.Extensions.Enumerable.html
+  commentId: N:Coree.NETStandard.Extensions.Enumerable
+  fullName: Coree.NETStandard.Extensions.Enumerable
+  nameWithType: Coree.NETStandard.Extensions.Enumerable
+- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
+  name: EnumerableExtension
+  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html
+  commentId: T:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
+  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
+  nameWithType: EnumerableExtension
+- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries*
+  name: RemoveNullEntries
+  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullEntries_
+  commentId: Overload:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries
+  nameWithType: EnumerableExtension.RemoveNullEntries
+- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
+  name: RemoveNullEntries<T>(IEnumerable<T?>)
+  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullEntries__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: RemoveNullEntries(Of T)(IEnumerable(Of T))
+  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries<T>(System.Collections.Generic.IEnumerable<T?>)
+  fullName.vb: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableExtension.RemoveNullEntries<T>(IEnumerable<T?>)
+  nameWithType.vb: EnumerableExtension.RemoveNullEntries(Of T)(IEnumerable(Of T))
+- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
+  name: RemoveNullOrWhiteSpaceEntries(IEnumerable<string?>)
+  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullOrWhiteSpaceEntries_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
+  name.vb: RemoveNullOrWhiteSpaceEntries(IEnumerable(Of String))
+  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable<string?>)
+  nameWithType.vb: EnumerableExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable(Of String))
+- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries*
+  name: RemoveNullOrWhiteSpaceEntries
+  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullOrWhiteSpaceEntries_
+  commentId: Overload:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
+  nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries
 - uid: Coree.NETStandard.Extensions.SerilogExtensions
   name: SerilogExtensions
   href: api/Coree.NETStandard.Extensions.SerilogExtensions.html
@@ -425,6 +469,19 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext
   nameWithType: SerilogExtensions.ForSourceContext
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
+  name: SimpleOutputTemplate()
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_SimpleOutputTemplate
+  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate()
+  nameWithType: SerilogExtensions.SimpleOutputTemplate()
+- uid: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate*
+  name: SimpleOutputTemplate
+  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_SimpleOutputTemplate_
+  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
+  nameWithType: SerilogExtensions.SimpleOutputTemplate
 - uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger,System.Action{Serilog.LoggerConfiguration})
   name: UseConfigurationMethod(ILogger, Action<LoggerConfiguration>?)
   href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_Serilog_ILogger_System_Action_Serilog_LoggerConfiguration__
@@ -597,44 +654,44 @@ references:
   commentId: N:Coree.NETStandard.Logging
   fullName: Coree.NETStandard.Logging
   nameWithType: Coree.NETStandard.Logging
-- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
-  name: EnhancedSourceContextShortEnricher
-  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html
-  commentId: T:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
-  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher
-  nameWithType: EnhancedSourceContextShortEnricher
-- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean)
-  name: EnhancedSourceContextShortEnricher(bool, bool, bool)
-  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_
-  commentId: M:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean)
-  name.vb: New(Boolean, Boolean, Boolean)
-  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher(bool, bool, bool)
-  fullName.vb: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.New(Boolean, Boolean, Boolean)
-  nameWithType: EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher(bool, bool, bool)
-  nameWithType.vb: EnhancedSourceContextShortEnricher.New(Boolean, Boolean, Boolean)
-- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor*
-  name: EnhancedSourceContextShortEnricher
-  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher__ctor_
-  commentId: Overload:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.#ctor
+- uid: Coree.NETStandard.Logging.SourceContextShortEnricher
+  name: SourceContextShortEnricher
+  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html
+  commentId: T:Coree.NETStandard.Logging.SourceContextShortEnricher
+  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher
+  nameWithType: SourceContextShortEnricher
+- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
+  name: SourceContextShortEnricher(bool, bool, bool, int)
+  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_
+  commentId: M:Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
+  name.vb: New(Boolean, Boolean, Boolean, Integer)
+  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
+  fullName.vb: Coree.NETStandard.Logging.SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
+  nameWithType.vb: SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
+- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor*
+  name: SourceContextShortEnricher
+  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher__ctor_
+  commentId: Overload:Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher
-  fullName.vb: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.New
-  nameWithType: EnhancedSourceContextShortEnricher.EnhancedSourceContextShortEnricher
-  nameWithType.vb: EnhancedSourceContextShortEnricher.New
-- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.SourceContextShortEnricher
+  fullName.vb: Coree.NETStandard.Logging.SourceContextShortEnricher.New
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher
+  nameWithType.vb: SourceContextShortEnricher.New
+- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
   name: Enrich(LogEvent, ILogEventPropertyFactory)
-  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
-  commentId: M:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
-  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
-  nameWithType: EnhancedSourceContextShortEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
-- uid: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich*
+  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  commentId: M:Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  nameWithType: SourceContextShortEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich*
   name: Enrich
-  href: api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html#Coree_NETStandard_Logging_EnhancedSourceContextShortEnricher_Enrich_
-  commentId: Overload:Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich
+  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher_Enrich_
+  commentId: Overload:Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich
   isSpec: "True"
-  fullName: Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.Enrich
-  nameWithType: EnhancedSourceContextShortEnricher.Enrich
+  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich
+  nameWithType: SourceContextShortEnricher.Enrich
 - uid: Coree.NETStandard.Options
   name: Coree.NETStandard.Options
   href: api/Coree.NETStandard.Options.html
@@ -733,6 +790,79 @@ references:
   commentId: N:Coree.NETStandard.Services
   fullName: Coree.NETStandard.Services
   nameWithType: Coree.NETStandard.Services
+- uid: Coree.NETStandard.Services.FileService
+  name: FileService
+  href: api/Coree.NETStandard.Services.FileService.html
+  commentId: T:Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  nameWithType: FileService
+- uid: Coree.NETStandard.Services.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService})
+  name: FileService(ILogger<FileService>)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_FileService__
+  commentId: M:Coree.NETStandard.Services.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService})
+  name.vb: New(ILogger(Of FileService))
+  fullName: Coree.NETStandard.Services.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.FileService>)
+  fullName.vb: Coree.NETStandard.Services.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.FileService))
+  nameWithType: FileService.FileService(ILogger<FileService>)
+  nameWithType.vb: FileService.New(ILogger(Of FileService))
+- uid: Coree.NETStandard.Services.FileService.#ctor*
+  name: FileService
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.FileService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Services.FileService.FileService
+  fullName.vb: Coree.NETStandard.Services.FileService.New
+  nameWithType: FileService.FileService
+  nameWithType.vb: FileService.New
+- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(System.String)
+  name: GetCorrectCasedPath(string?)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPath_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.GetCorrectCasedPath(System.String)
+  name.vb: GetCorrectCasedPath(String)
+  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(String)
+  nameWithType: FileService.GetCorrectCasedPath(string?)
+  nameWithType.vb: FileService.GetCorrectCasedPath(String)
+- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPath*
+  name: GetCorrectCasedPath
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPath_
+  commentId: Overload:Coree.NETStandard.Services.FileService.GetCorrectCasedPath
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPath
+  nameWithType: FileService.GetCorrectCasedPath
+- uid: Coree.NETStandard.Services.FileService.IsCommandAvailable(System.String)
+  name: IsCommandAvailable(string?)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IsCommandAvailable(System.String)
+  name.vb: IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IsCommandAvailable(String)
+  nameWithType: FileService.IsCommandAvailable(string?)
+  nameWithType.vb: FileService.IsCommandAvailable(String)
+- uid: Coree.NETStandard.Services.FileService.IsCommandAvailable*
+  name: IsCommandAvailable
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IsCommandAvailable
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailable
+  nameWithType: FileService.IsCommandAvailable
+- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(System.String,System.String)
+  name: IsExecutableFilePresent(string?, string)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresent_System_String_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IsExecutableFilePresent(System.String,System.String)
+  name.vb: IsExecutableFilePresent(String, String)
+  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(string?, string)
+  fullName.vb: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(String, String)
+  nameWithType: FileService.IsExecutableFilePresent(string?, string)
+  nameWithType.vb: FileService.IsExecutableFilePresent(String, String)
+- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresent*
+  name: IsExecutableFilePresent
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresent_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IsExecutableFilePresent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresent
+  nameWithType: FileService.IsExecutableFilePresent
 - uid: Coree.NETStandard.Services.IRuntimeInsights
   name: IRuntimeInsights
   href: api/Coree.NETStandard.Services.IRuntimeInsights.html
