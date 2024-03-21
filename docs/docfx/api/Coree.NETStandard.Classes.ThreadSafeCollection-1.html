@@ -1,0 +1,1219 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html translate="no">
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="google" content="notranslate">
+      <title>Class ThreadSafeCollection&lt;T&gt;
+ | Coree.NETStandard </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class ThreadSafeCollection&lt;T&gt;
+ | Coree.NETStandard ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.json">
+      <meta property="docfx:tocrel" content="toc.json">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="Coree.NETStandard">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+
+                <ul class="nav level1 navbar-nav">
+                      <li>
+                          <a href="../docs/introduction.html" title="Docs">Docs</a>
+                      </li>
+                      <li>
+                          <a href="../api/Coree.NETStandard.Classes.html" title="API">API</a>
+                      </li>
+                </ul>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container-fluid body-content hide-when-search">
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div>
+              <div class="sidefilter">
+                <form class="toc-filter">
+                  <span class="glyphicon glyphicon-filter filter-icon"></span>
+                  <input type="text" id="toc_filter_input" placeholder="Enter here to filter..." onkeypress="if(event.keyCode==13) {return false;}">
+                </form>
+              </div>
+              <div class="sidetoc">
+                <div class="toc" id="toc">
+
+                  <ul class="nav level1">
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Classes.html" title="Coree.NETStandard.Classes" class="">Coree.NETStandard.Classes</a>
+
+                        <ul class="nav level2">
+                          <li class="active">
+                            <a href="Coree.NETStandard.Classes.ThreadSafeCollection-1.html" title="ThreadSafeCollection&lt;T&gt;" class="active">ThreadSafeCollection&lt;T&gt;</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Extensions.html" title="Coree.NETStandard.Extensions" class="">Coree.NETStandard.Extensions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.SerilogExtensions.html" title="SerilogExtensions" class="">SerilogExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Extensions.ServiceCollection.html" title="Coree.NETStandard.Extensions.ServiceCollection" class="">Coree.NETStandard.Extensions.ServiceCollection</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.HostedService.html" title="Coree.NETStandard.HostedService" class="">Coree.NETStandard.HostedService</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html" title="HostedServiceSampleImplementation" class="">HostedServiceSampleImplementation</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html" title="HostedServiceSampleImplementationOptions" class="">HostedServiceSampleImplementationOptions</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Logging.html" title="Coree.NETStandard.Logging" class="">Coree.NETStandard.Logging</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html" title="EnhancedSourceContextShortEnricher" class="">EnhancedSourceContextShortEnricher</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Options.html" title="Coree.NETStandard.Options" class="">Coree.NETStandard.Options</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html" title="HostedServicesCollectionOptionsProvider&lt;T&gt;" class="">HostedServicesCollectionOptionsProvider&lt;T&gt;</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html" title="IHostedServicesCollectionOptionsProvider&lt;T&gt;" class="">IHostedServicesCollectionOptionsProvider&lt;T&gt;</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Services.html" title="Coree.NETStandard.Services" class="">Coree.NETStandard.Services</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Services.IRuntimeInsights.html" title="IRuntimeInsights" class="">IRuntimeInsights</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Services.RuntimeInsightsService.html" title="RuntimeInsightsService" class="">RuntimeInsightsService</a>
+                          </li>
+                        </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1">
+
+
+
+  <h1 id="Coree_NETStandard_Classes_ThreadSafeCollection_1" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1" class="text-break">Class ThreadSafeCollection&lt;T&gt;
+</h1>
+  <div class="markdown level0 summary"><p>Represents a thread-safe collection of objects that can be accessed by multiple threads concurrently.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</div>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Classes.html">Classes</a></h6>
+  <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ThreadSafeCollection&lt;T&gt; : IEnumerable&lt;T?&gt;, IEnumerable where T : class?</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of elements in the collection. This type can be a class, including nullable reference types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This collection uses locking to ensure that its operations are thread-safe. The collection is implemented
+as a list where items can be added, removed, or retrieved in a manner that prevents race conditions
+and data corruption when accessed from multiple threads. Null values can be stored, depending on the type <code class="typeparamref">T</code>.</p>
+</div>
+  <h3 id="constructors">Constructors
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L35">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.#ctor*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.#ctor">ThreadSafeCollection()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ThreadSafeCollection class that is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ThreadSafeCollection()</code></pre>
+  </div>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Creates an empty collection with no items. The collection is ready to be accessed by multiple threads
+using its thread-safe methods. It supports storing null values, if the type <code class="typeparamref">T</code> permits.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Count.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Count%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L400">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Count_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Count*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Count" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the number of items in the collection, ensuring thread safety.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><p>The number of items currently in the collection. Access is synchronized to prevent race conditions.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.HasItems%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L449">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.HasItems*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.HasItems">HasItems</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether the collection contains any items, ensuring thread safety.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasItems { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p><code>true</code> if the collection contains one or more items; otherwise, <code>false</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property locks the collection to ensure that the check is performed in a thread-safe manner,
+preventing race conditions that could arise from concurrent modifications to the collection.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Item(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L420">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Item*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Item(System.Int32)">this[int]</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the item at the specified index in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? this[int index] { get; set; }</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the item to get or set.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The item at the specified index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Access to the item is synchronized to ensure thread safety. Setting an item acquires a lock to prevent race conditions.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>Thrown when the index is outside the bounds of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Add__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Add(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L299">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Add*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Add(`0)">Add(T?)</h4>
+  <div class="markdown level1 summary"><p>Adds an item to the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(T? item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to be added to the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely add the item, supporting concurrent modifications.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Dequeue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L134">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Dequeue*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Dequeue">Dequeue()</h4>
+  <div class="markdown level1 summary"><p>Removes and returns the item at the beginning of the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Dequeue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The item at the beginning of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the remove operation. It is part of the thread-safe queue functionality,
+providing a way to dequeue items (remove from the beginning). If the collection is empty, it throws an InvalidOperationException to
+enforce handling of the empty state condition by the caller.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when attempting to perform the Dequeue operation on an empty collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Enqueue(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L116">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Enqueue*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Enqueue(`0)">Enqueue(T?)</h4>
+  <div class="markdown level1 summary"><p>Adds an item to the end of the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Enqueue(T? item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to add to the collection. Can be null if the type <code class="typeparamref">T</code> allows it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method ensures that items can be added to the collection safely from multiple threads by synchronizing access.
+It functions as part of the thread-safe queue functionality, allowing items to be enqueued (added to the end).</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.GetCollectionCopyToList%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L381">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetCollectionCopyToList*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetCollectionCopyToList">GetCollectionCopyToList()</h4>
+  <div class="markdown level1 summary"><p>Creates and returns a deep copy of the entire collection as a List of T.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;T?&gt; GetCollectionCopyToList()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
+        <td><p>A new List containing deep copies of the items in the collection. Returns an empty list if the collection is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Locks the collection to ensure thread safety during the copy process. This method uses JSON serialization to create
+deep copies of the items, providing isolation from the original items. Modifications to the returned list or its items
+will not affect the original collection.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.GetEnumerator%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L210">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetEnumerator*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetEnumerator">GetEnumerator()</h4>
+  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator&lt;T?&gt; GetEnumerator()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</td>
+        <td><p>An IEnumerator&lt;T?&gt; that can be used to iterate through the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method creates a snapshot of the current state of the collection and returns an enumerator for this snapshot,
+allowing for safe iteration over the collection items even when other threads might be modifying the collection concurrently.
+Note that the snapshot is a shallow copy; thus, the enumeration reflects the collection's state at the moment of the snapshot's creation.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.GetItemAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L334">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemAt*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemAt(System.Int32)">GetItemAt(int)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the item at the specified index in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetItemAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the item to retrieve.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The item at the specified index. Can be null if the item itself is null or if the type <code class="typeparamref">T</code> allows null values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Accesses the collection in a synchronized context to ensure safe retrieval of the item.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>Thrown when the specified index is outside the bounds of the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.GetItemCopyAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L358">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemCopyAt*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemCopyAt(System.Int32)">GetItemCopyAt(int)</h4>
+  <div class="markdown level1 summary"><p>Returns a deep copy of the item at the specified index, ensuring thread safety and isolation from the original collection.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? GetItemCopyAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the item to copy.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>A deep copy of the item at the specified index. Returns null if the original item is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method locks the collection during the operation and uses JSON serialization to create a deep copy of the item,
+ensuring that modifications to the returned object do not affect the original item in the collection.
+Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if the index is out of the valid range.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>Thrown when the index is out of range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.LockedLinqDeepCopy%60%601(System.Func%7BSystem.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L186">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinqDeepCopy*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinqDeepCopy``1(System.Func{System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEnumerable{``0}})">LockedLinqDeepCopy&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TResult&gt; LockedLinqDeepCopy&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt; operation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;&gt;</td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>A function representing the LINQ operation to be performed on the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains a deep copy of the result of applying the LINQ operation on the collection snapshot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Similar to <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___">LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</a>, this method locks the collection and operates on a snapshot to ensure thread safety.
+After performing the specified LINQ operation, it creates a deep copy of the result using JSON serialization.
+This approach guarantees that the operation's results are completely isolated from the original items in the collection,
+providing additional safety against mutations.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.LockedLinq%60%601(System.Func%7BSystem.Collections.Generic.IEnumerable%7B%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L164">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinq*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinq``1(System.Func{System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEnumerable{``0}})">LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</h4>
+  <div class="markdown level1 summary"><p>Performs a LINQ operation on a snapshot of the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;TResult&gt; LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt; operation)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;&gt;</td>
+        <td><span class="parametername">operation</span></td>
+        <td><p>A function representing the LINQ operation to be performed on the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains the result of applying the LINQ operation on the collection snapshot.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TResult</span></td>
+        <td><p>The type of the result elements.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0____remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method locks the collection, takes a snapshot, and then applies the specified LINQ operation.
+It ensures thread safety by preventing other operations from modifying the collection during execution.
+The operation is performed on a snapshot to avoid locking during the entire enumeration,
+but it means the operation does not reflect changes made to the collection after the snapshot is taken.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Peek%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L91">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Peek*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Peek">Peek()</h4>
+  <div class="markdown level1 summary"><p>Returns the last item from the collection without removing it, in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Peek()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the retrieval operation. If the collection is empty,
+it throws an InvalidOperationException to notify the caller of the empty state, aligning with the behavior of Pop.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the collection is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Pop%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L67">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Pop*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Pop">Pop()</h4>
+  <div class="markdown level1 summary"><p>Removes and returns the last item from the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Pop()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the remove operation. If the collection is empty,
+it throws an InvalidOperationException. This change ensures that the caller is explicitly aware of the empty state.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
+        <td><p>Thrown when the collection is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Push__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Push(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L50">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Push*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Push(`0)">Push(T?)</h4>
+  <div class="markdown level1 summary"><p>Adds an item to the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Push(T? item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to add to the collection. Can be null for nullable reference types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method ensures that the collection can be safely modified from multiple threads by synchronizing access.
+The item is added to the end of the collection. It accepts null values for types that allow it.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Remove(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L315">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Remove*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Remove(`0)">Remove(T?)</h4>
+  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific item from the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Remove(T? item)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">item</span></td>
+        <td><p>The item to remove from the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove__0__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+If the item is not found, no action is taken.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_System_Func__0_System_Boolean__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.Take(System.Func%7B%600%2CSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L274">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Take*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_System_Func__0_System_Boolean__" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Take(System.Func{`0,System.Boolean})">Take(Func&lt;T?, bool&gt;)</h4>
+  <div class="markdown level1 summary"><p>Finds and removes the first item matching the given predicate from the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Take(Func&lt;T?, bool&gt; predicate)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
+        <td><span class="parametername">predicate</span></td>
+        <td><p>The predicate used to find the item to remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The item that was removed from the collection, or <code>null</code> if no item matched the predicate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_System_Func__0_System_Boolean___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+If no item matches the predicate, <code>null</code> is returned.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601.TakeAt(System.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L250">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAt*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAt(System.Int32)">TakeAt(int)</h4>
+  <div class="markdown level1 summary"><p>Gets and removes the item at the specified index from the collection in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? TakeAt(int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The zero-based index of the item to fetch and remove.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>The item that was removed from the collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+If the index is out of range, an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> is thrown.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
+        <td><p>Thrown when the index is out of range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>
+  </div>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeCollection_1.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeCollection%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeCollection.cs/#L23" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      <pre></pre>
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
