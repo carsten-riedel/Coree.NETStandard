@@ -335,6 +335,24 @@ references:
   fullName.vb: Coree.NETStandard.Classes.ThreadSafeCollection(Of T).Take
   nameWithType: ThreadSafeCollection<T>.Take
   nameWithType.vb: ThreadSafeCollection(Of T).Take
+- uid: Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll(System.Func{`0,System.Boolean})
+  name: TakeAll(Func<T?, bool>)
+  href: api/Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAll_System_Func__0_System_Boolean__
+  commentId: M:Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll(System.Func{`0,System.Boolean})
+  name.vb: TakeAll(Func(Of T, Boolean))
+  fullName: Coree.NETStandard.Classes.ThreadSafeCollection<T>.TakeAll(System.Func<T?, bool>)
+  fullName.vb: Coree.NETStandard.Classes.ThreadSafeCollection(Of T).TakeAll(System.Func(Of T, Boolean))
+  nameWithType: ThreadSafeCollection<T>.TakeAll(Func<T?, bool>)
+  nameWithType.vb: ThreadSafeCollection(Of T).TakeAll(Func(Of T, Boolean))
+- uid: Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll*
+  name: TakeAll
+  href: api/Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAll_
+  commentId: Overload:Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.ThreadSafeCollection<T>.TakeAll
+  fullName.vb: Coree.NETStandard.Classes.ThreadSafeCollection(Of T).TakeAll
+  nameWithType: ThreadSafeCollection<T>.TakeAll
+  nameWithType.vb: ThreadSafeCollection(Of T).TakeAll
 - uid: Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAt(System.Int32)
   name: TakeAt(int)
   href: api/Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32_
