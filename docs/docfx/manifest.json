@@ -24,6 +24,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.yml",
       "output": {
         ".html": {
@@ -104,10 +124,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.yml",
+      "source_relative_path": "api/Coree.NETStandard.Logging.SourceContextShortEnricher.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html"
+          "relative_path": "api/Coree.NETStandard.Logging.SourceContextShortEnricher.html"
         }
       },
       "version": ""
@@ -148,6 +168,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
         }
       },
       "version": ""
