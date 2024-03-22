@@ -18,7 +18,7 @@ namespace Coree.NETStandard.Services
         string? GetCorrectCasedPath(string? path);
         Task<string?> GetCorrectCasedPathAsync(string? path, CancellationToken cancellationToken);
         string? IsCommandAvailable(string? command);
-        Task<string?> IsCommandAvailableAsync(string? command);
+        Task<string?> IsCommandAvailableAsync(string? command, CancellationToken cancellationToken);
     }
 
     /// <summary>
@@ -130,10 +130,10 @@ namespace Coree.NETStandard.Services
 
         public string? IsCommandAvailable(string? path)
         {
-            return IsCommandAvailableAsync(path).GetAwaiter().GetResult();
+            return IsCommandAvailableAsync(path, new CancellationTokenSource().Token).GetAwaiter().GetResult();
         }
 
-        public async Task<string?> IsCommandAvailableAsync(string? command)
+        public async Task<string?> IsCommandAvailableAsync(string? command, CancellationToken cancellationToken)
         {
             if (command == null)
             {
