@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
@@ -15,7 +16,7 @@ namespace Coree.NETStandard.Services
     public partial interface IFileService
     {
         string? GetCorrectCasedPath(string? path);
-        Task<string?> GetCorrectCasedPathAsync(string? path);
+        Task<string?> GetCorrectCasedPathAsync(string? path, CancellationToken cancellationToken);
         string? IsCommandAvailable(string? command);
         Task<string?> IsCommandAvailableAsync(string? command);
     }
@@ -38,7 +39,7 @@ namespace Coree.NETStandard.Services
 
         public string? GetCorrectCasedPath(string? path)
         {
-            return GetCorrectCasedPathAsync(path).GetAwaiter().GetResult();
+            return GetCorrectCasedPathAsync(path, new CancellationTokenSource().Token).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -53,7 +54,7 @@ namespace Coree.NETStandard.Services
         /// <param name="path">The path to correct. Can be either a file or directory path.</param>
         /// <returns>The path with corrected casing if the file or directory exists. Returns null for null or empty input,
         /// returns the original path if the path does not exist or if the file system is case-sensitive and not NTFS or FAT.</returns>
-        public async Task<string?> GetCorrectCasedPathAsync(string? path)
+        public async Task<string?> GetCorrectCasedPathAsync(string? path, CancellationToken cancellationToken)
         {
             if (string.IsNullOrEmpty(path))
             {
