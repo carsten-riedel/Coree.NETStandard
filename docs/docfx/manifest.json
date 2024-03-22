@@ -174,20 +174,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.FileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileService.FileService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.IFileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.IFileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
         }
       },
       "version": ""
