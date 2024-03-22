@@ -33,6 +33,7 @@
     <None Remove="Options\HostedServicesCollectionOptionsProvider.cs" />
     <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
+    <None Remove="TypeRegistrar.cs" />
   </ItemGroup>
   
   <ItemGroup>
@@ -46,6 +47,8 @@
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+    <PackageReference Include="Spectre.Console" Version="0.48.0" />
+    <PackageReference Include="Spectre.Console.Cli" Version="0.48.0" />
   </ItemGroup>
   
   <ItemGroup>
