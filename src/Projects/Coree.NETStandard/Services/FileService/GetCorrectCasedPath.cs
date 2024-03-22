@@ -4,24 +4,26 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-
+using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services
+namespace Coree.NETStandard.Services.FileService
 {
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public interface IFileService
+    public partial interface IFileService
     {
         string? GetCorrectCasedPath(string? path);
+        Task<string?> GetCorrectCasedPathAsync(string? path);
         string? IsCommandAvailable(string? command);
+        Task<string?> IsCommandAvailableAsync(string? command);
     }
 
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public class FileService : IFileService
+    public partial class FileService : IFileService
     {
 
         private readonly ILogger<FileService> logger;
@@ -32,6 +34,11 @@ namespace Coree.NETStandard.Services
         public FileService(ILogger<FileService> logger)
         {
             this.logger = logger;
+        }
+
+        public string? GetCorrectCasedPath(string? path)
+        {
+            return GetCorrectCasedPathAsync(path).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -46,7 +53,7 @@ namespace Coree.NETStandard.Services
         /// <param name="path">The path to correct. Can be either a file or directory path.</param>
         /// <returns>The path with corrected casing if the file or directory exists. Returns null for null or empty input,
         /// returns the original path if the path does not exist or if the file system is case-sensitive and not NTFS or FAT.</returns>
-        public string? GetCorrectCasedPath(string? path)
+        public async Task<string?> GetCorrectCasedPathAsync(string? path)
         {
             if (string.IsNullOrEmpty(path))
             {
@@ -120,7 +127,12 @@ namespace Coree.NETStandard.Services
             return currentPath;
         }
 
-        public string? IsCommandAvailable(string? command)
+        public string? IsCommandAvailable(string? path)
+        {
+            return IsCommandAvailableAsync(path).GetAwaiter().GetResult();
+        }
+
+        public async Task<string?> IsCommandAvailableAsync(string? command)
         {
             if (command == null)
             {
@@ -134,12 +146,12 @@ namespace Coree.NETStandard.Services
                 return null;
             }
 
-            string[] pathDirectoryList = pathVariable2.Split(new char[] { Path.PathSeparator },StringSplitOptions.RemoveEmptyEntries);
+            string[] pathDirectoryList = pathVariable2.Split(new char[] { Path.PathSeparator }, StringSplitOptions.RemoveEmptyEntries);
 
             //Remove not existing
             for (int i = 0; i < pathDirectoryList.Length; i++)
             {
-                var directoryInfo = new System.IO.DirectoryInfo(pathDirectoryList[i]);
+                var directoryInfo = new DirectoryInfo(pathDirectoryList[i]);
                 if (directoryInfo.Exists == false)
                 {
                     logger.LogInformation($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
@@ -155,8 +167,8 @@ namespace Coree.NETStandard.Services
                 {
                     try
                     {
-                        var directoryInfo = new System.IO.DirectoryInfo(pathDirectoryList[i]);
-                        var parent = System.IO.Directory.GetDirectories(directoryInfo.Parent.FullName);
+                        var directoryInfo = new DirectoryInfo(pathDirectoryList[i]);
+                        var parent = Directory.GetDirectories(directoryInfo.Parent.FullName);
                         var sss = parent.FirstOrDefault(e => e.Equals(pathDirectoryList[i].Trim(Path.DirectorySeparatorChar), StringComparison.InvariantCultureIgnoreCase));
 
                         pathDirectoryList[i] = sss;
@@ -184,6 +196,11 @@ namespace Coree.NETStandard.Services
 
         public string? IsExecutableFilePresent(string? command, string path)
         {
+            return IsExecutableFilePresentAsync(command, path).GetAwaiter().GetResult();
+        }
+
+        public async Task<string?> IsExecutableFilePresentAsync(string? command, string path)
+        {
             if (command == null)
             {
                 return null;
@@ -196,10 +213,10 @@ namespace Coree.NETStandard.Services
             foreach (var ext in executableExtensions)
             {
                 string commandPath = Path.Combine(path, command + ext);
-                System.IO.FileInfo fileinfo = new FileInfo(commandPath);
+                FileInfo fileinfo = new FileInfo(commandPath);
                 if (fileinfo.Exists)
                 {
-                    var fi = System.IO.Directory.GetFiles(fileinfo.DirectoryName);
+                    var fi = Directory.GetFiles(fileinfo.DirectoryName);
                     var re = fi.FirstOrDefault(e => e.Equals(fileinfo.FullName, StringComparison.CurrentCultureIgnoreCase));
                     return re;
                 }

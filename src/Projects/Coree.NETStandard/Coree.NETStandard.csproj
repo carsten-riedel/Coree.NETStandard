@@ -31,7 +31,7 @@
     <None Remove="Extensions\ServiceProvider.cs" />
     <None Remove="Extensions\ThreadSafeCollection.cs" />
     <None Remove="Options\HostedServicesCollectionOptionsProvider.cs" />
-    <None Remove="Services\FileService.cs" />
+    <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
   </ItemGroup>
   
