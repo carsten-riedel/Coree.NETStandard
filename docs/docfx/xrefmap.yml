@@ -863,6 +863,44 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresent
   nameWithType: FileService.IsExecutableFilePresent
+- uid: Coree.NETStandard.Services.IFileService
+  name: IFileService
+  href: api/Coree.NETStandard.Services.IFileService.html
+  commentId: T:Coree.NETStandard.Services.IFileService
+  fullName: Coree.NETStandard.Services.IFileService
+  nameWithType: IFileService
+- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(System.String)
+  name: GetCorrectCasedPath(string?)
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPath_System_String_
+  commentId: M:Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(System.String)
+  name.vb: GetCorrectCasedPath(String)
+  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(string?)
+  fullName.vb: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(String)
+  nameWithType: IFileService.GetCorrectCasedPath(string?)
+  nameWithType.vb: IFileService.GetCorrectCasedPath(String)
+- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath*
+  name: GetCorrectCasedPath
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPath_
+  commentId: Overload:Coree.NETStandard.Services.IFileService.GetCorrectCasedPath
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath
+  nameWithType: IFileService.GetCorrectCasedPath
+- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailable(System.String)
+  name: IsCommandAvailable(string?)
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.IFileService.IsCommandAvailable(System.String)
+  name.vb: IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.IFileService.IsCommandAvailable(String)
+  nameWithType: IFileService.IsCommandAvailable(string?)
+  nameWithType.vb: IFileService.IsCommandAvailable(String)
+- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailable*
+  name: IsCommandAvailable
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.IFileService.IsCommandAvailable
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailable
+  nameWithType: IFileService.IsCommandAvailable
 - uid: Coree.NETStandard.Services.IRuntimeInsights
   name: IRuntimeInsights
   href: api/Coree.NETStandard.Services.IRuntimeInsights.html
