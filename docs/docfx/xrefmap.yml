@@ -863,15 +863,15 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.FileService.IsCommandAvailable
   nameWithType: FileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String)
-  name: IsCommandAvailableAsync(string?)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailableAsync_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String)
-  name.vb: IsCommandAvailableAsync(String)
-  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(string?)
-  fullName.vb: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(String)
-  nameWithType: FileService.IsCommandAvailableAsync(string?)
-  nameWithType.vb: FileService.IsCommandAvailableAsync(String)
+- uid: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  name: IsCommandAvailableAsync(string?, CancellationToken)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  name.vb: IsCommandAvailableAsync(String, CancellationToken)
+  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
+  nameWithType: FileService.IsCommandAvailableAsync(string?, CancellationToken)
+  nameWithType.vb: FileService.IsCommandAvailableAsync(String, CancellationToken)
 - uid: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync*
   name: IsCommandAvailableAsync
   href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailableAsync_
@@ -965,15 +965,15 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailable
   nameWithType: IFileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String)
-  name: IsCommandAvailableAsync(string?)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailableAsync_System_String_
-  commentId: M:Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String)
-  name.vb: IsCommandAvailableAsync(String)
-  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(string?)
-  fullName.vb: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(String)
-  nameWithType: IFileService.IsCommandAvailableAsync(string?)
-  nameWithType.vb: IFileService.IsCommandAvailableAsync(String)
+- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  name: IsCommandAvailableAsync(string?, CancellationToken)
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  name.vb: IsCommandAvailableAsync(String, CancellationToken)
+  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
+  nameWithType: IFileService.IsCommandAvailableAsync(string?, CancellationToken)
+  nameWithType.vb: IFileService.IsCommandAvailableAsync(String, CancellationToken)
 - uid: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync*
   name: IsCommandAvailableAsync
   href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailableAsync_
