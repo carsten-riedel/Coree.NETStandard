@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services
 {
     /// <summary>
     /// Defines a service for file system operations.
