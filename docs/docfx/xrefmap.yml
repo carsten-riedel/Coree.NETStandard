@@ -831,15 +831,15 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPath
   nameWithType: FileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String)
-  name: GetCorrectCasedPathAsync(string?)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPathAsync_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String)
-  name.vb: GetCorrectCasedPathAsync(String)
-  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(string?)
-  fullName.vb: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(String)
-  nameWithType: FileService.GetCorrectCasedPathAsync(string?)
-  nameWithType.vb: FileService.GetCorrectCasedPathAsync(String)
+- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  name: GetCorrectCasedPathAsync(string?, CancellationToken)
+  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
+  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
+  nameWithType: FileService.GetCorrectCasedPathAsync(string?, CancellationToken)
+  nameWithType.vb: FileService.GetCorrectCasedPathAsync(String, CancellationToken)
 - uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync*
   name: GetCorrectCasedPathAsync
   href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPathAsync_
@@ -933,15 +933,15 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath
   nameWithType: IFileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String)
-  name: GetCorrectCasedPathAsync(string?)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPathAsync_System_String_
-  commentId: M:Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String)
-  name.vb: GetCorrectCasedPathAsync(String)
-  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(string?)
-  fullName.vb: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(String)
-  nameWithType: IFileService.GetCorrectCasedPathAsync(string?)
-  nameWithType.vb: IFileService.GetCorrectCasedPathAsync(String)
+- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  name: GetCorrectCasedPathAsync(string?, CancellationToken)
+  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
+  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
+  nameWithType: IFileService.GetCorrectCasedPathAsync(string?, CancellationToken)
+  nameWithType.vb: IFileService.GetCorrectCasedPathAsync(String, CancellationToken)
 - uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync*
   name: GetCorrectCasedPathAsync
   href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPathAsync_
