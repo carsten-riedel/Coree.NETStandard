@@ -7,8 +7,6 @@ using System.Text.Json;
 using System.Collections;
 using System.Linq;
 
-
-
 namespace Coree.NETStandard.Classes
 {
     /// <summary>
