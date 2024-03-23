@@ -1,18 +1,155 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
-- uid: Coree.NETStandard
-  name: Coree.NETStandard
-  href: api/Coree.NETStandard.html
-  commentId: N:Coree.NETStandard
-  fullName: Coree.NETStandard
-  nameWithType: Coree.NETStandard
 - uid: Coree.NETStandard.Classes
   name: Coree.NETStandard.Classes
   href: api/Coree.NETStandard.Classes.html
   commentId: N:Coree.NETStandard.Classes
   fullName: Coree.NETStandard.Classes
   nameWithType: Coree.NETStandard.Classes
+- uid: Coree.NETStandard.Classes.Spectre
+  name: Coree.NETStandard.Classes.Spectre
+  href: api/Coree.NETStandard.Classes.Spectre.html
+  commentId: N:Coree.NETStandard.Classes.Spectre
+  fullName: Coree.NETStandard.Classes.Spectre
+  nameWithType: Coree.NETStandard.Classes.Spectre
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar
+  name: TypeRegistrar
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html
+  commentId: T:Coree.NETStandard.Classes.Spectre.TypeRegistrar
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar
+  nameWithType: TypeRegistrar
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: TypeRegistrar(IServiceCollection)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: New(IServiceCollection)
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.TypeRegistrar(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeRegistrar.New(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: TypeRegistrar.TypeRegistrar(IServiceCollection)
+  nameWithType.vb: TypeRegistrar.New(IServiceCollection)
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.#ctor*
+  name: TypeRegistrar
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeRegistrar.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.TypeRegistrar
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeRegistrar.New
+  nameWithType: TypeRegistrar.TypeRegistrar
+  nameWithType.vb: TypeRegistrar.New
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build
+  name: Build()
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_Build
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build()
+  nameWithType: TypeRegistrar.Build()
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build*
+  name: Build
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_Build_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Build
+  nameWithType: TypeRegistrar.Build
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register(System.Type,System.Type)
+  name: Register(Type, Type)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_Register_System_Type_System_Type_
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register(System.Type,System.Type)
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register(System.Type, System.Type)
+  nameWithType: TypeRegistrar.Register(Type, Type)
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register*
+  name: Register
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_Register_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.Register
+  nameWithType: TypeRegistrar.Register
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name: RegisterInstance(Type, object)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_RegisterInstance_System_Type_System_Object_
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name.vb: RegisterInstance(Type, Object)
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance(System.Type, object)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance(System.Type, Object)
+  nameWithType: TypeRegistrar.RegisterInstance(Type, object)
+  nameWithType.vb: TypeRegistrar.RegisterInstance(Type, Object)
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance*
+  name: RegisterInstance
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_RegisterInstance_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterInstance
+  nameWithType: TypeRegistrar.RegisterInstance
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name: RegisterLazy(Type, Func<object>)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_RegisterLazy_System_Type_System_Func_System_Object__
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name.vb: RegisterLazy(Type, Func(Of Object))
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
+  nameWithType: TypeRegistrar.RegisterLazy(Type, Func<object>)
+  nameWithType.vb: TypeRegistrar.RegisterLazy(Type, Func(Of Object))
+- uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy*
+  name: RegisterLazy
+  href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html#Coree_NETStandard_Classes_Spectre_TypeRegistrar_RegisterLazy_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeRegistrar.RegisterLazy
+  nameWithType: TypeRegistrar.RegisterLazy
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver
+  name: TypeResolver
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html
+  commentId: T:Coree.NETStandard.Classes.Spectre.TypeResolver
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver
+  nameWithType: TypeResolver
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.#ctor(System.IServiceProvider)
+  name: TypeResolver(IServiceProvider)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver__ctor_System_IServiceProvider_
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeResolver.#ctor(System.IServiceProvider)
+  name.vb: New(IServiceProvider)
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.TypeResolver(System.IServiceProvider)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeResolver.New(System.IServiceProvider)
+  nameWithType: TypeResolver.TypeResolver(IServiceProvider)
+  nameWithType.vb: TypeResolver.New(IServiceProvider)
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.#ctor*
+  name: TypeResolver
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.TypeResolver
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeResolver.New
+  nameWithType: TypeResolver.TypeResolver
+  nameWithType.vb: TypeResolver.New
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose
+  name: Dispose()
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver_Dispose
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose()
+  nameWithType: TypeResolver.Dispose()
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose*
+  name: Dispose
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver_Dispose_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.Dispose
+  nameWithType: TypeResolver.Dispose
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve(System.Type)
+  name: Resolve(Type?)
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver_Resolve_System_Type_
+  commentId: M:Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve(System.Type)
+  name.vb: Resolve(Type)
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve(System.Type?)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve(System.Type)
+  nameWithType: TypeResolver.Resolve(Type?)
+  nameWithType.vb: TypeResolver.Resolve(Type)
+- uid: Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve*
+  name: Resolve
+  href: api/Coree.NETStandard.Classes.Spectre.TypeResolver.html#Coree_NETStandard_Classes_Spectre_TypeResolver_Resolve_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.TypeResolver.Resolve
+  nameWithType: TypeResolver.Resolve
 - uid: Coree.NETStandard.Classes.ThreadSafeCollection`1
   name: ThreadSafeCollection<T>
   href: api/Coree.NETStandard.Classes.ThreadSafeCollection-1.html
@@ -1278,140 +1415,3 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.RuntimeInsightsService.Username
   nameWithType: RuntimeInsightsService.Username
-- uid: Coree.NETStandard.TypeRegistrar
-  name: TypeRegistrar
-  href: api/Coree.NETStandard.TypeRegistrar.html
-  commentId: T:Coree.NETStandard.TypeRegistrar
-  fullName: Coree.NETStandard.TypeRegistrar
-  nameWithType: TypeRegistrar
-- uid: Coree.NETStandard.TypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: TypeRegistrar(IServiceCollection)
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Coree.NETStandard.TypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name.vb: New(IServiceCollection)
-  fullName: Coree.NETStandard.TypeRegistrar.TypeRegistrar(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName.vb: Coree.NETStandard.TypeRegistrar.New(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: TypeRegistrar.TypeRegistrar(IServiceCollection)
-  nameWithType.vb: TypeRegistrar.New(IServiceCollection)
-- uid: Coree.NETStandard.TypeRegistrar.#ctor*
-  name: TypeRegistrar
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar__ctor_
-  commentId: Overload:Coree.NETStandard.TypeRegistrar.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.TypeRegistrar.TypeRegistrar
-  fullName.vb: Coree.NETStandard.TypeRegistrar.New
-  nameWithType: TypeRegistrar.TypeRegistrar
-  nameWithType.vb: TypeRegistrar.New
-- uid: Coree.NETStandard.TypeRegistrar.Build
-  name: Build()
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_Build
-  commentId: M:Coree.NETStandard.TypeRegistrar.Build
-  fullName: Coree.NETStandard.TypeRegistrar.Build()
-  nameWithType: TypeRegistrar.Build()
-- uid: Coree.NETStandard.TypeRegistrar.Build*
-  name: Build
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_Build_
-  commentId: Overload:Coree.NETStandard.TypeRegistrar.Build
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeRegistrar.Build
-  nameWithType: TypeRegistrar.Build
-- uid: Coree.NETStandard.TypeRegistrar.Register(System.Type,System.Type)
-  name: Register(Type, Type)
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_Register_System_Type_System_Type_
-  commentId: M:Coree.NETStandard.TypeRegistrar.Register(System.Type,System.Type)
-  fullName: Coree.NETStandard.TypeRegistrar.Register(System.Type, System.Type)
-  nameWithType: TypeRegistrar.Register(Type, Type)
-- uid: Coree.NETStandard.TypeRegistrar.Register*
-  name: Register
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_Register_
-  commentId: Overload:Coree.NETStandard.TypeRegistrar.Register
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeRegistrar.Register
-  nameWithType: TypeRegistrar.Register
-- uid: Coree.NETStandard.TypeRegistrar.RegisterInstance(System.Type,System.Object)
-  name: RegisterInstance(Type, object)
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_RegisterInstance_System_Type_System_Object_
-  commentId: M:Coree.NETStandard.TypeRegistrar.RegisterInstance(System.Type,System.Object)
-  name.vb: RegisterInstance(Type, Object)
-  fullName: Coree.NETStandard.TypeRegistrar.RegisterInstance(System.Type, object)
-  fullName.vb: Coree.NETStandard.TypeRegistrar.RegisterInstance(System.Type, Object)
-  nameWithType: TypeRegistrar.RegisterInstance(Type, object)
-  nameWithType.vb: TypeRegistrar.RegisterInstance(Type, Object)
-- uid: Coree.NETStandard.TypeRegistrar.RegisterInstance*
-  name: RegisterInstance
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_RegisterInstance_
-  commentId: Overload:Coree.NETStandard.TypeRegistrar.RegisterInstance
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeRegistrar.RegisterInstance
-  nameWithType: TypeRegistrar.RegisterInstance
-- uid: Coree.NETStandard.TypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
-  name: RegisterLazy(Type, Func<object>)
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_RegisterLazy_System_Type_System_Func_System_Object__
-  commentId: M:Coree.NETStandard.TypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
-  name.vb: RegisterLazy(Type, Func(Of Object))
-  fullName: Coree.NETStandard.TypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
-  fullName.vb: Coree.NETStandard.TypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
-  nameWithType: TypeRegistrar.RegisterLazy(Type, Func<object>)
-  nameWithType.vb: TypeRegistrar.RegisterLazy(Type, Func(Of Object))
-- uid: Coree.NETStandard.TypeRegistrar.RegisterLazy*
-  name: RegisterLazy
-  href: api/Coree.NETStandard.TypeRegistrar.html#Coree_NETStandard_TypeRegistrar_RegisterLazy_
-  commentId: Overload:Coree.NETStandard.TypeRegistrar.RegisterLazy
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeRegistrar.RegisterLazy
-  nameWithType: TypeRegistrar.RegisterLazy
-- uid: Coree.NETStandard.TypeResolver
-  name: TypeResolver
-  href: api/Coree.NETStandard.TypeResolver.html
-  commentId: T:Coree.NETStandard.TypeResolver
-  fullName: Coree.NETStandard.TypeResolver
-  nameWithType: TypeResolver
-- uid: Coree.NETStandard.TypeResolver.#ctor(System.IServiceProvider)
-  name: TypeResolver(IServiceProvider)
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver__ctor_System_IServiceProvider_
-  commentId: M:Coree.NETStandard.TypeResolver.#ctor(System.IServiceProvider)
-  name.vb: New(IServiceProvider)
-  fullName: Coree.NETStandard.TypeResolver.TypeResolver(System.IServiceProvider)
-  fullName.vb: Coree.NETStandard.TypeResolver.New(System.IServiceProvider)
-  nameWithType: TypeResolver.TypeResolver(IServiceProvider)
-  nameWithType.vb: TypeResolver.New(IServiceProvider)
-- uid: Coree.NETStandard.TypeResolver.#ctor*
-  name: TypeResolver
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver__ctor_
-  commentId: Overload:Coree.NETStandard.TypeResolver.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.TypeResolver.TypeResolver
-  fullName.vb: Coree.NETStandard.TypeResolver.New
-  nameWithType: TypeResolver.TypeResolver
-  nameWithType.vb: TypeResolver.New
-- uid: Coree.NETStandard.TypeResolver.Dispose
-  name: Dispose()
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver_Dispose
-  commentId: M:Coree.NETStandard.TypeResolver.Dispose
-  fullName: Coree.NETStandard.TypeResolver.Dispose()
-  nameWithType: TypeResolver.Dispose()
-- uid: Coree.NETStandard.TypeResolver.Dispose*
-  name: Dispose
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver_Dispose_
-  commentId: Overload:Coree.NETStandard.TypeResolver.Dispose
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeResolver.Dispose
-  nameWithType: TypeResolver.Dispose
-- uid: Coree.NETStandard.TypeResolver.Resolve(System.Type)
-  name: Resolve(Type?)
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver_Resolve_System_Type_
-  commentId: M:Coree.NETStandard.TypeResolver.Resolve(System.Type)
-  name.vb: Resolve(Type)
-  fullName: Coree.NETStandard.TypeResolver.Resolve(System.Type?)
-  fullName.vb: Coree.NETStandard.TypeResolver.Resolve(System.Type)
-  nameWithType: TypeResolver.Resolve(Type?)
-  nameWithType.vb: TypeResolver.Resolve(Type)
-- uid: Coree.NETStandard.TypeResolver.Resolve*
-  name: Resolve
-  href: api/Coree.NETStandard.TypeResolver.html#Coree_NETStandard_TypeResolver_Resolve_
-  commentId: Overload:Coree.NETStandard.TypeResolver.Resolve
-  isSpec: "True"
-  fullName: Coree.NETStandard.TypeResolver.Resolve
-  nameWithType: TypeResolver.Resolve
