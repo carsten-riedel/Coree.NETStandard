@@ -715,6 +715,34 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices
   nameWithType: ServiceProviderExtensions.GetRegisteredServices
+- uid: Coree.NETStandard.Extensions.Stringbuilder
+  name: Coree.NETStandard.Extensions.Stringbuilder
+  href: api/Coree.NETStandard.Extensions.Stringbuilder.html
+  commentId: N:Coree.NETStandard.Extensions.Stringbuilder
+  fullName: Coree.NETStandard.Extensions.Stringbuilder
+  nameWithType: Coree.NETStandard.Extensions.Stringbuilder
+- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
+  name: StringBuilderExtension
+  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html
+  commentId: T:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
+  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
+  nameWithType: StringBuilderExtension
+- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
+  name: AppendLineOrDefault(StringBuilder, string?)
+  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html#Coree_NETStandard_Extensions_Stringbuilder_StringBuilderExtension_AppendLineOrDefault_System_Text_StringBuilder_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
+  name.vb: AppendLineOrDefault(StringBuilder, String)
+  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, string?)
+  fullName.vb: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, String)
+  nameWithType: StringBuilderExtension.AppendLineOrDefault(StringBuilder, string?)
+  nameWithType.vb: StringBuilderExtension.AppendLineOrDefault(StringBuilder, String)
+- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault*
+  name: AppendLineOrDefault
+  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html#Coree_NETStandard_Extensions_Stringbuilder_StringBuilderExtension_AppendLineOrDefault_
+  commentId: Overload:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault
+  nameWithType: StringBuilderExtension.AppendLineOrDefault
 - uid: Coree.NETStandard.HostedService
   name: Coree.NETStandard.HostedService
   href: api/Coree.NETStandard.HostedService.html
@@ -1260,6 +1288,144 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.IRuntimeInsights.Username
   nameWithType: IRuntimeInsights.Username
+- uid: Coree.NETStandard.Services.ProcessService
+  name: Coree.NETStandard.Services.ProcessService
+  href: api/Coree.NETStandard.Services.ProcessService.html
+  commentId: N:Coree.NETStandard.Services.ProcessService
+  fullName: Coree.NETStandard.Services.ProcessService
+  nameWithType: Coree.NETStandard.Services.ProcessService
+- uid: Coree.NETStandard.Services.ProcessService.IProcessService
+  name: IProcessService
+  href: api/Coree.NETStandard.Services.ProcessService.IProcessService.html
+  commentId: T:Coree.NETStandard.Services.ProcessService.IProcessService
+  fullName: Coree.NETStandard.Services.ProcessService.IProcessService
+  nameWithType: IProcessService
+- uid: Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
+  name: RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)
+  href: api/Coree.NETStandard.Services.ProcessService.IProcessService.html#Coree_NETStandard_Services_ProcessService_IProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
+  commentId: M:Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
+  name.vb: RunProcessWithCancellationSupportAsync(String, String, String, Boolean, CancellationToken, TimeSpan?)
+  fullName: Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
+  fullName.vb: Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
+  nameWithType: IProcessService.RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)
+  nameWithType.vb: IProcessService.RunProcessWithCancellationSupportAsync(String, String, String, Boolean, CancellationToken, TimeSpan?)
+- uid: Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync*
+  name: RunProcessWithCancellationSupportAsync
+  href: api/Coree.NETStandard.Services.ProcessService.IProcessService.html#Coree_NETStandard_Services_ProcessService_IProcessService_RunProcessWithCancellationSupportAsync_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessService.IProcessService.RunProcessWithCancellationSupportAsync
+  nameWithType: IProcessService.RunProcessWithCancellationSupportAsync
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode
+  name: ProcessRunErrorCode
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode
+  nameWithType: ProcessRunErrorCode
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.ProcessStartFailed
+  name: ProcessStartFailed
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html#Coree_NETStandard_Services_ProcessService_ProcessRunErrorCode_ProcessStartFailed
+  commentId: F:Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.ProcessStartFailed
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.ProcessStartFailed
+  nameWithType: ProcessRunErrorCode.ProcessStartFailed
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.Success
+  name: Success
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html#Coree_NETStandard_Services_ProcessService_ProcessRunErrorCode_Success
+  commentId: F:Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.Success
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.Success
+  nameWithType: ProcessRunErrorCode.Success
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.TaskCancelled
+  name: TaskCancelled
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html#Coree_NETStandard_Services_ProcessService_ProcessRunErrorCode_TaskCancelled
+  commentId: F:Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.TaskCancelled
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.TaskCancelled
+  nameWithType: ProcessRunErrorCode.TaskCancelled
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  name: ProcessRunResult
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  nameWithType: ProcessRunResult
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode
+  name: ExitCode
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_ExitCode
+  commentId: P:Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode
+  nameWithType: ProcessRunResult.ExitCode
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode*
+  name: ExitCode
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_ExitCode_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ExitCode
+  nameWithType: ProcessRunResult.ExitCode
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output
+  name: Output
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_Output
+  commentId: P:Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output
+  nameWithType: ProcessRunResult.Output
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output*
+  name: Output
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_Output_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.Output
+  nameWithType: ProcessRunResult.Output
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode
+  name: ProcessRunErrorCode
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_ProcessRunErrorCode
+  commentId: P:Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode
+  nameWithType: ProcessRunResult.ProcessRunErrorCode
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode*
+  name: ProcessRunErrorCode
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html#Coree_NETStandard_Services_ProcessService_ProcessRunResult_ProcessRunErrorCode_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult.ProcessRunErrorCode
+  nameWithType: ProcessRunResult.ProcessRunErrorCode
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService
+  name: ProcessService
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessService.html
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessService
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService
+  nameWithType: ProcessService
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.ProcessService.ProcessService})
+  name: ProcessService(ILogger<ProcessService>)
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessService.html#Coree_NETStandard_Services_ProcessService_ProcessService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_ProcessService_ProcessService__
+  commentId: M:Coree.NETStandard.Services.ProcessService.ProcessService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.ProcessService.ProcessService})
+  name.vb: New(ILogger(Of ProcessService))
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService.ProcessService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.ProcessService.ProcessService>)
+  fullName.vb: Coree.NETStandard.Services.ProcessService.ProcessService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.ProcessService.ProcessService))
+  nameWithType: ProcessService.ProcessService(ILogger<ProcessService>)
+  nameWithType.vb: ProcessService.New(ILogger(Of ProcessService))
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService.#ctor*
+  name: ProcessService
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessService.html#Coree_NETStandard_Services_ProcessService_ProcessService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.ProcessService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService.ProcessService
+  fullName.vb: Coree.NETStandard.Services.ProcessService.ProcessService.New
+  nameWithType: ProcessService.ProcessService
+  nameWithType.vb: ProcessService.New
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
+  name: RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessService.html#Coree_NETStandard_Services_ProcessService_ProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
+  commentId: M:Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
+  name.vb: RunProcessWithCancellationSupportAsync(String, String, String, Boolean, CancellationToken, TimeSpan?)
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
+  fullName.vb: Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
+  nameWithType: ProcessService.RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)
+  nameWithType.vb: ProcessService.RunProcessWithCancellationSupportAsync(String, String, String, Boolean, CancellationToken, TimeSpan?)
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync*
+  name: RunProcessWithCancellationSupportAsync
+  href: api/Coree.NETStandard.Services.ProcessService.ProcessService.html#Coree_NETStandard_Services_ProcessService_ProcessService_RunProcessWithCancellationSupportAsync_
+  commentId: Overload:Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService.RunProcessWithCancellationSupportAsync
+  nameWithType: ProcessService.RunProcessWithCancellationSupportAsync
 - uid: Coree.NETStandard.Services.RuntimeInsightsService
   name: RuntimeInsightsService
   href: api/Coree.NETStandard.Services.RuntimeInsightsService.html

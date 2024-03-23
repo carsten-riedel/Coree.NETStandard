@@ -114,6 +114,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.yml",
       "output": {
         ".html": {
@@ -228,6 +248,56 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Services.IRuntimeInsights.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.html"
         }
       },
       "version": ""
