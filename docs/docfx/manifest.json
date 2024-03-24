@@ -244,6 +244,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.IProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.IProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Services.IRuntimeInsights.yml",
       "output": {
         ".html": {
@@ -254,40 +264,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessRunErrorCode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.html"
+          "relative_path": "api/Coree.NETStandard.Services.ProcessRunErrorCode.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessRunResult.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunErrorCode.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.html"
+          "relative_path": "api/Coree.NETStandard.Services.ProcessRunResult.html"
         }
       },
       "version": ""
