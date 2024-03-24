@@ -20,18 +20,18 @@ namespace Coree.NETStandard.Services
 
     public class ProcessRunResult
     {
-        public ProcessRunErrorCode ProcessRunErrorCode { get; set; }
+        public ProcessRunExitCodeState ExitCodeState { get; set; }
         public int ExitCode { get; set; }
         public string Output { get; set; }
     }
 
-    public enum ProcessRunErrorCode : int
+    public enum ProcessRunExitCodeState : int
     {
-        Success = 0,
-        Unknown = -1,
-        ProcessStartFailed = -2,
-        ProcessErrorCode = -3,
-        TaskCancelled = -4,
+        IsValidSuccess = 0,
+        IsUnknown = -1,
+        IsFailedStart = -2,
+        IsValidErrorCode = -3,
+        IsCanceledSet = -4,
     }
 
     public partial class ProcessService : IProcessService
@@ -98,11 +98,11 @@ namespace Coree.NETStandard.Services
                         returnValue.Output = outputBuilder.ToString();
                         if (returnValue.ExitCode == 0)
                         {
-                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                            returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidSuccess;
                         }
                         else
                         {
-                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                            returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidErrorCode;
                         }
                         logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
                         tcs.TrySetResult(true);
@@ -118,7 +118,7 @@ namespace Coree.NETStandard.Services
                     catch (Exception ex)
                     {
                         logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessStartFailed;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsFailedStart;
                         returnValue.Output = "Failed to start process.";
                         return returnValue; // Early exit with failure indication
                     }
@@ -145,7 +145,7 @@ namespace Coree.NETStandard.Services
                         {
                             logger.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
                         }
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.TaskCancelled;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsCanceledSet;
                         tcs.TrySetCanceled();
                     }))
                     {
@@ -169,7 +169,7 @@ namespace Coree.NETStandard.Services
 
         public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsyncMe(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
         {
-            ProcessRunResult returnValue = new ProcessRunResult() { ProcessRunErrorCode = ProcessRunErrorCode.Unknown };
+            ProcessRunResult returnValue = new ProcessRunResult() { ExitCodeState = ProcessRunExitCodeState.IsUnknown };
             StringBuilder outputBuilder = new StringBuilder();
 
             using (var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationWaitRequest))
@@ -192,6 +192,7 @@ namespace Coree.NETStandard.Services
 
                     var outputComplition = new TaskCompletionSource<bool>();
                     var errorComplition = new TaskCompletionSource<bool>();
+                    var processComplition = new TaskCompletionSource<bool>();
 
                     process.OutputDataReceived += (sender, e) =>
                     {
@@ -218,14 +219,13 @@ namespace Coree.NETStandard.Services
                         }
                     };
 
-                    var processComplition = new TaskCompletionSource<bool>();
-
                     void ProcessExited(object sender, EventArgs e)
                     {
                         processComplition.TrySetResult(true);
                     }
 
                     process.Exited += ProcessExited;
+
 
                     try
                     {
@@ -235,7 +235,8 @@ namespace Coree.NETStandard.Services
                     catch (Exception ex)
                     {
                         logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessStartFailed;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsFailedStart;
+                        returnValue.ExitCode = -1;
                         returnValue.Output = "Failed to start process.";
                         return returnValue; // Early exit with failure indication
                     }
@@ -261,7 +262,7 @@ namespace Coree.NETStandard.Services
                         {
                             logger.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
                         }
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.TaskCancelled;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsCanceledSet;
                         outputComplition.TrySetCanceled();
                         errorComplition.TrySetCanceled();
                         processComplition.TrySetCanceled();
@@ -279,28 +280,27 @@ namespace Coree.NETStandard.Services
                     }
 
 
-                    if (returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown)
+                    if (returnValue.ExitCodeState == ProcessRunExitCodeState.IsUnknown)
                     {
                         returnValue.ExitCode = process.ExitCode;
                         returnValue.Output = outputBuilder.ToString();
 
                         if (returnValue.ExitCode == 0)
                         {
-                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                            returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidSuccess;
                         }
                         else
                         {
-                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                            returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidErrorCode;
                         }
                     }
-                    else if (returnValue.ProcessRunErrorCode == ProcessRunErrorCode.TaskCancelled)
+                    else if (returnValue.ExitCodeState == ProcessRunExitCodeState.IsCanceledSet)
                     {
                         returnValue.ExitCode = -1;
                         returnValue.Output = outputBuilder.ToString();
                     }
 
-                    logger.LogDebug("ProcessRunErrorCode exited with code {ExitCode}.", returnValue.ProcessRunErrorCode);
-                    logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
+                    logger.LogDebug("ExitCode state is {ExitCodeState}. Process exited with code {ExitCode}.", returnValue.ExitCodeState, returnValue.ExitCode);
 
                     process.Exited -= ProcessExited;
                 }
@@ -376,7 +376,7 @@ namespace Coree.NETStandard.Services
                     catch (Exception ex)
                     {
                         logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessStartFailed;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsFailedStart;
                         returnValue.Output = "Failed to start process.";
                         return returnValue; // Early exit with failure indication
                     }
@@ -408,11 +408,11 @@ namespace Coree.NETStandard.Services
                     returnValue.Output = outputBuilder.ToString();
                     if (returnValue.ExitCode == 0)
                     {
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidSuccess;
                     }
                     else
                     {
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                        returnValue.ExitCodeState = ProcessRunExitCodeState.IsValidErrorCode;
                     }
                     logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
 
