@@ -29,7 +29,7 @@ namespace Coree.NETStandard.Services
         IsFailedStart = 2,
         IsValidErrorCode = 4,
         IsCanceledSet = 8,
-        IsValid = IsValidSuccess | IsValidErrorCode,
+        IsValid = 16,
     }
 
     public partial class ProcessService : IProcessService
@@ -156,6 +156,8 @@ namespace Coree.NETStandard.Services
                     {
                         returnValue.ExitCode = process.ExitCode;
                         returnValue.Output = outputBuilder.ToString();
+
+                        returnValue.ExitCodeState |= ProcessRunExitCodeState.IsValid;
 
                         if (returnValue.ExitCode == 0)
                         {
