@@ -114,26 +114,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.String.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.String.StringExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.String.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.String.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.yml",
       "output": {
         ".html": {
@@ -148,6 +128,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Strings.html"
         }
       },
       "version": ""
