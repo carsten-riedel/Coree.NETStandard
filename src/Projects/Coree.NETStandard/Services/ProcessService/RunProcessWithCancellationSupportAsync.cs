@@ -166,7 +166,7 @@ namespace Coree.NETStandard.Services
 
         public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsyncMe(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
         {
-            ProcessRunResult returnValue = new ProcessRunResult();
+            ProcessRunResult returnValue = new ProcessRunResult() { ProcessRunErrorCode = ProcessRunErrorCode.Unknown };
             StringBuilder outputBuilder = new StringBuilder();
 
             using (var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationWaitRequest))
@@ -219,7 +219,6 @@ namespace Coree.NETStandard.Services
 
                     void ProcessExited(object sender, EventArgs e)
                     {
-                        logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
                         processComplition.TrySetResult(true);
                     }
 
