@@ -23,7 +23,8 @@ namespace Coree.NETStandard.Services
     {
         Success = 0,
         ProcessStartFailed = -1,
-        TaskCancelled = -2,
+        ProcessErrorCode = -2,
+        TaskCancelled = -3,
     }
 
     public partial class ProcessService : IProcessService
@@ -80,7 +81,14 @@ namespace Coree.NETStandard.Services
                     {
                         returnValue.ExitCode = process.ExitCode;
                         returnValue.Output = outputBuilder.ToString();
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                        if (returnValue.ExitCode == 0)
+                        {
+                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                        }
+                        else
+                        {
+                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                        }
                         logger.LogInformation("Process exited with code {ExitCode}.", process.ExitCode);
                         tcs.TrySetResult(true);
                     }
