@@ -19,6 +19,9 @@ namespace Coree.NETStandard.Services
         public ProcessRunExitCodeState ExitCodeState { get; set; }
         public int ExitCode { get; set; }
         public string Output { get; set; }
+        public string Commandline { get; set; }
+        public string Filename { get; set; }
+        public string Arguments { get; set; }
     }
 
     [Flags]
@@ -43,7 +46,7 @@ namespace Coree.NETStandard.Services
 
         public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
         {
-            ProcessRunResult returnValue = new ProcessRunResult() { ExitCodeState = ProcessRunExitCodeState.None };
+            ProcessRunResult returnValue = new ProcessRunResult() { ExitCodeState = ProcessRunExitCodeState.None , Commandline = $"{fileName} {arguments}" , Filename = fileName, Arguments= arguments };
             StringBuilder outputBuilder = new StringBuilder();
 
             using (var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationWaitRequest))
