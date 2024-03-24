@@ -9,7 +9,7 @@ using System.Linq;
 
 namespace Coree.NETStandard.Extensions.ServiceCollection
 {
-    public static class ServiceCollectionExtensions
+    public static partial class ServiceCollectionExtensions
     {
         /*
             builder.ConfigureServices((context, services) =>
