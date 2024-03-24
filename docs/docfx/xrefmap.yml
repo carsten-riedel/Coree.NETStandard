@@ -755,33 +755,33 @@ references:
   commentId: T:Coree.NETStandard.Extensions.Strings.StringExtensions
   fullName: Coree.NETStandard.Extensions.Strings.StringExtensions
   nameWithType: StringExtensions
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[])
-  name: SplitWith(string, char[])
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_Char___
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[])
-  name.vb: SplitWith(String, Char())
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, char[])
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, Char())
-  nameWithType: StringExtensions.SplitWith(string, char[])
-  nameWithType.vb: StringExtensions.SplitWith(String, Char())
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String)
-  name: SplitWith(string, string)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String)
-  name.vb: SplitWith(String, String)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, string)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String)
-  nameWithType: StringExtensions.SplitWith(string, string)
-  nameWithType.vb: StringExtensions.SplitWith(String, String)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[])
-  name: SplitWith(string, string[])
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String___
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[])
-  name.vb: SplitWith(String, String())
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, string[])
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String())
-  nameWithType: StringExtensions.SplitWith(string, string[])
-  nameWithType.vb: StringExtensions.SplitWith(String, String())
+- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions)
+  name: SplitWith(string, char[], StringSplitOptions)
+  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_Char___System_StringSplitOptions_
+  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions)
+  name.vb: SplitWith(String, Char(), StringSplitOptions)
+  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, char[], System.StringSplitOptions)
+  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, Char(), System.StringSplitOptions)
+  nameWithType: StringExtensions.SplitWith(string, char[], StringSplitOptions)
+  nameWithType.vb: StringExtensions.SplitWith(String, Char(), StringSplitOptions)
+- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String,System.StringSplitOptions)
+  name: SplitWith(string, string, StringSplitOptions)
+  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String_System_StringSplitOptions_
+  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String,System.StringSplitOptions)
+  name.vb: SplitWith(String, String, StringSplitOptions)
+  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, string, System.StringSplitOptions)
+  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String, System.StringSplitOptions)
+  nameWithType: StringExtensions.SplitWith(string, string, StringSplitOptions)
+  nameWithType.vb: StringExtensions.SplitWith(String, String, StringSplitOptions)
+- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions)
+  name: SplitWith(string, string[], StringSplitOptions)
+  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String___System_StringSplitOptions_
+  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions)
+  name.vb: SplitWith(String, String(), StringSplitOptions)
+  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string, string[], System.StringSplitOptions)
+  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String(), System.StringSplitOptions)
+  nameWithType: StringExtensions.SplitWith(string, string[], StringSplitOptions)
+  nameWithType.vb: StringExtensions.SplitWith(String, String(), StringSplitOptions)
 - uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith*
   name: SplitWith
   href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_
