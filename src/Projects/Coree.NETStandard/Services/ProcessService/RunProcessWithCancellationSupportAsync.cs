@@ -89,7 +89,7 @@ namespace Coree.NETStandard.Services
 
                     try
                     {
-                        logger.LogInformation("Starting process {FileName} with arguments {Arguments}.", fileName, arguments);
+                        logger.LogDebug("Starting process {FileName} with arguments {Arguments}.", fileName, arguments);
                         process.Start();
                     }
                     catch (Exception ex)
@@ -120,7 +120,7 @@ namespace Coree.NETStandard.Services
                         }
                         else if (!killOnCancel && !tcs.Task.IsCompleted)
                         {
-                            logger.LogInformation("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
+                            logger.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
                         }
                         returnValue.ProcessRunErrorCode = ProcessRunErrorCode.TaskCancelled;
                         tcs.TrySetCanceled();
@@ -132,7 +132,7 @@ namespace Coree.NETStandard.Services
                         }
                         catch (TaskCanceledException ex)
                         {
-                            logger.LogWarning(ex, "Task canceled. Output and errors may be incomplete.");
+                            logger.LogTrace(ex, "Task canceled. Output and errors may be incomplete.");
                             returnValue.Output = outputBuilder.ToString();
                         }
                     }
