@@ -65,6 +65,10 @@ namespace Coree.NETStandard.Services
                             logger.LogDebug("Output: {OutputData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
+                        else
+                        {
+                            logger.LogDebug("IMPORTANT OUTPUT: NULL");
+                        }
                     };
                     process.ErrorDataReceived += (sender, e) =>
                     {
@@ -72,6 +76,10 @@ namespace Coree.NETStandard.Services
                         {
                             logger.LogDebug("Error : {ErrorData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
+                        }
+                        else
+                        {
+                            logger.LogDebug("IMPORTANT ERROR: NULL");
                         }
                     };
 
