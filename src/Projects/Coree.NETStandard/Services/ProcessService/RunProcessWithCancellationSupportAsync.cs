@@ -12,6 +12,7 @@ namespace Coree.NETStandard.Services
     {
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null);
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsync2(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationRequest = default, TimeSpan? timeout = null);
+        Task<ProcessRunResult> RunProcessWithCancellationSupportAsyncMe(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null);
     }
 
     public class ProcessRunResult
@@ -24,9 +25,10 @@ namespace Coree.NETStandard.Services
     public enum ProcessRunErrorCode : int
     {
         Success = 0,
-        ProcessStartFailed = -1,
-        ProcessErrorCode = -2,
-        TaskCancelled = -3,
+        Unknown = -1,
+        ProcessStartFailed = -2,
+        ProcessErrorCode = -3,
+        TaskCancelled = -4,
     }
 
     public partial class ProcessService : IProcessService
@@ -161,6 +163,140 @@ namespace Coree.NETStandard.Services
 
             return returnValue;
         }
+
+        public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsyncMe(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
+        {
+            ProcessRunResult returnValue = new ProcessRunResult();
+            StringBuilder outputBuilder = new StringBuilder();
+
+            using (var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationWaitRequest))
+            {
+                if (timeout.HasValue)
+                {
+                    linkedCts.CancelAfter(timeout.Value);
+                }
+
+                using (var process = new Process())
+                {
+                    process.StartInfo.UseShellExecute = false;
+                    process.StartInfo.CreateNoWindow = true;
+                    process.StartInfo.RedirectStandardOutput = true;
+                    process.StartInfo.RedirectStandardError = true;
+                    process.StartInfo.FileName = fileName;
+                    process.StartInfo.Arguments = arguments;
+                    process.StartInfo.WorkingDirectory = workingDirectory;
+                    process.EnableRaisingEvents = true;
+
+                    var outputComplition = new TaskCompletionSource<bool>();
+                    var errorComplition = new TaskCompletionSource<bool>();
+
+                    process.OutputDataReceived += (sender, e) =>
+                    {
+                        if (e.Data != null)
+                        {
+                            logger.LogDebug("Output: {OutputData}", e.Data);
+                            outputBuilder.AppendLine(e.Data);
+                        }
+                        else
+                        {
+                            outputComplition.TrySetResult(true);
+                        }
+                    };
+                    process.ErrorDataReceived += (sender, e) =>
+                    {
+                        if (e.Data != null)
+                        {
+                            logger.LogDebug("Error : {ErrorData}", e.Data);
+                            outputBuilder.AppendLine(e.Data);
+                        }
+                        else
+                        {
+                            errorComplition.TrySetResult(true);
+                        }
+                    };
+
+                    var processComplition = new TaskCompletionSource<bool>();
+
+                    void ProcessExited(object sender, EventArgs e)
+                    {
+                        logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
+                        processComplition.TrySetResult(true);
+                    }
+
+                    process.Exited += ProcessExited;
+
+                    try
+                    {
+                        logger.LogDebug("Starting process with arguments: {FileName} {Arguments}.", fileName, arguments);
+                        process.Start();
+                    }
+                    catch (Exception ex)
+                    {
+                        logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
+                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessStartFailed;
+                        returnValue.Output = "Failed to start process.";
+                        return returnValue; // Early exit with failure indication
+                    }
+
+                    process.BeginOutputReadLine();
+                    process.BeginErrorReadLine();
+
+
+                    using (linkedCts.Token.Register(() =>
+                    {
+                        if (killOnCancel && !process.HasExited)
+                        {
+                            try
+                            {
+                                process.Kill();
+                                logger.LogDebug("Process kill requested due to cancellation.");
+                            }
+                            catch (Exception ex)
+                            {
+                                logger.LogError(ex, "Exception when trying to kill process.");
+                            }
+                        }
+                        else if (!killOnCancel && !processComplition.Task.IsCompleted)
+                        {
+                            logger.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
+                        }
+                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.TaskCancelled;
+                        outputComplition.TrySetCanceled();
+                        errorComplition.TrySetCanceled();
+                        processComplition.TrySetCanceled();
+                    }))
+                    {
+                        try
+                        {
+                            await Task.WhenAll(processComplition.Task, outputComplition.Task, errorComplition.Task).ConfigureAwait(false);
+                        }
+                        catch (TaskCanceledException ex)
+                        {
+                            logger.LogTrace(ex, "Task canceled. Output and errors may be incomplete.");
+                            returnValue.Output = outputBuilder.ToString();
+                        }
+                    }
+
+
+                    returnValue.ExitCode = process.ExitCode;
+                    returnValue.Output = outputBuilder.ToString();
+                    if ((returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown) && returnValue.ExitCode == 0)
+                    {
+                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                    }
+                    else if (((returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown) && returnValue.ExitCode != 0))
+                    {
+                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                    }
+                    logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
+
+                    process.Exited -= ProcessExited;
+                }
+            }
+
+            return returnValue;
+        }
+
 
         public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsync2(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
         {
