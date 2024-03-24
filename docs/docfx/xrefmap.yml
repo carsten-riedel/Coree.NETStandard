@@ -1174,38 +1174,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync
   nameWithType: IProcessService.RunProcessWithCancellationSupportAsync
-- uid: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name: RunProcessWithCancellationSupportAsync2(string, string, string, bool, CancellationToken, TimeSpan?)
-  href: api/Coree.NETStandard.Services.IProcessService.html#Coree_NETStandard_Services_IProcessService_RunProcessWithCancellationSupportAsync2_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
-  commentId: M:Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name.vb: RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, CancellationToken, TimeSpan?)
-  fullName: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
-  fullName.vb: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
-  nameWithType: IProcessService.RunProcessWithCancellationSupportAsync2(string, string, string, bool, CancellationToken, TimeSpan?)
-  nameWithType.vb: IProcessService.RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, CancellationToken, TimeSpan?)
-- uid: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2*
-  name: RunProcessWithCancellationSupportAsync2
-  href: api/Coree.NETStandard.Services.IProcessService.html#Coree_NETStandard_Services_IProcessService_RunProcessWithCancellationSupportAsync2_
-  commentId: Overload:Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsync2
-  nameWithType: IProcessService.RunProcessWithCancellationSupportAsync2
-- uid: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name: RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, CancellationToken, TimeSpan?)
-  href: api/Coree.NETStandard.Services.IProcessService.html#Coree_NETStandard_Services_IProcessService_RunProcessWithCancellationSupportAsyncMe_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
-  commentId: M:Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name.vb: RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, CancellationToken, TimeSpan?)
-  fullName: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
-  fullName.vb: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
-  nameWithType: IProcessService.RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, CancellationToken, TimeSpan?)
-  nameWithType.vb: IProcessService.RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, CancellationToken, TimeSpan?)
-- uid: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe*
-  name: RunProcessWithCancellationSupportAsyncMe
-  href: api/Coree.NETStandard.Services.IProcessService.html#Coree_NETStandard_Services_IProcessService_RunProcessWithCancellationSupportAsyncMe_
-  commentId: Overload:Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IProcessService.RunProcessWithCancellationSupportAsyncMe
-  nameWithType: IProcessService.RunProcessWithCancellationSupportAsyncMe
 - uid: Coree.NETStandard.Services.IRuntimeInsights
   name: IRuntimeInsights
   href: api/Coree.NETStandard.Services.IRuntimeInsights.html
@@ -1360,12 +1328,12 @@ references:
   commentId: F:Coree.NETStandard.Services.ProcessRunExitCodeState.IsFailedStart
   fullName: Coree.NETStandard.Services.ProcessRunExitCodeState.IsFailedStart
   nameWithType: ProcessRunExitCodeState.IsFailedStart
-- uid: Coree.NETStandard.Services.ProcessRunExitCodeState.IsUnknown
-  name: IsUnknown
-  href: api/Coree.NETStandard.Services.ProcessRunExitCodeState.html#Coree_NETStandard_Services_ProcessRunExitCodeState_IsUnknown
-  commentId: F:Coree.NETStandard.Services.ProcessRunExitCodeState.IsUnknown
-  fullName: Coree.NETStandard.Services.ProcessRunExitCodeState.IsUnknown
-  nameWithType: ProcessRunExitCodeState.IsUnknown
+- uid: Coree.NETStandard.Services.ProcessRunExitCodeState.IsValid
+  name: IsValid
+  href: api/Coree.NETStandard.Services.ProcessRunExitCodeState.html#Coree_NETStandard_Services_ProcessRunExitCodeState_IsValid
+  commentId: F:Coree.NETStandard.Services.ProcessRunExitCodeState.IsValid
+  fullName: Coree.NETStandard.Services.ProcessRunExitCodeState.IsValid
+  nameWithType: ProcessRunExitCodeState.IsValid
 - uid: Coree.NETStandard.Services.ProcessRunExitCodeState.IsValidErrorCode
   name: IsValidErrorCode
   href: api/Coree.NETStandard.Services.ProcessRunExitCodeState.html#Coree_NETStandard_Services_ProcessRunExitCodeState_IsValidErrorCode
@@ -1378,6 +1346,12 @@ references:
   commentId: F:Coree.NETStandard.Services.ProcessRunExitCodeState.IsValidSuccess
   fullName: Coree.NETStandard.Services.ProcessRunExitCodeState.IsValidSuccess
   nameWithType: ProcessRunExitCodeState.IsValidSuccess
+- uid: Coree.NETStandard.Services.ProcessRunExitCodeState.None
+  name: None
+  href: api/Coree.NETStandard.Services.ProcessRunExitCodeState.html#Coree_NETStandard_Services_ProcessRunExitCodeState_None
+  commentId: F:Coree.NETStandard.Services.ProcessRunExitCodeState.None
+  fullName: Coree.NETStandard.Services.ProcessRunExitCodeState.None
+  nameWithType: ProcessRunExitCodeState.None
 - uid: Coree.NETStandard.Services.ProcessRunResult
   name: ProcessRunResult
   href: api/Coree.NETStandard.Services.ProcessRunResult.html
@@ -1464,38 +1438,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync
   nameWithType: ProcessService.RunProcessWithCancellationSupportAsync
-- uid: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name: RunProcessWithCancellationSupportAsync2(string, string, string, bool, CancellationToken, TimeSpan?)
-  href: api/Coree.NETStandard.Services.ProcessService.html#Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsync2_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
-  commentId: M:Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name.vb: RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, CancellationToken, TimeSpan?)
-  fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
-  fullName.vb: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
-  nameWithType: ProcessService.RunProcessWithCancellationSupportAsync2(string, string, string, bool, CancellationToken, TimeSpan?)
-  nameWithType.vb: ProcessService.RunProcessWithCancellationSupportAsync2(String, String, String, Boolean, CancellationToken, TimeSpan?)
-- uid: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2*
-  name: RunProcessWithCancellationSupportAsync2
-  href: api/Coree.NETStandard.Services.ProcessService.html#Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsync2_
-  commentId: Overload:Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync2
-  nameWithType: ProcessService.RunProcessWithCancellationSupportAsync2
-- uid: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name: RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, CancellationToken, TimeSpan?)
-  href: api/Coree.NETStandard.Services.ProcessService.html#Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsyncMe_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__
-  commentId: M:Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})
-  name.vb: RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, CancellationToken, TimeSpan?)
-  fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, System.Threading.CancellationToken, System.TimeSpan?)
-  fullName.vb: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, System.Threading.CancellationToken, System.TimeSpan?)
-  nameWithType: ProcessService.RunProcessWithCancellationSupportAsyncMe(string, string, string, bool, CancellationToken, TimeSpan?)
-  nameWithType.vb: ProcessService.RunProcessWithCancellationSupportAsyncMe(String, String, String, Boolean, CancellationToken, TimeSpan?)
-- uid: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe*
-  name: RunProcessWithCancellationSupportAsyncMe
-  href: api/Coree.NETStandard.Services.ProcessService.html#Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsyncMe_
-  commentId: Overload:Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsyncMe
-  nameWithType: ProcessService.RunProcessWithCancellationSupportAsyncMe
 - uid: Coree.NETStandard.Services.RuntimeInsightsService
   name: RuntimeInsightsService
   href: api/Coree.NETStandard.Services.RuntimeInsightsService.html
