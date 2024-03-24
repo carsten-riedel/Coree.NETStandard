@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Coree.NETStandard.Services.ProcessService
+namespace Coree.NETStandard.Services
 {
     public partial interface IProcessService
     {
