@@ -1316,6 +1316,12 @@ references:
   commentId: T:Coree.NETStandard.Services.ProcessRunErrorCode
   fullName: Coree.NETStandard.Services.ProcessRunErrorCode
   nameWithType: ProcessRunErrorCode
+- uid: Coree.NETStandard.Services.ProcessRunErrorCode.ProcessErrorCode
+  name: ProcessErrorCode
+  href: api/Coree.NETStandard.Services.ProcessRunErrorCode.html#Coree_NETStandard_Services_ProcessRunErrorCode_ProcessErrorCode
+  commentId: F:Coree.NETStandard.Services.ProcessRunErrorCode.ProcessErrorCode
+  fullName: Coree.NETStandard.Services.ProcessRunErrorCode.ProcessErrorCode
+  nameWithType: ProcessRunErrorCode.ProcessErrorCode
 - uid: Coree.NETStandard.Services.ProcessRunErrorCode.ProcessStartFailed
   name: ProcessStartFailed
   href: api/Coree.NETStandard.Services.ProcessRunErrorCode.html#Coree_NETStandard_Services_ProcessRunErrorCode_ProcessStartFailed
