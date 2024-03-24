@@ -298,6 +298,8 @@ namespace Coree.NETStandard.Services
                         returnValue.ExitCode = -1;
                         returnValue.Output = outputBuilder.ToString();
                     }
+
+                    logger.LogDebug("ProcessRunErrorCode exited with code {ExitCode}.", returnValue.ProcessRunErrorCode);
                     logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
 
                     process.Exited -= ProcessExited;
