@@ -62,7 +62,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogInformation("Output: {OutputData}", e.Data);
+                            logger.LogDebug("Output: {OutputData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                     };
@@ -70,7 +70,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogError("Error : {ErrorData}", e.Data);
+                            logger.LogDebug("Error : {ErrorData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                     };
@@ -89,7 +89,7 @@ namespace Coree.NETStandard.Services
                         {
                             returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
                         }
-                        logger.LogInformation("Process exited with code {ExitCode}.", process.ExitCode);
+                        logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
                         tcs.TrySetResult(true);
                     }
 
@@ -97,12 +97,12 @@ namespace Coree.NETStandard.Services
 
                     try
                     {
-                        logger.LogDebug("Starting process {FileName} with arguments {Arguments}.", fileName, arguments);
+                        logger.LogDebug("Starting process with arguments: {FileName} {Arguments}.", fileName, arguments);
                         process.Start();
                     }
                     catch (Exception ex)
                     {
-                        logger.LogError(ex, "Failed to start process {FileName}.", fileName);
+                        logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
                         returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessStartFailed;
                         returnValue.Output = "Failed to start process.";
                         return returnValue; // Early exit with failure indication
@@ -119,7 +119,7 @@ namespace Coree.NETStandard.Services
                             try
                             {
                                 process.Kill();
-                                logger.LogWarning("Process kill requested due to cancellation.");
+                                logger.LogDebug("Process kill requested due to cancellation.");
                             }
                             catch (Exception ex)
                             {
