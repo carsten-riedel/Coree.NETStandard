@@ -33,7 +33,7 @@ namespace Coree.NETStandard.Extensions.Enumerable
             foreach (var item in enumerable)
             {
 
-                if (item != null && !string.IsNullOrWhiteSpace(item))
+                if (item != null && !System.String.IsNullOrWhiteSpace(item))
                 {
                     yield return item;
                 }

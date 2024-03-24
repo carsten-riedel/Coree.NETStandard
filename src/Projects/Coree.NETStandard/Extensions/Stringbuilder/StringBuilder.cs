@@ -19,7 +19,7 @@ namespace Coree.NETStandard.Extensions.Stringbuilder
         /// <param name="value">The string to append before the new line. If the string is null, empty, or consists only of white-space characters, only a new line is appended.</param>
         public static void AppendLineOrDefault(this StringBuilder stringbuilder, string? value)
         {
-            if (String.IsNullOrWhiteSpace(value))
+            if (System.String.IsNullOrWhiteSpace(value))
             {
                 stringbuilder.AppendLine();
             }

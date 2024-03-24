@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
-namespace Coree.NETStandard.Extensions.String
+namespace Coree.NETStandard.Extensions.Strings
 {
     public static partial class StringExtensions
     {
