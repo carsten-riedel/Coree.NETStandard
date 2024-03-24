@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+
 using System;
 using System.Diagnostics;
 using System.IO;
@@ -11,7 +12,9 @@ namespace Coree.NETStandard.Services
     public partial interface IProcessService
     {
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null);
+
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsync2(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationRequest = default, TimeSpan? timeout = null);
+
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsyncMe(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null);
     }
 
@@ -240,7 +243,6 @@ namespace Coree.NETStandard.Services
                     process.BeginOutputReadLine();
                     process.BeginErrorReadLine();
 
-
                     using (linkedCts.Token.Register(() =>
                     {
                         if (killOnCancel && !process.HasExited)
@@ -277,15 +279,24 @@ namespace Coree.NETStandard.Services
                     }
 
 
-                    returnValue.ExitCode = process.ExitCode;
-                    returnValue.Output = outputBuilder.ToString();
-                    if ((returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown) && returnValue.ExitCode == 0)
+                    if (returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown)
                     {
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                        returnValue.ExitCode = process.ExitCode;
+                        returnValue.Output = outputBuilder.ToString();
+
+                        if (returnValue.ExitCode == 0)
+                        {
+                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.Success;
+                        }
+                        else
+                        {
+                            returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                        }
                     }
-                    else if (((returnValue.ProcessRunErrorCode == ProcessRunErrorCode.Unknown) && returnValue.ExitCode != 0))
+                    else if (returnValue.ProcessRunErrorCode == ProcessRunErrorCode.TaskCancelled)
                     {
-                        returnValue.ProcessRunErrorCode = ProcessRunErrorCode.ProcessErrorCode;
+                        returnValue.ExitCode = -1;
+                        returnValue.Output = outputBuilder.ToString();
                     }
                     logger.LogDebug("Process exited with code {ExitCode}.", process.ExitCode);
 
@@ -295,7 +306,6 @@ namespace Coree.NETStandard.Services
 
             return returnValue;
         }
-
 
         public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsync2(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)
         {
@@ -411,7 +421,6 @@ namespace Coree.NETStandard.Services
             return returnValue;
         }
 
-
         //public async Task<ProcessRunResult> RunProcessWithCancellationSupportAsync2(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationRequest = default, TimeSpan? timeout = null)
         //{
         //    ProcessRunResult returnValue = new ProcessRunResult();
@@ -514,7 +523,5 @@ namespace Coree.NETStandard.Services
         //        builder.AppendLine(line);
         //    }
         //}
-
-
     }
 }
