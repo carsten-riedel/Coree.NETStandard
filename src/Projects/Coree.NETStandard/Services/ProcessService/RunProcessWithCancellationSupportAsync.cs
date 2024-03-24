@@ -66,7 +66,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("Output: {OutputData}", e.Data);
+                            logger.LogDebug("StdOut: {OutputData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
@@ -78,7 +78,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("Error : {ErrorData}", e.Data);
+                            logger.LogDebug("StdErr: {ErrorData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
@@ -194,7 +194,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("Output: {OutputData}", e.Data);
+                            logger.LogDebug("StdOut: {OutputData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
@@ -206,7 +206,7 @@ namespace Coree.NETStandard.Services
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("Error : {ErrorData}", e.Data);
+                            logger.LogDebug("StdErr: {ErrorData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
