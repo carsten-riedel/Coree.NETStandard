@@ -31,7 +31,7 @@ jobs:
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
 
     - name: Commandline requirements
-    - run: |
+      run: |
         toolkit command-exists -t git
         toolkit command-exists -t curl
 
