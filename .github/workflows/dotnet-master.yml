@@ -31,7 +31,13 @@ jobs:
       run: dotnet nuget add source --name nugettest https://apiint.nugettest.org/v3/index.json
 
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
-      run: dotnet tool install --global Coree.DotnetTool.ToolKit
+      run: dotnet tool install Coree.DotnetTool.ToolKit
+
+    - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
+      run: dotnet toolkit setenv-gitroot -g >> $GITHUB_ENV
+
+    - name: Display
+      run: echo "$TOOLKIT_GITROOT"
         
     - name: Extract branch name
       shell: bash
