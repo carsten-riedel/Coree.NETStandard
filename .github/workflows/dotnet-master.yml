@@ -37,7 +37,7 @@ jobs:
       run: toolkit setenv-gitroot -g >> $GITHUB_ENV
 
     - name: Display
-      run: echo "$TOOLKIT_GITROOT"
+      run: echo "${{ env.TOOLKIT_GITROOT }}"
         
     - name: Extract branch name
       shell: bash
