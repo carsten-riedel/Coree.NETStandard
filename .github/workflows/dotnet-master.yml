@@ -34,6 +34,7 @@ jobs:
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
 
     - name: Checks
+      shell: bash
       run: |
       toolkit command-exists -t git
       toolkit command-exists -t curl
