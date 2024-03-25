@@ -26,6 +26,12 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+
+    - name: Add nuget test source
+      run: dotnet nuget add source --name nugettest https://apiint.nugettest.org/v3/index.json
+
+    - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
+      run: dotnet tool install --global Coree.DotnetTool.ToolKit
         
     - name: Extract branch name
       shell: bash
