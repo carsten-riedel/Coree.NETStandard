@@ -155,7 +155,7 @@ namespace Coree.NETStandard.Services
                 var directoryInfo = new DirectoryInfo(pathDirectoryList[i]);
                 if (directoryInfo.Exists == false)
                 {
-                    logger.LogInformation($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
+                    logger.LogDebug($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
                     pathDirectoryList[i] = "";
                     continue;
                 }
