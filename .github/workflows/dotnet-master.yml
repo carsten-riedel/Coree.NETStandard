@@ -27,9 +27,6 @@ jobs:
       with:
         dotnet-version: 8.0.x
 
-    - name: Add nuget test source
-      run: dotnet nuget add source --name nugettest https://apiint.nugettest.org/v3/index.json
-
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
 
@@ -38,28 +35,15 @@ jobs:
         toolkit command-exists -t git
         toolkit command-exists -t curl
 
-    - name: toolkit call
-      run: toolkit setenv-gitroot -g >> $GITHUB_ENV
+    - name: set toolkit envars
+      run: |
+        toolkit setenv-gitroot -g >> $GITHUB_ENV
+        toolkit setenv-gitbranch -g >> $GITHUB_ENV
 
-    - name: Display1
-      run: echo "${{ env.TOOLKIT_GITROOT }}"
-
-    - name: Display2
-      run: echo "$TOOLKIT_GITROOT"
-
-    - name: Display3
-      run: echo "$DOTNET_ROOT"
-
-    - name: Display4
-      run: echo "${{ env.DOTNET_ROOT }}"
-        
-    - name: Extract branch name
-      shell: bash
-      run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_OUTPUT
-      id: extract_branch
-      
-    - name: Echo branch name
-      run: echo ${{ steps.extract_branch.outputs.branch }}
+    - name: Display toolkit envars
+      run: |
+        echo "${{ env.TOOLKIT_GITROOT }}"
+        echo "${{ env.TOOLKIT_GITBRANCH }}"
 
     # Dotnet tools install powershell
     - name: Dotnet tool install powershell
