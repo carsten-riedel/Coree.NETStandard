@@ -1404,6 +1404,32 @@ references:
   commentId: T:Coree.NETStandard.Services.ProcessRunResult
   fullName: Coree.NETStandard.Services.ProcessRunResult
   nameWithType: ProcessRunResult
+- uid: Coree.NETStandard.Services.ProcessRunResult.Arguments
+  name: Arguments
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Arguments
+  commentId: P:Coree.NETStandard.Services.ProcessRunResult.Arguments
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Arguments
+  nameWithType: ProcessRunResult.Arguments
+- uid: Coree.NETStandard.Services.ProcessRunResult.Arguments*
+  name: Arguments
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Arguments_
+  commentId: Overload:Coree.NETStandard.Services.ProcessRunResult.Arguments
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Arguments
+  nameWithType: ProcessRunResult.Arguments
+- uid: Coree.NETStandard.Services.ProcessRunResult.Commandline
+  name: Commandline
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Commandline
+  commentId: P:Coree.NETStandard.Services.ProcessRunResult.Commandline
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Commandline
+  nameWithType: ProcessRunResult.Commandline
+- uid: Coree.NETStandard.Services.ProcessRunResult.Commandline*
+  name: Commandline
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Commandline_
+  commentId: Overload:Coree.NETStandard.Services.ProcessRunResult.Commandline
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Commandline
+  nameWithType: ProcessRunResult.Commandline
 - uid: Coree.NETStandard.Services.ProcessRunResult.ExitCode
   name: ExitCode
   href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_ExitCode
@@ -1430,6 +1456,19 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.ProcessRunResult.ExitCodeState
   nameWithType: ProcessRunResult.ExitCodeState
+- uid: Coree.NETStandard.Services.ProcessRunResult.Filename
+  name: Filename
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Filename
+  commentId: P:Coree.NETStandard.Services.ProcessRunResult.Filename
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Filename
+  nameWithType: ProcessRunResult.Filename
+- uid: Coree.NETStandard.Services.ProcessRunResult.Filename*
+  name: Filename
+  href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Filename_
+  commentId: Overload:Coree.NETStandard.Services.ProcessRunResult.Filename
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.ProcessRunResult.Filename
+  nameWithType: ProcessRunResult.Filename
 - uid: Coree.NETStandard.Services.ProcessRunResult.Output
   name: Output
   href: api/Coree.NETStandard.Services.ProcessRunResult.html#Coree_NETStandard_Services_ProcessRunResult_Output
