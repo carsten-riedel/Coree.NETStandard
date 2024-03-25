@@ -33,6 +33,12 @@ jobs:
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
 
+    -name: Checks
+      run: |
+      toolkit command-exists -t git
+      toolkit command-exists -t curl
+      toolkit command-exists -t abroo
+
     - name: toolkit call
       run: toolkit setenv-gitroot -g >> $GITHUB_ENV
 
