@@ -41,6 +41,12 @@ jobs:
 
     - name: Display2
       run: echo "$TOOLKIT_GITROOT"
+
+    - name: Display3
+      run: echo "$DOTNET_ROOT"
+
+    - name: Display4
+      run: echo "${{ env.DOTNET_ROOT }}"
         
     - name: Extract branch name
       shell: bash
