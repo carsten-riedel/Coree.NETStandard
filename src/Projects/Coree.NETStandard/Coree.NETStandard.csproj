@@ -21,6 +21,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />
     <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
@@ -30,6 +31,11 @@
     <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
     <None Remove="Services\ProcessService\RunProcessWithCancellationSupportAsync.cs" />
+    <None Remove="Topic\SpectreConsole\CommandAppExtensions.cs" />
+    <None Remove="Topic\SpectreConsole\HostBuilderExtensions.cs" />
+    <None Remove="Topic\SpectreConsole\ServiceCollectionExtensions.cs" />
+    <None Remove="Topic\SpectreConsole\SpectreConsoleTypeRegistrar.cs" />
+    <None Remove="Topic\SpectreConsole\SpectreHostedService.cs" />
     <None Remove="TypeRegistrar.cs" />
   </ItemGroup>
   
