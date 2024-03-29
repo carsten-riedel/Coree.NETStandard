@@ -1912,6 +1912,99 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole
   nameWithType: ServiceCollectionExtensions.AddSpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService
+  name: SpectreConsoleHostedService
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService
+  nameWithType: SpectreConsoleHostedService
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name: SpectreConsoleHostedService(ICommandApp, IHostApplicationLifetime)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name.vb: New(ICommandApp, IHostApplicationLifetime)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.SpectreConsoleHostedService(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.New(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  nameWithType: SpectreConsoleHostedService.SpectreConsoleHostedService(ICommandApp, IHostApplicationLifetime)
+  nameWithType.vb: SpectreConsoleHostedService.New(ICommandApp, IHostApplicationLifetime)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor*
+  name: SpectreConsoleHostedService
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService__ctor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.SpectreConsoleHostedService
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.New
+  nameWithType: SpectreConsoleHostedService.SpectreConsoleHostedService
+  nameWithType.vb: SpectreConsoleHostedService.New
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  name: SpectreConsoleHostedService.ExitCode
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  nameWithType: SpectreConsoleHostedService.ExitCode
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandNotFound
+  name: CommandNotFound
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandNotFound
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandNotFound
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandNotFound
+  nameWithType: SpectreConsoleHostedService.ExitCode.CommandNotFound
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandTerminated
+  name: CommandTerminated
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandTerminated
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandTerminated
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandTerminated
+  nameWithType: SpectreConsoleHostedService.ExitCode.CommandTerminated
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
+  name: FailedToRun
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_FailedToRun
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
+  nameWithType: SpectreConsoleHostedService.ExitCode.FailedToRun
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed
+  name: HelpVersionDisplayed
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_HelpVersionDisplayed
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed
+  nameWithType: SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndContinue
+  name: SuccessAndContinue
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_SuccessAndContinue
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndContinue
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndContinue
+  nameWithType: SpectreConsoleHostedService.ExitCode.SuccessAndContinue
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndExit
+  name: SuccessAndExit
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_SuccessAndExit
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndExit
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.SuccessAndExit
+  nameWithType: SpectreConsoleHostedService.ExitCode.SuccessAndExit
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  name: StartAsync(CancellationToken)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StartAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  nameWithType: SpectreConsoleHostedService.StartAsync(CancellationToken)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync*
+  name: StartAsync
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StartAsync_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync
+  nameWithType: SpectreConsoleHostedService.StartAsync
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  name: StopAsync(CancellationToken)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StopAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  nameWithType: SpectreConsoleHostedService.StopAsync(CancellationToken)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync*
+  name: StopAsync
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StopAsync_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync
+  nameWithType: SpectreConsoleHostedService.StopAsync
 - uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar
   name: SpectreConsoleTypeRegistrar
   href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html
@@ -2058,41 +2151,3 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve
   nameWithType: SpectreConsoleTypeResolver.Resolve
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
-  name: SpectreHostedService
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html
-  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
-  nameWithType: SpectreHostedService
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
-  name: SpectreHostedService(ICommandApp, IHostApplicationLifetime)
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_
-  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
-  name.vb: New(ICommandApp, IHostApplicationLifetime)
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.SpectreHostedService(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
-  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.New(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
-  nameWithType: SpectreHostedService.SpectreHostedService(ICommandApp, IHostApplicationLifetime)
-  nameWithType.vb: SpectreHostedService.New(ICommandApp, IHostApplicationLifetime)
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor*
-  name: SpectreHostedService
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService__ctor_
-  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.SpectreHostedService
-  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.New
-  nameWithType: SpectreHostedService.SpectreHostedService
-  nameWithType.vb: SpectreHostedService.New
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
-  name: ExecuteAsync(CancellationToken)
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService_ExecuteAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
-  nameWithType: SpectreHostedService.ExecuteAsync(CancellationToken)
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync*
-  name: ExecuteAsync
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService_ExecuteAsync_
-  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync
-  nameWithType: SpectreHostedService.ExecuteAsync
