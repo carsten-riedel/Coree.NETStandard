@@ -284,12 +284,16 @@ Classes
       <section><p>Provides extension methods for <span class="xref">Spectre.Console.Cli.ICommandApp</span>.</p>
 </section>
       <h4><a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html">HostBuilderExtensions</a></h4>
-      <section></section>
+      <section><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a> to facilitate the integration of Spectre.Console's CommandApp into the application's host builder.</p>
+</section>
       <h4><a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html">ServiceCollectionExtensions</a></h4>
       <section><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a> to facilitate the integration of Spectre.Console's CommandApp.</p>
 </section>
       <h4><a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html">SpectreConsoleHostedService</a></h4>
-      <section></section>
+      <section><p>Provides a hosted service for running Spectre.Console CLI applications
+within a .NET Core generic host. This class handles the application lifecycle,
+processes commands, and manages application exit codes based on command execution results.</p>
+</section>
       <h4><a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html">SpectreConsoleTypeRegistrar</a></h4>
       <section><p>Enables type registration for Spectre.Console applications, supporting both <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
 </section>
@@ -300,7 +304,10 @@ Classes
 Enums
 </h3>
       <h4><a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html">SpectreConsoleHostedService.ExitCode</a></h4>
-      <section></section>
+      <section><p>Defines exit codes for the SpectreConsoleHostedService application.
+These exit codes communicate the outcome of the application's execution
+to the calling process, allowing for scripted interactions and error handling.</p>
+</section>
 
 
 </article>

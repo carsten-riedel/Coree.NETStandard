@@ -276,7 +276,10 @@
 
   <h1 id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService" class="text-break">Class SpectreConsoleHostedService
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides a hosted service for running Spectre.Console CLI applications
+within a .NET Core generic host. This class handles the application lifecycle,
+processes commands, and manages application exit codes based on command execution results.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
     <h5>Implements</h5>
@@ -295,11 +298,13 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.%23ctor(Spectre.Console.Cli.ICommandApp%2CMicrosoft.Extensions.Hosting.IHostApplicationLifetime)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L40">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L94">View Source</a>
   </span>
   <a id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService__ctor_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor*"></a>
   <h4 id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)">SpectreConsoleHostedService(ICommandApp, IHostApplicationLifetime)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html">SpectreConsoleHostedService</a> class
+with the specified Spectre.Console CLI application and application lifetime management services.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -318,12 +323,14 @@
       <tr>
         <td><span class="xref">ICommandApp</span></td>
         <td><span class="parametername">commandApp</span></td>
-        <td></td>
+        <td><p>The Spectre.Console CLI application to be hosted.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationlifetime">IHostApplicationLifetime</a></td>
         <td><span class="parametername">appLifetime</span></td>
-        <td></td>
+        <td><p>The application lifetime management service.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -334,11 +341,17 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StartAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L46">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L111">View Source</a>
   </span>
   <a id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StartAsync_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync*"></a>
   <h4 id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StartAsync_System_Threading_CancellationToken_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)">StartAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Triggered when the application host is ready to start the service.</p>
+  <div class="markdown level1 summary"><p>Starts the hosted Spectre.Console CLI application asynchronously.
+Parses the command line arguments, executes the corresponding command,
+and sets the application exit code based on the outcome of the command execution.
+This method employs a specialized set of exit codes defined by the <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html">SpectreConsoleHostedService.ExitCode</a> enum,
+which may deviate from standard exit code conventions to suit the specific behavior and requirements
+of this application. For example, it includes codes for successful command execution that leads to application
+continuation or termination, and for handling cases where help information is displayed or a command is not found.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -358,7 +371,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Indicates that the start process has been aborted.</p>
+        <td><p>A token that can be used to request cancellation of the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -374,7 +387,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous Start operation.</p>
+        <td><p>A task that represents the asynchronous start operation.</p>
 </td>
       </tr>
     </tbody>
@@ -384,11 +397,12 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StopAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L97">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L168">View Source</a>
   </span>
   <a id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StopAsync_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync*"></a>
   <h4 id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_StopAsync_System_Threading_CancellationToken_" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)">StopAsync(CancellationToken)</h4>
-  <div class="markdown level1 summary"><p>Triggered when the application host is performing a graceful shutdown.</p>
+  <div class="markdown level1 summary"><p>Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+Currently, this method completes immediately as no cleanup is needed.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -408,7 +422,7 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
         <td><span class="parametername">cancellationToken</span></td>
-        <td><p>Indicates that the shutdown process should no longer be graceful.</p>
+        <td><p>A token that can be used to request cancellation of the operation.</p>
 </td>
       </tr>
     </tbody>
@@ -424,7 +438,7 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
-        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that represents the asynchronous Stop operation.</p>
+        <td><p>A task that represents the asynchronous stop operation.</p>
 </td>
       </tr>
     </tbody>
@@ -445,7 +459,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

@@ -292,7 +292,7 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection%2CSystem.Action%7BSpectre.Console.Cli.IConfigurator%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/ServiceCollectionExtensions.cs/#L32">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/ServiceCollectionExtensions.cs/#L77">View Source</a>
   </span>
   <a id="Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_" data-uid="Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole*"></a>
   <h4 id="Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__" data-uid="Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator})">AddSpectreConsole(IServiceCollection, Action&lt;IConfigurator&gt;)</h4>
@@ -351,8 +351,49 @@ enabling the definition, parsing, and execution of commands.</p>
 <li>Initializes a new instance of <span class="xref">Spectre.Console.Cli.CommandApp</span> and configures it using the provided <code class="paramref">configureCommandApp</code> action.</li>
 <li>Scans for command types registered within the <span class="xref">Spectre.Console.Cli.CommandApp</span> and registers them as singletons in the service collection.</li>
 <li>Registers the <span class="xref">Spectre.Console.Cli.CommandApp</span> itself as a singleton service, configured to use a <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html">SpectreConsoleTypeRegistrar</a> for dependency injection.</li>
-<li>Adds a SpectreConsoleBackgroundService, to manage the application lifecycle of the <span class="xref">Spectre.Console.Cli.CommandApp</span>.</li>
+<li>Adds a <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html">SpectreConsoleHostedService</a>, to manage the application lifecycle of the <span class="xref">Spectre.Console.Cli.CommandApp</span>.
+<example></example></li>
 </ul>
+<pre><code class="lang-csharp">static async Task Main(string[] args)
+{
+    var builder = Host.CreateDefaultBuilder(args);
+    builder.ConfigureServices(services =&gt;
+    {
+        services.AddSpectreConsole(configCommandApp =&gt;
+        {
+            configCommandApp.SetApplicationName("testapp");
+            configCommandApp.AddCommand&lt;MyAsyncCommand&gt;("my-command");
+        });
+        services.AddSingleton&lt;ISomeServiceDependency, SomeServiceDependency&gt;();
+        services.AddHostedService&lt;SomeOtherBackgroundService&gt;();
+    });
+    await builder.Build().RunAsync();
+}
+
+public class MyAsyncCommand : AsyncCommand&lt;MyAsyncCommand.Settings&gt;
+{
+    private readonly ISomeServiceDependency dependencyService; private readonly IHostApplicationLifetime appLifetime;
+
+    public MyAsyncCommand(ISomeServiceDependency dependencyService, IHostApplicationLifetime appLifetime)
+    {
+        this.dependencyService = dependencyService; this.appLifetime = appLifetime;
+    }
+
+    public class Settings : CommandSettings
+    {
+        [Description("The commandline setting")]
+        [CommandArgument(0, "&lt;Setting&gt;")]
+        public string? SomeSetting { get; init; }
+    }
+
+    public override async Task&lt;int&gt; ExecuteAsync(CommandContext context, Settings settings)
+    {
+        try { await dependencyService.PerformConsoleAction(appLifetime.ApplicationStopping); }
+        catch (Exception) { return (int)SpectreConsoleHostedService.ExitCode.CommandTerminated; }
+        return (int)SpectreConsoleHostedService.ExitCode.SuccessAndContinue;
+    }
+}</code></pre>
+
 </div>
 
 </article>
@@ -366,7 +407,7 @@ enabling the definition, parsing, and execution of commands.</p>
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/ServiceCollectionExtensions.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/ServiceCollectionExtensions.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
