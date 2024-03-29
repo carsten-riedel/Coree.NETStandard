@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-
-using Coree.NETStandard.Classes.Spectre;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console.Cli;
 
