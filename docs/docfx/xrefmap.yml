@@ -13,6 +13,152 @@ references:
   commentId: N:Coree.NETStandard.Classes.Spectre
   fullName: Coree.NETStandard.Classes.Spectre
   nameWithType: Coree.NETStandard.Classes.Spectre
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar
+  name: SpectreConsoleTypeRegistrar
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html
+  commentId: T:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar
+  nameWithType: SpectreConsoleTypeRegistrar
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  name: SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  name.vb: New(IServiceCollection, Boolean)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceCollection, Boolean)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  name: SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar__ctor_System_IServiceProvider_System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(System.IServiceProvider, bool)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.New(System.IServiceProvider, Boolean)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor*
+  name: SpectreConsoleTypeRegistrar
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.New
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build
+  name: Build()
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_Build
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build()
+  nameWithType: SpectreConsoleTypeRegistrar.Build()
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build*
+  name: Build
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_Build_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Build
+  nameWithType: SpectreConsoleTypeRegistrar.Build
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  name: Register(Type, Type)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_Register_System_Type_System_Type_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register(System.Type, System.Type)
+  nameWithType: SpectreConsoleTypeRegistrar.Register(Type, Type)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register*
+  name: Register
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_Register_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.Register
+  nameWithType: SpectreConsoleTypeRegistrar.Register
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name: RegisterInstance(Type, object)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_RegisterInstance_System_Type_System_Object_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name.vb: RegisterInstance(Type, Object)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, object)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, Object)
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance(Type, object)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterInstance(Type, Object)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance*
+  name: RegisterInstance
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_RegisterInstance_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterInstance
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name: RegisterLazy(Type, Func<object>)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_RegisterLazy_System_Type_System_Func_System_Object__
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name.vb: RegisterLazy(Type, Func(Of Object))
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func<object>)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func(Of Object))
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy*
+  name: RegisterLazy
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeRegistrar_RegisterLazy_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.RegisterLazy
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver
+  name: SpectreConsoleTypeResolver
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html
+  commentId: T:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver
+  nameWithType: SpectreConsoleTypeResolver
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  name: SpectreConsoleTypeResolver(IServiceProvider, bool)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(System.IServiceProvider, bool)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.New(System.IServiceProvider, Boolean)
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(IServiceProvider, bool)
+  nameWithType.vb: SpectreConsoleTypeResolver.New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.#ctor*
+  name: SpectreConsoleTypeResolver
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.New
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  nameWithType.vb: SpectreConsoleTypeResolver.New
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose
+  name: Dispose()
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver_Dispose
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose()
+  nameWithType: SpectreConsoleTypeResolver.Dispose()
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose*
+  name: Dispose
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver_Dispose_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Dispose
+  nameWithType: SpectreConsoleTypeResolver.Dispose
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve(System.Type)
+  name: Resolve(Type?)
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver_Resolve_System_Type_
+  commentId: M:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve(System.Type)
+  name.vb: Resolve(Type)
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve(System.Type?)
+  fullName.vb: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve(System.Type)
+  nameWithType: SpectreConsoleTypeResolver.Resolve(Type?)
+  nameWithType.vb: SpectreConsoleTypeResolver.Resolve(Type)
+- uid: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve*
+  name: Resolve
+  href: api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html#Coree_NETStandard_Classes_Spectre_SpectreConsoleTypeResolver_Resolve_
+  commentId: Overload:Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.Resolve
+  nameWithType: SpectreConsoleTypeResolver.Resolve
 - uid: Coree.NETStandard.Classes.Spectre.TypeRegistrar
   name: TypeRegistrar
   href: api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html
@@ -520,6 +666,25 @@ references:
   commentId: N:Coree.NETStandard.Extensions
   fullName: Coree.NETStandard.Extensions
   nameWithType: Coree.NETStandard.Extensions
+- uid: Coree.NETStandard.Extensions.CancellationTokenExtensions
+  name: CancellationTokenExtensions
+  href: api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.CancellationTokenExtensions
+  fullName: Coree.NETStandard.Extensions.CancellationTokenExtensions
+  nameWithType: CancellationTokenExtensions
+- uid: Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync(System.Threading.CancellationToken)
+  name: WaitForCancellationAsync(CancellationToken)
+  href: api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html#Coree_NETStandard_Extensions_CancellationTokenExtensions_WaitForCancellationAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync(System.Threading.CancellationToken)
+  nameWithType: CancellationTokenExtensions.WaitForCancellationAsync(CancellationToken)
+- uid: Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync*
+  name: WaitForCancellationAsync
+  href: api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html#Coree_NETStandard_Extensions_CancellationTokenExtensions_WaitForCancellationAsync_
+  commentId: Overload:Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync
+  nameWithType: CancellationTokenExtensions.WaitForCancellationAsync
 - uid: Coree.NETStandard.Extensions.Enumerable
   name: Coree.NETStandard.Extensions.Enumerable
   href: api/Coree.NETStandard.Extensions.Enumerable.html
@@ -1678,3 +1843,256 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.RuntimeInsightsService.Username
   nameWithType: RuntimeInsightsService.Username
+- uid: Coree.NETStandard.Topic.SpectreConsole
+  name: Coree.NETStandard.Topic.SpectreConsole
+  href: api/Coree.NETStandard.Topic.SpectreConsole.html
+  commentId: N:Coree.NETStandard.Topic.SpectreConsole
+  fullName: Coree.NETStandard.Topic.SpectreConsole
+  nameWithType: Coree.NETStandard.Topic.SpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions
+  name: CommandAppExtensions
+  href: api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions
+  fullName: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions
+  nameWithType: CommandAppExtensions
+- uid: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes(Spectre.Console.Cli.ICommandApp)
+  name: GetCommandTypes(ICommandApp)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.html#Coree_NETStandard_Topic_SpectreConsole_CommandAppExtensions_GetCommandTypes_Spectre_Console_Cli_ICommandApp_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes(Spectre.Console.Cli.ICommandApp)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes(Spectre.Console.Cli.ICommandApp)
+  nameWithType: CommandAppExtensions.GetCommandTypes(ICommandApp)
+- uid: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes*
+  name: GetCommandTypes
+  href: api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.html#Coree_NETStandard_Topic_SpectreConsole_CommandAppExtensions_GetCommandTypes_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.GetCommandTypes
+  nameWithType: CommandAppExtensions.GetCommandTypes
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions
+  name: HostBuilderExtensions
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions
+  nameWithType: HostBuilderExtensions
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator})
+  name: UseSpectreConsole(IHostBuilder, Action<IConfigurator>)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator})
+  name.vb: UseSpectreConsole(IHostBuilder, Action(Of IConfigurator))
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Spectre.Console.Cli.IConfigurator>)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Spectre.Console.Cli.IConfigurator))
+  nameWithType: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action<IConfigurator>)
+  nameWithType.vb: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action(Of IConfigurator))
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole*
+  name: UseSpectreConsole
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole
+  nameWithType: HostBuilderExtensions.UseSpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator})
+  name: AddSpectreConsole(IServiceCollection, Action<IConfigurator>)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator})
+  name.vb: AddSpectreConsole(IServiceCollection, Action(Of IConfigurator))
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Spectre.Console.Cli.IConfigurator>)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Spectre.Console.Cli.IConfigurator))
+  nameWithType: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action<IConfigurator>)
+  nameWithType.vb: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action(Of IConfigurator))
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole*
+  name: AddSpectreConsole
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole
+  nameWithType: ServiceCollectionExtensions.AddSpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar
+  name: SpectreConsoleTypeRegistrar
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar
+  nameWithType: SpectreConsoleTypeRegistrar
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  name: SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar__ctor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  name.vb: New(IServiceCollection, Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceCollection, Boolean)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  name: SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar__ctor_System_IServiceProvider_System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(System.IServiceProvider, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.New(System.IServiceProvider, Boolean)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor*
+  name: SpectreConsoleTypeRegistrar
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar__ctor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.New
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  name: Build()
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_Build
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build()
+  nameWithType: SpectreConsoleTypeRegistrar.Build()
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build*
+  name: Build
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_Build_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  nameWithType: SpectreConsoleTypeRegistrar.Build
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  name: Register(Type, Type)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_Register_System_Type_System_Type_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type, System.Type)
+  nameWithType: SpectreConsoleTypeRegistrar.Register(Type, Type)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register*
+  name: Register
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_Register_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.Register
+  nameWithType: SpectreConsoleTypeRegistrar.Register
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name: RegisterInstance(Type, object)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterInstance_System_Type_System_Object_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  name.vb: RegisterInstance(Type, Object)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, object)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, Object)
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance(Type, object)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterInstance(Type, Object)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance*
+  name: RegisterInstance
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterInstance_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name: RegisterLazy(Type, Func<object>)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterLazy_System_Type_System_Func_System_Object__
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  name.vb: RegisterLazy(Type, Func(Of Object))
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func<object>)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func(Of Object))
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy*
+  name: RegisterLazy
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterLazy_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver
+  name: SpectreConsoleTypeResolver
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver
+  nameWithType: SpectreConsoleTypeResolver
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  name: SpectreConsoleTypeResolver(IServiceProvider, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(System.IServiceProvider, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.New(System.IServiceProvider, Boolean)
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(IServiceProvider, bool)
+  nameWithType.vb: SpectreConsoleTypeResolver.New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.#ctor*
+  name: SpectreConsoleTypeResolver
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver__ctor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.New
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  nameWithType.vb: SpectreConsoleTypeResolver.New
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  name: Dispose()
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver_Dispose
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose()
+  nameWithType: SpectreConsoleTypeResolver.Dispose()
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose*
+  name: Dispose
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver_Dispose_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  nameWithType: SpectreConsoleTypeResolver.Dispose
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  name: Resolve(Type?)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver_Resolve_System_Type_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  name.vb: Resolve(Type)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type?)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  nameWithType: SpectreConsoleTypeResolver.Resolve(Type?)
+  nameWithType.vb: SpectreConsoleTypeResolver.Resolve(Type)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve*
+  name: Resolve
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleTypeResolver_Resolve_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.Resolve
+  nameWithType: SpectreConsoleTypeResolver.Resolve
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
+  name: SpectreHostedService
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html
+  commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService
+  nameWithType: SpectreHostedService
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name: SpectreHostedService(ICommandApp, IHostApplicationLifetime)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name.vb: New(ICommandApp, IHostApplicationLifetime)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.SpectreHostedService(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.New(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  nameWithType: SpectreHostedService.SpectreHostedService(ICommandApp, IHostApplicationLifetime)
+  nameWithType.vb: SpectreHostedService.New(ICommandApp, IHostApplicationLifetime)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor*
+  name: SpectreHostedService
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService__ctor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.SpectreHostedService
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.New
+  nameWithType: SpectreHostedService.SpectreHostedService
+  nameWithType.vb: SpectreHostedService.New
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  name: ExecuteAsync(CancellationToken)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService_ExecuteAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync(System.Threading.CancellationToken)
+  nameWithType: SpectreHostedService.ExecuteAsync(CancellationToken)
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync*
+  name: ExecuteAsync
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html#Coree_NETStandard_Topic_SpectreConsole_SpectreHostedService_ExecuteAsync_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.ExecuteAsync
+  nameWithType: SpectreHostedService.ExecuteAsync

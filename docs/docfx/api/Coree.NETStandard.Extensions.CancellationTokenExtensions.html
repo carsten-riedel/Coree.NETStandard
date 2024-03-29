@@ -6,10 +6,10 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="google" content="notranslate">
-      <title>Namespace Coree.NETStandard.Extensions.Stringbuilder
+      <title>Class CancellationTokenExtensions
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Namespace Coree.NETStandard.Extensions.Stringbuilder
+      <meta name="title" content="Class CancellationTokenExtensions
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -116,8 +116,8 @@
                       <a href="Coree.NETStandard.Extensions.html" title="Coree.NETStandard.Extensions" class="">Coree.NETStandard.Extensions</a>
 
                         <ul class="nav level2">
-                          <li class="">
-                            <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="">CancellationTokenExtensions</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="active">CancellationTokenExtensions</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.SerilogExtensions.html" title="SerilogExtensions" class="">SerilogExtensions</a>
@@ -147,9 +147,9 @@
                           </li>
                         </ul>
                     </li>
-                    <li class="active">
+                    <li class="">
                       <span class="expand-stub"></span>
-                      <a href="Coree.NETStandard.Extensions.Stringbuilder.html" title="Coree.NETStandard.Extensions.Stringbuilder" class="active">Coree.NETStandard.Extensions.Stringbuilder</a>
+                      <a href="Coree.NETStandard.Extensions.Stringbuilder.html" title="Coree.NETStandard.Extensions.Stringbuilder" class="">Coree.NETStandard.Extensions.Stringbuilder</a>
 
                         <ul class="nav level2">
                           <li class="">
@@ -267,20 +267,102 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Extensions.Stringbuilder">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Extensions.CancellationTokenExtensions">
 
-  <h1 id="Coree_NETStandard_Extensions_Stringbuilder" data-uid="Coree.NETStandard.Extensions.Stringbuilder" class="text-break">Namespace Coree.NETStandard.Extensions.Stringbuilder
+
+
+  <h1 id="Coree_NETStandard_Extensions_CancellationTokenExtensions" data-uid="Coree.NETStandard.Extensions.CancellationTokenExtensions" class="text-break">Class CancellationTokenExtensions
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to enhance asynchronous programming patterns.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
-  <div class="markdown level0 remarks"></div>
-    <h3 id="classes">
-Classes
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Extensions.html">Extensions</a></h6>
+  <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
+  <h5 id="Coree_NETStandard_Extensions_CancellationTokenExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CancellationTokenExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
 </h3>
-      <h4><a class="xref" href="Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html">StringBuilderExtension</a></h4>
-      <section><p>Provides extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> class.</p>
-</section>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_CancellationTokenExtensions_WaitForCancellationAsync_System_Threading_CancellationToken_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync(System.Threading.CancellationToken)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/CancellationTokenExtensions.cs/#L50">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_CancellationTokenExtensions_WaitForCancellationAsync_" data-uid="Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync*"></a>
+  <h4 id="Coree_NETStandard_Extensions_CancellationTokenExtensions_WaitForCancellationAsync_System_Threading_CancellationToken_" data-uid="Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync(System.Threading.CancellationToken)">WaitForCancellationAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates a Task that completes when the specified <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> is cancelled.
+This method facilitates integrating cancellation tokens with asynchronous operations, enabling easy response to cancellation requests in a Task-based pattern.
+<br><br>
+Example usage (awaiting application start in a background service):</p>
+<pre><code class="lang-csharp">public class MyBackgroundService : BackgroundService
+{
+    private readonly IHostApplicationLifetime _appLifetime;
 
+    public MyBackgroundService(IHostApplicationLifetime appLifetime)
+    {
+        _appLifetime = appLifetime;
+    }
+
+    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    {
+        // Wait for the application to fully start
+        await _appLifetime.ApplicationStarted.WaitForCancellationAsync();
+
+        Console.WriteLine("Application has started. Background service is proceeding with its tasks.");
+
+        // Now that the application has started, proceed with the background service's main logic
+        while (!stoppingToken.IsCancellationRequested)
+        {
+            // Example operation: perform some work and wait
+            Console.WriteLine("Background service is doing its work...");
+            await Task.Delay(10000, stoppingToken); // Simulate some work by delaying
+        }
+    }
+}</code></pre>
+<p>Note: This extension is particularly useful for synchronizing startup sequences in applications, such as ensuring background services wait for the entire application to start before proceeding with their tasks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task WaitForCancellationAsync(this CancellationToken cancellationToken)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to monitor for cancellation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the token is cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>
@@ -289,6 +371,12 @@ Classes
             <div class="sideaffix">
               <div class="contribution">
                 <ul class="nav">
+                  <li>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_CancellationTokenExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.CancellationTokenExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/CancellationTokenExtensions.cs/#L12" class="contribution-link">View Source</a>
+                  </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">

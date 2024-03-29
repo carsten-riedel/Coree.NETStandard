@@ -4,6 +4,26 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.yml",
       "output": {
         ".html": {
@@ -48,6 +68,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Classes.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.CancellationTokenExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html"
         }
       },
       "version": ""
@@ -328,6 +358,76 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreHostedService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.html"
         }
       },
       "version": ""
