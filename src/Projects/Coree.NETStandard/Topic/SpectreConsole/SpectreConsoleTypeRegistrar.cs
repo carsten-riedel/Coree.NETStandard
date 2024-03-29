@@ -20,7 +20,7 @@ namespace Coree.NETStandard.Topic.SpectreConsole
 
         /// <summary>
         /// Constructs with an <see cref="IServiceProvider"/>, typically for hosted applications using <c>builder.Build()</c>.
-        /// <param name="disposeServiceProvider">True to dispose the service provider on disposal.</param>
+        /// <param name="disposeServiceProvider">True to dispose the service provider on CommandApp disposal.</param>
         /// </summary>
         /// <param name="serviceProvider">Service provider for type resolution.</param>
         public SpectreConsoleTypeRegistrar(IServiceProvider serviceProvider, bool disposeServiceProvider)
@@ -33,7 +33,7 @@ namespace Coree.NETStandard.Topic.SpectreConsole
         /// Constructs with an <see cref="IServiceCollection"/>, for manual service collection setups, e.g., simple console apps.
         /// </summary>
         /// <param name="serviceCollection">Service collection for registrations.</param>
-        /// <param name="disposeServiceProvider">True to dispose the service provider on disposal.</param>
+        /// <param name="disposeServiceProvider">True to dispose the service provider on CommandApp disposal.</param>
         public SpectreConsoleTypeRegistrar(IServiceCollection serviceCollection, bool disposeServiceProvider)
         {
             this.services = serviceCollection;

@@ -34,8 +34,8 @@
     <None Remove="Topic\SpectreConsole\CommandAppExtensions.cs" />
     <None Remove="Topic\SpectreConsole\HostBuilderExtensions.cs" />
     <None Remove="Topic\SpectreConsole\ServiceCollectionExtensions.cs" />
+    <None Remove="Topic\SpectreConsole\SpectreConsoleHostedService.cs" />
     <None Remove="Topic\SpectreConsole\SpectreConsoleTypeRegistrar.cs" />
-    <None Remove="Topic\SpectreConsole\SpectreHostedService.cs" />
     <None Remove="TypeRegistrar.cs" />
   </ItemGroup>
   

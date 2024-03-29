@@ -32,7 +32,7 @@ namespace Coree.NETStandard.Topic.SpectreConsole
                     return app;
                 });
 
-                services.AddHostedService<SpectreHostedService>();
+                services.AddHostedService<SpectreConsoleHostedService>();
                 //services.Configure<ConsoleLifetimeOptions>(e => { e.SuppressStatusMessages = true; });
 
             });
