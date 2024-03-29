@@ -277,7 +277,10 @@
 
   <h1 id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode" data-uid="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode" class="text-break">Enum SpectreConsoleHostedService.ExitCode
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Defines exit codes for the SpectreConsoleHostedService application.
+These exit codes communicate the outcome of the application's execution
+to the calling process, allowing for scripted interactions and error handling.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Topic.html">Topic</a>.<a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.html">SpectreConsole</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
@@ -297,27 +300,48 @@
     <tbody>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandNotFound">CommandNotFound</td>
-        <td></td>
+        <td><p>Indicates that the specified command could not be found. This exit code is used
+when a user inputs a command that does not match any known command patterns.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandTerminated">CommandTerminated</td>
-        <td></td>
+        <td><p>Indicates that the command was terminated, often due to an external interrupt signal
+(e.g., Ctrl+C). This code is reserved for scenarios where the application's execution
+is abruptly stopped.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_FailedToRun">FailedToRun</td>
-        <td></td>
+        <td><p>Indicates that the application failed to run. This can occur if initialization fails
+or if the application is aborted before it can start properly.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_HelpVersionDisplayed">HelpVersionDisplayed</td>
-        <td></td>
+        <td><p>Indicates that help or version information was displayed. This neutral, Linux-like
+exit code is used when the application successfully displays help or version information
+upon request.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_SuccessAndContinue">SuccessAndContinue</td>
-        <td></td>
+        <td><p>Indicates that the command executed successfully and the application will not initiate a shutdown.
+This exit code signifies that the command was completed successfully,
+and the application remains active for further commands or operations. The application lifecycle
+is not affected, and <code>appLifetime.Stop</code> is not called.</p>
+<p>Note: If background services or other tasks running within the application encounter a failure,
+they need to set a failed exit code manually (e.g., `Environment.ExitCode = non-zero value`) before
+calling `appLifetime.Stop` to ensure the exit code accurately reflects the application state.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_SuccessAndExit">SuccessAndExit</td>
-        <td></td>
+        <td><p>Indicates that the command executed successfully and the application will initiate a shutdown.
+This exit code is used when a command completes successfully and dictates that the application
+should perform a clean shutdown by calling <code>appLifetime.Stop</code>. It signifies the end of the application's
+current lifecycle, allowing for graceful termination.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>
@@ -332,7 +356,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L30" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/SpectreConsoleHostedService.cs/#L40" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

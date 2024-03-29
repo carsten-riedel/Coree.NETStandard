@@ -276,7 +276,8 @@
 
   <h1 id="Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions" data-uid="Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions" class="text-break">Class HostBuilderExtensions
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a> to facilitate the integration of Spectre.Console's CommandApp into the application's host builder.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Topic.html">Topic</a>.<a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.html">SpectreConsole</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
@@ -291,11 +292,14 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder%2CSystem.Action%7BSpectre.Console.Cli.IConfigurator%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/HostBuilderExtensions.cs/#L13">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/HostBuilderExtensions.cs/#L75">View Source</a>
   </span>
   <a id="Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_" data-uid="Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole*"></a>
   <h4 id="Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__" data-uid="Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator})">UseSpectreConsole(IHostBuilder, Action&lt;IConfigurator&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Configures the application's host builder to use Spectre.Console's <span class="xref">Spectre.Console.Cli.CommandApp</span> and related services.
+This setup enables the application to utilize Spectre.Console's command line interface tools,
+allowing for the definition, parsing, and execution of commands within a .NET Core application.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -314,12 +318,14 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></td>
         <td><span class="parametername">builder</span></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a> to configure.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<span class="xref">IConfigurator</span>&gt;</td>
         <td><span class="parametername">configureCommandApp</span></td>
-        <td></td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action-1">Action&lt;T&gt;</a> delegate that configures the <span class="xref">Spectre.Console.Cli.CommandApp</span>.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -334,7 +340,74 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a></td>
-        <td></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder">IHostBuilder</a> so that additional configuration calls can be chained.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method performs the following operations:</p>
+<ul>
+<li>Creates and configures a new instance of <span class="xref">Spectre.Console.Cli.CommandApp</span> using the provided <code class="paramref">configureCommandApp</code> action.</li>
+<li>Scans for command types within the <span class="xref">Spectre.Console.Cli.CommandApp</span> and registers them as singletons in the service collection.</li>
+<li>Registers the <span class="xref">Spectre.Console.Cli.CommandApp</span> as a singleton service, configured to use a <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html">SpectreConsoleTypeRegistrar</a> for dependency injection.</li>
+<li>Adds a <a class="xref" href="Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html">SpectreConsoleHostedService</a> to the services collection to manage the lifecycle of the <span class="xref">Spectre.Console.Cli.CommandApp</span> within the host application.
+<example></example></li>
+</ul>
+<pre><code class="lang-csharp">static async Task Main(string[] args)
+{
+    var builder = Host.CreateDefaultBuilder(args);
+    builder.ConfigureServices(services =&gt;
+    {
+        services.AddSingleton&lt;ISomeServiceDependency, SomeServiceDependency&gt;();
+        services.AddHostedService&lt;SomeOtherBackgroundService&gt;();
+    });
+    builder.UseSpectreConsole(configCommandApp =&gt;
+    {
+        configCommandApp.SetApplicationName("testapp");
+        configCommandApp.AddCommand&lt;MyAsyncCommand&gt;("my-command");
+    });
+    await builder.Build().RunAsync();
+}
+
+public class MyAsyncCommand : AsyncCommand&lt;MyAsyncCommand.Settings&gt;
+{
+    private readonly ISomeServiceDependency dependencyService; private readonly IHostApplicationLifetime appLifetime;
+
+    public MyAsyncCommand(ISomeServiceDependency dependencyService, IHostApplicationLifetime appLifetime)
+    {
+        this.dependencyService = dependencyService; this.appLifetime = appLifetime;
+    }
+
+    public class Settings : CommandSettings
+    {
+        [Description("The commandline setting")]
+        [CommandArgument(0, "&lt;Setting&gt;")]
+        public string? SomeSetting { get; init; }
+    }
+
+    public override async Task&lt;int&gt; ExecuteAsync(CommandContext context, Settings settings)
+    {
+        try { await dependencyService.PerformConsoleAction(appLifetime.ApplicationStopping); }
+        catch (Exception) { return (int)SpectreConsoleHostedService.ExitCode.CommandTerminated; }
+        return (int)SpectreConsoleHostedService.ExitCode.SuccessAndContinue;
+    }
+}</code></pre>
+
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if <code class="paramref">builder</code> is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -350,7 +423,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/HostBuilderExtensions.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Topic/SpectreConsole/HostBuilderExtensions.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
