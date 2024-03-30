@@ -261,7 +261,8 @@
 
   <h1 id="Coree_NETStandard_Services_ProcessRunExitCodeState" data-uid="Coree.NETStandard.Services.ProcessRunExitCodeState" class="text-break">Enum ProcessRunExitCodeState
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Represents various outcome states for process execution operations within the service. This enum is designed to be flexible and applicable to a range of process-related methods, providing a standardized way to communicate success, failure, and other states across different types of process executions.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Services.html">Services</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
@@ -282,27 +283,33 @@ public enum ProcessRunExitCodeState</code></pre>
     <tbody>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_IsCanceledSet">IsCanceledSet</td>
-        <td></td>
+        <td><p>Indicates the operation was canceled, either through user action or a timeout. This state reflects an intentional interruption of the process before completion.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_IsFailedStart">IsFailedStart</td>
-        <td></td>
+        <td><p>Indicates the process failed to start, which could result from various issues such as executable not found, insufficient permissions, or invalid arguments.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_IsValid">IsValid</td>
-        <td></td>
+        <td><p>Indicates a valid exit code has been set, suggesting the process has concluded and an outcome is available for evaluation. This state is intended to signify the end of an operation, whether successful or not.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_IsValidErrorCode">IsValidErrorCode</td>
-        <td></td>
+        <td><p>Indicates the process ran but completed with an error, typically represented by a non-zero exit code. This state signifies an unsuccessful execution according to the process's own criteria.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_IsValidSuccess">IsValidSuccess</td>
-        <td></td>
+        <td><p>Indicates a successful execution where the process completed as expected without any errors, typically represented by an exit code of 0.</p>
+</td>
       </tr>
       <tr>
         <td id="Coree_NETStandard_Services_ProcessRunExitCodeState_None">None</td>
-        <td></td>
+        <td><p>The default state, indicating no specific outcome has been determined. This state is used before an operation is performed or when an operation's outcome does not fit any other defined state.</p>
+</td>
       </tr>
     </tbody>
   </thead></thead></table>
@@ -317,7 +324,7 @@ public enum ProcessRunExitCodeState</code></pre>
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_ProcessRunExitCodeState.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.ProcessRunExitCodeState%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/ProcessService/RunProcessWithCancellationSupportAsync.cs/#L27" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/ProcessService/RunProcessWithCancellationSupportAsync.cs/#L69" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
