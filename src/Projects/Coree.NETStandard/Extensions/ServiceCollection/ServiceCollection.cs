@@ -1,9 +1,8 @@
-﻿using Coree.NETStandard.Logging;
+﻿
 using Coree.NETStandard.Options;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Serilog;
 using System.Collections.Generic;
 using System.Linq;
 

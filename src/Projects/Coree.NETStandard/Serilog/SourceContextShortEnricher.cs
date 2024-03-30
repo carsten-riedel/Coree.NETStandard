@@ -7,22 +7,40 @@ using System.Threading.Tasks;
 using Serilog.Core;
 using Serilog.Events;
 
-namespace Coree.NETStandard.Logging
+namespace Coree.NETStandard.Serilog
 {
     public class SourceContextShortEnricher : ILogEventEnricher
     {
-        private readonly List<string> suffixesToRemove = new List<string>() { "Service", "Services" , "AsyncCommand", "Command"  };
-        private readonly bool cutTTypes;
-        private readonly bool removeDots;
-        private readonly bool removeSuffixes;
-        private readonly int padding;
+        private readonly string[] suffixesToRemove = { "Service", "Services" , "AsyncCommand", "Command"  };
+        private readonly bool trimGenericTypeIndicator;
+        private readonly bool simplifyNamespace;
+        private readonly bool stripDefinedSuffixes;
+        private readonly int sourceContextPadding;
 
-        public SourceContextShortEnricher(bool cutTTypes = true, bool removeDots = true, bool removeSuffixes = true,int padding = 15)
+
+        public SourceContextShortEnricher()
         {
-            this.cutTTypes = cutTTypes;
-            this.removeDots = removeDots;
-            this.removeSuffixes = removeSuffixes;
-            this.padding = padding; 
+            this.trimGenericTypeIndicator = true;
+            this.simplifyNamespace = true;
+            this.stripDefinedSuffixes = false;
+            this.sourceContextPadding = 15;
+        }
+
+        public SourceContextShortEnricher(string[] suffixesToRemove)
+        {
+            this.trimGenericTypeIndicator = true;
+            this.simplifyNamespace = true;
+            this.stripDefinedSuffixes = true;
+            this.sourceContextPadding = 15;
+            this.suffixesToRemove = suffixesToRemove;
+        }
+
+        public SourceContextShortEnricher(bool trimGenericTypeIndicator = true, bool simplifyNamespace = true, bool stripDefinedSuffixes = true,int sourceContextPadding = 15)
+        {
+            this.trimGenericTypeIndicator = trimGenericTypeIndicator;
+            this.simplifyNamespace = simplifyNamespace;
+            this.stripDefinedSuffixes = stripDefinedSuffixes;
+            this.sourceContextPadding = sourceContextPadding; 
         }
 
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
@@ -33,7 +51,7 @@ namespace Coree.NETStandard.Logging
                 {
                     var shortSourceContext = sourceContext;
 
-                    if (cutTTypes)
+                    if (trimGenericTypeIndicator)
                     {
                         var TType = shortSourceContext.IndexOf("`1");
                         if (TType > -1)
@@ -42,13 +60,13 @@ namespace Coree.NETStandard.Logging
                         }
                     }
 
-                    if (removeDots)
+                    if (simplifyNamespace)
                     {
                         var shortSourceContexts = shortSourceContext.Split('.');
                         shortSourceContext = shortSourceContexts[shortSourceContexts.Length - 1];
                     }
 
-                    if (removeSuffixes)
+                    if (stripDefinedSuffixes)
                     {
                         // Check and remove any of the specified suffixes
                         foreach (var suffix in suffixesToRemove)
@@ -61,7 +79,7 @@ namespace Coree.NETStandard.Logging
                         }
                     }
 
-                    shortSourceContext = shortSourceContext.PadRight(padding);
+                    shortSourceContext = shortSourceContext.PadRight(sourceContextPadding);
                     // Create a new property with the modified value and add/update it in the log event.
                     var modifiedProperty = propertyFactory.CreateProperty("SourceContextShort", shortSourceContext);
                     logEvent.AddOrUpdateProperty(modifiedProperty);

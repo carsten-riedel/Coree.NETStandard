@@ -1,5 +1,4 @@
-﻿using Coree.NETStandard.Logging;
-using Serilog;
+﻿using Serilog;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
