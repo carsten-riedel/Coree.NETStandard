@@ -154,6 +154,11 @@ namespace Coree.NETStandard.SpectreConsole
                 else
                 {
                     Environment.ExitCode = CommandAppExitCode;
+                    appLifetime.ApplicationStopped.Register(() =>
+                    {
+                        Environment.ExitCode = CommandAppExitCode;
+                    });
+                    appLifetime.StopApplication();
                 }
             });
             return Task.CompletedTask;
