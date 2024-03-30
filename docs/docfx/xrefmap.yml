@@ -1585,15 +1585,15 @@ references:
   commentId: T:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions
   fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions
   nameWithType: HostBuilderExtensions
-- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator})
-  name: UseSpectreConsole(IHostBuilder, Action<IConfigurator>)
-  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__
-  commentId: M:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator})
-  name.vb: UseSpectreConsole(IHostBuilder, Action(Of IConfigurator))
-  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Spectre.Console.Cli.IConfigurator>)
-  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Spectre.Console.Cli.IConfigurator))
-  nameWithType: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action<IConfigurator>)
-  nameWithType.vb: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action(Of IConfigurator))
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name: UseSpectreConsole(IHostBuilder, Action<IConfigurator>, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name.vb: UseSpectreConsole(IHostBuilder, Action(Of IConfigurator), Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Spectre.Console.Cli.IConfigurator>, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Spectre.Console.Cli.IConfigurator), Boolean)
+  nameWithType: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action<IConfigurator>, bool)
+  nameWithType.vb: HostBuilderExtensions.UseSpectreConsole(IHostBuilder, Action(Of IConfigurator), Boolean)
 - uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole*
   name: UseSpectreConsole
   href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsole_
@@ -1601,21 +1601,37 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsole
   nameWithType: HostBuilderExtensions.UseSpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name: UseSpectreConsoleSyncCommandExecutor(IHostBuilder, Action<IConfigurator>, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsoleSyncCommandExecutor_Microsoft_Extensions_Hosting_IHostBuilder_System_Action_Spectre_Console_Cli_IConfigurator__System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.Hosting.IHostBuilder,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name.vb: UseSpectreConsoleSyncCommandExecutor(IHostBuilder, Action(Of IConfigurator), Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.Hosting.IHostBuilder, System.Action<Spectre.Console.Cli.IConfigurator>, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.Hosting.IHostBuilder, System.Action(Of Spectre.Console.Cli.IConfigurator), Boolean)
+  nameWithType: HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(IHostBuilder, Action<IConfigurator>, bool)
+  nameWithType.vb: HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor(IHostBuilder, Action(Of IConfigurator), Boolean)
+- uid: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor*
+  name: UseSpectreConsoleSyncCommandExecutor
+  href: api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html#Coree_NETStandard_Topic_SpectreConsole_HostBuilderExtensions_UseSpectreConsoleSyncCommandExecutor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor
+  nameWithType: HostBuilderExtensions.UseSpectreConsoleSyncCommandExecutor
 - uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
   name: ServiceCollectionExtensions
   href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html
   commentId: T:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
   fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator})
-  name: AddSpectreConsole(IServiceCollection, Action<IConfigurator>)
-  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__
-  commentId: M:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator})
-  name.vb: AddSpectreConsole(IServiceCollection, Action(Of IConfigurator))
-  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Spectre.Console.Cli.IConfigurator>)
-  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Spectre.Console.Cli.IConfigurator))
-  nameWithType: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action<IConfigurator>)
-  nameWithType.vb: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action(Of IConfigurator))
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name: AddSpectreConsole(IServiceCollection, Action<IConfigurator>, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name.vb: AddSpectreConsole(IServiceCollection, Action(Of IConfigurator), Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Spectre.Console.Cli.IConfigurator>, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Spectre.Console.Cli.IConfigurator), Boolean)
+  nameWithType: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action<IConfigurator>, bool)
+  nameWithType.vb: ServiceCollectionExtensions.AddSpectreConsole(IServiceCollection, Action(Of IConfigurator), Boolean)
 - uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole*
   name: AddSpectreConsole
   href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsole_
@@ -1623,6 +1639,22 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsole
   nameWithType: ServiceCollectionExtensions.AddSpectreConsole
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name: AddSpectreConsoleSyncCommandExecutor(IServiceCollection, Action<IConfigurator>, bool)
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsoleSyncCommandExecutor_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Action_Spectre_Console_Cli_IConfigurator__System_Boolean_
+  commentId: M:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Action{Spectre.Console.Cli.IConfigurator},System.Boolean)
+  name.vb: AddSpectreConsoleSyncCommandExecutor(IServiceCollection, Action(Of IConfigurator), Boolean)
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action<Spectre.Console.Cli.IConfigurator>, bool)
+  fullName.vb: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Action(Of Spectre.Console.Cli.IConfigurator), Boolean)
+  nameWithType: ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(IServiceCollection, Action<IConfigurator>, bool)
+  nameWithType.vb: ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor(IServiceCollection, Action(Of IConfigurator), Boolean)
+- uid: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor*
+  name: AddSpectreConsoleSyncCommandExecutor
+  href: api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html#Coree_NETStandard_Topic_SpectreConsole_ServiceCollectionExtensions_AddSpectreConsoleSyncCommandExecutor_
+  commentId: Overload:Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor
+  isSpec: "True"
+  fullName: Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor
+  nameWithType: ServiceCollectionExtensions.AddSpectreConsoleSyncCommandExecutor
 - uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService
   name: SpectreConsoleHostedService
   href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html
@@ -1654,6 +1686,12 @@ references:
   commentId: T:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode
   fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode
   nameWithType: SpectreConsoleHostedService.ExitCode
+- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandFailedToRun
+  name: CommandFailedToRun
+  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandFailedToRun
+  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandFailedToRun
+  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandFailedToRun
+  nameWithType: SpectreConsoleHostedService.ExitCode.CommandFailedToRun
 - uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandNotFound
   name: CommandNotFound
   href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandNotFound
@@ -1666,12 +1704,6 @@ references:
   commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandTerminated
   fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.CommandTerminated
   nameWithType: SpectreConsoleHostedService.ExitCode.CommandTerminated
-- uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
-  name: FailedToRun
-  href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_FailedToRun
-  commentId: F:Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
-  fullName: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.FailedToRun
-  nameWithType: SpectreConsoleHostedService.ExitCode.FailedToRun
 - uid: Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed
   name: HelpVersionDisplayed
   href: api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html#Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_HelpVersionDisplayed

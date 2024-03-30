@@ -280,6 +280,12 @@ to the calling process, allowing for scripted interactions and error handling.</
     <thead>
     <tbody>
       <tr>
+        <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandFailedToRun">CommandFailedToRun</td>
+        <td><p>Indicates that the application command failed to run. This can occur if initialization fails
+or if the application is aborted before it can run properly.</p>
+</td>
+      </tr>
+      <tr>
         <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_CommandNotFound">CommandNotFound</td>
         <td><p>Indicates that the specified command could not be found. This exit code is used
 when a user inputs a command that does not match any known command patterns.</p>
@@ -290,12 +296,6 @@ when a user inputs a command that does not match any known command patterns.</p>
         <td><p>Indicates that the command was terminated, often due to an external interrupt signal
 (e.g., Ctrl+C). This code is reserved for scenarios where the application's execution
 is abruptly stopped.</p>
-</td>
-      </tr>
-      <tr>
-        <td id="Coree_NETStandard_Topic_SpectreConsole_SpectreConsoleHostedService_ExitCode_FailedToRun">FailedToRun</td>
-        <td><p>Indicates that the application failed to run. This can occur if initialization fails
-or if the application is aborted before it can start properly.</p>
 </td>
       </tr>
       <tr>
