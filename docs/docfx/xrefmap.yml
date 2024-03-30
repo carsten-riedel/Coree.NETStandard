@@ -791,22 +791,19 @@ references:
   commentId: T:Coree.NETStandard.Serilog.ServiceCollectionExtensions
   fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.Core.LoggingLevelSwitch)
-  name: AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch?)
-  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreNETStandard_Microsoft_Extensions_DependencyInjection_IServiceCollection_Serilog_Core_LoggingLevelSwitch_
-  commentId: M:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.Core.LoggingLevelSwitch)
-  name.vb: AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch)
-  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.Core.LoggingLevelSwitch?)
-  fullName.vb: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.Core.LoggingLevelSwitch)
-  nameWithType: ServiceCollectionExtensions.AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch?)
-  nameWithType.vb: ServiceCollectionExtensions.AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch)
-- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard*
-  name: AddLoggingCoreNETStandard
-  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreNETStandard_
-  commentId: Overload:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddLoggingCoreeNETStandard(IServiceCollection)
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreeNETStandard_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddLoggingCoreeNETStandard(IServiceCollection)
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard*
+  name: AddLoggingCoreeNETStandard
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreeNETStandard_
+  commentId: Overload:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard
   isSpec: "True"
-  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard
-  nameWithType: ServiceCollectionExtensions.AddLoggingCoreNETStandard
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard
+  nameWithType: ServiceCollectionExtensions.AddLoggingCoreeNETStandard
 - uid: Coree.NETStandard.Serilog.SourceContextShortEnricher
   name: SourceContextShortEnricher
   href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html
