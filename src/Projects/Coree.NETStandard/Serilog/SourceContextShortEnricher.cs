@@ -9,40 +9,53 @@ using Serilog.Events;
 
 namespace Coree.NETStandard.Serilog
 {
+    /// <summary>
+    /// A Serilog enricher that adds the "SourceContextShort" property of log events by trimming generic type indicators,
+    /// simplifying namespaces, and optionally removing specified suffixes. This can make the log source context more readable
+    /// and concise in log outputs.
+    /// </summary>
     public class SourceContextShortEnricher : ILogEventEnricher
     {
-        private readonly string[] suffixesToRemove = { "Service", "Services" , "AsyncCommand", "Command"  };
+        private readonly string[]? suffixesToRemove;
         private readonly bool trimGenericTypeIndicator;
         private readonly bool simplifyNamespace;
-        private readonly bool stripDefinedSuffixes;
         private readonly int sourceContextPadding;
 
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SourceContextShortEnricher"/> class with default settings.
+        /// By default, it trims generic type indicators, simplifies namespaces to their last component, applies a default padding,
+        /// and removes common suffixes like "Service", "Services", "AsyncCommand", and "Command".
+        /// </summary>
         public SourceContextShortEnricher()
         {
             this.trimGenericTypeIndicator = true;
             this.simplifyNamespace = true;
-            this.stripDefinedSuffixes = false;
             this.sourceContextPadding = 15;
+            this.suffixesToRemove = new[] { "Service", "Services", "AsyncCommand", "Command" };
         }
 
-        public SourceContextShortEnricher(string[] suffixesToRemove)
-        {
-            this.trimGenericTypeIndicator = true;
-            this.simplifyNamespace = true;
-            this.stripDefinedSuffixes = true;
-            this.sourceContextPadding = 15;
-            this.suffixesToRemove = suffixesToRemove;
-        }
-
-        public SourceContextShortEnricher(bool trimGenericTypeIndicator = true, bool simplifyNamespace = true, bool stripDefinedSuffixes = true,int sourceContextPadding = 15)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SourceContextShortEnricher"/> class with customizable settings.
+        /// </summary>
+        /// <param name="trimGenericTypeIndicator">If true, trims the generic type indicator from the source context.</param>
+        /// <param name="simplifyNamespace">If true, simplifies the namespace to only include the last component.</param>
+        /// <param name="sourceContextPadding">The padding applied to the modified source context for alignment in logs.</param>
+        /// <param name="suffixesToRemove">An array of suffixes to remove from the source context, enhancing readability.</param>
+        public SourceContextShortEnricher(bool trimGenericTypeIndicator = true, bool simplifyNamespace = true, int sourceContextPadding = 15, string[]? suffixesToRemove = null)
         {
             this.trimGenericTypeIndicator = trimGenericTypeIndicator;
             this.simplifyNamespace = simplifyNamespace;
-            this.stripDefinedSuffixes = stripDefinedSuffixes;
-            this.sourceContextPadding = sourceContextPadding; 
+            this.sourceContextPadding = sourceContextPadding;
+            this.suffixesToRemove = suffixesToRemove;
         }
 
+        /// <summary>
+        /// A Serilog enricher that adds the "SourceContextShort" property of log events by trimming generic type indicators,
+        /// simplifying namespaces, and optionally removing specified suffixes. This can make the log source context more readable
+        /// and concise in log outputs.
+        /// </summary>
+        /// <param name="logEvent">The log event to enrich.</param>
+        /// <param name="propertyFactory">The factory used to create new log event properties.</param>
         public void Enrich(LogEvent logEvent, ILogEventPropertyFactory propertyFactory)
         {
             if (logEvent.Properties.TryGetValue("SourceContext", out LogEventPropertyValue value))
@@ -66,7 +79,7 @@ namespace Coree.NETStandard.Serilog
                         shortSourceContext = shortSourceContexts[shortSourceContexts.Length - 1];
                     }
 
-                    if (stripDefinedSuffixes)
+                    if (suffixesToRemove != null)
                     {
                         // Check and remove any of the specified suffixes
                         foreach (var suffix in suffixesToRemove)
