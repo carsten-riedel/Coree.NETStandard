@@ -759,19 +759,19 @@ references:
   commentId: T:Coree.NETStandard.Serilog.OutputTemplates
   fullName: Coree.NETStandard.Serilog.OutputTemplates
   nameWithType: OutputTemplates
-- uid: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
-  name: CommonConsoleConfigOutputTemplate()
-  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_CommonConsoleConfigOutputTemplate
-  commentId: M:Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
-  fullName: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate()
-  nameWithType: OutputTemplates.CommonConsoleConfigOutputTemplate()
-- uid: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate*
-  name: CommonConsoleConfigOutputTemplate
-  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_CommonConsoleConfigOutputTemplate_
-  commentId: Overload:Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
+- uid: Coree.NETStandard.Serilog.OutputTemplates.Default
+  name: Default()
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_Default
+  commentId: M:Coree.NETStandard.Serilog.OutputTemplates.Default
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.Default()
+  nameWithType: OutputTemplates.Default()
+- uid: Coree.NETStandard.Serilog.OutputTemplates.Default*
+  name: Default
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_Default_
+  commentId: Overload:Coree.NETStandard.Serilog.OutputTemplates.Default
   isSpec: "True"
-  fullName: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
-  nameWithType: OutputTemplates.CommonConsoleConfigOutputTemplate
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.Default
+  nameWithType: OutputTemplates.Default
 - uid: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
   name: DefaultShort()
   href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_DefaultShort
