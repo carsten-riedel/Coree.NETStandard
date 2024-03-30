@@ -31,11 +31,11 @@
     <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
     <None Remove="Services\ProcessService\RunProcessWithCancellationSupportAsync.cs" />
-    <None Remove="Topic\SpectreConsole\CommandAppExtensions.cs" />
-    <None Remove="Topic\SpectreConsole\HostBuilderExtensions.cs" />
-    <None Remove="Topic\SpectreConsole\ServiceCollectionExtensions.cs" />
-    <None Remove="Topic\SpectreConsole\SpectreConsoleHostedService.cs" />
-    <None Remove="Topic\SpectreConsole\SpectreConsoleTypeRegistrar.cs" />
+    <None Remove="SpectreConsole\CommandAppExtensions.cs" />
+    <None Remove="SpectreConsole\HostBuilderExtensions.cs" />
+    <None Remove="SpectreConsole\ServiceCollectionExtensions.cs" />
+    <None Remove="SpectreConsole\SpectreConsoleHostedService.cs" />
+    <None Remove="SpectreConsole\SpectreConsoleTypeRegistrar.cs" />
     <None Remove="TypeRegistrar.cs" />
   </ItemGroup>
   

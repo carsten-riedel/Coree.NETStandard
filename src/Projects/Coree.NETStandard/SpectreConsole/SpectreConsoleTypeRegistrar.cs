@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.Extensions.DependencyInjection;
 using Spectre.Console.Cli;
 
-namespace Coree.NETStandard.Topic.SpectreConsole
+namespace Coree.NETStandard.SpectreConsole
 {
 
     /// <summary>

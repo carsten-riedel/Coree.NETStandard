@@ -7,7 +7,7 @@ using Microsoft.Extensions.Hosting;
 
 using Spectre.Console.Cli;
 
-namespace Coree.NETStandard.Topic.SpectreConsole
+namespace Coree.NETStandard.SpectreConsole
 {
     /// <summary>
     /// Provides extension methods for <see cref="IHostBuilder"/> to facilitate the integration of Spectre.Console's CommandApp into the application's host builder.

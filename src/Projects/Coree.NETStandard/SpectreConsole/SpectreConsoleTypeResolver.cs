@@ -4,7 +4,7 @@ using System.Text;
 
 using Spectre.Console.Cli;
 
-namespace Coree.NETStandard.Topic.SpectreConsole
+namespace Coree.NETStandard.SpectreConsole
 {
     /// <summary>
     /// Resolves types from an <see cref="IServiceProvider"/>, and optionally disposes it.

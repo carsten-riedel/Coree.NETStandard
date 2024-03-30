@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using Spectre.Console.Cli;
 using System.Linq;
 
-namespace Coree.NETStandard.Topic.SpectreConsole
+namespace Coree.NETStandard.SpectreConsole
 {
     /// <summary>
     /// Provides a hosted service for running Spectre.Console CLI applications
