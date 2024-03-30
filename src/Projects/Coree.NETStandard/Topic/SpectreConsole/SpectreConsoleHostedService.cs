@@ -40,10 +40,10 @@ namespace Coree.NETStandard.Topic.SpectreConsole
         public enum ExitCode : int
         {
             /// <summary>
-            /// Indicates that the application failed to run. This can occur if initialization fails
-            /// or if the application is aborted before it can start properly.
+            /// Indicates that the application command failed to run. This can occur if initialization fails
+            /// or if the application is aborted before it can run properly.
             /// </summary>
-            FailedToRun = 125,
+            CommandFailedToRun = 125,
 
             /// <summary>
             /// Indicates that the specified command could not be found. This exit code is used
@@ -115,7 +115,7 @@ namespace Coree.NETStandard.Topic.SpectreConsole
             //Exitcode 0 will be returned if just help is displayed, Exitcode -1 will be returned if command is not found.
             _ = Task.Run(async () =>
             {
-                Environment.ExitCode = (int)ExitCode.FailedToRun;
+                Environment.ExitCode = (int)ExitCode.CommandFailedToRun;
                 var CommandAppExitCode = await commandApp.RunAsync(args);
 
                 if (CommandAppExitCode == (int)SpectreConsole.HelpVersionSuccess)
@@ -155,7 +155,7 @@ namespace Coree.NETStandard.Topic.SpectreConsole
                 {
                     Environment.ExitCode = CommandAppExitCode;
                 }
-            }, cancellationToken);
+            });
             return Task.CompletedTask;
         }
 
