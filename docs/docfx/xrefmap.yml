@@ -440,92 +440,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
   nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries
-- uid: Coree.NETStandard.Extensions.SerilogExtensions
-  name: SerilogExtensions
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html
-  commentId: T:Coree.NETStandard.Extensions.SerilogExtensions
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions
-  nameWithType: SerilogExtensions
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
-  name: CommonConsoleConfig(LoggerConfiguration)
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfig_Serilog_LoggerConfiguration_
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig(Serilog.LoggerConfiguration)
-  nameWithType: SerilogExtensions.CommonConsoleConfig(LoggerConfiguration)
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig*
-  name: CommonConsoleConfig
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfig_
-  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfig
-  nameWithType: SerilogExtensions.CommonConsoleConfig
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
-  name: CommonConsoleConfigOutputTemplate()
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfigOutputTemplate
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate()
-  nameWithType: SerilogExtensions.CommonConsoleConfigOutputTemplate()
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate*
-  name: CommonConsoleConfigOutputTemplate
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_CommonConsoleConfigOutputTemplate_
-  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.CommonConsoleConfigOutputTemplate
-  nameWithType: SerilogExtensions.CommonConsoleConfigOutputTemplate
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger,System.String)
-  name: ForSourceContext(ILogger, string?)
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_ForSourceContext_Serilog_ILogger_System_String_
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger,System.String)
-  name.vb: ForSourceContext(ILogger, String)
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger, string?)
-  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext(Serilog.ILogger, String)
-  nameWithType: SerilogExtensions.ForSourceContext(ILogger, string?)
-  nameWithType.vb: SerilogExtensions.ForSourceContext(ILogger, String)
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext*
-  name: ForSourceContext
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_ForSourceContext_
-  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.ForSourceContext
-  nameWithType: SerilogExtensions.ForSourceContext
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
-  name: SimpleOutputTemplate()
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_SimpleOutputTemplate
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate()
-  nameWithType: SerilogExtensions.SimpleOutputTemplate()
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate*
-  name: SimpleOutputTemplate
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_SimpleOutputTemplate_
-  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.SimpleOutputTemplate
-  nameWithType: SerilogExtensions.SimpleOutputTemplate
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger,System.Action{Serilog.LoggerConfiguration})
-  name: UseConfigurationMethod(ILogger, Action<LoggerConfiguration>?)
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_Serilog_ILogger_System_Action_Serilog_LoggerConfiguration__
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger,System.Action{Serilog.LoggerConfiguration})
-  name.vb: UseConfigurationMethod(ILogger, Action(Of LoggerConfiguration))
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger, System.Action<Serilog.LoggerConfiguration>?)
-  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.ILogger, System.Action(Of Serilog.LoggerConfiguration))
-  nameWithType: SerilogExtensions.UseConfigurationMethod(ILogger, Action<LoggerConfiguration>?)
-  nameWithType.vb: SerilogExtensions.UseConfigurationMethod(ILogger, Action(Of LoggerConfiguration))
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration,System.Action{Serilog.LoggerConfiguration})
-  name: UseConfigurationMethod(LoggerConfiguration, Action<LoggerConfiguration>?)
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_Serilog_LoggerConfiguration_System_Action_Serilog_LoggerConfiguration__
-  commentId: M:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration,System.Action{Serilog.LoggerConfiguration})
-  name.vb: UseConfigurationMethod(LoggerConfiguration, Action(Of LoggerConfiguration))
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration, System.Action<Serilog.LoggerConfiguration>?)
-  fullName.vb: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod(Serilog.LoggerConfiguration, System.Action(Of Serilog.LoggerConfiguration))
-  nameWithType: SerilogExtensions.UseConfigurationMethod(LoggerConfiguration, Action<LoggerConfiguration>?)
-  nameWithType.vb: SerilogExtensions.UseConfigurationMethod(LoggerConfiguration, Action(Of LoggerConfiguration))
-- uid: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod*
-  name: UseConfigurationMethod
-  href: api/Coree.NETStandard.Extensions.SerilogExtensions.html#Coree_NETStandard_Extensions_SerilogExtensions_UseConfigurationMethod_
-  commentId: Overload:Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.SerilogExtensions.UseConfigurationMethod
-  nameWithType: SerilogExtensions.UseConfigurationMethod
 - uid: Coree.NETStandard.Extensions.ServiceCollection
   name: Coree.NETStandard.Extensions.ServiceCollection
   href: api/Coree.NETStandard.Extensions.ServiceCollection.html
@@ -741,50 +655,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
   nameWithType: HostedServiceSampleImplementationOptions.Option1
-- uid: Coree.NETStandard.Logging
-  name: Coree.NETStandard.Logging
-  href: api/Coree.NETStandard.Logging.html
-  commentId: N:Coree.NETStandard.Logging
-  fullName: Coree.NETStandard.Logging
-  nameWithType: Coree.NETStandard.Logging
-- uid: Coree.NETStandard.Logging.SourceContextShortEnricher
-  name: SourceContextShortEnricher
-  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html
-  commentId: T:Coree.NETStandard.Logging.SourceContextShortEnricher
-  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher
-  nameWithType: SourceContextShortEnricher
-- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
-  name: SourceContextShortEnricher(bool, bool, bool, int)
-  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_
-  commentId: M:Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
-  name.vb: New(Boolean, Boolean, Boolean, Integer)
-  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
-  fullName.vb: Coree.NETStandard.Logging.SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
-  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
-  nameWithType.vb: SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
-- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor*
-  name: SourceContextShortEnricher
-  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher__ctor_
-  commentId: Overload:Coree.NETStandard.Logging.SourceContextShortEnricher.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.SourceContextShortEnricher
-  fullName.vb: Coree.NETStandard.Logging.SourceContextShortEnricher.New
-  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher
-  nameWithType.vb: SourceContextShortEnricher.New
-- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
-  name: Enrich(LogEvent, ILogEventPropertyFactory)
-  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
-  commentId: M:Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
-  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
-  nameWithType: SourceContextShortEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
-- uid: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich*
-  name: Enrich
-  href: api/Coree.NETStandard.Logging.SourceContextShortEnricher.html#Coree_NETStandard_Logging_SourceContextShortEnricher_Enrich_
-  commentId: Overload:Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich
-  isSpec: "True"
-  fullName: Coree.NETStandard.Logging.SourceContextShortEnricher.Enrich
-  nameWithType: SourceContextShortEnricher.Enrich
 - uid: Coree.NETStandard.Options
   name: Coree.NETStandard.Options
   href: api/Coree.NETStandard.Options.html
@@ -877,6 +747,122 @@ references:
   fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).MoveNext
   nameWithType: IHostedServicesCollectionOptionsProvider<T>.MoveNext
   nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).MoveNext
+- uid: Coree.NETStandard.Serilog
+  name: Coree.NETStandard.Serilog
+  href: api/Coree.NETStandard.Serilog.html
+  commentId: N:Coree.NETStandard.Serilog
+  fullName: Coree.NETStandard.Serilog
+  nameWithType: Coree.NETStandard.Serilog
+- uid: Coree.NETStandard.Serilog.OutputTemplates
+  name: OutputTemplates
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html
+  commentId: T:Coree.NETStandard.Serilog.OutputTemplates
+  fullName: Coree.NETStandard.Serilog.OutputTemplates
+  nameWithType: OutputTemplates
+- uid: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
+  name: CommonConsoleConfigOutputTemplate()
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_CommonConsoleConfigOutputTemplate
+  commentId: M:Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate()
+  nameWithType: OutputTemplates.CommonConsoleConfigOutputTemplate()
+- uid: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate*
+  name: CommonConsoleConfigOutputTemplate
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_CommonConsoleConfigOutputTemplate_
+  commentId: Overload:Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.CommonConsoleConfigOutputTemplate
+  nameWithType: OutputTemplates.CommonConsoleConfigOutputTemplate
+- uid: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
+  name: DefaultShort()
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_DefaultShort
+  commentId: M:Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort()
+  nameWithType: OutputTemplates.DefaultShort()
+- uid: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort*
+  name: DefaultShort
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_DefaultShort_
+  commentId: Overload:Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
+  nameWithType: OutputTemplates.DefaultShort
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html
+  commentId: T:Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.Core.LoggingLevelSwitch)
+  name: AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch?)
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreNETStandard_Microsoft_Extensions_DependencyInjection_IServiceCollection_Serilog_Core_LoggingLevelSwitch_
+  commentId: M:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,Serilog.Core.LoggingLevelSwitch)
+  name.vb: AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch)
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.Core.LoggingLevelSwitch?)
+  fullName.vb: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, Serilog.Core.LoggingLevelSwitch)
+  nameWithType: ServiceCollectionExtensions.AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch?)
+  nameWithType.vb: ServiceCollectionExtensions.AddLoggingCoreNETStandard(IServiceCollection, LoggingLevelSwitch)
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard*
+  name: AddLoggingCoreNETStandard
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreNETStandard_
+  commentId: Overload:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreNETStandard
+  nameWithType: ServiceCollectionExtensions.AddLoggingCoreNETStandard
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher
+  name: SourceContextShortEnricher
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html
+  commentId: T:Coree.NETStandard.Serilog.SourceContextShortEnricher
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher
+  nameWithType: SourceContextShortEnricher
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor
+  name: SourceContextShortEnricher()
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor
+  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor
+  name.vb: New()
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher()
+  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New()
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher()
+  nameWithType.vb: SourceContextShortEnricher.New()
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
+  name: SourceContextShortEnricher(bool, bool, bool, int)
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_
+  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
+  name.vb: New(Boolean, Boolean, Boolean, Integer)
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
+  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
+  nameWithType.vb: SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.String[])
+  name: SourceContextShortEnricher(string[])
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_String___
+  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.String[])
+  name.vb: New(String())
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher(string[])
+  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New(String())
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(string[])
+  nameWithType.vb: SourceContextShortEnricher.New(String())
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor*
+  name: SourceContextShortEnricher
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_
+  commentId: Overload:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher
+  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher
+  nameWithType.vb: SourceContextShortEnricher.New
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_
+  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent, Serilog.Core.ILogEventPropertyFactory)
+  nameWithType: SourceContextShortEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich*
+  name: Enrich
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher_Enrich_
+  commentId: Overload:Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich
+  nameWithType: SourceContextShortEnricher.Enrich
 - uid: Coree.NETStandard.Services
   name: Coree.NETStandard.Services
   href: api/Coree.NETStandard.Services.html
