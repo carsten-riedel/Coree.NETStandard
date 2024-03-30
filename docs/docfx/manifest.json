@@ -54,16 +54,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
@@ -174,26 +164,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Logging.SourceContextShortEnricher.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Logging.SourceContextShortEnricher.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Logging.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Logging.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.yml",
       "output": {
         ".html": {
@@ -218,6 +188,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Options.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.OutputTemplates.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.OutputTemplates.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.SourceContextShortEnricher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.html"
         }
       },
       "version": ""
