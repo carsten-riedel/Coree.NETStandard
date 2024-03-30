@@ -6,8 +6,20 @@ using Serilog.Core;
 
 namespace Coree.NETStandard.Serilog
 {
+    /// <summary>
+    /// Extension methods for configuring logging services.
+    /// </summary>
     public static partial class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Adds and configures Serilog logging to the specified IServiceCollection.
+        /// </summary>
+        /// <param name="services">The IServiceCollection to add services to.</param>
+        /// <returns>The original IServiceCollection for chaining.</returns>
+        /// <remarks>
+        /// This method configures Serilog as the logging provider with a default logging level controlled by a LoggingLevelSwitch.
+        /// It enriches logs with context and supports output to console and debug sinks with a short output format.
+        /// </remarks>
         public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services)
         {
             LoggingLevelSwitch loggingLevelSwitch = new LoggingLevelSwitch();
@@ -16,20 +28,17 @@ namespace Coree.NETStandard.Serilog
             {
                 configure.ClearProviders();
 
-                // Start configuring the Logger
                 var loggerConfig = new LoggerConfiguration()
                     .Enrich.FromLogContext()
-                    .Enrich.With(new SourceContextShortEnricher()) // Ensure this enricher is defined in your project
-                    .WriteTo.Console(outputTemplate: OutputTemplates.DefaultShort()) // Ensure this template method is defined
-                    .WriteTo.Debug(outputTemplate: OutputTemplates.DefaultShort()); // And this one too
+                    .Enrich.With(new SourceContextShortEnricher())
+                    .WriteTo.Console(outputTemplate: OutputTemplates.DefaultShort())
+                    .WriteTo.Debug(outputTemplate: OutputTemplates.DefaultShort());
 
-                // Conditionally apply the minimum logging level control
                 if (loggingLevelSwitch != null)
                 {
                     loggerConfig.MinimumLevel.ControlledBy(loggingLevelSwitch);
                 }
 
-                // Complete the configuration and add Serilog as the logging provider
                 configure.AddSerilog(loggerConfig.CreateLogger(), dispose: true);
             });
 
