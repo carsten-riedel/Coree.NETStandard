@@ -314,80 +314,80 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.CommandAppExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.CommandAppExtensions.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.CommandAppExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.HostBuilderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.HostBuilderExtensions.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.HostBuilderExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.ServiceCollectionExtensions.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.ExitCode.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleHostedService.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeRegistrar.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.SpectreConsoleTypeResolver.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.yml",
+      "source_relative_path": "api/Coree.NETStandard.SpectreConsole.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Topic.SpectreConsole.html"
+          "relative_path": "api/Coree.NETStandard.SpectreConsole.html"
         }
       },
       "version": ""
