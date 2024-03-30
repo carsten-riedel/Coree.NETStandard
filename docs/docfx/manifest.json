@@ -4,56 +4,6 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeRegistrar.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Classes.Spectre.SpectreConsoleTypeResolver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Classes.Spectre.TypeRegistrar.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.TypeResolver.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Classes.Spectre.TypeResolver.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Classes.Spectre.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Classes.Spectre.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml",
       "output": {
         ".html": {
