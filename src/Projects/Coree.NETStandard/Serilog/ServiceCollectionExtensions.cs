@@ -8,8 +8,10 @@ namespace Coree.NETStandard.Serilog
 {
     public static partial class ServiceCollectionExtensions
     {
-        public static IServiceCollection AddLoggingCoreNETStandard(this IServiceCollection services, LoggingLevelSwitch? loggingLevelSwitch = null)
+        public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services)
         {
+            LoggingLevelSwitch loggingLevelSwitch = new LoggingLevelSwitch();
+            services.AddSingleton(loggingLevelSwitch);
             services.AddLogging(configure =>
             {
                 configure.ClearProviders();
