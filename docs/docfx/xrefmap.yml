@@ -440,52 +440,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
   nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries
-- uid: Coree.NETStandard.Extensions.ServiceCollection
-  name: Coree.NETStandard.Extensions.ServiceCollection
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.html
-  commentId: N:Coree.NETStandard.Extensions.ServiceCollection
-  fullName: Coree.NETStandard.Extensions.ServiceCollection
-  nameWithType: Coree.NETStandard.Extensions.ServiceCollection
-- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html
-  commentId: T:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
-  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection*
-  name: AddHostedServicesCollection
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection_
-  commentId: Overload:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection
-  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection
-- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
-  name: AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
-  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
-  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
-  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, string)
-  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, String)
-  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
-  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
-- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
-  name: AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_List___1__
-  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
-  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
-  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List<K>)
-  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List(Of K))
-  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
-  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
-- uid: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
-  name: AddHostedServicesCollection<T, K>(IServiceCollection, K[])
-  href: api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html#Coree_NETStandard_Extensions_ServiceCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection___1___
-  commentId: M:Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
-  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
-  fullName: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, K[])
-  fullName.vb: Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, K())
-  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, K[])
-  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
 - uid: Coree.NETStandard.Extensions.ServiceProviderExtensions
   name: ServiceProviderExtensions
   href: api/Coree.NETStandard.Extensions.ServiceProviderExtensions.html
@@ -579,174 +533,163 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith
   nameWithType: StringExtensions.SplitWith
-- uid: Coree.NETStandard.HostedService
-  name: Coree.NETStandard.HostedService
-  href: api/Coree.NETStandard.HostedService.html
-  commentId: N:Coree.NETStandard.HostedService
-  fullName: Coree.NETStandard.HostedService
-  nameWithType: Coree.NETStandard.HostedService
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation
-  name: HostedServiceSampleImplementation
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html
-  commentId: T:Coree.NETStandard.HostedService.HostedServiceSampleImplementation
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation
-  nameWithType: HostedServiceSampleImplementation
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider{Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions},Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.HostedService.HostedServiceSampleImplementation})
-  name: HostedServiceSampleImplementation(IHostedServicesCollectionOptionsProvider<HostedServiceSampleImplementationOptions>, ILogger<HostedServiceSampleImplementation>)
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation__ctor_Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions__Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_HostedService_HostedServiceSampleImplementation__
-  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider{Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions},Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.HostedService.HostedServiceSampleImplementation})
-  name.vb: New(IHostedServicesCollectionOptionsProvider(Of HostedServiceSampleImplementationOptions), ILogger(Of HostedServiceSampleImplementation))
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.HostedServiceSampleImplementation(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions>, Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.HostedService.HostedServiceSampleImplementation>)
-  fullName.vb: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.New(Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions), Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.HostedService.HostedServiceSampleImplementation))
-  nameWithType: HostedServiceSampleImplementation.HostedServiceSampleImplementation(IHostedServicesCollectionOptionsProvider<HostedServiceSampleImplementationOptions>, ILogger<HostedServiceSampleImplementation>)
-  nameWithType.vb: HostedServiceSampleImplementation.New(IHostedServicesCollectionOptionsProvider(Of HostedServiceSampleImplementationOptions), ILogger(Of HostedServiceSampleImplementation))
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor*
-  name: HostedServiceSampleImplementation
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation__ctor_
-  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.#ctor
+- uid: Coree.NETStandard.HostedServicesCollection
+  name: Coree.NETStandard.HostedServicesCollection
+  href: api/Coree.NETStandard.HostedServicesCollection.html
+  commentId: N:Coree.NETStandard.HostedServicesCollection
+  fullName: Coree.NETStandard.HostedServicesCollection
+  nameWithType: Coree.NETStandard.HostedServicesCollection
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1
+  name: HostedServicesCollectionConfig<T>
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html
+  commentId: T:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1
+  name.vb: HostedServicesCollectionConfig(Of T)
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T)
+  nameWithType: HostedServicesCollectionConfig<T>
+  nameWithType.vb: HostedServicesCollectionConfig(Of T)
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor
+  name: HostedServicesCollectionConfig()
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor
+  commentId: M:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor
+  name.vb: New()
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.HostedServicesCollectionConfig()
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).New()
+  nameWithType: HostedServicesCollectionConfig<T>.HostedServicesCollectionConfig()
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).New()
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor*
+  name: HostedServicesCollectionConfig
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.HostedServiceSampleImplementation
-  fullName.vb: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.New
-  nameWithType: HostedServiceSampleImplementation.HostedServiceSampleImplementation
-  nameWithType.vb: HostedServiceSampleImplementation.New
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
-  name: StartAsync(CancellationToken)
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StartAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync(System.Threading.CancellationToken)
-  nameWithType: HostedServiceSampleImplementation.StartAsync(CancellationToken)
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync*
-  name: StartAsync
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StartAsync_
-  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StartAsync
-  nameWithType: HostedServiceSampleImplementation.StartAsync
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
-  name: StopAsync(CancellationToken)
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StopAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync(System.Threading.CancellationToken)
-  nameWithType: HostedServiceSampleImplementation.StopAsync(CancellationToken)
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync*
-  name: StopAsync
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementation_StopAsync_
-  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementation.StopAsync
-  nameWithType: HostedServiceSampleImplementation.StopAsync
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
-  name: HostedServiceSampleImplementationOptions
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html
-  commentId: T:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions
-  nameWithType: HostedServiceSampleImplementationOptions
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
-  name: Option1
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions_Option1
-  commentId: P:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
-  nameWithType: HostedServiceSampleImplementationOptions.Option1
-- uid: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1*
-  name: Option1
-  href: api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html#Coree_NETStandard_HostedService_HostedServiceSampleImplementationOptions_Option1_
-  commentId: Overload:Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
-  isSpec: "True"
-  fullName: Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.Option1
-  nameWithType: HostedServiceSampleImplementationOptions.Option1
-- uid: Coree.NETStandard.Options
-  name: Coree.NETStandard.Options
-  href: api/Coree.NETStandard.Options.html
-  commentId: N:Coree.NETStandard.Options
-  fullName: Coree.NETStandard.Options
-  nameWithType: Coree.NETStandard.Options
-- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1
-  name: HostedServicesCollectionOptionsProvider<T>
-  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html
-  commentId: T:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1
-  name.vb: HostedServicesCollectionOptionsProvider(Of T)
-  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>
-  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T)
-  nameWithType: HostedServicesCollectionOptionsProvider<T>
-  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T)
-- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.HostedServicesCollectionConfig
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).New
+  nameWithType: HostedServicesCollectionConfig<T>.HostedServicesCollectionConfig
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).New
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue(`0)
   name: Enqueue(T)
-  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_Enqueue__0_
-  commentId: M:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue(`0)
-  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.Enqueue(T)
-  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
-  nameWithType: HostedServicesCollectionOptionsProvider<T>.Enqueue(T)
-  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
-- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue*
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue__0_
+  commentId: M:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue(`0)
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.Enqueue(T)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).Enqueue(T)
+  nameWithType: HostedServicesCollectionConfig<T>.Enqueue(T)
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).Enqueue(T)
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue*
   name: Enqueue
-  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_Enqueue_
-  commentId: Overload:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.Enqueue
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue
   isSpec: "True"
-  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.Enqueue
-  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).Enqueue
-  nameWithType: HostedServicesCollectionOptionsProvider<T>.Enqueue
-  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).Enqueue
-- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
-  name: MoveNext()
-  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_MoveNext
-  commentId: M:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
-  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.MoveNext()
-  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).MoveNext()
-  nameWithType: HostedServicesCollectionOptionsProvider<T>.MoveNext()
-  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).MoveNext()
-- uid: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext*
-  name: MoveNext
-  href: api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_HostedServicesCollectionOptionsProvider_1_MoveNext_
-  commentId: Overload:Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider`1.MoveNext
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.Enqueue
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).Enqueue
+  nameWithType: HostedServicesCollectionConfig<T>.Enqueue
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).Enqueue
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig
+  name: FetchNextConfig()
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig
+  commentId: M:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.FetchNextConfig()
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).FetchNextConfig()
+  nameWithType: HostedServicesCollectionConfig<T>.FetchNextConfig()
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).FetchNextConfig()
+- uid: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig*
+  name: FetchNextConfig
+  href: api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig
   isSpec: "True"
-  fullName: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider<T>.MoveNext
-  fullName.vb: Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider(Of T).MoveNext
-  nameWithType: HostedServicesCollectionOptionsProvider<T>.MoveNext
-  nameWithType.vb: HostedServicesCollectionOptionsProvider(Of T).MoveNext
-- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1
-  name: IHostedServicesCollectionOptionsProvider<T>
-  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html
-  commentId: T:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1
-  name.vb: IHostedServicesCollectionOptionsProvider(Of T)
-  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>
-  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T)
-  nameWithType: IHostedServicesCollectionOptionsProvider<T>
-  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T)
-- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue(`0)
+  fullName: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig<T>.FetchNextConfig
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig(Of T).FetchNextConfig
+  nameWithType: HostedServicesCollectionConfig<T>.FetchNextConfig
+  nameWithType.vb: HostedServicesCollectionConfig(Of T).FetchNextConfig
+- uid: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1
+  name: IHostedServicesCollectionConfig<T>
+  href: api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html
+  commentId: T:Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1
+  name.vb: IHostedServicesCollectionConfig(Of T)
+  fullName: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig<T>
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig(Of T)
+  nameWithType: IHostedServicesCollectionConfig<T>
+  nameWithType.vb: IHostedServicesCollectionConfig(Of T)
+- uid: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.Enqueue(`0)
   name: Enqueue(T)
-  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_Enqueue__0_
-  commentId: M:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue(`0)
-  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.Enqueue(T)
-  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
-  nameWithType: IHostedServicesCollectionOptionsProvider<T>.Enqueue(T)
-  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).Enqueue(T)
-- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue*
+  href: api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_IHostedServicesCollectionConfig_1_Enqueue__0_
+  commentId: M:Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.Enqueue(`0)
+  fullName: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig<T>.Enqueue(T)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig(Of T).Enqueue(T)
+  nameWithType: IHostedServicesCollectionConfig<T>.Enqueue(T)
+  nameWithType.vb: IHostedServicesCollectionConfig(Of T).Enqueue(T)
+- uid: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.Enqueue*
   name: Enqueue
-  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_Enqueue_
-  commentId: Overload:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.Enqueue
+  href: api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_IHostedServicesCollectionConfig_1_Enqueue_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.Enqueue
   isSpec: "True"
-  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.Enqueue
-  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).Enqueue
-  nameWithType: IHostedServicesCollectionOptionsProvider<T>.Enqueue
-  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).Enqueue
-- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
-  name: MoveNext()
-  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_MoveNext
-  commentId: M:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
-  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.MoveNext()
-  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).MoveNext()
-  nameWithType: IHostedServicesCollectionOptionsProvider<T>.MoveNext()
-  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).MoveNext()
-- uid: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext*
-  name: MoveNext
-  href: api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html#Coree_NETStandard_Options_IHostedServicesCollectionOptionsProvider_1_MoveNext_
-  commentId: Overload:Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider`1.MoveNext
+  fullName: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig<T>.Enqueue
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig(Of T).Enqueue
+  nameWithType: IHostedServicesCollectionConfig<T>.Enqueue
+  nameWithType.vb: IHostedServicesCollectionConfig(Of T).Enqueue
+- uid: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.FetchNextConfig
+  name: FetchNextConfig()
+  href: api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_IHostedServicesCollectionConfig_1_FetchNextConfig
+  commentId: M:Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.FetchNextConfig
+  fullName: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig<T>.FetchNextConfig()
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig(Of T).FetchNextConfig()
+  nameWithType: IHostedServicesCollectionConfig<T>.FetchNextConfig()
+  nameWithType.vb: IHostedServicesCollectionConfig(Of T).FetchNextConfig()
+- uid: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.FetchNextConfig*
+  name: FetchNextConfig
+  href: api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html#Coree_NETStandard_HostedServicesCollection_IHostedServicesCollectionConfig_1_FetchNextConfig_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig`1.FetchNextConfig
   isSpec: "True"
-  fullName: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider<T>.MoveNext
-  fullName.vb: Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider(Of T).MoveNext
-  nameWithType: IHostedServicesCollectionOptionsProvider<T>.MoveNext
-  nameWithType.vb: IHostedServicesCollectionOptionsProvider(Of T).MoveNext
+  fullName: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig<T>.FetchNextConfig
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig(Of T).FetchNextConfig
+  nameWithType: IHostedServicesCollectionConfig<T>.FetchNextConfig
+  nameWithType.vb: IHostedServicesCollectionConfig(Of T).FetchNextConfig
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html
+  commentId: T:Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection*
+  name: AddHostedServicesCollection
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceCollectionExtensions_AddHostedServicesCollection_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_Microsoft_Extensions_Configuration_IConfiguration_System_String_
+  commentId: M:Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration,System.String)
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, string)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, Microsoft.Extensions.Configuration.IConfiguration, String)
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, IConfiguration, string)
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, IConfiguration, String)
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_List___1__
+  commentId: M:Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.List{``1})
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List<K>)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.List(Of K))
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, List<K>)
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, List(Of K))
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
+  name: AddHostedServicesCollection<T, K>(IServiceCollection, K[])
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceCollectionExtensions_AddHostedServicesCollection__2_Microsoft_Extensions_DependencyInjection_IServiceCollection___1___
+  commentId: M:Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection``2(Microsoft.Extensions.DependencyInjection.IServiceCollection,``1[])
+  name.vb: AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(Microsoft.Extensions.DependencyInjection.IServiceCollection, K[])
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(Microsoft.Extensions.DependencyInjection.IServiceCollection, K())
+  nameWithType: ServiceCollectionExtensions.AddHostedServicesCollection<T, K>(IServiceCollection, K[])
+  nameWithType.vb: ServiceCollectionExtensions.AddHostedServicesCollection(Of T, K)(IServiceCollection, K())
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions
+  name: ServiceProviderExtensions
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html
+  commentId: T:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions
+  nameWithType: ServiceProviderExtensions
 - uid: Coree.NETStandard.Serilog
   name: Coree.NETStandard.Serilog
   href: api/Coree.NETStandard.Serilog.html

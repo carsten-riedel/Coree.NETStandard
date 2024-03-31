@@ -54,26 +54,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceProviderExtensions.yml",
       "output": {
         ".html": {
@@ -134,60 +114,50 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.yml",
+      "source_relative_path": "api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html"
+          "relative_path": "api/Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.yml",
+      "source_relative_path": "api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html"
+          "relative_path": "api/Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.HostedService.yml",
+      "source_relative_path": "api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.HostedService.html"
+          "relative_path": "api/Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.yml",
+      "source_relative_path": "api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html"
+          "relative_path": "api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.yml",
+      "source_relative_path": "api/Coree.NETStandard.HostedServicesCollection.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Options.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Options.html"
+          "relative_path": "api/Coree.NETStandard.HostedServicesCollection.html"
         }
       },
       "version": ""
