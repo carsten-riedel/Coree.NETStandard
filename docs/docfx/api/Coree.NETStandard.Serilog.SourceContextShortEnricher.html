@@ -260,7 +260,10 @@
 
   <h1 id="Coree_NETStandard_Serilog_SourceContextShortEnricher" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher" class="text-break">Class SourceContextShortEnricher
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A Serilog enricher that adds the &quot;SourceContextShort&quot; property of log events by trimming generic type indicators,
+simplifying namespaces, and optionally removing specified suffixes. This can make the log source context more readable
+and concise in log outputs.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="implements">
     <h5>Implements</h5>
@@ -279,11 +282,14 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L21">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L29">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor*"></a>
   <h4 id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor">SourceContextShortEnricher()</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Serilog.SourceContextShortEnricher.html">SourceContextShortEnricher</a> class with default settings.
+By default, it trims generic type indicators, simplifies namespaces to their last component, applies a default padding,
+and removes common suffixes like &quot;Service&quot;, &quot;Services&quot;, &quot;AsyncCommand&quot;, and &quot;Command&quot;.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -291,18 +297,19 @@
   </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher.%23ctor(System.Boolean%2CSystem.Boolean%2CSystem.Boolean%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Int32_System_String___.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher.%23ctor(System.Boolean%2CSystem.Boolean%2CSystem.Int32%2CSystem.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L38">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L44">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor*"></a>
-  <h4 id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)">SourceContextShortEnricher(bool, bool, bool, int)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Int32_System_String___" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Int32,System.String[])">SourceContextShortEnricher(bool, bool, int, string[]?)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Serilog.SourceContextShortEnricher.html">SourceContextShortEnricher</a> class with customizable settings.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SourceContextShortEnricher(bool trimGenericTypeIndicator = true, bool simplifyNamespace = true, bool stripDefinedSuffixes = true, int sourceContextPadding = 15)</code></pre>
+    <pre><code class="lang-csharp hljs">public SourceContextShortEnricher(bool trimGenericTypeIndicator = true, bool simplifyNamespace = true, int sourceContextPadding = 15, string[]? suffixesToRemove = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -317,54 +324,26 @@
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">trimGenericTypeIndicator</span></td>
-        <td></td>
+        <td><p>If true, trims the generic type indicator from the source context.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">simplifyNamespace</span></td>
-        <td></td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">stripDefinedSuffixes</span></td>
-        <td></td>
+        <td><p>If true, simplifies the namespace to only include the last component.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">sourceContextPadding</span></td>
-        <td></td>
+        <td><p>The padding applied to the modified source context for alignment in logs.</p>
+</td>
       </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_String___.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher.%23ctor(System.String%5B%5D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L29">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor*"></a>
-  <h4 id="Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_String___" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.String[])">SourceContextShortEnricher(string[])</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SourceContextShortEnricher(string[] suffixesToRemove)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
         <td><span class="parametername">suffixesToRemove</span></td>
-        <td></td>
+        <td><p>An array of suffixes to remove from the source context, enhancing readability.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -375,11 +354,13 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent%2CSerilog.Core.ILogEventPropertyFactory)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L46">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L59">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_SourceContextShortEnricher_Enrich_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich*"></a>
   <h4 id="Coree_NETStandard_Serilog_SourceContextShortEnricher_Enrich_Serilog_Events_LogEvent_Serilog_Core_ILogEventPropertyFactory_" data-uid="Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich(Serilog.Events.LogEvent,Serilog.Core.ILogEventPropertyFactory)">Enrich(LogEvent, ILogEventPropertyFactory)</h4>
-  <div class="markdown level1 summary"><p>Enrich the log event.</p>
+  <div class="markdown level1 summary"><p>A Serilog enricher that adds the &quot;SourceContextShort&quot; property of log events by trimming generic type indicators,
+simplifying namespaces, and optionally removing specified suffixes. This can make the log source context more readable
+and concise in log outputs.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -405,7 +386,7 @@
       <tr>
         <td><span class="xref">ILogEventPropertyFactory</span></td>
         <td><span class="parametername">propertyFactory</span></td>
-        <td><p>Factory for creating new properties to add to the event.</p>
+        <td><p>The factory used to create new log event properties.</p>
 </td>
       </tr>
     </tbody>
@@ -426,7 +407,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_SourceContextShortEnricher.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.SourceContextShortEnricher%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/SourceContextShortEnricher.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

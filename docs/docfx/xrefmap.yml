@@ -819,24 +819,15 @@ references:
   fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New()
   nameWithType: SourceContextShortEnricher.SourceContextShortEnricher()
   nameWithType.vb: SourceContextShortEnricher.New()
-- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
-  name: SourceContextShortEnricher(bool, bool, bool, int)
-  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Boolean_System_Int32_
-  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Boolean,System.Int32)
-  name.vb: New(Boolean, Boolean, Boolean, Integer)
-  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
-  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
-  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, bool, int)
-  nameWithType.vb: SourceContextShortEnricher.New(Boolean, Boolean, Boolean, Integer)
-- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.String[])
-  name: SourceContextShortEnricher(string[])
-  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_String___
-  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.String[])
-  name.vb: New(String())
-  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher(string[])
-  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New(String())
-  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(string[])
-  nameWithType.vb: SourceContextShortEnricher.New(String())
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Int32,System.String[])
+  name: SourceContextShortEnricher(bool, bool, int, string[]?)
+  href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_System_Boolean_System_Boolean_System_Int32_System_String___
+  commentId: M:Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor(System.Boolean,System.Boolean,System.Int32,System.String[])
+  name.vb: New(Boolean, Boolean, Integer, String())
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, int, string[]?)
+  fullName.vb: Coree.NETStandard.Serilog.SourceContextShortEnricher.New(Boolean, Boolean, Integer, String())
+  nameWithType: SourceContextShortEnricher.SourceContextShortEnricher(bool, bool, int, string[]?)
+  nameWithType.vb: SourceContextShortEnricher.New(Boolean, Boolean, Integer, String())
 - uid: Coree.NETStandard.Serilog.SourceContextShortEnricher.#ctor*
   name: SourceContextShortEnricher
   href: api/Coree.NETStandard.Serilog.SourceContextShortEnricher.html#Coree_NETStandard_Serilog_SourceContextShortEnricher__ctor_
