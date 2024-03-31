@@ -6,10 +6,10 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="google" content="notranslate">
-      <title>Class ProcessService
+      <title>Class ServiceProviderExtensions
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ProcessService
+      <meta name="title" content="Class ServiceProviderExtensions
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -149,8 +149,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
                           </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="active">ServiceProviderExtensions</a>
                           </li>
                         </ul>
                     </li>
@@ -193,8 +193,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Services.ProcessRunResult.html" title="ProcessRunResult" class="">ProcessRunResult</a>
                           </li>
-                          <li class="active">
-                            <a href="Coree.NETStandard.Services.ProcessService.html" title="ProcessService" class="active">ProcessService</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.Services.ProcessService.html" title="ProcessService" class="">ProcessService</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Services.RuntimeInsightsService.html" title="RuntimeInsightsService" class="">RuntimeInsightsService</a>
@@ -237,162 +237,22 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Services.ProcessService">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions">
 
 
 
-  <h1 id="Coree_NETStandard_Services_ProcessService" data-uid="Coree.NETStandard.Services.ProcessService" class="text-break">Class ProcessService
+  <h1 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions" class="text-break">Class ServiceProviderExtensions
 </h1>
-  <div class="markdown level0 summary"><p>Provides functionality for managing and executing external processes. This service supports a variety of operations including running processes with options for cancellation, timeouts, and potentially more features in the future.</p>
+  <div class="markdown level0 summary"><p>Provides a set of extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>. These methods extend the functionality
+of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> to offer enhanced and simplified service resolution capabilities,
+enabling the retrieval and management of service instances in a more flexible manner.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Coree.NETStandard.Services.IProcessService.html">IProcessService</a></div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Services.html">Services</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.HostedServicesCollection.html">HostedServicesCollection</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_Services_ProcessService_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class ProcessService : IProcessService</code></pre>
-  </div>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_ProcessService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_ProcessService__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.ProcessService.%23ctor(Microsoft.Extensions.Logging.ILogger%7BCoree.NETStandard.Services.ProcessService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/ProcessService/RunProcessWithCancellationSupportAsync.cs/#L117">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Services_ProcessService__ctor_" data-uid="Coree.NETStandard.Services.ProcessService.#ctor*"></a>
-  <h4 id="Coree_NETStandard_Services_ProcessService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_ProcessService__" data-uid="Coree.NETStandard.Services.ProcessService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.ProcessService})">ProcessService(ILogger&lt;ProcessService&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Services.ProcessService.html">ProcessService</a> class, setting up logging capabilities to monitor and log process execution details. This constructor ensures the necessary dependencies are in place for the service to operate.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public ProcessService(ILogger&lt;ProcessService&gt; logger)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Coree.NETStandard.Services.ProcessService.html">ProcessService</a>&gt;</td>
-        <td><span class="parametername">logger</span></td>
-        <td><p>The logger used to log information, warnings, and errors related to process management and execution.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="exceptions">Exceptions</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Condition</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
-        <td><p>Thrown if the provided <code class="paramref">logger</code> is null.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken%2CSystem.Nullable%7BSystem.TimeSpan%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/ProcessService/RunProcessWithCancellationSupportAsync.cs/#L132">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsync_" data-uid="Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync*"></a>
-  <h4 id="Coree_NETStandard_Services_ProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__" data-uid="Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)</h4>
-  <div class="markdown level1 summary"><p>Runs an external process asynchronously with options for cancellation and timeout.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;ProcessRunResult&gt; RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)</code></pre>
-  </div>
-  <h5 class="parameters">Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">fileName</span></td>
-        <td><p>The name of the executable to run.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">arguments</span></td>
-        <td><p>The arguments to pass to the executable.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">workingDirectory</span></td>
-        <td><p>The working directory for the process.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">killOnCancel</span></td>
-        <td><p>Indicates whether the process should be killed if a cancellation is requested.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
-        <td><span class="parametername">cancellationWaitRequest</span></td>
-        <td><p>The cancellation token that can be used to request cancellation of the operation.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</td>
-        <td><span class="parametername">timeout</span></td>
-        <td><p>Optional timeout after which the process will be killed if not completed.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Coree.NETStandard.Services.ProcessRunResult.html">ProcessRunResult</a>&gt;</td>
-        <td><p>A task that represents the asynchronous operation, containing the result of the process execution.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Coree.NETStandard.Services.IProcessService.html">IProcessService</a>
+    <pre><code class="lang-csharp hljs">public static class ServiceProviderExtensions</code></pre>
   </div>
 
 </article>
@@ -403,10 +263,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_ProcessService.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.ProcessService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/ProcessService/RunProcessWithCancellationSupportAsync.cs/#L108" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/ServiceProviderExtensions.cs/#L14" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
