@@ -9,7 +9,7 @@ namespace Coree.NETStandard.Extensions
     {
         public static List<ServiceDescriptor> GetRegisteredServices(this IServiceProvider serviceProvider)
         {
-            List<ServiceDescriptor> serviceDescriptors = [];
+            List<ServiceDescriptor> serviceDescriptors = new();
             // Attempt to access the internal service collection
             IServiceScopeFactory? serviceScopeFactory = serviceProvider.GetService<IServiceScopeFactory>();
             if (serviceScopeFactory is null) { return serviceDescriptors; }

@@ -30,7 +30,7 @@ namespace Coree.NETStandard.Serilog
 
                 var loggerConfig = new LoggerConfiguration()
                     .Enrich.FromLogContext()
-                    .Enrich.With(new SourceContextShortEnricher())
+                    .Enrich.With(new SourceContextShortEnricher(true,true,15,null))
                     .WriteTo.Console(outputTemplate: OutputTemplates.DefaultShort())
                     .WriteTo.Debug(outputTemplate: OutputTemplates.DefaultShort());
 
