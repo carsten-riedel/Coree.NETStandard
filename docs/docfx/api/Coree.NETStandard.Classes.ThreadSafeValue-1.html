@@ -6,10 +6,10 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="google" content="notranslate">
-      <title>Class ServiceProviderExtensions
+      <title>Class ThreadSafeValue&lt;T&gt;
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class ServiceProviderExtensions
+      <meta name="title" content="Class ThreadSafeValue&lt;T&gt;
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -90,8 +90,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Classes.ThreadSafeCollection-1.html" title="ThreadSafeCollection&lt;T&gt;" class="">ThreadSafeCollection&lt;T&gt;</a>
                           </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.Classes.ThreadSafeValue-1.html" title="ThreadSafeValue&lt;T&gt;" class="">ThreadSafeValue&lt;T&gt;</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Classes.ThreadSafeValue-1.html" title="ThreadSafeValue&lt;T&gt;" class="active">ThreadSafeValue&lt;T&gt;</a>
                           </li>
                         </ul>
                     </li>
@@ -152,8 +152,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.HostedServicesCollection.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
                           </li>
-                          <li class="active">
-                            <a href="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="active">ServiceProviderExtensions</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
                           </li>
                         </ul>
                     </li>
@@ -240,41 +240,60 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1">
 
 
 
-  <h1 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions" class="text-break">Class ServiceProviderExtensions
+  <h1 id="Coree_NETStandard_Classes_ThreadSafeValue_1" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1" class="text-break">Class ThreadSafeValue&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"><p>Provides a set of extension methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>. These methods extend the functionality
-of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> to offer enhanced and simplified service resolution capabilities,
-enabling the retrieval and management of service instances in a more flexible manner.</p>
+  <div class="markdown level0 summary"><p>Provides a thread-safe wrapper for a value of type <code class="typeparamref">T</code>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.HostedServicesCollection.html">HostedServicesCollection</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Classes.html">Classes</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeValue_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class ServiceProviderExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public class ThreadSafeValue&lt;T&gt;</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the value to be stored. This can be any type, including nullable and non-nullable types.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeValue_1_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This class is designed to allow safe concurrent access to a value by multiple threads.
+It uses a locking mechanism to ensure that only one thread can read or modify the value at any time,
+preventing race conditions and ensuring consistency of the value across threads.
+The type <code class="typeparamref">T</code> can be either a value type or a reference type. If <code class="typeparamref">T</code> is a reference type.</p>
+</div>
+  <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy__1_System_IServiceProvider_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollectionOfTypeLazy%60%601(System.IServiceProvider)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeValue_1__ctor__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeValue%601.%23ctor(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/ServiceProviderExtensions.cs/#L66">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeValue.cs/#L29">View Source</a>
   </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy_" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollectionOfTypeLazy*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy__1_System_IServiceProvider_" data-uid="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollectionOfTypeLazy``1(System.IServiceProvider)">GetHostedServiceCollectionOfTypeLazy&lt;T&gt;(IServiceProvider)</h4>
-  <div class="markdown level1 summary"><p>Provides a lazy-initialized collection of hosted services of the specified type <code class="typeparamref">T</code>,
-designed to be used in scenarios where direct service resolution in constructors may lead to race conditions.</p>
+  <a id="Coree_NETStandard_Classes_ThreadSafeValue_1__ctor_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.#ctor*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeValue_1__ctor__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.#ctor(`0)">ThreadSafeValue(T?)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> class, optionally with an initial value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Lazy&lt;IEnumerable&lt;T&gt;&gt; GetHostedServiceCollectionOfTypeLazy&lt;T&gt;(this IServiceProvider serviceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public ThreadSafeValue(T? initialValue = default)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -287,14 +306,33 @@ designed to be used in scenarios where direct service resolution in constructors
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
-        <td><span class="parametername">serviceProvider</span></td>
-        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> from which to retrieve the services.</p>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">initialValue</span></td>
+        <td><p>The initial value to store. Default is the default value of type <code class="typeparamref">T</code>,
+which is null for reference types and zero or the default constructor value for value types.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeValue_1_Value.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeValue%601.Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeValue.cs/#L43">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.Value*"></a>
+  <h4 id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.Value">Value</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the value in a thread-safe manner.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T? Value { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -304,64 +342,17 @@ designed to be used in scenarios where direct service resolution in constructors
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;&gt;</td>
-        <td><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> object that, when evaluated, provides an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> representing
-the collection of services of the specified type <code class="typeparamref">T</code>. If no services of the specified
-type are registered, an empty enumerable is returned. This allows safe and deferred resolution of services,
-ideal for use within method implementations to avoid race conditions in service stacks.</p>
+        <td><span class="xref">T</span></td>
+        <td><p>The current value stored within the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the hosted service to retrieve. This type parameter is contravariant.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy__1_System_IServiceProvider__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method is particularly useful in complex dependency scenarios, where some services may not be fully
-initialized at the time of a constructor's execution. By deferring the service resolution to the actual
-execution time of a method, it mitigates the risk of encountering race conditions within the service
-initialization stack. It leverages <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.lazy-1">Lazy&lt;T&gt;</a> to ensure that the service collection is resolved
-only when it is first needed, thereby enhancing reliability and performance by avoiding unnecessary upfront
-service resolution and instantiation.</p>
+  <h5 id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Access to the value is synchronized, ensuring that read and write operations are safe to use from multiple threads concurrently.
+The property getter returns the current value, and the property setter updates the value.
+Both operations are performed with thread safety in mind, using a private lock to synchronize access.</p>
 </div>
-  <h5 id="Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy__1_System_IServiceProvider__examples">Examples</h5>
-  <p>This example demonstrates using <a class="xref" href="Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollectionOfTypeLazy__1_System_IServiceProvider_">GetHostedServiceCollectionOfTypeLazy&lt;T&gt;(IServiceProvider)</a> within a service constructor
-to defer the resolution of dependent services, mitigating race conditions:</p>
-<pre><code class="lang-csharp">public class MyService :BackgroundService
-{
-    private readonly Lazy&lt;IEnumerable&lt;MyDependentService&gt;&gt; _dependentServices;
-
-    public MyService(IServiceProvider serviceProvider)
-    {
-        _dependentServices = serviceProvider.GetHostedServiceCollectionOfTypeLazy&lt;MyDependentService&gt;();
-    }
-
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
-    {
-        while (!stoppingToken.IsCancellationRequested)
-        {
-            // The dependent services are resolved here, when first needed, avoiding race conditions.
-            foreach(var service in _dependentServices.Value)
-            {
-                // Interact with the service
-            }
-        }
-    }
-}</code></pre>
-
 
 </article>
           </div>
@@ -371,10 +362,10 @@ to defer the resolution of dependent services, mitigating race conditions:</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Classes_ThreadSafeValue_1.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.ThreadSafeValue%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/ServiceProviderExtensions.cs/#L17" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Classes/ThreadSafeValue.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
