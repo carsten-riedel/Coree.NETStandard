@@ -690,6 +690,38 @@ references:
   commentId: T:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions
   fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions
   nameWithType: ServiceProviderExtensions
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection*
+  name: GetActiveHostedServiceCollection
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetActiveHostedServiceCollection_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection
+  nameWithType: ServiceProviderExtensions.GetActiveHostedServiceCollection
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection``1(System.IServiceProvider)
+  name: GetActiveHostedServiceCollection<T>(IServiceProvider)
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetActiveHostedServiceCollection__1_System_IServiceProvider_
+  commentId: M:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection``1(System.IServiceProvider)
+  name.vb: GetActiveHostedServiceCollection(Of T)(IServiceProvider)
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection<T>(System.IServiceProvider)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetActiveHostedServiceCollection(Of T)(System.IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetActiveHostedServiceCollection<T>(IServiceProvider)
+  nameWithType.vb: ServiceProviderExtensions.GetActiveHostedServiceCollection(Of T)(IServiceProvider)
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection*
+  name: GetHostedServiceCollection
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollection_
+  commentId: Overload:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection
+  isSpec: "True"
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection
+  nameWithType: ServiceProviderExtensions.GetHostedServiceCollection
+- uid: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection``1(System.IServiceProvider)
+  name: GetHostedServiceCollection<T>(IServiceProvider)
+  href: api/Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.html#Coree_NETStandard_HostedServicesCollection_ServiceProviderExtensions_GetHostedServiceCollection__1_System_IServiceProvider_
+  commentId: M:Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection``1(System.IServiceProvider)
+  name.vb: GetHostedServiceCollection(Of T)(IServiceProvider)
+  fullName: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection<T>(System.IServiceProvider)
+  fullName.vb: Coree.NETStandard.HostedServicesCollection.ServiceProviderExtensions.GetHostedServiceCollection(Of T)(System.IServiceProvider)
+  nameWithType: ServiceProviderExtensions.GetHostedServiceCollection<T>(IServiceProvider)
+  nameWithType.vb: ServiceProviderExtensions.GetHostedServiceCollection(Of T)(IServiceProvider)
 - uid: Coree.NETStandard.Serilog
   name: Coree.NETStandard.Serilog
   href: api/Coree.NETStandard.Serilog.html
