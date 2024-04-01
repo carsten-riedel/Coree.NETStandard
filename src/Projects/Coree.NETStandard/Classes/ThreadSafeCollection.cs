@@ -151,9 +151,9 @@ namespace Coree.NETStandard.Classes
         /// Performs a LINQ operation on a snapshot of the collection in a thread-safe manner.
         /// </summary>
         /// <remarks>
-        /// This method locks the collection, takes a snapshot, and then applies the specified LINQ operation. 
-        /// It ensures thread safety by preventing other operations from modifying the collection during execution. 
-        /// The operation is performed on a snapshot to avoid locking during the entire enumeration, 
+        /// This method locks the collection, takes a snapshot, and then applies the specified LINQ operation.
+        /// It ensures thread safety by preventing other operations from modifying the collection during execution.
+        /// The operation is performed on a snapshot to avoid locking during the entire enumeration,
         /// but it means the operation does not reflect changes made to the collection after the snapshot is taken.
         /// </remarks>
         /// <typeparam name="TResult">The type of the result elements.</typeparam>
@@ -173,8 +173,8 @@ namespace Coree.NETStandard.Classes
         /// Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.
         /// </summary>
         /// <remarks>
-        /// Similar to <see cref="LockedLinq"/>, this method locks the collection and operates on a snapshot to ensure thread safety. 
-        /// After performing the specified LINQ operation, it creates a deep copy of the result using JSON serialization. 
+        /// Similar to <see cref="LockedLinq"/>, this method locks the collection and operates on a snapshot to ensure thread safety.
+        /// After performing the specified LINQ operation, it creates a deep copy of the result using JSON serialization.
         /// This approach guarantees that the operation's results are completely isolated from the original items in the collection,
         /// providing additional safety against mutations.
         /// </remarks>
@@ -194,7 +194,6 @@ namespace Coree.NETStandard.Classes
                 return deepCopiedResult ?? new List<TResult>();
             }
         }
-
 
         /// <summary>
         /// Returns an enumerator that iterates through the collection in a thread-safe manner.
@@ -307,8 +306,6 @@ namespace Coree.NETStandard.Classes
             }
         }
 
-
-
         /// <summary>
         /// Adds an item to the collection in a thread-safe manner.
         /// </summary>
@@ -340,7 +337,7 @@ namespace Coree.NETStandard.Classes
             }
         }
 
-        #endregion
+        #endregion List
 
         /// <summary>
         /// Retrieves the item at the specified index in a thread-safe manner.
@@ -362,7 +359,6 @@ namespace Coree.NETStandard.Classes
                 return items[index];
             }
         }
-
 
         /// <summary>
         /// Returns a deep copy of the item at the specified index, ensuring thread safety and isolation from the original collection.
@@ -388,7 +384,6 @@ namespace Coree.NETStandard.Classes
             }
         }
 
-
         /// <summary>
         /// Creates and returns a deep copy of the entire collection as a List of T.
         /// </summary>
@@ -410,8 +405,6 @@ namespace Coree.NETStandard.Classes
                 return deserializedItems ?? new List<T?>();
             }
         }
-
-
 
         /// <summary>
         /// Gets the number of items in the collection, ensuring thread safety.
@@ -476,7 +469,8 @@ namespace Coree.NETStandard.Classes
                 }
             }
         }
-
     }
-}
 
+
+
+}

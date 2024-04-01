@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using System.Threading;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using System.Collections.Concurrent;
 
 namespace Coree.NETStandard.HostedServicesCollection
 {
@@ -14,7 +17,6 @@ namespace Coree.NETStandard.HostedServicesCollection
     /// </summary>
     public static partial class ServiceCollectionExtensions
     {
-
         /// <summary>
         /// Registers a collection of hosted services of type <typeparamref name="T"/>
         /// with their configurations specified in a list of <typeparamref name="K"/>.
@@ -132,7 +134,7 @@ namespace Coree.NETStandard.HostedServicesCollection
 
             for (int i = 0; i < values.Length; i++)
             {
-                services.AddSingleton<IHostedService,T>();
+                services.AddSingleton<IHostedService, T>();
             }
 
             return services;
@@ -161,7 +163,7 @@ namespace Coree.NETStandard.HostedServicesCollection
         ///       "Name": "Service2"
         ///     }
         /// }
-        /// 
+        ///
         /// services.AddHostedServicesCollection&lt;MyBackgroundSrv, MyBackgroundSrvConfig&gt;(context.Configuration, "ServiceConfigurations");
         ///
         /// public class MyBackgroundSrvConfig

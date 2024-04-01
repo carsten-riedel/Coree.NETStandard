@@ -24,6 +24,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Classes\ThreadSafeValue.cs" />
     <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />
     <None Remove="Extensions\Serilog.cs" />
