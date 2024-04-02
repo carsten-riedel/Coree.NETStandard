@@ -34,6 +34,56 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.CancellationTokenExtensions.yml",
       "output": {
         ".html": {
