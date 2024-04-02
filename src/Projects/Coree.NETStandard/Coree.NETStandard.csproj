@@ -26,6 +26,7 @@
   <ItemGroup>
     <None Remove="Classes\ThreadSafeValue.cs" />
     <None Remove="CoreeHttpClient\CoreeHttpClient.cs" />
+    <None Remove="CoreeHttpClient\HttpHeadersExtensions.cs" />
     <None Remove="CoreeHttpClient\ServiceCollectionExtensions.cs" />
     <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />

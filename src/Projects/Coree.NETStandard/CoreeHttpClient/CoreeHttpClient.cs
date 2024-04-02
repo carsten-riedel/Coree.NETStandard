@@ -3,18 +3,21 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 using System.Text.Json.Nodes;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Threading.Tasks;
 
 using Json.More;
 using Json.Path;
 
 using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 
 using static Coree.NETStandard.CoreeHttpClient.CoreeHttpClient;
 
@@ -23,158 +26,195 @@ namespace Coree.NETStandard.CoreeHttpClient
 
     public interface ICoreeHttpClient
     {
-        Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
-        Task<string> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
-        Task<JsonDocument> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
-        Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
-        Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
-        Task<List<T>> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null);
+        Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<string?> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
     }
 
     public class CoreeHttpClient : ICoreeHttpClient
     {
-        private readonly IHttpClientFactory _httpClientFactory;
-        private readonly IMemoryCache _cache;
+
 
         public class HttpResponseResult
         {
-            public byte[] ContentBytes { get; set; }
-            private HttpResponseHeaders ResponseHeaders { get; set; }
-            public HttpRequestHeaders RequestHeaders { get; set; }
+            public enum OperationStatus
+            {
+                Success,
+                Failure
+            }
 
-            // Dynamically determine the content string using the response's content encoding
+            public byte[]? ContentBytes { get; set; }
+            public HttpResponseHeaders? ResponseHeaders { get; set; }
+            public HttpRequestHeaders? RequestHeaders { get; set; }
+            public bool IsFromCache { get; set; }
+            public HttpStatusCode StatusCode { get; set; }
+            public Exception? Exception { get; set; } // Exception information
+            public OperationStatus Status { get; set; }
+
+            private string? _contentString;
             public string ContentString
             {
                 get
                 {
-                    if (ContentBytes == null)
+                    if (_contentString != null)
                     {
-                        return string.Empty;
+                        return _contentString;
                     }
 
-                    // Default to UTF-8 if the content encoding is not specified or unrecognized
-                    var encoding = Encoding.UTF8;
-
-                    // Attempt to read the charset from the Content-Type header
-                    if (ResponseHeaders.TryGetValues("Content-Type", out var values))
+                    if (ContentBytes == null || ResponseHeaders == null)
                     {
-                        var contentType = string.Join(" ", values);
-                        var match = Regex.Match(contentType, @"charset=([\w-]+)", RegexOptions.IgnoreCase);
-
-                        if (match.Success)
+                        _contentString = string.Empty;
+                    }
+                    else
+                    {
+                        try
                         {
-                            try
-                            {
-                                encoding = Encoding.GetEncoding(match.Groups[1].Value);
-                            }
-                            catch (ArgumentException)
-                            {
-                                // If the encoding is not supported, fall back to UTF-8
-                            }
+                            _contentString = ResponseHeaders.GetContentEncoding().GetString(ContentBytes);
+                        }
+                        catch
+                        {
+                            _contentString = string.Empty; // In case decoding fails
                         }
                     }
-
-                    return encoding.GetString(ContentBytes);
+                    return _contentString;
                 }
             }
 
-            public HttpResponseResult(byte[] contentBytes, HttpResponseHeaders responseHeaders, HttpRequestHeaders requestHeaders)
+            // Constructor for successful response
+            public HttpResponseResult(byte[]? contentBytes, HttpResponseHeaders? responseHeaders, HttpRequestHeaders? requestHeaders, bool isFromCache, HttpStatusCode statusCode)
             {
                 ContentBytes = contentBytes;
                 ResponseHeaders = responseHeaders;
                 RequestHeaders = requestHeaders;
+                IsFromCache = isFromCache;
+                StatusCode = statusCode;
+                Status = OperationStatus.Success;
+            }
+
+            // Constructor for failure
+            public HttpResponseResult(Exception? exception, HttpStatusCode statusCode)
+            {
+                Exception = exception;
+                StatusCode = statusCode;
+                Status = OperationStatus.Failure;
             }
         }
 
 
-        public CoreeHttpClient(IHttpClientFactory httpClientFactory, IMemoryCache memoryCache)
+        private readonly IHttpClientFactory _httpClientFactory;
+        private readonly IMemoryCache _cache;
+        private readonly ILogger<CoreeHttpClient> logger;
+
+        public CoreeHttpClient(ILogger<CoreeHttpClient> logger, IHttpClientFactory httpClientFactory, IMemoryCache memoryCache)
         {
             _httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
             _cache = memoryCache ?? throw new ArgumentNullException(nameof(memoryCache));
+            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public async Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+        public async Task<HttpResponseResult> GetAsync(string url,Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             TimeSpan effectiveCacheDuration = cacheDuration ?? TimeSpan.FromSeconds(5);
+            retryDelay ??= TimeSpan.FromSeconds(5);
+            Exception? lastException = null;
 
             // Attempt to retrieve the cached HttpResponseResult
             if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(url, out HttpResponseResult cachedResult))
             {
+                cachedResult.IsFromCache = true; // Mark as from cache
                 return cachedResult;
             }
 
-            var client = _httpClientFactory.CreateClient("CoreeHttpClient");
-            var request = new HttpRequestMessage(HttpMethod.Get, url);
-
-            // Add headers to the request if any
-            if (headers != null)
+            for (int tryCount = 0; tryCount < maxTries; tryCount++)
             {
-                foreach (var header in headers)
+                try
                 {
-                    request.Headers.TryAddWithoutValidation(header.Key, header.Value);
+                    var client = _httpClientFactory.CreateClient("CoreeHttpClient");
+                    var request = new HttpRequestMessage(HttpMethod.Get, url);
+
+                    // Add headers to the request if any
+                    headers?.ToList().ForEach(header => request.Headers.TryAddWithoutValidation(header.Key, header.Value));
+
+                    // Pass cancellationToken to SendAsync
+                    var response = await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, cancellationToken);
+
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        // Throwing an exception for non-success status codes
+                        throw new HttpRequestException($"Request to {url} failed with status code {response.StatusCode}, reason: {response.ReasonPhrase}");
+                    }
+
+                    // Pass cancellationToken to ReadAsByteArrayAsync
+                    var contentBytes = await response.Content.ReadAsByteArrayAsync();
+                    var responseResult = new HttpResponseResult(contentBytes, response.Headers, request.Headers, false, response.StatusCode);
+
+                    if (effectiveCacheDuration > TimeSpan.Zero)
+                    {
+                        _cache.Set(url, responseResult, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = effectiveCacheDuration });
+                    }
+
+                    return responseResult;
+                }
+                catch (HttpRequestException ex)
+                {
+                    lastException = ex;
+                    if (tryCount < maxTries - 1) await Task.Delay(retryDelay.Value, cancellationToken); // Also pass cancellationToken to Task.Delay
+                }
+                catch (OperationCanceledException)
+                {
+                    // If cancellation was requested, propagate the cancellation exception immediately without retrying.
+                    throw;
                 }
             }
 
-            var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
-            response.EnsureSuccessStatusCode();
-
-            // Read the content as a byte array
-            var contentBytes = await response.Content.ReadAsByteArrayAsync();
-
-            // Create the HttpResponseResult object
-            var responseResult = new HttpResponseResult(contentBytes, response.Headers, request.Headers);
-
-            // Cache the HttpResponseResult object
-            if (effectiveCacheDuration > TimeSpan.Zero)
-            {
-                _cache.Set(url, responseResult, new MemoryCacheEntryOptions
-                {
-                    
-                    AbsoluteExpirationRelativeToNow = effectiveCacheDuration
-                });
-            }
-
-            return responseResult;
+            // Return failure result with the last exception
+            return new HttpResponseResult(lastException, HttpStatusCode.ServiceUnavailable);
         }
 
 
-        public async Task<string> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+        public async Task<string?> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
-            var httpResponseResult = await GetAsync(url, headers, cacheDuration);
+            var httpResponseResult = await GetAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
+            if (httpResponseResult.Status == HttpResponseResult.OperationStatus.Failure) { return null; }
             return httpResponseResult.ContentString;
         }
 
-        public async Task<JsonDocument> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+        public async Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
-            // Use GetStringAsync to fetch the content
-            var jsonString = await GetStringAsync(url, headers, cacheDuration);
-            // Parse the JSON string into JsonDocument
+            var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
+            if (jsonString == null) { return null; }
             return JsonDocument.Parse(jsonString, new JsonDocumentOptions { CommentHandling = JsonCommentHandling.Skip });
         }
 
-        public async Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+        public async Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
-            // Use GetStringAsync to fetch the content
-            var jsonString = await GetStringAsync(url, headers, cacheDuration);
-            // Parse the JSON string into JsonNode
+            var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
+            if (jsonString == null) { return null; }
             var doc = JsonDocument.Parse(jsonString, new JsonDocumentOptions { CommentHandling = JsonCommentHandling.Skip });
             return doc.RootElement.AsNode();
         }
 
-        public async Task<PathResult?> GetJsonPathResultAsync(string url,string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+
+        public async Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
-            
-            var jsonString = await GetJsonNodeAsync(url, headers, cacheDuration);
+            var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
+            if (jsonString == null) { return null; }
             var path = JsonPath.Parse(jsonPath, new PathParsingOptions() { });
-            var result = path.Evaluate(jsonString);
+            var doc = JsonDocument.Parse(jsonString, new JsonDocumentOptions { CommentHandling = JsonCommentHandling.Skip });
+            var result = path.Evaluate(doc.RootElement.AsNode());
             return result;
         }
 
-        public async Task<List<T>> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null)
+        public async Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
-            var pathResult = await GetJsonPathResultAsync(url, jsonPath, headers, cacheDuration);
-            var result = pathResult.Matches.Select(e => e.Value.GetValue<T>() ).ToList();
+            var pathResult = await GetJsonPathResultAsync(url, jsonPath, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
+            if (pathResult == null) { return null; } // Or new List<T>() if you prefer not to return null
+            var result = pathResult.Matches.Select(e => e.Value.GetValue<T>()).ToList();
             return result;
         }
+
     }
 }
