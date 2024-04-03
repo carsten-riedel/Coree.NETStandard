@@ -52,7 +52,7 @@
                           <a href="../docs/introduction.html" title="Docs">Docs</a>
                       </li>
                       <li>
-                          <a href="../api/Coree.NETStandard.Classes.html" title="API">API</a>
+                          <a href="../api/Coree.NETStandard.Abstractions.html" title="API">API</a>
                       </li>
                 </ul>
             </div>
@@ -84,6 +84,19 @@
                   <ul class="nav level1">
                     <li class="">
                       <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Abstractions.html" title="Coree.NETStandard.Abstractions" class="">Coree.NETStandard.Abstractions</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Abstractions.FluentBase.html" title="FluentBase" class="">FluentBase</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Abstractions.IFluentBase.html" title="IFluentBase" class="">IFluentBase</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
                       <a href="Coree.NETStandard.Classes.html" title="Coree.NETStandard.Classes" class="">Coree.NETStandard.Classes</a>
 
                         <ul class="nav level2">
@@ -104,16 +117,22 @@
                             <a href="Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html" title="CoreeHttpClient" class="">CoreeHttpClient</a>
                           </li>
                           <li class="">
-                            <a href="Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.html" title="CoreeHttpClient.HttpResponseResult" class="">CoreeHttpClient.HttpResponseResult</a>
-                          </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.OperationStatus.html" title="CoreeHttpClient.HttpResponseResult.OperationStatus" class="">CoreeHttpClient.HttpResponseResult.OperationStatus</a>
-                          </li>
-                          <li class="">
                             <a href="Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.html" title="HttpHeadersExtensions" class="">HttpHeadersExtensions</a>
                           </li>
                           <li class="">
+                            <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html" title="HttpResponseResult" class="">HttpResponseResult</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html" title="HttpResponseResult.OperationStatus" class="">HttpResponseResult.OperationStatus</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html" title="ICoreeHttpClient" class="">ICoreeHttpClient</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.CoreeHttpClient.Product.html" title="Product" class="">Product</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.CoreeHttpClient.ProductExtensions.html" title="ProductExtensions" class="">ProductExtensions</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
@@ -187,6 +206,12 @@
                       <a href="Coree.NETStandard.Serilog.html" title="Coree.NETStandard.Serilog" class="">Coree.NETStandard.Serilog</a>
 
                         <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Serilog.ConditionalLevelSink.html" title="ConditionalLevelSink" class="">ConditionalLevelSink</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.html" title="LoggerSinkConfigurationExtensions" class="">LoggerSinkConfigurationExtensions</a>
+                          </li>
                           <li class="">
                             <a href="Coree.NETStandard.Serilog.OutputTemplates.html" title="OutputTemplates" class="">OutputTemplates</a>
                           </li>
@@ -284,10 +309,110 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidJson_System_String_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L90">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidJson_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson*"></a>
+  <h4 id="Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidJson_System_String_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(System.String)">IsValidJson(string)</h4>
+  <div class="markdown level1 summary"><p>Validates whether the specified string is valid JSON.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidJson(this string jsonString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">jsonString</span></td>
+        <td><p>The JSON string to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>true if the string is valid JSON; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidXml_System_String_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L71">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidXml_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml*"></a>
+  <h4 id="Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidXml_System_String_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(System.String)">IsValidXml(string)</h4>
+  <div class="markdown level1 summary"><p>Validates whether the specified string is well-formed XML.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsValidXml(this string xmlString)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">xmlString</span></td>
+        <td><p>The XML string to validate.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>true if the string is a well-formed XML; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_Char___System_StringSplitOptions_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String%2CSystem.Char%5B%5D%2CSystem.StringSplitOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L37">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L38">View Source</a>
   </span>
   <a id="Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith*"></a>
   <h4 id="Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_Char___System_StringSplitOptions_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions)">SplitWith(string?, char[], StringSplitOptions)</h4>
@@ -349,7 +474,7 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String_System_StringSplitOptions_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String%2CSystem.String%2CSystem.StringSplitOptions)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L19">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L21">View Source</a>
   </span>
   <a id="Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith*"></a>
   <h4 id="Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String_System_StringSplitOptions_" data-uid="Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String,System.StringSplitOptions)">SplitWith(string?, string, StringSplitOptions)</h4>
@@ -480,7 +605,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_Strings_StringExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.Strings.StringExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/String/String.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
