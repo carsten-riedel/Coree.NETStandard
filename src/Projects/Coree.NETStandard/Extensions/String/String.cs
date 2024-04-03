@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using System.Linq;
+using System.Text.Json;
+using System.Xml;
 
 namespace Coree.NETStandard.Extensions.Strings
 {
@@ -26,7 +28,6 @@ namespace Coree.NETStandard.Extensions.Strings
             return options == StringSplitOptions.RemoveEmptyEntries ? result.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray() : result;
         }
 
-
         /// <summary>
         /// Splits the input string by an array of characters, treating them as a single connected delimiter, with options to control the split operation.
         /// </summary>
@@ -45,7 +46,6 @@ namespace Coree.NETStandard.Extensions.Strings
             return options == StringSplitOptions.RemoveEmptyEntries ? result.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray() : result;
         }
 
-
         /// <summary>
         /// Splits the input string by multiple string delimiters, with options to control the split operation.
         /// </summary>
@@ -62,6 +62,42 @@ namespace Coree.NETStandard.Extensions.Strings
             string[] result = Regex.Split(input, pattern);
             return options == StringSplitOptions.RemoveEmptyEntries ? result.Where(x => !string.IsNullOrWhiteSpace(x)).ToArray() : result;
         }
-    }
 
+        /// <summary>
+        /// Validates whether the specified string is well-formed XML.
+        /// </summary>
+        /// <param name="xmlString">The XML string to validate.</param>
+        /// <returns>true if the string is a well-formed XML; otherwise, false.</returns>
+        public static bool IsValidXml(this string xmlString)
+        {
+            try
+            {
+                var xmlDoc = new XmlDocument();
+                xmlDoc.LoadXml(xmlString);
+                return true;
+            }
+            catch (XmlException)
+            {
+                return false;
+            }
+        }
+
+        /// <summary>
+        /// Validates whether the specified string is valid JSON.
+        /// </summary>
+        /// <param name="jsonString">The JSON string to validate.</param>
+        /// <returns>true if the string is valid JSON; otherwise, false.</returns>
+        public static bool IsValidJson(this string jsonString)
+        {
+            try
+            {
+                JsonSerializer.Deserialize<object>(jsonString);
+                return true;
+            }
+            catch (JsonException)
+            {
+                return false;
+            }
+        }
+    }
 }

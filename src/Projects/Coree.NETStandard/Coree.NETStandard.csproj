@@ -24,9 +24,12 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Abstractions\FluentBase.cs" />
+    <None Remove="Abstractions\IFluentBase.cs" />
     <None Remove="Classes\ThreadSafeValue.cs" />
     <None Remove="CoreeHttpClient\CoreeHttpClient.cs" />
     <None Remove="CoreeHttpClient\HttpHeadersExtensions.cs" />
+    <None Remove="CoreeHttpClient\HttpResponseResult.cs" />
     <None Remove="CoreeHttpClient\ServiceCollectionExtensions.cs" />
     <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />
@@ -36,6 +39,8 @@
     <None Remove="Extensions\ThreadSafeCollection.cs" />
     <None Remove="HostedServicesCollection\ServiceCollectionExtensions.cs" />
     <None Remove="HostedServicesCollection\ServiceProviderExtensions.cs" />
+    <None Remove="Serilog\ConditionalLevelSink.cs" />
+    <None Remove="Serilog\LoggerSinkConfigurationExtensions.cs" />
     <None Remove="Serilog\OutputTemplates.cs" />
     <None Remove="Serilog\ServiceCollectionExtensions.cs" />
     <None Remove="Services\GetCorrectCasedPath.cs" />
@@ -72,6 +77,12 @@
   
   <ItemGroup>
     <None Include="Extensions\Enumerable\EnumerableT.cs" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Compile Update="CoreeHttpClient\HttpResponseResult.cs">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Compile>
   </ItemGroup>
   
 </Project>

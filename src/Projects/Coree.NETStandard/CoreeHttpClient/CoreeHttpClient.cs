@@ -26,84 +26,16 @@ namespace Coree.NETStandard.CoreeHttpClient
 
     public interface ICoreeHttpClient
     {
-        Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
-        Task<string?> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
-        Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
-        Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
-        Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
-        Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<string?> GetStringAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+        Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
     }
 
     public class CoreeHttpClient : ICoreeHttpClient
     {
-
-
-        public class HttpResponseResult
-        {
-            public enum OperationStatus
-            {
-                Success,
-                Failure
-            }
-
-            public byte[]? ContentBytes { get; set; }
-            public HttpResponseHeaders? ResponseHeaders { get; set; }
-            public HttpRequestHeaders? RequestHeaders { get; set; }
-            public bool IsFromCache { get; set; }
-            public HttpStatusCode StatusCode { get; set; }
-            public Exception? Exception { get; set; } // Exception information
-            public OperationStatus Status { get; set; }
-
-            private string? _contentString;
-            public string ContentString
-            {
-                get
-                {
-                    if (_contentString != null)
-                    {
-                        return _contentString;
-                    }
-
-                    if (ContentBytes == null || ResponseHeaders == null)
-                    {
-                        _contentString = string.Empty;
-                    }
-                    else
-                    {
-                        try
-                        {
-                            _contentString = ResponseHeaders.GetContentEncoding().GetString(ContentBytes);
-                        }
-                        catch
-                        {
-                            _contentString = string.Empty; // In case decoding fails
-                        }
-                    }
-                    return _contentString;
-                }
-            }
-
-            // Constructor for successful response
-            public HttpResponseResult(byte[]? contentBytes, HttpResponseHeaders? responseHeaders, HttpRequestHeaders? requestHeaders, bool isFromCache, HttpStatusCode statusCode)
-            {
-                ContentBytes = contentBytes;
-                ResponseHeaders = responseHeaders;
-                RequestHeaders = requestHeaders;
-                IsFromCache = isFromCache;
-                StatusCode = statusCode;
-                Status = OperationStatus.Success;
-            }
-
-            // Constructor for failure
-            public HttpResponseResult(Exception? exception, HttpStatusCode statusCode)
-            {
-                Exception = exception;
-                StatusCode = statusCode;
-                Status = OperationStatus.Failure;
-            }
-        }
-
-
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IMemoryCache _cache;
         private readonly ILogger<CoreeHttpClient> logger;
@@ -122,9 +54,9 @@ namespace Coree.NETStandard.CoreeHttpClient
             Exception? lastException = null;
 
             // Attempt to retrieve the cached HttpResponseResult
-            if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(url, out HttpResponseResult cachedResult))
+            if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(url, out HttpResponseResult? cachedResult))
             {
-                cachedResult.IsFromCache = true; // Mark as from cache
+                cachedResult!.IsFromCache = true; // Mark as from cache
                 return cachedResult;
             }
 
@@ -175,21 +107,21 @@ namespace Coree.NETStandard.CoreeHttpClient
         }
 
 
-        public async Task<string?> GetStringAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<string?> GetStringAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var httpResponseResult = await GetAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
             if (httpResponseResult.Status == HttpResponseResult.OperationStatus.Failure) { return null; }
             return httpResponseResult.ContentString;
         }
 
-        public async Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
             if (jsonString == null) { return null; }
             return JsonDocument.Parse(jsonString, new JsonDocumentOptions { CommentHandling = JsonCommentHandling.Skip });
         }
 
-        public async Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
             if (jsonString == null) { return null; }
@@ -198,7 +130,7 @@ namespace Coree.NETStandard.CoreeHttpClient
         }
 
 
-        public async Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
             if (jsonString == null) { return null; }
@@ -208,7 +140,7 @@ namespace Coree.NETStandard.CoreeHttpClient
             return result;
         }
 
-        public async Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string> headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var pathResult = await GetJsonPathResultAsync(url, jsonPath, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
             if (pathResult == null) { return null; } // Or new List<T>() if you prefer not to return null
