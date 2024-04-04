@@ -2175,15 +2175,15 @@ references:
   commentId: T:Coree.NETStandard.Serilog.ServiceCollectionExtensions
   fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions
   nameWithType: ServiceCollectionExtensions
-- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})
-  name: AddLoggingCoreeNETStandard(IServiceCollection, Dictionary<string, LogEventLevel>?)
-  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreeNETStandard_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__
-  commentId: M:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})
-  name.vb: AddLoggingCoreeNETStandard(IServiceCollection, Dictionary(Of String, LogEventLevel))
-  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.Dictionary<string, Serilog.Events.LogEventLevel>?)
-  fullName.vb: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, System.Collections.Generic.Dictionary(Of String, Serilog.Events.LogEventLevel))
-  nameWithType: ServiceCollectionExtensions.AddLoggingCoreeNETStandard(IServiceCollection, Dictionary<string, LogEventLevel>?)
-  nameWithType.vb: ServiceCollectionExtensions.AddLoggingCoreeNETStandard(IServiceCollection, Dictionary(Of String, LogEventLevel))
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})
+  name: AddLoggingCoreeNETStandard(IServiceCollection, bool, Dictionary<string, LogEventLevel>?)
+  href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreeNETStandard_Microsoft_Extensions_DependencyInjection_IServiceCollection_System_Boolean_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__
+  commentId: M:Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})
+  name.vb: AddLoggingCoreeNETStandard(IServiceCollection, Boolean, Dictionary(Of String, LogEventLevel))
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool, System.Collections.Generic.Dictionary<string, Serilog.Events.LogEventLevel>?)
+  fullName.vb: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean, System.Collections.Generic.Dictionary(Of String, Serilog.Events.LogEventLevel))
+  nameWithType: ServiceCollectionExtensions.AddLoggingCoreeNETStandard(IServiceCollection, bool, Dictionary<string, LogEventLevel>?)
+  nameWithType.vb: ServiceCollectionExtensions.AddLoggingCoreeNETStandard(IServiceCollection, Boolean, Dictionary(Of String, LogEventLevel))
 - uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions.AddLoggingCoreeNETStandard*
   name: AddLoggingCoreeNETStandard
   href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html#Coree_NETStandard_Serilog_ServiceCollectionExtensions_AddLoggingCoreeNETStandard_
