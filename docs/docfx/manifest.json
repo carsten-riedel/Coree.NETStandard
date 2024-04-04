@@ -4,6 +4,36 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.FluentBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.FluentBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.IFluentBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.IFluentBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml",
       "output": {
         ".html": {
@@ -34,26 +64,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.OperationStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.OperationStatus.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.HttpResponseResult.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.yml",
       "output": {
         ".html": {
@@ -74,10 +84,50 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.yml",
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.Product.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.Product.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html"
         }
       },
       "version": ""
@@ -238,6 +288,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.HostedServicesCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.ConditionalLevelSink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.ConditionalLevelSink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.html"
         }
       },
       "version": ""
