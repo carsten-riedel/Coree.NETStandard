@@ -67,34 +67,28 @@ namespace Coree.NETStandard.CoreeHttpClient
         public HttpStatusCode StatusCode { get; set; }
         public Exception? Exception { get; set; } // Exception information
         public OperationStatus Status { get; set; }
-
-        private string? _contentString;
+        public long? ContentLength { get; set; }
 
         public string ContentString
         {
             get
             {
-                if (_contentString != null)
-                {
-                    return _contentString;
-                }
-
                 if (ContentBytes == null || ResponseHeaders == null)
                 {
-                    _contentString = string.Empty;
+                    return string.Empty;
                 }
                 else
                 {
                     try
                     {
-                        _contentString = ResponseHeaders.GetContentEncoding().GetString(ContentBytes);
+                        return ResponseHeaders.GetContentEncoding().GetString(ContentBytes);
                     }
                     catch
                     {
-                        _contentString = string.Empty; // In case decoding fails
+                        return string.Empty; // In case decoding fails
                     }
                 }
-                return _contentString;
+
             }
         }
 
@@ -169,7 +163,11 @@ namespace Coree.NETStandard.CoreeHttpClient
 
                     // Pass cancellationToken to ReadAsByteArrayAsync
                     var contentBytes = await response.Content.ReadAsByteArrayAsync();
-                    var responseResult = new HttpResponseResult2(contentBytes, response.Headers, request.Headers, false, response.StatusCode);
+                    var responseResult = new HttpResponseResult2(contentBytes, response.Headers, request.Headers, false, response.StatusCode)
+                    {
+                           ContentLength = response.Content.Headers.ContentLength
+                    };
+
 
                     if (effectiveCacheDuration > TimeSpan.Zero)
                     {

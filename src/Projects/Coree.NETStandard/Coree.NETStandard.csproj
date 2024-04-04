@@ -36,6 +36,7 @@
     <None Remove="CoreeHttpClient\ServiceCollectionExtensions.cs" />
     <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />
+    <None Remove="Extensions\HostApplicationBuilderExtensions.cs" />
     <None Remove="Extensions\Serilog.cs" />
     <None Remove="Extensions\ServiceProvider.cs" />
     <None Remove="Extensions\Stringbuilder\StringBuilder.cs" />
