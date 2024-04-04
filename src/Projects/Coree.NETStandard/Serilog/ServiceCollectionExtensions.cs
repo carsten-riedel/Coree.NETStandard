@@ -18,6 +18,7 @@ namespace Coree.NETStandard.Serilog
         /// Adds and configures Serilog logging to the specified IServiceCollection, incorporating a conditional log level feature.
         /// </summary>
         /// <param name="services">The IServiceCollection to which logging services are added.</param>
+        /// <param name="simplifyNamespace">If true, simplifies the namespace to only include the last component.</param>
         /// <param name="conditionalLevel">
         /// An optional dictionary mapping source contexts to LogEventLevels, allowing for dynamic log level overrides.
         /// Example usage:
@@ -33,7 +34,7 @@ namespace Coree.NETStandard.Serilog
         /// <remarks>
         /// Configures Serilog as the primary logging provider, leveraging a LoggingLevelSwitch for default level control. It enriches log entries with contextual information and enables output to both console and debug sinks, using a concise output format. This setup ensures that logs are both informative and manageable, tailored to development and production environments.
         /// </remarks>
-        public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services, Dictionary<string, LogEventLevel>? conditionalLevel = null)
+        public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services,bool simplifyNamespace = true, Dictionary<string, LogEventLevel>? conditionalLevel = null)
         {
             LoggingLevelSwitch loggingLevelSwitch = new LoggingLevelSwitch();
             services.AddSingleton(loggingLevelSwitch);
@@ -43,8 +44,8 @@ namespace Coree.NETStandard.Serilog
 
                 var loggerConfig = new LoggerConfiguration()
                     .Enrich.FromLogContext()
-                    .Enrich.With(new SourceContextShortEnricher())
-                    .WriteTo.ConsoleConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(),conditionalLevel: conditionalLevel)
+                    .Enrich.With(new SourceContextShortEnricher(true, simplifyNamespace, 15, null))
+                    .WriteTo.ConsoleConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel)
                     .WriteTo.DebugConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel);
 
                 if (loggingLevelSwitch != null)
