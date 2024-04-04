@@ -45,8 +45,8 @@ namespace Coree.NETStandard.Serilog
                 var loggerConfig = new LoggerConfiguration()
                     .Enrich.FromLogContext()
                     .Enrich.With(new SourceContextShortEnricher(true, simplifyNamespace, 15, null))
-                    .WriteTo.ConsoleConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel)
-                    .WriteTo.DebugConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel);
+                    .WriteTo.ConsoleConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel, levelSwitch: loggingLevelSwitch)
+                    .WriteTo.DebugConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel,levelSwitch: loggingLevelSwitch);
 
                 if (loggingLevelSwitch != null)
                 {
