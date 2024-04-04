@@ -6,10 +6,10 @@
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta name="google" content="notranslate">
-      <title>Interface IFluentBase
+      <title>Class HttpResponseResult2
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Interface IFluentBase
+      <meta name="title" content="Class HttpResponseResult2
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -90,8 +90,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Abstractions.FluentBase.html" title="FluentBase" class="">FluentBase</a>
                           </li>
-                          <li class="active">
-                            <a href="Coree.NETStandard.Abstractions.IFluentBase.html" title="IFluentBase" class="active">IFluentBase</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.Abstractions.IFluentBase.html" title="IFluentBase" class="">IFluentBase</a>
                           </li>
                         </ul>
                     </li>
@@ -131,8 +131,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html" title="HttpResponseResult.OperationStatus" class="">HttpResponseResult.OperationStatus</a>
                           </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html" title="HttpResponseResult2" class="">HttpResponseResult2</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html" title="HttpResponseResult2" class="active">HttpResponseResult2</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html" title="HttpResponseResult2.OperationStatus" class="">HttpResponseResult2.OperationStatus</a>
@@ -314,206 +314,36 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Abstractions.IFluentBase">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2">
 
 
 
-  <h1 id="Coree_NETStandard_Abstractions_IFluentBase" data-uid="Coree.NETStandard.Abstractions.IFluentBase" class="text-break">Interface IFluentBase
+  <h1 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2" class="text-break">Class HttpResponseResult2
 </h1>
-  <div class="markdown level0 summary"><p>Serves as a foundational class for fluent interface pattern error handling, enabling mechanisms for both error accumulation and immediate exception throwing, alongside optional continuation after encountering validation errors. This abstract class standardizes error management for classes utilizing fluent interfaces.</p>
-</div>
+  <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Abstractions.html">Abstractions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.CoreeHttpClient.html">CoreeHttpClient</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_Abstractions_IFluentBase_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IFluentBase</code></pre>
+    <pre><code class="lang-csharp hljs">public class HttpResponseResult2</code></pre>
   </div>
-  <h5 id="Coree_NETStandard_Abstractions_IFluentBase_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Implements IFluentBase, offering:</p>
-<ul>
-<li>Error accumulation during operations.</li>
-<li>Conditional continuation of operations post-errors.</li>
-<li>Flexible toggling between immediate exception throwing or error accumulation, adapting to various error handling strategies.</li>
-</ul>
-</div>
-  <h5 id="Coree_NETStandard_Abstractions_IFluentBase_examples"><strong>Examples</strong></h5>
-  <p>Illustrates the use of FluentBase with a concrete Product class and an extension method for price adjustment with comprehensive error handling:</p>
-<pre><code class="lang-csharp">public abstract class FluentBase : IFluentBase
-{
-    private bool throwOnError = true;
-    public List&lt;Exception&gt; ValidationErrors { get; private set; } = new List&lt;Exception&gt;();
-    public bool IsValid =&gt; !ValidationErrors.Any();
-    public bool ContinueOnValidationError { get; private set; } = false;
-
-    public void AddValidationError(string message, Exception innerException)
-    {
-        ValidationErrors.Add(new Exception(message, innerException));
-        if (throwOnError)
-        {
-            throw innerException;
-        }
-    }
-
-    public IFluentBase EnableThrowOnError()
-    {
-        throwOnError = true;
-        ContinueOnValidationError = false;
-        return this;
-    }
-
-    public IFluentBase DisableThrowOnError(bool continueOnValidationError = false)
-    {
-        throwOnError = false;
-        ContinueOnValidationError = continueOnValidationError;
-        return this;
-    }
-}
-
-// Simplified Product class inheriting FluentBase
-public class Product : FluentBase
-{
-    public string Name { get; set; }
-    public decimal Price { get; set; }
-}
-
-// Extension method for Product
-public static class ProductExtensions
-{
-    public static Product AdjustPrice(this Product product, decimal adjustment)
-    {
-        if (!product.IsValid &amp;&amp; !product.ContinueOnValidationError) return product;
-
-        try
-        {
-            var newPrice = product.Price + adjustment;
-            if (newPrice &lt; 0)
-            {
-                throw new ArgumentOutOfRangeException(nameof(adjustment), "Adjustment results in a negative price.");
-            }
-            product.Price = newPrice;
-        }
-        catch (Exception ex)
-        {
-            product.AddValidationError($"Error adjusting price by {adjustment}: {ex.Message}", ex);
-        }
-
-        return product;
-    }
-}</code></pre>
-
-  <h3 id="properties">Properties
+  <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_ContinueOnValidationError.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.ContinueOnValidationError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Byte___System_Net_Http_Headers_HttpResponseHeaders_System_Net_Http_Headers_HttpRequestHeaders_System_Boolean_System_Net_HttpStatusCode_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.%23ctor(System.Byte%5B%5D%2CSystem.Net.Http.Headers.HttpResponseHeaders%2CSystem.Net.Http.Headers.HttpRequestHeaders%2CSystem.Boolean%2CSystem.Net.HttpStatusCode)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L98">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L96">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_ContinueOnValidationError_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.ContinueOnValidationError*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_ContinueOnValidationError" data-uid="Coree.NETStandard.Abstractions.IFluentBase.ContinueOnValidationError">ContinueOnValidationError</h4>
-  <div class="markdown level1 summary"><p>Indicates whether operations should continue after a validation error has occurred.</p>
-</div>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Byte___System_Net_Http_Headers_HttpResponseHeaders_System_Net_Http_Headers_HttpRequestHeaders_System_Boolean_System_Net_HttpStatusCode_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Byte[],System.Net.Http.Headers.HttpResponseHeaders,System.Net.Http.Headers.HttpRequestHeaders,System.Boolean,System.Net.HttpStatusCode)">HttpResponseResult2(byte[]?, HttpResponseHeaders?, HttpRequestHeaders?, bool, HttpStatusCode)</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool ContinueOnValidationError { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_IsValid.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.IsValid%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L88">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_IsValid_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.IsValid*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_IsValid" data-uid="Coree.NETStandard.Abstractions.IFluentBase.IsValid">IsValid</h4>
-  <div class="markdown level1 summary"><p>Indicates whether the current object is in a valid state.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool IsValid { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_ValidationErrors.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.ValidationErrors%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L93">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_ValidationErrors_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.ValidationErrors*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_ValidationErrors" data-uid="Coree.NETStandard.Abstractions.IFluentBase.ValidationErrors">ValidationErrors</h4>
-  <div class="markdown level1 summary"><p>A collection of exceptions that have been accumulated during operations.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">List&lt;Exception&gt; ValidationErrors { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="methods">Methods
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_AddValidationError_System_String_System_Exception_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.AddValidationError(System.String%2CSystem.Exception)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L105">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_AddValidationError_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.AddValidationError*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_AddValidationError_System_String_System_Exception_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.AddValidationError(System.String,System.Exception)">AddValidationError(string, Exception)</h4>
-  <div class="markdown level1 summary"><p>Adds a validation error to the collection with a custom message and the exception that occurred.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">void AddValidationError(string message, Exception innerException)</code></pre>
+    <pre><code class="lang-csharp hljs">public HttpResponseResult2(byte[]? contentBytes, HttpResponseHeaders? responseHeaders, HttpRequestHeaders? requestHeaders, bool isFromCache, HttpStatusCode statusCode)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -521,93 +351,242 @@ public static class ProductExtensions
       <tr>
         <th>Type</th>
         <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><span class="parametername">contentBytes</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.httpresponseheaders">HttpResponseHeaders</a></td>
+        <td><span class="parametername">responseHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders">HttpRequestHeaders</a></td>
+        <td><span class="parametername">requestHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">isFromCache</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Exception_System_Net_HttpStatusCode_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.%23ctor(System.Exception%2CSystem.Net.HttpStatusCode)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L107">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Exception_System_Net_HttpStatusCode_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Exception,System.Net.HttpStatusCode)">HttpResponseResult2(Exception?, HttpStatusCode)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseResult2(Exception? exception, HttpStatusCode statusCode)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td><span class="parametername">exception</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></td>
+        <td><span class="parametername">statusCode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentBytes.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L63">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentBytes_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentBytes" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes">ContentBytes</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public byte[]? ContentBytes { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentLength.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L70">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentLength_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentLength" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength">ContentLength</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long? ContentLength { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int64">long</a>?</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentString.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L72">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentString_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentString" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString">ContentString</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentString { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td><span class="parametername">message</span></td>
-        <td><p>The error message.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">innerException</span></td>
-        <td><p>The exception that occurred during validation.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_DisableThrowOnError_System_Boolean_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.DisableThrowOnError(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Exception.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L120">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L68">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_DisableThrowOnError_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.DisableThrowOnError*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_DisableThrowOnError_System_Boolean_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.DisableThrowOnError(System.Boolean)">DisableThrowOnError(bool)</h4>
-  <div class="markdown level1 summary"><p>Disables the behavior of throwing exceptions immediately, allowing operations to accumulate validation errors.
-Optionally allows continuation after validation errors based on the <code class="paramref">continueOnValidationError</code> parameter.</p>
-</div>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Exception_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Exception" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception">Exception</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IFluentBase DisableThrowOnError(bool continueOnValidationError = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public Exception? Exception { get; set; }</code></pre>
   </div>
-  <h5 class="parameters">Parameters</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_IsFromCache.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L66">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_IsFromCache_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_IsFromCache" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache">IsFromCache</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsFromCache { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">continueOnValidationError</span></td>
-        <td><p>Determines whether to continue operations after a validation error has occurred.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="Coree.NETStandard.Abstractions.IFluentBase.html">IFluentBase</a></td>
-        <td><p>The current instance of <a class="xref" href="Coree.NETStandard.Abstractions.IFluentBase.html">IFluentBase</a>.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase_EnableThrowOnError.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase.EnableThrowOnError%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_RequestHeaders.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L112">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L65">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Abstractions_IFluentBase_EnableThrowOnError_" data-uid="Coree.NETStandard.Abstractions.IFluentBase.EnableThrowOnError*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_IFluentBase_EnableThrowOnError" data-uid="Coree.NETStandard.Abstractions.IFluentBase.EnableThrowOnError">EnableThrowOnError()</h4>
-  <div class="markdown level1 summary"><p>Enables the behavior to throw exceptions immediately when a validation error occurs.
-Resets <code>ContinueOnValidationError</code> to <code>false</code>.</p>
-</div>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_RequestHeaders_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_RequestHeaders" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders">RequestHeaders</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IFluentBase EnableThrowOnError()</code></pre>
+    <pre><code class="lang-csharp hljs">public HttpRequestHeaders? RequestHeaders { get; set; }</code></pre>
   </div>
-  <h5 class="returns">Returns</h5>
+  <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
@@ -617,9 +596,98 @@ Resets <code>ContinueOnValidationError</code> to <code>false</code>.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Coree.NETStandard.Abstractions.IFluentBase.html">IFluentBase</a></td>
-        <td><p>The current instance of <a class="xref" href="Coree.NETStandard.Abstractions.IFluentBase.html">IFluentBase</a>.</p>
-</td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.httprequestheaders">HttpRequestHeaders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ResponseHeaders.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L64">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ResponseHeaders_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ResponseHeaders" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders">ResponseHeaders</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseHeaders? ResponseHeaders { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.headers.httpresponseheaders">HttpResponseHeaders</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Status.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L69">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Status_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Status" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status">Status</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpResponseResult2.OperationStatus Status { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html">HttpResponseResult2</a>.<a class="xref" href="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html">OperationStatus</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_StatusCode.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L67">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_StatusCode_" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode*"></a>
+  <h4 id="Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_StatusCode" data-uid="Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode">StatusCode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpStatusCode StatusCode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.httpstatuscode">HttpStatusCode</a></td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -632,10 +700,10 @@ Resets <code>ContinueOnValidationError</code> to <code>false</code>.</p>
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_IFluentBase.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.IFluentBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_CoreeHttpClient_HttpResponseResult2.md&amp;value=---%0Auid%3A%20Coree.NETStandard.CoreeHttpClient.HttpResponseResult2%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/IFluentBase.cs/#L83" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/CoreeHttpClient/CoreeHttpClient2.cs/#L55" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
