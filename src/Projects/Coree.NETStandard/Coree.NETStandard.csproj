@@ -29,7 +29,10 @@
     <None Remove="Classes\ThreadSafeValue.cs" />
     <None Remove="CoreeHttpClient\CoreeHttpClient.cs" />
     <None Remove="CoreeHttpClient\HttpHeadersExtensions.cs" />
+    <None Remove="CoreeHttpClient\HttpRequestHeadersExtensions.cs" />
     <None Remove="CoreeHttpClient\HttpResponseResult.cs" />
+    <None Remove="CoreeHttpClient\RequestContentBuilder.cs" />
+    <None Remove="CoreeHttpClient\RequestParamBuilder.cs" />
     <None Remove="CoreeHttpClient\ServiceCollectionExtensions.cs" />
     <None Remove="Extensions\CancellationTokenExtensions.cs" />
     <None Remove="Extensions\Enumerable\EnumerableString.cs" />

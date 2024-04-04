@@ -31,6 +31,7 @@ namespace Coree.NETStandard.CoreeHttpClient
                 return new HttpClientHandler()
                 {
                     AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate
+                     
                 };
             });
 
