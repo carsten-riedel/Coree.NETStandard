@@ -39,7 +39,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
             {
                 return await Task.Run(() =>
                 {
-                    var assembly = Assembly.GetExecutingAssembly();
+                    var assembly = Assembly.GetEntryAssembly();
                     var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
                     if (attributes != null && attributes.Length > 0)
