@@ -23,7 +23,16 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool? IsDebugBuild()
         {
-           return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
+            var assembly = Assembly.GetEntryAssembly();
+            var attributes = assembly?.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
+            if (attributes != null && attributes.Length > 0)
+            {
+                var d = attributes[0];
+                logger.LogTrace("IsDebugBuild {value}", d.IsJITTrackingEnabled);
+                return d.IsJITTrackingEnabled;
+            }
+            logger.LogTrace("IsDebugBuild {value}", false);
+            return false;
         }
 
         /// <summary>
@@ -80,7 +89,6 @@ namespace Coree.NETStandard.Services.RuntimeInsights
                 var d = attributes[0];
                 if (d.IsJITTrackingEnabled)
                 {
-                    
                     return true;
                 }
             }
