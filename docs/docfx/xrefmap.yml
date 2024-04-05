@@ -188,6 +188,25 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Abstractions.FluentBase.ValidationErrors
   nameWithType: FluentBase.ValidationErrors
+- uid: Coree.NETStandard.Abstractions.IDependencySingleton
+  name: IDependencySingleton
+  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html
+  commentId: T:Coree.NETStandard.Abstractions.IDependencySingleton
+  fullName: Coree.NETStandard.Abstractions.IDependencySingleton
+  nameWithType: IDependencySingleton
+- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  name: SetMinimumLogLevel(LogLevel)
+  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_
+  commentId: M:Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType: IDependencySingleton.SetMinimumLogLevel(LogLevel)
+- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel*
+  name: SetMinimumLogLevel
+  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetMinimumLogLevel_
+  commentId: Overload:Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel
+  isSpec: "True"
+  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel
+  nameWithType: IDependencySingleton.SetMinimumLogLevel
 - uid: Coree.NETStandard.Abstractions.IFluentBase
   name: IFluentBase
   href: api/Coree.NETStandard.Abstractions.IFluentBase.html
