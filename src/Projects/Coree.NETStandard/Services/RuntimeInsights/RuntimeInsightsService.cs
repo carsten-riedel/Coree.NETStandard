@@ -1,12 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
 using System.Threading;
+using System.Threading.Tasks;
 
 using Coree.NETStandard.Abstractions;
+
 using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.RuntimeInsights
@@ -20,6 +20,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         /// True if the current build is a debug build; otherwise, false.
         /// If the operation is canceled or an exception occurs, returns null.
         /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool? IsDebugBuild()
         {
            return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
@@ -33,6 +34,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         /// True if the current build is a debug build; otherwise, false.
         /// If the operation is canceled or an exception occurs, returns null.
         /// </returns>
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public async Task<bool?> IsDebugBuildAsync(CancellationToken cancellationToken = default)
         {
             try
