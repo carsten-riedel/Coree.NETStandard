@@ -67,7 +67,7 @@ namespace Coree.NETStandard.Abstractions
     /// </code>
     /// </summary>
     /// <typeparam name="T">The type of the singleton instance.</typeparam>
-    public abstract class DependencySingleton<T>
+    public abstract class DependencySingleton<T> : IDependencySingleton
     {
         private static readonly Lazy<T> instance = new Lazy<T>(CreateInstance);
         private static readonly IServiceCollection services = new ServiceCollection();
