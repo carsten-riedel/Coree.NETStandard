@@ -1,0 +1,71 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using System.Threading;
+
+using Coree.NETStandard.Abstractions;
+using Microsoft.Extensions.Logging;
+
+namespace Coree.NETStandard.Services.RuntimeInsights
+{
+    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService
+    {
+        /// <summary>
+        /// Checks if the current build is a debug build.
+        /// </summary>
+        /// <returns>
+        /// True if the current build is a debug build; otherwise, false.
+        /// If the operation is canceled or an exception occurs, returns null.
+        /// </returns>
+        public bool? IsDebugBuild()
+        {
+           return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
+        }
+
+        /// <summary>
+        /// Checks if the current build is a debug build.
+        /// </summary>
+        /// <param name="cancellationToken">The cancellation token to cancel the operation.</param>
+        /// <returns>
+        /// True if the current build is a debug build; otherwise, false.
+        /// If the operation is canceled or an exception occurs, returns null.
+        /// </returns>
+        public async Task<bool?> IsDebugBuildAsync(CancellationToken cancellationToken = default)
+        {
+            try
+            {
+                return await Task.Run(() =>
+                {
+                    var assembly = Assembly.GetExecutingAssembly();
+                    var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
+
+                    if (attributes != null && attributes.Length > 0)
+                    {
+                        var d = attributes[0];
+                        if (d.IsJITTrackingEnabled)
+                        {
+                            logger.LogTrace("IsDebugBuild {value}", true);
+                            return true;
+                        }
+                    }
+                    logger.LogTrace("IsDebugBuild {value}", false);
+                    return false;
+                }, cancellationToken);
+            }
+            catch (OperationCanceledException)
+            {
+                logger.LogInformation("IsDebugBuild operation was canceled.");
+            }
+            catch (Exception ex)
+            {
+                logger.LogError(ex, "Failed to determine if debug build asynchronously.");
+            }
+
+            return null;
+        }
+
+    }
+}

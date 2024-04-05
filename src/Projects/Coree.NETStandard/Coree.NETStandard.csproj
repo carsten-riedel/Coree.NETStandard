@@ -22,6 +22,11 @@
     <None Remove="Logging\**" />
     <None Remove="Template\**" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Class1.cs" />
+    <Compile Remove="Services\Class2.cs" />
+  </ItemGroup>
   
   <ItemGroup>
     <None Remove="Abstractions\DependencySingleton.cs" />
@@ -51,6 +56,8 @@
     <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
     <None Remove="Services\ProcessService\RunProcessWithCancellationSupportAsync.cs" />
+    <None Remove="Services\RuntimeInsights\IRuntimeInsightsService.cs" />
+    <None Remove="Services\RuntimeInsights\RuntimeInsightsService.cs" />
     <None Remove="SpectreConsole\CommandAppExtensions.cs" />
     <None Remove="SpectreConsole\HostBuilderExtensions.cs" />
     <None Remove="SpectreConsole\ServiceCollectionExtensions.cs" />

@@ -141,7 +141,7 @@ namespace Coree.NETStandard.Services
                     linkedCts.CancelAfter(timeout.Value);
                 }
 
-                using (var process = new Process())
+                using (var process = new System.Diagnostics.Process())
                 {
                     process.StartInfo.UseShellExecute = false;
                     process.StartInfo.CreateNoWindow = true;

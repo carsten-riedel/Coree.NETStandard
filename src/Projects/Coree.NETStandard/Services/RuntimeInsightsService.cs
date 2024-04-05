@@ -122,7 +122,7 @@ namespace Coree.NETStandard.Services
         {
             try
             {
-                var mainModule = Process.GetCurrentProcess().MainModule;
+                var mainModule = System.Diagnostics.Process.GetCurrentProcess().MainModule;
                 if (mainModule == null)
                 {
                     logger.LogTrace("Process.GetCurrentProcess().MainModule returned null.");
@@ -152,7 +152,7 @@ namespace Coree.NETStandard.Services
         {
             try
             {
-                var mainModule = Process.GetCurrentProcess().MainModule;
+                var mainModule = System.Diagnostics.Process.GetCurrentProcess().MainModule;
                 if (mainModule == null)
                 {
                     logger.LogTrace("Process.GetCurrentProcess().MainModule returned null.");
