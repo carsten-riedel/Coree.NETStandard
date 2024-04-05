@@ -23,13 +23,13 @@ namespace Coree.NETStandard.Abstractions
     /// }
     ///
     /// //File DSSampleSerivce.cs
-    /// public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService
+    /// public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService , IDependencySingleton
     /// {
     ///     public SampleService(ILogger&lt;SampleService&gt; logger, IConfiguration configuration) : base(logger, configuration) { }
     /// }
     ///
     /// //File SampleSerivce.cs
-    /// public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService
+    /// public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService , IDependencySingleton
     /// {
     ///     public void StandardDelay() { StandardDelayAsync(CancellationToken.None).GetAwaiter().GetResult(); }
     ///     public async Task StandardDelayAsync(CancellationToken cancellationToken = default)  { await Task.Delay(5000, cancellationToken); }
