@@ -69,5 +69,23 @@ namespace Coree.NETStandard.Services.RuntimeInsights
             return null;
         }
 
+        [MethodImpl(MethodImplOptions.AggressiveInlining)]
+        public static bool IsDebugBuildStatic()
+        {
+            var assembly = Assembly.GetEntryAssembly();
+            var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
+
+            if (attributes != null && attributes.Length > 0)
+            {
+                var d = attributes[0];
+                if (d.IsJITTrackingEnabled)
+                {
+                    
+                    return true;
+                }
+            }
+            return false;
+        }
+
     }
 }
