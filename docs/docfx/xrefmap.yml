@@ -1636,6 +1636,66 @@ references:
   commentId: N:Coree.NETStandard.Extensions
   fullName: Coree.NETStandard.Extensions
   nameWithType: Coree.NETStandard.Extensions
+- uid: Coree.NETStandard.Extensions.Bool
+  name: Coree.NETStandard.Extensions.Bool
+  href: api/Coree.NETStandard.Extensions.Bool.html
+  commentId: N:Coree.NETStandard.Extensions.Bool
+  fullName: Coree.NETStandard.Extensions.Bool
+  nameWithType: Coree.NETStandard.Extensions.Bool
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions
+  name: BoolExtensions
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.Bool.BoolExtensions
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions
+  nameWithType: BoolExtensions
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
+  name: IsFalse(bool?)
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsFalse_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
+  name.vb: IsFalse(Boolean?)
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(Boolean?)
+  nameWithType: BoolExtensions.IsFalse(bool?)
+  nameWithType.vb: BoolExtensions.IsFalse(Boolean?)
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse*
+  name: IsFalse
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsFalse_
+  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse
+  nameWithType: BoolExtensions.IsFalse
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(System.Nullable{System.Boolean})
+  name: IsNull(bool?)
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsNull_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(System.Nullable{System.Boolean})
+  name.vb: IsNull(Boolean?)
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(Boolean?)
+  nameWithType: BoolExtensions.IsNull(bool?)
+  nameWithType.vb: BoolExtensions.IsNull(Boolean?)
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull*
+  name: IsNull
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsNull_
+  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull
+  nameWithType: BoolExtensions.IsNull
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
+  name: IsTrue(bool?)
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsTrue_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
+  name.vb: IsTrue(Boolean?)
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(Boolean?)
+  nameWithType: BoolExtensions.IsTrue(bool?)
+  nameWithType.vb: BoolExtensions.IsTrue(Boolean?)
+- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue*
+  name: IsTrue
+  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsTrue_
+  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue
+  nameWithType: BoolExtensions.IsTrue
 - uid: Coree.NETStandard.Extensions.CancellationTokenExtensions
   name: CancellationTokenExtensions
   href: api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html
