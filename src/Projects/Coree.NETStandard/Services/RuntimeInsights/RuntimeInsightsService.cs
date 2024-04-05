@@ -23,16 +23,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool? IsDebugBuild()
         {
-            var assembly = Assembly.GetEntryAssembly();
-            var attributes = assembly?.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
-            if (attributes != null && attributes.Length > 0)
-            {
-                var d = attributes[0];
-                logger.LogTrace("IsDebugBuild {value}", d.IsJITTrackingEnabled);
-                return d.IsJITTrackingEnabled;
-            }
-            logger.LogTrace("IsDebugBuild {value}", false);
-            return false;
+           return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -78,10 +69,15 @@ namespace Coree.NETStandard.Services.RuntimeInsights
             return null;
         }
 
+        /// <summary>
+        /// Checks if the current build is a debug build.
+        /// </summary>
+        /// <returns>
+        /// True if the current build is a debug build; otherwise, false.
+        /// </returns>
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
-        public static bool IsDebugBuildStatic()
+        public static bool IsDevelopmentBuild()
         {
-
             var assembly = Assembly.GetEntryAssembly();
             var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
