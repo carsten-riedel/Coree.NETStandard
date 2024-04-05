@@ -3006,6 +3006,19 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync
   nameWithType: RuntimeInsightsService.IsDebugBuildAsync
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic
+  name: IsDebugBuildStatic()
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildStatic
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic()
+  nameWithType: RuntimeInsightsService.IsDebugBuildStatic()
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic*
+  name: IsDebugBuildStatic
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildStatic_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildStatic
+  nameWithType: RuntimeInsightsService.IsDebugBuildStatic
 - uid: Coree.NETStandard.Services.RuntimeInsightsService
   name: RuntimeInsightsService
   href: api/Coree.NETStandard.Services.RuntimeInsightsService.html
