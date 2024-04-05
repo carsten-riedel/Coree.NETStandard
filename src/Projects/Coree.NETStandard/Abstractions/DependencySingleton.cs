@@ -112,6 +112,13 @@ namespace Coree.NETStandard.Abstractions
         /// <summary>
         /// Gets the singleton instance of the class, ensuring thread safety.
         /// </summary>
+        /// <returns>
+        /// The singleton instance of type <typeparamref name="T"/>, which is the specific implementation of the 
+        /// <see cref="DependencySingleton{T}"/>. Type <typeparamref name="T"/> represents the derived singleton class that includes
+        /// implementations for required services such as logging and configuration. The instance is initialized with these services
+        /// upon the first request, adhering to the singleton pattern to ensure only one instance is created and shared throughout
+        /// the application.
+        /// </returns>
         public static T Instance => instance.Value;
 
         /// <summary>
