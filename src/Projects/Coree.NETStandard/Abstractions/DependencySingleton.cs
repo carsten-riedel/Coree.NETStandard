@@ -164,6 +164,7 @@ namespace Coree.NETStandard.Abstractions
                     {
                         builder.AddConsole();
                         builder.AddDebug();
+                        builder.SetMinimumLevel(LogLevel.Trace);
                         builder.AddFilter((category, level) => level >= MinimumLogLevel);
                     });
 
