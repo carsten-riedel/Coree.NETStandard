@@ -24,6 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="Extensions\NullableBoolExtensions.cs" />
     <Compile Remove="Services\Class1.cs" />
     <Compile Remove="Services\Class2.cs" />
   </ItemGroup>
@@ -88,6 +89,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Include="Extensions\Bool\Bool.cs" />
     <None Include="Extensions\Enumerable\EnumerableT.cs" />
   </ItemGroup>
   
