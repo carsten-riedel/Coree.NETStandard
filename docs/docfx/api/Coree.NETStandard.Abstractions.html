@@ -376,6 +376,7 @@ Example usage:</p>
  //File Program.cs
  static async Task Main(string[] args)
  {
+    SampleService.Instance.SetMinimumLogLevel(LogLevel.Trace);
     // The ILogger&lt;SampleService&gt; logger and IConfiguration configuration will be initialized with their own service stacks.
     SampleService.Instance.StandardDelay();
 
