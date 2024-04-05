@@ -514,6 +514,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsights.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.yml",
       "output": {
         ".html": {

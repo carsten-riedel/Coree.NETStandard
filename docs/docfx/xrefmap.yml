@@ -2821,6 +2821,95 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.ProcessService.RunProcessWithCancellationSupportAsync
   nameWithType: ProcessService.RunProcessWithCancellationSupportAsync
+- uid: Coree.NETStandard.Services.RuntimeInsights
+  name: Coree.NETStandard.Services.RuntimeInsights
+  href: api/Coree.NETStandard.Services.RuntimeInsights.html
+  commentId: N:Coree.NETStandard.Services.RuntimeInsights
+  fullName: Coree.NETStandard.Services.RuntimeInsights
+  nameWithType: Coree.NETStandard.Services.RuntimeInsights
+- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
+  name: IRuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html
+  commentId: T:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
+  nameWithType: IRuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  name: IsDebugBuild()
+  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild()
+  nameWithType: IRuntimeInsightsService.IsDebugBuild()
+- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild*
+  name: IsDebugBuild
+  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuild_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  nameWithType: IRuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  name: IsDebugBuildAsync(CancellationToken)
+  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  nameWithType: IRuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
+- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync*
+  name: IsDebugBuildAsync
+  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuildAsync_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync
+  nameWithType: IRuntimeInsightsService.IsDebugBuildAsync
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
+  name: RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html
+  commentId: T:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
+  nameWithType: RuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService},Microsoft.Extensions.Configuration.IConfiguration)
+  name: RuntimeInsightsService(ILogger<RuntimeInsightsService>, IConfiguration)
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(ILogger(Of RuntimeInsightsService), IConfiguration)
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.RuntimeInsightsService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService(ILogger<RuntimeInsightsService>, IConfiguration)
+  nameWithType.vb: RuntimeInsightsService.New(ILogger(Of RuntimeInsightsService), IConfiguration)
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor*
+  name: RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.RuntimeInsightsService
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.New
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService
+  nameWithType.vb: RuntimeInsightsService.New
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  name: IsDebugBuild()
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild()
+  nameWithType: RuntimeInsightsService.IsDebugBuild()
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild*
+  name: IsDebugBuild
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuild_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  nameWithType: RuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  name: IsDebugBuildAsync(CancellationToken)
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  nameWithType: RuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
+- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync*
+  name: IsDebugBuildAsync
+  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildAsync_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync
+  nameWithType: RuntimeInsightsService.IsDebugBuildAsync
 - uid: Coree.NETStandard.Services.RuntimeInsightsService
   name: RuntimeInsightsService
   href: api/Coree.NETStandard.Services.RuntimeInsightsService.html
