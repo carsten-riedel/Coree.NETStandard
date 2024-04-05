@@ -24,6 +24,7 @@
   </ItemGroup>
   
   <ItemGroup>
+    <None Remove="Abstractions\DependencySingleton.cs" />
     <None Remove="Abstractions\FluentBase.cs" />
     <None Remove="Abstractions\IFluentBase.cs" />
     <None Remove="Classes\ThreadSafeValue.cs" />
