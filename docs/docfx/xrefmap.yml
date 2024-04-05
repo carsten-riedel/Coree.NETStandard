@@ -52,6 +52,23 @@ references:
   fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).Instance
   nameWithType: DependencySingleton<T>.Instance
   nameWithType.vb: DependencySingleton(Of T).Instance
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  name: SetMinimumLogLevel(LogLevel)
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_
+  commentId: M:Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType: DependencySingleton<T>.SetMinimumLogLevel(LogLevel)
+  nameWithType.vb: DependencySingleton(Of T).SetMinimumLogLevel(LogLevel)
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel*
+  name: SetMinimumLogLevel
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_
+  commentId: Overload:Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel
+  isSpec: "True"
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetMinimumLogLevel
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetMinimumLogLevel
+  nameWithType: DependencySingleton<T>.SetMinimumLogLevel
+  nameWithType.vb: DependencySingleton(Of T).SetMinimumLogLevel
 - uid: Coree.NETStandard.Abstractions.DependencySingleton`1.configuration
   name: configuration
   href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_configuration
