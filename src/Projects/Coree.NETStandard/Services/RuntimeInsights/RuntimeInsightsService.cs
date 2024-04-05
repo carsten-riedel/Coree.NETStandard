@@ -81,6 +81,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public static bool IsDebugBuildStatic()
         {
+
             var assembly = Assembly.GetEntryAssembly();
             var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
