@@ -7,6 +7,67 @@ references:
   commentId: N:Coree.NETStandard.Abstractions
   fullName: Coree.NETStandard.Abstractions
   nameWithType: Coree.NETStandard.Abstractions
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1
+  name: DependencySingleton<T>
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html
+  commentId: T:Coree.NETStandard.Abstractions.DependencySingleton`1
+  name.vb: DependencySingleton(Of T)
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T)
+  nameWithType: DependencySingleton<T>
+  nameWithType.vb: DependencySingleton(Of T)
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.#ctor(Microsoft.Extensions.Logging.ILogger{`0},Microsoft.Extensions.Configuration.IConfiguration)
+  name: DependencySingleton(ILogger<T>, IConfiguration)
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1__ctor_Microsoft_Extensions_Logging_ILogger__0__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Coree.NETStandard.Abstractions.DependencySingleton`1.#ctor(Microsoft.Extensions.Logging.ILogger{`0},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(ILogger(Of T), IConfiguration)
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.DependencySingleton(Microsoft.Extensions.Logging.ILogger<T>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).New(Microsoft.Extensions.Logging.ILogger(Of T), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: DependencySingleton<T>.DependencySingleton(ILogger<T>, IConfiguration)
+  nameWithType.vb: DependencySingleton(Of T).New(ILogger(Of T), IConfiguration)
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.#ctor*
+  name: DependencySingleton
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1__ctor_
+  commentId: Overload:Coree.NETStandard.Abstractions.DependencySingleton`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.DependencySingleton
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).New
+  nameWithType: DependencySingleton<T>.DependencySingleton
+  nameWithType.vb: DependencySingleton(Of T).New
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.Instance
+  name: Instance
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_Instance
+  commentId: P:Coree.NETStandard.Abstractions.DependencySingleton`1.Instance
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.Instance
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).Instance
+  nameWithType: DependencySingleton<T>.Instance
+  nameWithType.vb: DependencySingleton(Of T).Instance
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.Instance*
+  name: Instance
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_Instance_
+  commentId: Overload:Coree.NETStandard.Abstractions.DependencySingleton`1.Instance
+  isSpec: "True"
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.Instance
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).Instance
+  nameWithType: DependencySingleton<T>.Instance
+  nameWithType.vb: DependencySingleton(Of T).Instance
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.configuration
+  name: configuration
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_configuration
+  commentId: F:Coree.NETStandard.Abstractions.DependencySingleton`1.configuration
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.configuration
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).configuration
+  nameWithType: DependencySingleton<T>.configuration
+  nameWithType.vb: DependencySingleton(Of T).configuration
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.logger
+  name: logger
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_logger
+  commentId: F:Coree.NETStandard.Abstractions.DependencySingleton`1.logger
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.logger
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).logger
+  nameWithType: DependencySingleton<T>.logger
+  nameWithType.vb: DependencySingleton(Of T).logger
 - uid: Coree.NETStandard.Abstractions.FluentBase
   name: FluentBase
   href: api/Coree.NETStandard.Abstractions.FluentBase.html

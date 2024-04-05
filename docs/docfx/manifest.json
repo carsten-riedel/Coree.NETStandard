@@ -4,6 +4,16 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.DependencySingleton-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.DependencySingleton-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Abstractions.FluentBase.yml",
       "output": {
         ".html": {

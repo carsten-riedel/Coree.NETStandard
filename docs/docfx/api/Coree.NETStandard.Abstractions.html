@@ -88,6 +88,9 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="Coree.NETStandard.Abstractions.DependencySingleton-1.html" title="DependencySingleton&lt;T&gt;" class="">DependencySingleton&lt;T&gt;</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.Abstractions.FluentBase.html" title="FluentBase" class="">FluentBase</a>
                           </li>
                           <li class="">
@@ -324,6 +327,58 @@
     <h3 id="classes">
 Classes
 </h3>
+      <h4><a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html">DependencySingleton&lt;T&gt;</a></h4>
+      <section><p>Represents an abstract base class for creating thread-safe singleton instances with optional dependency injection support.
+This pattern can be utilized in both dependency injection (DI) and non-DI scenarios.
+Example usage:</p>
+<pre><code class="lang-csharp"> //File ISampleSerivce.cs
+ public interface ISampleService
+ {
+     Task StandardDelayAsync(CancellationToken cancellationToken = default);  void StandardDelay();
+ }
+
+ //File DSSampleSerivce.cs
+ public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService
+ {
+     public SampleService(ILogger&lt;SampleService&gt; logger, IConfiguration configuration) : base(logger, configuration) { }
+ }
+
+ //File SampleSerivce.cs
+ public partial class SampleService : DependencySingleton&lt;SampleService&gt;, ISampleService
+ {
+     public void StandardDelay() { StandardDelayAsync(CancellationToken.None).GetAwaiter().GetResult(); }
+     public async Task StandardDelayAsync(CancellationToken cancellationToken = default)  { await Task.Delay(5000, cancellationToken); }
+ }
+
+ //File Program.cs
+ static async Task Main(string[] args)
+ {
+    // The ILogger&lt;SampleService&gt; logger and IConfiguration configuration will be initialized with their own service stacks.
+    SampleService.Instance.StandardDelay();
+
+    // Normal DI usage
+    var host = Host.CreateDefaultBuilder(args)
+        .ConfigureLogging((context, logging) =&gt; {  logging.AddConsole(); logging.AddDebug(); })
+        .ConfigureServices((context, services) =&gt; { services.AddSingleton&lt;ISampleService,SampleService&gt;(); services.AddSingleton&lt;IMyService,MyService&gt;(); });
+    await host.Build().RunAsync();
+ }
+
+ //Service usage
+ public class MyService
+ {
+     private readonly ISampleService sampleService;
+
+     public MyService(ISampleService sampleService)
+     {
+         this.sampleService = sampleService;
+     }
+
+     public async Task UseSample()
+     {
+         await sampleService.StandardDelayAsync();
+     }
+}</code></pre>
+</section>
       <h4><a class="xref" href="Coree.NETStandard.Abstractions.FluentBase.html">FluentBase</a></h4>
       <section><p>Acts as an abstract foundation for structured error handling in classes using a fluent interface pattern. Offers mechanisms to either immediately throw or accumulate exceptions, alongside managing continuation after validation errors.</p>
 </section>
