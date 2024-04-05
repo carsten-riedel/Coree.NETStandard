@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.RuntimeInsights
 {
-    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService
+    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService , IDependencySingleton
     {
         /// <summary>
         /// Checks if the current build is a debug build.
