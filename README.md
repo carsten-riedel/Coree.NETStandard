@@ -1,4 +1,5 @@
-# Coree.NETStandard [![Master .NET](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml)
+# Coree.NETStandard [![Master .NET](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml) [![Nuget](https://img.shields.io/nuget/v/Coree.NETStandard?label=NuGet&labelColor=004880&logo=NuGet&logoColor=white)](https://www.nuget.org/packages/Coree.NETStandard)
+
 
 ![brand](https://github.com/carsten-riedel/Coree.NETStandard/blob/master/images/brand.png?raw=true)
 
