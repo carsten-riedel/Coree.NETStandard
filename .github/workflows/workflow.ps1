@@ -270,8 +270,8 @@ foreach ($item in $GitHubNugetPackagelistOld)
     Write-Output "Unlisted package Coree.NETStandard $($item.name)"
 }
 
-Log-Block -Stage "Cleanup" -Section "Packages" -Task "clean old nuget.org packages"
-$NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
+# Log-Block -Stage "Cleanup" -Section "Packages" -Task "clean old nuget.org packages"
+# $NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
 # $NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
 # $Listed = $NugetPackageList | Where-Object { $_.'listed' -eq $true }
 # $ListedIgnoreNewest = ($Listed[-1..-($Listed.Count)] | Select-Object -Skip 4)
