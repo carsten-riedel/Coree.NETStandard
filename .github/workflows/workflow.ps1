@@ -272,14 +272,14 @@ foreach ($item in $GitHubNugetPackagelistOld)
 
 Log-Block -Stage "Cleanup" -Section "Packages" -Task "clean old nuget.org packages"
 $NugetRegistrationsBaseUrlAPI = (Invoke-RestMethod -Uri 'https://api.nuget.org/v3/index.json' | ForEach-Object { $_.resources } | Where-Object { $_.'@type' -like 'RegistrationsBaseUrl/3.6.0' }).'@Id'
-$NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
-$Listed = $NugetPackageList | Where-Object { $_.'listed' -eq $true }
-$ListedIgnoreNewest = ($Listed[-1..-($Listed.Count)] | Select-Object -Skip 4)
-foreach ($item in $ListedIgnoreNewest)
-{
-    $headers = @{
-        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
-    }
-    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
-    Write-Output "Unlisted package Coree.NETStandard $($item.version)"
-}
+# $NugetPackageList = (Invoke-RestMethod -Uri "$NugetRegistrationsBaseUrlAPI$("Coree.NETStandard".ToLowerInvariant())/index.json").items.items.catalogEntry
+# $Listed = $NugetPackageList | Where-Object { $_.'listed' -eq $true }
+# $ListedIgnoreNewest = ($Listed[-1..-($Listed.Count)] | Select-Object -Skip 4)
+# foreach ($item in $ListedIgnoreNewest)
+# {
+#    $headers = @{
+#        'X-nuget-APIKey' = "$SECRETS_NUGET_PAT"
+#    }
+#    Invoke-RestMethod -Uri "https://www.nuget.org/api/v2/package/Coree.NETStandard/$($item.version)" -Method Delete -Headers $headers | Out-Null
+#    Write-Output "Unlisted package Coree.NETStandard $($item.version)"
+# }
