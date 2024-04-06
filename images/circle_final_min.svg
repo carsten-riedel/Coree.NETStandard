@@ -9,9 +9,9 @@
    id="svg2076"
    inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
    sodipodi:docname="circle_final_min.svg"
-   inkscape:export-filename="..\src\Projects\Coree.NETStandard\Package\Root\Icon.png"
-   inkscape:export-xdpi="48"
-   inkscape:export-ydpi="48"
+   inkscape:export-filename="..\..\..\..\..\..\Desktop\path2614.png"
+   inkscape:export-xdpi="12"
+   inkscape:export-ydpi="12"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="true"
-     inkscape:zoom="2"
-     inkscape:cx="113.5"
-     inkscape:cy="84"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="-16.970563"
+     inkscape:cy="200.11122"
      inkscape:window-width="1920"
      inkscape:window-height="1017"
      inkscape:window-x="-8"
@@ -106,28 +106,28 @@
        r="4" />
     <path
        id="rect2196-8"
-       style="opacity:1;mix-blend-mode:color;fill:#ffff00;fill-opacity:1;stroke-width:0.35"
-       d="m -72,2 v 28 h -28 c 0,0 0,-11.2 8.4,-19.6 C -83.2,2 -72,2 -72,2 Z"
+       style="opacity:1;mix-blend-mode:color;fill:#ffff00;fill-opacity:1;stroke-width:0.400001"
+       d="m -38,34 v 32 h -32 c 0,0 0,-12.8 9.6,-22.4 C -50.8,34 -38,34 -38,34 Z"
        sodipodi:nodetypes="cccsc" />
     <path
        id="rect2196-8-3"
-       style="mix-blend-mode:color;fill:#ff0000;fill-opacity:1;stroke-width:0.35"
-       d="M -44,30 H -72 V 2 c 0,0 11.2,0 19.6,8.4 C -44,18.8 -44,30 -44,30 Z"
-       sodipodi:nodetypes="cccsc" />
-    <path
-       id="rect2196-8-3-1"
-       style="mix-blend-mode:color;fill:#0000ff;fill-opacity:1;stroke-width:0.3525"
-       d="M -72.2,58 V 29.8 H -44 c 0,0 0,11.28 -8.46,19.74 C -60.92,58 -72.2,58 -72.2,58 Z"
+       style="mix-blend-mode:color;fill:#ff0000;fill-opacity:1;stroke-width:0.4"
+       d="M -6,66 H -38 V 34 c 0,0 12.800001,0 22.4,9.6 C -6,53.2 -6,66 -6,66 Z"
        sodipodi:nodetypes="cccsc" />
     <path
        id="rect2196-8-3-1-2"
-       style="mix-blend-mode:color;fill:#00ff00;fill-opacity:1;stroke-width:0.35"
-       d="m -100,30 h 28 v 28 c 0,0 -11.2,0 -19.6,-8.4 C -100,41.2 -100,30 -100,30 Z"
+       style="mix-blend-mode:color;fill:#00ff00;fill-opacity:1;stroke-width:0.4"
+       d="m -70,66 h 32 v 32 c 0,0 -12.8,0 -22.4,-9.6 C -70,78.8 -70,66 -70,66 Z"
+       sodipodi:nodetypes="cccsc" />
+    <path
+       id="rect2196-8-3-1-2-8"
+       style="mix-blend-mode:color;fill:#0000ff;fill-opacity:1;stroke-width:0.4"
+       d="M -38,98 V 66 h 32 c 0,0 0,12.8 -9.6,22.4 C -25.2,98 -38,98 -38,98 Z"
        sodipodi:nodetypes="cccsc" />
     <path
        id="rect2196-8-3-1-2-6"
        style="mix-blend-mode:exclusion;fill:#ffffff;fill-opacity:1;stroke-width:0.35"
-       d="m -38,32 h 28 v 28 c 0,0 -11.2,0 -19.6,-8.4 C -38,43.199999 -38,32 -38,32 Z"
+       d="m -66,6 h 28 v 28 c 0,0 -11.2,0 -19.6,-8.4 C -66,17.199999 -66,6 -66,6 Z"
        sodipodi:nodetypes="cccsc" />
   </g>
 </svg>
