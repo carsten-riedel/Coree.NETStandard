@@ -1,5 +1,7 @@
 # Coree.NETStandard
 
+![brand](https://github.com/carsten-riedel/Coree.NETStandard/blob/master/images/brand.png?raw=true)
+
 Coree.NETStandard is a comprehensive library that provides a wide range of generic helper functionalities, designed to enhance and simplify coding tasks across .NET Standard projects.
 
 ### Documentation
