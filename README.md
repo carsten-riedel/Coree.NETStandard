@@ -1,4 +1,4 @@
-# Coree.NETStandard
+# Coree.NETStandard [![Master .NET](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml)
 
 ![brand](https://github.com/carsten-riedel/Coree.NETStandard/blob/master/images/brand.png?raw=true)
 
@@ -10,4 +10,4 @@ As Coree.NETStandard is exclusively a library project, you can thoroughly explor
 
 [Coree.NETStandard Docfx API](https://carsten-riedel.github.io/Coree.NETStandard/docfx/api/Coree.NETStandard.Services.html)
 
-[![Master .NET](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml/badge.svg?branch=master)](https://github.com/carsten-riedel/Coree.NETStandard/actions/workflows/dotnet-master.yml)
+
