@@ -2,10 +2,16 @@
 _layout: landing
 ---
 
-# This is the **HOMEPAGE**.
+# Coree.NETStandard
 
-Refer to [Markdown](http://daringfireball.net/projects/markdown/) for how to write markdown files.
+![brand](images/brand.png)
+
+Coree.NETStandard is a comprehensive library that provides a wide range of generic helper functionalities, designed to enhance and simplify coding tasks across .NET Standard projects.
+
+### Documentation
+
+As Coree.NETStandard is exclusively a library project, you can thoroughly explore its functionalities through the Docfx API documentation. This documentation is available in a Markdown format similar to this text, ensuring easy access and understanding for developers.
 
 ## Quick Start Notes:
 
-1. Add images to the *images* folder if the file is referencing an image.
+1. Click on API in the top navbar.

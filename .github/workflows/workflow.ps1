@@ -223,7 +223,6 @@ if (-not (Test-CommandAvailability -CommandName "docfx"))
 
 Log-Block -Stage "Build" -Section "Clean" -Task "Clean output directorys"
 
-
 Clear-BinObjDirectories -sourceDirectory "src/Projects/Coree.NETStandard"
 
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
