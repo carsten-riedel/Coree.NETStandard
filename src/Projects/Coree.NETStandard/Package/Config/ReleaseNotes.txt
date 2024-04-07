@@ -1,3 +1,3 @@
 ﻿0.1.* (2024-02-29)
 
-- The 0.1.* version indicates the project is in early development, subject to significant changes. Expect experimental features and evolving functionality.
+- For versions below 1.0, the software is in a preliminary phase, focusing on core development and testing. Users should be prepared for ongoing adjustments and enhancements as the project matures towards its initial stable release
