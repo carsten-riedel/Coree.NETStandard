@@ -30,7 +30,7 @@
 
     function fetchContent(url) {
       // Initialize markdown-it inside the function
-      const md = markdownIt({
+      const md = new markdownit({
           html: false, // Disables HTML tags in the output
       });
       console.log("URL:", url);
