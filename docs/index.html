@@ -14,7 +14,7 @@
 
     function fetchContentRelativeRooted(relativePath) {
       // Manually set root URL
-      var rootUrl = 'https://raw.githubusercontent.com/carsten-riedel/Coree.NETStandard/main/docs/';
+      var rootUrl = 'https://raw.githubusercontent.com/carsten-riedel/Coree.NETStandard/master/docs/';
 
       // Default to 'index.md' if relativePath is empty or undefined
       if (!relativePath) {
@@ -187,7 +187,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://github.com/carsten-riedel/Coree.NETStandard" target="_blank">Code</a>
+            <a class="nav-link active" aria-current="page" href="https://github.com/carsten-riedel/Coree.NETStandard/tree/master/src" target="_blank">Code</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://carsten-riedel.github.io/Coree.NETStandard/docfx/index.html" target="_blank" >DocFx</a>
@@ -200,7 +200,7 @@
               md Menu
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" onclick="fetchContentRelativeRooted('test.md')" >test.md</a></li>
+              <li><a class="dropdown-item" href="#" onclick="fetchContentRelativeRooted('Extensions.Bool.md')" >Extensions.Bool</a></li>
             </ul>
           </li>
         </ul>
