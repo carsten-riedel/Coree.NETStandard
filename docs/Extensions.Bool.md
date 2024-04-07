@@ -1,6 +1,8 @@
 ## Coree.NETStandard.Extensions.Bool
 Example
 ```
+<!-- comment -->
+
 using Coree.NETStandard.Extensions.Bool
 
 bool? newFeatureEnabled = FeatureFlagManager.GetFeatureStatus("NewFeature");
