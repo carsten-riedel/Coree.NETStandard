@@ -9,7 +9,7 @@
     <Company></Company>
     <Copyright>Copyright © 2024 Carsten Riedel</Copyright>
     <PackageId>Coree.NETStandard</PackageId>
-    <PackageTags>dotnet;class;library;NETStandard</PackageTags>
+    <PackageTags>dotnet;library;NETStandard</PackageTags>
     <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETStandard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETStandard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
@@ -26,7 +26,7 @@
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
     <Description>
-     <![CDATA[.NETStandard library.]]>
+     <![CDATA[Coree.NETStandard is a comprehensive library that provides a wide range of generic helper functionalities, designed to enhance and simplify coding tasks across .NET Standard projects.]]>
     </Description>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
