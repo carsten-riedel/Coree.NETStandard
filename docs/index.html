@@ -32,7 +32,7 @@
     function fetchContent(url) {
       // Initialize markdown-it inside the function
       const md = new markdownit({
-          html: true,
+          html: true, // Enable HTML tags in source allows html comments.
       });
       console.log("URL:", url);
       fetch(url)
