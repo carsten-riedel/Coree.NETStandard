@@ -12,7 +12,7 @@ namespace Coree.NETStandard.Services.File
     public partial class FileService : DependencySingleton<FileService>, IFileService, IDependencySingleton
     {
         /// <summary>
-        /// Initializes a new instance of the FileServiceService class with the specified logger and configuration.
+        /// Initializes a new instance of the FileService class with the specified logger and configuration.
         /// </summary>
         /// <param name="logger">The logger instance for logging messages.</param>
         /// <param name="configuration">The configuration instance for accessing application settings.</param>

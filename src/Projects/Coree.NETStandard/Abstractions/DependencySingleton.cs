@@ -164,10 +164,10 @@ namespace Coree.NETStandard.Abstractions
                         builder.AddFilter((category, level) => level >= MinimumLogLevel);
                     });
 
-                    var configuration = new ConfigurationBuilder()
-                        .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
-                        .Build();
-                    services.AddSingleton<IConfiguration>(configuration);
+                    var configuration = new ConfigurationBuilder();
+                    configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+                    var configBuild = configuration.Build();
+                    services.AddSingleton<IConfiguration>(configBuild);
 
                     // Build the service provider
                     serviceProvider = services.BuildServiceProvider();

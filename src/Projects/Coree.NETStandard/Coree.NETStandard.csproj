@@ -56,7 +56,9 @@
     <None Remove="Serilog\ServiceCollectionExtensions.cs" />
     <None Remove="Services\GetCorrectCasedPath.cs" />
     <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
-    <None Remove="Services\ProcessService\RunProcessWithCancellationSupportAsync.cs" />
+    <None Remove="Services\Process\DSProcessService.cs" />
+    <None Remove="Services\Process\IProcessService.cs" />
+    <None Remove="Services\Process\ProcessService.cs" />
     <None Remove="Services\RuntimeInsights\IRuntimeInsightsService.cs" />
     <None Remove="Services\RuntimeInsights\RuntimeInsightsService.cs" />
     <None Remove="SpectreConsole\CommandAppExtensions.cs" />
