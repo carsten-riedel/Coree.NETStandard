@@ -453,7 +453,7 @@ article section {
 
 .sidetoc {
   position: fixed;
-  width: 340px;
+  width: 260px;
   top: 150px;
   bottom: 0;
   overflow-x: hidden;
@@ -492,7 +492,7 @@ body .toc{
 }
 
 .toc {
-  margin: 0px 0 0 2px;
+  margin: 0px 0 0 10px;
   padding: 0 10px;
 }
 .expand-stub {
@@ -562,12 +562,12 @@ body .toc{
   font-weight: bold;
   margin-top: 10px;
   position: relative;
-  font-size: 14px;
+  font-size: 16px;
 }
 .toc .level2 {
   font-weight: normal;
   margin: 5px 0 0 15px;
-  font-size: 12px;
+  font-size: 14px;
 }
 .toc-toggle {
   display: none;
@@ -576,7 +576,7 @@ body .toc{
 .sidefilter {
   position: fixed;
   top: 90px;
-  width: 340px;
+  width: 260px;
   background-color: #f1f1f1;
   padding: 15px;
   border-left: 1px solid #e7e7e7;
@@ -621,7 +621,7 @@ body .toc{
 }
 
 .article.grid-right {
-  margin-left: 360px;
+  margin-left: 280px;
 }
 
 .inheritance hr {

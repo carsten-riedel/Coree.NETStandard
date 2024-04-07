@@ -713,6 +713,16 @@
       "version": ""
     },
     {
+      "type": "Resource",
+      "source_relative_path": "images/brand.png",
+      "output": {
+        "resource": {
+          "relative_path": "images/brand.png"
+        }
+      },
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
