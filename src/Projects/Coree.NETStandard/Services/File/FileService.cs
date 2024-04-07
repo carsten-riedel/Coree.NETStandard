@@ -4,38 +4,21 @@ using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
+using System.Threading;
+
+using Coree.NETStandard.Abstractions;
+using Coree.NETStandard.Services.RuntimeInsights;
+
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services
+namespace Coree.NETStandard.Services.File
 {
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public partial interface IFileService
+    public partial class FileService : DependencySingleton<FileService>, IFileService, IDependencySingleton
     {
-        string? GetCorrectCasedPath(string? path);
-        Task<string?> GetCorrectCasedPathAsync(string? path, CancellationToken cancellationToken);
-        string? IsCommandAvailable(string? command);
-        Task<string?> IsCommandAvailableAsync(string? command, CancellationToken cancellationToken);
-    }
-
-    /// <summary>
-    /// Defines a service for file system operations.
-    /// </summary>
-    public partial class FileService : IFileService
-    {
-
-        private readonly ILogger<FileService> logger;
-
-        /// <summary>
-        /// Defines a service for file system operations.
-        /// </summary>
-        public FileService(ILogger<FileService> logger)
-        {
-            this.logger = logger;
-        }
 
         public string? GetCorrectCasedPath(string? path)
         {
@@ -227,4 +210,3 @@ namespace Coree.NETStandard.Services
         }
     }
 }
-
