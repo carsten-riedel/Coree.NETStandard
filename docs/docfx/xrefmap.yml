@@ -2401,196 +2401,202 @@ references:
   commentId: N:Coree.NETStandard.Services
   fullName: Coree.NETStandard.Services
   nameWithType: Coree.NETStandard.Services
-- uid: Coree.NETStandard.Services.FileService
+- uid: Coree.NETStandard.Services.File
+  name: Coree.NETStandard.Services.File
+  href: api/Coree.NETStandard.Services.File.html
+  commentId: N:Coree.NETStandard.Services.File
+  fullName: Coree.NETStandard.Services.File
+  nameWithType: Coree.NETStandard.Services.File
+- uid: Coree.NETStandard.Services.File.FileService
   name: FileService
-  href: api/Coree.NETStandard.Services.FileService.html
-  commentId: T:Coree.NETStandard.Services.FileService
-  fullName: Coree.NETStandard.Services.FileService
+  href: api/Coree.NETStandard.Services.File.FileService.html
+  commentId: T:Coree.NETStandard.Services.File.FileService
+  fullName: Coree.NETStandard.Services.File.FileService
   nameWithType: FileService
-- uid: Coree.NETStandard.Services.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService})
-  name: FileService(ILogger<FileService>)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_FileService__
-  commentId: M:Coree.NETStandard.Services.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService})
-  name.vb: New(ILogger(Of FileService))
-  fullName: Coree.NETStandard.Services.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.FileService>)
-  fullName.vb: Coree.NETStandard.Services.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.FileService))
-  nameWithType: FileService.FileService(ILogger<FileService>)
-  nameWithType.vb: FileService.New(ILogger(Of FileService))
-- uid: Coree.NETStandard.Services.FileService.#ctor*
+- uid: Coree.NETStandard.Services.File.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.File.FileService},Microsoft.Extensions.Configuration.IConfiguration)
+  name: FileService(ILogger<FileService>, IConfiguration)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_File_FileService__Microsoft_Extensions_Configuration_IConfiguration_
+  commentId: M:Coree.NETStandard.Services.File.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.File.FileService},Microsoft.Extensions.Configuration.IConfiguration)
+  name.vb: New(ILogger(Of FileService), IConfiguration)
+  fullName: Coree.NETStandard.Services.File.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.File.FileService>, Microsoft.Extensions.Configuration.IConfiguration)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.File.FileService), Microsoft.Extensions.Configuration.IConfiguration)
+  nameWithType: FileService.FileService(ILogger<FileService>, IConfiguration)
+  nameWithType.vb: FileService.New(ILogger(Of FileService), IConfiguration)
+- uid: Coree.NETStandard.Services.File.FileService.#ctor*
   name: FileService
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService__ctor_
-  commentId: Overload:Coree.NETStandard.Services.FileService.#ctor
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Coree.NETStandard.Services.FileService.FileService
-  fullName.vb: Coree.NETStandard.Services.FileService.New
+  fullName: Coree.NETStandard.Services.File.FileService.FileService
+  fullName.vb: Coree.NETStandard.Services.File.FileService.New
   nameWithType: FileService.FileService
   nameWithType.vb: FileService.New
-- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(System.String)
+- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(System.String)
   name: GetCorrectCasedPath(string?)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPath_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.GetCorrectCasedPath(System.String)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPath_System_String_
+  commentId: M:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(System.String)
   name.vb: GetCorrectCasedPath(String)
-  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(string?)
-  fullName.vb: Coree.NETStandard.Services.FileService.GetCorrectCasedPath(String)
+  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(string?)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(String)
   nameWithType: FileService.GetCorrectCasedPath(string?)
   nameWithType.vb: FileService.GetCorrectCasedPath(String)
-- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPath*
+- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath*
   name: GetCorrectCasedPath
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPath_
-  commentId: Overload:Coree.NETStandard.Services.FileService.GetCorrectCasedPath
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPath_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPath
+  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath
   nameWithType: FileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
   name: GetCorrectCasedPathAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
   name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
   nameWithType: FileService.GetCorrectCasedPathAsync(string?, CancellationToken)
   nameWithType.vb: FileService.GetCorrectCasedPathAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync*
+- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync*
   name: GetCorrectCasedPathAsync
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_GetCorrectCasedPathAsync_
-  commentId: Overload:Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPathAsync_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.GetCorrectCasedPathAsync
+  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync
   nameWithType: FileService.GetCorrectCasedPathAsync
-- uid: Coree.NETStandard.Services.FileService.IsCommandAvailable(System.String)
+- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(System.String)
   name: IsCommandAvailable(string?)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailable_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.IsCommandAvailable(System.String)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.File.FileService.IsCommandAvailable(System.String)
   name.vb: IsCommandAvailable(String)
-  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailable(string?)
-  fullName.vb: Coree.NETStandard.Services.FileService.IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(String)
   nameWithType: FileService.IsCommandAvailable(string?)
   nameWithType.vb: FileService.IsCommandAvailable(String)
-- uid: Coree.NETStandard.Services.FileService.IsCommandAvailable*
+- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailable*
   name: IsCommandAvailable
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailable_
-  commentId: Overload:Coree.NETStandard.Services.FileService.IsCommandAvailable
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsCommandAvailable
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailable
   nameWithType: FileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
   name: IsCommandAvailableAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
   name.vb: IsCommandAvailableAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
   nameWithType: FileService.IsCommandAvailableAsync(string?, CancellationToken)
   nameWithType.vb: FileService.IsCommandAvailableAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync*
+- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync*
   name: IsCommandAvailableAsync
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsCommandAvailableAsync_
-  commentId: Overload:Coree.NETStandard.Services.FileService.IsCommandAvailableAsync
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailableAsync_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.IsCommandAvailableAsync
+  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync
   nameWithType: FileService.IsCommandAvailableAsync
-- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(System.String,System.String)
+- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(System.String,System.String)
   name: IsExecutableFilePresent(string?, string)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresent_System_String_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.IsExecutableFilePresent(System.String,System.String)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresent_System_String_System_String_
+  commentId: M:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(System.String,System.String)
   name.vb: IsExecutableFilePresent(String, String)
-  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(string?, string)
-  fullName.vb: Coree.NETStandard.Services.FileService.IsExecutableFilePresent(String, String)
+  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(string?, string)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(String, String)
   nameWithType: FileService.IsExecutableFilePresent(string?, string)
   nameWithType.vb: FileService.IsExecutableFilePresent(String, String)
-- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresent*
+- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent*
   name: IsExecutableFilePresent
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresent_
-  commentId: Overload:Coree.NETStandard.Services.FileService.IsExecutableFilePresent
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresent_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresent
+  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent
   nameWithType: FileService.IsExecutableFilePresent
-- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync(System.String,System.String)
+- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(System.String,System.String)
   name: IsExecutableFilePresentAsync(string?, string)
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresentAsync_System_String_System_String_
-  commentId: M:Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync(System.String,System.String)
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresentAsync_System_String_System_String_
+  commentId: M:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(System.String,System.String)
   name.vb: IsExecutableFilePresentAsync(String, String)
-  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync(string?, string)
-  fullName.vb: Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync(String, String)
+  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(string?, string)
+  fullName.vb: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(String, String)
   nameWithType: FileService.IsExecutableFilePresentAsync(string?, string)
   nameWithType.vb: FileService.IsExecutableFilePresentAsync(String, String)
-- uid: Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync*
+- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync*
   name: IsExecutableFilePresentAsync
-  href: api/Coree.NETStandard.Services.FileService.html#Coree_NETStandard_Services_FileService_IsExecutableFilePresentAsync_
-  commentId: Overload:Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync
+  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresentAsync_
+  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.FileService.IsExecutableFilePresentAsync
+  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync
   nameWithType: FileService.IsExecutableFilePresentAsync
-- uid: Coree.NETStandard.Services.IFileService
+- uid: Coree.NETStandard.Services.File.IFileService
   name: IFileService
-  href: api/Coree.NETStandard.Services.IFileService.html
-  commentId: T:Coree.NETStandard.Services.IFileService
-  fullName: Coree.NETStandard.Services.IFileService
+  href: api/Coree.NETStandard.Services.File.IFileService.html
+  commentId: T:Coree.NETStandard.Services.File.IFileService
+  fullName: Coree.NETStandard.Services.File.IFileService
   nameWithType: IFileService
-- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(System.String)
+- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(System.String)
   name: GetCorrectCasedPath(string?)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPath_System_String_
-  commentId: M:Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(System.String)
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPath_System_String_
+  commentId: M:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(System.String)
   name.vb: GetCorrectCasedPath(String)
-  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(string?)
-  fullName.vb: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath(String)
+  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(string?)
+  fullName.vb: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(String)
   nameWithType: IFileService.GetCorrectCasedPath(string?)
   nameWithType.vb: IFileService.GetCorrectCasedPath(String)
-- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath*
+- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath*
   name: GetCorrectCasedPath
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPath_
-  commentId: Overload:Coree.NETStandard.Services.IFileService.GetCorrectCasedPath
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPath_
+  commentId: Overload:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPath
+  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath
   nameWithType: IFileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
   name: GetCorrectCasedPathAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
   name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
   nameWithType: IFileService.GetCorrectCasedPathAsync(string?, CancellationToken)
   nameWithType.vb: IFileService.GetCorrectCasedPathAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync*
+- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync*
   name: GetCorrectCasedPathAsync
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_GetCorrectCasedPathAsync_
-  commentId: Overload:Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPathAsync_
+  commentId: Overload:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.IFileService.GetCorrectCasedPathAsync
+  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync
   nameWithType: IFileService.GetCorrectCasedPathAsync
-- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailable(System.String)
+- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(System.String)
   name: IsCommandAvailable(string?)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailable_System_String_
-  commentId: M:Coree.NETStandard.Services.IFileService.IsCommandAvailable(System.String)
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(System.String)
   name.vb: IsCommandAvailable(String)
-  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailable(string?)
-  fullName.vb: Coree.NETStandard.Services.IFileService.IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(String)
   nameWithType: IFileService.IsCommandAvailable(string?)
   nameWithType.vb: IFileService.IsCommandAvailable(String)
-- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailable*
+- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable*
   name: IsCommandAvailable
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailable_
-  commentId: Overload:Coree.NETStandard.Services.IFileService.IsCommandAvailable
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.File.IFileService.IsCommandAvailable
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable
   nameWithType: IFileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
   name: IsCommandAvailableAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
   name.vb: IsCommandAvailableAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
   nameWithType: IFileService.IsCommandAvailableAsync(string?, CancellationToken)
   nameWithType.vb: IFileService.IsCommandAvailableAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync*
+- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync*
   name: IsCommandAvailableAsync
-  href: api/Coree.NETStandard.Services.IFileService.html#Coree_NETStandard_Services_IFileService_IsCommandAvailableAsync_
-  commentId: Overload:Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync
+  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailableAsync_
+  commentId: Overload:Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.IFileService.IsCommandAvailableAsync
+  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync
   nameWithType: IFileService.IsCommandAvailableAsync
 - uid: Coree.NETStandard.Services.IProcessService
   name: IProcessService
