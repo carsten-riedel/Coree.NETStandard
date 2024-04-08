@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class CommandAppExtensions
+      <title>Class ProcessService
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class CommandAppExtensions
+      <meta name="title" content="Class ProcessService
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -299,8 +299,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Services.Process.ProcessRunResult.html" title="ProcessRunResult" class="">ProcessRunResult</a>
                           </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.Services.Process.ProcessService.html" title="ProcessService" class="">ProcessService</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Services.Process.ProcessService.html" title="ProcessService" class="active">ProcessService</a>
                           </li>
                         </ul>
                     </li>
@@ -322,8 +322,8 @@
                       <a href="Coree.NETStandard.SpectreConsole.html" title="Coree.NETStandard.SpectreConsole" class="">Coree.NETStandard.SpectreConsole</a>
 
                         <ul class="nav level2">
-                          <li class="active">
-                            <a href="Coree.NETStandard.SpectreConsole.CommandAppExtensions.html" title="CommandAppExtensions" class="active">CommandAppExtensions</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.SpectreConsole.CommandAppExtensions.html" title="CommandAppExtensions" class="">CommandAppExtensions</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.SpectreConsole.HostBuilderExtensions.html" title="HostBuilderExtensions" class="">HostBuilderExtensions</a>
@@ -353,45 +353,64 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.SpectreConsole.CommandAppExtensions">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Services.Process.ProcessService">
 
 
 
-  <h1 id="Coree_NETStandard_SpectreConsole_CommandAppExtensions" data-uid="Coree.NETStandard.SpectreConsole.CommandAppExtensions" class="text-break">Class CommandAppExtensions
+  <h1 id="Coree_NETStandard_Services_Process_ProcessService" data-uid="Coree.NETStandard.Services.Process.ProcessService" class="text-break">Class ProcessService
 </h1>
-  <div class="markdown level0 summary"><p>Provides extension methods for <span class="xref">Spectre.Console.Cli.ICommandApp</span>.</p>
+  <div class="markdown level0 summary"><p>Defines a service for running external processes with support for cancellation and timeouts.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">CommandAppExtensions</span></div>
+    <div class="level1"><a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html">DependencySingleton</a>&lt;<a class="xref" href="Coree.NETStandard.Services.Process.ProcessService.html">ProcessService</a>&gt;</div>
+    <div class="level2"><span class="xref">ProcessService</span></div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.SpectreConsole.html">SpectreConsole</a></h6>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Coree.NETStandard.Services.Process.IProcessService.html">IProcessService</a></div>
+    <div><a class="xref" href="Coree.NETStandard.Abstractions.IDependencySingleton.html">IDependencySingleton</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_">DependencySingleton&lt;ProcessService&gt;.SetMinimumLogLevel(LogLevel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_Instance">DependencySingleton&lt;ProcessService&gt;.Instance</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_logger">DependencySingleton&lt;ProcessService&gt;.logger</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_configuration">DependencySingleton&lt;ProcessService&gt;.configuration</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Services.html">Services</a>.<a class="xref" href="Coree.NETStandard.Services.Process.html">Process</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_SpectreConsole_CommandAppExtensions_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_Services_Process_ProcessService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class CommandAppExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public class ProcessService : DependencySingleton&lt;ProcessService&gt;, IProcessService, IDependencySingleton</code></pre>
   </div>
-  <h3 id="methods">Methods
+  <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_CommandAppExtensions_GetCommandTypes_Spectre_Console_Cli_ICommandApp_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.CommandAppExtensions.GetCommandTypes(Spectre.Console.Cli.ICommandApp)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_Process_ProcessService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_Process_ProcessService__Microsoft_Extensions_Configuration_IConfiguration_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.Process.ProcessService.%23ctor(Microsoft.Extensions.Logging.ILogger%7BCoree.NETStandard.Services.Process.ProcessService%7D%2CMicrosoft.Extensions.Configuration.IConfiguration)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/CommandAppExtensions.cs/#L25">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/Process/DSProcessService.cs/#L22">View Source</a>
   </span>
-  <a id="Coree_NETStandard_SpectreConsole_CommandAppExtensions_GetCommandTypes_" data-uid="Coree.NETStandard.SpectreConsole.CommandAppExtensions.GetCommandTypes*"></a>
-  <h4 id="Coree_NETStandard_SpectreConsole_CommandAppExtensions_GetCommandTypes_Spectre_Console_Cli_ICommandApp_" data-uid="Coree.NETStandard.SpectreConsole.CommandAppExtensions.GetCommandTypes(Spectre.Console.Cli.ICommandApp)">GetCommandTypes(ICommandApp)</h4>
-  <div class="markdown level1 summary"><p>Retrieves a list of command types registered with the <span class="xref">Spectre.Console.Cli.ICommandApp</span>.
-This method uses reflection to access the private configurator field within the <span class="xref">Spectre.Console.Cli.ICommandApp</span> instance,
-then extracts and returns the types of the registered commands.</p>
+  <a id="Coree_NETStandard_Services_Process_ProcessService__ctor_" data-uid="Coree.NETStandard.Services.Process.ProcessService.#ctor*"></a>
+  <h4 id="Coree_NETStandard_Services_Process_ProcessService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_Process_ProcessService__Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Coree.NETStandard.Services.Process.ProcessService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.Process.ProcessService},Microsoft.Extensions.Configuration.IConfiguration)">ProcessService(ILogger&lt;ProcessService&gt;, IConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ProcessService class with the specified logger and configuration.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static List&lt;Type&gt; GetCommandTypes(this ICommandApp commandApp)</code></pre>
+    <pre><code class="lang-csharp hljs">public ProcessService(ILogger&lt;ProcessService&gt; logger, IConfiguration configuration)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -404,9 +423,81 @@ then extracts and returns the types of the registered commands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ICommandApp</span></td>
-        <td><span class="parametername">commandApp</span></td>
-        <td><p>The <span class="xref">Spectre.Console.Cli.ICommandApp</span> instance to extract command types from.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Coree.NETStandard.Services.Process.ProcessService.html">ProcessService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger instance for logging messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td><p>The configuration instance for accessing application settings.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_Process_ProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.Process.ProcessService.RunProcessWithCancellationSupportAsync(System.String%2CSystem.String%2CSystem.String%2CSystem.Boolean%2CSystem.Threading.CancellationToken%2CSystem.Nullable%7BSystem.TimeSpan%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/Process/ProcessService.cs/#L99">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Services_Process_ProcessService_RunProcessWithCancellationSupportAsync_" data-uid="Coree.NETStandard.Services.Process.ProcessService.RunProcessWithCancellationSupportAsync*"></a>
+  <h4 id="Coree_NETStandard_Services_Process_ProcessService_RunProcessWithCancellationSupportAsync_System_String_System_String_System_String_System_Boolean_System_Threading_CancellationToken_System_Nullable_System_TimeSpan__" data-uid="Coree.NETStandard.Services.Process.ProcessService.RunProcessWithCancellationSupportAsync(System.String,System.String,System.String,System.Boolean,System.Threading.CancellationToken,System.Nullable{System.TimeSpan})">RunProcessWithCancellationSupportAsync(string, string, string, bool, CancellationToken, TimeSpan?)</h4>
+  <div class="markdown level1 summary"><p>Runs an external process asynchronously with options for cancellation and timeout.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task&lt;ProcessRunResult&gt; RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">fileName</span></td>
+        <td><p>The name of the executable to run.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">arguments</span></td>
+        <td><p>The arguments to pass to the executable.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">workingDirectory</span></td>
+        <td><p>The working directory for the process.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">killOnCancel</span></td>
+        <td><p>Indicates whether the process should be killed if a cancellation is requested.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationWaitRequest</span></td>
+        <td><p>The cancellation token that can be used to request cancellation of the operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>?</td>
+        <td><span class="parametername">timeout</span></td>
+        <td><p>Optional timeout after which the process will be killed if not completed.</p>
 </td>
       </tr>
     </tbody>
@@ -421,16 +512,19 @@ then extracts and returns the types of the registered commands.</p>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>&gt;</td>
-        <td><p>A list of <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a> objects representing the command types registered with the <span class="xref">Spectre.Console.Cli.ICommandApp</span>.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Coree.NETStandard.Services.Process.ProcessRunResult.html">ProcessRunResult</a>&gt;</td>
+        <td><p>A task that represents the asynchronous operation, containing the result of the process execution.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Coree_NETStandard_SpectreConsole_CommandAppExtensions_GetCommandTypes_Spectre_Console_Cli_ICommandApp__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method relies on the internal structure of the <span class="xref">Spectre.Console.Cli.ICommandApp</span> implementation.
-If the implementation changes in future versions, this method may no longer work as expected.</p>
-</div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Coree.NETStandard.Services.Process.IProcessService.html">IProcessService</a>
+  </div>
+  <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.IDependencySingleton.html">IDependencySingleton</a>
+  </div>
 
 </article>
           </div>
@@ -440,10 +534,10 @@ If the implementation changes in future versions, this method may no longer work
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_CommandAppExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.CommandAppExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Services_Process_ProcessService.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.Process.ProcessService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/CommandAppExtensions.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Services/Process/ProcessService.cs/#L87" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
