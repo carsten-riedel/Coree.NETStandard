@@ -244,20 +244,10 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Bool.BoolExtensions.yml",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.BoolExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Bool.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Bool.html"
+          "relative_path": "api/Coree.NETStandard.Extensions.BoolExtensions.html"
         }
       },
       "version": ""
@@ -274,20 +264,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.yml",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.EnumerableStringExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html"
+          "relative_path": "api/Coree.NETStandard.Extensions.EnumerableStringExtension.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.yml",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.EnumerableTExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.html"
+          "relative_path": "api/Coree.NETStandard.Extensions.EnumerableTExtension.html"
         }
       },
       "version": ""
@@ -314,40 +304,20 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.yml",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.StringBuilderExtension.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html"
+          "relative_path": "api/Coree.NETStandard.Extensions.StringBuilderExtension.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.yml",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.StringsExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Extensions.Strings.html"
+          "relative_path": "api/Coree.NETStandard.Extensions.StringsExtensions.html"
         }
       },
       "version": ""
@@ -688,6 +658,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.SpectreConsole.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Utilities.MainContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Utilities.MainContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Utilities.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Utilities.html"
         }
       },
       "version": ""
