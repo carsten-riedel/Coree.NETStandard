@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coree.NETStandard.Extensions.Stringbuilder
+namespace Coree.NETStandard.Extensions
 {
 
     /// <summary>

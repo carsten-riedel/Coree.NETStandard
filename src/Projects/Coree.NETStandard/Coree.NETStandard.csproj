@@ -23,51 +23,7 @@
     <None Remove="Template\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Compile Remove="Extensions\NullableBoolExtensions.cs" />
-    <Compile Remove="Services\Class1.cs" />
-    <Compile Remove="Services\Class2.cs" />
-  </ItemGroup>
   
-  <ItemGroup>
-    <None Remove="Abstractions\DependencySingleton.cs" />
-    <None Remove="Abstractions\FluentBase.cs" />
-    <None Remove="Abstractions\IFluentBase.cs" />
-    <None Remove="Classes\ThreadSafeValue.cs" />
-    <None Remove="CoreeHttpClient\CoreeHttpClient.cs" />
-    <None Remove="CoreeHttpClient\HttpHeadersExtensions.cs" />
-    <None Remove="CoreeHttpClient\HttpRequestHeadersExtensions.cs" />
-    <None Remove="CoreeHttpClient\HttpResponseResult.cs" />
-    <None Remove="CoreeHttpClient\RequestContentBuilder.cs" />
-    <None Remove="CoreeHttpClient\RequestParamBuilder.cs" />
-    <None Remove="CoreeHttpClient\ServiceCollectionExtensions.cs" />
-    <None Remove="Extensions\CancellationTokenExtensions.cs" />
-    <None Remove="Extensions\Enumerable\EnumerableString.cs" />
-    <None Remove="Extensions\HostApplicationBuilderExtensions.cs" />
-    <None Remove="Extensions\Serilog.cs" />
-    <None Remove="Extensions\ServiceProvider.cs" />
-    <None Remove="Extensions\Stringbuilder\StringBuilder.cs" />
-    <None Remove="Extensions\ThreadSafeCollection.cs" />
-    <None Remove="HostedServicesCollection\ServiceCollectionExtensions.cs" />
-    <None Remove="HostedServicesCollection\ServiceProviderExtensions.cs" />
-    <None Remove="Serilog\ConditionalLevelSink.cs" />
-    <None Remove="Serilog\LoggerSinkConfigurationExtensions.cs" />
-    <None Remove="Serilog\OutputTemplates.cs" />
-    <None Remove="Serilog\ServiceCollectionExtensions.cs" />
-    <None Remove="Services\GetCorrectCasedPath.cs" />
-    <None Remove="Services\HostedServicesWithOptionsProvider.cs" />
-    <None Remove="Services\Process\DSProcessService.cs" />
-    <None Remove="Services\Process\IProcessService.cs" />
-    <None Remove="Services\Process\ProcessService.cs" />
-    <None Remove="Services\RuntimeInsights\IRuntimeInsightsService.cs" />
-    <None Remove="Services\RuntimeInsights\RuntimeInsightsService.cs" />
-    <None Remove="SpectreConsole\CommandAppExtensions.cs" />
-    <None Remove="SpectreConsole\HostBuilderExtensions.cs" />
-    <None Remove="SpectreConsole\ServiceCollectionExtensions.cs" />
-    <None Remove="SpectreConsole\SpectreConsoleHostedService.cs" />
-    <None Remove="SpectreConsole\SpectreConsoleTypeRegistrar.cs" />
-    <None Remove="TypeRegistrar.cs" />
-  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="JsonPath.Net" Version="1.0.0" />
@@ -90,10 +46,7 @@
     <Folder Include="Extensions\ServiceCollection\" />
   </ItemGroup>
   
-  <ItemGroup>
-    <None Include="Extensions\Bool\Bool.cs" />
-    <None Include="Extensions\Enumerable\EnumerableT.cs" />
-  </ItemGroup>
+
   
   <ItemGroup>
     <Compile Update="CoreeHttpClient\HttpResponseResult.cs">

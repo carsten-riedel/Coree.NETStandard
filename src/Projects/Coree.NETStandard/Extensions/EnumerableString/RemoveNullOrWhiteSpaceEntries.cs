@@ -4,7 +4,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 
-namespace Coree.NETStandard.Extensions.Enumerable
+namespace Coree.NETStandard.Extensions
 {
     /// <summary>
     /// Provides extension methods for <see cref="IEnumerable{T}"/> to enhance and simplify operations on collections.
@@ -17,7 +17,7 @@ namespace Coree.NETStandard.Extensions.Enumerable
     /// This class is declared as partial to allow for easy extension and organization of its methods across multiple
     /// files, facilitating maintainability and scalability of the utility functions provided.
     /// </remarks>
-    public static partial class EnumerableExtension
+    public static partial class EnumerableStringExtension
     {
         /// <summary>
         /// Filters out null, empty, and whitespace-only entries from an <see cref="IEnumerable{T}"/>.

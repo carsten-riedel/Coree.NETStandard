@@ -69,7 +69,7 @@ namespace Coree.NETStandard.Abstractions
         private static readonly IServiceCollection services = new ServiceCollection();
         private static IServiceProvider? serviceProvider;
 
-        private static LogLevel _minimumLogLevel = LogLevel.Information;
+        private static LogLevel _logLevelFilter = LogLevel.Information;
         private static readonly object logLevelLock = new object();
 
         /// <summary>
@@ -77,32 +77,32 @@ namespace Coree.NETStandard.Abstractions
         /// This log level acts as a global filter across the DependencySingleton, determining the verbosity of the logging output.
         /// Default is LogLevel.Information
         /// </summary>
-        private static LogLevel MinimumLogLevel
+        private static LogLevel LogLevelFilter
         {
             get
             {
                 lock (logLevelLock)
                 {
-                    return _minimumLogLevel;
+                    return _logLevelFilter;
                 }
             }
             set
             {
                 lock (logLevelLock)
                 {
-                    _minimumLogLevel = value;
+                    _logLevelFilter = value;
                 }
             }
         }
 
         /// <summary>
-        /// Sets the minimum log level for the application. This level acts as a filter for the logs that are emitted.
-        /// Logs below this level will not be emitted.
+        /// Sets the minimum log level filter for the application. This level acts as a filter for the logs that are emitted.
+        /// Logs below this level will not be emitted. Default is Information
         /// </summary>
         /// <param name="logLevel">The log level to set as the minimum threshold for logging.</param>
-        public void SetMinimumLogLevel(LogLevel logLevel = LogLevel.Trace)
+        public void SetLogLevelFilter(LogLevel logLevel = LogLevel.Information)
         {
-            MinimumLogLevel = logLevel;
+            LogLevelFilter = logLevel;
         }
 
         /// <summary>
@@ -121,7 +121,7 @@ namespace Coree.NETStandard.Abstractions
         /// Provides logging capabilities for the singleton instance. By default, the logger's minimum logging level is set to Trace,
         /// allowing all log messages to be captured. However, the default filter level applied to log messages is set to Information,
         /// meaning that only logs at Information level or higher will be emitted unless otherwise adjusted. The logging level filter
-        /// can be dynamically changed at runtime using the <see cref="SetMinimumLogLevel"/> method to control the verbosity of the logging output.
+        /// can be dynamically changed at runtime using the <see cref="SetLogLevelFilter"/> method to control the verbosity of the logging output.
         /// </summary>
         protected readonly ILogger<T> logger;
 
@@ -161,7 +161,7 @@ namespace Coree.NETStandard.Abstractions
                         builder.AddConsole();
                         builder.AddDebug();
                         builder.SetMinimumLevel(LogLevel.Trace);
-                        builder.AddFilter((category, level) => level >= MinimumLogLevel);
+                        builder.AddFilter((category, level) => level >= LogLevelFilter);
                     });
 
                     var configuration = new ConfigurationBuilder();

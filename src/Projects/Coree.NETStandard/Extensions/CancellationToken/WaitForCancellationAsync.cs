@@ -7,12 +7,12 @@ using System.Threading;
 namespace Coree.NETStandard.Extensions
 {
     /// <summary>
-    /// Provides extension methods for <see cref="CancellationToken"/> to enhance asynchronous programming patterns.
+    /// Provides extension methods for <see cref="System.Threading.CancellationToken"/> to enhance asynchronous programming patterns.
     /// </summary>
-    public static class CancellationTokenExtensions
+    public static partial class CancellationTokenExtensions
     {
         /// <summary>
-        /// Creates a Task that completes when the specified <see cref="CancellationToken"/> is cancelled.
+        /// Creates a Task that completes when the specified <see cref="System.Threading.CancellationToken"/> is cancelled.
         /// This method facilitates integrating cancellation tokens with asynchronous operations, enabling easy response to cancellation requests in a Task-based pattern.
         /// <br/><br/>
         /// Example usage (awaiting application start in a background service):
@@ -45,9 +45,9 @@ namespace Coree.NETStandard.Extensions
         /// </code>
         /// Note: This extension is particularly useful for synchronizing startup sequences in applications, such as ensuring background services wait for the entire application to start before proceeding with their tasks.
         /// </summary>
-        /// <param name="cancellationToken">The <see cref="CancellationToken"/> to monitor for cancellation.</param>
+        /// <param name="cancellationToken">The <see cref="System.Threading.CancellationToken"/> to monitor for cancellation.</param>
         /// <returns>A Task that completes when the token is cancelled.</returns>
-        public static Task WaitForCancellationAsync(this CancellationToken cancellationToken)
+        public static Task WaitForCancellationAsync(this System.Threading.CancellationToken cancellationToken)
         {
             var tcs = new TaskCompletionSource<bool>();
 
