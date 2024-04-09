@@ -40,8 +40,8 @@ jobs:
       run: |
          chmod +x .github/workflows/configure.sh
          .github/workflows/configure.sh
-         export "$(cat DOTNETROOT.txt)"
-         export PATH="$PATH:$(cat DOTNETTOOLSPATH.txt)"
+         (cat DOTNETROOT.txt) >> $GITHUB_ENV
+         (cat DOTNETTOOLSPATH.txt; echo $PATH) >> $GITHUB_ENV
       shell: bash
 
     - name: POST Diagnostic print enviroment vars
