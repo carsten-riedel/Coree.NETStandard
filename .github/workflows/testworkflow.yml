@@ -25,30 +25,25 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
-    - name: Setup dotnet 8
-      uses: actions/setup-dotnet@v4
-      with:
-        dotnet-version: 8.0.x
-    
     - name: Diagnostic print enviroment vars
       run: printenv
 
-    - name: Setup dotnet 6 windows
+    - name: SETUP DOTNET678 WINDOWS
       if: runner.os == 'Windows'
-      run: powershell -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v1/dotnet-install.ps1'))) -channel 6.0 -Installdir $HOME/cli -Nopath"
+      run: |
+        cmd /C .github/workflows/configure.bat
 
-    - name: Setup dotnet 6 linux
+    - name: SETUP DOTNET678 LINUX
       if: runner.os == 'Linux'
-      run: curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin -channel 6.0 -Installdir $HOME/cli -Nopath
-
+      run: |
+         chmod +x .github/workflows/configure.sh
+         .github/workflows/configure.sh
+        
     - name: testcon
       run: curl -o google_de_homepage.html http://www.google.de
     
     - name: pwsh ver
       run: pwsh --version
-
-    - name: java ver
-      run: javac --version
 
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
