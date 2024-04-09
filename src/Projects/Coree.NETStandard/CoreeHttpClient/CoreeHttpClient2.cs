@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using System.Text;
-using System.Text.Json.Nodes;
-using System.Text.Json;
 using System.Threading.Tasks;
 using System.Threading;
 
@@ -15,8 +11,6 @@ using Json.Path;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using static Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions;
-using System.Web;
 
 namespace Coree.NETStandard.CoreeHttpClient
 {
@@ -167,7 +161,6 @@ namespace Coree.NETStandard.CoreeHttpClient
                     {
                            ContentLength = response.Content.Headers.ContentLength
                     };
-
 
                     if (effectiveCacheDuration > TimeSpan.Zero)
                     {

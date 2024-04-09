@@ -12,7 +12,9 @@ namespace Coree.NETStandard.Utilities
     /// </summary>
     public static partial class MainContext
     {
+#pragma warning disable IDE0052 // Remove unread private members
         private static Mutex? mutex;
+#pragma warning restore IDE0052 // Remove unread private members
 
         /// <summary>
         /// Ensures that only a single instance of the application is running. If a duplicate instance is detected,

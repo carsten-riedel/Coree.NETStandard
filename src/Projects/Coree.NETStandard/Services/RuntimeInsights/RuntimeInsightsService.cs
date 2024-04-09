@@ -42,9 +42,8 @@ namespace Coree.NETStandard.Services.RuntimeInsights
                 return await Task.Run(() =>
                 {
                     var assembly = Assembly.GetEntryAssembly();
-                    var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
-                    if (attributes != null && attributes.Length > 0)
+                    if (assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) is DebuggableAttribute[] attributes && attributes.Length > 0)
                     {
                         var d = attributes[0];
                         if (d.IsJITTrackingEnabled)
@@ -79,9 +78,8 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         public static bool IsDevelopmentBuild()
         {
             var assembly = Assembly.GetEntryAssembly();
-            var attributes = assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) as DebuggableAttribute[];
 
-            if (attributes != null && attributes.Length > 0)
+            if (assembly.GetCustomAttributes(typeof(DebuggableAttribute), false) is DebuggableAttribute[] attributes && attributes.Length > 0)
             {
                 var d = attributes[0];
                 if (d.IsJITTrackingEnabled)

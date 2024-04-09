@@ -54,4 +54,10 @@
     </Compile>
   </ItemGroup>
   
+
+  
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Valgrind\source\VCS\github.com\carsten-riedel\Coree.NETStandard\src\Projects\Coree.NETStandard\.editorconfig" />
+  </ItemGroup>
+  
 </Project>
