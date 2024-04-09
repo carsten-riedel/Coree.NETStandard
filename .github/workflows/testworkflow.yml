@@ -33,12 +33,14 @@ jobs:
       run: |
         echo %cd%
         cmd /C .github/workflows/configure.bat
+      shell: cmd
 
     - name: SETUP DOTNET678 LINUX
       if: runner.os == 'Linux'
       run: |
          chmod +x .github/workflows/configure.sh
          .github/workflows/configure.sh
+      shell: bash
         
     - name: testcon
       run: curl -o google_de_homepage.html http://www.google.de
