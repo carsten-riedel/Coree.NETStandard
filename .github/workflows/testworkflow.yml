@@ -43,7 +43,6 @@ jobs:
       shell: bash
 
     - name: Install Powershell core 
-    - name: testcon
       run: dotnet tool install --global PowerShell --version 7.4.0
 
     - name: pwsh ver
