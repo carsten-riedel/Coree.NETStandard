@@ -12,6 +12,6 @@ remove_from_path() {
 # Usage example: Remove paths containing '.dotnet'
 NEWPATH=$(remove_from_path '.dotnet')
 
-echo -n "DOTNET_ROOT=$HOME/.cli" > DOTNETROOT.txt
-echo -n "PATH=$NEWPATH:$HOME/.cli/tools" > DOTNETTOOLSPATH.txt
+echo "DOTNET_ROOT=$HOME/.cli" > DOTNETROOT.txt
+echo "PATH=$NEWPATH:$HOME/.cli/tools" > DOTNETTOOLSPATH.txt
 
