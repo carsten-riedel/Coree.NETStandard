@@ -44,6 +44,9 @@ jobs:
          export PATH="$PATH:$(cat DOTNETTOOLSPATH.txt)"
       shell: bash
 
+    - name: POST Diagnostic print enviroment vars
+      run: printenv
+
     - name: Install Powershell core 
       run: dotnet tool install --global PowerShell --version 7.4.0
 
