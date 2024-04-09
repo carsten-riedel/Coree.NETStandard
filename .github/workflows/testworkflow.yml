@@ -40,10 +40,8 @@ jobs:
       run: |
          chmod +x .github/workflows/configure.sh
          .github/workflows/configure.sh
-         (cat DOTNETROOT.txt) >> $GITHUB_ENV
-         (cat DOTNETTOOLSPATH.txt; echo $PATH) >> $GITHUB_ENV
-         (cat DOTNETROOT.txt)
-         (cat DOTNETTOOLSPATH.txt)
+         cat DOTNETROOT.txt >> $GITHUB_ENV
+         cat DOTNETTOOLSPATH.txt >> $GITHUB_ENV
       shell: bash
 
     - name: POST Diagnostic print enviroment vars
