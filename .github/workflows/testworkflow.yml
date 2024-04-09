@@ -39,6 +39,9 @@ jobs:
     - name: pwsh ver
       run: pwsh --version
 
+    - name: java ver
+      run: javac --version
+
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
 
