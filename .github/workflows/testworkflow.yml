@@ -41,10 +41,14 @@ jobs:
          chmod +x .github/workflows/configure.sh
          .github/workflows/configure.sh
       shell: bash
-        
+
+    - name: Install Powershell core 
     - name: testcon
-      run: curl -o google_de_homepage.html http://www.google.de
-    
+      run: dotnet tool install --global PowerShell --version 7.4.0
+
+    - name: pwsh ver
+      run: dotnet --version    
+
     - name: pwsh ver
       run: pwsh --version
 
