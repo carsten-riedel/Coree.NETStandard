@@ -62,7 +62,7 @@ jobs:
   buildX:
     runs-on: windows-latest
 
-     steps:
+    steps:
     - name: Checkout
       uses: actions/checkout@v4
 
