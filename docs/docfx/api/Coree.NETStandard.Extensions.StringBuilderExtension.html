@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class HostedServicesCollectionConfig&lt;T&gt;
+      <title>Class StringBuilderExtension
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class HostedServicesCollectionConfig&lt;T&gt;
+      <meta name="title" content="Class StringBuilderExtension
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -185,8 +185,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
                           </li>
-                          <li class="">
-                            <a href="Coree.NETStandard.Extensions.StringBuilderExtension.html" title="StringBuilderExtension" class="">StringBuilderExtension</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Extensions.StringBuilderExtension.html" title="StringBuilderExtension" class="active">StringBuilderExtension</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.StringsExtensions.html" title="StringsExtensions" class="">StringsExtensions</a>
@@ -198,8 +198,8 @@
                       <a href="Coree.NETStandard.HostedServicesCollection.html" title="Coree.NETStandard.HostedServicesCollection" class="">Coree.NETStandard.HostedServicesCollection</a>
 
                         <ul class="nav level2">
-                          <li class="active">
-                            <a href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html" title="HostedServicesCollectionConfig&lt;T&gt;" class="active">HostedServicesCollectionConfig&lt;T&gt;</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html" title="HostedServicesCollectionConfig&lt;T&gt;" class="">HostedServicesCollectionConfig&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html" title="IHostedServicesCollectionConfig&lt;T&gt;" class="">IHostedServicesCollectionConfig&lt;T&gt;</a>
@@ -338,83 +338,44 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Extensions.StringBuilderExtension">
 
 
 
-  <h1 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1" class="text-break">Class HostedServicesCollectionConfig&lt;T&gt;
+  <h1 id="Coree_NETStandard_Extensions_StringBuilderExtension" data-uid="Coree.NETStandard.Extensions.StringBuilderExtension" class="text-break">Class StringBuilderExtension
 </h1>
-  <div class="markdown level0 summary"><p>Represents a thread-safe collection of configuration items for hosted services.
-This collection allows for the addition of configuration items and provides a method
-to fetch and remove items sequentially, supporting concurrent operations.</p>
+  <div class="markdown level0 summary"><p>Provides extension methods for the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> class.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">HostedServicesCollectionConfig&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">StringBuilderExtension</span></div>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html">IHostedServicesCollectionConfig</a>&lt;T&gt;</div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.HostedServicesCollection.html">HostedServicesCollection</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Extensions.html">Extensions</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_Extensions_StringBuilderExtension_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HostedServicesCollectionConfig&lt;T&gt; : IHostedServicesCollectionConfig&lt;T&gt; where T : new()</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the configuration items, which must have a parameterless constructor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L37">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor">HostedServicesCollectionConfig()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html">HostedServicesCollectionConfig&lt;T&gt;</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HostedServicesCollectionConfig()</code></pre>
+    <pre><code class="lang-csharp hljs">public static class StringBuilderExtension</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.Enqueue(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_StringBuilderExtension_AppendLineOrDefault_System_Text_StringBuilder_System_String_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder%2CSystem.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L51">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Stringbuilder/StringBuilder.cs/#L20">View Source</a>
   </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue__0_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue(`0)">Enqueue(T)</h4>
-  <div class="markdown level1 summary"><p>Adds a new configuration item to the end of the queue.</p>
+  <a id="Coree_NETStandard_Extensions_StringBuilderExtension_AppendLineOrDefault_" data-uid="Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault*"></a>
+  <h4 id="Coree_NETStandard_Extensions_StringBuilderExtension_AppendLineOrDefault_System_Text_StringBuilder_System_String_" data-uid="Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)">AppendLineOrDefault(StringBuilder, string?)</h4>
+  <div class="markdown level1 summary"><p>Appends a new line to the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> instance. If the provided string is not null, empty, or whitespace,
+it appends the string followed by a new line; otherwise, it only appends a new line.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Enqueue(T item)</code></pre>
+    <pre><code class="lang-csharp hljs">public static void AppendLineOrDefault(this StringBuilder stringbuilder, string? value)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -427,50 +388,19 @@ to fetch and remove items sequentially, supporting concurrent operations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">item</span></td>
-        <td><p>The configuration item to be enqueued.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a></td>
+        <td><span class="parametername">stringbuilder</span></td>
+        <td><p>The <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.stringbuilder">StringBuilder</a> instance on which the method is called.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The string to append before the new line. If the string is null, empty, or consists only of white-space characters, only a new line is appended.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.FetchNextConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L61">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig">FetchNextConfig()</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove and return the configuration item at the beginning of the queue.
-If the queue is empty, a new instance of the configuration item type is returned.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T FetchNextConfig()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The next configuration item if available; otherwise, a new instance of the configuration item type.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html">IHostedServicesCollectionConfig&lt;T&gt;</a>
-  </div>
 
 </article>
           </div>
@@ -480,10 +410,10 @@ If the queue is empty, a new instance of the configuration item type is returned
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_StringBuilderExtension.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.StringBuilderExtension%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Stringbuilder/StringBuilder.cs/#L11" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

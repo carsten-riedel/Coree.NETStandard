@@ -168,7 +168,16 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="Coree.NETStandard.Extensions.BoolExtensions.html" title="BoolExtensions" class="">BoolExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="">CancellationTokenExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.EnumerableStringExtension.html" title="EnumerableStringExtension" class="">EnumerableStringExtension</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.EnumerableTExtension.html" title="EnumerableTExtension" class="">EnumerableTExtension</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.HostApplicationBuilderExtensions.html" title="HostApplicationBuilderExtensions" class="">HostApplicationBuilderExtensions</a>
@@ -176,45 +185,11 @@
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
                           </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Coree.NETStandard.Extensions.Bool.html" title="Coree.NETStandard.Extensions.Bool" class="">Coree.NETStandard.Extensions.Bool</a>
-
-                        <ul class="nav level2">
                           <li class="">
-                            <a href="Coree.NETStandard.Extensions.Bool.BoolExtensions.html" title="BoolExtensions" class="">BoolExtensions</a>
+                            <a href="Coree.NETStandard.Extensions.StringBuilderExtension.html" title="StringBuilderExtension" class="">StringBuilderExtension</a>
                           </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Coree.NETStandard.Extensions.Enumerable.html" title="Coree.NETStandard.Extensions.Enumerable" class="">Coree.NETStandard.Extensions.Enumerable</a>
-
-                        <ul class="nav level2">
                           <li class="">
-                            <a href="Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html" title="EnumerableExtension" class="">EnumerableExtension</a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Coree.NETStandard.Extensions.Stringbuilder.html" title="Coree.NETStandard.Extensions.Stringbuilder" class="">Coree.NETStandard.Extensions.Stringbuilder</a>
-
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html" title="StringBuilderExtension" class="">StringBuilderExtension</a>
-                          </li>
-                        </ul>
-                    </li>
-                    <li class="">
-                      <span class="expand-stub"></span>
-                      <a href="Coree.NETStandard.Extensions.Strings.html" title="Coree.NETStandard.Extensions.Strings" class="">Coree.NETStandard.Extensions.Strings</a>
-
-                        <ul class="nav level2">
-                          <li class="">
-                            <a href="Coree.NETStandard.Extensions.Strings.StringExtensions.html" title="StringExtensions" class="">StringExtensions</a>
+                            <a href="Coree.NETStandard.Extensions.StringsExtensions.html" title="StringsExtensions" class="">StringsExtensions</a>
                           </li>
                         </ul>
                     </li>
@@ -342,6 +317,16 @@
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html" title="SpectreConsoleTypeResolver" class="">SpectreConsoleTypeResolver</a>
+                          </li>
+                        </ul>
+                    </li>
+                    <li class="">
+                      <span class="expand-stub"></span>
+                      <a href="Coree.NETStandard.Utilities.html" title="Coree.NETStandard.Utilities" class="">Coree.NETStandard.Utilities</a>
+
+                        <ul class="nav level2">
+                          <li class="">
+                            <a href="Coree.NETStandard.Utilities.MainContext.html" title="MainContext" class="">MainContext</a>
                           </li>
                         </ul>
                     </li>
@@ -535,7 +520,7 @@ toggles, and other configurable aspects of the application.</p>
   <div class="markdown level1 summary"><p>Provides logging capabilities for the singleton instance. By default, the logger's minimum logging level is set to Trace,
 allowing all log messages to be captured. However, the default filter level applied to log messages is set to Information,
 meaning that only logs at Information level or higher will be emitted unless otherwise adjusted. The logging level filter
-can be dynamically changed at runtime using the <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_">SetMinimumLogLevel(LogLevel)</a> method to control the verbosity of the logging output.</p>
+can be dynamically changed at runtime using the <a class="xref" href="Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_Microsoft_Extensions_Logging_LogLevel_">SetLogLevelFilter(LogLevel)</a> method to control the verbosity of the logging output.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -599,20 +584,20 @@ the application.</p>
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.DependencySingleton%601.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_Microsoft_Extensions_Logging_LogLevel_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Abstractions.DependencySingleton%601.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Abstractions/DependencySingleton.cs/#L103">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_" data-uid="Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel*"></a>
-  <h4 id="Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_" data-uid="Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)">SetMinimumLogLevel(LogLevel)</h4>
-  <div class="markdown level1 summary"><p>Sets the minimum log level for the application. This level acts as a filter for the logs that are emitted.
-Logs below this level will not be emitted.</p>
+  <a id="Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_" data-uid="Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter*"></a>
+  <h4 id="Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_Microsoft_Extensions_Logging_LogLevel_" data-uid="Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)">SetLogLevelFilter(LogLevel)</h4>
+  <div class="markdown level1 summary"><p>Sets the minimum log level filter for the application. This level acts as a filter for the logs that are emitted.
+Logs below this level will not be emitted. Default is Information</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void SetMinimumLogLevel(LogLevel logLevel = LogLevel.Trace)</code></pre>
+    <pre><code class="lang-csharp hljs">public void SetLogLevelFilter(LogLevel logLevel = LogLevel.Information)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">

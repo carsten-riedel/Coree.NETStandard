@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class HostedServicesCollectionConfig&lt;T&gt;
+      <title>Class BoolExtensions
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class HostedServicesCollectionConfig&lt;T&gt;
+      <meta name="title" content="Class BoolExtensions
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -167,8 +167,8 @@
                       <a href="Coree.NETStandard.Extensions.html" title="Coree.NETStandard.Extensions" class="">Coree.NETStandard.Extensions</a>
 
                         <ul class="nav level2">
-                          <li class="">
-                            <a href="Coree.NETStandard.Extensions.BoolExtensions.html" title="BoolExtensions" class="">BoolExtensions</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Extensions.BoolExtensions.html" title="BoolExtensions" class="active">BoolExtensions</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="">CancellationTokenExtensions</a>
@@ -198,8 +198,8 @@
                       <a href="Coree.NETStandard.HostedServicesCollection.html" title="Coree.NETStandard.HostedServicesCollection" class="">Coree.NETStandard.HostedServicesCollection</a>
 
                         <ul class="nav level2">
-                          <li class="active">
-                            <a href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html" title="HostedServicesCollectionConfig&lt;T&gt;" class="active">HostedServicesCollectionConfig&lt;T&gt;</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html" title="HostedServicesCollectionConfig&lt;T&gt;" class="">HostedServicesCollectionConfig&lt;T&gt;</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html" title="IHostedServicesCollectionConfig&lt;T&gt;" class="">IHostedServicesCollectionConfig&lt;T&gt;</a>
@@ -338,83 +338,43 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Extensions.BoolExtensions">
 
 
 
-  <h1 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1" class="text-break">Class HostedServicesCollectionConfig&lt;T&gt;
+  <h1 id="Coree_NETStandard_Extensions_BoolExtensions" data-uid="Coree.NETStandard.Extensions.BoolExtensions" class="text-break">Class BoolExtensions
 </h1>
-  <div class="markdown level0 summary"><p>Represents a thread-safe collection of configuration items for hosted services.
-This collection allows for the addition of configuration items and provides a method
-to fetch and remove items sequentially, supporting concurrent operations.</p>
+  <div class="markdown level0 summary"><p>Provides extension methods for working with nullable boolean values.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">HostedServicesCollectionConfig&lt;T&gt;</span></div>
+    <div class="level1"><span class="xref">BoolExtensions</span></div>
   </div>
-  <div class="implements">
-    <h5>Implements</h5>
-    <div><a class="xref" href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html">IHostedServicesCollectionConfig</a>&lt;T&gt;</div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.HostedServicesCollection.html">HostedServicesCollection</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Extensions.html">Extensions</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_Extensions_BoolExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class HostedServicesCollectionConfig&lt;T&gt; : IHostedServicesCollectionConfig&lt;T&gt; where T : new()</code></pre>
-  </div>
-  <h5 class="typeParameters">Type Parameters</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Name</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="parametername">T</span></td>
-        <td><p>The type of the configuration items, which must have a parameterless constructor.</p>
-</td>
-      </tr>
-    </tbody>
-  </table>
-  <h3 id="constructors">Constructors
-</h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.%23ctor%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L37">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1__ctor" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.#ctor">HostedServicesCollectionConfig()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig-1.html">HostedServicesCollectionConfig&lt;T&gt;</a> class.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HostedServicesCollectionConfig()</code></pre>
+    <pre><code class="lang-csharp hljs">public static class BoolExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue__0_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.Enqueue(%600)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_BoolExtensions_IsFalse_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.BoolExtensions.IsFalse(System.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L51">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Bool/IsFalse.cs/#L13">View Source</a>
   </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_Enqueue__0_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.Enqueue(`0)">Enqueue(T)</h4>
-  <div class="markdown level1 summary"><p>Adds a new configuration item to the end of the queue.</p>
+  <a id="Coree_NETStandard_Extensions_BoolExtensions_IsFalse_" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsFalse*"></a>
+  <h4 id="Coree_NETStandard_Extensions_BoolExtensions_IsFalse_System_Nullable_System_Boolean__" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsFalse(System.Nullable{System.Boolean})">IsFalse(bool?)</h4>
+  <div class="markdown level1 summary"><p>Checks if the nullable boolean value is false.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public void Enqueue(T item)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsFalse(this bool? nullableBool)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -427,30 +387,13 @@ to fetch and remove items sequentially, supporting concurrent operations.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><span class="parametername">item</span></td>
-        <td><p>The configuration item to be enqueued.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">nullableBool</span></td>
+        <td><p>The nullable boolean value.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601.FetchNextConfig%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L61">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig_" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig*"></a>
-  <h4 id="Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1_FetchNextConfig" data-uid="Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig`1.FetchNextConfig">FetchNextConfig()</h4>
-  <div class="markdown level1 summary"><p>Attempts to remove and return the configuration item at the beginning of the queue.
-If the queue is empty, a new instance of the configuration item type is returned.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public T FetchNextConfig()</code></pre>
-  </div>
   <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-condensed">
     <thead>
@@ -461,16 +404,112 @@ If the queue is empty, a new instance of the configuration item type is returned
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">T</span></td>
-        <td><p>The next configuration item if available; otherwise, a new instance of the configuration item type.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the value is false; otherwise, false.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="Coree.NETStandard.HostedServicesCollection.IHostedServicesCollectionConfig-1.html">IHostedServicesCollectionConfig&lt;T&gt;</a>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_BoolExtensions_IsNull_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.BoolExtensions.IsNull(System.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Bool/IsNull.cs/#L13">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_BoolExtensions_IsNull_" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsNull*"></a>
+  <h4 id="Coree_NETStandard_Extensions_BoolExtensions_IsNull_System_Nullable_System_Boolean__" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsNull(System.Nullable{System.Boolean})">IsNull(bool?)</h4>
+  <div class="markdown level1 summary"><p>Checks if the nullable boolean value is null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNull(this bool? nullableBool)</code></pre>
   </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">nullableBool</span></td>
+        <td><p>The nullable boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the value is null; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_BoolExtensions_IsTrue_System_Nullable_System_Boolean__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.BoolExtensions.IsTrue(System.Nullable%7BSystem.Boolean%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Bool/IsTrue.cs/#L13">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_BoolExtensions_IsTrue_" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsTrue*"></a>
+  <h4 id="Coree_NETStandard_Extensions_BoolExtensions_IsTrue_System_Nullable_System_Boolean__" data-uid="Coree.NETStandard.Extensions.BoolExtensions.IsTrue(System.Nullable{System.Boolean})">IsTrue(bool?)</h4>
+  <div class="markdown level1 summary"><p>Checks if the nullable boolean value is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsTrue(this bool? nullableBool)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>?</td>
+        <td><span class="parametername">nullableBool</span></td>
+        <td><p>The nullable boolean value.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><p>True if the value is true; otherwise, false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>
@@ -480,10 +519,10 @@ If the queue is empty, a new instance of the configuration item type is returned
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_HostedServicesCollection_HostedServicesCollectionConfig_1.md&amp;value=---%0Auid%3A%20Coree.NETStandard.HostedServicesCollection.HostedServicesCollectionConfig%601%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Extensions_BoolExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.BoolExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/HostedServicesCollection/HostedServicesCollectionConfig.cs/#L32" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Extensions/Bool/IsTrue.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

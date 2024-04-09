@@ -52,23 +52,23 @@ references:
   fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).Instance
   nameWithType: DependencySingleton<T>.Instance
   nameWithType.vb: DependencySingleton(Of T).Instance
-- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  name: SetMinimumLogLevel(LogLevel)
-  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_
-  commentId: M:Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  nameWithType: DependencySingleton<T>.SetMinimumLogLevel(LogLevel)
-  nameWithType.vb: DependencySingleton(Of T).SetMinimumLogLevel(LogLevel)
-- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel*
-  name: SetMinimumLogLevel
-  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetMinimumLogLevel_
-  commentId: Overload:Coree.NETStandard.Abstractions.DependencySingleton`1.SetMinimumLogLevel
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  name: SetLogLevelFilter(LogLevel)
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_Microsoft_Extensions_Logging_LogLevel_
+  commentId: M:Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType: DependencySingleton<T>.SetLogLevelFilter(LogLevel)
+  nameWithType.vb: DependencySingleton(Of T).SetLogLevelFilter(LogLevel)
+- uid: Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter*
+  name: SetLogLevelFilter
+  href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_SetLogLevelFilter_
+  commentId: Overload:Coree.NETStandard.Abstractions.DependencySingleton`1.SetLogLevelFilter
   isSpec: "True"
-  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetMinimumLogLevel
-  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetMinimumLogLevel
-  nameWithType: DependencySingleton<T>.SetMinimumLogLevel
-  nameWithType.vb: DependencySingleton(Of T).SetMinimumLogLevel
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton<T>.SetLogLevelFilter
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton(Of T).SetLogLevelFilter
+  nameWithType: DependencySingleton<T>.SetLogLevelFilter
+  nameWithType.vb: DependencySingleton(Of T).SetLogLevelFilter
 - uid: Coree.NETStandard.Abstractions.DependencySingleton`1.configuration
   name: configuration
   href: api/Coree.NETStandard.Abstractions.DependencySingleton-1.html#Coree_NETStandard_Abstractions_DependencySingleton_1_configuration
@@ -194,19 +194,19 @@ references:
   commentId: T:Coree.NETStandard.Abstractions.IDependencySingleton
   fullName: Coree.NETStandard.Abstractions.IDependencySingleton
   nameWithType: IDependencySingleton
-- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  name: SetMinimumLogLevel(LogLevel)
-  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetMinimumLogLevel_Microsoft_Extensions_Logging_LogLevel_
-  commentId: M:Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel(Microsoft.Extensions.Logging.LogLevel)
-  nameWithType: IDependencySingleton.SetMinimumLogLevel(LogLevel)
-- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel*
-  name: SetMinimumLogLevel
-  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetMinimumLogLevel_
-  commentId: Overload:Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel
+- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  name: SetLogLevelFilter(LogLevel)
+  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetLogLevelFilter_Microsoft_Extensions_Logging_LogLevel_
+  commentId: M:Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType: IDependencySingleton.SetLogLevelFilter(LogLevel)
+- uid: Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter*
+  name: SetLogLevelFilter
+  href: api/Coree.NETStandard.Abstractions.IDependencySingleton.html#Coree_NETStandard_Abstractions_IDependencySingleton_SetLogLevelFilter_
+  commentId: Overload:Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter
   isSpec: "True"
-  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetMinimumLogLevel
-  nameWithType: IDependencySingleton.SetMinimumLogLevel
+  fullName: Coree.NETStandard.Abstractions.IDependencySingleton.SetLogLevelFilter
+  nameWithType: IDependencySingleton.SetLogLevelFilter
 - uid: Coree.NETStandard.Abstractions.IFluentBase
   name: IFluentBase
   href: api/Coree.NETStandard.Abstractions.IFluentBase.html
@@ -1672,65 +1672,59 @@ references:
   commentId: N:Coree.NETStandard.Extensions
   fullName: Coree.NETStandard.Extensions
   nameWithType: Coree.NETStandard.Extensions
-- uid: Coree.NETStandard.Extensions.Bool
-  name: Coree.NETStandard.Extensions.Bool
-  href: api/Coree.NETStandard.Extensions.Bool.html
-  commentId: N:Coree.NETStandard.Extensions.Bool
-  fullName: Coree.NETStandard.Extensions.Bool
-  nameWithType: Coree.NETStandard.Extensions.Bool
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions
+- uid: Coree.NETStandard.Extensions.BoolExtensions
   name: BoolExtensions
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html
-  commentId: T:Coree.NETStandard.Extensions.Bool.BoolExtensions
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.BoolExtensions
+  fullName: Coree.NETStandard.Extensions.BoolExtensions
   nameWithType: BoolExtensions
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
   name: IsFalse(bool?)
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsFalse_System_Nullable_System_Boolean__
-  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsFalse_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.BoolExtensions.IsFalse(System.Nullable{System.Boolean})
   name.vb: IsFalse(Boolean?)
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(bool?)
-  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse(Boolean?)
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsFalse(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.BoolExtensions.IsFalse(Boolean?)
   nameWithType: BoolExtensions.IsFalse(bool?)
   nameWithType.vb: BoolExtensions.IsFalse(Boolean?)
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse*
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsFalse*
   name: IsFalse
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsFalse_
-  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsFalse_
+  commentId: Overload:Coree.NETStandard.Extensions.BoolExtensions.IsFalse
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsFalse
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsFalse
   nameWithType: BoolExtensions.IsFalse
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(System.Nullable{System.Boolean})
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsNull(System.Nullable{System.Boolean})
   name: IsNull(bool?)
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsNull_System_Nullable_System_Boolean__
-  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(System.Nullable{System.Boolean})
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsNull_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.BoolExtensions.IsNull(System.Nullable{System.Boolean})
   name.vb: IsNull(Boolean?)
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(bool?)
-  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull(Boolean?)
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsNull(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.BoolExtensions.IsNull(Boolean?)
   nameWithType: BoolExtensions.IsNull(bool?)
   nameWithType.vb: BoolExtensions.IsNull(Boolean?)
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull*
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsNull*
   name: IsNull
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsNull_
-  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsNull_
+  commentId: Overload:Coree.NETStandard.Extensions.BoolExtensions.IsNull
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsNull
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsNull
   nameWithType: BoolExtensions.IsNull
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
   name: IsTrue(bool?)
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsTrue_System_Nullable_System_Boolean__
-  commentId: M:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsTrue_System_Nullable_System_Boolean__
+  commentId: M:Coree.NETStandard.Extensions.BoolExtensions.IsTrue(System.Nullable{System.Boolean})
   name.vb: IsTrue(Boolean?)
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(bool?)
-  fullName.vb: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue(Boolean?)
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsTrue(bool?)
+  fullName.vb: Coree.NETStandard.Extensions.BoolExtensions.IsTrue(Boolean?)
   nameWithType: BoolExtensions.IsTrue(bool?)
   nameWithType.vb: BoolExtensions.IsTrue(Boolean?)
-- uid: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue*
+- uid: Coree.NETStandard.Extensions.BoolExtensions.IsTrue*
   name: IsTrue
-  href: api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html#Coree_NETStandard_Extensions_Bool_BoolExtensions_IsTrue_
-  commentId: Overload:Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue
+  href: api/Coree.NETStandard.Extensions.BoolExtensions.html#Coree_NETStandard_Extensions_BoolExtensions_IsTrue_
+  commentId: Overload:Coree.NETStandard.Extensions.BoolExtensions.IsTrue
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Bool.BoolExtensions.IsTrue
+  fullName: Coree.NETStandard.Extensions.BoolExtensions.IsTrue
   nameWithType: BoolExtensions.IsTrue
 - uid: Coree.NETStandard.Extensions.CancellationTokenExtensions
   name: CancellationTokenExtensions
@@ -1751,50 +1745,50 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.CancellationTokenExtensions.WaitForCancellationAsync
   nameWithType: CancellationTokenExtensions.WaitForCancellationAsync
-- uid: Coree.NETStandard.Extensions.Enumerable
-  name: Coree.NETStandard.Extensions.Enumerable
-  href: api/Coree.NETStandard.Extensions.Enumerable.html
-  commentId: N:Coree.NETStandard.Extensions.Enumerable
-  fullName: Coree.NETStandard.Extensions.Enumerable
-  nameWithType: Coree.NETStandard.Extensions.Enumerable
-- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
-  name: EnumerableExtension
-  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html
-  commentId: T:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
-  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension
-  nameWithType: EnumerableExtension
-- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries*
-  name: RemoveNullEntries
-  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullEntries_
-  commentId: Overload:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries
-  isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries
-  nameWithType: EnumerableExtension.RemoveNullEntries
-- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
-  name: RemoveNullEntries<T>(IEnumerable<T?>)
-  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullEntries__1_System_Collections_Generic_IEnumerable___0__
-  commentId: M:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
-  name.vb: RemoveNullEntries(Of T)(IEnumerable(Of T))
-  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries<T>(System.Collections.Generic.IEnumerable<T?>)
-  fullName.vb: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullEntries(Of T)(System.Collections.Generic.IEnumerable(Of T))
-  nameWithType: EnumerableExtension.RemoveNullEntries<T>(IEnumerable<T?>)
-  nameWithType.vb: EnumerableExtension.RemoveNullEntries(Of T)(IEnumerable(Of T))
-- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
+- uid: Coree.NETStandard.Extensions.EnumerableStringExtension
+  name: EnumerableStringExtension
+  href: api/Coree.NETStandard.Extensions.EnumerableStringExtension.html
+  commentId: T:Coree.NETStandard.Extensions.EnumerableStringExtension
+  fullName: Coree.NETStandard.Extensions.EnumerableStringExtension
+  nameWithType: EnumerableStringExtension
+- uid: Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
   name: RemoveNullOrWhiteSpaceEntries(IEnumerable<string?>)
-  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullOrWhiteSpaceEntries_System_Collections_Generic_IEnumerable_System_String__
-  commentId: M:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
+  href: api/Coree.NETStandard.Extensions.EnumerableStringExtension.html#Coree_NETStandard_Extensions_EnumerableStringExtension_RemoveNullOrWhiteSpaceEntries_System_Collections_Generic_IEnumerable_System_String__
+  commentId: M:Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable{System.String})
   name.vb: RemoveNullOrWhiteSpaceEntries(IEnumerable(Of String))
-  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable<string?>)
-  fullName.vb: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable(Of String))
-  nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable<string?>)
-  nameWithType.vb: EnumerableExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable(Of String))
-- uid: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries*
+  fullName: Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable<string?>)
+  fullName.vb: Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(System.Collections.Generic.IEnumerable(Of String))
+  nameWithType: EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable<string?>)
+  nameWithType.vb: EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries(IEnumerable(Of String))
+- uid: Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries*
   name: RemoveNullOrWhiteSpaceEntries
-  href: api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html#Coree_NETStandard_Extensions_Enumerable_EnumerableExtension_RemoveNullOrWhiteSpaceEntries_
-  commentId: Overload:Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
+  href: api/Coree.NETStandard.Extensions.EnumerableStringExtension.html#Coree_NETStandard_Extensions_EnumerableStringExtension_RemoveNullOrWhiteSpaceEntries_
+  commentId: Overload:Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.RemoveNullOrWhiteSpaceEntries
-  nameWithType: EnumerableExtension.RemoveNullOrWhiteSpaceEntries
+  fullName: Coree.NETStandard.Extensions.EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries
+  nameWithType: EnumerableStringExtension.RemoveNullOrWhiteSpaceEntries
+- uid: Coree.NETStandard.Extensions.EnumerableTExtension
+  name: EnumerableTExtension
+  href: api/Coree.NETStandard.Extensions.EnumerableTExtension.html
+  commentId: T:Coree.NETStandard.Extensions.EnumerableTExtension
+  fullName: Coree.NETStandard.Extensions.EnumerableTExtension
+  nameWithType: EnumerableTExtension
+- uid: Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries*
+  name: RemoveNullEntries
+  href: api/Coree.NETStandard.Extensions.EnumerableTExtension.html#Coree_NETStandard_Extensions_EnumerableTExtension_RemoveNullEntries_
+  commentId: Overload:Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries
+  nameWithType: EnumerableTExtension.RemoveNullEntries
+- uid: Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
+  name: RemoveNullEntries<T>(IEnumerable<T?>)
+  href: api/Coree.NETStandard.Extensions.EnumerableTExtension.html#Coree_NETStandard_Extensions_EnumerableTExtension_RemoveNullEntries__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries``1(System.Collections.Generic.IEnumerable{``0})
+  name.vb: RemoveNullEntries(Of T)(IEnumerable(Of T))
+  fullName: Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries<T>(System.Collections.Generic.IEnumerable<T?>)
+  fullName.vb: Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries(Of T)(System.Collections.Generic.IEnumerable(Of T))
+  nameWithType: EnumerableTExtension.RemoveNullEntries<T>(IEnumerable<T?>)
+  nameWithType.vb: EnumerableTExtension.RemoveNullEntries(Of T)(IEnumerable(Of T))
 - uid: Coree.NETStandard.Extensions.HostApplicationBuilderExtensions
   name: HostApplicationBuilderExtensions
   href: api/Coree.NETStandard.Extensions.HostApplicationBuilderExtensions.html
@@ -1933,112 +1927,100 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.ServiceProviderExtensions.GetRegisteredServices
   nameWithType: ServiceProviderExtensions.GetRegisteredServices
-- uid: Coree.NETStandard.Extensions.Stringbuilder
-  name: Coree.NETStandard.Extensions.Stringbuilder
-  href: api/Coree.NETStandard.Extensions.Stringbuilder.html
-  commentId: N:Coree.NETStandard.Extensions.Stringbuilder
-  fullName: Coree.NETStandard.Extensions.Stringbuilder
-  nameWithType: Coree.NETStandard.Extensions.Stringbuilder
-- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
+- uid: Coree.NETStandard.Extensions.StringBuilderExtension
   name: StringBuilderExtension
-  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html
-  commentId: T:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
-  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension
+  href: api/Coree.NETStandard.Extensions.StringBuilderExtension.html
+  commentId: T:Coree.NETStandard.Extensions.StringBuilderExtension
+  fullName: Coree.NETStandard.Extensions.StringBuilderExtension
   nameWithType: StringBuilderExtension
-- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
+- uid: Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
   name: AppendLineOrDefault(StringBuilder, string?)
-  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html#Coree_NETStandard_Extensions_Stringbuilder_StringBuilderExtension_AppendLineOrDefault_System_Text_StringBuilder_System_String_
-  commentId: M:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
+  href: api/Coree.NETStandard.Extensions.StringBuilderExtension.html#Coree_NETStandard_Extensions_StringBuilderExtension_AppendLineOrDefault_System_Text_StringBuilder_System_String_
+  commentId: M:Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder,System.String)
   name.vb: AppendLineOrDefault(StringBuilder, String)
-  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, string?)
-  fullName.vb: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, String)
+  fullName: Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, string?)
+  fullName.vb: Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault(System.Text.StringBuilder, String)
   nameWithType: StringBuilderExtension.AppendLineOrDefault(StringBuilder, string?)
   nameWithType.vb: StringBuilderExtension.AppendLineOrDefault(StringBuilder, String)
-- uid: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault*
+- uid: Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault*
   name: AppendLineOrDefault
-  href: api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html#Coree_NETStandard_Extensions_Stringbuilder_StringBuilderExtension_AppendLineOrDefault_
-  commentId: Overload:Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault
+  href: api/Coree.NETStandard.Extensions.StringBuilderExtension.html#Coree_NETStandard_Extensions_StringBuilderExtension_AppendLineOrDefault_
+  commentId: Overload:Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.AppendLineOrDefault
+  fullName: Coree.NETStandard.Extensions.StringBuilderExtension.AppendLineOrDefault
   nameWithType: StringBuilderExtension.AppendLineOrDefault
-- uid: Coree.NETStandard.Extensions.Strings
-  name: Coree.NETStandard.Extensions.Strings
-  href: api/Coree.NETStandard.Extensions.Strings.html
-  commentId: N:Coree.NETStandard.Extensions.Strings
-  fullName: Coree.NETStandard.Extensions.Strings
-  nameWithType: Coree.NETStandard.Extensions.Strings
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions
-  name: StringExtensions
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html
-  commentId: T:Coree.NETStandard.Extensions.Strings.StringExtensions
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions
-  nameWithType: StringExtensions
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(System.String)
+- uid: Coree.NETStandard.Extensions.StringsExtensions
+  name: StringsExtensions
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.StringsExtensions
+  fullName: Coree.NETStandard.Extensions.StringsExtensions
+  nameWithType: StringsExtensions
+- uid: Coree.NETStandard.Extensions.StringsExtensions.IsValidJson(System.String)
   name: IsValidJson(string)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidJson_System_String_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(System.String)
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_IsValidJson_System_String_
+  commentId: M:Coree.NETStandard.Extensions.StringsExtensions.IsValidJson(System.String)
   name.vb: IsValidJson(String)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(string)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson(String)
-  nameWithType: StringExtensions.IsValidJson(string)
-  nameWithType.vb: StringExtensions.IsValidJson(String)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson*
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.IsValidJson(string)
+  fullName.vb: Coree.NETStandard.Extensions.StringsExtensions.IsValidJson(String)
+  nameWithType: StringsExtensions.IsValidJson(string)
+  nameWithType.vb: StringsExtensions.IsValidJson(String)
+- uid: Coree.NETStandard.Extensions.StringsExtensions.IsValidJson*
   name: IsValidJson
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidJson_
-  commentId: Overload:Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_IsValidJson_
+  commentId: Overload:Coree.NETStandard.Extensions.StringsExtensions.IsValidJson
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidJson
-  nameWithType: StringExtensions.IsValidJson
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(System.String)
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.IsValidJson
+  nameWithType: StringsExtensions.IsValidJson
+- uid: Coree.NETStandard.Extensions.StringsExtensions.IsValidXml(System.String)
   name: IsValidXml(string)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidXml_System_String_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(System.String)
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_IsValidXml_System_String_
+  commentId: M:Coree.NETStandard.Extensions.StringsExtensions.IsValidXml(System.String)
   name.vb: IsValidXml(String)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(string)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml(String)
-  nameWithType: StringExtensions.IsValidXml(string)
-  nameWithType.vb: StringExtensions.IsValidXml(String)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml*
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.IsValidXml(string)
+  fullName.vb: Coree.NETStandard.Extensions.StringsExtensions.IsValidXml(String)
+  nameWithType: StringsExtensions.IsValidXml(string)
+  nameWithType.vb: StringsExtensions.IsValidXml(String)
+- uid: Coree.NETStandard.Extensions.StringsExtensions.IsValidXml*
   name: IsValidXml
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_IsValidXml_
-  commentId: Overload:Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_IsValidXml_
+  commentId: Overload:Coree.NETStandard.Extensions.StringsExtensions.IsValidXml
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.IsValidXml
-  nameWithType: StringExtensions.IsValidXml
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions)
-  name: SplitWith(string?, char[], StringSplitOptions)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_Char___System_StringSplitOptions_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions)
-  name.vb: SplitWith(String, Char(), StringSplitOptions)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string?, char[], System.StringSplitOptions)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, Char(), System.StringSplitOptions)
-  nameWithType: StringExtensions.SplitWith(string?, char[], StringSplitOptions)
-  nameWithType.vb: StringExtensions.SplitWith(String, Char(), StringSplitOptions)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String,System.StringSplitOptions)
-  name: SplitWith(string?, string, StringSplitOptions)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String_System_StringSplitOptions_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String,System.StringSplitOptions)
-  name.vb: SplitWith(String, String, StringSplitOptions)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string?, string, System.StringSplitOptions)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String, System.StringSplitOptions)
-  nameWithType: StringExtensions.SplitWith(string?, string, StringSplitOptions)
-  nameWithType.vb: StringExtensions.SplitWith(String, String, StringSplitOptions)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions)
-  name: SplitWith(string?, string[], StringSplitOptions)
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_System_String_System_String___System_StringSplitOptions_
-  commentId: M:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions)
-  name.vb: SplitWith(String, String(), StringSplitOptions)
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(string?, string[], System.StringSplitOptions)
-  fullName.vb: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith(String, String(), System.StringSplitOptions)
-  nameWithType: StringExtensions.SplitWith(string?, string[], StringSplitOptions)
-  nameWithType.vb: StringExtensions.SplitWith(String, String(), StringSplitOptions)
-- uid: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith*
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.IsValidXml
+  nameWithType: StringsExtensions.IsValidXml
+- uid: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions,System.Boolean)
+  name: SplitWith(string?, char[], StringSplitOptions, bool)
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_SplitWith_System_String_System_Char___System_StringSplitOptions_System_Boolean_
+  commentId: M:Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.Char[],System.StringSplitOptions,System.Boolean)
+  name.vb: SplitWith(String, Char(), StringSplitOptions, Boolean)
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(string?, char[], System.StringSplitOptions, bool)
+  fullName.vb: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(String, Char(), System.StringSplitOptions, Boolean)
+  nameWithType: StringsExtensions.SplitWith(string?, char[], StringSplitOptions, bool)
+  nameWithType.vb: StringsExtensions.SplitWith(String, Char(), StringSplitOptions, Boolean)
+- uid: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.String,System.StringSplitOptions,System.Boolean)
+  name: SplitWith(string?, string, StringSplitOptions, bool)
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_SplitWith_System_String_System_String_System_StringSplitOptions_System_Boolean_
+  commentId: M:Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.String,System.StringSplitOptions,System.Boolean)
+  name.vb: SplitWith(String, String, StringSplitOptions, Boolean)
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(string?, string, System.StringSplitOptions, bool)
+  fullName.vb: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(String, String, System.StringSplitOptions, Boolean)
+  nameWithType: StringsExtensions.SplitWith(string?, string, StringSplitOptions, bool)
+  nameWithType.vb: StringsExtensions.SplitWith(String, String, StringSplitOptions, Boolean)
+- uid: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions,System.Boolean)
+  name: SplitWith(string?, string[], StringSplitOptions, bool)
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_SplitWith_System_String_System_String___System_StringSplitOptions_System_Boolean_
+  commentId: M:Coree.NETStandard.Extensions.StringsExtensions.SplitWith(System.String,System.String[],System.StringSplitOptions,System.Boolean)
+  name.vb: SplitWith(String, String(), StringSplitOptions, Boolean)
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(string?, string[], System.StringSplitOptions, bool)
+  fullName.vb: Coree.NETStandard.Extensions.StringsExtensions.SplitWith(String, String(), System.StringSplitOptions, Boolean)
+  nameWithType: StringsExtensions.SplitWith(string?, string[], StringSplitOptions, bool)
+  nameWithType.vb: StringsExtensions.SplitWith(String, String(), StringSplitOptions, Boolean)
+- uid: Coree.NETStandard.Extensions.StringsExtensions.SplitWith*
   name: SplitWith
-  href: api/Coree.NETStandard.Extensions.Strings.StringExtensions.html#Coree_NETStandard_Extensions_Strings_StringExtensions_SplitWith_
-  commentId: Overload:Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith
+  href: api/Coree.NETStandard.Extensions.StringsExtensions.html#Coree_NETStandard_Extensions_StringsExtensions_SplitWith_
+  commentId: Overload:Coree.NETStandard.Extensions.StringsExtensions.SplitWith
   isSpec: "True"
-  fullName: Coree.NETStandard.Extensions.Strings.StringExtensions.SplitWith
-  nameWithType: StringExtensions.SplitWith
+  fullName: Coree.NETStandard.Extensions.StringsExtensions.SplitWith
+  nameWithType: StringsExtensions.SplitWith
 - uid: Coree.NETStandard.HostedServicesCollection
   name: Coree.NETStandard.HostedServicesCollection
   href: api/Coree.NETStandard.HostedServicesCollection.html
@@ -3526,3 +3508,44 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve
   nameWithType: SpectreConsoleTypeResolver.Resolve
+- uid: Coree.NETStandard.Utilities
+  name: Coree.NETStandard.Utilities
+  href: api/Coree.NETStandard.Utilities.html
+  commentId: N:Coree.NETStandard.Utilities
+  fullName: Coree.NETStandard.Utilities
+  nameWithType: Coree.NETStandard.Utilities
+- uid: Coree.NETStandard.Utilities.MainContext
+  name: MainContext
+  href: api/Coree.NETStandard.Utilities.MainContext.html
+  commentId: T:Coree.NETStandard.Utilities.MainContext
+  fullName: Coree.NETStandard.Utilities.MainContext
+  nameWithType: MainContext
+- uid: Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance(System.Action,System.Boolean)
+  name: EnsureSingleInstance(Action, bool)
+  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_EnsureSingleInstance_System_Action_System_Boolean_
+  commentId: M:Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance(System.Action,System.Boolean)
+  name.vb: EnsureSingleInstance(Action, Boolean)
+  fullName: Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance(System.Action, bool)
+  fullName.vb: Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance(System.Action, Boolean)
+  nameWithType: MainContext.EnsureSingleInstance(Action, bool)
+  nameWithType.vb: MainContext.EnsureSingleInstance(Action, Boolean)
+- uid: Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance*
+  name: EnsureSingleInstance
+  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_EnsureSingleInstance_
+  commentId: Overload:Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance
+  isSpec: "True"
+  fullName: Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance
+  nameWithType: MainContext.EnsureSingleInstance
+- uid: Coree.NETStandard.Utilities.MainContext.IsDebugBuild
+  name: IsDebugBuild()
+  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_IsDebugBuild
+  commentId: M:Coree.NETStandard.Utilities.MainContext.IsDebugBuild
+  fullName: Coree.NETStandard.Utilities.MainContext.IsDebugBuild()
+  nameWithType: MainContext.IsDebugBuild()
+- uid: Coree.NETStandard.Utilities.MainContext.IsDebugBuild*
+  name: IsDebugBuild
+  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_IsDebugBuild_
+  commentId: Overload:Coree.NETStandard.Utilities.MainContext.IsDebugBuild
+  isSpec: "True"
+  fullName: Coree.NETStandard.Utilities.MainContext.IsDebugBuild
+  nameWithType: MainContext.IsDebugBuild
