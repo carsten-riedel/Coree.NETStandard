@@ -35,6 +35,9 @@ jobs:
 
     - name: testcon
       run: curl -o google_de_homepage.html http://www.google.de
+    
+    - name: pwsh ver
+      run: pwsh --version
 
     - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
       run: dotnet tool install -g Coree.DotnetTool.ToolKit
