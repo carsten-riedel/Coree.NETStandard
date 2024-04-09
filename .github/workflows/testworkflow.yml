@@ -44,13 +44,17 @@ jobs:
          cat DOTNETTOOLSPATH.txt >> $GITHUB_ENV
       shell: bash
 
+    - name: where dotnet
+      run: which dotnet
+
+
     - name: POST Diagnostic print enviroment vars
       run: printenv
 
     - name: Install Powershell core 
       run: dotnet tool install --global PowerShell --version 7.4.0
 
-    - name: pwsh ver
+    - name: dotnet version
       run: dotnet --version    
 
     - name: pwsh ver
