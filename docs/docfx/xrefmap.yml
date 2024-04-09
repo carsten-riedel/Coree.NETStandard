@@ -898,15 +898,15 @@ references:
   commentId: T:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions
   fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions
   nameWithType: HttpRequestHeadersExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String})
-  name: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpRequestHeadersExtensions_AddRequestHeaderCookies_System_Net_Http_Headers_HttpRequestHeaders_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String))
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?)
-  nameWithType.vb: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String))
+- uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
+  name: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
+  href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpRequestHeadersExtensions_AddRequestHeaderCookies_System_Net_Http_Headers_HttpRequestHeaders_System_Collections_Generic_Dictionary_System_String_System_String__System_Boolean_
+  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
+  name.vb: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
+  fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary<string, string>?, bool)
+  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary(Of String, String), Boolean)
+  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
+  nameWithType.vb: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
 - uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies*
   name: AddRequestHeaderCookies
   href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpRequestHeadersExtensions_AddRequestHeaderCookies_

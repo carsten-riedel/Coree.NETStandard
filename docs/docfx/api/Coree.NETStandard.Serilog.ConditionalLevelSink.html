@@ -344,7 +344,8 @@
 
   <h1 id="Coree_NETStandard_Serilog_ConditionalLevelSink" data-uid="Coree.NETStandard.Serilog.ConditionalLevelSink" class="text-break">Class ConditionalLevelSink
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>A custom log event sink that conditionally changes the log event level based on predefined criteria.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -361,6 +362,9 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ConditionalLevelSink : ILogEventSink</code></pre>
   </div>
+  <h5 id="Coree_NETStandard_Serilog_ConditionalLevelSink_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This sink wraps another log event sink and delegates the emission of log events to it, potentially with modified log event levels.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
@@ -368,11 +372,12 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_ConditionalLevelSink__ctor_Serilog_Core_ILogEventSink_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.ConditionalLevelSink.%23ctor(Serilog.Core.ILogEventSink%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSerilog.Events.LogEventLevel%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L16">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L29">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_ConditionalLevelSink__ctor_" data-uid="Coree.NETStandard.Serilog.ConditionalLevelSink.#ctor*"></a>
   <h4 id="Coree_NETStandard_Serilog_ConditionalLevelSink__ctor_Serilog_Core_ILogEventSink_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__" data-uid="Coree.NETStandard.Serilog.ConditionalLevelSink.#ctor(Serilog.Core.ILogEventSink,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})">ConditionalLevelSink(ILogEventSink, Dictionary&lt;string, LogEventLevel&gt;?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the ConditionalLevelSink class.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -391,12 +396,30 @@
       <tr>
         <td><span class="xref">ILogEventSink</span></td>
         <td><span class="parametername">innerSink</span></td>
-        <td></td>
+        <td><p>The inner sink to which log events will be forwarded.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">LogEventLevel</span>&gt;</td>
         <td><span class="parametername">conditionalLevel</span></td>
-        <td></td>
+        <td><p>A dictionary mapping specific criteria to log event levels.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when innerSink is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -407,11 +430,11 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_ConditionalLevelSink_Emit_Serilog_Events_LogEvent_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.ConditionalLevelSink.Emit(Serilog.Events.LogEvent)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L22">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L42">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_ConditionalLevelSink_Emit_" data-uid="Coree.NETStandard.Serilog.ConditionalLevelSink.Emit*"></a>
   <h4 id="Coree_NETStandard_Serilog_ConditionalLevelSink_Emit_Serilog_Events_LogEvent_" data-uid="Coree.NETStandard.Serilog.ConditionalLevelSink.Emit(Serilog.Events.LogEvent)">Emit(LogEvent)</h4>
-  <div class="markdown level1 summary"><p>Emit the provided log event to the sink.</p>
+  <div class="markdown level1 summary"><p>Processes and potentially modifies a log event before forwarding it to the inner sink.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -431,11 +454,14 @@
       <tr>
         <td><span class="xref">LogEvent</span></td>
         <td><span class="parametername">logEvent</span></td>
-        <td><p>The log event to write.</p>
+        <td><p>The log event to be emitted.</p>
 </td>
       </tr>
     </tbody>
   </table>
+  <h5 id="Coree_NETStandard_Serilog_ConditionalLevelSink_Emit_Serilog_Events_LogEvent__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If a matching criterion is found in the conditionalLevel dictionary, the log event's level is modified accordingly before it is forwarded.</p>
+</div>
   <h3 id="implements">Implements</h3>
   <div>
       <span class="xref">Serilog.Core.ILogEventSink</span>
@@ -452,7 +478,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_ConditionalLevelSink.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.ConditionalLevelSink%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L11" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/ConditionalLevelSink.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
