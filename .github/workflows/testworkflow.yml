@@ -58,3 +58,13 @@ jobs:
 
     - name: echo
       run: echo "$PWD"
+
+  buildX:
+    runs-on: windows-latest
+
+     steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: echo
+      run: echo xxx
