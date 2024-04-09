@@ -344,7 +344,8 @@
 
   <h1 id="Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions" data-uid="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions" class="text-break">Class LoggerSinkConfigurationExtensions
 </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides extension methods for configuring Serilog sinks with conditional log level processing.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -364,11 +365,12 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_ConsoleConditionalLevel_Serilog_Configuration_LoggerSinkConfiguration_Serilog_Events_LogEventLevel_System_String_System_IFormatProvider_Serilog_Core_LoggingLevelSwitch_System_Nullable_Serilog_Events_LogEventLevel__Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_System_Boolean_System_Object_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.ConsoleConditionalLevel(Serilog.Configuration.LoggerSinkConfiguration%2CSerilog.Events.LogEventLevel%2CSystem.String%2CSystem.IFormatProvider%2CSerilog.Core.LoggingLevelSwitch%2CSystem.Nullable%7BSerilog.Events.LogEventLevel%7D%2CSerilog.Sinks.SystemConsole.Themes.ConsoleTheme%2CSystem.Boolean%2CSystem.Object%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSerilog.Events.LogEventLevel%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L17">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L34">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_ConsoleConditionalLevel_" data-uid="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.ConsoleConditionalLevel*"></a>
   <h4 id="Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_ConsoleConditionalLevel_Serilog_Configuration_LoggerSinkConfiguration_Serilog_Events_LogEventLevel_System_String_System_IFormatProvider_Serilog_Core_LoggingLevelSwitch_System_Nullable_Serilog_Events_LogEventLevel__Serilog_Sinks_SystemConsole_Themes_ConsoleTheme_System_Boolean_System_Object_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__" data-uid="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.ConsoleConditionalLevel(Serilog.Configuration.LoggerSinkConfiguration,Serilog.Events.LogEventLevel,System.String,System.IFormatProvider,Serilog.Core.LoggingLevelSwitch,System.Nullable{Serilog.Events.LogEventLevel},Serilog.Sinks.SystemConsole.Themes.ConsoleTheme,System.Boolean,System.Object,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})">ConsoleConditionalLevel(LoggerSinkConfiguration, LogEventLevel, string, IFormatProvider?, LoggingLevelSwitch?, LogEventLevel?, ConsoleTheme?, bool, object?, Dictionary&lt;string, LogEventLevel&gt;?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a console sink with conditional log level processing to the logger configuration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -387,52 +389,62 @@
       <tr>
         <td><span class="xref">LoggerSinkConfiguration</span></td>
         <td><span class="parametername">loggerConfiguration</span></td>
-        <td></td>
+        <td><p>The logger configuration to modify.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">LogEventLevel</span></td>
         <td><span class="parametername">restrictedToMinimumLevel</span></td>
-        <td></td>
+        <td><p>The minimum log event level required for events to be passed to the sink.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">outputTemplate</span></td>
-        <td></td>
+        <td><p>The output template determining the format of log events.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
         <td><span class="parametername">formatProvider</span></td>
-        <td></td>
+        <td><p>The format provider for formatting log event properties.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">LoggingLevelSwitch</span></td>
         <td><span class="parametername">levelSwitch</span></td>
-        <td></td>
+        <td><p>A switch allowing the pass-through log event level to be changed at runtime.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">LogEventLevel</span>?</td>
         <td><span class="parametername">standardErrorFromLevel</span></td>
-        <td></td>
+        <td><p>The log event level at which to start writing to standard error instead of standard output.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">ConsoleTheme</span></td>
         <td><span class="parametername">theme</span></td>
-        <td></td>
+        <td><p>The theme to apply to the output.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">applyThemeToRedirectedOutput</span></td>
-        <td></td>
+        <td><p>Whether to apply the theme to redirected output streams.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></td>
         <td><span class="parametername">syncRoot</span></td>
-        <td></td>
+        <td><p>An object to synchronize the log event emission.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">LogEventLevel</span>&gt;</td>
         <td><span class="parametername">conditionalLevel</span></td>
-        <td></td>
+        <td><p>A dictionary mapping specific conditions to log event levels for conditional processing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -447,7 +459,24 @@
     <tbody>
       <tr>
         <td><span class="xref">LoggerConfiguration</span></td>
-        <td></td>
+        <td><p>The modified logger configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when loggerConfiguration is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -456,11 +485,12 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_DebugConditionalLevel_Serilog_Configuration_LoggerSinkConfiguration_Serilog_Events_LogEventLevel_System_String_System_IFormatProvider_Serilog_Core_LoggingLevelSwitch_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.DebugConditionalLevel(Serilog.Configuration.LoggerSinkConfiguration%2CSerilog.Events.LogEventLevel%2CSystem.String%2CSystem.IFormatProvider%2CSerilog.Core.LoggingLevelSwitch%2CSystem.Collections.Generic.Dictionary%7BSystem.String%2CSerilog.Events.LogEventLevel%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L35">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L63">View Source</a>
   </span>
   <a id="Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_DebugConditionalLevel_" data-uid="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.DebugConditionalLevel*"></a>
   <h4 id="Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions_DebugConditionalLevel_Serilog_Configuration_LoggerSinkConfiguration_Serilog_Events_LogEventLevel_System_String_System_IFormatProvider_Serilog_Core_LoggingLevelSwitch_System_Collections_Generic_Dictionary_System_String_Serilog_Events_LogEventLevel__" data-uid="Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.DebugConditionalLevel(Serilog.Configuration.LoggerSinkConfiguration,Serilog.Events.LogEventLevel,System.String,System.IFormatProvider,Serilog.Core.LoggingLevelSwitch,System.Collections.Generic.Dictionary{System.String,Serilog.Events.LogEventLevel})">DebugConditionalLevel(LoggerSinkConfiguration, LogEventLevel, string, IFormatProvider?, LoggingLevelSwitch?, Dictionary&lt;string, LogEventLevel&gt;?)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Adds a debug sink with conditional log level processing to the logger configuration.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
@@ -479,32 +509,38 @@
       <tr>
         <td><span class="xref">LoggerSinkConfiguration</span></td>
         <td><span class="parametername">loggerConfiguration</span></td>
-        <td></td>
+        <td><p>The logger configuration to modify.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">LogEventLevel</span></td>
         <td><span class="parametername">restrictedToMinimumLevel</span></td>
-        <td></td>
+        <td><p>The minimum log event level required for events to be passed to the sink.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
         <td><span class="parametername">outputTemplate</span></td>
-        <td></td>
+        <td><p>The output template determining the format of log events.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iformatprovider">IFormatProvider</a></td>
         <td><span class="parametername">formatProvider</span></td>
-        <td></td>
+        <td><p>The format provider for formatting log event properties.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">LoggingLevelSwitch</span></td>
         <td><span class="parametername">levelSwitch</span></td>
-        <td></td>
+        <td><p>A switch allowing the pass-through log event level to be changed at runtime.</p>
+</td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <span class="xref">LogEventLevel</span>&gt;</td>
         <td><span class="parametername">conditionalLevel</span></td>
-        <td></td>
+        <td><p>A dictionary mapping specific conditions to log event levels for conditional processing.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -519,7 +555,24 @@
     <tbody>
       <tr>
         <td><span class="xref">LoggerConfiguration</span></td>
-        <td></td>
+        <td><p>The modified logger configuration.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown when loggerConfiguration is null.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -535,7 +588,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Serilog_LoggerSinkConfigurationExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L15" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Serilog/LoggerSinkConfigurationExtensions.cs/#L17" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
