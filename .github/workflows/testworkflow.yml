@@ -32,7 +32,7 @@ jobs:
       if: runner.os == 'Windows'
       run: |
         echo %cd%
-        cmd /C .github/workflows/configure.bat
+        .github/workflows/configure.bat
       shell: cmd
 
     - name: SETUP DOTNET678 LINUX
