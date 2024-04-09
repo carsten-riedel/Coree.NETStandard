@@ -33,6 +33,9 @@ jobs:
     - name: Diagnostic print enviroment vars
       run: printenv
 
+    - name: test manual
+      run: pwsh -NoProfile -ExecutionPolicy unrestricted -Command "[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12; &([scriptblock]::Create((Invoke-WebRequest -UseBasicParsing 'https://dot.net/v1/dotnet-install.ps1'))) -channel 6.0 -Installdir $HOME/cli -Nopath"
+
     - name: testcon
       run: curl -o google_de_homepage.html http://www.google.de
     
