@@ -60,7 +60,6 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Ensure-CommandAvailabil
 
 Ensure-CommandAvailability -CommandName "dotnet"
 Ensure-CommandAvailability -CommandName "pwsh"
-Ensure-CommandAvailability -CommandName "powershell"
 Ensure-CommandAvailability -CommandName "git"
 
 ######################################################################################
