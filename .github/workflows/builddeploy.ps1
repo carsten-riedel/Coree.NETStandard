@@ -101,7 +101,7 @@ Log-Block -Stage "Setup" -Section "Base" -Task "Install powershell modules"
 
 if (-not (Test-CommandAvailability -CommandName "New-PGPKey"))
 {
-    Install-Module -Name PSPGP -AcceptLicense -AllowClobber -AllowPrerelease -Force
+    #Install-Module -Name PSPGP -AcceptLicense -AllowClobber -AllowPrerelease -Force
 }
 
 ######################################################################################
