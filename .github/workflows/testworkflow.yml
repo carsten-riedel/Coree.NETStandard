@@ -19,7 +19,7 @@ on:
 jobs:
   build:
 
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout
@@ -31,7 +31,6 @@ jobs:
     - name: SETUP DOTNET678 WINDOWS
       if: runner.os == 'Windows'
       run: |
-        echo %cd%
         .github/workflows/configure.bat
       shell: cmd
 
@@ -40,28 +39,16 @@ jobs:
       run: |
          chmod +x .github/workflows/configure.sh
          .github/workflows/configure.sh
-         cat DOTNETROOT.txt >> $GITHUB_ENV
-         cat DOTNETTOOLSPATH.txt >> $GITHUB_ENV
       shell: bash
 
-    - name: where dotnet
-      run: which dotnet
-
-
-    - name: POST Diagnostic print enviroment vars
-      run: printenv
-
-    - name: Install Powershell core 
-      run: dotnet tool install --global PowerShell --version 7.4.0
-
-    - name: dotnet version
+    - name: Display dotnet version
       run: dotnet --version    
 
-    - name: pwsh ver
+    - name: Display powershell core version
       run: pwsh --version
 
-    - name: Install dotnet toolkit -> Coree.DotnetTool.ToolKit 
-      run: dotnet tool install -g Coree.DotnetTool.ToolKit
+    - name: Setup
+      run: pwsh .github/workflows/setup.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" "${{ secrets.NUGET_TEST_PAT }}"
 
-    - name: echo
-      run: echo "$PWD"
+    - name: Execute
+      run: pwsh .github/workflows/execute.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" "${{ secrets.NUGET_TEST_PAT }}"
