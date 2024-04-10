@@ -23,10 +23,12 @@ $isGithubActions = IsGithubActions
 $branchName = Get-GitBranchName
 $branchNameParts = @(Get-BranchNameParts -branchName $branchName)
 $firstBranchSegment = $branchNameParts[0]
+$gitroot = git rev-parse --show-toplevel
 
 if ($isGithubActions -eq $true) { Write-Output "Is github actions." } else { "Is not github actions." }
 Write-Output "Branch name is $branchName"
 Write-Output "BranchRootName name is $firstBranchSegment"
+Write-Output "gitroot is $gitroot"
 
 # Define the array of strings
 $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" )
@@ -59,6 +61,18 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Ensure-CommandAvailabil
 Ensure-CommandAvailability -CommandName "dotnet"
 Ensure-CommandAvailability -CommandName "pwsh"
 Ensure-CommandAvailability -CommandName "powershell"
+Ensure-CommandAvailability -CommandName "git"
+
+######################################################################################
+Log-Block -Stage "Initialization" -Section "Base" -Task "Config local and remote"
+
+if ($isGithubActions -eq $true) {
+    git config --global user.name 'Workflow User'
+    git config --global user.email 'carstenriedel@outlook.com'
+} else {
+    git config --global user.name 'Carsten Riedel'
+    git config --global user.email 'carstenriedel@outlook.com'
+}
 
 ######################################################################################
 Log-Block -Stage "Initialization" -Section "Base" -Task "Config values for branches"
@@ -92,9 +106,21 @@ if (-not (Test-CommandAvailability -CommandName "New-PGPKey"))
 }
 
 ######################################################################################
-Log-Block -Stage "Build" -Section "Prepare" -Task ""
+Log-Block -Stage "Build" -Section "Clean" -Task "Clear projects bin obj"
 
 Clear-BinObjDirectories -sourceDirectory "src/Projects/Coree.NETStandard"
 
+######################################################################################
+Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
-### continue
+dotnet restore $gitroot/src
+
+######################################################################################
+Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
+
+dotnet build $gitroot/src --no-restore /p:ContinuousIntegrationBuild=true -c Release
+
+
+#$env:GITHUB_REPOSITORY_OWNER
+#$env:GITHUB_REPOSITORY
+#$env:GITHUB_WORKSPACE

@@ -124,3 +124,56 @@ function Ensure-VariableSet {
     }
 }
 
+function Clear-BinObjDirectories {
+    param(
+        [string]$sourceDirectory = "source"
+    )
+
+    # Define bin and obj folder paths
+    $binFolderPath = Join-Path -Path $sourceDirectory -ChildPath "bin"
+    $objFolderPath = Join-Path -Path $sourceDirectory -ChildPath "obj"
+
+    # Ensure that $sourceDir and $destinationDir are absolute paths
+    if (-not [System.IO.Path]::IsPathRooted($binFolderPath)) {
+        $binFolderPath = Join-Path (Get-Location) $binFolderPath
+    }
+
+    if (-not [System.IO.Path]::IsPathRooted($objFolderPath)) {
+        $objFolderPath = Join-Path (Get-Location) $objFolderPath
+    }
+
+    # Function to delete files and directory
+    function Delete-DirectoryContents {
+        param(
+            [System.IO.DirectoryInfo]$directory
+        )
+
+        if ($directory.Exists) {
+            $files = Get-ChildItem -Path $directory.FullName -Recurse -File
+            foreach ($file in $files) {
+                try {
+                    Remove-Item $file.FullName -Force
+                    Write-Output "Deleted file: $($file.FullName)."
+                } catch {
+                    Write-Output "Could not delete file: $($file.FullName)."
+                }
+            }
+
+            try {
+                Remove-Item $directory.FullName -Recurse -Force
+                Write-Output "Deleted directory: $($directory.FullName)."
+            } catch {
+                Write-Output"Could not delete directory: $($directory.FullName)."
+            }
+        }
+    }
+
+    # Create DirectoryInfo objects
+    $binFolder = [System.IO.DirectoryInfo]::new($binFolderPath)
+    $objFolder = [System.IO.DirectoryInfo]::new($objFolderPath)
+
+    # Delete contents of bin and obj directories
+    Delete-DirectoryContents -directory $binFolder
+    Delete-DirectoryContents -directory $objFolder
+}
+
