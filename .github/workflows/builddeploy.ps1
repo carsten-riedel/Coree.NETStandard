@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-. "builddeploy_helper.ps1"
+. "$PSScriptRoot/builddeploy_helper.ps1"
 
 Get-ChildItem Env:* | Select-Object -Property Name,Value
 
