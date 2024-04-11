@@ -15,15 +15,11 @@ on:
 jobs:
   build:
 
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout
       uses: actions/checkout@v4
-    
-    - name: Extract branch name
-      run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" >> $GITHUB_ENV
-      shell: bash
 
     - name: Diagnostic print enviroment vars
       run: printenv

@@ -30,6 +30,7 @@ namespace Coree.NETStandard.Utilities
             string appName = Assembly.GetEntryAssembly()?.GetName().Name ?? "UniqueAppName";
             mutex = new Mutex(true, appName, out bool createdNew);
 
+
             if (!createdNew)
             {
                 onDuplicateInstance();

@@ -13,17 +13,6 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
-
-  <ItemGroup>
-    <Compile Remove="Logging\**" />
-    <Compile Remove="Template\**" />
-    <EmbeddedResource Remove="Logging\**" />
-    <EmbeddedResource Remove="Template\**" />
-    <None Remove="Logging\**" />
-    <None Remove="Template\**" />
-  </ItemGroup>
-
-  
   
   <ItemGroup>
     <PackageReference Include="JsonPath.Net" Version="1.0.0" />
@@ -40,24 +29,6 @@
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.48.0" />
   </ItemGroup>
-  
-  <ItemGroup>
-    <Folder Include="Docfx\result\" />
-    <Folder Include="Extensions\ServiceCollection\" />
-  </ItemGroup>
-  
-
-  
-  <ItemGroup>
-    <Compile Update="CoreeHttpClient\HttpResponseResult.cs">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </Compile>
-  </ItemGroup>
-  
-
-  
-  <ItemGroup>
-    <EditorConfigFiles Remove="C:\Users\Valgrind\source\VCS\github.com\carsten-riedel\Coree.NETStandard\src\Projects\Coree.NETStandard\.editorconfig" />
-  </ItemGroup>
+ 
   
 </Project>
