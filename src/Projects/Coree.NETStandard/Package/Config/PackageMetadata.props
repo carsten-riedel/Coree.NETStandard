@@ -25,6 +25,21 @@
     <InformationalVersion>$(PackageVersion)</InformationalVersion>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
+    <AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
+    <TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
+    <TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
+    <AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
+    <AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
+    <AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
+    <AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
+    <VersionBuild>$(AssemblyVersionBuild)</VersionBuild>
+    <VersionRevision>$(AssemblyVersionRevision)</VersionRevision>
+    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
+    <PackageVersion Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
+    <PackageVersion Condition="'$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    <InformationalVersion>$(PackageVersion)</InformationalVersion>
+    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+
     <Description>
      <![CDATA[Coree.NETStandard is a comprehensive .NET Standard library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
     </Description>
@@ -34,23 +49,6 @@
     <PackageReleaseNotes>$([System.IO.File]::ReadAllText("$(MSBuildThisFileDirectory)ReleaseNotes.txt"))</PackageReleaseNotes>
   </PropertyGroup>
 
-  <Target Name="OverrideBuildRevision" BeforeTargets="GenerateNuspec" AfterTargets="BeforeBuild" >
-    <PropertyGroup>
-      <AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
-      <TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
-      <TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
-      <AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
-      <AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
-      <AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
-      <AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
-      <VersionBuild>$(AssemblyVersionBuild)</VersionBuild>
-      <VersionRevision>$(AssemblyVersionRevision)</VersionRevision>
-      <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
-      <PackageVersion Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
-      <PackageVersion Condition="'$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
-      <InformationalVersion>$(PackageVersion)</InformationalVersion>
-      <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
-    </PropertyGroup>
-  </Target>
+
 
 </Project>

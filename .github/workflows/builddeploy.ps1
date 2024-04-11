@@ -80,8 +80,8 @@ if ($firstBranchSegment -ieq "feature") {
 
     
     $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
-    $dotnet_pack_param =  "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 --property:VersionSuffix=feature";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 --property:VersionSuffix=feature";
     $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
@@ -120,7 +120,7 @@ Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
 if ($null -ne $dotnet_restore_param)
 {
-    start-process dotnet -NoNewWindow -wait -ArgumentList @("restore", "$gitroot/src","$dotnet_restore_param")
+    Invoke-Process -ProcessName "dotnet" -ArgumentList @("restore", "$gitRoot/src", $dotnet_restore_param)
 }
 
 ######################################################################################
@@ -129,7 +129,8 @@ Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 
 if ($null -ne $dotnet_build_param)
 {
-    start-process dotnet -NoNewWindow -wait -ArgumentList @("build", "$gitroot/src","$dotnet_build_param")
+    Invoke-Process -ProcessName "dotnet" -ArgumentList @("build", "$gitRoot/src", $dotnet_build_param)
+    #start-process dotnet -NoNewWindow -wait -ArgumentList @("build", "$gitroot/src","$dotnet_build_param")
 }
 
 ######################################################################################
@@ -137,7 +138,16 @@ Log-Block -Stage "Build" -Section "Pack" -Task "Creating a nuget package."
 
 if ($null -ne $dotnet_pack_param)
 {
-    start-process dotnet -NoNewWindow -wait -ArgumentList @("pack", "$gitroot/src","$dotnet_pack_param")
+    Invoke-Process -ProcessName "dotnet" -ArgumentList @("pack", "$gitRoot/src", $dotnet_pack_param)
+}
+
+######################################################################################
+Log-Block -Stage "Build" -Section "Tag" -Task ""
+
+if ($null -ne $dotnet_pack_param)
+{
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v0000"" -m ""Tag version"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v0000""")
 }
 
 ######################################################################################
@@ -145,7 +155,7 @@ Log-Block -Stage "Build" -Section "Docfx" -Task "Creating the docs."
 
 if ($null -ne $docfx_param)
 {
-    docfx $docfx_param
+    Invoke-Process -ProcessName "docfx" -ArgumentList @($docfx_param)
 }
 
 #$env:GITHUB_REPOSITORY_OWNER

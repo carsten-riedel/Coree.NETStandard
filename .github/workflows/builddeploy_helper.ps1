@@ -177,3 +177,18 @@ function Clear-BinObjDirectories {
     Delete-DirectoryContents -directory $objFolder
 }
 
+function Invoke-Process {
+    param (
+        [string]$ProcessName,
+        [string[]]$ArgumentList
+    )
+
+    # Construct the argument list string for display
+    $arguments = $ArgumentList -join ' '
+    
+    # Display the command being invoked
+    Write-Output "Invoking command: $ProcessName $arguments"
+    
+    # Execute the command
+    Start-Process -FilePath $ProcessName -NoNewWindow -Wait -ArgumentList $ArgumentList
+}
