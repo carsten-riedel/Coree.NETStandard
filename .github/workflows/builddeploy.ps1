@@ -95,9 +95,33 @@ if ($firstBranchSegment -ieq "feature") {
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion --property:VersionSuffix=$branchSegment"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+
 } elseif ($firstBranchSegment -ieq "release") {
 
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion --property:VersionSuffix=$branchSegment"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+
 } elseif ($firstBranchSegment -ieq "master") {
+
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "hotfix") {
 
@@ -154,8 +178,15 @@ Log-Block -Stage "Build" -Section "Tag" -Task ""
 
 if ($isGithubActions)
 {
-    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v$FullVersion-$branchSegment"" -m ""[skip actions]"" ")
-    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v$FullVersion-$branchSegment""")
+    if ($branchSegment -eq "master")
+    {
+        $tag = "v$FullVersion"
+    }
+    else {
+        $tag = "v$FullVersion-$branchSegment"
+    }
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""$tag"" -m ""[skip actions]"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""$tag""")
 }
 
 ######################################################################################

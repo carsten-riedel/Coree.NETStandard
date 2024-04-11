@@ -30,5 +30,5 @@ jobs:
     - name: Display powershell core version
       run: pwsh --version
 
-    - name: Setup
+    - name: Workflow Build/Deploy
       run: pwsh .github/workflows/builddeploy.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" "${{ secrets.NUGET_TEST_PAT }}"
