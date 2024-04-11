@@ -95,9 +95,33 @@ if ($firstBranchSegment -ieq "feature") {
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion --property:VersionSuffix=$branchSegment"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+
 } elseif ($firstBranchSegment -ieq "release") {
 
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion --property:VersionSuffix=$branchSegment"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+
 } elseif ($firstBranchSegment -ieq "master") {
+
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "hotfix") {
 
