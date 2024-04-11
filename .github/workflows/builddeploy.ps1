@@ -144,10 +144,10 @@ if ($null -ne $dotnet_pack_param)
 ######################################################################################
 Log-Block -Stage "Build" -Section "Tag" -Task ""
 
-if ($null -ne $dotnet_pack_param)
+if ($isGithubActions)
 {
-    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v0000"" -m ""Tag version"" ")
-    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v0000""")
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v0001"" -m ""Tag version"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v0001""")
 }
 
 ######################################################################################

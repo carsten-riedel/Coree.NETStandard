@@ -18,12 +18,6 @@
     <VersionMinor>1</VersionMinor>
     <VersionBuild>0</VersionBuild>
     <VersionRevision>0</VersionRevision>
-    <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
-    <VersionSuffix Condition="'$(Configuration)' == 'Debug'">prerelease</VersionSuffix>
-    <PackageVersion Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
-    <PackageVersion Condition="'$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
-    <InformationalVersion>$(PackageVersion)</InformationalVersion>
-    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
     <AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
     <TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
@@ -32,8 +26,8 @@
     <AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
     <AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
     <AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
-    <VersionBuild>$(AssemblyVersionBuild)</VersionBuild>
-    <VersionRevision>$(AssemblyVersionRevision)</VersionRevision>
+    <VersionBuild    Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
+    <VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
     <VersionPrefix>$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
     <PackageVersion Condition="'$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
     <PackageVersion Condition="'$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
