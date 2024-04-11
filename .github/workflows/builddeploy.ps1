@@ -45,7 +45,7 @@ $PAT = $args[0]
 $NUGET_PAT = $args[1]
 $NUGET_TEST_PAT = $args[2]
 
-$secretsPath = "$PSScriptRoot/builddeploysecrets.ps1"
+$secretsPath = "$PSScriptRoot/builddeploy_secrets.ps1"
 # Check if the secrets file exists before importing
 if (Test-Path $secretsPath) {
     . "$secretsPath"
@@ -77,6 +77,11 @@ if ($isGithubActions -eq $true) {
 Log-Block -Stage "Initialization" -Section "Base" -Task "Config values for branches"
 
 if ($firstBranchSegment -ieq "feature") {
+
+    $dotnet_restore_param = $null;
+    $dotnet_build_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
+    $dotnet_pack_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
+    $docfx = "src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
@@ -112,13 +117,35 @@ Clear-BinObjDirectories -sourceDirectory "src/Projects/Coree.NETStandard"
 ######################################################################################
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
-dotnet restore $gitroot/src
+if ($null -ne $dotnet_restore_param)
+{
+    dotnet restore $gitroot/src $dotnet_restore_param
+}
 
 ######################################################################################
 Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 
-dotnet build $gitroot/src --no-restore /p:ContinuousIntegrationBuild=true -c Release
 
+if ($null -ne $dotnet_build_param)
+{
+    dotnet build $gitroot/src $dotnet_build_param
+}
+
+######################################################################################
+Log-Block -Stage "Build" -Section "Pack" -Task "Creating a nuget package."
+
+if ($null -ne $dotnet_pack_param)
+{
+    dotnet pack $gitroot/src $dotnet_pack_param
+}
+
+######################################################################################
+Log-Block -Stage "Build" -Section "Docfx" -Task "Creating the docs."
+
+if ($null -ne $dotnet_pack_param)
+{
+    dotnet pack $gitroot/src $dotnet_pack_param
+}
 
 #$env:GITHUB_REPOSITORY_OWNER
 #$env:GITHUB_REPOSITORY
