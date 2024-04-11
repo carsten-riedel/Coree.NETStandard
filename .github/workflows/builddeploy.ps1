@@ -78,10 +78,10 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Config values for branc
 
 if ($firstBranchSegment -ieq "feature") {
 
-    $dotnet_restore_param = $null;
+    $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
     $dotnet_pack_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
-    $docfx = "src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
@@ -142,9 +142,9 @@ if ($null -ne $dotnet_pack_param)
 ######################################################################################
 Log-Block -Stage "Build" -Section "Docfx" -Task "Creating the docs."
 
-if ($null -ne $dotnet_pack_param)
+if ($null -ne $docfx_param)
 {
-    dotnet pack $gitroot/src $dotnet_pack_param
+    docfx $docfx_param
 }
 
 #$env:GITHUB_REPOSITORY_OWNER
