@@ -192,3 +192,18 @@ function Invoke-Process {
     # Execute the command
     Start-Process -FilePath $ProcessName -NoNewWindow -Wait -ArgumentList $ArgumentList
 }
+
+function Get-AssemblyVersionInfo {
+    $baseDate = [DateTime]::new(2000, 1, 1, 0, 0, 0, [DateTimeKind]::Utc)
+    $currentTicks = [DateTime]::UtcNow.Ticks - $baseDate.Ticks
+    $ticksPerDay = [TimeSpan]::TicksPerDay
+    $assemblyVersionBuild = [Math]::Truncate($currentTicks / $ticksPerDay)
+    $assemblyVersionTotalSeconds = [Math]::Truncate($currentTicks / [TimeSpan]::TicksPerSecond)
+    $assemblyVersionRemainingSeconds = [Math]::Truncate($assemblyVersionTotalSeconds % 86400)
+    $assemblyVersionRevision = [Math]::Truncate($assemblyVersionRemainingSeconds / 2)
+
+    # Return as an array
+    return $assemblyVersionBuild, $assemblyVersionRevision
+}
+
+

@@ -2,6 +2,10 @@ $ErrorActionPreference = 'Stop'
 
 . "$PSScriptRoot/builddeploy_helper.ps1"
 
+$VersionMajor = "0"; $VersionMinor = "1"
+$calculatedVersionBuild, $calculatedVersionRevision = Get-AssemblyVersionInfo
+$FullVersion = "$VersionMajor.$VersionMinor.$calculatedVersionBuild.$calculatedVersionRevision"
+
 Get-ChildItem Env:* | Select-Object -Property Name,Value
 
 ######################################################################################
@@ -25,10 +29,13 @@ $branchNameParts = @(Get-BranchNameParts -branchName $branchName)
 $firstBranchSegment = $branchNameParts[0]
 $gitroot = git rev-parse --show-toplevel
 
+
 if ($isGithubActions -eq $true) { Write-Output "Is github actions." } else { "Is not github actions." }
 Write-Output "Branch name is $branchName"
 Write-Output "BranchRootName name is $firstBranchSegment"
 Write-Output "gitroot is $gitroot"
+Write-Output "Calculated VersionBuild: $calculatedVersionBuild"
+Write-Output "Calculated VersionRevision: $calculatedVersionRevision"
 
 # Define the array of strings
 $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" )
@@ -78,10 +85,12 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Config values for branc
 
 if ($firstBranchSegment -ieq "feature") {
 
-    
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion --property:VersionSuffix=$branchSegment"
+
     $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 --property:VersionSuffix=feature";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 --property:VersionSuffix=feature";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
@@ -130,7 +139,6 @@ Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 if ($null -ne $dotnet_build_param)
 {
     Invoke-Process -ProcessName "dotnet" -ArgumentList @("build", "$gitRoot/src", $dotnet_build_param)
-    #start-process dotnet -NoNewWindow -wait -ArgumentList @("build", "$gitroot/src","$dotnet_build_param")
 }
 
 ######################################################################################
@@ -146,8 +154,8 @@ Log-Block -Stage "Build" -Section "Tag" -Task ""
 
 if ($isGithubActions)
 {
-    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v0001"" -m ""Tag version"" ")
-    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v0001""")
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""$branchSegment"" -m ""Tagging version"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""$branchSegment""")
 }
 
 ######################################################################################
