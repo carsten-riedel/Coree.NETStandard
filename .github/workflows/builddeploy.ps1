@@ -178,8 +178,15 @@ Log-Block -Stage "Build" -Section "Tag" -Task ""
 
 if ($isGithubActions)
 {
-    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v$FullVersion-$branchSegment"" -m ""[skip actions]"" ")
-    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v$FullVersion-$branchSegment""")
+    if ($branchSegment -eq "master")
+    {
+        $tag = "v$FullVersion"
+    }
+    else {
+        $tag = "v$FullVersion-$branchSegment"
+    }
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""$tag"" -m ""[skip actions]"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""$tag""")
 }
 
 ######################################################################################
