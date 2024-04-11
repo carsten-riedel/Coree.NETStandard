@@ -6,7 +6,6 @@ using System.Threading;
 
 namespace Coree.NETStandard.Utilities
 {
-
     /// <summary>
     /// Provides utility methods for managing the application's execution context, typically used within the Program.Main entry point.
     /// </summary>
