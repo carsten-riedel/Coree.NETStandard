@@ -154,8 +154,8 @@ Log-Block -Stage "Build" -Section "Tag" -Task ""
 
 if ($isGithubActions)
 {
-    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""$branchSegment"" -m ""Tagging version"" ")
-    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""$branchSegment""")
+    Invoke-Process -ProcessName "git" -ArgumentList @("tag -a ""v$FullVersion-$branchSegment"" -m ""Tagging version"" ")
+    Invoke-Process -ProcessName "git" -ArgumentList @("push origin ""v$FullVersion-$branchSegment""")
 }
 
 ######################################################################################
