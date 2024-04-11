@@ -78,9 +78,10 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Config values for branc
 
 if ($firstBranchSegment -ieq "feature") {
 
+    
     $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
-    $dotnet_pack_param = "--no-restore /p:ContinuousIntegrationBuild=true -c Release";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
+    $dotnet_pack_param =  "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
     $docfx_param = "src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
