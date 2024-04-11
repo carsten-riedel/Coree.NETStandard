@@ -8,8 +8,6 @@ on:
   push:
     paths:
       - 'src/**'
-    tags-ignore:
-      - '*'
   repository_dispatch:
     types: apidispatch
   workflow_dispatch:
