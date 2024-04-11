@@ -82,7 +82,7 @@ if ($firstBranchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
     $dotnet_pack_param =  "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true";
-    $docfx_param = "src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
@@ -120,7 +120,7 @@ Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
 if ($null -ne $dotnet_restore_param)
 {
-    dotnet restore $gitroot/src $dotnet_restore_param
+    start-process dotnet -NoNewWindow -wait -ArgumentList @("restore", "$gitroot/src","$dotnet_restore_param")
 }
 
 ######################################################################################
@@ -129,7 +129,7 @@ Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 
 if ($null -ne $dotnet_build_param)
 {
-    dotnet build $gitroot/src $dotnet_build_param
+    start-process dotnet -NoNewWindow -wait -ArgumentList @("build", "$gitroot/src","$dotnet_build_param")
 }
 
 ######################################################################################
@@ -137,7 +137,7 @@ Log-Block -Stage "Build" -Section "Pack" -Task "Creating a nuget package."
 
 if ($null -ne $dotnet_pack_param)
 {
-    dotnet pack $gitroot/src $dotnet_pack_param
+    start-process dotnet -NoNewWindow -wait -ArgumentList @("pack", "$gitroot/src","$dotnet_pack_param")
 }
 
 ######################################################################################
