@@ -21,6 +21,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Setup-dotnet
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
     - name: Diagnostic print enviroment vars
       run: printenv
 
@@ -32,3 +37,4 @@ jobs:
 
     - name: Workflow Build/Deploy
       run: pwsh .github/workflows/builddeploy.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" "${{ secrets.NUGET_TEST_PAT }}"
+
