@@ -189,8 +189,22 @@ function Invoke-Process {
     # Display the command being invoked
     Write-Output "Invoking command: $ProcessName $arguments"
     
+    #Get-Process | Where-Object {$_.ProcessName -like $ProcessName } | Stop-Process -Force
+
     # Execute the command
     Start-Process -FilePath $ProcessName -NoNewWindow -Wait -ArgumentList $ArgumentList
+}
+
+function Invoke-Command {
+    param (
+        [string]$Command
+    )
+
+    # Output the command being executed for transparency
+    Write-Output $Command
+
+    # Execute the command using Invoke-Expression
+    Invoke-Expression -Command $Command
 }
 
 function Get-AssemblyVersionInfo {

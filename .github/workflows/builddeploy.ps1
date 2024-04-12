@@ -125,6 +125,14 @@ if ($firstBranchSegment -ieq "feature") {
 
 } elseif ($firstBranchSegment -ieq "hotfix") {
 
+    $branchSegment = $firstBranchSegment.ToLower();
+    $version = "--property:AssemblyVersion=$FullVersion --property:VersionPrefix=$FullVersion"
+
+    $dotnet_restore_param = "";
+    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
+    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+
 }
 
 ######################################################################################
@@ -146,14 +154,14 @@ if (-not (Test-CommandAvailability -CommandName "New-PGPKey"))
 ######################################################################################
 Log-Block -Stage "Build" -Section "Clean" -Task "Clear projects bin obj"
 
-Clear-BinObjDirectories -sourceDirectory "src/Projects/Coree.NETStandard"
+Clear-BinObjDirectories -sourceDirectory "$gitRoot/src/Projects/Coree.NETStandard"
 
 ######################################################################################
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
 if ($null -ne $dotnet_restore_param)
 {
-    Invoke-Process -ProcessName "dotnet" -ArgumentList @("restore", "$gitRoot/src", $dotnet_restore_param)
+    Invoke-Command "dotnet restore $gitRoot/src $dotnet_restore_param"
 }
 
 ######################################################################################
@@ -162,7 +170,7 @@ Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 
 if ($null -ne $dotnet_build_param)
 {
-    Invoke-Process -ProcessName "dotnet" -ArgumentList @("build", "$gitRoot/src", $dotnet_build_param)
+    Invoke-Command "dotnet build $gitRoot/src $dotnet_build_param"
 }
 
 ######################################################################################
@@ -170,7 +178,7 @@ Log-Block -Stage "Build" -Section "Pack" -Task "Creating a nuget package."
 
 if ($null -ne $dotnet_pack_param)
 {
-    Invoke-Process -ProcessName "dotnet" -ArgumentList @("pack", "$gitRoot/src", $dotnet_pack_param)
+    Invoke-Command "dotnet pack $gitRoot/src $dotnet_pack_param"
 }
 
 ######################################################################################
@@ -194,47 +202,57 @@ Log-Block -Stage "Build" -Section "Docfx" -Task "Creating the docs."
 
 if ($null -ne $docfx_param)
 {
-    Invoke-Process -ProcessName "docfx" -ArgumentList @($docfx_param)
+    Invoke-Command "docfx $docfx_param"
 }
 
 ######################################################################################
-Log-Block -Stage "Deploy" -Section "Deploy" -Task "Deploy"
+Log-Block -Stage "Deploy" -Section "Nuget" -Task "Nuget"
 
 if ($firstBranchSegment -ieq "feature") {
 
     $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    
-    dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $SECRETS_PAT --source "github"
+    dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $PAT --source "github"
 
 } elseif ($firstBranchSegment -ieq "develop") {
 
     $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $SECRETS_PAT --source "github"
+    dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $PAT --source "github"
 
 } elseif ($firstBranchSegment -ieq "release") {
 
     $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $SECRETS_PAT --source "github"
+    dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $PAT --source "github"
+
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
 
 } elseif ($firstBranchSegment -ieq "master") {
 
     $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $SECRETS_PAT --source "github"
+    dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $PAT --source "github"
+
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 
 } elseif ($firstBranchSegment -ieq "hotfix") {
 
+    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $pattern = "*.nupkg"
+    $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
+    dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $PAT --source "github"
+
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 }
 
 
