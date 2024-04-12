@@ -205,6 +205,7 @@ if ($firstBranchSegment -ieq "feature") {
     $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
+    
     dotnet nuget add source --username carsten-riedel --password $SECRETS_PAT --store-password-in-clear-text --name github "https://nuget.pkg.github.com/carsten-riedel/index.json"
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $SECRETS_PAT --source "github"
 
