@@ -371,8 +371,8 @@ Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
 
 #restore
-git config --global user.name $gitUserLocal
-git config --global user.email $gitMailLocal
+git config user.name $gitUserLocal
+git config user.email $gitMailLocal
 
 ######################################################################################
 Log-Block -Stage "Post Deploy" -Section "Cleanup Packagelist" -Task ""
