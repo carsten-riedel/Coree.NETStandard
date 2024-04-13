@@ -38,6 +38,65 @@ function Get-GitTopleveldir {
     }
 }
 
+function Get-GitConfigRemoteUrlToplevelDir {
+    param (
+        [int]$Depth = 2  # Default depth is 1
+    )
+    
+    try {
+        # Get the top-level directory using git command
+        $path = git config --get remote.origin.url
+        $parts = Get-PathSegments -Path $path -Depth 2 -SegmentsToReturn 2
+        return $parts
+    } catch {
+        return $null
+    }
+}
+
+function Get-PathSegments {
+    param (
+        [string]$Path,  # Path to process
+        [int]$Depth = 2,  # Depth to determine how many segments from the end to consider
+        [int]$SegmentsToReturn = 1  # Number of segments to return from the determined depth
+    )
+    
+    try {
+        if ($Path) {
+            # Split the path into segments using a regex to match both slash types
+            $pathSegments = $Path -split '[\\/]+'
+            # Determine the starting index for segments to return
+            $startIndex = [math]::Max(0, $pathSegments.Length - $Depth)
+            # Get the last parts of the path based on the specified depth
+            $selectedSegments = $pathSegments[$startIndex..($startIndex + $SegmentsToReturn - 1)] -join '/'
+            return $selectedSegments
+        } else {
+            return $null
+        }
+    } catch {
+        return $null
+    }
+}
+
+function Test-UrlRootDomainMatch {
+    param (
+        [string]$Url,
+        [string]$ExpectedRootDomain
+    )
+
+    try {
+        # Convert the string URL to a URI object
+        $uri = [System.Uri]$Url
+
+        # Extract the domain part of the URI and compare it directly to the expected root domain
+        $actualDomain = $uri.Host
+
+        # Compare the actual domain to the provided expected root domain
+        return $actualDomain -ieq $ExpectedRootDomain
+    } catch {
+        Write-Warning "Processing error for URL $Url : $_"
+        return $false
+    }
+}
 
 function IsGithubActions {
     $githubActionsBranchName = Get-GithubActionsBranchName

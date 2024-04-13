@@ -2,9 +2,11 @@ $ErrorActionPreference = 'Stop'
 
 . "$PSScriptRoot/builddeploy_helper.ps1"
 
+
 $VersionMajor = "0"; $VersionMinor = "1"
 $calculatedVersionBuild, $calculatedVersionRevision = Get-AssemblyVersionInfo
 $FullVersion = "$VersionMajor.$VersionMinor.$calculatedVersionBuild.$calculatedVersionRevision"
+
 
 Get-ChildItem Env:* | Select-Object -Property Name,Value
 
@@ -13,13 +15,13 @@ Log-Block -Stage "Initialization" -Section "Base" -Task "Resolve branchname and 
 
 $isInGitRepository = IsGit
 if (-not $isInGitRepository) {
-    Write-Error "This script is not running in a git environment."
+    Write-Warning "This script is not running in a git environment."
     exit 1 # Non-zero exit code indicates an error condition
 }
 
 $initialBranchName = Get-GitBranchName
 if (-not $initialBranchName) {
-    Write-Error "Failed to determine the git branch name."
+    Write-Warning "Failed to determine the git branch name."
     exit 1 # Non-zero exit code indicates an error condition
 }
 
@@ -28,16 +30,25 @@ $branchName = Get-GitBranchName
 $branchNameParts = @(Get-BranchNameParts -branchName $branchName)
 $firstBranchSegment = $branchNameParts[0]
 $branchSegment = $firstBranchSegment.ToLower()
-$gitroot = git rev-parse --show-toplevel
-$topleveldir = Get-GitTopleveldir
+
+$gitLocalRootPath = git rev-parse --show-toplevel
+$gitLocalRootDir = Get-GitTopleveldir
+
+
+$gitRemoteOriginUrl = git config --get remote.origin.url
+$test = Get-RootDomainName -Url $gitRemoteOriginUrl
 
 if ($isGithubActions -eq $true) { Write-Output "Is github actions." } else { "Is not github actions." }
 Write-Output "Branch name is $branchName"
-Write-Output "BranchRootName name is $branchSegment"
-Write-Output "gitroot is $gitroot"
-Write-Output "topleveldir is $topleveldir"
+Write-Output "branchSegment is $branchSegment"
+Write-Output "gitLocalRootPath is $gitLocalRootPath"
+Write-Output "gitLocalRootDir is $gitLocalRootDir"
+Write-Output "remote is $gitRemoteOriginUrl"
 Write-Output "Calculated VersionBuild: $calculatedVersionBuild"
 Write-Output "Calculated VersionRevision: $calculatedVersionRevision"
+Write-Output "test : $test"
+
+exit 0
 
 # Define the array of strings
 $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" )
@@ -92,7 +103,7 @@ if ($branchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($branchSegment -ieq "develop") {
 
@@ -101,7 +112,7 @@ if ($branchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($branchSegment -ieq "release") {
 
@@ -110,7 +121,7 @@ if ($branchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($branchSegment -ieq "master") {
 
@@ -119,7 +130,7 @@ if ($branchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 } elseif ($branchSegment -ieq "hotfix") {
 
@@ -128,7 +139,7 @@ if ($branchSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$gitroot/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 }
 
@@ -151,14 +162,14 @@ if (-not (Test-CommandAvailability -CommandName "New-PGPKey"))
 ######################################################################################
 Log-Block -Stage "Build" -Section "Clean" -Task "Clear projects bin obj"
 
-Clear-BinObjDirectories -sourceDirectory "$gitRoot/src/Projects/Coree.NETStandard"
+Clear-BinObjDirectories -sourceDirectory "$gitLocalRootPath/src/Projects/Coree.NETStandard"
 
 ######################################################################################
 Log-Block -Stage "Build" -Section "Restore" -Task "Restoreing nuget packages."
 
 if ($null -ne $dotnet_restore_param)
 {
-    Execute-Command "dotnet restore $gitRoot/src $dotnet_restore_param"
+    Execute-Command "dotnet restore $gitLocalRootPath/src $dotnet_restore_param"
 }
 
 ######################################################################################
@@ -167,7 +178,7 @@ Log-Block -Stage "Build" -Section "Build" -Task "Building the solution."
 
 if ($null -ne $dotnet_build_param)
 {
-    Execute-Command "dotnet build $gitRoot/src $dotnet_build_param"
+    Execute-Command "dotnet build $gitLocalRootPath/src $dotnet_build_param"
 }
 
 ######################################################################################
@@ -175,7 +186,7 @@ Log-Block -Stage "Build" -Section "Pack" -Task "Creating a nuget package."
 
 if ($null -ne $dotnet_pack_param)
 {
-    Execute-Command "dotnet pack $gitRoot/src $dotnet_pack_param"
+    Execute-Command "dotnet pack $gitLocalRootPath/src $dotnet_pack_param"
 }
 
 ######################################################################################
@@ -191,7 +202,7 @@ Log-Block -Stage "Build" -Section "Docfx" -Task "Copying the docs."
 
 if ($null -ne $docfx_param)
 {
-    Copy-Directory -sourceDir "$gitRoot/src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "$gitRoot/docs/docfx" -exclusions @('.git', '.github')
+    Copy-Directory -sourceDir "$gitLocalRootPath/src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "$gitLocalRootPath/docs/docfx" -exclusions @('.git', '.github')
 }
 
 ######################################################################################
@@ -199,7 +210,7 @@ Log-Block -Stage "Deploy" -Section "Nuget" -Task "Nuget"
 
 if ($branchSegment -ieq "feature") {
 
-    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $basePath = "$gitLocalRootPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
@@ -207,7 +218,7 @@ if ($branchSegment -ieq "feature") {
 
 } elseif ($branchSegment -ieq "develop") {
 
-    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $basePath = "$gitLocalRootPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
@@ -215,7 +226,7 @@ if ($branchSegment -ieq "feature") {
 
 } elseif ($branchSegment -ieq "release") {
 
-    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $basePath = "$gitLocalRootPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
@@ -225,7 +236,7 @@ if ($branchSegment -ieq "feature") {
 
 } elseif ($branchSegment -ieq "master") {
 
-    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $basePath = "$gitLocalRootPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
@@ -235,7 +246,7 @@ if ($branchSegment -ieq "feature") {
 
 } elseif ($branchSegment -ieq "hotfix") {
 
-    $basePath = "$gitRoot/src/Projects/Coree.NETStandard"
+    $basePath = "$gitLocalRootPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
@@ -255,7 +266,7 @@ else {
     $tag = "v$FullVersion-$branchSegment"
 }
 
-Execute-Command "git add $gitRoot/docs/docfx"
+Execute-Command "git add $gitLocalRootPath/docs/docfx"
 Execute-Command "git commit -m ""Updated form Workflow"""
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
@@ -267,21 +278,22 @@ $headers = @{
     Authorization = "Bearer $PAT"
 }
 
-
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$topleveldir/versions" -Headers $headers
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$gitLocalRootDir/versions" -Headers $headers
 
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
-
-if (-not $GitHubNugetPackagelistOld) {
-    $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
-}
 
 foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
-    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$topleveldir/versions/$PackageId" -Headers $headers | Out-Null
-    Write-Output "Unlisted package $topleveldir $($item.name)"
+    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$gitLocalRootDir/versions/$PackageId" -Headers $headers | Out-Null
+    Write-Output "Unlisted package $gitLocalRootDir $($item.name)"
 }
+
+#if (-not $GitHubNugetPackagelistOld) {
+#    $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
+#}
+
+
 
 #$env:GITHUB_REPOSITORY_OWNER
 #$env:GITHUB_REPOSITORY
