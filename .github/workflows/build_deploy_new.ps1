@@ -349,7 +349,7 @@ else {
     $tag = "v$fullVersion-$branchNameSegment"
 }
 
-Execute-Command "git add $topLevelPath/docs/docfx"
+Execute-Command "git add --all"
 Execute-Command "git commit -m ""Updated form Workflow"""
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
@@ -361,15 +361,15 @@ $headers = @{
     Authorization = "Bearer $PAT"
 }
 
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$gitLocalRootDir/versions" -Headers $headers
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers
 
-$GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
+$GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchNameSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
 
 foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
-    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$gitLocalRootDir/versions/$PackageId" -Headers $headers | Out-Null
-    Write-Output "Unlisted package $gitLocalRootDir $($item.name)"
+    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions/$PackageId" -Headers $headers | Out-Null
+    Write-Output "Unlisted package $gitRepo $($item.name)"
 }
 
 git status --porcelain $sourceCodeFolder
