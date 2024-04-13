@@ -195,17 +195,19 @@ function Invoke-Process {
     Start-Process -FilePath $ProcessName -NoNewWindow -Wait -ArgumentList $ArgumentList
 }
 
-function Invoke-Command {
+function Execute-Command {
+    [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
     param (
         [string]$Command
     )
 
     # Output the command being executed for transparency
-    Write-Output $Command
+    Write-Output "Executing command: $Command"
 
     # Execute the command using Invoke-Expression
     Invoke-Expression -Command $Command
 }
+
 
 function Get-AssemblyVersionInfo {
     $baseDate = [DateTime]::new(2000, 1, 1, 0, 0, 0, [DateTimeKind]::Utc)
@@ -220,4 +222,61 @@ function Get-AssemblyVersionInfo {
     return $assemblyVersionBuild, $assemblyVersionRevision
 }
 
+function Copy-Directory {
+    param (
+        [string]$sourceDir,
+        [string]$destinationDir,
+        [string[]]$exclusions
+    )
+
+    $sourceDirParam = $sourceDir
+    $destinationDirParam = $destinationDir
+
+    # Ensure that $sourceDir and $destinationDir are absolute paths
+    if (-not [System.IO.Path]::IsPathRooted($sourceDir)) {
+        $sourceDir = Join-Path (Get-Location) $sourceDir
+    }
+
+    if (-not [System.IO.Path]::IsPathRooted($destinationDir)) {
+        $destinationDir = Join-Path (Get-Location) $destinationDir
+    }
+
+    # Ensure paths end with a directory separator for consistent behavior
+    $sourceDir = [System.IO.Path]::GetFullPath($sourceDir)
+    $destinationDir = [System.IO.Path]::GetFullPath($destinationDir)
+
+    # Get all items in the source directory
+    $items = Get-ChildItem -Path $sourceDir -Recurse
+
+    foreach ($item in $items) {
+        # Check if the item is in an excluded directory
+        $excluded = $false
+        foreach ($exclusion in $exclusions) {
+            if ($item.FullName -like "*\$exclusion*") {
+                $excluded = $true
+                break
+            }
+        }
+
+        if (-not $excluded) {
+            $relativePath = [System.IO.Path]::GetRelativePath($sourceDir, $item.FullName)
+            $targetPath = Join-Path -Path $destinationDir -ChildPath $relativePath
+
+
+            $relativeSource = Join-Path -Path $sourceDirParam -ChildPath $relativePath
+            $relativeDestination = Join-Path -Path $destinationDirParam -ChildPath $relativePath
+
+            if ($item.PSIsContainer) {
+                # Create directory if it doesn't exist
+                if (-not (Test-Path -Path $targetPath)) {
+                    New-Item -ItemType Directory -Path $targetPath
+                }
+            } else {
+                # Copy file
+                Copy-Item -Path $item.FullName -Destination $targetPath -Force
+                Write-Output "Copyied: $($relativeSource) --> $($relativeDestination)"
+            }
+        }
+    }
+}
 
