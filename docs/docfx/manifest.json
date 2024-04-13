@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/runner/work/Coree.NETStandard/Coree.NETStandard/src/Projects/Coree.NETStandard/Docfx/build",
+  "source_base_path": "C:/Users/Valgrind/source/VCS/github.com/carsten-riedel/Coree.NETStandard/src/Projects/Coree.NETStandard/Docfx/build",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -244,6 +244,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Bool.BoolExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Bool.BoolExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Bool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Bool.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.BoolExtensions.yml",
       "output": {
         ".html": {
@@ -258,6 +278,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Extensions.CancellationTokenExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.EnumerableExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enumerable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enumerable.html"
         }
       },
       "version": ""
@@ -294,6 +334,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.SerilogExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceProviderExtensions.yml",
       "output": {
         ".html": {
@@ -314,6 +384,46 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.StringBuilderExtension.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Stringbuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Strings.StringExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Strings.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Strings.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.StringsExtensions.yml",
       "output": {
         ".html": {
@@ -328,6 +438,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.HostedService.HostedServiceSampleImplementationOptions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.HostedService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.HostedService.html"
         }
       },
       "version": ""
@@ -378,6 +518,56 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.HostedServicesCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Logging.EnhancedSourceContextShortEnricher.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Logging.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Logging.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Options.HostedServicesCollectionOptionsProvider-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Options.IHostedServicesCollectionOptionsProvider-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Options.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Options.html"
         }
       },
       "version": ""
@@ -474,6 +664,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.IFileService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.IFileService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.IProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.IProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Services.IRuntimeInsights.yml",
       "output": {
         ".html": {
@@ -528,6 +748,36 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Services.Process.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessRunExitCodeState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessRunExitCodeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessRunResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessRunResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessService.html"
         }
       },
       "version": ""
