@@ -2,13 +2,8 @@
 name: Deploy static content to Pages
 
 on:
-  push:
-    branches:
-      - 'master'
-    paths:
-      - 'docs/**'
-  pull_request:
-    branches: [ "master" ]
+  repository_dispatch:
+    types: contentpagesdispatch
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
