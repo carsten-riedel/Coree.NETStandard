@@ -349,10 +349,30 @@ else {
     $tag = "v$fullVersion-$branchNameSegment"
 }
 
+
+$gitUserLocal = git config user.name
+$gitMailLocal = git config user.email
+
+# Check if the variables are null or empty (including whitespace)
+if ([string]::IsNullOrWhiteSpace($gitUserLocal) -or [string]::IsNullOrWhiteSpace($gitMailLocal)) {
+    $gitTempUser= "Workflow"
+    $gitTempMail = "carstenriedel@outlook.com"  # Assuming a placeholder email
+} else {
+    $gitTempUser= $gitUserLocal
+    $gitTempMail = $gitMailLocal
+}
+
+git config user.name $gitTempUser
+git config user.email $gitTempMail
+
 Execute-Command "git add --all"
 Execute-Command "git commit -m ""Updated form Workflow"""
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
+
+#restore
+git config --global user.name $gitUserLocal
+git config --global user.email $gitMailLocal
 
 ######################################################################################
 Log-Block -Stage "Post Deploy" -Section "Cleanup Packagelist" -Task ""
