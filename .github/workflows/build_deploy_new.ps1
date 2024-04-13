@@ -16,7 +16,7 @@ $fullVersion = "$versionMajor.$versionMinor.$versionBuild.$versionRevision"
 Log-Block -Stage "Checking" -Section "Preconditions" -Task "Commands setup."
 
 # Check availability of required commands
-$result = Test-CommandsAvailabilities -CommandList @("git", "dotnet", "pwsh")
+$result = Test-CommandsAvailabilities -CommandList @("git", "dotnet", "pwsh" , "curl")
 if (-not $result) {
     Write-Host "One or more required commands are unavailable. Stopping execution."
     exit 1
@@ -391,6 +391,23 @@ foreach ($item in $GitHubNugetPackagelistOld)
     Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions/$PackageId" -Headers $headers | Out-Null
     Write-Output "Unlisted package $gitRepo $($item.name)"
 }
+
+######################################################################################
+Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
+
+$worklowFileName = "static.yml"
+$uri = "https://api.github.com/repos/$gitOwner/$gitRepo/actions/workflows/$worklowFileName/dispatches"
+$headers = @{
+    "Accept" = "application/vnd.github+json"
+    "X-GitHub-Api-Version" = "2022-11-28"
+    "Authorization" = "Bearer $PAT"
+    "Content-Type" = "application/json"
+}
+$body = @{
+    ref = "$branchName"
+} | ConvertTo-Json
+
+Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose
 
 git status --porcelain $sourceCodeFolder
 
