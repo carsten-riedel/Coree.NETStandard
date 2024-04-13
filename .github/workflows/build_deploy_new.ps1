@@ -381,10 +381,8 @@ $headers = @{
     Authorization = "Bearer $PAT"
 }
 
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers
-
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers | Out-Null
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchNameSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
-
 foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
@@ -408,16 +406,10 @@ if ($branchNameSegment -ieq "master") {
         ref = "$branchName"
     } | ConvertTo-Json
     
-    Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose
+    Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose | Out-Null
 }
 
 
+#git status --porcelain $sourceCodeFolder
 
-
-git status --porcelain $sourceCodeFolder
-
-#Execute-Command "git add --all"
-#Execute-Command "git commit -m ""Updated form Workflow [skip ci]"""
-#Execute-Command "git tag -a ""$tag"" -m ""[skip ci]"""
-#Execute-Command "git push origin ""$tag"""
 
