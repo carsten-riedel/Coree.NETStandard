@@ -44,8 +44,9 @@ $global:BaseVersionTicks
 $global:BaseVersionTicksPerDay
 
 function Set-BaseVersion {
-    [void]($global:BaseVersionTicks = [DateTime]::UtcNow.Ticks - [DateTime]::new(2000, 1, 1, 0, 0, 0, [DateTimeKind]::Utc).Ticks)
-    [void]($global:BaseVersionTicksPerDay = [TimeSpan]::TicksPerDay)
+    
+    [void]([Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUserDeclaredVarsMoreThanAssignments','')] $global:BaseVersionTicks = [DateTime]::UtcNow.Ticks - [DateTime]::new(2000, 1, 1, 0, 0, 0, [DateTimeKind]::Utc).Ticks)
+    [void]([Diagnostics.CodeAnalysis.SuppressMessageAttribute('PSUserDeclaredVarsMoreThanAssignments','')] $global:BaseVersionTicksPerDay = [TimeSpan]::TicksPerDay)
 }
 
 Set-BaseVersion
@@ -343,6 +344,7 @@ function Remove-FilesAndDirectories {
 
     # Internal function to recursively delete files
     function Delete-Files {
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
         param ([string]$Path)
         $files = $null
         try {
@@ -362,6 +364,7 @@ function Remove-FilesAndDirectories {
 
     # Internal function to recursively delete directories
     function Delete-Directories {
+        [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
         param ([string]$Path)
         $directories = $null
         try {

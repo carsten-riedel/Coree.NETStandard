@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-. "$PSScriptRoot/build_deploy_helper_new.ps1"
+. "$PSScriptRoot/build_deploy_new_helper.ps1"
 
 ######################################################################################
 Log-Block -Stage "Resolving" -Section "Preconditions" -Task "Set fixed values"
@@ -379,4 +379,3 @@ git status --porcelain $sourceCodeFolder
 #Execute-Command "git tag -a ""$tag"" -m ""[skip ci]"""
 #Execute-Command "git push origin ""$tag"""
 
-$x=1
