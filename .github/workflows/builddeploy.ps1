@@ -29,11 +29,13 @@ $branchNameParts = @(Get-BranchNameParts -branchName $branchName)
 $firstBranchSegment = $branchNameParts[0]
 $branchSegment = $firstBranchSegment.ToLower()
 $gitroot = git rev-parse --show-toplevel
+$topleveldir = Get-GitTopleveldir
 
 if ($isGithubActions -eq $true) { Write-Output "Is github actions." } else { "Is not github actions." }
 Write-Output "Branch name is $branchName"
 Write-Output "BranchRootName name is $branchSegment"
 Write-Output "gitroot is $gitroot"
+Write-Output "topleveldir is $topleveldir"
 Write-Output "Calculated VersionBuild: $calculatedVersionBuild"
 Write-Output "Calculated VersionRevision: $calculatedVersionRevision"
 
@@ -41,7 +43,7 @@ Write-Output "Calculated VersionRevision: $calculatedVersionRevision"
 $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" )
 
 if (-not($isValidBranchRootName.ToLower() -contains $firstBranchSegment.ToLower())) {
-    Write-Error "No configuration for branches $firstBranchSegment"
+    Write-Warning "No configuration for branches $firstBranchSegment. Exiting"
     exit 1 # Non-zero exit code indicates an error condition
 }
 
@@ -258,26 +260,27 @@ Execute-Command "git commit -m ""Updated form Workflow"""
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
 
-
-
-
 ######################################################################################
 Log-Block -Stage "Post Deploy" -Section "Cleanup Packagelist" -Task ""
 
-Log-Block -Stage "Cleanup" -Section "Packages" -Task "clean old github packages"
 $headers = @{
     Authorization = "Bearer $PAT"
 }
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/Coree.NETStandard/versions" -Headers $headers
 
+
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$topleveldir/versions" -Headers $headers
 
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
+
+if (-not $GitHubNugetPackagelistOld) {
+    $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
+}
 
 foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
-    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/Coree.NETStandard/versions/$PackageId" -Headers $headers | Out-Null
-    Write-Output "Unlisted package Coree.NETStandard $($item.name)"
+    Invoke-RestMethod -Method Delete -Uri "https://api.github.com/users/carsten-riedel/packages/nuget/$topleveldir/versions/$PackageId" -Headers $headers | Out-Null
+    Write-Output "Unlisted package $topleveldir $($item.name)"
 }
 
 #$env:GITHUB_REPOSITORY_OWNER

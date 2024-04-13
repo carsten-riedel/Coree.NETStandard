@@ -16,6 +16,29 @@ function Get-GitBranchName {
     }
 }
 
+function Get-GitTopleveldir {
+    param (
+        [int]$Depth = 1  # Default depth is 1
+    )
+    
+    try {
+        # Get the top-level directory using git command
+        $path = git rev-parse --show-toplevel
+        if ($path) {
+            # Split the path into segments using a regex to match both slash types
+            $pathSegments = $path -split '[\\/]+'
+            # Get the last parts of the path based on the specified depth
+            $lastPathParts = $pathSegments[-$Depth..-1] -join '/'
+            return $lastPathParts
+        } else {
+            return $null
+        }
+    } catch {
+        return $null
+    }
+}
+
+
 function IsGithubActions {
     $githubActionsBranchName = Get-GithubActionsBranchName
     return -not [string]::IsNullOrWhiteSpace($githubActionsBranchName)
