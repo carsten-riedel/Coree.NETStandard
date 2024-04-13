@@ -395,19 +395,24 @@ foreach ($item in $GitHubNugetPackagelistOld)
 ######################################################################################
 Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
-$worklowFileName = "static.yml"
-$uri = "https://api.github.com/repos/$gitOwner/$gitRepo/actions/workflows/$worklowFileName/dispatches"
-$headers = @{
-    "Accept" = "application/vnd.github+json"
-    "X-GitHub-Api-Version" = "2022-11-28"
-    "Authorization" = "Bearer $PAT"
-    "Content-Type" = "application/json"
+if ($branchNameSegment -ieq "master") {
+    $worklowFileName = "static.yml"
+    $uri = "https://api.github.com/repos/$gitOwner/$gitRepo/actions/workflows/$worklowFileName/dispatches"
+    $headers = @{
+        "Accept" = "application/vnd.github+json"
+        "X-GitHub-Api-Version" = "2022-11-28"
+        "Authorization" = "Bearer $PAT"
+        "Content-Type" = "application/json"
+    }
+    $body = @{
+        ref = "$branchName"
+    } | ConvertTo-Json
+    
+    Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose
 }
-$body = @{
-    ref = "$branchName"
-} | ConvertTo-Json
 
-Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose
+
+
 
 git status --porcelain $sourceCodeFolder
 
