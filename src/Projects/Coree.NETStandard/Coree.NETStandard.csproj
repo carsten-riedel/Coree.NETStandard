@@ -13,6 +13,11 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
+  <ItemGroup>
+    <None Remove="Extensions\Enumerable\AppendRange.cs" />
+    <None Remove="Extensions\List\Dequeue.cs" />
+    <None Remove="Extensions\List\Enqueue.cs" />
+  </ItemGroup>
   
   <ItemGroup>
     <PackageReference Include="JsonPath.Net" Version="1.0.0" />
