@@ -28,11 +28,13 @@
     <AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
     <VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
     <VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
-    
+
+    <VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
     <VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
-    <VersionSuffix Condition="'$(VersionSuffix)' == ''">local</VersionSuffix>
     
-    <PackageVersion Condition="'$(PackageVersion)' == ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+    <PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
+    
     <InformationalVersion>$(PackageVersion)</InformationalVersion>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
