@@ -366,7 +366,8 @@ git config user.name $gitTempUser
 git config user.email $gitTempMail
 
 Execute-Command "git add --all"
-Execute-Command "git commit -m ""Updated form Workflow"""
+Execute-Command "git commit -m ""Updated form Workflow [no ci]"""
+Execute-Command "git push origin master"
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
 
