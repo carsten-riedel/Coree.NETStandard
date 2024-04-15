@@ -171,7 +171,13 @@
                             <a href="Coree.NETStandard.Extensions.BoolExtensions.html" title="BoolExtensions" class="">BoolExtensions</a>
                           </li>
                           <li class="">
+                            <a href="Coree.NETStandard.Extensions.ByteArrayExtensions.html" title="ByteArrayExtensions" class="">ByteArrayExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="">CancellationTokenExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.Encodings.html" title="Encodings" class="">Encodings</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.EnumerableStringExtension.html" title="EnumerableStringExtension" class="">EnumerableStringExtension</a>
@@ -181,6 +187,9 @@
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.HostApplicationBuilderExtensions.html" title="HostApplicationBuilderExtensions" class="">HostApplicationBuilderExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.ListExtension.html" title="ListExtension" class="">ListExtension</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
@@ -368,6 +377,94 @@ files, facilitating maintainability and scalability of the utility functions pro
 </div>
   <h3 id="methods">Methods
 </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/feature/EnhanceWorkflow/apiSpec/new?filename=Coree_NETStandard_Extensions_EnumerableTExtension_AppendRange__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.EnumerableTExtension.AppendRange%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D%2CSystem.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/feature/EnhanceWorkflow/src/Projects/Coree.NETStandard/Extensions/Enumerable/AppendRange.cs/#L28">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_EnumerableTExtension_AppendRange_" data-uid="Coree.NETStandard.Extensions.EnumerableTExtension.AppendRange*"></a>
+  <h4 id="Coree_NETStandard_Extensions_EnumerableTExtension_AppendRange__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__" data-uid="Coree.NETStandard.Extensions.EnumerableTExtension.AppendRange``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})">AppendRange&lt;T&gt;(IEnumerable&lt;T&gt;, IEnumerable&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Appends a range of items to the end of an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; AppendRange&lt;T&gt;(this IEnumerable&lt;T&gt; source, IEnumerable&lt;T&gt; items) where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">source</span></td>
+        <td><p>The source collection to which the items will be appended.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="parametername">items</span></td>
+        <td><p>The collection of items to append to the source collection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that consists of the original elements followed by the added items.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the elements in both the source and items collections. Must be a class.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentnullexception">ArgumentNullException</a></td>
+        <td><p>Thrown if either the source collection or the items collection is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/feature/EnhanceWorkflow/apiSpec/new?filename=Coree_NETStandard_Extensions_EnumerableTExtension_RemoveNullEntries__1_System_Collections_Generic_IEnumerable___0__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.EnumerableTExtension.RemoveNullEntries%60%601(System.Collections.Generic.IEnumerable%7B%60%600%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
