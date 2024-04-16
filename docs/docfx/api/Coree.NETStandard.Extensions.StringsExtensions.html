@@ -168,10 +168,19 @@
 
                         <ul class="nav level2">
                           <li class="">
+                            <a href="Coree.NETStandard.Extensions.AssemblyExtensions.html" title="AssemblyExtensions" class="">AssemblyExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.Extensions.BoolExtensions.html" title="BoolExtensions" class="">BoolExtensions</a>
                           </li>
                           <li class="">
+                            <a href="Coree.NETStandard.Extensions.ByteArrayExtensions.html" title="ByteArrayExtensions" class="">ByteArrayExtensions</a>
+                          </li>
+                          <li class="">
                             <a href="Coree.NETStandard.Extensions.CancellationTokenExtensions.html" title="CancellationTokenExtensions" class="">CancellationTokenExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.Encodings.html" title="Encodings" class="">Encodings</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.EnumerableStringExtension.html" title="EnumerableStringExtension" class="">EnumerableStringExtension</a>
@@ -181,6 +190,9 @@
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.HostApplicationBuilderExtensions.html" title="HostApplicationBuilderExtensions" class="">HostApplicationBuilderExtensions</a>
+                          </li>
+                          <li class="">
+                            <a href="Coree.NETStandard.Extensions.ListExtension.html" title="ListExtension" class="">ListExtension</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Extensions.ServiceProviderExtensions.html" title="ServiceProviderExtensions" class="">ServiceProviderExtensions</a>
@@ -676,6 +688,132 @@ When removeDelimiters is true, it filters out the delimiter if it matches exactl
   <div class="markdown level1 remarks"><p>This method uses regular expressions to split the input string, which may have performance implications for large strings or a large number of delimiters.
 When removeDelimiters is true, it filters out any substring that matches one of the delimiters exactly, after splitting.</p>
 </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/feature/EnhanceWorkflow/apiSpec/new?filename=Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_System_String_Coree_NETStandard_Extensions_Encodings_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.StringsExtensions.ToByteArray(System.String%2CCoree.NETStandard.Extensions.Encodings)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/feature/EnhanceWorkflow/src/Projects/Coree.NETStandard/Extensions/Strings/ToByteArray.cs/#L62">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_" data-uid="Coree.NETStandard.Extensions.StringsExtensions.ToByteArray*"></a>
+  <h4 id="Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_System_String_Coree_NETStandard_Extensions_Encodings_" data-uid="Coree.NETStandard.Extensions.StringsExtensions.ToByteArray(System.String,Coree.NETStandard.Extensions.Encodings)">ToByteArray(string, Encodings)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a selected text encoding byte array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToByteArray(this string String, Encodings encoding = Encodings.UTF8)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">String</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Coree.NETStandard.Extensions.Encodings.html">Encodings</a></td>
+        <td><span class="parametername">encoding</span></td>
+        <td><p>The encoding type System.Text.Encoding</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/feature/EnhanceWorkflow/apiSpec/new?filename=Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.StringsExtensions.ToByteArray(System.String%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/feature/EnhanceWorkflow/src/Projects/Coree.NETStandard/Extensions/Strings/ToByteArray.cs/#L107">View Source</a>
+  </span>
+  <a id="Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_" data-uid="Coree.NETStandard.Extensions.StringsExtensions.ToByteArray*"></a>
+  <h4 id="Coree_NETStandard_Extensions_StringsExtensions_ToByteArray_System_String_System_Int32_" data-uid="Coree.NETStandard.Extensions.StringsExtensions.ToByteArray(System.String,System.Int32)">ToByteArray(string, int)</h4>
+  <div class="markdown level1 summary"><p>Converts a string to a byte array using a specified encoding.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static byte[] ToByteArray(this string String, int CodePage)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
+        <td><span class="parametername">String</span></td>
+        <td><p>The string to be converted.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
+        <td><span class="parametername">CodePage</span></td>
+        <td><p>The code page used for encoding.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
+        <td><p>A byte array resulting from encoding the string with the specified code page.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentexception">ArgumentException</a></td>
+        <td><p>Thrown when an invalid code page is provided or the string is null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
 
 </article>
           </div>
@@ -688,7 +826,7 @@ When removeDelimiters is true, it filters out any substring that matches one of 
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/feature/EnhanceWorkflow/apiSpec/new?filename=Coree_NETStandard_Extensions_StringsExtensions.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Extensions.StringsExtensions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/feature/EnhanceWorkflow/src/Projects/Coree.NETStandard/Extensions/Strings/SplitWith.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/feature/EnhanceWorkflow/src/Projects/Coree.NETStandard/Extensions/Strings/ToByteArray.cs/#L54" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
