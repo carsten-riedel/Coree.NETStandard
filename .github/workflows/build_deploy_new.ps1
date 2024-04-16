@@ -301,7 +301,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
 } elseif ($branchNameSegment -ieq "develop") {
@@ -309,7 +308,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
 } elseif ($branchNameSegment -ieq "release") {
@@ -317,7 +315,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
@@ -327,7 +324,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
@@ -337,7 +333,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
