@@ -14,7 +14,6 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
-    <None Remove="Extensions\Assembly\GetPrimaryOrCallingAssembly.cs" />
     <None Remove="Extensions\Enumerable\AppendRange.cs" />
     <None Remove="Extensions\List\Dequeue.cs" />
     <None Remove="Extensions\List\Enqueue.cs" />
