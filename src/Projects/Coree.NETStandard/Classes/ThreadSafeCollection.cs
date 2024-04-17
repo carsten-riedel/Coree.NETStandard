@@ -18,7 +18,7 @@ namespace Coree.NETStandard.Classes
     /// and data corruption when accessed from multiple threads. Null values can be stored, depending on the type <typeparamref name="T"/>.
     /// </remarks>
     /// <typeparam name="T">The type of elements in the collection. This type can be a class, including nullable reference types.</typeparam>
-    public class ThreadSafeCollection<T> : IEnumerable<T?> where T : class?
+    public class ThreadSafeCollection<T> : IEnumerable<T?>
     {
         private readonly List<T?> items;
         private readonly object syncRoot = new object(); // Object used for synchronization
@@ -275,7 +275,7 @@ namespace Coree.NETStandard.Classes
                 var index = items.FindIndex(item => predicate(item));
                 if (index == -1)
                 {
-                    return null;
+                    return default(T);
                 }
 
                 T? item = items[index];

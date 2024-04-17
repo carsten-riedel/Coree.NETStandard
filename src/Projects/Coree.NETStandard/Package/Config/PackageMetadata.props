@@ -13,6 +13,9 @@
     <PackageProjectUrl>https://github.com/carsten-riedel/Coree.NETStandard</PackageProjectUrl>
     <RepositoryUrl>https://github.com/carsten-riedel/Coree.NETStandard</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <Description>
+      <![CDATA[Coree.NETStandard is a comprehensive .NET Standard library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
+    </Description>
 
     <VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
     <VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
@@ -38,9 +41,6 @@
     <InformationalVersion>$(PackageVersion)</InformationalVersion>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
-    <Description>
-     <![CDATA[Coree.NETStandard is a comprehensive .NET Standard library streamlining coding tasks with its generic helpers. DocFX documentation is available, offering quick insights and examples for effective use.]]>
-    </Description>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
     <PackageLicenseFile>License.txt</PackageLicenseFile>
     <PackageIcon>Icon.png</PackageIcon>
