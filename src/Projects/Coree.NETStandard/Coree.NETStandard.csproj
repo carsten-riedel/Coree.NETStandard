@@ -15,6 +15,7 @@
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
     <None Remove="Abstractions\ScopedDependencyInjectionSingleton.cs" />
+    <None Remove="Abstractions\ServiceReversalPattern.cs" />
     <None Remove="Classes\AsyncEventCollection.cs" />
     <None Remove="Classes\TimeOfDay.cs" />
     <None Remove="Extensions\Enumerable\AppendRange.cs" />

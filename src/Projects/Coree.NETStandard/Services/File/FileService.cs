@@ -17,7 +17,7 @@ namespace Coree.NETStandard.Services.File
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public partial class FileService : ScopedDependencyInjectionSingleton<FileService>, IFileService, IScopedDependencyInjectionSingleton
+    public partial class FileService : ServiceReversalPattern<FileService>, IFileService
     {
 
         public string? GetCorrectCasedPath(string? path)
