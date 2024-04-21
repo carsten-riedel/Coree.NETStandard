@@ -5,6 +5,7 @@ using System.Text;
 using Coree.NETStandard.Abstractions;
 using Coree.NETStandard.Services.File;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.Process

@@ -14,10 +14,15 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
-    <None Remove="AsyncEventCollection.cs" />
+    <None Remove="Abstractions\ScopedDependencyInjectionSingleton.cs" />
+    <None Remove="Classes\AsyncEventCollection.cs" />
+    <None Remove="Classes\TimeOfDay.cs" />
     <None Remove="Extensions\Enumerable\AppendRange.cs" />
     <None Remove="Extensions\List\Dequeue.cs" />
     <None Remove="Extensions\List\Enqueue.cs" />
+    <None Remove="Timing.cs" />
+    <None Remove="Utilities\NETStandard\EventSubscription\AddHandler.cs" />
+    <None Remove="Utilities\NETStandard\EventSubscription\RemoveHandler.cs" />
   </ItemGroup>
   
   <ItemGroup>
@@ -34,6 +39,7 @@
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.48.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
   </ItemGroup>
  
   

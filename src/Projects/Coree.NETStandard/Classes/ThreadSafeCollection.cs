@@ -18,10 +18,183 @@ namespace Coree.NETStandard.Classes
     /// and data corruption when accessed from multiple threads. Null values can be stored, depending on the type <typeparamref name="T"/>.
     /// </remarks>
     /// <typeparam name="T">The type of elements in the collection. This type can be a class, including nullable reference types.</typeparam>
-    public class ThreadSafeCollection<T> : IEnumerable<T?>
+    public class ThreadSafeCollection<T> : IEnumerable<T>
     {
-        private readonly List<T?> items;
+        private readonly List<T> items;
         private readonly object syncRoot = new object(); // Object used for synchronization
+
+        private int peekCount = 0;
+        private int previousCount = 0;
+        private DateTime previousModificationTime;
+        private DateTime lastModificationTime;
+
+        /// <summary>
+        /// Gets the maximum number of items that have ever been in the collection.
+        /// </summary>
+        /// <remarks>
+        /// This property reflects the highest count of items stored in the collection at any point in time.
+        /// Access to this property is thread-safe, ensuring the count is accurate and consistent even when the collection is modified concurrently.
+        /// </remarks>
+        /// <value>The peak item count of the collection.</value>
+        public int PeekCount
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return peekCount;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the count of items in the collection just before the most recent modification.
+        /// </summary>
+        /// <remarks>
+        /// This property stores the number of items in the collection immediately before the last operation that added or removed items.
+        /// It provides a snapshot of the collection's size prior to the last change, useful for understanding the state changes over time.
+        /// Access to this property is thread-safe, ensuring that reads are consistent and not subject to partial updates.
+        /// </remarks>
+        /// <value>The item count of the collection before the last modification.</value>
+        public int PreviousCount
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return previousCount;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Calculates the difference in the item count since the last update.
+        /// </summary>
+        /// <remarks>
+        /// This property provides the net change in the collection's count following the most recent operation, whether an addition or a removal.
+        /// The value can be negative if the collection size has decreased since the last operation.
+        /// Access to this value is thread-safe.
+        /// </remarks>
+        /// <value>The net change in the collection's size since the last modification.</value>
+        public int LastChangeCount
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return items.Count - previousCount;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Calculates the absolute change in count since the last update.
+        /// </summary>
+        /// <remarks>
+        /// This property provides the absolute change in the collection's size since the last update, regardless of whether the size increased or decreased.
+        /// It is useful for determining the magnitude of change without regard to the direction of that change.
+        /// Access to this property is thread-safe.
+        /// </remarks>
+        /// <value>The absolute change in the collection's size since the last modification.</value>
+        public int LastChangeAmount
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return Math.Abs(items.Count - previousCount);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Calculates the percentage change in the count of items since the last update.
+        /// </summary>
+        /// <remarks>
+        /// This property returns the percentage change in the size of the collection based on the number of items before the last operation
+        /// and the current number of items. If the previous count is zero, which means there were no items before the last operation,
+        /// the change percentage is undefined, and thus returns -1. This helps in scenarios where a percentage change calculation would 
+        /// otherwise lead to a division by zero error.
+        /// </remarks>
+        /// <value>
+        /// The percentage change in the collection size, always returned as a positive value to indicate the magnitude of change,
+        /// or -1 if the change is undefined due to a zero previous count.
+        /// </value>
+
+        public int LastChangePercent
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    if (previousCount == 0)
+                    {
+                        return -1; // Indicates undefined change
+                    }
+                    int percentChange = ((items.Count - previousCount) * 100) / previousCount;
+                    return Math.Abs(percentChange); // Ensure the result is always positive
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the time of the last modification to the collection.
+        /// </summary>
+        /// <remarks>
+        /// This property records the timestamp when the last operation (addition, removal, or update) was performed on the collection.
+        /// Access to this property is thread-safe, ensuring the timestamp is consistent with the last modification event.
+        /// </remarks>
+        /// <value>The DateTime of the last update to the collection.</value>
+        public DateTime LastModificationTime
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return lastModificationTime;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the time of the modification prior to the last modification.
+        /// </summary>
+        /// <remarks>
+        /// This property records the timestamp of the modification that occurred just before the most recent one.
+        /// It provides a historical reference for changes, useful for tracking the frequency or cadence of updates.
+        /// Access to this property is thread-safe.
+        /// </remarks>
+        /// <value>The DateTime of the modification before the last update.</value>
+        public DateTime PreviousModificationTime
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return previousModificationTime;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets the time difference between the last two modifications.
+        /// </summary>
+        /// <remarks>
+        /// This property calculates the duration between the most recent and the previous modifications to the collection.
+        /// It is useful for monitoring the time intervals between collection updates, which can be critical in performance-sensitive applications.
+        /// Access to this property is thread-safe.
+        /// </remarks>
+        /// <value>The TimeSpan representing the duration between the last two updates.</value>
+        public TimeSpan ModificationTimeDifference
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return lastModificationTime - previousModificationTime;
+                }
+            }
+        }
 
         /// <summary>
         /// Initializes a new instance of the ThreadSafeCollection class that is empty.
@@ -32,7 +205,10 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         public ThreadSafeCollection()
         {
-            items = new List<T?>();
+            items = new List<T>();
+            var now = DateTime.Now;
+            previousModificationTime = now;
+            lastModificationTime = now;
         }
 
         #region Stack
@@ -45,11 +221,21 @@ namespace Coree.NETStandard.Classes
         /// The item is added to the end of the collection. It accepts null values for types that allow it.
         /// </remarks>
         /// <param name="item">The item to add to the collection. Can be null for nullable reference types.</param>
-        public void Push(T? item)
+        public void Push(T item)
         {
             lock (syncRoot)
             {
-                items.Add(item);
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                this.items.Add(item);
+
+                lastModificationTime = DateTime.Now;
+
+                if (this.items.Count > peekCount)
+                {
+                    peekCount = this.items.Count;
+                }
             }
         }
 
@@ -62,7 +248,7 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         /// <returns>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</returns>
         /// <exception cref="InvalidOperationException">Thrown when the collection is empty.</exception>
-        public T? Pop()
+        public T Pop()
         {
             lock (syncRoot)
             {
@@ -71,8 +257,14 @@ namespace Coree.NETStandard.Classes
                     throw new InvalidOperationException("Cannot perform Pop operation on an empty collection.");
                 }
 
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
                 var item = items[items.Count - 1];
                 items.RemoveAt(items.Count - 1);
+                
+                lastModificationTime = DateTime.Now;
+
                 return item;
             }
         }
@@ -86,7 +278,7 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         /// <returns>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</returns>
         /// <exception cref="InvalidOperationException">Thrown when the collection is empty.</exception>
-        public T? Peek()
+        public T Peek()
         {
             lock (syncRoot)
             {
@@ -111,11 +303,21 @@ namespace Coree.NETStandard.Classes
         /// It functions as part of the thread-safe queue functionality, allowing items to be enqueued (added to the end).
         /// </remarks>
         /// <param name="item">The item to add to the collection. Can be null if the type <typeparamref name="T"/> allows it.</param>
-        public void Enqueue(T? item)
+        public void Enqueue(T item)
         {
             lock (syncRoot)
             {
-                items.Add(item);
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                this.items.Add(item);
+
+                lastModificationTime = DateTime.Now;
+
+                if (this.items.Count > peekCount)
+                {
+                    peekCount = this.items.Count;
+                }
             }
         }
 
@@ -129,7 +331,7 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         /// <returns>The item at the beginning of the collection if it exists; otherwise, throws an InvalidOperationException.</returns>
         /// <exception cref="InvalidOperationException">Thrown when attempting to perform the Dequeue operation on an empty collection.</exception>
-        public T? Dequeue()
+        public T Dequeue()
         {
             lock (syncRoot)
             {
@@ -137,8 +339,15 @@ namespace Coree.NETStandard.Classes
                 {
                     throw new InvalidOperationException("Cannot perform Dequeue operation on an empty collection.");
                 }
+
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
                 var item = items[0];
                 items.RemoveAt(0);
+
+                lastModificationTime = DateTime.Now;
+
                 return item;
             }
         }
@@ -159,7 +368,7 @@ namespace Coree.NETStandard.Classes
         /// <typeparam name="TResult">The type of the result elements.</typeparam>
         /// <param name="operation">A function representing the LINQ operation to be performed on the collection.</param>
         /// <returns>An <see cref="IEnumerable{TResult}"/> that contains the result of applying the LINQ operation on the collection snapshot.</returns>
-        public IEnumerable<TResult> LockedLinq<TResult>(Func<IEnumerable<T?>, IEnumerable<TResult>> operation)
+        public IEnumerable<TResult> ThreadSafeTransform<TResult>(Func<IEnumerable<T>, IEnumerable<TResult>> operation)
         {
             lock (syncRoot)
             {
@@ -170,10 +379,36 @@ namespace Coree.NETStandard.Classes
         }
 
         /// <summary>
+        /// Provides a thread-safe snapshot of the collection, allowing for safe read access by other operations without risk of modification during enumeration.
+        /// </summary>
+        /// <returns>A snapshot of the collection as a new list, ensuring that the original collection remains untouched during access.</returns>
+        /// <remarks>
+        /// This method locks the collection to prevent other operations from modifying it while the snapshot is being created, ensuring consistent data state.
+        /// </remarks>
+        /// <example>
+        /// <code>
+        /// var itemsSnapshot = myCollection.ThreadSafeTransform();
+        /// foreach (var item in itemsSnapshot) {
+        ///     Console.WriteLine(item);
+        /// }
+        /// </code>
+        /// </example>
+        public IEnumerable<T> ThreadSafeTransform()
+        {
+            lock (syncRoot)
+            {
+                // Return a snapshot of the items
+                return items.ToList();
+            }
+        }
+
+
+
+        /// <summary>
         /// Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.
         /// </summary>
         /// <remarks>
-        /// Similar to <see cref="LockedLinq"/>, this method locks the collection and operates on a snapshot to ensure thread safety.
+        /// Similar to <see cref="ThreadSafeTransform"/>, this method locks the collection and operates on a snapshot to ensure thread safety.
         /// After performing the specified LINQ operation, it creates a deep copy of the result using JSON serialization.
         /// This approach guarantees that the operation's results are completely isolated from the original items in the collection,
         /// providing additional safety against mutations.
@@ -181,7 +416,7 @@ namespace Coree.NETStandard.Classes
         /// <typeparam name="TResult">The type of the result elements.</typeparam>
         /// <param name="operation">A function representing the LINQ operation to be performed on the collection.</param>
         /// <returns>An <see cref="IEnumerable{TResult}"/> that contains a deep copy of the result of applying the LINQ operation on the collection snapshot.</returns>
-        public IEnumerable<TResult> LockedLinqDeepCopy<TResult>(Func<IEnumerable<T?>, IEnumerable<TResult>> operation)
+        public IEnumerable<TResult> ThreadSafeTransformDeepClone<TResult>(Func<IEnumerable<T>, IEnumerable<TResult>> operation)
         {
             lock (syncRoot)
             {
@@ -203,10 +438,10 @@ namespace Coree.NETStandard.Classes
         /// allowing for safe iteration over the collection items even when other threads might be modifying the collection concurrently.
         /// Note that the snapshot is a shallow copy; thus, the enumeration reflects the collection's state at the moment of the snapshot's creation.
         /// </remarks>
-        /// <returns><![CDATA[An IEnumerator<T?> that can be used to iterate through the collection.]]></returns>
-        public IEnumerator<T?> GetEnumerator()
+        /// <returns><![CDATA[An IEnumerator<T> that can be used to iterate through the collection.]]></returns>
+        public IEnumerator<T> GetEnumerator()
         {
-            T?[] snapshot;
+            T[] snapshot;
             lock (syncRoot)
             {
                 snapshot = items.ToArray();
@@ -244,7 +479,7 @@ namespace Coree.NETStandard.Classes
         /// <param name="index">The zero-based index of the item to fetch and remove.</param>
         /// <returns>The item that was removed from the collection.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when the index is out of range.</exception>
-        public T? TakeAt(int index)
+        public T TakeAt(int index)
         {
             lock (syncRoot)
             {
@@ -253,8 +488,14 @@ namespace Coree.NETStandard.Classes
                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
                 }
 
-                T? item = items[index];
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                T item = items[index];
                 items.RemoveAt(index);
+
+                lastModificationTime = DateTime.Now;
+
                 return item;
             }
         }
@@ -268,7 +509,7 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         /// <param name="predicate">The predicate used to find the item to remove.</param>
         /// <returns>The item that was removed from the collection, or <c>null</c> if no item matched the predicate.</returns>
-        public T? Take(Func<T?, bool> predicate)
+        public T? TakeFirst(Func<T, bool> predicate)
         {
             lock (syncRoot)
             {
@@ -278,8 +519,14 @@ namespace Coree.NETStandard.Classes
                     return default(T);
                 }
 
-                T? item = items[index];
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                T item = items[index];
                 items.RemoveAt(index);
+
+                lastModificationTime = DateTime.Now;
+
                 return item;
             }
         }
@@ -293,16 +540,43 @@ namespace Coree.NETStandard.Classes
         /// </remarks>
         /// <param name="predicate">The predicate used to find the items to remove.</param>
         /// <returns>An enumerable of all items that were removed from the collection.</returns>
-        public IEnumerable<T?> TakeAll(Func<T?, bool> predicate)
+        public IEnumerable<T> TakeAll(Func<T, bool> predicate)
         {
             lock (syncRoot)
             {
-                var itemsToRemove = items.Where(predicate).ToList();
-                foreach (var item in itemsToRemove)
-                {
-                    items.Remove(item);
-                }
+                // Find all items matching the predicate
+                List<T> itemsToRemove = items.Where(predicate).ToList();
+
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                items.RemoveAll(new Predicate<T>(predicate));
+
+                lastModificationTime = DateTime.Now;
+
                 return itemsToRemove;
+            }
+        }
+
+        /// <summary>
+        /// Removes all items from the collection that match the specified predicate in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// This method locks the collection to ensure that no other operations modify it concurrently while it is being updated.
+        /// It's particularly useful for batch removal of items based on specific conditions. The actual removal is performed
+        /// efficiently in a single pass through the collection.
+        /// </remarks>
+        /// <param name="predicate">A delegate that defines the conditions of the elements to remove from the collection.</param>
+        public void RemoveAll(Func<T, bool> predicate)
+        {
+            lock (syncRoot)
+            {
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                items.RemoveAll(new Predicate<T>(predicate));
+
+                lastModificationTime = DateTime.Now;
             }
         }
 
@@ -313,11 +587,46 @@ namespace Coree.NETStandard.Classes
         /// Synchronizes access to the collection to safely add the item, supporting concurrent modifications.
         /// </remarks>
         /// <param name="item">The item to be added to the collection. Can be null if the type <typeparamref name="T"/> permits.</param>
-        public void Add(T? item)
+        public void Add(T item)
         {
             lock (syncRoot)
             {
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
                 items.Add(item);
+
+                lastModificationTime = DateTime.Now;
+
+                if (items.Count > peekCount)
+                {
+                    peekCount = items.Count;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Adds items to the collection in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// Synchronizes access to the collection to safely add the item, supporting concurrent modifications.
+        /// </remarks>
+        /// <param name="items">The items to be added to the collection. Can be null if the type <typeparamref name="T"/> permits.</param>
+        public void AddRange(IEnumerable<T> items)
+        {
+            lock (syncRoot)
+            {
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                this.items.AddRange(items);
+
+                lastModificationTime = DateTime.Now;
+
+                if (this.items.Count > peekCount)
+                {
+                    peekCount = this.items.Count;
+                }
             }
         }
 
@@ -329,11 +638,47 @@ namespace Coree.NETStandard.Classes
         /// If the item is not found, no action is taken.
         /// </remarks>
         /// <param name="item">The item to remove from the collection. Can be null if the type <typeparamref name="T"/> permits.</param>
-        public void Remove(T? item)
+        public void Remove(T item)
         {
             lock (syncRoot)
             {
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
                 items.Remove(item);
+
+                lastModificationTime = DateTime.Now;
+            }
+        }
+
+        /// <summary>
+        /// Removes the item at the specified index from the collection in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// This method locks the collection to ensure exclusive access during the removal operation. It captures the state before the change
+        /// and updates internal timestamps to reflect the modification time. An ArgumentOutOfRangeException is thrown if the index is
+        /// outside the valid range of the collection's indices. This method updates the previous and last modification times to track changes.
+        /// </remarks>
+        /// <param name="index">The zero-based index of the item to remove.</param>
+        /// <exception cref="ArgumentOutOfRangeException">Thrown if the index is less than 0 or equal to or greater than the number of items in the collection.</exception>
+        public void RemoveAt(int index)
+        {
+            lock (syncRoot)
+            {
+                
+                if (index < 0 || index >= items.Count)
+                {
+                    throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
+                }
+
+                
+                previousCount = this.items.Count;
+
+                previousModificationTime = lastModificationTime;
+
+                items.RemoveAt(index);
+
+                lastModificationTime = DateTime.Now;
             }
         }
 
@@ -348,7 +693,7 @@ namespace Coree.NETStandard.Classes
         /// <param name="index">The zero-based index of the item to retrieve.</param>
         /// <returns>The item at the specified index. Can be null if the item itself is null or if the type <typeparamref name="T"/> allows null values.</returns>
         /// <exception cref="ArgumentOutOfRangeException">Thrown when the specified index is outside the bounds of the collection.</exception>
-        public T? GetItemAt(int index)
+        public T GetItemAt(int index)
         {
             lock (syncRoot)
             {
@@ -380,7 +725,7 @@ namespace Coree.NETStandard.Classes
                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
                 }
                 var itemJson = JsonSerializer.Serialize(items[index]);
-                return JsonSerializer.Deserialize<T?>(itemJson);
+                return JsonSerializer.Deserialize<T>(itemJson);
             }
         }
 
@@ -393,16 +738,16 @@ namespace Coree.NETStandard.Classes
         /// will not affect the original collection.
         /// </remarks>
         /// <returns>A new List containing deep copies of the items in the collection. Returns an empty list if the collection is empty.</returns>
-        public List<T?> GetCollectionCopyToList()
+        public List<T> GetCollectionCopyToList()
         {
             lock (syncRoot)
             {
                 // Serialize the items list to a JSON string.
                 string serializedItems = JsonSerializer.Serialize(items, new JsonSerializerOptions { WriteIndented = true });
                 // Deserialize the JSON string back into a new List<T?>, effectively creating deep copies of the items.
-                var deserializedItems = JsonSerializer.Deserialize<List<T?>>(serializedItems);
+                var deserializedItems = JsonSerializer.Deserialize<List<T>>(serializedItems);
                 // Return the deserialized list or a new empty list if deserialization returns null.
-                return deserializedItems ?? new List<T?>();
+                return deserializedItems ?? new List<T>();
             }
         }
 
@@ -430,7 +775,7 @@ namespace Coree.NETStandard.Classes
         /// <remarks>
         /// Access to the item is synchronized to ensure thread safety. Setting an item acquires a lock to prevent race conditions.
         /// </remarks>
-        public T? this[int index]
+        public T this[int index]
         {
             get
             {
@@ -450,10 +795,31 @@ namespace Coree.NETStandard.Classes
         }
 
         /// <summary>
-        /// Gets a value indicating whether the collection contains any items, ensuring thread safety.
+        /// Gets a value indicating whether the collection has no items, ensuring thread safety.
         /// </summary>
         /// <value>
-        /// <c>true</c> if the collection contains one or more items; otherwise, <c>false</c>.
+        /// <c>true</c> if the collection contains no items; otherwise, <c>false</c>.
+        /// </value>
+        /// <remarks>
+        /// This property locks the collection to ensure that the check is performed in a thread-safe manner,
+        /// preventing race conditions that could arise from concurrent modifications to the collection.
+        /// </remarks>
+        public bool IsEmpty
+        {
+            get
+            {
+                lock (syncRoot)
+                {
+                    return items.Count == 0;
+                }
+            }
+        }
+
+        /// <summary>
+        /// Gets a value indicating whether the collection has  items, ensuring thread safety.
+        /// </summary>
+        /// <value>
+        /// <c>true</c> if the collection has items; otherwise, <c>false</c>.
         /// </value>
         /// <remarks>
         /// This property locks the collection to ensure that the check is performed in a thread-safe manner,
@@ -469,8 +835,44 @@ namespace Coree.NETStandard.Classes
                 }
             }
         }
+
+        /// <summary>
+        /// Removes all items from the collection in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// This method locks the collection to ensure that no other operations can modify it concurrently during the clearing process.
+        /// </remarks>
+        public void Clear()
+        {
+            lock (syncRoot)
+            {
+                previousCount = this.items.Count;
+                previousModificationTime = lastModificationTime;
+
+                items.Clear();  // Clear all items from the list
+
+                lastModificationTime = DateTime.Now;
+            }
+        }
+
+        /// <summary>
+        /// Determines whether the collection contains any elements or any elements that match a predicate, if one is provided, in a thread-safe manner.
+        /// </summary>
+        /// <remarks>
+        /// This method locks the collection to ensure thread safety during the evaluation.
+        /// If no predicate is provided, it simply checks if the collection has any elements.
+        /// </remarks>
+        /// <param name="predicate">An optional predicate to test each element for a condition.</param>
+        /// <returns>true if the collection contains any elements or any elements that satisfy the condition; otherwise, false.</returns>
+        public bool Any(Func<T, bool>? predicate = null)
+        {
+            lock (syncRoot)
+            {
+                if (predicate == null)
+                    return items.Count > 0;
+                else
+                    return items.Any(predicate);
+            }
+        }
     }
-
-
-
 }

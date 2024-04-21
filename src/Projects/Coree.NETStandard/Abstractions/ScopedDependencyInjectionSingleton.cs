@@ -1,8 +1,13 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+
+using static System.Collections.Specialized.BitVector32;
 
 namespace Coree.NETStandard.Abstractions
 {
@@ -63,11 +68,10 @@ namespace Coree.NETStandard.Abstractions
     /// </code>
     /// </summary>
     /// <typeparam name="T">The type of the singleton instance.</typeparam>
-    public abstract class DependencySingleton<T> : IDependencySingleton
+    public abstract class ScopedDependencyInjectionSingleton<T> : IScopedDependencyInjectionSingleton
     {
-        private static readonly Lazy<T> instance = new Lazy<T>(valueFactory: CreateInstance);
-        private static readonly IServiceCollection services = new ServiceCollection();
-        private static IServiceProvider? serviceProvider;
+        private static Lazy<T> instance = new Lazy<T>(() => CreateServiceStack());
+        private static IHostBuilder? host;
 
         private static LogLevel _logLevelFilter = LogLevel.Information;
         private static readonly object logLevelLock = new object();
@@ -109,13 +113,18 @@ namespace Coree.NETStandard.Abstractions
         /// Gets the singleton instance of the class, ensuring thread safety.
         /// </summary>
         /// <returns>
-        /// The singleton instance of type <typeparamref name="T"/>, which is the specific implementation of the 
+        /// The singleton instance of type <typeparamref name="T"/>, which is the specific implementation of the
         /// <see cref="DependencySingleton{T}"/>. Type <typeparamref name="T"/> represents the derived singleton class that includes
         /// implementations for required services such as logging and configuration. The instance is initialized with these services
         /// upon the first request, adhering to the singleton pattern to ensure only one instance is created and shared throughout
         /// the application.
         /// </returns>
         public static T Instance => instance.Value;
+
+        public static void CreateInstance(Action<IServiceCollection> ? configureServices = null, Action<ILoggingBuilder>? configureLogging = null)
+        {
+            instance = new Lazy<T>(valueFactory: () => CreateServiceStack(configureServices, configureLogging), true);
+        }
 
         /// <summary>
         /// Provides logging capabilities for the singleton instance. By default, the logger's minimum logging level is set to Trace,
@@ -133,16 +142,20 @@ namespace Coree.NETStandard.Abstractions
         /// </summary>
         protected readonly IConfiguration configuration;
 
+
+        protected readonly IHostEnvironment hostEnvironment;
+
         /// <summary>
         /// Initializes a new instance of the <see cref="DependencySingleton{T}"/> class
         /// with the specified logger and configuration services.
         /// </summary>
         /// <param name="logger">The logger service.</param>
         /// <param name="configuration">The configuration service.</param>
-        protected DependencySingleton(ILogger<T> logger, IConfiguration configuration)
+        protected ScopedDependencyInjectionSingleton(ILogger<T> logger, IConfiguration configuration,IHostEnvironment hostEnvironment)
         {
             this.logger = logger;
             this.configuration = configuration;
+            this.hostEnvironment = hostEnvironment; 
         }
 
         /// <summary>
@@ -150,34 +163,36 @@ namespace Coree.NETStandard.Abstractions
         /// resolving dependencies using dependency injection if available.
         /// </summary>
         /// <returns>A new instance of the singleton class.</returns>
-        private static T CreateInstance()
+        private static T CreateServiceStack(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null)
         {
             try
             {
-                if (serviceProvider == null)
+                host = Host.CreateDefaultBuilder();
+                host.ConfigureServices(services =>
                 {
-                    services.AddLogging(builder =>
+
+                    services.AddLogging(loggingBuilder =>
                     {
-                        builder.AddConsole();
-                        builder.AddDebug();
-                        builder.SetMinimumLevel(LogLevel.Trace);
-                        builder.AddFilter((category, level) => level >= LogLevelFilter);
+                        if (configureLogging != null)
+                        {
+                            configureLogging?.Invoke(loggingBuilder);
+                        }
+                        else
+                        {
+                            loggingBuilder.SetMinimumLevel(LogLevel.Trace);
+                            loggingBuilder.AddFilter((category, level) => level >= LogLevelFilter);
+                        }
                     });
+                    configureServices?.Invoke(services);
+                });
 
-                    var configuration = new ConfigurationBuilder();
-                    configuration.AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
-                    var configBuild = configuration.Build();
-                    services.AddSingleton<IConfiguration>(configBuild);
+                var app = host.Build();
 
-                    // Build the service provider
-                    serviceProvider = services.BuildServiceProvider();
-                }
-
-                // Resolve the required services
-                var logger = serviceProvider.GetRequiredService<ILogger<T>>();
-                var config = serviceProvider.GetRequiredService<IConfiguration>();
-
-                var instance = (T?)Activator.CreateInstance(typeof(T), logger, config);
+                var logger = app.Services.GetRequiredService<ILogger<T>>();
+                var config = app.Services.GetRequiredService<IConfiguration>();
+                var hostingEnvironment = app.Services.GetRequiredService<IHostEnvironment>();
+                
+                var instance = (T?)Activator.CreateInstance(typeof(T), logger, config, hostingEnvironment);
                 if (instance == null)
                 {
                     throw new ArgumentNullException(nameof(instance));
@@ -189,5 +204,20 @@ namespace Coree.NETStandard.Abstractions
                 throw new InvalidOperationException("Failed to create instance.", ex);
             }
         }
+    }
+
+    /// <summary>
+    /// Represents an abstract base class for creating thread-safe singleton instances with optional dependency injection support.
+    /// This pattern can be utilized in both dependency injection (DI) and non-DI scenarios.
+    /// Example usage:
+    /// </summary>
+    public interface IScopedDependencyInjectionSingleton
+    {
+        /// <summary>
+        /// Sets the minimum log level filter for the application. This level acts as a filter for the logs that are emitted.
+        /// Logs below this level will not be emitted. Default is Information
+        /// </summary>
+        /// <param name="logLevel">The log level to set as the minimum threshold for logging.</param>
+        public void SetLogLevelFilter(LogLevel logLevel = LogLevel.Information);
     }
 }
