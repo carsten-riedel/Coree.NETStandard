@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
-using static System.Collections.Specialized.BitVector32;
 
 namespace Coree.NETStandard.Abstractions
 {
@@ -68,49 +63,45 @@ namespace Coree.NETStandard.Abstractions
     /// </code>
     /// </summary>
     /// <typeparam name="T">The type of the singleton instance.</typeparam>
-    public abstract class ServiceReversalPattern<T>
+    public abstract class ServiceFactory<T> : IDisposable where T : class
     {
-        private static IHostBuilder? host;
+        private static IHostBuilder? _hostBuilder;
+        private static readonly IHost? _host;
 
-        private static LogLevel _logLevelFilter = LogLevel.Information;
-
-        public static T GetControl(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null)
+        public static T CreateServiceFactory(Action<IHostBuilder>? configureHost = null)
         {
-            return CreateServiceStack(configureServices, configureLogging);
+            return CreateServiceStack(null, null, configureHost);
         }
 
-        /// <summary>
-        /// Provides logging capabilities for the singleton instance. By default, the logger's minimum logging level is set to Trace,
-        /// allowing all log messages to be captured. However, the default filter level applied to log messages is set to Information,
-        /// meaning that only logs at Information level or higher will be emitted unless otherwise adjusted. The logging level filter
-        /// can be dynamically changed at runtime using the <see cref="SetLogLevelFilter"/> method to control the verbosity of the logging output.
-        /// </summary>
-        protected readonly ILogger<T> logger;
-
-        /// <summary>
-        /// Represents the configuration for the application. This encompasses settings from
-        /// various configuration sources (e.g., appsettings.json, environment variables) and
-        /// is used to access DependencySingleton settings such as connection strings, feature
-        /// toggles, and other configurable aspects of the application.
-        /// </summary>
-        protected readonly IConfiguration configuration;
-
-        protected readonly IHostEnvironment hostEnvironment;
-
-        protected readonly IServiceProvider serviceProvider;
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="DependencySingleton{T}"/> class
-        /// with the specified logger and configuration services.
-        /// </summary>
-        /// <param name="logger">The logger service.</param>
-        /// <param name="configuration">The configuration service.</param>
-        protected ServiceReversalPattern(ILogger<T> logger, IConfiguration configuration, IHostEnvironment hostEnvironment, IServiceProvider serviceProvider)
+        public static T CreateServiceFactory(Action<IServiceCollection>? services = null)
         {
-            this.logger = logger;
-            this.configuration = configuration;
-            this.hostEnvironment = hostEnvironment;
-            this.serviceProvider = serviceProvider;
+            return CreateServiceStack(services, null, null);
+        }
+
+        public static T CreateServiceFactory(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null, Action<IHostBuilder>? configureHost = null)
+        {
+            return CreateServiceStack(configureServices, configureLogging, configureHost);
+        }
+
+        public static T CreateServiceFactory()
+        {
+            return CreateServiceFactory(LogLevel.Trace);
+        }
+
+        public static T CreateServiceFactory(LogLevel logLevel)
+        {
+            return CreateServiceStack(configureServices: null, configureLogging: (log) => ConfigureDefaultLogging(log, logLevel), configureHost: (host) => ConfigureDefaultHost(host));
+        }
+
+        private static void ConfigureDefaultLogging(ILoggingBuilder log, LogLevel logLevel)
+        {
+            log.SetMinimumLevel(logLevel);
+            log.AddFilter((category, level) => level >= logLevel);
+        }
+
+        private static void ConfigureDefaultHost(IHostBuilder host)
+        {
+            host.UseConsoleLifetime(lifeTimeOptions => { lifeTimeOptions.SuppressStatusMessages = true; });
         }
 
         /// <summary>
@@ -118,36 +109,31 @@ namespace Coree.NETStandard.Abstractions
         /// resolving dependencies using dependency injection if available.
         /// </summary>
         /// <returns>A new instance of the singleton class.</returns>
-        private static T CreateServiceStack(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null)
+        private static T CreateServiceStack(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null, Action<IHostBuilder>? configureHost = null)
         {
             try
             {
-                host = Host.CreateDefaultBuilder();
-                host.ConfigureServices(services =>
+                _hostBuilder = Host.CreateDefaultBuilder();
+
+                _hostBuilder.ConfigureServices(services =>
                 {
                     services.AddLogging(loggingBuilder =>
                     {
-                        if (configureLogging != null)
-                        {
-                            configureLogging?.Invoke(loggingBuilder);
-                        }
-                        else
-                        {
-                            loggingBuilder.SetMinimumLevel(LogLevel.Trace);
-                            loggingBuilder.AddFilter((category, level) => level >= LogLevel.Trace);
-                        }
+                        configureLogging?.Invoke(loggingBuilder);
                     });
                     configureServices?.Invoke(services);
                 });
 
-                var app = host.Build();
+                configureHost?.Invoke(_hostBuilder);
 
-                var logger = app.Services.GetRequiredService<ILogger<T>>();
-                var config = app.Services.GetRequiredService<IConfiguration>();
-                var hostingEnvironment = app.Services.GetRequiredService<IHostEnvironment>();
+                IHost? app = _hostBuilder.Build();
+
+                _host?.Start();
+
                 var serviceProvider = app.Services.GetRequiredService<IServiceProvider>();
 
-                var instance = (T?)Activator.CreateInstance(typeof(T), logger, config, hostingEnvironment, serviceProvider);
+                T instance = ActivatorUtilities.CreateInstance<T>(serviceProvider);
+
                 if (instance == null)
                 {
                     throw new ArgumentNullException(nameof(instance));
@@ -158,6 +144,11 @@ namespace Coree.NETStandard.Abstractions
             {
                 throw new InvalidOperationException("Failed to create instance.", ex);
             }
+        }
+
+        public void Dispose()
+        {
+            _host?.StopAsync().ConfigureAwait(false);
         }
     }
 }

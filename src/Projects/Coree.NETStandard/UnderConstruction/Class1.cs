@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System;
 using System.Collections.Immutable;
 using System.Threading;
-using System.Linq;
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.UnderConstruction
 {
 
     public class TimedEntry<T>

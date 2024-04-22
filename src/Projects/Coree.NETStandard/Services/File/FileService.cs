@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
 using Coree.NETStandard.Abstractions;
-using Coree.NETStandard.Services.RuntimeInsights;
 
 using Microsoft.Extensions.Logging;
 
@@ -17,8 +14,14 @@ namespace Coree.NETStandard.Services.File
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public partial class FileService : ServiceReversalPattern<FileService>, IFileService
+    public partial class FileService : ServiceFactory<FileService>, IFileService
     {
+        private readonly ILogger<FileService>? _logger;
+
+        public FileService(ILogger<FileService>? logger = null)
+        {
+            this._logger = logger;
+        }
 
         public string? GetCorrectCasedPath(string? path)
         {
@@ -126,7 +129,7 @@ namespace Coree.NETStandard.Services.File
             var pathVariable2 = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
             if (pathVariable2 == null)
             {
-                logger.LogWarning("The PATH environment variable is not set or cannot be accessed. Unable to search for command availability.");
+                _logger?.LogWarning("The PATH environment variable is not set or cannot be accessed. Unable to search for command availability.");
                 return null;
             }
 
@@ -138,7 +141,7 @@ namespace Coree.NETStandard.Services.File
                 var directoryInfo = new DirectoryInfo(pathDirectoryList[i]);
                 if (directoryInfo.Exists == false)
                 {
-                    logger.LogDebug($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
+                    _logger?.LogDebug($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
                     pathDirectoryList[i] = "";
                     continue;
                 }
@@ -159,7 +162,7 @@ namespace Coree.NETStandard.Services.File
                     }
                     catch (Exception ex)
                     {
-                        logger.LogInformation($"The PATH contains a invalid entry skipping. {ex.Message}", ex);
+                        _logger?.LogInformation($"The PATH contains a invalid entry skipping. {ex.Message}", ex);
                     }
                 }
                 pathDirectoryList = pathDirectoryList.Where(item => !string.IsNullOrEmpty(item)).ToArray().GroupBy(item => item).Select(group => group.First()).ToArray();
