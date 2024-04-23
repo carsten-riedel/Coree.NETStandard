@@ -17,6 +17,7 @@
     <None Remove="Abstractions\ServiceFactory.cs" />
     <None Remove="Classes\AsyncEventCollection.cs" />
     <None Remove="Classes\TimeOfDay.cs" />
+    <None Remove="Extensions\DateTime\DelayUntil.cs" />
     <None Remove="Extensions\Enumerable\AppendRange.cs" />
     <None Remove="Extensions\List\Dequeue.cs" />
     <None Remove="Extensions\List\Enqueue.cs" />

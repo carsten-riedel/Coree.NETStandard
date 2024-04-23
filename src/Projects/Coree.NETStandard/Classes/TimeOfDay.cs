@@ -2,8 +2,6 @@
 
 namespace Coree.NETStandard.Classes
 {
-
-
     /// <summary>
     /// Represents a specific time of day, independent of any date.
     /// </summary>
@@ -174,5 +172,4 @@ namespace Coree.NETStandard.Classes
             return _time.ToString("hh\\:mm\\:ss");
         }
     }
-
 }
