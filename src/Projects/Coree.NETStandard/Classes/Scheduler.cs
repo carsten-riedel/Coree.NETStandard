@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
+
+using Coree.NETStandard.Utilities;
+
 
 namespace Coree.NETStandard.Classes
 {
     public class Scheduler
     {
-        public event EventHandler<TickerEventArgs> TickOccurred;
-
         public class TickerEventArgs : EventArgs
         {
             public TimeSpan diviation { get; set; }
@@ -42,16 +44,20 @@ namespace Coree.NETStandard.Classes
             daily
         }
 
-        protected virtual void RaiseTickEvent(TickerEventArgs args)
+        public delegate Task TickerEventDelegate(object sender,TickerEventArgs e, CancellationToken cancellationToken);
+
+        private TickerEventDelegate? _tickOccurred;
+
+        public event TickerEventDelegate TickOccurred
         {
-            var handler = TickOccurred;
-            if (handler != null)
-            {
-                foreach (var singleHandler in handler.GetInvocationList())
-                {
-                    Task.Run(() => singleHandler.DynamicInvoke(this, args));
-                }
-            }
+            add { EventSubscription.AddHandler(ref _tickOccurred, value); }
+            remove { EventSubscription.RemoveHandler(ref _tickOccurred, value); }
+        }
+
+        protected virtual void RaiseTickEvent(TickerEventArgs args,CancellationToken cancellationToken)
+        {
+            var handler = _tickOccurred;
+            handler?.Invoke(this, args, cancellationToken);
         }
 
         private async void TickMonitor()
@@ -62,7 +68,7 @@ namespace Coree.NETStandard.Classes
                 var now = DateTime.Now;
                 if (nextSchedule < now)
                 {
-                    RaiseTickEvent(new TickerEventArgs() { TickTime = now, diviation = now - nextSchedule, FormattedTickTime = now.ToString("MM.dd.yyyy HH:mm:ss.fff") });
+                    RaiseTickEvent(new TickerEventArgs() { TickTime = now, diviation = now - nextSchedule, FormattedTickTime = now.ToString("MM.dd.yyyy HH:mm:ss.fff") }, new CancellationTokenSource().Token);
                     //ClearSchedulesBefore(now);
                     _scheduledDates.RemoveAll(schedule => schedule < now);
                     //_scheduledDates.Remove(nextSchedule);
