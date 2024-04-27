@@ -5,14 +5,13 @@ using System.Runtime.CompilerServices;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Coree.NETStandard.Abstractions;
 using Coree.NETStandard.Abstractions.DependencySingleton;
 
 using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.RuntimeInsights
 {
-    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService , IDependencySingleton
+    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService, IDependencySingleton
     {
         /// <summary>
         /// Checks if the current build is a debug build.
@@ -24,7 +23,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
         [MethodImpl(MethodImplOptions.AggressiveInlining)]
         public bool? IsDebugBuild()
         {
-           return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
+            return IsDebugBuildAsync(CancellationToken.None).GetAwaiter().GetResult();
         }
 
         /// <summary>
@@ -90,6 +89,5 @@ namespace Coree.NETStandard.Services.RuntimeInsights
             }
             return false;
         }
-
     }
 }

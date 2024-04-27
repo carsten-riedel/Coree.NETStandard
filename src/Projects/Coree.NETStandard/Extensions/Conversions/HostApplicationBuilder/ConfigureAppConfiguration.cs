@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
@@ -13,7 +11,6 @@ namespace Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
     /// </summary>
     public static partial class ConversionsHostApplicationBuilderExtensions
     {
-
         /// <summary>
         /// Configures application configuration for the host builder using a delegate.
         /// </summary>
@@ -37,6 +34,5 @@ namespace Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
             configureDelegate.Invoke(hostBuilder.Configuration);
             return hostBuilder;
         }
-
     }
 }

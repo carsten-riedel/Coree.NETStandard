@@ -32,7 +32,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
     ///     await fileService2.SomeFileOperationAsync();
     ///     fileService3.SomeFileOperation();
     /// }
-    /// 
+    ///
     /// public partial class FileService : ServiceFactory&lt;FileService&gt;, IFileService
     /// {
     ///    private readonly ILogger&lt;FileService&gt;? _logger;
@@ -80,7 +80,6 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
         {
             return CreateServiceStack(configureServices, configureLogging, configureHost);
         }
-
 
         /// <summary>
         /// Creates a service instance with a default logging level set to Trace.

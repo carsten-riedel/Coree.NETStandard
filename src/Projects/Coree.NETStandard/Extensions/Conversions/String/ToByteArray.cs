@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Text.RegularExpressions;
-using System.Linq;
-using System.Text.Json;
-using System.Xml;
 using System.Text;
 
 namespace Coree.NETStandard.Extensions.Conversions.String
@@ -67,31 +63,38 @@ namespace Coree.NETStandard.Extensions.Conversions.String
                 case Encodings.Default:
                     enc = Encoding.Default;
                     break;
+
                 case Encodings.ASCII:
                     enc = Encoding.ASCII;
                     break;
+
                 case Encodings.UTF7:
                     enc = Encoding.UTF7;
                     break;
+
                 case Encodings.UTF8:
                     enc = Encoding.UTF8;
                     break;
+
                 case Encodings.UTF32:
                     enc = Encoding.UTF32;
                     break;
+
                 case Encodings.Unicode:
                     enc = Encoding.Unicode;
                     break;
+
                 case Encodings.BigEndianUnicode:
                     enc = Encoding.BigEndianUnicode;
                     break;
+
                 default:
                     break;
             }
 
             if (enc == null)
             {
-                throw new ArgumentNullException(nameof(enc));  
+                throw new ArgumentNullException(nameof(enc));
             }
 
             return enc.GetBytes(String);

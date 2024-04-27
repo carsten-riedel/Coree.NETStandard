@@ -1,11 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using System.Threading;
-using Coree.NETStandard.Utilities;
+using System.Threading.Tasks;
+
 using Coree.NETStandard.Classes.ThreadSafeCollection;
+using Coree.NETStandard.Utilities;
 
 namespace Coree.NETStandard.Classes.AsyncEventCollection
 {
@@ -58,5 +56,4 @@ namespace Coree.NETStandard.Classes.AsyncEventCollection
             }
         }
     }
-
 }

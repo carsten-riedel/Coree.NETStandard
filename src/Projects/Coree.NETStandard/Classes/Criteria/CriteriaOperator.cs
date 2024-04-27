@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Coree.NETStandard.Classes.Criteria
+﻿namespace Coree.NETStandard.Classes.Criteria
 {
     /// <summary>
     /// Defines logical operators that can be used to combine multiple criteria conditions.

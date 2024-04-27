@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.Common;
-using System.Text;
-using System.Threading;
-using System.Text.Json;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text.Json;
 
 namespace Coree.NETStandard.Classes.ThreadSafeCollection
 {
@@ -113,7 +110,7 @@ namespace Coree.NETStandard.Classes.ThreadSafeCollection
         /// <remarks>
         /// This property returns the percentage change in the size of the collection based on the number of items before the last operation
         /// and the current number of items. If the previous count is zero, which means there were no items before the last operation,
-        /// the change percentage is undefined, and thus returns -1. This helps in scenarios where a percentage change calculation would 
+        /// the change percentage is undefined, and thus returns -1. This helps in scenarios where a percentage change calculation would
         /// otherwise lead to a division by zero error.
         /// </remarks>
         /// <value>
@@ -402,8 +399,6 @@ namespace Coree.NETStandard.Classes.ThreadSafeCollection
             }
         }
 
-
-
         /// <summary>
         /// Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.
         /// </summary>
@@ -665,12 +660,10 @@ namespace Coree.NETStandard.Classes.ThreadSafeCollection
         {
             lock (syncRoot)
             {
-
                 if (index < 0 || index >= items.Count)
                 {
                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
                 }
-
 
                 previousCount = items.Count;
 

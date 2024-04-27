@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 using System.Web;
 
 namespace Coree.NETStandard.CoreeHttpClient
@@ -39,5 +38,4 @@ namespace Coree.NETStandard.CoreeHttpClient
             return uriBuilder.Uri;
         }
     }
-
 }

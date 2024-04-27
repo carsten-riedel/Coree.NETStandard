@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Threading;
 using System.Threading.Tasks;
-using System.Threading;
 
 namespace Coree.NETStandard.Services.File
 {
@@ -12,8 +9,11 @@ namespace Coree.NETStandard.Services.File
     public interface IFileService
     {
         string? GetCorrectCasedPath(string? path);
+
         Task<string?> GetCorrectCasedPathAsync(string? path, CancellationToken cancellationToken);
+
         string? IsCommandAvailable(string? command);
+
         Task<string?> IsCommandAvailableAsync(string? command, CancellationToken cancellationToken);
     }
 }

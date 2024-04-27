@@ -1,15 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.IO;
-using System.IO.Pipes;
-using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 using System.Xml;
-using System.Xml.Linq;
 
 namespace Coree.NETStandard.CoreeHttpClient
 {
@@ -58,7 +53,8 @@ namespace Coree.NETStandard.CoreeHttpClient
             }
         }
 
-        public RequestContentBuilder() { }
+        public RequestContentBuilder()
+        { }
 
         public RequestContentBuilder(string data, Encoding? encoding = null, string? name = null)
         {

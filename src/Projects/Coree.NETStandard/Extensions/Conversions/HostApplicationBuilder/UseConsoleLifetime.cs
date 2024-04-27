@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Hosting.Internal;
 
@@ -14,7 +10,6 @@ namespace Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
     /// </summary>
     public static partial class ConversionsHostApplicationBuilderExtensions
     {
-
         /// <summary>
         /// Configures the application host builder to use a console lifetime.
         /// </summary>
