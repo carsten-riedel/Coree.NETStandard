@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -344,7 +344,7 @@
 
   <h1 id="Coree_NETStandard_Utilities_MainContext" data-uid="Coree.NETStandard.Utilities.MainContext" class="text-break">Class MainContext
 </h1>
-  <div class="markdown level0 summary"><p>Provides utility methods for managing the application's execution context, typically used within the Program.Main entry point.</p>
+  <div class="markdown level0 summary"><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">Provides utility methods for managing the application's execution context, typically used within the Program.Main entry point.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -369,7 +369,7 @@
   </span>
   <a id="Coree_NETStandard_Utilities_MainContext_EnsureSingleInstance_" data-uid="Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance*"></a>
   <h4 id="Coree_NETStandard_Utilities_MainContext_EnsureSingleInstance_System_Action_System_Boolean_" data-uid="Coree.NETStandard.Utilities.MainContext.EnsureSingleInstance(System.Action,System.Boolean)">EnsureSingleInstance(Action, bool)</h4>
-  <div class="markdown level1 summary"><p>Ensures that only a single instance of the application is running. If a duplicate instance is detected,
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">Ensures that only a single instance of the application is running. If a duplicate instance is detected,
 it executes a specified action and optionally exits the application.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -390,19 +390,19 @@ it executes a specified action and optionally exits the application.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a></td>
         <td><span class="parametername">onDuplicateInstance</span></td>
-        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> to be executed if a duplicate instance is found. This action is intended to provide a way to notify the user or log the event of a duplicate instance attempt.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.action">Action</a> to be executed if a duplicate instance is found. This action is intended to provide a way to notify the user or log the event of a duplicate instance attempt.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">exit</span></td>
-        <td><p>A boolean value indicating whether to exit the application if a duplicate instance is detected. Defaults to true, causing the application to exit.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">A boolean value indicating whether to exit the application if a duplicate instance is detected. Defaults to true, causing the application to exit.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Utilities_MainContext_EnsureSingleInstance_System_Action_System_Boolean__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method attempts to create a named <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.mutex">Mutex</a> based on the application's entry assembly name. If the mutex cannot be created because it already exists, this indicates that an instance of the application is already running.</p>
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">This method attempts to create a named <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.mutex">Mutex</a> based on the application's entry assembly name. If the mutex cannot be created because it already exists, this indicates that an instance of the application is already running.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -413,7 +413,7 @@ it executes a specified action and optionally exits the application.</p>
   </span>
   <a id="Coree_NETStandard_Utilities_MainContext_IsDebugBuild_" data-uid="Coree.NETStandard.Utilities.MainContext.IsDebugBuild*"></a>
   <h4 id="Coree_NETStandard_Utilities_MainContext_IsDebugBuild" data-uid="Coree.NETStandard.Utilities.MainContext.IsDebugBuild">IsDebugBuild()</h4>
-  <div class="markdown level1 summary"><p>Determines if the current build is a debug build.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">Determines if the current build is a debug build.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -431,13 +431,13 @@ it executes a specified action and optionally exits the application.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p>A boolean value indicating whether the current build has debugging features enabled, typically signifying a debug build.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">A boolean value indicating whether the current build has debugging features enabled, typically signifying a debug build.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Utilities_MainContext_IsDebugBuild_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method checks for the presence of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.debuggableattribute">DebuggableAttribute</a> on the entry assembly and examines if JIT tracking is enabled,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Utilities.MainContext.yml" sourcestartlinenumber="1">This method checks for the presence of the <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.diagnostics.debuggableattribute">DebuggableAttribute</a> on the entry assembly and examines if JIT tracking is enabled,
 which is usually the case for builds compiled in a debug configuration. It's a useful check for altering behavior based on the build configuration
 without relying on preprocessor directives.</p>
 </div>

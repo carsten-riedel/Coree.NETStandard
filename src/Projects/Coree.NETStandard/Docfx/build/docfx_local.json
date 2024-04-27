@@ -10,8 +10,7 @@
           ]
         }
       ],
-      "dest": "api",
-      "filter": ""
+      "dest": "api"
     }
   ],
   "build": {

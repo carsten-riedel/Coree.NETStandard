@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -344,7 +344,7 @@
 
   <h1 id="Coree_NETStandard_Classes_ThreadSafeCollection_1" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1" class="text-break">Class ThreadSafeCollection&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"><p>Represents a thread-safe collection of objects that can be accessed by multiple threads concurrently.</p>
+  <div class="markdown level0 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Represents a thread-safe collection of objects that can be accessed by multiple threads concurrently.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -374,13 +374,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type of elements in the collection. This type can be a class, including nullable reference types.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The type of elements in the collection. This type can be a class, including nullable reference types.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This collection uses locking to ensure that its operations are thread-safe. The collection is implemented
+  <div class="markdown level0 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This collection uses locking to ensure that its operations are thread-safe. The collection is implemented
 as a list where items can be added, removed, or retrieved in a manner that prevents race conditions
 and data corruption when accessed from multiple threads. Null values can be stored, depending on the type <code class="typeparamref">T</code>.</p>
 </div>
@@ -395,7 +395,7 @@ and data corruption when accessed from multiple threads. Null values can be stor
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.#ctor*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.#ctor">ThreadSafeCollection()</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the ThreadSafeCollection class that is empty.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Initializes a new instance of the ThreadSafeCollection class that is empty.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -403,7 +403,7 @@ and data corruption when accessed from multiple threads. Null values can be stor
     <pre><code class="lang-csharp hljs">public ThreadSafeCollection()</code></pre>
   </div>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1__ctor_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Creates an empty collection with no items. The collection is ready to be accessed by multiple threads
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Creates an empty collection with no items. The collection is ready to be accessed by multiple threads
 using its thread-safe methods. It supports storing null values, if the type <code class="typeparamref">T</code> permits.</p>
 </div>
   <h3 id="properties">Properties
@@ -417,7 +417,7 @@ using its thread-safe methods. It supports storing null values, if the type <cod
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Count_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Count*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Count" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Count">Count</h4>
-  <div class="markdown level1 summary"><p>Gets the number of items in the collection, ensuring thread safety.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Gets the number of items in the collection, ensuring thread safety.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -435,7 +435,7 @@ using its thread-safe methods. It supports storing null values, if the type <cod
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
-        <td><p>The number of items currently in the collection. Access is synchronized to prevent race conditions.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The number of items currently in the collection. Access is synchronized to prevent race conditions.</p>
 </td>
       </tr>
     </tbody>
@@ -449,7 +449,7 @@ using its thread-safe methods. It supports storing null values, if the type <cod
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.HasItems*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.HasItems">HasItems</h4>
-  <div class="markdown level1 summary"><p>Gets a value indicating whether the collection contains any items, ensuring thread safety.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Gets a value indicating whether the collection contains any items, ensuring thread safety.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -467,13 +467,13 @@ using its thread-safe methods. It supports storing null values, if the type <cod
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><p><code>true</code> if the collection contains one or more items; otherwise, <code>false</code>.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1"><code>true</code> if the collection contains one or more items; otherwise, <code>false</code>.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_HasItems_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This property locks the collection to ensure that the check is performed in a thread-safe manner,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This property locks the collection to ensure that the check is performed in a thread-safe manner,
 preventing race conditions that could arise from concurrent modifications to the collection.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -485,7 +485,7 @@ preventing race conditions that could arise from concurrent modifications to the
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Item*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Item(System.Int32)">this[int]</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the item at the specified index in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Gets or sets the item at the specified index in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -505,7 +505,7 @@ preventing race conditions that could arise from concurrent modifications to the
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The zero-based index of the item to get or set.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The zero-based index of the item to get or set.</p>
 </td>
       </tr>
     </tbody>
@@ -521,13 +521,13 @@ preventing race conditions that could arise from concurrent modifications to the
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The item at the specified index.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item at the specified index.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Item_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Access to the item is synchronized to ensure thread safety. Setting an item acquires a lock to prevent race conditions.</p>
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Access to the item is synchronized to ensure thread safety. Setting an item acquires a lock to prevent race conditions.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
@@ -540,7 +540,7 @@ preventing race conditions that could arise from concurrent modifications to the
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p>Thrown when the index is outside the bounds of the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the index is outside the bounds of the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -556,7 +556,7 @@ preventing race conditions that could arise from concurrent modifications to the
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Add*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Add(`0)">Add(T?)</h4>
-  <div class="markdown level1 summary"><p>Adds an item to the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Adds an item to the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -576,13 +576,13 @@ preventing race conditions that could arise from concurrent modifications to the
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The item to be added to the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item to be added to the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Add__0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely add the item, supporting concurrent modifications.</p>
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Synchronizes access to the collection to safely add the item, supporting concurrent modifications.</p>
 </div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
@@ -593,7 +593,7 @@ preventing race conditions that could arise from concurrent modifications to the
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Dequeue*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Dequeue">Dequeue()</h4>
-  <div class="markdown level1 summary"><p>Removes and returns the item at the beginning of the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Removes and returns the item at the beginning of the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -611,13 +611,13 @@ preventing race conditions that could arise from concurrent modifications to the
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The item at the beginning of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item at the beginning of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Dequeue_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the remove operation. It is part of the thread-safe queue functionality,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method locks the collection to ensure thread safety during the remove operation. It is part of the thread-safe queue functionality,
 providing a way to dequeue items (remove from the beginning). If the collection is empty, it throws an InvalidOperationException to
 enforce handling of the empty state condition by the caller.</p>
 </div>
@@ -632,7 +632,7 @@ enforce handling of the empty state condition by the caller.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Thrown when attempting to perform the Dequeue operation on an empty collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when attempting to perform the Dequeue operation on an empty collection.</p>
 </td>
       </tr>
     </tbody>
@@ -646,7 +646,7 @@ enforce handling of the empty state condition by the caller.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Enqueue*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Enqueue(`0)">Enqueue(T?)</h4>
-  <div class="markdown level1 summary"><p>Adds an item to the end of the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Adds an item to the end of the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -666,13 +666,13 @@ enforce handling of the empty state condition by the caller.</p>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The item to add to the collection. Can be null if the type <code class="typeparamref">T</code> allows it.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item to add to the collection. Can be null if the type <code class="typeparamref">T</code> allows it.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Enqueue__0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method ensures that items can be added to the collection safely from multiple threads by synchronizing access.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method ensures that items can be added to the collection safely from multiple threads by synchronizing access.
 It functions as part of the thread-safe queue functionality, allowing items to be enqueued (added to the end).</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -684,7 +684,7 @@ It functions as part of the thread-safe queue functionality, allowing items to b
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetCollectionCopyToList*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetCollectionCopyToList">GetCollectionCopyToList()</h4>
-  <div class="markdown level1 summary"><p>Creates and returns a deep copy of the entire collection as a List of T.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Creates and returns a deep copy of the entire collection as a List of T.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -702,13 +702,13 @@ It functions as part of the thread-safe queue functionality, allowing items to b
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;T&gt;</td>
-        <td><p>A new List containing deep copies of the items in the collection. Returns an empty list if the collection is empty.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">A new List containing deep copies of the items in the collection. Returns an empty list if the collection is empty.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetCollectionCopyToList_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Locks the collection to ensure thread safety during the copy process. This method uses JSON serialization to create
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Locks the collection to ensure thread safety during the copy process. This method uses JSON serialization to create
 deep copies of the items, providing isolation from the original items. Modifications to the returned list or its items
 will not affect the original collection.</p>
 </div>
@@ -721,7 +721,7 @@ will not affect the original collection.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetEnumerator*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetEnumerator">GetEnumerator()</h4>
-  <div class="markdown level1 summary"><p>Returns an enumerator that iterates through the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Returns an enumerator that iterates through the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -739,13 +739,13 @@ will not affect the original collection.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;T&gt;</td>
-        <td><p>An IEnumerator&lt;T?&gt; that can be used to iterate through the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">An IEnumerator&lt;T?&gt; that can be used to iterate through the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetEnumerator_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method creates a snapshot of the current state of the collection and returns an enumerator for this snapshot,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method creates a snapshot of the current state of the collection and returns an enumerator for this snapshot,
 allowing for safe iteration over the collection items even when other threads might be modifying the collection concurrently.
 Note that the snapshot is a shallow copy; thus, the enumeration reflects the collection's state at the moment of the snapshot's creation.</p>
 </div>
@@ -758,7 +758,7 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemAt*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemAt(System.Int32)">GetItemAt(int)</h4>
-  <div class="markdown level1 summary"><p>Retrieves the item at the specified index in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Retrieves the item at the specified index in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -778,7 +778,7 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The zero-based index of the item to retrieve.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The zero-based index of the item to retrieve.</p>
 </td>
       </tr>
     </tbody>
@@ -794,13 +794,13 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The item at the specified index. Can be null if the item itself is null or if the type <code class="typeparamref">T</code> allows null values.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item at the specified index. Can be null if the item itself is null or if the type <code class="typeparamref">T</code> allows null values.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemAt_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Accesses the collection in a synchronized context to ensure safe retrieval of the item.</p>
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Accesses the collection in a synchronized context to ensure safe retrieval of the item.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
   <table class="table table-bordered table-condensed">
@@ -813,7 +813,7 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p>Thrown when the specified index is outside the bounds of the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the specified index is outside the bounds of the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -827,7 +827,7 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemCopyAt*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.GetItemCopyAt(System.Int32)">GetItemCopyAt(int)</h4>
-  <div class="markdown level1 summary"><p>Returns a deep copy of the item at the specified index, ensuring thread safety and isolation from the original collection.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Returns a deep copy of the item at the specified index, ensuring thread safety and isolation from the original collection.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -847,7 +847,7 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The zero-based index of the item to copy.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The zero-based index of the item to copy.</p>
 </td>
       </tr>
     </tbody>
@@ -863,13 +863,13 @@ Note that the snapshot is a shallow copy; thus, the enumeration reflects the col
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>A deep copy of the item at the specified index. Returns null if the original item is null.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">A deep copy of the item at the specified index. Returns null if the original item is null.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_GetItemCopyAt_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method locks the collection during the operation and uses JSON serialization to create a deep copy of the item,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method locks the collection during the operation and uses JSON serialization to create a deep copy of the item,
 ensuring that modifications to the returned object do not affect the original item in the collection.
 Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> if the index is out of the valid range.</p>
 </div>
@@ -884,7 +884,7 @@ Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argum
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p>Thrown when the index is out of range.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the index is out of range.</p>
 </td>
       </tr>
     </tbody>
@@ -898,7 +898,7 @@ Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argum
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinqDeepCopy*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinqDeepCopy``1(System.Func{System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEnumerable{``0}})">LockedLinqDeepCopy&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Performs a LINQ operation on a snapshot of the collection and returns a deep copy of the results in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -918,7 +918,7 @@ Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argum
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;&gt;</td>
         <td><span class="parametername">operation</span></td>
-        <td><p>A function representing the LINQ operation to be performed on the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">A function representing the LINQ operation to be performed on the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -934,7 +934,7 @@ Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argum
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
-        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains a deep copy of the result of applying the LINQ operation on the collection snapshot.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains a deep copy of the result of applying the LINQ operation on the collection snapshot.</p>
 </td>
       </tr>
     </tbody>
@@ -950,13 +950,13 @@ Throws <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argum
     <tbody>
       <tr>
         <td><span class="parametername">TResult</span></td>
-        <td><p>The type of the result elements.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The type of the result elements.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinqDeepCopy__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Similar to <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___">LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</a>, this method locks the collection and operates on a snapshot to ensure thread safety.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Similar to <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeCollection-1.html#Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___">LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</a>, this method locks the collection and operates on a snapshot to ensure thread safety.
 After performing the specified LINQ operation, it creates a deep copy of the result using JSON serialization.
 This approach guarantees that the operation's results are completely isolated from the original items in the collection,
 providing additional safety against mutations.</p>
@@ -970,7 +970,7 @@ providing additional safety against mutations.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinq*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0___" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.LockedLinq``1(System.Func{System.Collections.Generic.IEnumerable{`0},System.Collections.Generic.IEnumerable{``0}})">LockedLinq&lt;TResult&gt;(Func&lt;IEnumerable&lt;T?&gt;, IEnumerable&lt;TResult&gt;&gt;)</h4>
-  <div class="markdown level1 summary"><p>Performs a LINQ operation on a snapshot of the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Performs a LINQ operation on a snapshot of the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -990,7 +990,7 @@ providing additional safety against mutations.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;&gt;</td>
         <td><span class="parametername">operation</span></td>
-        <td><p>A function representing the LINQ operation to be performed on the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">A function representing the LINQ operation to be performed on the collection.</p>
 </td>
       </tr>
     </tbody>
@@ -1006,7 +1006,7 @@ providing additional safety against mutations.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TResult&gt;</td>
-        <td><p>An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains the result of applying the LINQ operation on the collection snapshot.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">An <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> that contains the result of applying the LINQ operation on the collection snapshot.</p>
 </td>
       </tr>
     </tbody>
@@ -1022,13 +1022,13 @@ providing additional safety against mutations.</p>
     <tbody>
       <tr>
         <td><span class="parametername">TResult</span></td>
-        <td><p>The type of the result elements.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The type of the result elements.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_LockedLinq__1_System_Func_System_Collections_Generic_IEnumerable__0__System_Collections_Generic_IEnumerable___0____remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method locks the collection, takes a snapshot, and then applies the specified LINQ operation.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method locks the collection, takes a snapshot, and then applies the specified LINQ operation.
 It ensures thread safety by preventing other operations from modifying the collection during execution.
 The operation is performed on a snapshot to avoid locking during the entire enumeration,
 but it means the operation does not reflect changes made to the collection after the snapshot is taken.</p>
@@ -1042,7 +1042,7 @@ but it means the operation does not reflect changes made to the collection after
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Peek*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Peek">Peek()</h4>
-  <div class="markdown level1 summary"><p>Returns the last item from the collection without removing it, in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Returns the last item from the collection without removing it, in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1060,13 +1060,13 @@ but it means the operation does not reflect changes made to the collection after
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Peek_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the retrieval operation. If the collection is empty,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method locks the collection to ensure thread safety during the retrieval operation. If the collection is empty,
 it throws an InvalidOperationException to notify the caller of the empty state, aligning with the behavior of Pop.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -1080,7 +1080,7 @@ it throws an InvalidOperationException to notify the caller of the empty state, 
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Thrown when the collection is empty.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the collection is empty.</p>
 </td>
       </tr>
     </tbody>
@@ -1094,7 +1094,7 @@ it throws an InvalidOperationException to notify the caller of the empty state, 
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Pop*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Pop">Pop()</h4>
-  <div class="markdown level1 summary"><p>Removes and returns the last item from the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Removes and returns the last item from the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1112,13 +1112,13 @@ it throws an InvalidOperationException to notify the caller of the empty state, 
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The last item of the collection if it exists; otherwise, throws an InvalidOperationException.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Pop_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method locks the collection to ensure thread safety during the remove operation. If the collection is empty,
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method locks the collection to ensure thread safety during the remove operation. If the collection is empty,
 it throws an InvalidOperationException. This change ensures that the caller is explicitly aware of the empty state.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -1132,7 +1132,7 @@ it throws an InvalidOperationException. This change ensures that the caller is e
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></td>
-        <td><p>Thrown when the collection is empty.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the collection is empty.</p>
 </td>
       </tr>
     </tbody>
@@ -1146,7 +1146,7 @@ it throws an InvalidOperationException. This change ensures that the caller is e
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Push*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Push(`0)">Push(T?)</h4>
-  <div class="markdown level1 summary"><p>Adds an item to the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Adds an item to the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1166,13 +1166,13 @@ it throws an InvalidOperationException. This change ensures that the caller is e
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The item to add to the collection. Can be null for nullable reference types.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item to add to the collection. Can be null for nullable reference types.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Push__0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>This method ensures that the collection can be safely modified from multiple threads by synchronizing access.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">This method ensures that the collection can be safely modified from multiple threads by synchronizing access.
 The item is added to the end of the collection. It accepts null values for types that allow it.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -1184,7 +1184,7 @@ The item is added to the end of the collection. It accepts null values for types
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Remove*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Remove(`0)">Remove(T?)</h4>
-  <div class="markdown level1 summary"><p>Removes the first occurrence of a specific item from the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Removes the first occurrence of a specific item from the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1204,13 +1204,13 @@ The item is added to the end of the collection. It accepts null values for types
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">item</span></td>
-        <td><p>The item to remove from the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item to remove from the collection. Can be null if the type <code class="typeparamref">T</code> permits.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Remove__0__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
 If the item is not found, no action is taken.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -1222,7 +1222,7 @@ If the item is not found, no action is taken.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Take*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_System_Func__0_System_Boolean__" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.Take(System.Func{`0,System.Boolean})">Take(Func&lt;T?, bool&gt;)</h4>
-  <div class="markdown level1 summary"><p>Finds and removes the first item matching the given predicate from the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Finds and removes the first item matching the given predicate from the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1242,7 +1242,7 @@ If the item is not found, no action is taken.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>The predicate used to find the item to remove.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The predicate used to find the item to remove.</p>
 </td>
       </tr>
     </tbody>
@@ -1258,13 +1258,13 @@ If the item is not found, no action is taken.</p>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The item that was removed from the collection, or <code>null</code> if no item matched the predicate.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item that was removed from the collection, or <code>null</code> if no item matched the predicate.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_Take_System_Func__0_System_Boolean___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
 If no item matches the predicate, <code>null</code> is returned.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -1276,7 +1276,7 @@ If no item matches the predicate, <code>null</code> is returned.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAll_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAll_System_Func__0_System_Boolean__" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAll(System.Func{`0,System.Boolean})">TakeAll(Func&lt;T?, bool&gt;)</h4>
-  <div class="markdown level1 summary"><p>Finds and removes all items matching the given predicate from the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Finds and removes all items matching the given predicate from the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1296,7 +1296,7 @@ If no item matches the predicate, <code>null</code> is returned.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;T, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td><p>The predicate used to find the items to remove.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The predicate used to find the items to remove.</p>
 </td>
       </tr>
     </tbody>
@@ -1312,13 +1312,13 @@ If no item matches the predicate, <code>null</code> is returned.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
-        <td><p>An enumerable of all items that were removed from the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">An enumerable of all items that were removed from the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAll_System_Func__0_System_Boolean___remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the items, supporting concurrent modifications.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Synchronizes access to the collection to safely remove the items, supporting concurrent modifications.
 Returns an empty enumerable if no items match the predicate.</p>
 </div>
   <span class="small pull-right mobile-hide">
@@ -1330,7 +1330,7 @@ Returns an empty enumerable if no items match the predicate.</p>
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAt*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32_" data-uid="Coree.NETStandard.Classes.ThreadSafeCollection`1.TakeAt(System.Int32)">TakeAt(int)</h4>
-  <div class="markdown level1 summary"><p>Gets and removes the item at the specified index from the collection in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Gets and removes the item at the specified index from the collection in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -1350,7 +1350,7 @@ Returns an empty enumerable if no items match the predicate.</p>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></td>
         <td><span class="parametername">index</span></td>
-        <td><p>The zero-based index of the item to fetch and remove.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The zero-based index of the item to fetch and remove.</p>
 </td>
       </tr>
     </tbody>
@@ -1366,13 +1366,13 @@ Returns an empty enumerable if no items match the predicate.</p>
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The item that was removed from the collection.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">The item that was removed from the collection.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeCollection_1_TakeAt_System_Int32__remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Synchronizes access to the collection to safely remove the item, supporting concurrent modifications.
 If the index is out of range, an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a> is thrown.</p>
 </div>
   <h5 class="exceptions">Exceptions</h5>
@@ -1386,7 +1386,7 @@ If the index is out of range, an <a class="xref" href="https://learn.microsoft.c
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></td>
-        <td><p>Thrown when the index is out of range.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeCollection-1.yml" sourcestartlinenumber="1">Thrown when the index is out of range.</p>
 </td>
       </tr>
     </tbody>
