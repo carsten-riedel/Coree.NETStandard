@@ -7,9 +7,13 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
 
+#pragma warning disable
+
 namespace Coree.NETStandard.UnderConstruction
 {
+
     public class HttpClientStatic
+
     {
         public class HttpClientResponse
         {
@@ -292,3 +296,5 @@ namespace Coree.NETStandard.UnderConstruction
         }
     }
 }
+
+#pragma warning restore

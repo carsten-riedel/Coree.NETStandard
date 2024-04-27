@@ -6,8 +6,18 @@ using System.Text;
 
 namespace Coree.NETStandard.Classes.Criteria
 {
+    /// <summary>
+    /// Provides functionality to build dynamic LINQ expressions based on criteria items.
+    /// </summary>
     public class CriteriaExpressionBuilder
     {
+        /// <summary>
+        /// Builds a dynamic LINQ expression based on the provided criteria group.
+        /// </summary>
+        /// <typeparam name="T">The type of the objects to filter.</typeparam>
+        /// <param name="group">The criteria items defining the filtering rules.</param>
+        /// <returns>An expression representing the combined criteria; or null if no filters are provided.</returns>
+        /// <exception cref="InvalidOperationException">Thrown when a property specified in any criteria item does not exist on type <typeparamref name="T"/>.</exception>
         public static Expression<Func<T, bool>>? BuildExpression<T>(CriteriaItems group)
         {
             if (group.Filters.Length == 0)
@@ -72,6 +82,15 @@ namespace Coree.NETStandard.Classes.Criteria
             return Expression.Lambda<Func<T, bool>>(combinedExpression, param);
         }
 
+        /// <summary>
+        /// Handles conditions specific to string properties based on the comparison method specified in the filter.
+        /// </summary>
+        /// <param name="property">The property to filter on.</param>
+        /// <param name="filter">The criteria defining the filtering rule.</param>
+        /// <param name="constant">The value to compare against.</param>
+        /// <param name="ignoreCase">Indicates whether the string comparison should ignore case.</param>
+        /// <returns>The expression created based on the string comparison method.</returns>
+        /// <exception cref="InvalidOperationException">Thrown when an unsupported string comparison method is used.</exception>
         private static Expression HandleStringConditions(MemberExpression property, CriteriaItem<object> filter, ConstantExpression constant, bool ignoreCase = true)
         {
             MethodInfo methodInfo;
@@ -105,6 +124,14 @@ namespace Coree.NETStandard.Classes.Criteria
             }
         }
 
+        /// <summary>
+        /// Handles conditions specific to integer properties, primarily focusing on equality comparisons.
+        /// </summary>
+        /// <param name="property">The property to filter on.</param>
+        /// <param name="filter">The criteria defining the filtering rule.</param>
+        /// <param name="constant">The value to compare against.</param>
+        /// <returns>The expression created based on the integer comparison method.</returns>
+        /// <exception cref="InvalidOperationException">Thrown when an unsupported comparison method is used for integer properties.</exception>
         private static Expression HandleIntConditions(MemberExpression property, CriteriaItem<object> filter, ConstantExpression constant)
         {
             // Example for integers; currently only handling Equals as a sample

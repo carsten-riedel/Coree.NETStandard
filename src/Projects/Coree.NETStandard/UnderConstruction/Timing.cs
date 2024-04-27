@@ -9,6 +9,8 @@ using System.Xml.Linq;
 using Coree.NETStandard.Classes;
 
 
+#pragma warning disable
+
 namespace Coree.NETStandard.UnderConstruction
 {
     public partial class Timing
@@ -190,3 +192,5 @@ namespace Coree.NETStandard.UnderConstruction
     }
 
 }
+
+#pragma warning restore

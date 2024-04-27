@@ -2,6 +2,8 @@
 using System.Collections.Immutable;
 using System.Threading;
 
+#pragma warning disable
+
 namespace Coree.NETStandard.UnderConstruction
 {
 
@@ -113,3 +115,5 @@ namespace Coree.NETStandard.UnderConstruction
     }
 
 }
+
+#pragma warning restore

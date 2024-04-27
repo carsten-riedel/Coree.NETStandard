@@ -9,6 +9,8 @@ using Coree.NETStandard.Classes;
 using Coree.NETStandard.Utilities;
 using Coree.NETStandard.Classes.TimeOfDay;
 
+#pragma warning disable
+
 namespace Coree.NETStandard.UnderConstruction
 {
     public class Scheduler2
@@ -17,7 +19,9 @@ namespace Coree.NETStandard.UnderConstruction
         {
             public TimeSpan Diviation { get; set; }
             public DateTime TickTime { get; set; }
+#pragma warning disable CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
             public string FormattedTickTime { get; set; }
+#pragma warning restore CS8618 // Non-nullable field must contain a non-null value when exiting constructor. Consider declaring as nullable.
         }
 
         public delegate Task TickerEventDelegate(object sender, TickerEventArgs e, CancellationToken cancellationToken);
@@ -288,3 +292,4 @@ namespace Coree.NETStandard.UnderConstruction
     }
 
 }
+#pragma warning restore
