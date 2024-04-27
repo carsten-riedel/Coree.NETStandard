@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
 using System.Net;
-using System.Text;
-using System.Linq;
+using System.Net.Http.Headers;
 using System.Threading.Tasks;
-using Microsoft.Extensions.Logging;
+
 using Coree.NETStandard.Abstractions.FluentBase;
 
 namespace Coree.NETStandard.CoreeHttpClient
@@ -27,6 +24,7 @@ namespace Coree.NETStandard.CoreeHttpClient
         public OperationStatus Status { get; set; }
 
         private string? _contentString;
+
         public string ContentString
         {
             get
@@ -75,15 +73,10 @@ namespace Coree.NETStandard.CoreeHttpClient
         }
     }
 
-
-
-
-
     public class Product : FluentBase
     {
         public string? Name { get; set; }
         public decimal? Price { get; set; }
-
     }
 
     public static class ProductExtensions
@@ -93,7 +86,7 @@ namespace Coree.NETStandard.CoreeHttpClient
         {
             return AdjustPriceAsync(product, adjustment).GetAwaiter().GetResult();
         }
-     
+
         public static async Task<Product> AdjustPriceAsync(this Task<Product> productTask, decimal adjustment)
         {
             Product product = await productTask;
@@ -103,7 +96,7 @@ namespace Coree.NETStandard.CoreeHttpClient
         // Remaining asynchronous extension method with adjusted signature
         public static async Task<Product> AdjustPriceAsync(this Product product, decimal adjustment)
         {
-              // Simulate asynchronous operation with a delay
+            // Simulate asynchronous operation with a delay
             await Task.Delay(100); // Replace with actual async operation
 
             // Same validation logic as AdjustPrice method
@@ -121,12 +114,10 @@ namespace Coree.NETStandard.CoreeHttpClient
             catch (Exception ex)
             {
                 // Add a validation error asynchronously
-               product.AddValidationError($"Error adjusting price by {adjustment}: {ex.Message}", ex);
+                product.AddValidationError($"Error adjusting price by {adjustment}: {ex.Message}", ex);
             }
 
             return product;
         }
     }
-
-
 }

@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
+using System.Threading.Tasks;
 
 namespace Coree.NETStandard.Services.Process
 {
@@ -23,5 +21,4 @@ namespace Coree.NETStandard.Services.Process
         /// <returns>A task that represents the asynchronous operation, containing the result of the process execution.</returns>
         Task<ProcessRunResult> RunProcessWithCancellationSupportAsync(string fileName, string arguments, string workingDirectory, bool killOnCancel = false, CancellationToken cancellationWaitRequest = default, TimeSpan? timeout = null);
     }
-
 }

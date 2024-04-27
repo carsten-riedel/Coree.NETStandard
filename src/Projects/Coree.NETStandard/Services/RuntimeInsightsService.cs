@@ -1,8 +1,8 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Diagnostics;
+﻿using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
+
+using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services
 {

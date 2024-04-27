@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Coree.NETStandard.Serilog
+﻿namespace Coree.NETStandard.Serilog
 {
     /// <summary>
     /// Defines output templates for Serilog logging.

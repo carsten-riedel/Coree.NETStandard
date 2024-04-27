@@ -34,7 +34,7 @@ namespace Coree.NETStandard.Serilog
         /// <remarks>
         /// Configures Serilog as the primary logging provider, leveraging a LoggingLevelSwitch for default level control. It enriches log entries with contextual information and enables output to both console and debug sinks, using a concise output format. This setup ensures that logs are both informative and manageable, tailored to development and production environments.
         /// </remarks>
-        public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services,bool simplifyNamespace = true, Dictionary<string, LogEventLevel>? conditionalLevel = null)
+        public static IServiceCollection AddLoggingCoreeNETStandard(this IServiceCollection services, bool simplifyNamespace = true, Dictionary<string, LogEventLevel>? conditionalLevel = null)
         {
             LoggingLevelSwitch loggingLevelSwitch = new LoggingLevelSwitch();
             services.AddSingleton(loggingLevelSwitch);
@@ -46,7 +46,7 @@ namespace Coree.NETStandard.Serilog
                     .Enrich.FromLogContext()
                     .Enrich.With(new SourceContextShortEnricher(true, simplifyNamespace, 15, null))
                     .WriteTo.ConsoleConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel, levelSwitch: loggingLevelSwitch)
-                    .WriteTo.DebugConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel,levelSwitch: loggingLevelSwitch);
+                    .WriteTo.DebugConditionalLevel(outputTemplate: OutputTemplates.DefaultShort(), conditionalLevel: conditionalLevel, levelSwitch: loggingLevelSwitch);
 
                 if (loggingLevelSwitch != null)
                 {

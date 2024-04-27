@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace Coree.NETStandard.Extensions.Collections.Enumerable
 {
@@ -32,13 +28,11 @@ namespace Coree.NETStandard.Extensions.Collections.Enumerable
         {
             foreach (var item in enumerable)
             {
-
                 if (item != null && !string.IsNullOrWhiteSpace(item))
                 {
                     yield return item;
                 }
             }
         }
-
     }
 }

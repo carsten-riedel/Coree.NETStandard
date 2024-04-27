@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Coree.NETStandard.Extensions.Collections.List
 {
-
     /// <summary>
     /// Contains extension methods for enhancing the functionality of the List class and other list-like collections.
     /// </summary>

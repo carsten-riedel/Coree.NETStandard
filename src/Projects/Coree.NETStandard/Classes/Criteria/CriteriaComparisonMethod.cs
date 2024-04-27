@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Coree.NETStandard.Classes.Criteria
+﻿namespace Coree.NETStandard.Classes.Criteria
 {
     /// <summary>
     /// Specifies the comparison methods available for evaluating string properties in criteria expressions.

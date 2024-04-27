@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Coree.NETStandard.Classes.Criteria
+﻿namespace Coree.NETStandard.Classes.Criteria
 {
     /// <summary>
     /// Represents a single criteria item used for building dynamic filter expressions.
@@ -63,5 +59,4 @@ namespace Coree.NETStandard.Classes.Criteria
             return new CriteriaItem<object>(expression.PropertyName, expression.ComparisonMethod, expression.Value, expression.Negate, expression.Operator);
         }
     }
-
 }

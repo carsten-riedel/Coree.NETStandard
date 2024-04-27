@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Text;
 
 namespace Coree.NETStandard.Classes.Criteria
 {
@@ -24,7 +22,7 @@ namespace Coree.NETStandard.Classes.Criteria
                 return null;
 
             ParameterExpression param = Expression.Parameter(typeof(T), "s");
-            Expression combinedExpression = null;
+            Expression? combinedExpression = null;
 
             // Validate all properties exist on type T
             foreach (var filter in group.Filters)

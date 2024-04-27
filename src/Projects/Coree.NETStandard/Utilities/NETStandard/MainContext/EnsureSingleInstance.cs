@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Reflection;
-using System.Text;
 using System.Threading;
-
-using Coree.NETStandard.Extensions;
 
 namespace Coree.NETStandard.Utilities
 {

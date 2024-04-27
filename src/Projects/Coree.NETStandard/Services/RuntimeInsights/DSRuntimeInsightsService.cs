@@ -10,7 +10,7 @@ namespace Coree.NETStandard.Services.RuntimeInsights
     /// This service implements the IRuntimeInsightsService interface, providing methods reflection of the running system and environment.
     /// This service inherits from DependencySingleton&lt;PInvokeService&gt;, which supports both dependency injection (DI) and non-DI scenarios
     /// </summary>
-    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService , IDependencySingleton
+    public partial class RuntimeInsightsService : DependencySingleton<RuntimeInsightsService>, IRuntimeInsightsService, IDependencySingleton
     {
         /// <summary>
         /// Initializes a new instance of the untimeInsightsService class with the specified logger and configuration.

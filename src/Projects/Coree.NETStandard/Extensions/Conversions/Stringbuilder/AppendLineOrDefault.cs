@@ -1,16 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 namespace Coree.NETStandard.Extensions.Conversions.Stringbuilder
 {
-
     /// <summary>
     /// Provides extension methods for the <see cref="StringBuilder"/> class.
     /// </summary>
     public static partial class ConversionsStringbuilderExtension
     {
-
         /// <summary>
         /// Appends a new line to the <see cref="StringBuilder"/> instance. If the provided string is not null, empty, or whitespace,
         /// it appends the string followed by a new line; otherwise, it only appends a new line.

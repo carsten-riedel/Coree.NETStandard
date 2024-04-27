@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
+﻿using System.Threading.Tasks;
 
 namespace Coree.NETStandard.Extensions.Threading.CancellationToken
 {
@@ -20,19 +16,19 @@ namespace Coree.NETStandard.Extensions.Threading.CancellationToken
         /// public class MyBackgroundService : BackgroundService
         /// {
         ///     private readonly IHostApplicationLifetime _appLifetime;
-        /// 
+        ///
         ///     public MyBackgroundService(IHostApplicationLifetime appLifetime)
         ///     {
         ///         _appLifetime = appLifetime;
         ///     }
-        /// 
+        ///
         ///     protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         ///     {
         ///         // Wait for the application to fully start
         ///         await _appLifetime.ApplicationStarted.WaitForCancellationAsync();
-        /// 
+        ///
         ///         Console.WriteLine("Application has started. Background service is proceeding with its tasks.");
-        /// 
+        ///
         ///         // Now that the application has started, proceed with the background service's main logic
         ///         while (!stoppingToken.IsCancellationRequested)
         ///         {
@@ -62,5 +58,4 @@ namespace Coree.NETStandard.Extensions.Threading.CancellationToken
             return tcs.Task;
         }
     }
-
 }

@@ -1,11 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-
-using Coree.NETStandard.CoreeHttpClient;
-
-using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Abstractions.FluentBase
 {
@@ -23,7 +18,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///     public string Name { get; set; }
     ///     public decimal Price { get; set; }
     /// }
-    /// 
+    ///
     /// // Extension method for the Product class to adjust its price
     /// public static class ProductExtensions
     /// {
@@ -31,7 +26,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///     {
     ///         // Early exit if the product is invalid and continuation on validation error is not enabled
     ///         if (!product.IsValid &amp;&amp; !product.ContinueOnValidationError) return product;
-    /// 
+    ///
     ///         try
     ///         {
     ///             // Attempt to adjust the product's price
@@ -47,7 +42,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///             // Add a validation error in case of an exception
     ///             product.AddValidationError($"Error adjusting price by {adjustment}: {ex.Message}", ex);
     ///         }
-    /// 
+    ///
     ///         return product;
     ///     }
     /// }
@@ -58,7 +53,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     public abstract class FluentBase : IFluentBase
     {
         /// <summary>
-        /// Gets a value indicating whether exceptions are thrown immediately upon encountering a validation error. 
+        /// Gets a value indicating whether exceptions are thrown immediately upon encountering a validation error.
         /// This property is set through <see cref="EnableThrowOnError"/> and <see cref="DisableThrowOnError"/> methods.
         /// </summary>
         public bool ThrowOnError { get; private set; } = true;
@@ -117,6 +112,4 @@ namespace Coree.NETStandard.Abstractions.FluentBase
             return this;
         }
     }
-
-
 }

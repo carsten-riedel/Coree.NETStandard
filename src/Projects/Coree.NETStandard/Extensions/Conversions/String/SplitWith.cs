@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Text.RegularExpressions;
 using System.Linq;
-using System.Text.Json;
-using System.Xml;
+using System.Text.RegularExpressions;
 
 namespace Coree.NETStandard.Extensions.Conversions.String
 {

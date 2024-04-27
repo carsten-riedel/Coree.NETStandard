@@ -2,11 +2,12 @@
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Threading.Tasks;
 using System.Threading;
+using System.Threading.Tasks;
+
+using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Abstractions.ServiceFactory;
 
 namespace Coree.NETStandard.Services.File
 {
@@ -31,7 +32,7 @@ namespace Coree.NETStandard.Services.File
         /// Corrects the casing of a specified file or directory path based on the actual casing on the file system.
         /// </summary>
         /// <remarks>
-        /// This method checks the existence of the path and then corrects its casing to match the case used in the file system. 
+        /// This method checks the existence of the path and then corrects its casing to match the case used in the file system.
         /// It considers the file system's case sensitivity: on NTFS or FAT (case-insensitive file systems), it corrects the path casing;
         /// otherwise, it assumes a case-sensitive file system and returns the original path if the drive format is not recognized.
         /// The method processes each component of the path to ensure the entire path is correctly cased from root to leaf.
@@ -57,7 +58,6 @@ namespace Coree.NETStandard.Services.File
             // Find the drive information for the path
             var driveInfo = DriveInfo.GetDrives().FirstOrDefault(d => path.StartsWith(d.Name, StringComparison.OrdinalIgnoreCase));
 
-
             // Check if the drive format is NTFS or FAT; if not, return the original path (assuming case sensitivity)
             if (driveInfo == null)
             {
@@ -72,7 +72,6 @@ namespace Coree.NETStandard.Services.File
                 // The drive format is neither NTFS nor FAT, assume case sensitivity and return the path as-is.
                 return path;
             }
-
 
             var root = Path.GetPathRoot(path);
             if (path.Equals(root, StringComparison.OrdinalIgnoreCase))
@@ -166,7 +165,6 @@ namespace Coree.NETStandard.Services.File
                 }
                 pathDirectoryList = pathDirectoryList.Where(item => !string.IsNullOrEmpty(item)).ToArray().GroupBy(item => item).Select(group => group.First()).ToArray();
             }
-
 
             foreach (var path in pathDirectoryList)
             {

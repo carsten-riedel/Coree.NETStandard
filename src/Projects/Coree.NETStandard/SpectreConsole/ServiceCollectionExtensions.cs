@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Reflection;
-using System.Text;
 
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -17,7 +15,7 @@ namespace Coree.NETStandard.SpectreConsole
     {
         /// <summary>
         /// Adds and configures Spectre.Console's <see cref="CommandApp"/> and related services to the specified <see cref="IServiceCollection"/>.
-        /// This setup allows for utilizing Spectre.Console's command line interface tools within a .NET Core application, 
+        /// This setup allows for utilizing Spectre.Console's command line interface tools within a .NET Core application,
         /// enabling the definition, parsing, and execution of commands.
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add services to.</param>
@@ -47,23 +45,23 @@ namespace Coree.NETStandard.SpectreConsole
         ///     });
         ///     await builder.Build().RunAsync();
         /// }
-        /// 
+        ///
         /// public class MyAsyncCommand : AsyncCommand&lt;MyAsyncCommand.Settings&gt;
         /// {
         ///     private readonly ISomeServiceDependency dependencyService; private readonly IHostApplicationLifetime appLifetime;
-        ///     
+        ///
         ///     public MyAsyncCommand(ISomeServiceDependency dependencyService, IHostApplicationLifetime appLifetime)
         ///     {
         ///         this.dependencyService = dependencyService; this.appLifetime = appLifetime;
         ///     }
-        ///     
+        ///
         ///     public class Settings : CommandSettings
         ///     {
         ///         [Description("The commandline setting")]
         ///         [CommandArgument(0, "&lt;Setting&gt;")]
         ///         public string? SomeSetting { get; init; }
         ///     }
-        ///     
+        ///
         ///     public override async Task&lt;int&gt; ExecuteAsync(CommandContext context, Settings settings)
         ///     {
         ///         try { await dependencyService.PerformConsoleAction(appLifetime.ApplicationStopping); }
@@ -74,7 +72,7 @@ namespace Coree.NETStandard.SpectreConsole
         /// </code>
         /// </example>
         /// </remarks>
-        public static IServiceCollection AddSpectreConsole(this IServiceCollection services, Action<IConfigurator> configureCommandApp , bool suppressLifeTimeStatusMessages = true)
+        public static IServiceCollection AddSpectreConsole(this IServiceCollection services, Action<IConfigurator> configureCommandApp, bool suppressLifeTimeStatusMessages = true)
         {
             var cmdapp = new CommandApp();
             cmdapp.Configure(configureCommandApp);
@@ -126,25 +124,25 @@ namespace Coree.NETStandard.SpectreConsole
         ///     });
         ///     await builder.Build().RunAsync();
         /// }
-        /// 
+        ///
         /// public class MyAsyncCommand : AsyncCommand&lt;MyAsyncCommand.Settings&gt;
         /// {
         ///     private readonly ISomeServiceDependency dependencyService;
         ///     private readonly IHostApplicationLifetime appLifetime;
-        ///     
+        ///
         ///     public MyAsyncCommand(ISomeServiceDependency dependencyService, IHostApplicationLifetime appLifetime)
         ///     {
         ///         this.dependencyService = dependencyService;
         ///         this.appLifetime = appLifetime;
         ///     }
-        ///     
+        ///
         ///     public class Settings : CommandSettings
         ///     {
         ///         [Description("The commandline setting")]
         ///         [CommandArgument(0, "&lt;Setting&gt;")]
         ///         public string? SomeSetting { get; init; }
         ///     }
-        ///     
+        ///
         ///     public override async Task&lt;int&gt; ExecuteAsync(CommandContext context, Settings settings)
         ///     {
         ///         // Attempts to abort the command gracefully will fail because the command runs on a separate task and not in the service host's managed context.
@@ -152,7 +150,7 @@ namespace Coree.NETStandard.SpectreConsole
         ///             await dependencyService.PerformConsoleAction(appLifetime.ApplicationStopping);
         ///         }
         ///         catch (Exception)
-        ///         { 
+        ///         {
         ///             // This catch block is unreachable. The service host's abrupt termination of the command prevents this block from being executed.
         ///             return (int)SpectreConsoleHostedService.ExitCode.CommandTerminated;
         ///         }
@@ -165,7 +163,6 @@ namespace Coree.NETStandard.SpectreConsole
         /// </remarks>
         public static IServiceCollection AddSpectreConsoleSyncCommandExecutor(this IServiceCollection services, Action<IConfigurator> configureCommandApp, bool suppressLifeTimeStatusMessages = true)
         {
-
             var app = new CommandApp(new SpectreConsoleTypeRegistrar(services, false));
             app.Configure(configureCommandApp);
             services.AddSingleton<ICommandApp>(app);

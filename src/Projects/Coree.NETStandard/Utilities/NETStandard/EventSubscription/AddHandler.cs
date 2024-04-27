@@ -26,5 +26,4 @@ namespace Coree.NETStandard.Utilities
             while (Interlocked.CompareExchange(ref handlerField, newHandler, currentHandler) != currentHandler);
         }
     }
-
 }

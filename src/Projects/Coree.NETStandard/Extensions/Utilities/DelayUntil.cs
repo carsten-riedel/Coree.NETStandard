@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Coree.NETStandard.Extensions.Utilities
@@ -15,7 +13,7 @@ namespace Coree.NETStandard.Extensions.Utilities
         /// </summary>
         /// <param name="futureDate">The date and time at which the delay concludes. Execution resumes as soon as this specified moment is reached or exceeded.</param>
         /// <remarks>
-        /// This method computes the time remaining until the 'futureDate' and initiates a non-blocking wait. 
+        /// This method computes the time remaining until the 'futureDate' and initiates a non-blocking wait.
         /// If the system's date is adjusted, or if the calculated delay exceeds what <see cref="Task.Delay(int)"/> can handle (Int32.MaxValue milliseconds),
         /// it recalculates and continues delaying. The method uses a default check interval of one minute, limiting the delay precision to roughly one minute.
         /// For more precise delay intervals, consider adjusting the check interval.
@@ -49,6 +47,5 @@ namespace Coree.NETStandard.Extensions.Utilities
                 }
             }
         }
-
     }
 }

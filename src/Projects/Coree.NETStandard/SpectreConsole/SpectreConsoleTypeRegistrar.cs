@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 using Microsoft.Extensions.DependencyInjection;
+
 using Spectre.Console.Cli;
 
 namespace Coree.NETStandard.SpectreConsole
 {
-
     /// <summary>
     /// Enables type registration for Spectre.Console applications, supporting both <see cref="IServiceProvider"/> and <see cref="IServiceCollection"/>.
     /// </summary>
@@ -91,5 +90,4 @@ namespace Coree.NETStandard.SpectreConsole
             services?.AddSingleton(service, provider => func());
         }
     }
-
 }

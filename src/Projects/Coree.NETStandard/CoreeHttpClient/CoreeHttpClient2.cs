@@ -14,8 +14,6 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.CoreeHttpClient
 {
-
-
     public static partial class ServiceCollectionExtensions
     {
         public static IServiceCollection AddCoreeHttpClient2(this IServiceCollection services)
@@ -41,9 +39,6 @@ namespace Coree.NETStandard.CoreeHttpClient
 
             return services;
         }
-
-
-
     }
 
     public class HttpResponseResult2
@@ -82,7 +77,6 @@ namespace Coree.NETStandard.CoreeHttpClient
                         return string.Empty; // In case decoding fails
                     }
                 }
-
             }
         }
 
@@ -119,7 +113,7 @@ namespace Coree.NETStandard.CoreeHttpClient
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public async Task<HttpResponseResult2> GetAsync(HttpMethod httpMethod, Uri baseUrl,RequestParamBuilder? requestParamBuilder = null, RequestContentBuilder? httpContentBuilder = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseResult2> GetAsync(HttpMethod httpMethod, Uri baseUrl, RequestParamBuilder? requestParamBuilder = null, RequestContentBuilder? httpContentBuilder = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             baseUrl = baseUrl.AddOrUpdateQueryParameters(requestParamBuilder?.QueryParams);
 
@@ -159,7 +153,7 @@ namespace Coree.NETStandard.CoreeHttpClient
                     var contentBytes = await response.Content.ReadAsByteArrayAsync();
                     var responseResult = new HttpResponseResult2(contentBytes, response.Headers, request.Headers, false, response.StatusCode)
                     {
-                           ContentLength = response.Content.Headers.ContentLength
+                        ContentLength = response.Content.Headers.ContentLength
                     };
 
                     if (effectiveCacheDuration > TimeSpan.Zero)

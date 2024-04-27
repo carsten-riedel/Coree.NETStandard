@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Coree.NETStandard.Extensions.Collections.List
 {
-
     /// <summary>
     /// Contains extension methods for enhancing the functionality of the List class and other list-like collections.
     /// </summary>
@@ -29,7 +27,6 @@ namespace Coree.NETStandard.Extensions.Collections.List
             else if (values != null && values.Count == 0)
             {
                 throw new InvalidOperationException("Queue empty.");
-
             }
             else if (values == null)
             {

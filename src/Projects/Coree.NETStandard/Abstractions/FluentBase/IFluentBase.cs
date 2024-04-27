@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Coree.NETStandard.Abstractions.FluentBase
 {
@@ -22,7 +21,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///     public List&lt;Exception&gt; ValidationErrors { get; private set; } = new List&lt;Exception&gt;();
     ///     public bool IsValid =&gt; !ValidationErrors.Any();
     ///     public bool ContinueOnValidationError { get; private set; } = false;
-    /// 
+    ///
     ///     public void AddValidationError(string message, Exception innerException)
     ///     {
     ///         ValidationErrors.Add(new Exception(message, innerException));
@@ -31,14 +30,14 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///             throw innerException;
     ///         }
     ///     }
-    /// 
+    ///
     ///     public IFluentBase EnableThrowOnError()
     ///     {
     ///         throwOnError = true;
     ///         ContinueOnValidationError = false;
     ///         return this;
     ///     }
-    /// 
+    ///
     ///     public IFluentBase DisableThrowOnError(bool continueOnValidationError = false)
     ///     {
     ///         throwOnError = false;
@@ -46,21 +45,21 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///         return this;
     ///     }
     /// }
-    /// 
+    ///
     /// // Simplified Product class inheriting FluentBase
     /// public class Product : FluentBase
     /// {
     ///     public string Name { get; set; }
     ///     public decimal Price { get; set; }
     /// }
-    /// 
+    ///
     /// // Extension method for Product
     /// public static class ProductExtensions
     /// {
     ///     public static Product AdjustPrice(this Product product, decimal adjustment)
     ///     {
     ///         if (!product.IsValid &amp;&amp; !product.ContinueOnValidationError) return product;
-    /// 
+    ///
     ///         try
     ///         {
     ///             var newPrice = product.Price + adjustment;
@@ -74,7 +73,7 @@ namespace Coree.NETStandard.Abstractions.FluentBase
     ///         {
     ///             product.AddValidationError($"Error adjusting price by {adjustment}: {ex.Message}", ex);
     ///         }
-    /// 
+    ///
     ///         return product;
     ///     }
     /// }
@@ -119,5 +118,4 @@ namespace Coree.NETStandard.Abstractions.FluentBase
         /// <returns>The current instance of <see cref="IFluentBase"/>.</returns>
         IFluentBase DisableThrowOnError(bool continueOnValidationError = false);
     }
-
 }
