@@ -30,7 +30,7 @@ namespace Coree.NETStandard.Abstractions
     ///     // Example method calls on fileService instances
     ///     await fileService1.SomeFileOperationAsync();
     ///     await fileService2.SomeFileOperationAsync();
-    ///     await fileService3.SomeFileOperation();
+    ///     fileService3.SomeFileOperation();
     /// }
     /// 
     /// public partial class FileService : ServiceFactory&lt;FileService&gt;, IFileService
