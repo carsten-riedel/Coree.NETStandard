@@ -4,6 +4,8 @@ using System.Reflection;
 using System.Text;
 using System.Threading;
 
+using Coree.NETStandard.Extensions;
+
 namespace Coree.NETStandard.Utilities
 {
     /// <summary>
@@ -28,7 +30,6 @@ namespace Coree.NETStandard.Utilities
         {
             string appName = Assembly.GetEntryAssembly()?.GetName().Name ?? "UniqueAppName";
             mutex = new Mutex(true, appName, out bool createdNew);
-
 
             if (!createdNew)
             {

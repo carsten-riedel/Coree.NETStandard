@@ -9,6 +9,11 @@ on:
     paths:
       - 'src/**'
     branches:
+      - 'master'
+      - 'release'
+      - 'develop'
+      - 'feature'
+      - 'hotfix'
       - 'master/**'
       - 'release/**'
       - 'develop/**'

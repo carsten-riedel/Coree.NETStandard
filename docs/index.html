@@ -90,14 +90,6 @@
   </script>
 
   <style>
-    /* Media query for larger screens (e.g., desktop) */
-    @media (min-width: 992px) {
-      .container {
-        max-width: 800px;
-        /* Adjust this value as needed */
-
-      }
-    }
 
     .containermd {
       border: 1px solid rgb(216, 222, 228);
@@ -180,8 +172,8 @@
 <body>
 
   <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#" onclick="fetchContent('https://raw.githubusercontent.com/carsten-riedel/Coree.NETStandard/master/README.md');" >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://github.com/carsten-riedel/Coree.NETStandard/"  >
         <i class="bi bi-github" style="font-size: 1.3rem; color: rgb(86, 86, 87);"></i>
         Coree.NETStandard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -190,13 +182,7 @@
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://github.com/carsten-riedel/Coree.NETStandard/tree/master/src" target="_blank">Code</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="https://carsten-riedel.github.io/Coree.NETStandard/docfx/index.html" target="_blank" >DocFx</a>
-          </li>		  
-          <li class="nav-item">
-            <a class="nav-link" href="https://github.com/carsten-riedel/Coree.NETStandard/issues" target="_blank" >Issues</a>
+            <a class="nav-link" href="#" onclick="fetchContent('https://raw.githubusercontent.com/carsten-riedel/Coree.NETStandard/master/README.md');" >Index</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -206,19 +192,15 @@
               <li><a class="dropdown-item" href="#" onclick="fetchContentRelativeRooted('Extensions.Bool.md')" >Extensions.Bool</a></li>
             </ul>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://carsten-riedel.github.io/Coree.NETStandard/docfx/index.html" target="_blank" >DocFx</a>
+          </li>	
         </ul>
       </div>
     </div>
   </nav>
   
-  <div id="content" class="container containermd"></div>
-
-  <nav class="navbar fixed-bottom bg-body-tertiary">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-    </div>
-  </nav>
-
+  <div id="content" class="container-fluid containermd"></div>
 
 </body>
 

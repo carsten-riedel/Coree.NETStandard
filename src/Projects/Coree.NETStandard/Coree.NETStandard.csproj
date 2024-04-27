@@ -13,6 +13,13 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
+  <ItemGroup>
+    <None Remove="Extensions\Conversions\HostApplicationBuilder\ConfigureHostOptions.cs" />
+    <None Remove="Extensions\Conversions\HostApplicationBuilder\UseConsoleLifetime.cs" />
+  </ItemGroup>
+
+
+
   
   <ItemGroup>
     <PackageReference Include="JsonPath.Net" Version="1.0.0" />
@@ -28,6 +35,7 @@
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.48.0" />
+    <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
   </ItemGroup>
  
   
