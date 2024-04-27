@@ -5,11 +5,10 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Xml.Linq;
-
 using Coree.NETStandard.Utilities;
 
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.Classes.Scheduler
 {
     public class Scheduler
     {
@@ -20,13 +19,13 @@ namespace Coree.NETStandard.Classes
             public string FormattedTickTime { get; set; }
         }
 
-        private System.Threading.Thread? _tickMonitorThread = null;
-        private readonly TimeOfDay _synchronizationOffset;
-        private readonly TimeOfDay _recurrenceInterval;
+        private Thread? _tickMonitorThread = null;
+        private readonly TimeOfDay.TimeOfDay _synchronizationOffset;
+        private readonly TimeOfDay.TimeOfDay _recurrenceInterval;
         private readonly bool _triggerAtStart;
         private readonly DateTime _startDateTime;
         private readonly DateTime _endDateTime;
-        private readonly TimeOfDay _timeOfDay;
+        private readonly TimeOfDay.TimeOfDay _timeOfDay;
         private readonly ScheduleType _scheduleType;
         private readonly int _dailyRecurEvery;
         private readonly int _schedulerPreCalcLimit;
@@ -44,7 +43,7 @@ namespace Coree.NETStandard.Classes
             daily
         }
 
-        public delegate Task TickerEventDelegate(object sender,TickerEventArgs e, CancellationToken cancellationToken);
+        public delegate Task TickerEventDelegate(object sender, TickerEventArgs e, CancellationToken cancellationToken);
 
         private TickerEventDelegate? _tickOccurred;
 
@@ -54,7 +53,7 @@ namespace Coree.NETStandard.Classes
             remove { EventSubscription.RemoveHandler(ref _tickOccurred, value); }
         }
 
-        protected virtual void RaiseTickEvent(TickerEventArgs args,CancellationToken cancellationToken)
+        protected virtual void RaiseTickEvent(TickerEventArgs args, CancellationToken cancellationToken)
         {
             var handler = _tickOccurred;
             handler?.Invoke(this, args, cancellationToken);
@@ -77,14 +76,14 @@ namespace Coree.NETStandard.Classes
                 }
                 else
                 {
-                    System.Threading.Thread.Sleep(33);
+                    Thread.Sleep(33);
                 }
                 await Task.Delay(100);
             }
         }
 
         //Constructor for Daily mode initial trigger won't be added to the schedule list it will just fire at start
-        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay timeOfDay, int dailyRecurEvery = 1, bool initalTrigger = true)
+        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay.TimeOfDay timeOfDay, int dailyRecurEvery = 1, bool initalTrigger = true)
         {
             _startDateTime = startDateTime;
             _endDateTime = endDateTime;
@@ -95,12 +94,12 @@ namespace Coree.NETStandard.Classes
             _schedulerPreCalcLimit = 5;
             CalculateDailySchedules();
 
-            _tickMonitorThread = new System.Threading.Thread(() => TickMonitor()) { IsBackground = true };
+            _tickMonitorThread = new Thread(() => TickMonitor()) { IsBackground = true };
             _tickMonitorThread.Start();
         }
 
         //Constructor for recurence mode , initial trigger won't be added to the schedule list it will just fire at start
-        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay recurFrequency, TimeOfDay recurSyncOffset, bool initalTrigger)
+        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay.TimeOfDay recurFrequency, TimeOfDay.TimeOfDay recurSyncOffset, bool initalTrigger)
         {
             _startDateTime = startDateTime;
             _endDateTime = endDateTime;
@@ -110,7 +109,7 @@ namespace Coree.NETStandard.Classes
             _triggerAtStart = initalTrigger;
             _schedulerPreCalcLimit = 100;
             CalculateRecuringSchedules();
-            _tickMonitorThread = new System.Threading.Thread(() => TickMonitor()) { IsBackground = true };
+            _tickMonitorThread = new Thread(() => TickMonitor()) { IsBackground = true };
             _tickMonitorThread.Start();
         }
 

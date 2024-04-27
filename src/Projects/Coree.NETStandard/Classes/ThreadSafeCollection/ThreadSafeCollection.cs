@@ -7,7 +7,7 @@ using System.Text.Json;
 using System.Collections;
 using System.Linq;
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.Classes.ThreadSafeCollection
 {
     /// <summary>
     /// Represents a thread-safe collection of objects that can be accessed by multiple threads concurrently.
@@ -131,7 +131,7 @@ namespace Coree.NETStandard.Classes
                     {
                         return -1; // Indicates undefined change
                     }
-                    int percentChange = ((items.Count - previousCount) * 100) / previousCount;
+                    int percentChange = (items.Count - previousCount) * 100 / previousCount;
                     return Math.Abs(percentChange); // Ensure the result is always positive
                 }
             }
@@ -225,16 +225,16 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
-                this.items.Add(item);
+                items.Add(item);
 
                 lastModificationTime = DateTime.Now;
 
-                if (this.items.Count > peekCount)
+                if (items.Count > peekCount)
                 {
-                    peekCount = this.items.Count;
+                    peekCount = items.Count;
                 }
             }
         }
@@ -257,12 +257,12 @@ namespace Coree.NETStandard.Classes
                     throw new InvalidOperationException("Cannot perform Pop operation on an empty collection.");
                 }
 
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 var item = items[items.Count - 1];
                 items.RemoveAt(items.Count - 1);
-                
+
                 lastModificationTime = DateTime.Now;
 
                 return item;
@@ -307,16 +307,16 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
-                this.items.Add(item);
+                items.Add(item);
 
                 lastModificationTime = DateTime.Now;
 
-                if (this.items.Count > peekCount)
+                if (items.Count > peekCount)
                 {
-                    peekCount = this.items.Count;
+                    peekCount = items.Count;
                 }
             }
         }
@@ -340,7 +340,7 @@ namespace Coree.NETStandard.Classes
                     throw new InvalidOperationException("Cannot perform Dequeue operation on an empty collection.");
                 }
 
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 var item = items[0];
@@ -488,7 +488,7 @@ namespace Coree.NETStandard.Classes
                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
                 }
 
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 T item = items[index];
@@ -516,10 +516,10 @@ namespace Coree.NETStandard.Classes
                 var index = items.FindIndex(item => predicate(item));
                 if (index == -1)
                 {
-                    return default(T);
+                    return default;
                 }
 
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 T item = items[index];
@@ -547,7 +547,7 @@ namespace Coree.NETStandard.Classes
                 // Find all items matching the predicate
                 List<T> itemsToRemove = items.Where(predicate).ToList();
 
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 items.RemoveAll(new Predicate<T>(predicate));
@@ -571,7 +571,7 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 items.RemoveAll(new Predicate<T>(predicate));
@@ -591,7 +591,7 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 items.Add(item);
@@ -642,7 +642,7 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 items.Remove(item);
@@ -665,14 +665,14 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                
+
                 if (index < 0 || index >= items.Count)
                 {
                     throw new ArgumentOutOfRangeException(nameof(index), "Index is out of range.");
                 }
 
-                
-                previousCount = this.items.Count;
+
+                previousCount = items.Count;
 
                 previousModificationTime = lastModificationTime;
 
@@ -846,7 +846,7 @@ namespace Coree.NETStandard.Classes
         {
             lock (syncRoot)
             {
-                previousCount = this.items.Count;
+                previousCount = items.Count;
                 previousModificationTime = lastModificationTime;
 
                 items.Clear();  // Clear all items from the list

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.Classes.TimeOfDay
 {
     /// <summary>
     /// Represents a specific time of day, independent of any date.

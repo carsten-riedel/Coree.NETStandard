@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coree.NETStandard.Extensions
+namespace Coree.NETStandard.Extensions.Enumerable
 {
     /// <summary>
     /// Provides extension methods for <see cref="IEnumerable{T}"/> to enhance and simplify operations on collections.
@@ -15,7 +15,7 @@ namespace Coree.NETStandard.Extensions
     /// This class is declared as partial to allow for easy extension and organization of its methods across multiple
     /// files, facilitating maintainability and scalability of the utility functions provided.
     /// </remarks>
-    public static partial class EnumerableTExtension
+    public static partial class EnumerableExtension
     {
         /// <summary>
         /// Appends a range of items to the end of an <see cref="IEnumerable{T}"/>.

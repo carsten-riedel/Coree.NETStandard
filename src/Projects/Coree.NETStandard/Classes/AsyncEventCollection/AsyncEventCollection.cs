@@ -5,8 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 using Coree.NETStandard.Utilities;
+using Coree.NETStandard.Classes.ThreadSafeCollection;
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.Classes.AsyncEventCollection
 {
     /// <summary>
     /// Manages a collection of events and provides asynchronous event dispatching.

@@ -1,4 +1,4 @@
-﻿namespace Coree.NETStandard.Extensions
+﻿namespace Coree.NETStandard.Extensions.Primitives.Bool
 {
     /// <summary>
     /// Provides extension methods for working with nullable boolean values.

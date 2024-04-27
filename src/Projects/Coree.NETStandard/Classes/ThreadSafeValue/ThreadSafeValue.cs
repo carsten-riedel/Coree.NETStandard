@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Coree.NETStandard.Classes
+namespace Coree.NETStandard.Classes.ThreadSafeValue
 {
 
     /// <summary>

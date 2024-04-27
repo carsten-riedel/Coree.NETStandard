@@ -15,7 +15,7 @@ namespace Coree.NETStandard.Extensions
     /// This class is declared as partial to allow for easy extension and organization of its methods across multiple
     /// files, facilitating maintainability and scalability of the utility functions provided.
     /// </remarks>
-    public static partial class EnumerableTExtension
+    public static partial class EnumerableExtension
     {
         /// <summary>
         /// Filters out null entries from an <see cref="IEnumerable{T}"/>.

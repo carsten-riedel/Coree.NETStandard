@@ -1,4 +1,4 @@
-﻿namespace Coree.NETStandard.Extensions
+﻿namespace Coree.NETStandard.Extensions.Primitives.Bool
 {
     /// <summary>
     /// Provides extension methods for working with nullable boolean values.
@@ -6,14 +6,13 @@
     public static partial class BoolExtensions
     {
         /// <summary>
-        /// Checks if the nullable boolean value is null.
+        /// Checks if the nullable boolean value is true.
         /// </summary>
         /// <param name="nullableBool">The nullable boolean value.</param>
-        /// <returns>True if the value is null; otherwise, false.</returns>
-        public static bool IsNull(this bool? nullableBool)
+        /// <returns>True if the value is true; otherwise, false.</returns>
+        public static bool IsTrue(this bool? nullableBool)
         {
-            return !nullableBool.HasValue;
+            return nullableBool.HasValue && nullableBool.Value;
         }
     }
 }
-
