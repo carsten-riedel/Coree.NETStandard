@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		githint.txt = githint.txt
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coree.NETStandard.MSTest", "Projects\Coree.NETStandard.MSTest\Coree.NETStandard.MSTest.csproj", "{365B474C-8986-42EB-972D-7EEF334254B2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{9EC28AF4-3BC1-4F9D-8ECA-E98EA798B0A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9EC28AF4-3BC1-4F9D-8ECA-E98EA798B0A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9EC28AF4-3BC1-4F9D-8ECA-E98EA798B0A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{365B474C-8986-42EB-972D-7EEF334254B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365B474C-8986-42EB-972D-7EEF334254B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365B474C-8986-42EB-972D-7EEF334254B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365B474C-8986-42EB-972D-7EEF334254B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
