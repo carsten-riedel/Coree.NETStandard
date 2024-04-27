@@ -8,6 +8,7 @@ using Coree.NETStandard.Extensions;
 using Coree.NETStandard.Classes;
 using Coree.NETStandard.Utilities;
 using Coree.NETStandard.Classes.TimeOfDay;
+using Coree.NETStandard.Extensions.Utilities;
 
 #pragma warning disable
 

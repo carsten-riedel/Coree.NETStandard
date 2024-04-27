@@ -3,7 +3,7 @@
     /// <summary>
     /// Provides extension methods for working with nullable boolean values.
     /// </summary>
-    public static partial class BoolExtensions
+    public static partial class PrimitivesBoolExtensions
     {
         /// <summary>
         /// Checks if the nullable boolean value is false.

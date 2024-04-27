@@ -6,6 +6,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 using Coree.NETStandard.Abstractions;
+using Coree.NETStandard.Abstractions.DependencySingleton;
 
 using Microsoft.Extensions.Logging;
 

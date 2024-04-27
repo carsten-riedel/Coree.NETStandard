@@ -5,8 +5,8 @@ using System.Net;
 using System.Text;
 using System.Linq;
 using System.Threading.Tasks;
-using Coree.NETStandard.Abstractions;
 using Microsoft.Extensions.Logging;
+using Coree.NETStandard.Abstractions.FluentBase;
 
 namespace Coree.NETStandard.CoreeHttpClient
 {

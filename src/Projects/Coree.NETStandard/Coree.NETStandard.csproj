@@ -14,9 +14,10 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
-    <None Remove="Classes\Criteria\CriteriaEnumerableExtensions.cs" />
-    <None Remove="Classes\Criteria\CriteriaQueryableExtensions.cs" />
+    <None Remove="Extensions\Conversions\HostApplicationBuilder\ConfigureHostOptions.cs" />
+    <None Remove="Extensions\Conversions\HostApplicationBuilder\UseConsoleLifetime.cs" />
   </ItemGroup>
+
 
 
   

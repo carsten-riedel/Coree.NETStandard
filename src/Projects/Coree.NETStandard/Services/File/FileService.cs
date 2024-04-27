@@ -5,9 +5,8 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Threading;
 
-using Coree.NETStandard.Abstractions;
-
 using Microsoft.Extensions.Logging;
+using Coree.NETStandard.Abstractions.ServiceFactory;
 
 namespace Coree.NETStandard.Services.File
 {
