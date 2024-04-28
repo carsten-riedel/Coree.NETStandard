@@ -17,7 +17,7 @@ echo PowerShell installation completed.
 :: Execute PowerShell script
 echo --------------------------------------------
 echo Executing the PowerShell workflow script...
-pwsh .github/workflows/workflow.ps1
+pwsh .github/workflows/build_deploy_new.ps1
 
 :: End of script execution
 echo --------------------------------------------
