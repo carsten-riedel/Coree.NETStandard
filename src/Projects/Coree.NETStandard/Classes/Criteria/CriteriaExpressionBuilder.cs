@@ -51,6 +51,14 @@ namespace Coree.NETStandard.Classes.Criteria
                 {
                     conditionExpression = HandleIntConditions(property, filter, constant);
                 }
+                else if (property.Type == typeof(DateTime))
+                {
+                    conditionExpression = HandleDateTimeConditions(property, filter, constant);
+                }
+                else if (property.Type == typeof(decimal))
+                {
+                    conditionExpression = HandleDecimalConditions(property, filter, constant);
+                }
                 else
                 {
                     throw new InvalidOperationException("Unsupported property type for filtering.");
@@ -123,7 +131,7 @@ namespace Coree.NETStandard.Classes.Criteria
         }
 
         /// <summary>
-        /// Handles conditions specific to integer properties, primarily focusing on equality comparisons.
+        /// Handles conditions specific to integer properties, supporting a range of comparison operations.
         /// </summary>
         /// <param name="property">The property to filter on.</param>
         /// <param name="filter">The criteria defining the filtering rule.</param>
@@ -132,15 +140,93 @@ namespace Coree.NETStandard.Classes.Criteria
         /// <exception cref="InvalidOperationException">Thrown when an unsupported comparison method is used for integer properties.</exception>
         private static Expression HandleIntConditions(MemberExpression property, CriteriaItem<object> filter, ConstantExpression constant)
         {
-            // Example for integers; currently only handling Equals as a sample
-            if (filter.ComparisonMethod == CriteriaComparisonMethod.Equals)
+            switch (filter.ComparisonMethod)
             {
-                return Expression.Equal(property, constant);
-            }
-            else
-            {
-                throw new InvalidOperationException("Unsupported comparison method for integer properties.");
+                case CriteriaComparisonMethod.Equals:
+                    return Expression.Equal(property, constant);
+                case CriteriaComparisonMethod.GreaterThan:
+                    return Expression.GreaterThan(property, constant);
+                case CriteriaComparisonMethod.LessThan:
+                    return Expression.LessThan(property, constant);
+                case CriteriaComparisonMethod.GreaterThanOrEqual:
+                    return Expression.GreaterThanOrEqual(property, constant);
+                case CriteriaComparisonMethod.LessThanOrEqual:
+                    return Expression.LessThanOrEqual(property, constant);
+                default:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
             }
         }
+
+
+        /// <summary>
+        /// Handles conditions specific to DateTime properties, interpreting date-only equality as a range.
+        /// </summary>
+        /// <param name="property">The property to filter on.</param>
+        /// <param name="filter">The criteria defining the filtering rule.</param>
+        /// <param name="constant">The value to compare against.</param>
+        /// <returns>The expression created based on the DateTime comparison method.</returns>
+        /// <exception cref="InvalidOperationException">Thrown when an unsupported comparison method is used for DateTime properties.</exception>
+        private static Expression HandleDateTimeConditions(MemberExpression property, CriteriaItem<object> filter, ConstantExpression constant)
+        {
+            DateTime dateValue = (DateTime)constant.Value;
+            ConstantExpression dateOnlyConstant = Expression.Constant(dateValue.Date, typeof(DateTime));
+            ConstantExpression nextDayConstant = Expression.Constant(dateValue.Date.AddDays(1), typeof(DateTime));
+
+            switch (filter.ComparisonMethod)
+            {
+                case CriteriaComparisonMethod.Equals:
+                    // Creates a range check for the entire day
+                    Expression dateAtOrAfter = Expression.GreaterThanOrEqual(property, dateOnlyConstant);
+                    Expression dateBeforeNextDay = Expression.LessThan(property, nextDayConstant);
+                    return Expression.AndAlso(dateAtOrAfter, dateBeforeNextDay);
+
+                case CriteriaComparisonMethod.GreaterThan:
+                    return Expression.GreaterThan(property, dateOnlyConstant);
+
+                case CriteriaComparisonMethod.LessThan:
+                    return Expression.LessThan(property, nextDayConstant); // Ensures it is less than the start of the next day
+
+                case CriteriaComparisonMethod.GreaterThanOrEqual:
+                    return Expression.GreaterThanOrEqual(property, dateOnlyConstant);
+
+                case CriteriaComparisonMethod.LessThanOrEqual:
+                    // Adjusted to include the entire day
+                    return Expression.LessThan(property, nextDayConstant);
+
+                default:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for DateTime properties.");
+            }
+        }
+
+        /// <summary>
+        /// Handles conditions specific to decimal properties, supporting a range of comparison operations.
+        /// </summary>
+        /// <param name="property">The property to filter on.</param>
+        /// <param name="filter">The criteria defining the filtering rule.</param>
+        /// <param name="constant">The value to compare against.</param>
+        /// <returns>The expression created based on the decimal comparison method.</returns>
+        /// <exception cref="InvalidOperationException">Thrown when an unsupported comparison method is used for decimal properties.</exception>
+        private static Expression HandleDecimalConditions(MemberExpression property, CriteriaItem<object> filter, ConstantExpression constant)
+        {
+            // Ensure the constant is of type decimal
+            ConstantExpression adjustedConstant = Expression.Constant(Convert.ToDecimal(constant.Value), typeof(decimal));
+
+            switch (filter.ComparisonMethod)
+            {
+                case CriteriaComparisonMethod.Equals:
+                    return Expression.Equal(property, adjustedConstant);
+                case CriteriaComparisonMethod.GreaterThan:
+                    return Expression.GreaterThan(property, adjustedConstant);
+                case CriteriaComparisonMethod.LessThan:
+                    return Expression.LessThan(property, adjustedConstant);
+                case CriteriaComparisonMethod.GreaterThanOrEqual:
+                    return Expression.GreaterThanOrEqual(property, adjustedConstant);
+                case CriteriaComparisonMethod.LessThanOrEqual:
+                    return Expression.LessThanOrEqual(property, adjustedConstant);
+                default:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for decimal properties.");
+            }
+        }
+
     }
 }
