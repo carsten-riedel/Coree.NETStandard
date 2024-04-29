@@ -12,12 +12,12 @@ on:
       - 'master'
       - 'release'
       - 'develop'
-#     - 'feature'
+      - 'feature'
       - 'hotfix'
       - 'master/**'
       - 'release/**'
       - 'develop/**'
-#     - 'feature/**'
+      - 'feature/**'
       - 'hotfix/**'
   repository_dispatch:
     types: builddispatch

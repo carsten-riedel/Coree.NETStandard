@@ -28,6 +28,26 @@
         /// <summary>
         /// Specifies that the string property should be equal to a specified string, typically considering case-sensitivity.
         /// </summary>
-        Equals
+        Equals,
+
+        /// <summary>
+        /// Specifies that a numeric or date/time property should be greater than a specified value.
+        /// </summary>
+        GreaterThan,
+
+        /// <summary>
+        /// Specifies that a numeric or date/time property should be less than a specified value.
+        /// </summary>
+        LessThan,
+
+        /// <summary>
+        /// Specifies that a numeric or date/time property should be greater than or equal to a specified value.
+        /// </summary>
+        GreaterThanOrEqual,
+
+        /// <summary>
+        /// Specifies that a numeric or date/time property should be less than or equal to a specified value.
+        /// </summary>
+        LessThanOrEqual
     }
 }
