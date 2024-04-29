@@ -99,55 +99,6 @@ if (Test-Path $secretsPath) {
     Write-Host "Secrets will be taken from args."
 }
 
-######################################################################################
-Log-Block -Stage "Resolving" -Section "Branch" -Task "Config values for branches"
-
-if ($branchNameSegment -ieq "feature") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion --property:VersionSuffix=$branchNameSegment"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "develop") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion --property:VersionSuffix=$branchNameSegment"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "release") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "master") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "hotfix") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-}
 
 ######################################################################################
 Log-Block -Stage "Checking" -Section "Preconditions" -Task "Variables set."
@@ -367,7 +318,7 @@ git config user.email $gitTempMail
 
 Execute-Command "git add --all"
 Execute-Command "git commit -m ""Updated form Workflow [no ci]"""
-Execute-Command "git push origin master"
+Execute-Command "git push origin $branchName"
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
 
