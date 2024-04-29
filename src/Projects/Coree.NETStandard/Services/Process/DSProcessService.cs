@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using Coree.NETStandard.Abstractions.DependencySingleton;
 
-using Coree.NETStandard.Abstractions;
-using Coree.NETStandard.Services.File;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
@@ -20,6 +16,5 @@ namespace Coree.NETStandard.Services.Process
         /// <param name="logger">The logger instance for logging messages.</param>
         /// <param name="configuration">The configuration instance for accessing application settings.</param>
         public ProcessService(ILogger<ProcessService> logger, IConfiguration configuration) : base(logger, configuration) { }
-
     }
 }

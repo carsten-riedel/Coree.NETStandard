@@ -1,16 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
+using Serilog;
 using Serilog.Configuration;
 using Serilog.Core;
 using Serilog.Events;
 using Serilog.Sinks.SystemConsole.Themes;
-using Serilog;
 
 namespace Coree.NETStandard.Serilog
 {
-
     /// <summary>
     /// Provides extension methods for configuring Serilog sinks with conditional log level processing.
     /// </summary>

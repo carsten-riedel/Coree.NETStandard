@@ -99,55 +99,6 @@ if (Test-Path $secretsPath) {
     Write-Host "Secrets will be taken from args."
 }
 
-######################################################################################
-Log-Block -Stage "Resolving" -Section "Branch" -Task "Config values for branches"
-
-if ($branchNameSegment -ieq "feature") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion --property:VersionSuffix=$branchNameSegment"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "develop") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion --property:VersionSuffix=$branchNameSegment"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "release") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "master") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-} elseif ($branchNameSegment -ieq "hotfix") {
-
-    $version = "--property:AssemblyVersion=$fullVersion --property:VersionPrefix=$fullVersion"
-
-    $dotnet_restore_param = "";
-    $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
-
-}
 
 ######################################################################################
 Log-Block -Stage "Checking" -Section "Preconditions" -Task "Variables set."
@@ -220,6 +171,11 @@ if ($branchNameSegment -ieq "feature") {
     $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
 
 }
+
+######################################################################################
+Log-Block -Stage "Setup" -Section "Tools" -Task "Add addtional nuget source"
+
+Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
 
 ######################################################################################
 Log-Block -Stage "Setup" -Section "Tools" -Task "Install dotnet tools"
@@ -296,7 +252,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
 } elseif ($branchNameSegment -ieq "develop") {
@@ -304,7 +259,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
 } elseif ($branchNameSegment -ieq "release") {
@@ -312,7 +266,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
@@ -322,7 +275,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
@@ -332,7 +284,6 @@ if ($branchNameSegment -ieq "feature") {
     $basePath = "$topLevelPath/src/Projects/Coree.NETStandard"
     $pattern = "*.nupkg"
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
-    Execute-Command "dotnet nuget add source --username carsten-riedel --password $PAT --store-password-in-clear-text --name github ""https://nuget.pkg.github.com/carsten-riedel/index.json"""
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
     dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
@@ -366,7 +317,8 @@ git config user.name $gitTempUser
 git config user.email $gitTempMail
 
 Execute-Command "git add --all"
-Execute-Command "git commit -m ""Updated form Workflow"""
+Execute-Command "git commit -m ""Updated form Workflow [no ci]"""
+Execute-Command "git push origin $branchName"
 Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command "git push origin ""$tag"""
 
@@ -381,10 +333,8 @@ $headers = @{
     Authorization = "Bearer $PAT"
 }
 
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers
-
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers | Out-Null
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchNameSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
-
 foreach ($item in $GitHubNugetPackagelistOld)
 {
     $PackageId = $item.id
@@ -395,24 +345,23 @@ foreach ($item in $GitHubNugetPackagelistOld)
 ######################################################################################
 Log-Block -Stage "Call" -Section "Dispatch" -Task "dispatching a other job"
 
-$worklowFileName = "static.yml"
-$uri = "https://api.github.com/repos/$gitOwner/$gitRepo/actions/workflows/$worklowFileName/dispatches"
-$headers = @{
-    "Accept" = "application/vnd.github+json"
-    "X-GitHub-Api-Version" = "2022-11-28"
-    "Authorization" = "Bearer $PAT"
-    "Content-Type" = "application/json"
+if ($branchNameSegment -ieq "master") {
+    $worklowFileName = "static.yml"
+    $uri = "https://api.github.com/repos/$gitOwner/$gitRepo/actions/workflows/$worklowFileName/dispatches"
+    $headers = @{
+        "Accept" = "application/vnd.github+json"
+        "X-GitHub-Api-Version" = "2022-11-28"
+        "Authorization" = "Bearer $PAT"
+        "Content-Type" = "application/json"
+    }
+    $body = @{
+        ref = "$branchName"
+    } | ConvertTo-Json
+    
+    Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose | Out-Null
 }
-$body = @{
-    ref = "$branchName"
-} | ConvertTo-Json
 
-Invoke-WebRequest -Uri $uri -Method Post -Headers $headers -Body $body -Verbose
 
-git status --porcelain $sourceCodeFolder
+#git status --porcelain $sourceCodeFolder
 
-#Execute-Command "git add --all"
-#Execute-Command "git commit -m ""Updated form Workflow [skip ci]"""
-#Execute-Command "git tag -a ""$tag"" -m ""[skip ci]"""
-#Execute-Command "git push origin ""$tag"""
 

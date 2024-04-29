@@ -16,14 +16,18 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.CoreeHttpClient
 {
-
     public interface ICoreeHttpClient
     {
         Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+
         Task<string?> GetStringAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+
         Task<JsonDocument?> GetJsonDocumentAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+
         Task<JsonNode?> GetJsonNodeAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+
         Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
+
         Task<List<T>?> GetJsonPathResultAsync<T>(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default);
     }
 
@@ -40,7 +44,7 @@ namespace Coree.NETStandard.CoreeHttpClient
             this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
 
-        public async Task<HttpResponseResult> GetAsync(string url,Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<HttpResponseResult> GetAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             TimeSpan effectiveCacheDuration = cacheDuration ?? TimeSpan.FromSeconds(5);
             retryDelay ??= TimeSpan.FromSeconds(5);
@@ -99,7 +103,6 @@ namespace Coree.NETStandard.CoreeHttpClient
             return new HttpResponseResult(lastException, HttpStatusCode.ServiceUnavailable);
         }
 
-
         public async Task<string?> GetStringAsync(string url, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var httpResponseResult = await GetAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
@@ -122,7 +125,6 @@ namespace Coree.NETStandard.CoreeHttpClient
             return doc.RootElement.AsNode();
         }
 
-
         public async Task<PathResult?> GetJsonPathResultAsync(string url, string jsonPath, Dictionary<string, string>? headers = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
         {
             var jsonString = await GetStringAsync(url, headers, cacheDuration, maxTries, retryDelay, cancellationToken);
@@ -140,6 +142,5 @@ namespace Coree.NETStandard.CoreeHttpClient
             var result = pathResult.Matches.Select(e => e.Value.GetValue<T>()).ToList();
             return result;
         }
-
     }
 }

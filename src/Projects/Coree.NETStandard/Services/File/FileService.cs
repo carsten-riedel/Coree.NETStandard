@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Threading;
+using System.Threading.Tasks;
 
-using Coree.NETStandard.Abstractions;
-using Coree.NETStandard.Services.RuntimeInsights;
+using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
@@ -17,8 +14,14 @@ namespace Coree.NETStandard.Services.File
     /// <summary>
     /// Defines a service for file system operations.
     /// </summary>
-    public partial class FileService : DependencySingleton<FileService>, IFileService, IDependencySingleton
+    public partial class FileService : ServiceFactory<FileService>, IFileService
     {
+        private readonly ILogger<FileService>? _logger;
+
+        public FileService(ILogger<FileService>? logger = null)
+        {
+            this._logger = logger;
+        }
 
         public string? GetCorrectCasedPath(string? path)
         {
@@ -29,7 +32,7 @@ namespace Coree.NETStandard.Services.File
         /// Corrects the casing of a specified file or directory path based on the actual casing on the file system.
         /// </summary>
         /// <remarks>
-        /// This method checks the existence of the path and then corrects its casing to match the case used in the file system. 
+        /// This method checks the existence of the path and then corrects its casing to match the case used in the file system.
         /// It considers the file system's case sensitivity: on NTFS or FAT (case-insensitive file systems), it corrects the path casing;
         /// otherwise, it assumes a case-sensitive file system and returns the original path if the drive format is not recognized.
         /// The method processes each component of the path to ensure the entire path is correctly cased from root to leaf.
@@ -55,7 +58,6 @@ namespace Coree.NETStandard.Services.File
             // Find the drive information for the path
             var driveInfo = DriveInfo.GetDrives().FirstOrDefault(d => path.StartsWith(d.Name, StringComparison.OrdinalIgnoreCase));
 
-
             // Check if the drive format is NTFS or FAT; if not, return the original path (assuming case sensitivity)
             if (driveInfo == null)
             {
@@ -70,7 +72,6 @@ namespace Coree.NETStandard.Services.File
                 // The drive format is neither NTFS nor FAT, assume case sensitivity and return the path as-is.
                 return path;
             }
-
 
             var root = Path.GetPathRoot(path);
             if (path.Equals(root, StringComparison.OrdinalIgnoreCase))
@@ -126,7 +127,7 @@ namespace Coree.NETStandard.Services.File
             var pathVariable2 = Environment.GetEnvironmentVariable("PATH", EnvironmentVariableTarget.Process);
             if (pathVariable2 == null)
             {
-                logger.LogWarning("The PATH environment variable is not set or cannot be accessed. Unable to search for command availability.");
+                _logger?.LogWarning("The PATH environment variable is not set or cannot be accessed. Unable to search for command availability.");
                 return null;
             }
 
@@ -138,7 +139,7 @@ namespace Coree.NETStandard.Services.File
                 var directoryInfo = new DirectoryInfo(pathDirectoryList[i]);
                 if (directoryInfo.Exists == false)
                 {
-                    logger.LogDebug($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
+                    _logger?.LogDebug($"The PATH contains a directory entry {directoryInfo.FullName} that do not exist, skipping.");
                     pathDirectoryList[i] = "";
                     continue;
                 }
@@ -159,12 +160,11 @@ namespace Coree.NETStandard.Services.File
                     }
                     catch (Exception ex)
                     {
-                        logger.LogInformation($"The PATH contains a invalid entry skipping. {ex.Message}", ex);
+                        _logger?.LogInformation($"The PATH contains a invalid entry skipping. {ex.Message}", ex);
                     }
                 }
                 pathDirectoryList = pathDirectoryList.Where(item => !string.IsNullOrEmpty(item)).ToArray().GroupBy(item => item).Select(group => group.First()).ToArray();
             }
-
 
             foreach (var path in pathDirectoryList)
             {

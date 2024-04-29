@@ -1,12 +1,12 @@
-﻿using Microsoft.Extensions.Logging;
-using System;
-using System.Diagnostics;
+﻿using System;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
+using Microsoft.Extensions.Logging;
+
 namespace Coree.NETStandard.Services
 {
-    public interface IRuntimeInsights
+    public interface IRuntimeInsightsx
     {
         string? EntryAssemblyName { get; }
         string? ExecutingAssemblyName { get; }
@@ -20,9 +20,9 @@ namespace Coree.NETStandard.Services
         string? Username { get; }
     }
 
-    public class RuntimeInsightsService : IRuntimeInsights
+    public class RuntimeInsightsServicex : IRuntimeInsightsx
     {
-        private readonly ILogger<IRuntimeInsights> logger;
+        private readonly ILogger<IRuntimeInsightsx> logger;
 
         public string? EntryAssemblyName { get; private set; }
         public string? ExecutingAssemblyName { get; private set; }
@@ -35,7 +35,7 @@ namespace Coree.NETStandard.Services
         public string? CurrentDirectory { get; private set; }
         public string? Username { get; private set; }
 
-        public RuntimeInsightsService(ILogger<IRuntimeInsights> logger)
+        public RuntimeInsightsServicex(ILogger<IRuntimeInsightsx> logger)
         {
             this.logger = logger;
             Initalize();
