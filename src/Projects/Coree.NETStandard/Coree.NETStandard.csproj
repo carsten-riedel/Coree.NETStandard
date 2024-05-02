@@ -17,6 +17,7 @@
     <None Remove="Extensions\Conversions\HostApplicationBuilder\ConfigureHostOptions.cs" />
     <None Remove="Extensions\Conversions\HostApplicationBuilder\UseConsoleLifetime.cs" />
     <None Remove="Services\FileService\FileService.cs" />
+    <None Remove="Services\FileService\GetValidUniquePaths.cs" />
     <None Remove="Services\FileService\IsCommandAvailable.cs" />
     <None Remove="Services\FileService\IsExecutableFilePresent.cs" />
     <None Remove="Services\FileService\IsValidLocation.cs" />
