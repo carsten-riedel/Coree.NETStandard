@@ -2,6 +2,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Coree.NETStandard.Classes.TimeOfDay;
 using System;
 
+#pragma warning disable
 
 namespace Coree.NETStandard.MSTest
 {
@@ -81,3 +82,5 @@ namespace Coree.NETStandard.MSTest
         }
     }
 }
+
+#pragma warning restore
