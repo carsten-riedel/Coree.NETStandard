@@ -1,7 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Coree.NETStandard.Classes.TimeOfDay;
 using System;
-using global::Coree.NETStandard.Classes.TimeOfDay;
+
 
 namespace Coree.NETStandard.MSTest
 {

@@ -12,7 +12,7 @@ namespace Coree.NETStandard.Classes.Scheduler
     {
         public class TickerEventArgs : EventArgs
         {
-            public TimeSpan diviation { get; set; }
+            public TimeSpan Diviation { get; set; }
             public DateTime TickTime { get; set; }
             public string FormattedTickTime { get; set; }
         }
@@ -65,7 +65,7 @@ namespace Coree.NETStandard.Classes.Scheduler
                 var now = DateTime.Now;
                 if (nextSchedule < now)
                 {
-                    RaiseTickEvent(new TickerEventArgs() { TickTime = now, diviation = now - nextSchedule, FormattedTickTime = now.ToString("MM.dd.yyyy HH:mm:ss.fff") }, new CancellationTokenSource().Token);
+                    RaiseTickEvent(new TickerEventArgs() { TickTime = now, Diviation = now - nextSchedule, FormattedTickTime = now.ToString("MM.dd.yyyy HH:mm:ss.fff") }, new CancellationTokenSource().Token);
                     //ClearSchedulesBefore(now);
                     _scheduledDates.RemoveAll(schedule => schedule < now);
                     //_scheduledDates.Remove(nextSchedule);
