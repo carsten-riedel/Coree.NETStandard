@@ -7,67 +7,8 @@ using Coree.NETStandard.Extensions.Http.HttpHeader;
 
 namespace Coree.NETStandard.Classes.HttpRequestService
 {
+
     public class TransactionRecord
-    {
-        public enum OperationStatus
-        {
-            Success,
-            Failure
-        }
-
-        public byte[]? ContentBytes { get; set; }
-        public HttpResponseHeaders? ResponseHeaders { get; set; }
-        public HttpRequestHeaders? RequestHeaders { get; set; }
-        public bool IsFromCache { get; set; }
-        public HttpStatusCode StatusCode { get; set; }
-        public Exception? Exception { get; set; } // Exception information
-        public OperationStatus Status { get; set; }
-        public long? ContentLength { get; set; }
-
-        public string ContentString
-        {
-            get
-            {
-                if (ContentBytes == null || ResponseHeaders == null)
-                {
-                    return string.Empty;
-                }
-                else
-                {
-                    try
-                    {
-                        return ResponseHeaders.GetContentEncoding().GetString(ContentBytes);
-                    }
-                    catch
-                    {
-                        return string.Empty; // In case decoding fails
-                    }
-                }
-            }
-        }
-
-        // Constructor for successful response
-        public TransactionRecord(byte[]? contentBytes, HttpResponseHeaders? responseHeaders, HttpRequestHeaders? requestHeaders, bool isFromCache, HttpStatusCode statusCode)
-        {
-            ContentBytes = contentBytes;
-            ResponseHeaders = responseHeaders;
-            RequestHeaders = requestHeaders;
-            IsFromCache = isFromCache;
-            StatusCode = statusCode;
-            Status = OperationStatus.Success;
-        }
-
-        // Constructor for failure
-        public TransactionRecord(Exception? exception, HttpStatusCode statusCode)
-        {
-            Exception = exception;
-            StatusCode = statusCode;
-            Status = OperationStatus.Failure;
-        }
-    }
-
-
-    public class TransactionRecord2
     {
         public bool IsFromCache { get; set; }
         public HttpRequestMessage? httpRequestMessage { get; set; }
@@ -140,8 +81,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        // Constructor for successful response
-        public TransactionRecord2(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage)
+        public TransactionRecord(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage)
         {
             this.httpRequestMessage = httpRequestMessage;
             this.httpResponseMessage = httpResponseMessage;

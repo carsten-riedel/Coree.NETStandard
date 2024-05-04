@@ -19,14 +19,94 @@ namespace Coree.NETStandard.Classes.HttpRequestService
     {
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IMemoryCache _cache;
-        private readonly ILogger<HttpRequestService> logger;
+        private readonly ILogger<HttpRequestService> _logger;
+
+        // Define the HTTP response condition as a property
+        private Func<HttpResponseMessage, bool> httpResponseCondition => response =>
+            response.StatusCode == HttpStatusCode.RequestTimeout ||
+            response.StatusCode == HttpStatusCode.InternalServerError ||
+            response.StatusCode == HttpStatusCode.BadGateway ||
+            response.StatusCode == HttpStatusCode.ServiceUnavailable ||
+            response.StatusCode == HttpStatusCode.NotFound ||
+            response.StatusCode == HttpStatusCode.GatewayTimeout;
 
         public HttpRequestService(ILogger<HttpRequestService> logger, IHttpClientFactory httpClientFactory, IMemoryCache memoryCache)
         {
             _httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
             _cache = memoryCache ?? throw new ArgumentNullException(nameof(memoryCache));
-            this.logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _logger = logger ?? throw new ArgumentNullException(nameof(logger));
         }
+
+        public async Task<TransactionRecord> CreateRequest(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        {
+            TimeSpan effectiveCacheDuration = cacheDuration ?? TimeSpan.FromSeconds(2);
+            TimeSpan delay = retryDelay ?? TimeSpan.FromSeconds(3);
+
+            string key = ComposeRequestKey(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
+            if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(key, out TransactionRecord? cachedResult))
+            {
+                cachedResult!.IsFromCache = true; // Mark as from cache
+                return cachedResult;
+            }
+
+            var exceptionConditionPolicy = Policy.Handle<Exception>(ex => ex is not OperationCanceledException).OrResult(httpResponseCondition);
+
+            var retryPolicy = exceptionConditionPolicy.WaitAndRetryAsync(retryCount, sleepDuration => delay, async (outcome, timespan, retryCount, context) =>
+            {
+                if (outcome.Exception != null)
+                {
+                    _logger.LogInformation($"Retry {retryCount} due to {outcome.Exception.Message}, retrying in {timespan.TotalSeconds}s.");
+                }
+                else
+                {
+                    _logger.LogInformation($"Retry {retryCount} due to HTTP {outcome.Result.StatusCode}, retrying in {timespan.TotalSeconds}s.");
+                }
+                await Task.CompletedTask;
+            });
+
+
+            var client = _httpClientFactory.CreateClient(nameof(HttpRequestService));
+            HttpRequestMessage? request = null;
+            HttpResponseMessage? response = null;
+            try
+            {
+                response = await retryPolicy.ExecuteAsync(async () =>
+                {
+                    try
+                    {
+                        request = ComposeRequestMessage(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
+                        return await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, cancellationToken);
+                    }
+                    catch (OperationCanceledException ex)
+                    {
+                        if (cancellationToken.IsCancellationRequested)
+                        {
+                            _logger.LogInformation("Operation was canceled by the caller.");
+                            return new HttpResponseMessage() { StatusCode = HttpStatusCode.ServiceUnavailable };
+                        }
+                        else
+                        {
+                            throw new HttpRequestException("Request timed out and will be retried.", ex);
+                        }
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                _logger.LogWarning("Operation failed after retries on {Url} with exception: {ExceptionMessage}", url, ex.Message);
+                response = null;
+            }
+
+            var responseResult = new TransactionRecord(request, response);
+
+            if (effectiveCacheDuration > TimeSpan.Zero)
+            {
+                _cache.Set(key, responseResult, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = effectiveCacheDuration });
+            }
+
+            return responseResult;
+        }
+
 
         private HttpRequestMessage ComposeRequestMessage(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, bool ensureUserAgent = true)
         {
@@ -46,7 +126,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             return request;
         }
 
-        public string ComposeRequestKeyAsync(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, bool ensureUserAgent = true)
+        private string ComposeRequestKey(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, bool ensureUserAgent = true)
         {
             var seperator = Environment.NewLine;
             using (var sha256 = SHA256.Create())
@@ -91,81 +171,6 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-
-        public async Task<TransactionRecord2> Request4(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int maxTries = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
-        {
-            TimeSpan effectiveCacheDuration = cacheDuration ?? TimeSpan.FromSeconds(1);
-
-            string key = ComposeRequestKeyAsync(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
-            if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(key, out TransactionRecord2? cachedResult))
-            {
-                cachedResult!.IsFromCache = true; // Mark as from cache
-                return cachedResult;
-            }
-
-            // Define the conditions for retry based on HTTP response codes.
-            Func<HttpResponseMessage, bool> httpResponseCondition = response =>
-                response.StatusCode == HttpStatusCode.RequestTimeout ||
-                response.StatusCode == HttpStatusCode.InternalServerError ||
-                response.StatusCode == HttpStatusCode.BadGateway ||
-                response.StatusCode == HttpStatusCode.ServiceUnavailable ||
-                response.StatusCode == HttpStatusCode.NotFound ||
-                response.StatusCode == HttpStatusCode.GatewayTimeout;
-
-            var exceptionPolicy = Policy.Handle<Exception>(ex => !(ex is OperationCanceledException));
-            var combined = exceptionPolicy.OrResult(httpResponseCondition);
-
-            var retryPolicy = combined.WaitAndRetryAsync(maxTries, retryAttempt =>
-                    retryDelay ?? TimeSpan.FromSeconds(3),
-                    onRetry: (outcome, timespan, retryCount, context) =>
-                    {
-                        // Check if the outcome was an exception or a response message and log appropriately
-                        if (outcome.Exception != null)
-                        {
-                            Console.WriteLine($"Retry {retryCount} due to {outcome.Exception.Message}, retrying in {timespan.TotalSeconds}s.");
-                        }
-                        else
-                        {
-                            Console.WriteLine($"Retry {retryCount} due to HTTP {outcome.Result.StatusCode}, retrying in {timespan.TotalSeconds}s.");
-                        }
-                    });
-
-            var fallbackPolicy = Policy<HttpResponseMessage>.Handle<Exception>().FallbackAsync(
-        new HttpResponseMessage() { StatusCode = System.Net.HttpStatusCode.ServiceUnavailable },
-                    onFallbackAsync: async b =>
-                    {
-                        // This is optional, but you can log the failure or handle additional cleanup here.
-                        Console.WriteLine("Falling back to an empty HttpResponseMessage.");
-                        await Task.CompletedTask;
-                    } );
-
-            var policyWrap = Policy.WrapAsync(retryPolicy, fallbackPolicy);
-
-            var client = _httpClientFactory.CreateClient(nameof(HttpRequestService));
-            HttpRequestMessage? request = null;
-            HttpResponseMessage? response = await policyWrap.ExecuteAsync(async () =>
-            {
-                try
-                {
-                    request = ComposeRequestMessage(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
-                    return await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, cancellationToken);
-                }
-                catch (OperationCanceledException) when (!cancellationToken.IsCancellationRequested)
-                {
-                    // Handle timeouts separately if needed
-                    throw new HttpRequestException("Request timed out and will be retried.");
-                }
-            });
-
-            // Process the response
-            var responseResult = new TransactionRecord2(request, response);
-
-            if (effectiveCacheDuration > TimeSpan.Zero)
-            {
-                _cache.Set(key, responseResult, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = effectiveCacheDuration });
-            }
-
-            return responseResult;
-        }
+        
     }
 }
