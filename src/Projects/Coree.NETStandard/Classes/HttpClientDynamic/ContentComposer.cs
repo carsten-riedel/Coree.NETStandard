@@ -1,14 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
-using System.Net.Http;
 using System.Net.Http.Headers;
+using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Xml;
 
-namespace Coree.NETStandard.CoreeHttpClient
+namespace Coree.NETStandard.Classes.HttpRequestService
 {
-    public class RequestContentBuilder
+    public class ContentComposer
     {
         private class NamedHttpContent
         {
@@ -53,30 +54,30 @@ namespace Coree.NETStandard.CoreeHttpClient
             }
         }
 
-        public RequestContentBuilder()
+        public ContentComposer()
         { }
 
-        public RequestContentBuilder(string data, Encoding? encoding = null, string? name = null)
+        public ContentComposer(string data, Encoding? encoding = null, string? name = null)
         {
             AddContent(data, encoding, name);
         }
 
-        public RequestContentBuilder(Dictionary<string, string> formData, string? name = null)
+        public ContentComposer(Dictionary<string, string> formData, string? name = null)
         {
             AddContent(formData, name);
         }
 
-        public RequestContentBuilder(byte[] bytes, string? name = null)
+        public ContentComposer(byte[] bytes, string? name = null)
         {
             AddContent(bytes, name);
         }
 
-        public RequestContentBuilder(string data, string mediaType, Encoding? encoding = null, string? name = null)
+        public ContentComposer(string data, string mediaType, Encoding? encoding = null, string? name = null)
         {
             AddContent(data, mediaType, encoding, name);
         }
 
-        public RequestContentBuilder(Stream stream, string? name = null, string? filename = null)
+        public ContentComposer(Stream stream, string? name = null, string? filename = null)
         {
             AddContent(stream, name, filename);
         }

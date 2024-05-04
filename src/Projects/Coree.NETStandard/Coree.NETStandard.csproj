@@ -13,18 +13,6 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
-  <ItemGroup>
-    <None Remove="Extensions\Conversions\HostApplicationBuilder\ConfigureHostOptions.cs" />
-    <None Remove="Extensions\Conversions\HostApplicationBuilder\UseConsoleLifetime.cs" />
-    <None Remove="Services\FileService\FileService.cs" />
-    <None Remove="Services\FileService\GetValidUniquePaths.cs" />
-    <None Remove="Services\FileService\IsCommandAvailable.cs" />
-    <None Remove="Services\FileService\IsExecutableFilePresent.cs" />
-    <None Remove="Services\FileService\IsValidLocation.cs" />
-    <None Remove="Services\FileService\TryCorrectDrivePathCase.cs" />
-    <None Remove="Services\FileService\TryFixPathCaseing.cs" />
-  </ItemGroup>
-
 
 
   
@@ -43,6 +31,7 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
+    <PackageReference Include="Polly" Version="8.3.1" />
     <PackageReference Include="Serilog" Version="3.1.1" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
     <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
