@@ -73,7 +73,6 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         public HttpRequestMessage? httpRequestMessage { get; set; }
         public HttpResponseMessage? httpResponseMessage { get; set; }
 
-
         public byte[]? ContentBytes
         {
             get
