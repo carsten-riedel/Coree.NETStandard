@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Net.Http.Headers;
 using System.Text;
+
 using System.Text.RegularExpressions;
 
-namespace Coree.NETStandard.CoreeHttpClient
+namespace Coree.NETStandard.Extensions.Http.HttpHeader
 {
-    public static class HttpHeadersExtensions
+    public static partial class HttpHeadersExtensions
     {
         public static Encoding GetContentEncoding(this HttpHeaders headers)
         {

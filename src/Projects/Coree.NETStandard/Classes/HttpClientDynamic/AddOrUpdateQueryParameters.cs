@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 using System.Web;
 
-namespace Coree.NETStandard.CoreeHttpClient
+namespace Coree.NETStandard.Classes.HttpRequestService
 {
     /// <summary>
     /// Provides extension methods for Uri objects.
     /// </summary>
-    public static class UriExtensions
+    public static class HttpRequestServiceUriExtensions
     {
         /// <summary>
         /// Adds new query parameters to the URI or updates them if they already exist.

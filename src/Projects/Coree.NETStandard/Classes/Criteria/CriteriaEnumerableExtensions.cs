@@ -8,6 +8,7 @@ namespace Coree.NETStandard.Classes.Criteria
     /// </summary>
     /// <remarks>
     /// Declared as a partial class, it allows for methods to be organized across multiple files, enhancing maintainability and scalability.
+    /// </remarks>
     public static partial class CriteriaEnumerableExtensions
     {
         /// <summary>
