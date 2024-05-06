@@ -40,7 +40,6 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                 client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("gzip"));
                 client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("deflate"));
                 client.DefaultRequestHeaders.AcceptEncoding.Add(new StringWithQualityHeaderValue("identity"));
-                client.Timeout = TimeSpan.FromMilliseconds(10000);
 
             }).ConfigurePrimaryHttpMessageHandler<HttpRequestServiceHandler>();
 

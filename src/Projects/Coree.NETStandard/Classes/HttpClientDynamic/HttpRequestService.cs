@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
+using Coree.NETStandard.Classes.RateLimiter;
 
 using Polly;
 
@@ -20,6 +21,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IMemoryCache _cache;
         private readonly ILogger<HttpRequestService> _logger;
+        private readonly RateLimit<TransactionRecord> _rateLimiter;
 
         // Define the HTTP response condition as a property
         private Func<HttpResponseMessage, bool> httpResponseCondition => response =>
@@ -35,15 +37,20 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             _httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
             _cache = memoryCache ?? throw new ArgumentNullException(nameof(memoryCache));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _rateLimiter = new RateLimit<TransactionRecord>(1, TimeSpan.FromSeconds(15));
         }
 
-        public async Task<TransactionRecord> CreateRequest(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, CancellationToken cancellationToken = default)
+        public async Task<TransactionRecord> CreateRequest(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, TimeSpan? requestTimeout = null, CancellationToken cancellationToken = default)
         {
-            TimeSpan effectiveCacheDuration = cacheDuration ?? TimeSpan.FromSeconds(2);
-            TimeSpan delay = retryDelay ?? TimeSpan.FromSeconds(3);
+            cacheDuration ??= TimeSpan.FromSeconds(2);
+            retryDelay ??= TimeSpan.FromSeconds(3);
+            requestTimeout ??= TimeSpan.FromSeconds(10);
+
+            var timeoutCts = new CancellationTokenSource(requestTimeout.Value);
+            var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, timeoutCts.Token);
 
             string key = ComposeRequestKey(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
-            if (effectiveCacheDuration > TimeSpan.Zero && _cache.TryGetValue(key, out TransactionRecord? cachedResult))
+            if (cacheDuration > TimeSpan.Zero && _cache.TryGetValue(key, out TransactionRecord? cachedResult))
             {
                 cachedResult!.IsFromCache = true; // Mark as from cache
                 return cachedResult;
@@ -51,7 +58,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
 
             var exceptionConditionPolicy = Policy.Handle<Exception>(ex => ex is not OperationCanceledException).OrResult(httpResponseCondition);
 
-            var retryPolicy = exceptionConditionPolicy.WaitAndRetryAsync(retryCount, sleepDuration => delay, async (outcome, timespan, retryCount, context) =>
+            var retryPolicy = exceptionConditionPolicy.WaitAndRetryAsync(retryCount, _ => retryDelay.Value, async (outcome, timespan, retryCount, context) =>
             {
                 if (outcome.Exception != null)
                 {
@@ -75,13 +82,13 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                     try
                     {
                         request = ComposeRequestMessage(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
-                        return await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, cancellationToken);
+                        return await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, linkedCts.Token);
                     }
                     catch (OperationCanceledException ex)
                     {
-                        if (cancellationToken.IsCancellationRequested)
+                        if (linkedCts.IsCancellationRequested)
                         {
-                            _logger.LogInformation("Operation was canceled by the caller.");
+                            _logger.LogInformation("Operation was canceled.");
                             return new HttpResponseMessage() { StatusCode = HttpStatusCode.ServiceUnavailable };
                         }
                         else
@@ -99,16 +106,21 @@ namespace Coree.NETStandard.Classes.HttpRequestService
 
             var responseResult = new TransactionRecord(request, response);
 
-            if (effectiveCacheDuration > TimeSpan.Zero)
+            if (cacheDuration > TimeSpan.Zero)
             {
-                _cache.Set(key, responseResult, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = effectiveCacheDuration });
+                _cache.Set(key, responseResult, new MemoryCacheEntryOptions { AbsoluteExpirationRelativeToNow = cacheDuration });
             }
 
             return responseResult;
         }
 
+        public async Task<TransactionRecord> PerformTask(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, TimeSpan? requestTimeout = null, CancellationToken cancellationToken = default)
+        {
+            return await _rateLimiter.EnqueueTask(() => CreateRequest(httpMethod, url, headers, queryParams, cookies, httpContentBuilder, cacheDuration, retryCount, retryDelay, requestTimeout, cancellationToken));
+        }
 
-        private HttpRequestMessage ComposeRequestMessage(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, bool ensureUserAgent = true)
+
+        private HttpRequestMessage ComposeRequestMessage(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, bool ensureUserAgent = true, bool ensureCorrelationID = true)
         {
             url = url.AddOrUpdateQueryParameters(queryParams);
             var request = new HttpRequestMessage(httpMethod, url);
@@ -123,6 +135,15 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                     request.Headers.Add("User-Agent", "curl/8.7.0");
                 }
             }
+
+            if (ensureCorrelationID)
+            {
+                if (!request.Headers.Contains("X-Correlation-ID"))
+                {
+                    request.Headers.Add("X-Correlation-ID", Guid.NewGuid().ToString());
+                }
+            }
+
             return request;
         }
 
@@ -171,6 +192,10 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        
+        public async Task InvokeDump()
+        {
+            Console.WriteLine("dump");
+            await Task.CompletedTask;
+        }
     }
 }
