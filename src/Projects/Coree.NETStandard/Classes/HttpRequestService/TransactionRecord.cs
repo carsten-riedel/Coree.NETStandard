@@ -14,7 +14,9 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         public HttpRequestMessage? httpRequestMessage { get; set; }
         public HttpResponseMessage? httpResponseMessage { get; set; }
 
-        public byte[]? ContentBytes
+        public Exception? lastException { get; set; }
+
+        public byte[]? ResponseBytes
         {
             get
             {
@@ -36,7 +38,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        public string? ContentString
+        public string? ResponseString
         {
             get
             {
@@ -58,11 +60,11 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        public bool IsSuccess
+        public bool ResponseSuccess
         {
             get
             {
-                if (httpResponseMessage == null || httpResponseMessage.Content == null || httpResponseMessage.Headers == null)
+                if ((httpResponseMessage == null || httpResponseMessage.Content == null || httpResponseMessage.Headers == null) || (lastException != null))
                 {
                     return false;
                 }
@@ -81,10 +83,11 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        public TransactionRecord(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage)
+        public TransactionRecord(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage, Exception? lastException = null)
         {
             this.httpRequestMessage = httpRequestMessage;
             this.httpResponseMessage = httpResponseMessage;
+            this.lastException = lastException;
         }
 
     }

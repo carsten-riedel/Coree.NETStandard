@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Classes.RateLimiter;
 
 using Polly;
 
@@ -21,33 +20,32 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         private readonly IHttpClientFactory _httpClientFactory;
         private readonly IMemoryCache _cache;
         private readonly ILogger<HttpRequestService> _logger;
-        private readonly RateLimit<TransactionRecord> _rateLimiter;
 
         // Define the HTTP response condition as a property
-        private Func<HttpResponseMessage, bool> httpResponseCondition => response =>
-            response.StatusCode == HttpStatusCode.RequestTimeout ||
-            response.StatusCode == HttpStatusCode.InternalServerError ||
-            response.StatusCode == HttpStatusCode.BadGateway ||
-            response.StatusCode == HttpStatusCode.ServiceUnavailable ||
-            response.StatusCode == HttpStatusCode.NotFound ||
-            response.StatusCode == HttpStatusCode.GatewayTimeout;
+        private Func<HttpResponseMessage?, bool> httpResponseCondition => response =>
+            response?.StatusCode == HttpStatusCode.RequestTimeout ||
+            response?.StatusCode == HttpStatusCode.InternalServerError ||
+            response?.StatusCode == HttpStatusCode.BadGateway ||
+            response?.StatusCode == HttpStatusCode.ServiceUnavailable ||
+            response?.StatusCode == HttpStatusCode.NotFound ||
+            response?.StatusCode == HttpStatusCode.GatewayTimeout;
 
         public HttpRequestService(ILogger<HttpRequestService> logger, IHttpClientFactory httpClientFactory, IMemoryCache memoryCache)
         {
             _httpClientFactory = httpClientFactory ?? throw new ArgumentNullException(nameof(httpClientFactory));
             _cache = memoryCache ?? throw new ArgumentNullException(nameof(memoryCache));
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
-            _rateLimiter = new RateLimit<TransactionRecord>(1, TimeSpan.FromSeconds(15));
         }
 
         public async Task<TransactionRecord> CreateRequest(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, TimeSpan? requestTimeout = null, CancellationToken cancellationToken = default)
         {
             cacheDuration ??= TimeSpan.FromSeconds(2);
-            retryDelay ??= TimeSpan.FromSeconds(3);
-            requestTimeout ??= TimeSpan.FromSeconds(10);
-
-            var timeoutCts = new CancellationTokenSource(requestTimeout.Value);
-            var linkedCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, timeoutCts.Token);
+            retryDelay ??= TimeSpan.FromSeconds(10);
+            requestTimeout ??= TimeSpan.FromSeconds(5);
+            
+            var requestTimeoutCts = new CancellationTokenSource(requestTimeout.Value);
+            var requestCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken,requestTimeoutCts.Token);
+            
 
             string key = ComposeRequestKey(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
             if (cacheDuration > TimeSpan.Zero && _cache.TryGetValue(key, out TransactionRecord? cachedResult))
@@ -75,6 +73,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             var client = _httpClientFactory.CreateClient(nameof(HttpRequestService));
             HttpRequestMessage? request = null;
             HttpResponseMessage? response = null;
+            Exception? exception = null;
             try
             {
                 response = await retryPolicy.ExecuteAsync(async () =>
@@ -82,18 +81,26 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                     try
                     {
                         request = ComposeRequestMessage(httpMethod, url, headers, queryParams, cookies, httpContentBuilder);
-                        return await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, linkedCts.Token);
+                        requestTimeoutCts = new CancellationTokenSource(requestTimeout.Value);
+                        requestCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken, requestTimeoutCts.Token);
+                        var retval = await client.SendAsync(request, HttpCompletionOption.ResponseContentRead, requestCts.Token);
+                        return retval;
                     }
                     catch (OperationCanceledException ex)
                     {
-                        if (linkedCts.IsCancellationRequested)
+                        if (requestTimeoutCts.IsCancellationRequested)
                         {
-                            _logger.LogInformation("Operation was canceled.");
-                            return new HttpResponseMessage() { StatusCode = HttpStatusCode.ServiceUnavailable };
+                            throw new HttpRequestException("Request timed out.", ex);
+                        }
+                        if (cancellationToken.IsCancellationRequested)
+                        {
+                            _logger.LogInformation("Operation was canceled by the user.");
+                            exception = new OperationCanceledException("Operation was canceled by the user");
+                            return null;
                         }
                         else
                         {
-                            throw new HttpRequestException("Request timed out and will be retried.", ex);
+                            throw new HttpRequestException("Unkown OperationCanceled request", ex);
                         }
                     }
                 });
@@ -101,10 +108,10 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             catch (Exception ex)
             {
                 _logger.LogWarning("Operation failed after retries on {Url} with exception: {ExceptionMessage}", url, ex.Message);
-                response = null;
+                exception = ex;
             }
 
-            var responseResult = new TransactionRecord(request, response);
+            var responseResult = new TransactionRecord(request, response,exception);
 
             if (cacheDuration > TimeSpan.Zero)
             {
@@ -112,11 +119,6 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
 
             return responseResult;
-        }
-
-        public async Task<TransactionRecord> PerformTask(HttpMethod httpMethod, Uri url, Dictionary<string, string>? headers = null, Dictionary<string, string>? queryParams = null, Dictionary<string, string>? cookies = null, ContentComposer? httpContentBuilder = null, TimeSpan? cacheDuration = null, int retryCount = 3, TimeSpan? retryDelay = null, TimeSpan? requestTimeout = null, CancellationToken cancellationToken = default)
-        {
-            return await _rateLimiter.EnqueueTask(() => CreateRequest(httpMethod, url, headers, queryParams, cookies, httpContentBuilder, cacheDuration, retryCount, retryDelay, requestTimeout, cancellationToken));
         }
 
 
@@ -191,11 +193,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                 return BitConverter.ToString(combinedHash).Replace("-", "").ToLowerInvariant();
             }
         }
-
-        public async Task InvokeDump()
-        {
-            Console.WriteLine("dump");
-            await Task.CompletedTask;
-        }
     }
+
+
 }
