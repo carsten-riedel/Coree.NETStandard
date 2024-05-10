@@ -14,7 +14,7 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
-    <None Remove="Classes\RateLimiter\RateLimiter.cs" />
+    <None Remove="Services\DebugService\DebugService.cs" />
   </ItemGroup>
 
 
