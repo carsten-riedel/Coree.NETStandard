@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http.Headers;
+using System.Text;
 
-namespace Coree.NETStandard.CoreeHttpClient
+namespace Coree.NETStandard.Classes.HttpRequestService
 {
     /// <summary>
     /// Extends the <see cref="HttpRequestHeaders"/> class with additional methods for convenient header manipulation.

@@ -152,6 +152,14 @@ namespace Coree.NETStandard.Classes.Criteria
                     return Expression.GreaterThanOrEqual(property, constant);
                 case CriteriaComparisonMethod.LessThanOrEqual:
                     return Expression.LessThanOrEqual(property, constant);
+                case CriteriaComparisonMethod.Contains:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.StartsWith:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.EndsWith:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.IsNullOrWhiteSpace:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
                 default:
                     throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
             }

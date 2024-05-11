@@ -792,6 +792,559 @@ references:
   fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaQueryableExtensions.ApplyCriteria(Of T, TValue)(System.Linq.IQueryable(Of T), Coree.NETStandard.Classes.Criteria.CriteriaItem(Of TValue))
   nameWithType: CriteriaQueryableExtensions.ApplyCriteria<T, TValue>(IQueryable<T>, CriteriaItem<TValue>)
   nameWithType.vb: CriteriaQueryableExtensions.ApplyCriteria(Of T, TValue)(IQueryable(Of T), CriteriaItem(Of TValue))
+- uid: Coree.NETStandard.Classes.DebugService
+  name: Coree.NETStandard.Classes.DebugService
+  href: api/Coree.NETStandard.Classes.DebugService.html
+  commentId: N:Coree.NETStandard.Classes.DebugService
+  fullName: Coree.NETStandard.Classes.DebugService
+  nameWithType: Coree.NETStandard.Classes.DebugService
+- uid: Coree.NETStandard.Classes.DebugService.DebugService
+  name: DebugService
+  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html
+  commentId: T:Coree.NETStandard.Classes.DebugService.DebugService
+  fullName: Coree.NETStandard.Classes.DebugService.DebugService
+  nameWithType: DebugService
+- uid: Coree.NETStandard.Classes.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.DebugService.DebugService})
+  name: DebugService(ILogger<DebugService>)
+  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Classes_DebugService_DebugService__
+  commentId: M:Coree.NETStandard.Classes.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.DebugService.DebugService})
+  name.vb: New(ILogger(Of DebugService))
+  fullName: Coree.NETStandard.Classes.DebugService.DebugService.DebugService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Classes.DebugService.DebugService>)
+  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Classes.DebugService.DebugService))
+  nameWithType: DebugService.DebugService(ILogger<DebugService>)
+  nameWithType.vb: DebugService.New(ILogger(Of DebugService))
+- uid: Coree.NETStandard.Classes.DebugService.DebugService.#ctor*
+  name: DebugService
+  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.DebugService.DebugService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.DebugService.DebugService.DebugService
+  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.New
+  nameWithType: DebugService.DebugService
+  nameWithType.vb: DebugService.New
+- uid: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(System.String)
+  name: LogMessage(string)
+  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService_LogMessage_System_String_
+  commentId: M:Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(System.String)
+  name.vb: LogMessage(String)
+  fullName: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(string)
+  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(String)
+  nameWithType: DebugService.LogMessage(string)
+  nameWithType.vb: DebugService.LogMessage(String)
+- uid: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage*
+  name: LogMessage
+  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService_LogMessage_
+  commentId: Overload:Coree.NETStandard.Classes.DebugService.DebugService.LogMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage
+  nameWithType: DebugService.LogMessage
+- uid: Coree.NETStandard.Classes.DebugService.IDebugService
+  name: IDebugService
+  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html
+  commentId: T:Coree.NETStandard.Classes.DebugService.IDebugService
+  fullName: Coree.NETStandard.Classes.DebugService.IDebugService
+  nameWithType: IDebugService
+- uid: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(System.String)
+  name: LogMessage(string)
+  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html#Coree_NETStandard_Classes_DebugService_IDebugService_LogMessage_System_String_
+  commentId: M:Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(System.String)
+  name.vb: LogMessage(String)
+  fullName: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(string)
+  fullName.vb: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(String)
+  nameWithType: IDebugService.LogMessage(string)
+  nameWithType.vb: IDebugService.LogMessage(String)
+- uid: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage*
+  name: LogMessage
+  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html#Coree_NETStandard_Classes_DebugService_IDebugService_LogMessage_
+  commentId: Overload:Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage
+  nameWithType: IDebugService.LogMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService
+  name: Coree.NETStandard.Classes.HttpRequestService
+  href: api/Coree.NETStandard.Classes.HttpRequestService.html
+  commentId: N:Coree.NETStandard.Classes.HttpRequestService
+  fullName: Coree.NETStandard.Classes.HttpRequestService
+  nameWithType: Coree.NETStandard.Classes.HttpRequestService
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  name: ContentComposer
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  nameWithType: ContentComposer
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  name: ContentComposer()
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  name.vb: New()
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer()
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New()
+  nameWithType: ContentComposer.ContentComposer()
+  nameWithType.vb: ContentComposer.New()
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Byte[],System.String)
+  name: ContentComposer(byte[], string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_System_Byte___System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Byte[],System.String)
+  name.vb: New(Byte(), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(byte[], string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(Byte(), String)
+  nameWithType: ContentComposer.ContentComposer(byte[], string?)
+  nameWithType.vb: ContentComposer.New(Byte(), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name: ContentComposer(Dictionary<string, string>, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name.vb: New(Dictionary(Of String, String), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(System.Collections.Generic.Dictionary<string, string>, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(System.Collections.Generic.Dictionary(Of String, String), String)
+  nameWithType: ContentComposer.ContentComposer(Dictionary<string, string>, string?)
+  nameWithType.vb: ContentComposer.New(Dictionary(Of String, String), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.IO.Stream,System.String,System.String)
+  name: ContentComposer(Stream, string?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_System_IO_Stream_System_String_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.IO.Stream,System.String,System.String)
+  name.vb: New(Stream, String, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(System.IO.Stream, string?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(System.IO.Stream, String, String)
+  nameWithType: ContentComposer.ContentComposer(Stream, string?, string?)
+  nameWithType.vb: ContentComposer.New(Stream, String, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.String,System.Text.Encoding,System.String)
+  name: ContentComposer(string, string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_System_String_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.String,System.Text.Encoding,System.String)
+  name.vb: New(String, String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(string, string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(String, String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.ContentComposer(string, string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.New(String, String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.Text.Encoding,System.String)
+  name: ContentComposer(string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.Text.Encoding,System.String)
+  name.vb: New(String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.ContentComposer(string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.New(String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  name: ContentComposer
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New
+  nameWithType: ContentComposer.ContentComposer
+  nameWithType.vb: ContentComposer.New
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Byte[],System.String)
+  name: AddContent(byte[], string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_Byte___System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Byte[],System.String)
+  name.vb: AddContent(Byte(), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(byte[], string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(Byte(), String)
+  nameWithType: ContentComposer.AddContent(byte[], string?)
+  nameWithType.vb: ContentComposer.AddContent(Byte(), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name: AddContent(Dictionary<string, string>, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name.vb: AddContent(Dictionary(Of String, String), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary<string, string>, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary(Of String, String), String)
+  nameWithType: ContentComposer.AddContent(Dictionary<string, string>, string?)
+  nameWithType.vb: ContentComposer.AddContent(Dictionary(Of String, String), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream,System.String,System.String)
+  name: AddContent(Stream, string?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_IO_Stream_System_String_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream,System.String,System.String)
+  name.vb: AddContent(Stream, String, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream, string?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream, String, String)
+  nameWithType: ContentComposer.AddContent(Stream, string?, string?)
+  nameWithType.vb: ContentComposer.AddContent(Stream, String, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.String,System.Text.Encoding,System.String)
+  name: AddContent(string, string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_String_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.String,System.Text.Encoding,System.String)
+  name.vb: AddContent(String, String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(string, string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(String, String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.AddContent(string, string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.AddContent(String, String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.Text.Encoding,System.String)
+  name: AddContent(string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.Text.Encoding,System.String)
+  name.vb: AddContent(String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.AddContent(string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.AddContent(String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent*
+  name: AddContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent
+  nameWithType: ContentComposer.AddContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  name: Build()
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_Build
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build()
+  nameWithType: ContentComposer.Build()
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build*
+  name: Build
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_Build_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  nameWithType: ContentComposer.Build
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions
+  name: HttpRequestHeadersExtensions
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions
+  nameWithType: HttpRequestHeadersExtensions
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
+  name: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestHeadersExtensions_AddRequestHeaderCookies_System_Net_Http_Headers_HttpRequestHeaders_System_Collections_Generic_Dictionary_System_String_System_String__System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
+  name.vb: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary<string, string>?, bool)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary(Of String, String), Boolean)
+  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
+  nameWithType.vb: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies*
+  name: AddRequestHeaderCookies
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestHeadersExtensions_AddRequestHeaderCookies_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.AddRequestHeaderCookies
+  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService
+  name: HttpRequestService
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService
+  nameWithType: HttpRequestService
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.HttpRequestService.HttpRequestService},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  name: HttpRequestService(ILogger<HttpRequestService>, IHttpClientFactory, IMemoryCache)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Classes_HttpRequestService_HttpRequestService__System_Net_Http_IHttpClientFactory_Microsoft_Extensions_Caching_Memory_IMemoryCache_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.HttpRequestService.HttpRequestService},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  name.vb: New(ILogger(Of HttpRequestService), IHttpClientFactory, IMemoryCache)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.HttpRequestService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Classes.HttpRequestService.HttpRequestService>, System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Classes.HttpRequestService.HttpRequestService), System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
+  nameWithType: HttpRequestService.HttpRequestService(ILogger<HttpRequestService>, IHttpClientFactory, IMemoryCache)
+  nameWithType.vb: HttpRequestService.New(ILogger(Of HttpRequestService), IHttpClientFactory, IMemoryCache)
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.#ctor*
+  name: HttpRequestService
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.HttpRequestService
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.New
+  nameWithType: HttpRequestService.HttpRequestService
+  nameWithType.vb: HttpRequestService.New
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name: CreateRequest(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_CreateRequest_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__Coree_NETStandard_Classes_HttpRequestService_ContentComposer_System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name.vb: CreateRequest(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, Coree.NETStandard.Classes.HttpRequestService.ContentComposer?, System.TimeSpan?, int, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), Coree.NETStandard.Classes.HttpRequestService.ContentComposer, System.TimeSpan?, Integer, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
+  nameWithType: HttpRequestService.CreateRequest(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
+  nameWithType.vb: HttpRequestService.CreateRequest(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest*
+  name: CreateRequest
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_CreateRequest_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest
+  nameWithType: HttpRequestService.CreateRequest
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
+  name: InvokeDump()
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_InvokeDump
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump()
+  nameWithType: HttpRequestService.InvokeDump()
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump*
+  name: InvokeDump
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_InvokeDump_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
+  nameWithType: HttpRequestService.InvokeDump
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name: PerformTask(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_PerformTask_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__Coree_NETStandard_Classes_HttpRequestService_ContentComposer_System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
+  name.vb: PerformTask(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, Coree.NETStandard.Classes.HttpRequestService.ContentComposer?, System.TimeSpan?, int, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), Coree.NETStandard.Classes.HttpRequestService.ContentComposer, System.TimeSpan?, Integer, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
+  nameWithType: HttpRequestService.PerformTask(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
+  nameWithType.vb: HttpRequestService.PerformTask(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask*
+  name: PerformTask
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_PerformTask_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask
+  nameWithType: HttpRequestService.PerformTask
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler
+  name: HttpRequestServiceHandler
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler
+  nameWithType: HttpRequestServiceHandler
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler})
+  name: HttpRequestServiceHandler(ILogger<HttpRequestServiceHandler>)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceHandler__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceHandler__
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler})
+  name.vb: New(ILogger(Of HttpRequestServiceHandler))
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.HttpRequestServiceHandler(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler>)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler))
+  nameWithType: HttpRequestServiceHandler.HttpRequestServiceHandler(ILogger<HttpRequestServiceHandler>)
+  nameWithType.vb: HttpRequestServiceHandler.New(ILogger(Of HttpRequestServiceHandler))
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.#ctor*
+  name: HttpRequestServiceHandler
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceHandler__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.HttpRequestServiceHandler
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.New
+  nameWithType: HttpRequestServiceHandler.HttpRequestServiceHandler
+  nameWithType.vb: HttpRequestServiceHandler.New
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation(System.Net.Http.HttpRequestMessage,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)
+  name: ServerCertificateCustomValidation(HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceHandler_ServerCertificateCustomValidation_System_Net_Http_HttpRequestMessage_System_Security_Cryptography_X509Certificates_X509Certificate2_System_Security_Cryptography_X509Certificates_X509Chain_System_Net_Security_SslPolicyErrors_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation(System.Net.Http.HttpRequestMessage,System.Security.Cryptography.X509Certificates.X509Certificate2,System.Security.Cryptography.X509Certificates.X509Chain,System.Net.Security.SslPolicyErrors)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation(System.Net.Http.HttpRequestMessage, System.Security.Cryptography.X509Certificates.X509Certificate2, System.Security.Cryptography.X509Certificates.X509Chain, System.Net.Security.SslPolicyErrors)
+  nameWithType: HttpRequestServiceHandler.ServerCertificateCustomValidation(HttpRequestMessage, X509Certificate2, X509Chain, SslPolicyErrors)
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation*
+  name: ServerCertificateCustomValidation
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceHandler_ServerCertificateCustomValidation_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.ServerCertificateCustomValidation
+  nameWithType: HttpRequestServiceHandler.ServerCertificateCustomValidation
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions
+  name: HttpRequestServiceUriExtensions
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions
+  nameWithType: HttpRequestServiceUriExtensions
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})
+  name: AddOrUpdateQueryParameters(Uri, Dictionary<string, string>?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceUriExtensions_AddOrUpdateQueryParameters_System_Uri_System_Collections_Generic_Dictionary_System_String_System_String__
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})
+  name.vb: AddOrUpdateQueryParameters(Uri, Dictionary(Of String, String))
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(System.Uri, System.Collections.Generic.Dictionary<string, string>?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(System.Uri, System.Collections.Generic.Dictionary(Of String, String))
+  nameWithType: HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(Uri, Dictionary<string, string>?)
+  nameWithType.vb: HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters(Uri, Dictionary(Of String, String))
+- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters*
+  name: AddOrUpdateQueryParameters
+  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestServiceUriExtensions_AddOrUpdateQueryParameters_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters
+  nameWithType: HttpRequestServiceUriExtensions.AddOrUpdateQueryParameters
+- uid: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions
+  name: ServiceCollectionExtensions
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+- uid: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name: AddHttpRequestService(IServiceCollection)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.html#Coree_NETStandard_Classes_HttpRequestService_ServiceCollectionExtensions_AddHttpRequestService_Microsoft_Extensions_DependencyInjection_IServiceCollection_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService(Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  nameWithType: ServiceCollectionExtensions.AddHttpRequestService(IServiceCollection)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService*
+  name: AddHttpRequestService
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.html#Coree_NETStandard_Classes_HttpRequestService_ServiceCollectionExtensions_AddHttpRequestService_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.AddHttpRequestService
+  nameWithType: ServiceCollectionExtensions.AddHttpRequestService
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  name: TransactionRecord
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  nameWithType: TransactionRecord
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage)
+  name: TransactionRecord(HttpRequestMessage?, HttpResponseMessage?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage)
+  name.vb: New(HttpRequestMessage, HttpResponseMessage)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord(System.Net.Http.HttpRequestMessage?, System.Net.Http.HttpResponseMessage?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpResponseMessage)
+  nameWithType: TransactionRecord.TransactionRecord(HttpRequestMessage?, HttpResponseMessage?)
+  nameWithType.vb: TransactionRecord.New(HttpRequestMessage, HttpResponseMessage)
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor*
+  name: TransactionRecord
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New
+  nameWithType: TransactionRecord.TransactionRecord
+  nameWithType.vb: TransactionRecord.New
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+  name: ContentBytes
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentBytes
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+  nameWithType: TransactionRecord.ContentBytes
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes*
+  name: ContentBytes
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentBytes_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+  nameWithType: TransactionRecord.ContentBytes
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  name: ContentString
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentString
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  nameWithType: TransactionRecord.ContentString
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString*
+  name: ContentString
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentString_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  nameWithType: TransactionRecord.ContentString
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  name: IsFromCache
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  nameWithType: TransactionRecord.IsFromCache
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache*
+  name: IsFromCache
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  nameWithType: TransactionRecord.IsFromCache
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+  name: IsSuccess
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsSuccess
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+  nameWithType: TransactionRecord.IsSuccess
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess*
+  name: IsSuccess
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsSuccess_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+  nameWithType: TransactionRecord.IsSuccess
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  name: httpRequestMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpRequestMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  nameWithType: TransactionRecord.httpRequestMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage*
+  name: httpRequestMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpRequestMessage_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  nameWithType: TransactionRecord.httpRequestMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  name: httpResponseMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpResponseMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  nameWithType: TransactionRecord.httpResponseMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage*
+  name: httpResponseMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpResponseMessage_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  nameWithType: TransactionRecord.httpResponseMessage
+- uid: Coree.NETStandard.Classes.RateLimiter
+  name: Coree.NETStandard.Classes.RateLimiter
+  href: api/Coree.NETStandard.Classes.RateLimiter.html
+  commentId: N:Coree.NETStandard.Classes.RateLimiter
+  fullName: Coree.NETStandard.Classes.RateLimiter
+  nameWithType: Coree.NETStandard.Classes.RateLimiter
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1
+  name: RateLimit<T>
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html
+  commentId: T:Coree.NETStandard.Classes.RateLimiter.RateLimit`1
+  name.vb: RateLimit(Of T)
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T)
+  nameWithType: RateLimit<T>
+  nameWithType.vb: RateLimit(Of T)
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor(System.Int32,System.TimeSpan)
+  name: RateLimit(int, TimeSpan)
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1__ctor_System_Int32_System_TimeSpan_
+  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor(System.Int32,System.TimeSpan)
+  name.vb: New(Integer, TimeSpan)
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.RateLimit(int, System.TimeSpan)
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).New(Integer, System.TimeSpan)
+  nameWithType: RateLimit<T>.RateLimit(int, TimeSpan)
+  nameWithType.vb: RateLimit(Of T).New(Integer, TimeSpan)
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor*
+  name: RateLimit
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.RateLimit
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).New
+  nameWithType: RateLimit<T>.RateLimit
+  nameWithType.vb: RateLimit(Of T).New
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
+  name: Dispose()
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_Dispose
+  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.Dispose()
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).Dispose()
+  nameWithType: RateLimit<T>.Dispose()
+  nameWithType.vb: RateLimit(Of T).Dispose()
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose*
+  name: Dispose
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_Dispose_
+  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.Dispose
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).Dispose
+  nameWithType: RateLimit<T>.Dispose
+  nameWithType.vb: RateLimit(Of T).Dispose
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask(System.Func{System.Threading.Tasks.Task{`0}})
+  name: EnqueueTask(Func<Task<T>>)
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_EnqueueTask_System_Func_System_Threading_Tasks_Task__0___
+  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask(System.Func{System.Threading.Tasks.Task{`0}})
+  name.vb: EnqueueTask(Func(Of Task(Of T)))
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.EnqueueTask(System.Func<System.Threading.Tasks.Task<T>>)
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).EnqueueTask(System.Func(Of System.Threading.Tasks.Task(Of T)))
+  nameWithType: RateLimit<T>.EnqueueTask(Func<Task<T>>)
+  nameWithType.vb: RateLimit(Of T).EnqueueTask(Func(Of Task(Of T)))
+- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask*
+  name: EnqueueTask
+  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_EnqueueTask_
+  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.EnqueueTask
+  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).EnqueueTask
+  nameWithType: RateLimit<T>.EnqueueTask
+  nameWithType.vb: RateLimit(Of T).EnqueueTask
 - uid: Coree.NETStandard.Classes.Scheduler
   name: Coree.NETStandard.Classes.Scheduler
   href: api/Coree.NETStandard.Classes.Scheduler.html
@@ -912,6 +1465,19 @@ references:
   commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
   fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
   nameWithType: Scheduler.TickerEventArgs
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
+  name: Diviation
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_Diviation
+  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
+  nameWithType: Scheduler.TickerEventArgs.Diviation
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation*
+  name: Diviation
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_Diviation_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
+  nameWithType: Scheduler.TickerEventArgs.Diviation
 - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
   name: FormattedTickTime
   href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_FormattedTickTime
@@ -938,19 +1504,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
   nameWithType: Scheduler.TickerEventArgs.TickTime
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
-  name: diviation
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_diviation
-  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
-  nameWithType: Scheduler.TickerEventArgs.diviation
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation*
-  name: diviation
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_diviation_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
-  nameWithType: Scheduler.TickerEventArgs.diviation
 - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
   name: Scheduler.TickerEventDelegate
   href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html
@@ -1884,960 +2437,6 @@ references:
   fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.CType
   nameWithType: TimeOfDay.implicit operator
   nameWithType.vb: TimeOfDay.CType
-- uid: Coree.NETStandard.CoreeHttpClient
-  name: Coree.NETStandard.CoreeHttpClient
-  href: api/Coree.NETStandard.CoreeHttpClient.html
-  commentId: N:Coree.NETStandard.CoreeHttpClient
-  fullName: Coree.NETStandard.CoreeHttpClient
-  nameWithType: Coree.NETStandard.CoreeHttpClient
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient
-  name: CoreeHttpClient
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient
-  nameWithType: CoreeHttpClient
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.CoreeHttpClient.CoreeHttpClient},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  name: CoreeHttpClient(ILogger<CoreeHttpClient>, IHttpClientFactory, IMemoryCache)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_CoreeHttpClient_CoreeHttpClient__System_Net_Http_IHttpClientFactory_Microsoft_Extensions_Caching_Memory_IMemoryCache_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.CoreeHttpClient.CoreeHttpClient},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  name.vb: New(ILogger(Of CoreeHttpClient), IHttpClientFactory, IMemoryCache)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.CoreeHttpClient(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.CoreeHttpClient.CoreeHttpClient>, System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.CoreeHttpClient.CoreeHttpClient), System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  nameWithType: CoreeHttpClient.CoreeHttpClient(ILogger<CoreeHttpClient>, IHttpClientFactory, IMemoryCache)
-  nameWithType.vb: CoreeHttpClient.New(ILogger(Of CoreeHttpClient), IHttpClientFactory, IMemoryCache)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.#ctor*
-  name: CoreeHttpClient
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.CoreeHttpClient
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.New
-  nameWithType: CoreeHttpClient.CoreeHttpClient
-  nameWithType.vb: CoreeHttpClient.New
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync*
-  name: GetAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetAsync
-  nameWithType: CoreeHttpClient.GetAsync
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonDocumentAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonDocumentAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonDocumentAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetJsonDocumentAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetJsonDocumentAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync*
-  name: GetJsonDocumentAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonDocumentAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonDocumentAsync
-  nameWithType: CoreeHttpClient.GetJsonDocumentAsync
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonNodeAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonNodeAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonNodeAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetJsonNodeAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetJsonNodeAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync*
-  name: GetJsonNodeAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonNodeAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonNodeAsync
-  nameWithType: CoreeHttpClient.GetJsonNodeAsync
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonPathResultAsync(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonPathResultAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonPathResultAsync(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync(string, string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync(String, String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetJsonPathResultAsync(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetJsonPathResultAsync(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync*
-  name: GetJsonPathResultAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonPathResultAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync
-  nameWithType: CoreeHttpClient.GetJsonPathResultAsync
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync``1(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonPathResultAsync<T>(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetJsonPathResultAsync__1_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync``1(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonPathResultAsync(Of T)(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync<T>(string, string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetJsonPathResultAsync(Of T)(String, String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetJsonPathResultAsync<T>(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetJsonPathResultAsync(Of T)(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetStringAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetStringAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetStringAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient.GetStringAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient.GetStringAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync*
-  name: GetStringAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient_GetStringAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.GetStringAsync
-  nameWithType: CoreeHttpClient.GetStringAsync
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2
-  name: CoreeHttpClient2
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2
-  nameWithType: CoreeHttpClient2
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  name: CoreeHttpClient2(ILogger<CoreeHttpClient2>, IHttpClientFactory, IMemoryCache)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient2__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_CoreeHttpClient_CoreeHttpClient2__System_Net_Http_IHttpClientFactory_Microsoft_Extensions_Caching_Memory_IMemoryCache_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2},System.Net.Http.IHttpClientFactory,Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  name.vb: New(ILogger(Of CoreeHttpClient2), IHttpClientFactory, IMemoryCache)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.CoreeHttpClient2(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2>, System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2), System.Net.Http.IHttpClientFactory, Microsoft.Extensions.Caching.Memory.IMemoryCache)
-  nameWithType: CoreeHttpClient2.CoreeHttpClient2(ILogger<CoreeHttpClient2>, IHttpClientFactory, IMemoryCache)
-  nameWithType.vb: CoreeHttpClient2.New(ILogger(Of CoreeHttpClient2), IHttpClientFactory, IMemoryCache)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.#ctor*
-  name: CoreeHttpClient2
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient2__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.CoreeHttpClient2
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.New
-  nameWithType: CoreeHttpClient2.CoreeHttpClient2
-  nameWithType.vb: CoreeHttpClient2.New
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync(System.Net.Http.HttpMethod,System.Uri,Coree.NETStandard.CoreeHttpClient.RequestParamBuilder,Coree.NETStandard.CoreeHttpClient.RequestContentBuilder,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetAsync(HttpMethod, Uri, RequestParamBuilder?, RequestContentBuilder?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient2_GetAsync_System_Net_Http_HttpMethod_System_Uri_Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync(System.Net.Http.HttpMethod,System.Uri,Coree.NETStandard.CoreeHttpClient.RequestParamBuilder,Coree.NETStandard.CoreeHttpClient.RequestContentBuilder,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetAsync(HttpMethod, Uri, RequestParamBuilder, RequestContentBuilder, TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync(System.Net.Http.HttpMethod, System.Uri, Coree.NETStandard.CoreeHttpClient.RequestParamBuilder?, Coree.NETStandard.CoreeHttpClient.RequestContentBuilder?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync(System.Net.Http.HttpMethod, System.Uri, Coree.NETStandard.CoreeHttpClient.RequestParamBuilder, Coree.NETStandard.CoreeHttpClient.RequestContentBuilder, System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: CoreeHttpClient2.GetAsync(HttpMethod, Uri, RequestParamBuilder?, RequestContentBuilder?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: CoreeHttpClient2.GetAsync(HttpMethod, Uri, RequestParamBuilder, RequestContentBuilder, TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync*
-  name: GetAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html#Coree_NETStandard_CoreeHttpClient_CoreeHttpClient2_GetAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.GetAsync
-  nameWithType: CoreeHttpClient2.GetAsync
-- uid: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions
-  name: HttpHeadersExtensions
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions
-  nameWithType: HttpHeadersExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  name: GetContentEncoding(HttpHeaders)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpHeadersExtensions_GetContentEncoding_System_Net_Http_Headers_HttpHeaders_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  nameWithType: HttpHeadersExtensions.GetContentEncoding(HttpHeaders)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding*
-  name: GetContentEncoding
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpHeadersExtensions_GetContentEncoding_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.GetContentEncoding
-  nameWithType: HttpHeadersExtensions.GetContentEncoding
-- uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions
-  name: HttpRequestHeadersExtensions
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions
-  nameWithType: HttpRequestHeadersExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
-  name: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpRequestHeadersExtensions_AddRequestHeaderCookies_System_Net_Http_Headers_HttpRequestHeaders_System_Collections_Generic_Dictionary_System_String_System_String__System_Boolean_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean)
-  name.vb: AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary<string, string>?, bool)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies(System.Net.Http.Headers.HttpRequestHeaders, System.Collections.Generic.Dictionary(Of String, String), Boolean)
-  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary<string, string>?, bool)
-  nameWithType.vb: HttpRequestHeadersExtensions.AddRequestHeaderCookies(HttpRequestHeaders, Dictionary(Of String, String), Boolean)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies*
-  name: AddRequestHeaderCookies
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html#Coree_NETStandard_CoreeHttpClient_HttpRequestHeadersExtensions_AddRequestHeaderCookies_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.AddRequestHeaderCookies
-  nameWithType: HttpRequestHeadersExtensions.AddRequestHeaderCookies
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult
-  name: HttpResponseResult
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpResponseResult
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult
-  nameWithType: HttpResponseResult
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor(System.Byte[],System.Net.Http.Headers.HttpResponseHeaders,System.Net.Http.Headers.HttpRequestHeaders,System.Boolean,System.Net.HttpStatusCode)
-  name: HttpResponseResult(byte[]?, HttpResponseHeaders?, HttpRequestHeaders?, bool, HttpStatusCode)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult__ctor_System_Byte___System_Net_Http_Headers_HttpResponseHeaders_System_Net_Http_Headers_HttpRequestHeaders_System_Boolean_System_Net_HttpStatusCode_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor(System.Byte[],System.Net.Http.Headers.HttpResponseHeaders,System.Net.Http.Headers.HttpRequestHeaders,System.Boolean,System.Net.HttpStatusCode)
-  name.vb: New(Byte(), HttpResponseHeaders, HttpRequestHeaders, Boolean, HttpStatusCode)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.HttpResponseResult(byte[]?, System.Net.Http.Headers.HttpResponseHeaders?, System.Net.Http.Headers.HttpRequestHeaders?, bool, System.Net.HttpStatusCode)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.New(Byte(), System.Net.Http.Headers.HttpResponseHeaders, System.Net.Http.Headers.HttpRequestHeaders, Boolean, System.Net.HttpStatusCode)
-  nameWithType: HttpResponseResult.HttpResponseResult(byte[]?, HttpResponseHeaders?, HttpRequestHeaders?, bool, HttpStatusCode)
-  nameWithType.vb: HttpResponseResult.New(Byte(), HttpResponseHeaders, HttpRequestHeaders, Boolean, HttpStatusCode)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor(System.Exception,System.Net.HttpStatusCode)
-  name: HttpResponseResult(Exception?, HttpStatusCode)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult__ctor_System_Exception_System_Net_HttpStatusCode_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor(System.Exception,System.Net.HttpStatusCode)
-  name.vb: New(Exception, HttpStatusCode)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.HttpResponseResult(System.Exception?, System.Net.HttpStatusCode)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.New(System.Exception, System.Net.HttpStatusCode)
-  nameWithType: HttpResponseResult.HttpResponseResult(Exception?, HttpStatusCode)
-  nameWithType.vb: HttpResponseResult.New(Exception, HttpStatusCode)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor*
-  name: HttpResponseResult
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.HttpResponseResult
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.New
-  nameWithType: HttpResponseResult.HttpResponseResult
-  nameWithType.vb: HttpResponseResult.New
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes
-  name: ContentBytes
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ContentBytes
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes
-  nameWithType: HttpResponseResult.ContentBytes
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes*
-  name: ContentBytes
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ContentBytes_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentBytes
-  nameWithType: HttpResponseResult.ContentBytes
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString
-  name: ContentString
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ContentString
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString
-  nameWithType: HttpResponseResult.ContentString
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString*
-  name: ContentString
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ContentString_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ContentString
-  nameWithType: HttpResponseResult.ContentString
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception
-  name: Exception
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_Exception
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception
-  nameWithType: HttpResponseResult.Exception
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception*
-  name: Exception
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_Exception_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Exception
-  nameWithType: HttpResponseResult.Exception
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache
-  name: IsFromCache
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_IsFromCache
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache
-  nameWithType: HttpResponseResult.IsFromCache
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache*
-  name: IsFromCache
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_IsFromCache_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.IsFromCache
-  nameWithType: HttpResponseResult.IsFromCache
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus
-  name: HttpResponseResult.OperationStatus
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus
-  nameWithType: HttpResponseResult.OperationStatus
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Failure
-  name: Failure
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_OperationStatus_Failure
-  commentId: F:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Failure
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Failure
-  nameWithType: HttpResponseResult.OperationStatus.Failure
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Success
-  name: Success
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_OperationStatus_Success
-  commentId: F:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Success
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.Success
-  nameWithType: HttpResponseResult.OperationStatus.Success
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders
-  name: RequestHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_RequestHeaders
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders
-  nameWithType: HttpResponseResult.RequestHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders*
-  name: RequestHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_RequestHeaders_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.RequestHeaders
-  nameWithType: HttpResponseResult.RequestHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders
-  name: ResponseHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ResponseHeaders
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders
-  nameWithType: HttpResponseResult.ResponseHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders*
-  name: ResponseHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_ResponseHeaders_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.ResponseHeaders
-  nameWithType: HttpResponseResult.ResponseHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status
-  name: Status
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_Status
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status
-  nameWithType: HttpResponseResult.Status
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status*
-  name: Status
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_Status_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.Status
-  nameWithType: HttpResponseResult.Status
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode
-  name: StatusCode
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_StatusCode
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode
-  nameWithType: HttpResponseResult.StatusCode
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode*
-  name: StatusCode
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult_StatusCode_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult.StatusCode
-  nameWithType: HttpResponseResult.StatusCode
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2
-  name: HttpResponseResult2
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2
-  nameWithType: HttpResponseResult2
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Byte[],System.Net.Http.Headers.HttpResponseHeaders,System.Net.Http.Headers.HttpRequestHeaders,System.Boolean,System.Net.HttpStatusCode)
-  name: HttpResponseResult2(byte[]?, HttpResponseHeaders?, HttpRequestHeaders?, bool, HttpStatusCode)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Byte___System_Net_Http_Headers_HttpResponseHeaders_System_Net_Http_Headers_HttpRequestHeaders_System_Boolean_System_Net_HttpStatusCode_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Byte[],System.Net.Http.Headers.HttpResponseHeaders,System.Net.Http.Headers.HttpRequestHeaders,System.Boolean,System.Net.HttpStatusCode)
-  name.vb: New(Byte(), HttpResponseHeaders, HttpRequestHeaders, Boolean, HttpStatusCode)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.HttpResponseResult2(byte[]?, System.Net.Http.Headers.HttpResponseHeaders?, System.Net.Http.Headers.HttpRequestHeaders?, bool, System.Net.HttpStatusCode)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.New(Byte(), System.Net.Http.Headers.HttpResponseHeaders, System.Net.Http.Headers.HttpRequestHeaders, Boolean, System.Net.HttpStatusCode)
-  nameWithType: HttpResponseResult2.HttpResponseResult2(byte[]?, HttpResponseHeaders?, HttpRequestHeaders?, bool, HttpStatusCode)
-  nameWithType.vb: HttpResponseResult2.New(Byte(), HttpResponseHeaders, HttpRequestHeaders, Boolean, HttpStatusCode)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Exception,System.Net.HttpStatusCode)
-  name: HttpResponseResult2(Exception?, HttpStatusCode)
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_System_Exception_System_Net_HttpStatusCode_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor(System.Exception,System.Net.HttpStatusCode)
-  name.vb: New(Exception, HttpStatusCode)
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.HttpResponseResult2(System.Exception?, System.Net.HttpStatusCode)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.New(System.Exception, System.Net.HttpStatusCode)
-  nameWithType: HttpResponseResult2.HttpResponseResult2(Exception?, HttpStatusCode)
-  nameWithType.vb: HttpResponseResult2.New(Exception, HttpStatusCode)
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor*
-  name: HttpResponseResult2
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.HttpResponseResult2
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.New
-  nameWithType: HttpResponseResult2.HttpResponseResult2
-  nameWithType.vb: HttpResponseResult2.New
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes
-  name: ContentBytes
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentBytes
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes
-  nameWithType: HttpResponseResult2.ContentBytes
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes*
-  name: ContentBytes
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentBytes_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentBytes
-  nameWithType: HttpResponseResult2.ContentBytes
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength
-  name: ContentLength
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentLength
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength
-  nameWithType: HttpResponseResult2.ContentLength
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength*
-  name: ContentLength
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentLength_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentLength
-  nameWithType: HttpResponseResult2.ContentLength
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString
-  name: ContentString
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentString
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString
-  nameWithType: HttpResponseResult2.ContentString
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString*
-  name: ContentString
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ContentString_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ContentString
-  nameWithType: HttpResponseResult2.ContentString
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception
-  name: Exception
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Exception
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception
-  nameWithType: HttpResponseResult2.Exception
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception*
-  name: Exception
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Exception_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Exception
-  nameWithType: HttpResponseResult2.Exception
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache
-  name: IsFromCache
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_IsFromCache
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache
-  nameWithType: HttpResponseResult2.IsFromCache
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache*
-  name: IsFromCache
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_IsFromCache_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.IsFromCache
-  nameWithType: HttpResponseResult2.IsFromCache
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus
-  name: HttpResponseResult2.OperationStatus
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus
-  nameWithType: HttpResponseResult2.OperationStatus
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Failure
-  name: Failure
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_OperationStatus_Failure
-  commentId: F:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Failure
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Failure
-  nameWithType: HttpResponseResult2.OperationStatus.Failure
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Success
-  name: Success
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_OperationStatus_Success
-  commentId: F:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Success
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.Success
-  nameWithType: HttpResponseResult2.OperationStatus.Success
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders
-  name: RequestHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_RequestHeaders
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders
-  nameWithType: HttpResponseResult2.RequestHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders*
-  name: RequestHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_RequestHeaders_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.RequestHeaders
-  nameWithType: HttpResponseResult2.RequestHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders
-  name: ResponseHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ResponseHeaders
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders
-  nameWithType: HttpResponseResult2.ResponseHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders*
-  name: ResponseHeaders
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_ResponseHeaders_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.ResponseHeaders
-  nameWithType: HttpResponseResult2.ResponseHeaders
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status
-  name: Status
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Status
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status
-  nameWithType: HttpResponseResult2.Status
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status*
-  name: Status
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_Status_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.Status
-  nameWithType: HttpResponseResult2.Status
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode
-  name: StatusCode
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_StatusCode
-  commentId: P:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode
-  nameWithType: HttpResponseResult2.StatusCode
-- uid: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode*
-  name: StatusCode
-  href: api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html#Coree_NETStandard_CoreeHttpClient_HttpResponseResult2_StatusCode_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.StatusCode
-  nameWithType: HttpResponseResult2.StatusCode
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient
-  name: ICoreeHttpClient
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient
-  nameWithType: ICoreeHttpClient
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync*
-  name: GetAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetAsync
-  nameWithType: ICoreeHttpClient.GetAsync
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonDocumentAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonDocumentAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonDocumentAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetJsonDocumentAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetJsonDocumentAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync*
-  name: GetJsonDocumentAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonDocumentAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonDocumentAsync
-  nameWithType: ICoreeHttpClient.GetJsonDocumentAsync
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonNodeAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonNodeAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonNodeAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetJsonNodeAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetJsonNodeAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync*
-  name: GetJsonNodeAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonNodeAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonNodeAsync
-  nameWithType: ICoreeHttpClient.GetJsonNodeAsync
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonPathResultAsync(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonPathResultAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonPathResultAsync(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync(string, string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync(String, String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetJsonPathResultAsync(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetJsonPathResultAsync(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync*
-  name: GetJsonPathResultAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonPathResultAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync
-  nameWithType: ICoreeHttpClient.GetJsonPathResultAsync
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync``1(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetJsonPathResultAsync<T>(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetJsonPathResultAsync__1_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync``1(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetJsonPathResultAsync(Of T)(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync<T>(string, string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetJsonPathResultAsync(Of T)(String, String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetJsonPathResultAsync<T>(string, string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetJsonPathResultAsync(Of T)(String, String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: GetStringAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetStringAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_String__System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: GetStringAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync(string, System.Collections.Generic.Dictionary<string, string>?, System.TimeSpan?, int, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync(String, System.Collections.Generic.Dictionary(Of String, String), System.TimeSpan?, Integer, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: ICoreeHttpClient.GetStringAsync(string, Dictionary<string, string>?, TimeSpan?, int, TimeSpan?, CancellationToken)
-  nameWithType.vb: ICoreeHttpClient.GetStringAsync(String, Dictionary(Of String, String), TimeSpan?, Integer, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync*
-  name: GetStringAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html#Coree_NETStandard_CoreeHttpClient_ICoreeHttpClient_GetStringAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.GetStringAsync
-  nameWithType: ICoreeHttpClient.GetStringAsync
-- uid: Coree.NETStandard.CoreeHttpClient.Product
-  name: Product
-  href: api/Coree.NETStandard.CoreeHttpClient.Product.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.Product
-  fullName: Coree.NETStandard.CoreeHttpClient.Product
-  nameWithType: Product
-- uid: Coree.NETStandard.CoreeHttpClient.Product.Name
-  name: Name
-  href: api/Coree.NETStandard.CoreeHttpClient.Product.html#Coree_NETStandard_CoreeHttpClient_Product_Name
-  commentId: P:Coree.NETStandard.CoreeHttpClient.Product.Name
-  fullName: Coree.NETStandard.CoreeHttpClient.Product.Name
-  nameWithType: Product.Name
-- uid: Coree.NETStandard.CoreeHttpClient.Product.Name*
-  name: Name
-  href: api/Coree.NETStandard.CoreeHttpClient.Product.html#Coree_NETStandard_CoreeHttpClient_Product_Name_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.Product.Name
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.Product.Name
-  nameWithType: Product.Name
-- uid: Coree.NETStandard.CoreeHttpClient.Product.Price
-  name: Price
-  href: api/Coree.NETStandard.CoreeHttpClient.Product.html#Coree_NETStandard_CoreeHttpClient_Product_Price
-  commentId: P:Coree.NETStandard.CoreeHttpClient.Product.Price
-  fullName: Coree.NETStandard.CoreeHttpClient.Product.Price
-  nameWithType: Product.Price
-- uid: Coree.NETStandard.CoreeHttpClient.Product.Price*
-  name: Price
-  href: api/Coree.NETStandard.CoreeHttpClient.Product.html#Coree_NETStandard_CoreeHttpClient_Product_Price_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.Product.Price
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.Product.Price
-  nameWithType: Product.Price
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions
-  name: ProductExtensions
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.ProductExtensions
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions
-  nameWithType: ProductExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice(Coree.NETStandard.CoreeHttpClient.Product,System.Decimal)
-  name: AdjustPrice(Product, decimal)
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html#Coree_NETStandard_CoreeHttpClient_ProductExtensions_AdjustPrice_Coree_NETStandard_CoreeHttpClient_Product_System_Decimal_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice(Coree.NETStandard.CoreeHttpClient.Product,System.Decimal)
-  name.vb: AdjustPrice(Product, Decimal)
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice(Coree.NETStandard.CoreeHttpClient.Product, decimal)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice(Coree.NETStandard.CoreeHttpClient.Product, Decimal)
-  nameWithType: ProductExtensions.AdjustPrice(Product, decimal)
-  nameWithType.vb: ProductExtensions.AdjustPrice(Product, Decimal)
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice*
-  name: AdjustPrice
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html#Coree_NETStandard_CoreeHttpClient_ProductExtensions_AdjustPrice_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPrice
-  nameWithType: ProductExtensions.AdjustPrice
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(Coree.NETStandard.CoreeHttpClient.Product,System.Decimal)
-  name: AdjustPriceAsync(Product, decimal)
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html#Coree_NETStandard_CoreeHttpClient_ProductExtensions_AdjustPriceAsync_Coree_NETStandard_CoreeHttpClient_Product_System_Decimal_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(Coree.NETStandard.CoreeHttpClient.Product,System.Decimal)
-  name.vb: AdjustPriceAsync(Product, Decimal)
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(Coree.NETStandard.CoreeHttpClient.Product, decimal)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(Coree.NETStandard.CoreeHttpClient.Product, Decimal)
-  nameWithType: ProductExtensions.AdjustPriceAsync(Product, decimal)
-  nameWithType.vb: ProductExtensions.AdjustPriceAsync(Product, Decimal)
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(System.Threading.Tasks.Task{Coree.NETStandard.CoreeHttpClient.Product},System.Decimal)
-  name: AdjustPriceAsync(Task<Product>, decimal)
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html#Coree_NETStandard_CoreeHttpClient_ProductExtensions_AdjustPriceAsync_System_Threading_Tasks_Task_Coree_NETStandard_CoreeHttpClient_Product__System_Decimal_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(System.Threading.Tasks.Task{Coree.NETStandard.CoreeHttpClient.Product},System.Decimal)
-  name.vb: AdjustPriceAsync(Task(Of Product), Decimal)
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(System.Threading.Tasks.Task<Coree.NETStandard.CoreeHttpClient.Product>, decimal)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync(System.Threading.Tasks.Task(Of Coree.NETStandard.CoreeHttpClient.Product), Decimal)
-  nameWithType: ProductExtensions.AdjustPriceAsync(Task<Product>, decimal)
-  nameWithType.vb: ProductExtensions.AdjustPriceAsync(Task(Of Product), Decimal)
-- uid: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync*
-  name: AdjustPriceAsync
-  href: api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html#Coree_NETStandard_CoreeHttpClient_ProductExtensions_AdjustPriceAsync_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ProductExtensions.AdjustPriceAsync
-  nameWithType: ProductExtensions.AdjustPriceAsync
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder
-  name: RequestContentBuilder
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder
-  nameWithType: RequestContentBuilder
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor
-  name: RequestContentBuilder()
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor
-  name.vb: New()
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder()
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New()
-  nameWithType: RequestContentBuilder.RequestContentBuilder()
-  nameWithType.vb: RequestContentBuilder.New()
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.Byte[],System.String)
-  name: RequestContentBuilder(byte[], string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_System_Byte___System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.Byte[],System.String)
-  name.vb: New(Byte(), String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder(byte[], string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New(Byte(), String)
-  nameWithType: RequestContentBuilder.RequestContentBuilder(byte[], string?)
-  nameWithType.vb: RequestContentBuilder.New(Byte(), String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name: RequestContentBuilder(Dictionary<string, string>, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name.vb: New(Dictionary(Of String, String), String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder(System.Collections.Generic.Dictionary<string, string>, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New(System.Collections.Generic.Dictionary(Of String, String), String)
-  nameWithType: RequestContentBuilder.RequestContentBuilder(Dictionary<string, string>, string?)
-  nameWithType.vb: RequestContentBuilder.New(Dictionary(Of String, String), String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.IO.Stream,System.String,System.String)
-  name: RequestContentBuilder(Stream, string?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_System_IO_Stream_System_String_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.IO.Stream,System.String,System.String)
-  name.vb: New(Stream, String, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder(System.IO.Stream, string?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New(System.IO.Stream, String, String)
-  nameWithType: RequestContentBuilder.RequestContentBuilder(Stream, string?, string?)
-  nameWithType.vb: RequestContentBuilder.New(Stream, String, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.String,System.String,System.Text.Encoding,System.String)
-  name: RequestContentBuilder(string, string, Encoding?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_System_String_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.String,System.String,System.Text.Encoding,System.String)
-  name.vb: New(String, String, Encoding, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder(string, string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New(String, String, System.Text.Encoding, String)
-  nameWithType: RequestContentBuilder.RequestContentBuilder(string, string, Encoding?, string?)
-  nameWithType.vb: RequestContentBuilder.New(String, String, Encoding, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.String,System.Text.Encoding,System.String)
-  name: RequestContentBuilder(string, Encoding?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor(System.String,System.Text.Encoding,System.String)
-  name.vb: New(String, Encoding, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder(string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New(String, System.Text.Encoding, String)
-  nameWithType: RequestContentBuilder.RequestContentBuilder(string, Encoding?, string?)
-  nameWithType.vb: RequestContentBuilder.New(String, Encoding, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor*
-  name: RequestContentBuilder
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.RequestContentBuilder
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.New
-  nameWithType: RequestContentBuilder.RequestContentBuilder
-  nameWithType.vb: RequestContentBuilder.New
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Byte[],System.String)
-  name: AddContent(byte[], string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_System_Byte___System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Byte[],System.String)
-  name.vb: AddContent(Byte(), String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(byte[], string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(Byte(), String)
-  nameWithType: RequestContentBuilder.AddContent(byte[], string?)
-  nameWithType.vb: RequestContentBuilder.AddContent(Byte(), String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name: AddContent(Dictionary<string, string>, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name.vb: AddContent(Dictionary(Of String, String), String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Collections.Generic.Dictionary<string, string>, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.Collections.Generic.Dictionary(Of String, String), String)
-  nameWithType: RequestContentBuilder.AddContent(Dictionary<string, string>, string?)
-  nameWithType.vb: RequestContentBuilder.AddContent(Dictionary(Of String, String), String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.IO.Stream,System.String,System.String)
-  name: AddContent(Stream, string?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_System_IO_Stream_System_String_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.IO.Stream,System.String,System.String)
-  name.vb: AddContent(Stream, String, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.IO.Stream, string?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.IO.Stream, String, String)
-  nameWithType: RequestContentBuilder.AddContent(Stream, string?, string?)
-  nameWithType.vb: RequestContentBuilder.AddContent(Stream, String, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.String,System.String,System.Text.Encoding,System.String)
-  name: AddContent(string, string, Encoding?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_System_String_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.String,System.String,System.Text.Encoding,System.String)
-  name.vb: AddContent(String, String, Encoding, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(string, string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(String, String, System.Text.Encoding, String)
-  nameWithType: RequestContentBuilder.AddContent(string, string, Encoding?, string?)
-  nameWithType.vb: RequestContentBuilder.AddContent(String, String, Encoding, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.String,System.Text.Encoding,System.String)
-  name: AddContent(string, Encoding?, string?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(System.String,System.Text.Encoding,System.String)
-  name.vb: AddContent(String, Encoding, String)
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent(String, System.Text.Encoding, String)
-  nameWithType: RequestContentBuilder.AddContent(string, Encoding?, string?)
-  nameWithType.vb: RequestContentBuilder.AddContent(String, Encoding, String)
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent*
-  name: AddContent
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_AddContent_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.AddContent
-  nameWithType: RequestContentBuilder.AddContent
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build
-  name: Build()
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_Build
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build()
-  nameWithType: RequestContentBuilder.Build()
-- uid: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build*
-  name: Build
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestContentBuilder_Build_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.Build
-  nameWithType: RequestContentBuilder.Build
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder
-  name: RequestParamBuilder
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder
-  nameWithType: RequestParamBuilder
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})
-  name: RequestParamBuilder(Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?)
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder__ctor_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: New(Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String))
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.RequestParamBuilder(System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.New(System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: RequestParamBuilder.RequestParamBuilder(Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?)
-  nameWithType.vb: RequestParamBuilder.New(Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String))
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.#ctor*
-  name: RequestParamBuilder
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder__ctor_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.RequestParamBuilder
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.New
-  nameWithType: RequestParamBuilder.RequestParamBuilder
-  nameWithType.vb: RequestParamBuilder.New
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies
-  name: Cookies
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_Cookies
-  commentId: P:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies
-  nameWithType: RequestParamBuilder.Cookies
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies*
-  name: Cookies
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_Cookies_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Cookies
-  nameWithType: RequestParamBuilder.Cookies
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers
-  name: Headers
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_Headers
-  commentId: P:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers
-  nameWithType: RequestParamBuilder.Headers
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers*
-  name: Headers
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_Headers_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.Headers
-  nameWithType: RequestParamBuilder.Headers
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams
-  name: QueryParams
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_QueryParams
-  commentId: P:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams
-  nameWithType: RequestParamBuilder.QueryParams
-- uid: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams*
-  name: QueryParams
-  href: api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html#Coree_NETStandard_CoreeHttpClient_RequestParamBuilder_QueryParams_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.QueryParams
-  nameWithType: RequestParamBuilder.QueryParams
-- uid: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions
-  name: ServiceCollectionExtensions
-  href: api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions
-  fullName: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions
-  nameWithType: ServiceCollectionExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddCoreeHttpClient(IServiceCollection)
-  href: api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html#Coree_NETStandard_CoreeHttpClient_ServiceCollectionExtensions_AddCoreeHttpClient_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ServiceCollectionExtensions.AddCoreeHttpClient(IServiceCollection)
-- uid: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient*
-  name: AddCoreeHttpClient
-  href: api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html#Coree_NETStandard_CoreeHttpClient_ServiceCollectionExtensions_AddCoreeHttpClient_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient
-  nameWithType: ServiceCollectionExtensions.AddCoreeHttpClient
-- uid: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  name: AddCoreeHttpClient2(IServiceCollection)
-  href: api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html#Coree_NETStandard_CoreeHttpClient_ServiceCollectionExtensions_AddCoreeHttpClient2_Microsoft_Extensions_DependencyInjection_IServiceCollection_
-  commentId: M:Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  fullName: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2(Microsoft.Extensions.DependencyInjection.IServiceCollection)
-  nameWithType: ServiceCollectionExtensions.AddCoreeHttpClient2(IServiceCollection)
-- uid: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2*
-  name: AddCoreeHttpClient2
-  href: api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html#Coree_NETStandard_CoreeHttpClient_ServiceCollectionExtensions_AddCoreeHttpClient2_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.AddCoreeHttpClient2
-  nameWithType: ServiceCollectionExtensions.AddCoreeHttpClient2
-- uid: Coree.NETStandard.CoreeHttpClient.UriExtensions
-  name: UriExtensions
-  href: api/Coree.NETStandard.CoreeHttpClient.UriExtensions.html
-  commentId: T:Coree.NETStandard.CoreeHttpClient.UriExtensions
-  fullName: Coree.NETStandard.CoreeHttpClient.UriExtensions
-  nameWithType: UriExtensions
-- uid: Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})
-  name: AddOrUpdateQueryParameters(Uri, Dictionary<string, string>?)
-  href: api/Coree.NETStandard.CoreeHttpClient.UriExtensions.html#Coree_NETStandard_CoreeHttpClient_UriExtensions_AddOrUpdateQueryParameters_System_Uri_System_Collections_Generic_Dictionary_System_String_System_String__
-  commentId: M:Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters(System.Uri,System.Collections.Generic.Dictionary{System.String,System.String})
-  name.vb: AddOrUpdateQueryParameters(Uri, Dictionary(Of String, String))
-  fullName: Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters(System.Uri, System.Collections.Generic.Dictionary<string, string>?)
-  fullName.vb: Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters(System.Uri, System.Collections.Generic.Dictionary(Of String, String))
-  nameWithType: UriExtensions.AddOrUpdateQueryParameters(Uri, Dictionary<string, string>?)
-  nameWithType.vb: UriExtensions.AddOrUpdateQueryParameters(Uri, Dictionary(Of String, String))
-- uid: Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters*
-  name: AddOrUpdateQueryParameters
-  href: api/Coree.NETStandard.CoreeHttpClient.UriExtensions.html#Coree_NETStandard_CoreeHttpClient_UriExtensions_AddOrUpdateQueryParameters_
-  commentId: Overload:Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters
-  isSpec: "True"
-  fullName: Coree.NETStandard.CoreeHttpClient.UriExtensions.AddOrUpdateQueryParameters
-  nameWithType: UriExtensions.AddOrUpdateQueryParameters
 - uid: Coree.NETStandard.Extensions.Collections.Enumerable
   name: Coree.NETStandard.Extensions.Collections.Enumerable
   href: api/Coree.NETStandard.Extensions.Collections.Enumerable.html
@@ -3242,6 +2841,31 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Conversions.Stringbuilder.ConversionsStringbuilderExtension.AppendLineOrDefault
   nameWithType: ConversionsStringbuilderExtension.AppendLineOrDefault
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader
+  name: Coree.NETStandard.Extensions.Http.HttpHeader
+  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.html
+  commentId: N:Coree.NETStandard.Extensions.Http.HttpHeader
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader
+  nameWithType: Coree.NETStandard.Extensions.Http.HttpHeader
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  name: HttpHeadersExtensions
+  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  nameWithType: HttpHeadersExtensions
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
+  name: GetContentEncoding(HttpHeaders)
+  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html#Coree_NETStandard_Extensions_Http_HttpHeader_HttpHeadersExtensions_GetContentEncoding_System_Net_Http_Headers_HttpHeaders_
+  commentId: M:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
+  nameWithType: HttpHeadersExtensions.GetContentEncoding(HttpHeaders)
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding*
+  name: GetContentEncoding
+  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html#Coree_NETStandard_Extensions_Http_HttpHeader_HttpHeadersExtensions_GetContentEncoding_
+  commentId: Overload:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding
+  nameWithType: HttpHeadersExtensions.GetContentEncoding
 - uid: Coree.NETStandard.Extensions.Primitives.Bool
   name: Coree.NETStandard.Extensions.Primitives.Bool
   href: api/Coree.NETStandard.Extensions.Primitives.Bool.html
@@ -3786,203 +3410,229 @@ references:
   commentId: N:Coree.NETStandard.Services
   fullName: Coree.NETStandard.Services
   nameWithType: Coree.NETStandard.Services
-- uid: Coree.NETStandard.Services.File
-  name: Coree.NETStandard.Services.File
-  href: api/Coree.NETStandard.Services.File.html
-  commentId: N:Coree.NETStandard.Services.File
-  fullName: Coree.NETStandard.Services.File
-  nameWithType: Coree.NETStandard.Services.File
-- uid: Coree.NETStandard.Services.File.FileService
+- uid: Coree.NETStandard.Services.FileService
+  name: Coree.NETStandard.Services.FileService
+  href: api/Coree.NETStandard.Services.FileService.html
+  commentId: N:Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  nameWithType: Coree.NETStandard.Services.FileService
+- uid: Coree.NETStandard.Services.FileService.FileService
   name: FileService
-  href: api/Coree.NETStandard.Services.File.FileService.html
-  commentId: T:Coree.NETStandard.Services.File.FileService
-  fullName: Coree.NETStandard.Services.File.FileService
+  href: api/Coree.NETStandard.Services.FileService.FileService.html
+  commentId: T:Coree.NETStandard.Services.FileService.FileService
+  fullName: Coree.NETStandard.Services.FileService.FileService
   nameWithType: FileService
-- uid: Coree.NETStandard.Services.File.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.File.FileService})
+- uid: Coree.NETStandard.Services.FileService.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})
   name: FileService(ILogger<FileService>?)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_File_FileService__
-  commentId: M:Coree.NETStandard.Services.File.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.File.FileService})
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_FileService_FileService__
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})
   name.vb: New(ILogger(Of FileService))
-  fullName: Coree.NETStandard.Services.File.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.File.FileService>?)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.File.FileService))
+  fullName: Coree.NETStandard.Services.FileService.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.FileService.FileService>?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.FileService.FileService))
   nameWithType: FileService.FileService(ILogger<FileService>?)
   nameWithType.vb: FileService.New(ILogger(Of FileService))
-- uid: Coree.NETStandard.Services.File.FileService.#ctor*
+- uid: Coree.NETStandard.Services.FileService.FileService.#ctor*
   name: FileService
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService__ctor_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.#ctor
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Coree.NETStandard.Services.File.FileService.FileService
-  fullName.vb: Coree.NETStandard.Services.File.FileService.New
+  fullName: Coree.NETStandard.Services.FileService.FileService.FileService
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.New
   nameWithType: FileService.FileService
   nameWithType.vb: FileService.New
-- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(System.String)
-  name: GetCorrectCasedPath(string?)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPath_System_String_
-  commentId: M:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(System.String)
-  name.vb: GetCorrectCasedPath(String)
-  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(string?)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath(String)
-  nameWithType: FileService.GetCorrectCasedPath(string?)
-  nameWithType.vb: FileService.GetCorrectCasedPath(String)
-- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath*
-  name: GetCorrectCasedPath
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPath_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath
+- uid: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  name: GetValidUniquePaths()
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_GetValidUniquePaths
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  fullName: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths()
+  nameWithType: FileService.GetValidUniquePaths()
+- uid: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths*
+  name: GetValidUniquePaths
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_GetValidUniquePaths_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPath
-  nameWithType: FileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
-  name: GetCorrectCasedPathAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
-  name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
-  nameWithType: FileService.GetCorrectCasedPathAsync(string?, CancellationToken)
-  nameWithType.vb: FileService.GetCorrectCasedPathAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync*
-  name: GetCorrectCasedPathAsync
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_GetCorrectCasedPathAsync_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.GetCorrectCasedPathAsync
-  nameWithType: FileService.GetCorrectCasedPathAsync
-- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(System.String)
+  fullName: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  nameWithType: FileService.GetValidUniquePaths
+- uid: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(System.String)
   name: IsCommandAvailable(string?)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailable_System_String_
-  commentId: M:Coree.NETStandard.Services.File.FileService.IsCommandAvailable(System.String)
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(System.String)
   name.vb: IsCommandAvailable(String)
-  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(string?)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(String)
   nameWithType: FileService.IsCommandAvailable(string?)
   nameWithType.vb: FileService.IsCommandAvailable(String)
-- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailable*
+- uid: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable*
   name: IsCommandAvailable
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailable_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsCommandAvailable
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable
   nameWithType: FileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
-  name: IsCommandAvailableAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
-  name.vb: IsCommandAvailableAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
-  nameWithType: FileService.IsCommandAvailableAsync(string?, CancellationToken)
-  nameWithType.vb: FileService.IsCommandAvailableAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync*
-  name: IsCommandAvailableAsync
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsCommandAvailableAsync_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.IsCommandAvailableAsync
-  nameWithType: FileService.IsCommandAvailableAsync
-- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(System.String,System.String)
-  name: IsExecutableFilePresent(string?, string)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresent_System_String_System_String_
-  commentId: M:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(System.String,System.String)
+- uid: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(System.String,System.String)
+  name: IsExecutableFilePresent(string?, string?)
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsExecutableFilePresent_System_String_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(System.String,System.String)
   name.vb: IsExecutableFilePresent(String, String)
-  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(string?, string)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent(String, String)
-  nameWithType: FileService.IsExecutableFilePresent(string?, string)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(string?, string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(String, String)
+  nameWithType: FileService.IsExecutableFilePresent(string?, string?)
   nameWithType.vb: FileService.IsExecutableFilePresent(String, String)
-- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent*
+- uid: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent*
   name: IsExecutableFilePresent
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresent_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsExecutableFilePresent_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresent
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent
   nameWithType: FileService.IsExecutableFilePresent
-- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(System.String,System.String)
-  name: IsExecutableFilePresentAsync(string?, string)
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresentAsync_System_String_System_String_
-  commentId: M:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(System.String,System.String)
-  name.vb: IsExecutableFilePresentAsync(String, String)
-  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(string?, string)
-  fullName.vb: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync(String, String)
-  nameWithType: FileService.IsExecutableFilePresentAsync(string?, string)
-  nameWithType.vb: FileService.IsExecutableFilePresentAsync(String, String)
-- uid: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync*
-  name: IsExecutableFilePresentAsync
-  href: api/Coree.NETStandard.Services.File.FileService.html#Coree_NETStandard_Services_File_FileService_IsExecutableFilePresentAsync_
-  commentId: Overload:Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync
+- uid: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(System.String)
+  name: IsValidLocation(string?)
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsValidLocation_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsValidLocation(System.String)
+  name.vb: IsValidLocation(String)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(String)
+  nameWithType: FileService.IsValidLocation(string?)
+  nameWithType.vb: FileService.IsValidLocation(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.IsValidLocation*
+  name: IsValidLocation
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsValidLocation_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsValidLocation
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.FileService.IsExecutableFilePresentAsync
-  nameWithType: FileService.IsExecutableFilePresentAsync
-- uid: Coree.NETStandard.Services.File.IFileService
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsValidLocation
+  nameWithType: FileService.IsValidLocation
+- uid: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(System.String)
+  name: TryCorrectDrivePathCase(string?)
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryCorrectDrivePathCase_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(System.String)
+  name.vb: TryCorrectDrivePathCase(String)
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(String)
+  nameWithType: FileService.TryCorrectDrivePathCase(string?)
+  nameWithType.vb: FileService.TryCorrectDrivePathCase(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase*
+  name: TryCorrectDrivePathCase
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryCorrectDrivePathCase_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase
+  nameWithType: FileService.TryCorrectDrivePathCase
+- uid: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(System.String)
+  name: TryFixPathCaseing(string?)
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryFixPathCaseing_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(System.String)
+  name.vb: TryFixPathCaseing(String)
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(String)
+  nameWithType: FileService.TryFixPathCaseing(string?)
+  nameWithType.vb: FileService.TryFixPathCaseing(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing*
+  name: TryFixPathCaseing
+  href: api/Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryFixPathCaseing_
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing
+  nameWithType: FileService.TryFixPathCaseing
+- uid: Coree.NETStandard.Services.FileService.IFileService
   name: IFileService
-  href: api/Coree.NETStandard.Services.File.IFileService.html
-  commentId: T:Coree.NETStandard.Services.File.IFileService
-  fullName: Coree.NETStandard.Services.File.IFileService
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html
+  commentId: T:Coree.NETStandard.Services.FileService.IFileService
+  fullName: Coree.NETStandard.Services.FileService.IFileService
   nameWithType: IFileService
-- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(System.String)
-  name: GetCorrectCasedPath(string?)
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPath_System_String_
-  commentId: M:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(System.String)
-  name.vb: GetCorrectCasedPath(String)
-  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(string?)
-  fullName.vb: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath(String)
-  nameWithType: IFileService.GetCorrectCasedPath(string?)
-  nameWithType.vb: IFileService.GetCorrectCasedPath(String)
-- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath*
-  name: GetCorrectCasedPath
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPath_
-  commentId: Overload:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath
+- uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  name: GetValidUniquePaths()
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  fullName: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths()
+  nameWithType: IFileService.GetValidUniquePaths()
+- uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths*
+  name: GetValidUniquePaths
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPath
-  nameWithType: IFileService.GetCorrectCasedPath
-- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
-  name: GetCorrectCasedPathAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPathAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(System.String,System.Threading.CancellationToken)
-  name.vb: GetCorrectCasedPathAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync(String, System.Threading.CancellationToken)
-  nameWithType: IFileService.GetCorrectCasedPathAsync(string?, CancellationToken)
-  nameWithType.vb: IFileService.GetCorrectCasedPathAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync*
-  name: GetCorrectCasedPathAsync
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_GetCorrectCasedPathAsync_
-  commentId: Overload:Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.IFileService.GetCorrectCasedPathAsync
-  nameWithType: IFileService.GetCorrectCasedPathAsync
-- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(System.String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  nameWithType: IFileService.GetValidUniquePaths
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
   name: IsCommandAvailable(string?)
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailable_System_String_
-  commentId: M:Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(System.String)
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
   name.vb: IsCommandAvailable(String)
-  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(string?)
-  fullName.vb: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable(String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(String)
   nameWithType: IFileService.IsCommandAvailable(string?)
   nameWithType.vb: IFileService.IsCommandAvailable(String)
-- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable*
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable*
   name: IsCommandAvailable
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailable_
-  commentId: Overload:Coree.NETStandard.Services.File.IFileService.IsCommandAvailable
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable
   nameWithType: IFileService.IsCommandAvailable
-- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
-  name: IsCommandAvailableAsync(string?, CancellationToken)
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailableAsync_System_String_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(System.String,System.Threading.CancellationToken)
-  name.vb: IsCommandAvailableAsync(String, CancellationToken)
-  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(string?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync(String, System.Threading.CancellationToken)
-  nameWithType: IFileService.IsCommandAvailableAsync(string?, CancellationToken)
-  nameWithType.vb: IFileService.IsCommandAvailableAsync(String, CancellationToken)
-- uid: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync*
-  name: IsCommandAvailableAsync
-  href: api/Coree.NETStandard.Services.File.IFileService.html#Coree_NETStandard_Services_File_IFileService_IsCommandAvailableAsync_
-  commentId: Overload:Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  name: IsExecutableFilePresent(string?, string?)
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_System_String_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  name.vb: IsExecutableFilePresent(String, String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(string?, string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(String, String)
+  nameWithType: IFileService.IsExecutableFilePresent(string?, string?)
+  nameWithType.vb: IFileService.IsExecutableFilePresent(String, String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent*
+  name: IsExecutableFilePresent
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.File.IFileService.IsCommandAvailableAsync
-  nameWithType: IFileService.IsCommandAvailableAsync
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent
+  nameWithType: IFileService.IsExecutableFilePresent
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  name: IsValidLocation(string?)
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  name.vb: IsValidLocation(String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(String)
+  nameWithType: IFileService.IsValidLocation(string?)
+  nameWithType.vb: IFileService.IsValidLocation(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation*
+  name: IsValidLocation
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsValidLocation
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation
+  nameWithType: IFileService.IsValidLocation
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  name: TryCorrectDrivePathCase(string?)
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  name.vb: TryCorrectDrivePathCase(String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(String)
+  nameWithType: IFileService.TryCorrectDrivePathCase(string?)
+  nameWithType.vb: IFileService.TryCorrectDrivePathCase(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase*
+  name: TryCorrectDrivePathCase
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase
+  nameWithType: IFileService.TryCorrectDrivePathCase
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  name: TryFixPathCaseing(string?)
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_System_String_
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  name.vb: TryFixPathCaseing(String)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(string?)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(String)
+  nameWithType: IFileService.TryFixPathCaseing(string?)
+  nameWithType.vb: IFileService.TryFixPathCaseing(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing*
+  name: TryFixPathCaseing
+  href: api/Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing
+  nameWithType: IFileService.TryFixPathCaseing
 - uid: Coree.NETStandard.Services.IRuntimeInsightsx
   name: IRuntimeInsightsx
   href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html

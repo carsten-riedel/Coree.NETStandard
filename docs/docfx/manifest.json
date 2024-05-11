@@ -194,6 +194,136 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.DebugService.DebugService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.DebugService.DebugService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.DebugService.IDebugService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.DebugService.IDebugService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.DebugService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.DebugService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestHeadersExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceUriExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.RateLimiter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.RateLimiter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.yml",
       "output": {
         ".html": {
@@ -288,166 +418,6 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Classes.TimeOfDay.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.CoreeHttpClient2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpHeadersExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpRequestHeadersExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.OperationStatus.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.OperationStatus.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.HttpResponseResult2.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ICoreeHttpClient.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.Product.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.Product.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ProductExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.RequestContentBuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.RequestParamBuilder.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.ServiceCollectionExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.UriExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.UriExtensions.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.CoreeHttpClient.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.CoreeHttpClient.html"
         }
       },
       "version": ""
@@ -578,6 +548,26 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Extensions.Conversions.Stringbuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Http.HttpHeader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Http.HttpHeader.html"
         }
       },
       "version": ""
@@ -794,30 +784,30 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.File.FileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.FileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.File.FileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileService.FileService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.File.IFileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.File.IFileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.File.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.File.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
         }
       },
       "version": ""
