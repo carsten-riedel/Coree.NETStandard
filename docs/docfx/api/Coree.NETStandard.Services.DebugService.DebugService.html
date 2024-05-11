@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class TransactionRecord
+      <title>Class DebugService
  | Coree.NETStandard </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class TransactionRecord
+      <meta name="title" content="Class DebugService
  | Coree.NETStandard ">
     
       <link rel="shortcut icon" href="../favicon.ico">
@@ -178,8 +178,8 @@
                           <li class="">
                             <a href="Coree.NETStandard.Classes.HttpRequestService.ServiceCollectionExtensions.html" title="ServiceCollectionExtensions" class="">ServiceCollectionExtensions</a>
                           </li>
-                          <li class="active">
-                            <a href="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html" title="TransactionRecord" class="active">TransactionRecord</a>
+                          <li class="">
+                            <a href="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html" title="TransactionRecord" class="">TransactionRecord</a>
                           </li>
                         </ul>
                     </li>
@@ -382,8 +382,8 @@
                       <a href="Coree.NETStandard.Services.DebugService.html" title="Coree.NETStandard.Services.DebugService" class="">Coree.NETStandard.Services.DebugService</a>
 
                         <ul class="nav level2">
-                          <li class="">
-                            <a href="Coree.NETStandard.Services.DebugService.DebugService.html" title="DebugService" class="">DebugService</a>
+                          <li class="active">
+                            <a href="Coree.NETStandard.Services.DebugService.DebugService.html" title="DebugService" class="active">DebugService</a>
                           </li>
                           <li class="">
                             <a href="Coree.NETStandard.Services.DebugService.IDebugService.html" title="IDebugService" class="">IDebugService</a>
@@ -572,22 +572,46 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord">
+            <article class="content wrap" id="_content" data-uid="Coree.NETStandard.Services.DebugService.DebugService">
 
 
 
-  <h1 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord" class="text-break">Class TransactionRecord
+  <h1 id="Coree_NETStandard_Services_DebugService_DebugService" data-uid="Coree.NETStandard.Services.DebugService.DebugService" class="text-break">Class DebugService
 </h1>
-  <div class="markdown level0 summary"><p>Represents a detailed record of an HTTP transaction, including the request, response, and any exception that occurred.</p>
+  <div class="markdown level0 summary"><p>Provides debugging services to log messages internally and via a provided logger.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-    <div class="level1"><span class="xref">TransactionRecord</span></div>
+    <div class="level1"><a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html">ServiceFactory</a>&lt;<a class="xref" href="Coree.NETStandard.Services.DebugService.DebugService.html">DebugService</a>&gt;</div>
+    <div class="level2"><span class="xref">DebugService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="Coree.NETStandard.Services.DebugService.IDebugService.html">IDebugService</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__">ServiceFactory&lt;DebugService&gt;.CreateServiceFactory(Action&lt;IHostBuilder&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__">ServiceFactory&lt;DebugService&gt;.CreateServiceFactory(Action&lt;IServiceCollection&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__">ServiceFactory&lt;DebugService&gt;.CreateServiceFactory(Action&lt;IServiceCollection&gt;, Action&lt;ILoggingBuilder&gt;, Action&lt;IHostBuilder&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory">ServiceFactory&lt;DebugService&gt;.CreateServiceFactory()</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_">ServiceFactory&lt;DebugService&gt;.CreateServiceFactory(LogLevel)</a>
+    </div>
+    <div>
+      <a class="xref" href="Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose">ServiceFactory&lt;DebugService&gt;.Dispose()</a>
+    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -610,29 +634,33 @@
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Classes.html">Classes</a>.<a class="xref" href="Coree.NETStandard.Classes.HttpRequestService.html">HttpRequestService</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Coree.html">Coree</a>.<a class="xref" href="Coree.NETStandard.html">NETStandard</a>.<a class="xref" href="Coree.NETStandard.Services.html">Services</a>.<a class="xref" href="Coree.NETStandard.Services.DebugService.html">DebugService</a></h6>
   <h6><strong>Assembly</strong>: Coree.NETStandard.dll</h6>
-  <h5 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_syntax">Syntax</h5>
+  <h5 id="Coree_NETStandard_Services_DebugService_DebugService_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TransactionRecord</code></pre>
+    <pre><code class="lang-csharp hljs">public class DebugService : ServiceFactory&lt;DebugService&gt;, IDisposable, IDebugService</code></pre>
   </div>
+  <h5 id="Coree_NETStandard_Services_DebugService_DebugService_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This service should be used for development and debugging purposes only.
+It is designed to extend easily and integrates with the standard logging infrastructure.</p>
+</div>
   <h3 id="constructors">Constructors
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_System_Exception_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.%23ctor(System.Net.Http.HttpRequestMessage%2CSystem.Net.Http.HttpResponseMessage%2CSystem.Exception)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Services_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_DebugService_DebugService__.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.DebugService.DebugService.%23ctor(Microsoft.Extensions.Logging.ILogger%7BCoree.NETStandard.Services.DebugService.DebugService%7D)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L117">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs/#L30">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_System_Exception_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)">TransactionRecord(HttpRequestMessage?, HttpResponseMessage?, Exception?)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of TransactionRecord with the specified HTTP request and response messages, and an optional exception.</p>
+  <a id="Coree_NETStandard_Services_DebugService_DebugService__ctor_" data-uid="Coree.NETStandard.Services.DebugService.DebugService.#ctor*"></a>
+  <h4 id="Coree_NETStandard_Services_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_DebugService_DebugService__" data-uid="Coree.NETStandard.Services.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.DebugService.DebugService})">DebugService(ILogger&lt;DebugService&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Services.DebugService.DebugService.html">DebugService</a> class.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TransactionRecord(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage, Exception? lastException = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public DebugService(ILogger&lt;DebugService&gt; logger)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -645,244 +673,62 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></td>
-        <td><span class="parametername">httpRequestMessage</span></td>
-        <td><p>The HTTP request message associated with the transaction.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a></td>
-        <td><span class="parametername">httpResponseMessage</span></td>
-        <td><p>The HTTP response message received in response to the request.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td><span class="parametername">lastException</span></td>
-        <td><p>The exception, if any, that occurred during the transaction.</p>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="Coree.NETStandard.Services.DebugService.DebugService.html">DebugService</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>The logger used to log messages.</p>
 </td>
       </tr>
     </tbody>
   </table>
-  <h3 id="properties">Properties
+  <h5 id="Coree_NETStandard_Services_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_DebugService_DebugService___remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The constructor writes a debug line to indicate its invocation.</p>
+</div>
+  <h3 id="methods">Methods
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Services_DebugService_DebugService_LogMessage_System_String_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.DebugService.DebugService.LogMessage(System.String)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L23">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs/#L43">View Source</a>
   </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage">HttpRequestMessage</h4>
-  <div class="markdown level1 summary"><p>The HTTP request message associated with the transaction.</p>
+  <a id="Coree_NETStandard_Services_DebugService_DebugService_LogMessage_" data-uid="Coree.NETStandard.Services.DebugService.DebugService.LogMessage*"></a>
+  <h4 id="Coree_NETStandard_Services_DebugService_DebugService_LogMessage_System_String_" data-uid="Coree.NETStandard.Services.DebugService.DebugService.LogMessage(System.String)">LogMessage(string)</h4>
+  <div class="markdown level1 summary"><p>Logs a message using the configured logger and writes it to the debug output.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpRequestMessage? HttpRequestMessage { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public void LogMessage(string message)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
     <thead>
       <tr>
         <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage">HttpRequestMessage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L28">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage">HttpResponseMessage</h4>
-  <div class="markdown level1 summary"><p>The HTTP response message received for the transaction.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public HttpResponseMessage? HttpResponseMessage { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage">HttpResponseMessage</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L18">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache">IsFromCache</h4>
-  <div class="markdown level1 summary"><p>Indicates whether the transaction record was retrieved from cache.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool IsFromCache { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L33">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException">LastException</h4>
-  <div class="markdown level1 summary"><p>The last exception encountered during the transaction, if any.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Exception? LastException { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L38">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes">ResponseBytes</h4>
-  <div class="markdown level1 summary"><p>Retrieves the response as a byte array. Returns null if the response is unavailable or an error occurs during retrieval.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public byte[]? ResponseBytes { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.byte">byte</a>[]</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L63">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString">ResponseString</h4>
-  <div class="markdown level1 summary"><p>Retrieves the response as a string, decoding it according to the response's content encoding. Returns null if the response is unavailable or decoding fails.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public string? ResponseString { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></td>
-        <td></td>
+        <td><span class="parametername">message</span></td>
+        <td><p>The message to log.</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L88">View Source</a>
-  </span>
-  <a id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess_" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess*"></a>
-  <h4 id="Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess" data-uid="Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess">ResponseSuccess</h4>
-  <div class="markdown level1 summary"><p>Indicates whether the HTTP response was successful and no exceptions occurred. Returns false if the response, its content, headers are null, or an exception was recorded.</p>
+  <h5 id="Coree_NETStandard_Services_DebugService_DebugService_LogMessage_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This method provides dual logging through the ILogger interface and System.Diagnostics.Debug.</p>
 </div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="declaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool ResponseSuccess { get; }</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.idisposable">IDisposable</a>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
+  <div>
+      <a class="xref" href="Coree.NETStandard.Services.DebugService.IDebugService.html">IDebugService</a>
+  </div>
 
 </article>
           </div>
@@ -892,10 +738,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Classes_HttpRequestService_TransactionRecord.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Classes.HttpRequestService.TransactionRecord%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/develop/apiSpec/new?filename=Coree_NETStandard_Services_DebugService_DebugService.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Services.DebugService.DebugService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/develop/src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs/#L19" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
