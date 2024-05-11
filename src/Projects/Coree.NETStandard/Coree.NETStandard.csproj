@@ -15,6 +15,7 @@
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
     <None Remove="Services\DebugService\DebugService.cs" />
+    <None Remove="Services\RuntimeInsightsService\RuntimeInsightsService.cs" />
   </ItemGroup>
 
 
