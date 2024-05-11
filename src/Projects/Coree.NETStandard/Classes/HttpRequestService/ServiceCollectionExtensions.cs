@@ -9,8 +9,17 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace Coree.NETStandard.Classes.HttpRequestService
 {
+    /// <summary>
+    /// Provides extension methods for <see cref="IServiceCollection"/> to facilitate the registration
+    /// of hosted services with specific configurations.
+    /// </summary>
     public static partial class ServiceCollectionExtensions
     {
+        /// <summary>
+        /// Configures and adds HTTP request services and handlers to the service collection with pre-defined request headers and content types.
+        /// </summary>
+        /// <param name="services">The IServiceCollection to add services to.</param>
+        /// <returns>The updated IServiceCollection with HTTP request services and handlers configured.</returns>
         public static IServiceCollection AddHttpRequestService(this IServiceCollection services)
         {
             services.AddMemoryCache();

@@ -3,4 +3,4 @@ git branch -vv | Select-String "\: gone\]" | ForEach-Object { $branchName = $_.L
 
 
 ###
-git pull origin develop
+git merge origin develop

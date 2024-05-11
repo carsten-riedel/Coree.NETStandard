@@ -14,7 +14,8 @@
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
   <ItemGroup>
-    <None Remove="Classes\RateLimiter\RateLimiter.cs" />
+    <None Remove="Services\DebugService\DebugService.cs" />
+    <None Remove="Services\RuntimeInsightsService\RuntimeInsightsService.cs" />
   </ItemGroup>
 
 
@@ -45,6 +46,12 @@
     <PackageReference Include="Spectre.Console" Version="0.48.0" />
     <PackageReference Include="Spectre.Console.Cli" Version="0.48.0" />
     <PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
+  </ItemGroup>
+
+
+  
+  <ItemGroup>
+    <Folder Include="Classes\Scheduler\" />
   </ItemGroup>
  
   

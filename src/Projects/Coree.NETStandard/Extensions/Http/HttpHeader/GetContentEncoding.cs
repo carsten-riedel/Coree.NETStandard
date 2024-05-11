@@ -1,39 +1,51 @@
 ﻿using System;
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
-
 using System.Text.RegularExpressions;
 
 namespace Coree.NETStandard.Extensions.Http.HttpHeader
 {
+
+    /// <summary>
+    /// Provides extension methods for handling and parsing HTTP headers.
+    /// </summary>
     public static partial class HttpHeadersExtensions
     {
-        public static Encoding GetContentEncoding(this HttpHeaders headers)
+        /// <summary>
+        /// Retrieves the character encoding from the Content-Type HTTP header.
+        /// </summary>
+        /// <param name="headers">The collection of HTTP headers.</param>
+        /// <param name="defaultEncoding">The default encoding to use if no encoding is specified or if the specified encoding is unrecognized. Defaults to UTF-8.</param>
+        /// <returns>The detected Encoding or the default if not specified.</returns>
+        public static Encoding GetContentEncoding(this HttpHeaders headers, Encoding? defaultEncoding = null)
         {
-            // Default to UTF-8 if the content encoding is not specified or unrecognized
-            var encoding = Encoding.UTF8;
+            defaultEncoding ??= Encoding.UTF8;  // Use UTF-8 as the default encoding if none is provided.
 
             // Attempt to read the charset from the Content-Type header
             if (headers.TryGetValues("Content-Type", out var values))
             {
-                var contentType = string.Join(" ", values);
-                var match = Regex.Match(contentType, @"charset=([\w-]+)", RegexOptions.IgnoreCase);
-
-                if (match.Success)
+                foreach (var value in values)
                 {
-                    try
+                    var match = Regex.Match(value, @"charset\s*=\s*['""]?([\w-]+)['""]?", RegexOptions.IgnoreCase);
+                    if (match.Success)
                     {
-                        encoding = Encoding.GetEncoding(match.Groups[1].Value);
-                    }
-                    catch (ArgumentException)
-                    {
-                        // If the encoding is not supported, fall back to UTF-8
-                        // This catch block can also be used to log the error if necessary
+                        var charset = match.Groups[1].Value;
+                        try
+                        {
+                            return Encoding.GetEncoding(charset);
+                        }
+                        catch (ArgumentException)
+                        {
+                            // If the encoding is not supported, fall back to UTF-8
+                            Console.WriteLine($"Unsupported encoding specified: {charset}. Defaulting to UTF-8.");
+                        }
                     }
                 }
             }
 
-            return encoding;
+            return defaultEncoding;
         }
     }
+
 }

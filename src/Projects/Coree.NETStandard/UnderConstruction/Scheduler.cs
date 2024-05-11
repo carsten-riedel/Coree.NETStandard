@@ -4,10 +4,15 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
+using Coree.NETStandard.Classes.TimeOfDay;
 using Coree.NETStandard.Utilities;
 
-namespace Coree.NETStandard.Classes.Scheduler
+
+#pragma warning disable
+
+namespace Coree.NETStandard.UnderConstruction
 {
+
     public class Scheduler
     {
         public class TickerEventArgs : EventArgs
@@ -18,12 +23,12 @@ namespace Coree.NETStandard.Classes.Scheduler
         }
 
         private Thread? _tickMonitorThread = null;
-        private readonly TimeOfDay.TimeOfDay _synchronizationOffset;
-        private readonly TimeOfDay.TimeOfDay _recurrenceInterval;
+        private readonly TimeOfDay _synchronizationOffset;
+        private readonly TimeOfDay _recurrenceInterval;
         private readonly bool _triggerAtStart;
         private readonly DateTime _startDateTime;
         private readonly DateTime _endDateTime;
-        private readonly TimeOfDay.TimeOfDay _timeOfDay;
+        private readonly TimeOfDay _timeOfDay;
         private readonly ScheduleType _scheduleType;
         private readonly int _dailyRecurEvery;
         private readonly int _schedulerPreCalcLimit;
@@ -81,7 +86,7 @@ namespace Coree.NETStandard.Classes.Scheduler
         }
 
         //Constructor for Daily mode initial trigger won't be added to the schedule list it will just fire at start
-        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay.TimeOfDay timeOfDay, int dailyRecurEvery = 1, bool initalTrigger = true)
+        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay timeOfDay, int dailyRecurEvery = 1, bool initalTrigger = true)
         {
             _startDateTime = startDateTime;
             _endDateTime = endDateTime;
@@ -97,7 +102,7 @@ namespace Coree.NETStandard.Classes.Scheduler
         }
 
         //Constructor for recurence mode , initial trigger won't be added to the schedule list it will just fire at start
-        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay.TimeOfDay recurFrequency, TimeOfDay.TimeOfDay recurSyncOffset, bool initalTrigger)
+        public Scheduler(DateTime startDateTime, DateTime endDateTime, TimeOfDay recurFrequency, TimeOfDay recurSyncOffset, bool initalTrigger)
         {
             _startDateTime = startDateTime;
             _endDateTime = endDateTime;
@@ -186,3 +191,5 @@ namespace Coree.NETStandard.Classes.Scheduler
         }
     }
 }
+
+#pragma warning restore
