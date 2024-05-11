@@ -792,75 +792,6 @@ references:
   fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaQueryableExtensions.ApplyCriteria(Of T, TValue)(System.Linq.IQueryable(Of T), Coree.NETStandard.Classes.Criteria.CriteriaItem(Of TValue))
   nameWithType: CriteriaQueryableExtensions.ApplyCriteria<T, TValue>(IQueryable<T>, CriteriaItem<TValue>)
   nameWithType.vb: CriteriaQueryableExtensions.ApplyCriteria(Of T, TValue)(IQueryable(Of T), CriteriaItem(Of TValue))
-- uid: Coree.NETStandard.Classes.DebugService
-  name: Coree.NETStandard.Classes.DebugService
-  href: api/Coree.NETStandard.Classes.DebugService.html
-  commentId: N:Coree.NETStandard.Classes.DebugService
-  fullName: Coree.NETStandard.Classes.DebugService
-  nameWithType: Coree.NETStandard.Classes.DebugService
-- uid: Coree.NETStandard.Classes.DebugService.DebugService
-  name: DebugService
-  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html
-  commentId: T:Coree.NETStandard.Classes.DebugService.DebugService
-  fullName: Coree.NETStandard.Classes.DebugService.DebugService
-  nameWithType: DebugService
-- uid: Coree.NETStandard.Classes.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.DebugService.DebugService})
-  name: DebugService(ILogger<DebugService>)
-  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Classes_DebugService_DebugService__
-  commentId: M:Coree.NETStandard.Classes.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Classes.DebugService.DebugService})
-  name.vb: New(ILogger(Of DebugService))
-  fullName: Coree.NETStandard.Classes.DebugService.DebugService.DebugService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Classes.DebugService.DebugService>)
-  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Classes.DebugService.DebugService))
-  nameWithType: DebugService.DebugService(ILogger<DebugService>)
-  nameWithType.vb: DebugService.New(ILogger(Of DebugService))
-- uid: Coree.NETStandard.Classes.DebugService.DebugService.#ctor*
-  name: DebugService
-  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService__ctor_
-  commentId: Overload:Coree.NETStandard.Classes.DebugService.DebugService.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Classes.DebugService.DebugService.DebugService
-  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.New
-  nameWithType: DebugService.DebugService
-  nameWithType.vb: DebugService.New
-- uid: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(System.String)
-  name: LogMessage(string)
-  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService_LogMessage_System_String_
-  commentId: M:Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(System.String)
-  name.vb: LogMessage(String)
-  fullName: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(string)
-  fullName.vb: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage(String)
-  nameWithType: DebugService.LogMessage(string)
-  nameWithType.vb: DebugService.LogMessage(String)
-- uid: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage*
-  name: LogMessage
-  href: api/Coree.NETStandard.Classes.DebugService.DebugService.html#Coree_NETStandard_Classes_DebugService_DebugService_LogMessage_
-  commentId: Overload:Coree.NETStandard.Classes.DebugService.DebugService.LogMessage
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.DebugService.DebugService.LogMessage
-  nameWithType: DebugService.LogMessage
-- uid: Coree.NETStandard.Classes.DebugService.IDebugService
-  name: IDebugService
-  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html
-  commentId: T:Coree.NETStandard.Classes.DebugService.IDebugService
-  fullName: Coree.NETStandard.Classes.DebugService.IDebugService
-  nameWithType: IDebugService
-- uid: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(System.String)
-  name: LogMessage(string)
-  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html#Coree_NETStandard_Classes_DebugService_IDebugService_LogMessage_System_String_
-  commentId: M:Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(System.String)
-  name.vb: LogMessage(String)
-  fullName: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(string)
-  fullName.vb: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage(String)
-  nameWithType: IDebugService.LogMessage(string)
-  nameWithType.vb: IDebugService.LogMessage(String)
-- uid: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage*
-  name: LogMessage
-  href: api/Coree.NETStandard.Classes.DebugService.IDebugService.html#Coree_NETStandard_Classes_DebugService_IDebugService_LogMessage_
-  commentId: Overload:Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.DebugService.IDebugService.LogMessage
-  nameWithType: IDebugService.LogMessage
 - uid: Coree.NETStandard.Classes.HttpRequestService
   name: Coree.NETStandard.Classes.HttpRequestService
   href: api/Coree.NETStandard.Classes.HttpRequestService.html
@@ -937,58 +868,86 @@ references:
   fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New
   nameWithType: ContentComposer.ContentComposer
   nameWithType.vb: ContentComposer.New
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Byte[],System.String)
-  name: AddContent(byte[], string?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_Byte___System_String_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Byte[],System.String)
-  name.vb: AddContent(Byte(), String)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(byte[], string?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(Byte(), String)
-  nameWithType: ContentComposer.AddContent(byte[], string?)
-  nameWithType.vb: ContentComposer.AddContent(Byte(), String)
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name: AddContent(Dictionary<string, string>, string?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
-  name.vb: AddContent(Dictionary(Of String, String), String)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary<string, string>, string?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.Collections.Generic.Dictionary(Of String, String), String)
-  nameWithType: ContentComposer.AddContent(Dictionary<string, string>, string?)
-  nameWithType.vb: ContentComposer.AddContent(Dictionary(Of String, String), String)
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream,System.String,System.String)
-  name: AddContent(Stream, string?, string?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_IO_Stream_System_String_System_String_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream,System.String,System.String)
-  name.vb: AddContent(Stream, String, String)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream, string?, string?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.IO.Stream, String, String)
-  nameWithType: ContentComposer.AddContent(Stream, string?, string?)
-  nameWithType.vb: ContentComposer.AddContent(Stream, String, String)
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.String,System.Text.Encoding,System.String)
-  name: AddContent(string, string, Encoding?, string?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_String_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.String,System.Text.Encoding,System.String)
-  name.vb: AddContent(String, String, Encoding, String)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(string, string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(String, String, System.Text.Encoding, String)
-  nameWithType: ContentComposer.AddContent(string, string, Encoding?, string?)
-  nameWithType.vb: ContentComposer.AddContent(String, String, Encoding, String)
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.Text.Encoding,System.String)
-  name: AddContent(string, Encoding?, string?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_System_String_System_Text_Encoding_System_String_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(System.String,System.Text.Encoding,System.String)
-  name.vb: AddContent(String, Encoding, String)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(string, System.Text.Encoding?, string?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent(String, System.Text.Encoding, String)
-  nameWithType: ContentComposer.AddContent(string, Encoding?, string?)
-  nameWithType.vb: ContentComposer.AddContent(String, Encoding, String)
-- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent*
-  name: AddContent
-  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddContent_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  name: AddAutoStringContent(string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddAutoStringContent_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  name.vb: AddAutoStringContent(String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.AddAutoStringContent(string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.AddAutoStringContent(String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent*
+  name: AddAutoStringContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddAutoStringContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddContent
-  nameWithType: ContentComposer.AddContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent
+  nameWithType: ContentComposer.AddAutoStringContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(System.Byte[],System.String)
+  name: AddByteArrayContent(byte[], string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddByteArrayContent_System_Byte___System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(System.Byte[],System.String)
+  name.vb: AddByteArrayContent(Byte(), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(byte[], string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(Byte(), String)
+  nameWithType: ContentComposer.AddByteArrayContent(byte[], string?)
+  nameWithType.vb: ContentComposer.AddByteArrayContent(Byte(), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent*
+  name: AddByteArrayContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddByteArrayContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent
+  nameWithType: ContentComposer.AddByteArrayContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name: AddFormUrlEncodedContent(Dictionary<string, string>, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddFormUrlEncodedContent_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  name.vb: AddFormUrlEncodedContent(Dictionary(Of String, String), String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary<string, string>, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary(Of String, String), String)
+  nameWithType: ContentComposer.AddFormUrlEncodedContent(Dictionary<string, string>, string?)
+  nameWithType.vb: ContentComposer.AddFormUrlEncodedContent(Dictionary(Of String, String), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent*
+  name: AddFormUrlEncodedContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddFormUrlEncodedContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent
+  nameWithType: ContentComposer.AddFormUrlEncodedContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  name: AddPlainStringContent(string, string, Encoding?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddPlainStringContent_System_String_System_String_System_Text_Encoding_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  name.vb: AddPlainStringContent(String, String, Encoding, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(string, string, System.Text.Encoding?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(String, String, System.Text.Encoding, String)
+  nameWithType: ContentComposer.AddPlainStringContent(string, string, Encoding?, string?)
+  nameWithType.vb: ContentComposer.AddPlainStringContent(String, String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent*
+  name: AddPlainStringContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddPlainStringContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent
+  nameWithType: ContentComposer.AddPlainStringContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream,System.String,System.String)
+  name: AddStreamContent(Stream, string?, string?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddStreamContent_System_IO_Stream_System_String_System_String_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream,System.String,System.String)
+  name.vb: AddStreamContent(Stream, String, String)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream, string?, string?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream, String, String)
+  nameWithType: ContentComposer.AddStreamContent(Stream, string?, string?)
+  nameWithType.vb: ContentComposer.AddStreamContent(Stream, String, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent*
+  name: AddStreamContent
+  href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddStreamContent_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent
+  nameWithType: ContentComposer.AddStreamContent
 - uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
   name: Build()
   href: api/Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_Build
@@ -1065,35 +1024,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.CreateRequest
   nameWithType: HttpRequestService.CreateRequest
-- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
-  name: InvokeDump()
-  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_InvokeDump
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
-  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump()
-  nameWithType: HttpRequestService.InvokeDump()
-- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump*
-  name: InvokeDump
-  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_InvokeDump_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.InvokeDump
-  nameWithType: HttpRequestService.InvokeDump
-- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name: PerformTask(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_PerformTask_System_Net_Http_HttpMethod_System_Uri_System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__System_Collections_Generic_Dictionary_System_String_System_String__Coree_NETStandard_Classes_HttpRequestService_ContentComposer_System_Nullable_System_TimeSpan__System_Int32_System_Nullable_System_TimeSpan__System_Nullable_System_TimeSpan__System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod,System.Uri,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},Coree.NETStandard.Classes.HttpRequestService.ContentComposer,System.Nullable{System.TimeSpan},System.Int32,System.Nullable{System.TimeSpan},System.Nullable{System.TimeSpan},System.Threading.CancellationToken)
-  name.vb: PerformTask(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, System.Collections.Generic.Dictionary<string, string>?, Coree.NETStandard.Classes.HttpRequestService.ContentComposer?, System.TimeSpan?, int, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask(System.Net.Http.HttpMethod, System.Uri, System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), System.Collections.Generic.Dictionary(Of String, String), Coree.NETStandard.Classes.HttpRequestService.ContentComposer, System.TimeSpan?, Integer, System.TimeSpan?, System.TimeSpan?, System.Threading.CancellationToken)
-  nameWithType: HttpRequestService.PerformTask(HttpMethod, Uri, Dictionary<string, string>?, Dictionary<string, string>?, Dictionary<string, string>?, ContentComposer?, TimeSpan?, int, TimeSpan?, TimeSpan?, CancellationToken)
-  nameWithType.vb: HttpRequestService.PerformTask(HttpMethod, Uri, Dictionary(Of String, String), Dictionary(Of String, String), Dictionary(Of String, String), ContentComposer, TimeSpan?, Integer, TimeSpan?, TimeSpan?, CancellationToken)
-- uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask*
-  name: PerformTask
-  href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.html#Coree_NETStandard_Classes_HttpRequestService_HttpRequestService_PerformTask_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.HttpRequestService.PerformTask
-  nameWithType: HttpRequestService.PerformTask
 - uid: Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler
   name: HttpRequestServiceHandler
   href: api/Coree.NETStandard.Classes.HttpRequestService.HttpRequestServiceHandler.html
@@ -1179,15 +1109,15 @@ references:
   commentId: T:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
   fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
   nameWithType: TransactionRecord
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage)
-  name: TransactionRecord(HttpRequestMessage?, HttpResponseMessage?)
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_
-  commentId: M:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage)
-  name.vb: New(HttpRequestMessage, HttpResponseMessage)
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord(System.Net.Http.HttpRequestMessage?, System.Net.Http.HttpResponseMessage?)
-  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpResponseMessage)
-  nameWithType: TransactionRecord.TransactionRecord(HttpRequestMessage?, HttpResponseMessage?)
-  nameWithType.vb: TransactionRecord.New(HttpRequestMessage, HttpResponseMessage)
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)
+  name: TransactionRecord(HttpRequestMessage?, HttpResponseMessage?, Exception?)
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_System_Exception_
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)
+  name.vb: New(HttpRequestMessage, HttpResponseMessage, Exception)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord(System.Net.Http.HttpRequestMessage?, System.Net.Http.HttpResponseMessage?, System.Exception?)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpResponseMessage, System.Exception)
+  nameWithType: TransactionRecord.TransactionRecord(HttpRequestMessage?, HttpResponseMessage?, Exception?)
+  nameWithType.vb: TransactionRecord.New(HttpRequestMessage, HttpResponseMessage, Exception)
 - uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor*
   name: TransactionRecord
   href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_
@@ -1198,32 +1128,32 @@ references:
   fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New
   nameWithType: TransactionRecord.TransactionRecord
   nameWithType.vb: TransactionRecord.New
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
-  name: ContentBytes
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentBytes
-  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
-  nameWithType: TransactionRecord.ContentBytes
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes*
-  name: ContentBytes
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentBytes_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  name: HttpRequestMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  nameWithType: TransactionRecord.HttpRequestMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage*
+  name: HttpRequestMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentBytes
-  nameWithType: TransactionRecord.ContentBytes
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
-  name: ContentString
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentString
-  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
-  nameWithType: TransactionRecord.ContentString
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString*
-  name: ContentString
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ContentString_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  nameWithType: TransactionRecord.HttpRequestMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  name: HttpResponseMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  nameWithType: TransactionRecord.HttpResponseMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage*
+  name: HttpResponseMessage
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ContentString
-  nameWithType: TransactionRecord.ContentString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  nameWithType: TransactionRecord.HttpResponseMessage
 - uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
   name: IsFromCache
   href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache
@@ -1237,279 +1167,58 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
   nameWithType: TransactionRecord.IsFromCache
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
-  name: IsSuccess
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsSuccess
-  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
-  nameWithType: TransactionRecord.IsSuccess
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess*
-  name: IsSuccess
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsSuccess_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  name: LastException
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  nameWithType: TransactionRecord.LastException
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException*
+  name: LastException
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsSuccess
-  nameWithType: TransactionRecord.IsSuccess
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
-  name: httpRequestMessage
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpRequestMessage
-  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
-  nameWithType: TransactionRecord.httpRequestMessage
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage*
-  name: httpRequestMessage
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpRequestMessage_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  nameWithType: TransactionRecord.LastException
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  name: ResponseBytes
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  nameWithType: TransactionRecord.ResponseBytes
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes*
+  name: ResponseBytes
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpRequestMessage
-  nameWithType: TransactionRecord.httpRequestMessage
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
-  name: httpResponseMessage
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpResponseMessage
-  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
-  nameWithType: TransactionRecord.httpResponseMessage
-- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage*
-  name: httpResponseMessage
-  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_httpResponseMessage_
-  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  nameWithType: TransactionRecord.ResponseBytes
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  name: ResponseString
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  nameWithType: TransactionRecord.ResponseString
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString*
+  name: ResponseString
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
   isSpec: "True"
-  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.httpResponseMessage
-  nameWithType: TransactionRecord.httpResponseMessage
-- uid: Coree.NETStandard.Classes.RateLimiter
-  name: Coree.NETStandard.Classes.RateLimiter
-  href: api/Coree.NETStandard.Classes.RateLimiter.html
-  commentId: N:Coree.NETStandard.Classes.RateLimiter
-  fullName: Coree.NETStandard.Classes.RateLimiter
-  nameWithType: Coree.NETStandard.Classes.RateLimiter
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1
-  name: RateLimit<T>
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html
-  commentId: T:Coree.NETStandard.Classes.RateLimiter.RateLimit`1
-  name.vb: RateLimit(Of T)
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T)
-  nameWithType: RateLimit<T>
-  nameWithType.vb: RateLimit(Of T)
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor(System.Int32,System.TimeSpan)
-  name: RateLimit(int, TimeSpan)
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1__ctor_System_Int32_System_TimeSpan_
-  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor(System.Int32,System.TimeSpan)
-  name.vb: New(Integer, TimeSpan)
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.RateLimit(int, System.TimeSpan)
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).New(Integer, System.TimeSpan)
-  nameWithType: RateLimit<T>.RateLimit(int, TimeSpan)
-  nameWithType.vb: RateLimit(Of T).New(Integer, TimeSpan)
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor*
-  name: RateLimit
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1__ctor_
-  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.#ctor
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  nameWithType: TransactionRecord.ResponseString
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  name: ResponseSuccess
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  nameWithType: TransactionRecord.ResponseSuccess
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess*
+  name: ResponseSuccess
+  href: api/Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess_
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
   isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.RateLimit
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).New
-  nameWithType: RateLimit<T>.RateLimit
-  nameWithType.vb: RateLimit(Of T).New
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
-  name: Dispose()
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_Dispose
-  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.Dispose()
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).Dispose()
-  nameWithType: RateLimit<T>.Dispose()
-  nameWithType.vb: RateLimit(Of T).Dispose()
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose*
-  name: Dispose
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_Dispose_
-  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.Dispose
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.Dispose
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).Dispose
-  nameWithType: RateLimit<T>.Dispose
-  nameWithType.vb: RateLimit(Of T).Dispose
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask(System.Func{System.Threading.Tasks.Task{`0}})
-  name: EnqueueTask(Func<Task<T>>)
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_EnqueueTask_System_Func_System_Threading_Tasks_Task__0___
-  commentId: M:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask(System.Func{System.Threading.Tasks.Task{`0}})
-  name.vb: EnqueueTask(Func(Of Task(Of T)))
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.EnqueueTask(System.Func<System.Threading.Tasks.Task<T>>)
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).EnqueueTask(System.Func(Of System.Threading.Tasks.Task(Of T)))
-  nameWithType: RateLimit<T>.EnqueueTask(Func<Task<T>>)
-  nameWithType.vb: RateLimit(Of T).EnqueueTask(Func(Of Task(Of T)))
-- uid: Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask*
-  name: EnqueueTask
-  href: api/Coree.NETStandard.Classes.RateLimiter.RateLimit-1.html#Coree_NETStandard_Classes_RateLimiter_RateLimit_1_EnqueueTask_
-  commentId: Overload:Coree.NETStandard.Classes.RateLimiter.RateLimit`1.EnqueueTask
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.RateLimiter.RateLimit<T>.EnqueueTask
-  fullName.vb: Coree.NETStandard.Classes.RateLimiter.RateLimit(Of T).EnqueueTask
-  nameWithType: RateLimit<T>.EnqueueTask
-  nameWithType.vb: RateLimit(Of T).EnqueueTask
-- uid: Coree.NETStandard.Classes.Scheduler
-  name: Coree.NETStandard.Classes.Scheduler
-  href: api/Coree.NETStandard.Classes.Scheduler.html
-  commentId: N:Coree.NETStandard.Classes.Scheduler
-  fullName: Coree.NETStandard.Classes.Scheduler
-  nameWithType: Coree.NETStandard.Classes.Scheduler
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler
-  name: Scheduler
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html
-  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler
-  nameWithType: Scheduler
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
-  name: Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Boolean_
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
-  name.vb: New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, bool)
-  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Boolean)
-  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
-  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
-  name: Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Int32_System_Boolean_
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
-  name.vb: New(Date, Date, TimeOfDay, Integer, Boolean)
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, int, bool)
-  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Integer, Boolean)
-  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
-  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, Integer, Boolean)
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor*
-  name: Scheduler
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler
-  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New
-  nameWithType: Scheduler.Scheduler
-  nameWithType.vb: Scheduler.New
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
-  name: CalculateDailySchedules()
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateDailySchedules
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules()
-  nameWithType: Scheduler.CalculateDailySchedules()
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules*
-  name: CalculateDailySchedules
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateDailySchedules_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
-  nameWithType: Scheduler.CalculateDailySchedules
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
-  name: CalculateRecuringSchedules()
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateRecuringSchedules
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules()
-  nameWithType: Scheduler.CalculateRecuringSchedules()
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules*
-  name: CalculateRecuringSchedules
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateRecuringSchedules_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
-  nameWithType: Scheduler.CalculateRecuringSchedules
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
-  name: ClearSchedulesBefore(DateTime)
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ClearSchedulesBefore_System_DateTime_
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
-  name.vb: ClearSchedulesBefore(Date)
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
-  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(Date)
-  nameWithType: Scheduler.ClearSchedulesBefore(DateTime)
-  nameWithType.vb: Scheduler.ClearSchedulesBefore(Date)
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore*
-  name: ClearSchedulesBefore
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ClearSchedulesBefore_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore
-  nameWithType: Scheduler.ClearSchedulesBefore
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
-  name: RaiseTickEvent(TickerEventArgs, CancellationToken)
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_RaiseTickEvent_Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs, System.Threading.CancellationToken)
-  nameWithType: Scheduler.RaiseTickEvent(Scheduler.TickerEventArgs, CancellationToken)
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent*
-  name: RaiseTickEvent
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_RaiseTickEvent_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent
-  nameWithType: Scheduler.RaiseTickEvent
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
-  name: ScheduledDates
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ScheduledDates
-  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
-  nameWithType: Scheduler.ScheduledDates
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates*
-  name: ScheduledDates
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ScheduledDates_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
-  nameWithType: Scheduler.ScheduledDates
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
-  name: TickOccurred
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickOccurred
-  commentId: E:Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
-  nameWithType: Scheduler.TickOccurred
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
-  name: Scheduler.TickerEventArgs
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html
-  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
-  nameWithType: Scheduler.TickerEventArgs
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
-  name: Diviation
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_Diviation
-  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
-  nameWithType: Scheduler.TickerEventArgs.Diviation
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation*
-  name: Diviation
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_Diviation_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.Diviation
-  nameWithType: Scheduler.TickerEventArgs.Diviation
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
-  name: FormattedTickTime
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_FormattedTickTime
-  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
-  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime*
-  name: FormattedTickTime
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_FormattedTickTime_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
-  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
-  name: TickTime
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_TickTime
-  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
-  nameWithType: Scheduler.TickerEventArgs.TickTime
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime*
-  name: TickTime
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_TickTime_
-  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
-  isSpec: "True"
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
-  nameWithType: Scheduler.TickerEventArgs.TickTime
-- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
-  name: Scheduler.TickerEventDelegate
-  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html
-  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
-  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
-  nameWithType: Scheduler.TickerEventDelegate
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  nameWithType: TransactionRecord.ResponseSuccess
 - uid: Coree.NETStandard.Classes.ThreadSafeCollection
   name: Coree.NETStandard.Classes.ThreadSafeCollection
   href: api/Coree.NETStandard.Classes.ThreadSafeCollection.html
@@ -2853,12 +2562,15 @@ references:
   commentId: T:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
   fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
   nameWithType: HttpHeadersExtensions
-- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  name: GetContentEncoding(HttpHeaders)
-  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html#Coree_NETStandard_Extensions_Http_HttpHeader_HttpHeadersExtensions_GetContentEncoding_System_Net_Http_Headers_HttpHeaders_
-  commentId: M:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders)
-  nameWithType: HttpHeadersExtensions.GetContentEncoding(HttpHeaders)
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders,System.Text.Encoding)
+  name: GetContentEncoding(HttpHeaders, Encoding?)
+  href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html#Coree_NETStandard_Extensions_Http_HttpHeader_HttpHeadersExtensions_GetContentEncoding_System_Net_Http_Headers_HttpHeaders_System_Text_Encoding_
+  commentId: M:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders,System.Text.Encoding)
+  name.vb: GetContentEncoding(HttpHeaders, Encoding)
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders, System.Text.Encoding?)
+  fullName.vb: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding(System.Net.Http.Headers.HttpHeaders, System.Text.Encoding)
+  nameWithType: HttpHeadersExtensions.GetContentEncoding(HttpHeaders, Encoding?)
+  nameWithType.vb: HttpHeadersExtensions.GetContentEncoding(HttpHeaders, Encoding)
 - uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.GetContentEncoding*
   name: GetContentEncoding
   href: api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html#Coree_NETStandard_Extensions_Http_HttpHeader_HttpHeadersExtensions_GetContentEncoding_
@@ -3404,12 +3116,75 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher.Enrich
   nameWithType: SourceContextShortEnricher.Enrich
-- uid: Coree.NETStandard.Services
-  name: Coree.NETStandard.Services
-  href: api/Coree.NETStandard.Services.html
-  commentId: N:Coree.NETStandard.Services
-  fullName: Coree.NETStandard.Services
-  nameWithType: Coree.NETStandard.Services
+- uid: Coree.NETStandard.Services.DebugService
+  name: Coree.NETStandard.Services.DebugService
+  href: api/Coree.NETStandard.Services.DebugService.html
+  commentId: N:Coree.NETStandard.Services.DebugService
+  fullName: Coree.NETStandard.Services.DebugService
+  nameWithType: Coree.NETStandard.Services.DebugService
+- uid: Coree.NETStandard.Services.DebugService.DebugService
+  name: DebugService
+  href: api/Coree.NETStandard.Services.DebugService.DebugService.html
+  commentId: T:Coree.NETStandard.Services.DebugService.DebugService
+  fullName: Coree.NETStandard.Services.DebugService.DebugService
+  nameWithType: DebugService
+- uid: Coree.NETStandard.Services.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.DebugService.DebugService})
+  name: DebugService(ILogger<DebugService>)
+  href: api/Coree.NETStandard.Services.DebugService.DebugService.html#Coree_NETStandard_Services_DebugService_DebugService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_DebugService_DebugService__
+  commentId: M:Coree.NETStandard.Services.DebugService.DebugService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.DebugService.DebugService})
+  name.vb: New(ILogger(Of DebugService))
+  fullName: Coree.NETStandard.Services.DebugService.DebugService.DebugService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.DebugService.DebugService>)
+  fullName.vb: Coree.NETStandard.Services.DebugService.DebugService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.DebugService.DebugService))
+  nameWithType: DebugService.DebugService(ILogger<DebugService>)
+  nameWithType.vb: DebugService.New(ILogger(Of DebugService))
+- uid: Coree.NETStandard.Services.DebugService.DebugService.#ctor*
+  name: DebugService
+  href: api/Coree.NETStandard.Services.DebugService.DebugService.html#Coree_NETStandard_Services_DebugService_DebugService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.DebugService.DebugService.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Services.DebugService.DebugService.DebugService
+  fullName.vb: Coree.NETStandard.Services.DebugService.DebugService.New
+  nameWithType: DebugService.DebugService
+  nameWithType.vb: DebugService.New
+- uid: Coree.NETStandard.Services.DebugService.DebugService.LogMessage(System.String)
+  name: LogMessage(string)
+  href: api/Coree.NETStandard.Services.DebugService.DebugService.html#Coree_NETStandard_Services_DebugService_DebugService_LogMessage_System_String_
+  commentId: M:Coree.NETStandard.Services.DebugService.DebugService.LogMessage(System.String)
+  name.vb: LogMessage(String)
+  fullName: Coree.NETStandard.Services.DebugService.DebugService.LogMessage(string)
+  fullName.vb: Coree.NETStandard.Services.DebugService.DebugService.LogMessage(String)
+  nameWithType: DebugService.LogMessage(string)
+  nameWithType.vb: DebugService.LogMessage(String)
+- uid: Coree.NETStandard.Services.DebugService.DebugService.LogMessage*
+  name: LogMessage
+  href: api/Coree.NETStandard.Services.DebugService.DebugService.html#Coree_NETStandard_Services_DebugService_DebugService_LogMessage_
+  commentId: Overload:Coree.NETStandard.Services.DebugService.DebugService.LogMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.DebugService.DebugService.LogMessage
+  nameWithType: DebugService.LogMessage
+- uid: Coree.NETStandard.Services.DebugService.IDebugService
+  name: IDebugService
+  href: api/Coree.NETStandard.Services.DebugService.IDebugService.html
+  commentId: T:Coree.NETStandard.Services.DebugService.IDebugService
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService
+  nameWithType: IDebugService
+- uid: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(System.String)
+  name: LogMessage(string)
+  href: api/Coree.NETStandard.Services.DebugService.IDebugService.html#Coree_NETStandard_Services_DebugService_IDebugService_LogMessage_System_String_
+  commentId: M:Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(System.String)
+  name.vb: LogMessage(String)
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(string)
+  fullName.vb: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(String)
+  nameWithType: IDebugService.LogMessage(string)
+  nameWithType.vb: IDebugService.LogMessage(String)
+- uid: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage*
+  name: LogMessage
+  href: api/Coree.NETStandard.Services.DebugService.IDebugService.html#Coree_NETStandard_Services_DebugService_IDebugService_LogMessage_
+  commentId: Overload:Coree.NETStandard.Services.DebugService.IDebugService.LogMessage
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage
+  nameWithType: IDebugService.LogMessage
 - uid: Coree.NETStandard.Services.FileService
   name: Coree.NETStandard.Services.FileService
   href: api/Coree.NETStandard.Services.FileService.html
@@ -3633,142 +3408,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing
   nameWithType: IFileService.TryFixPathCaseing
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx
-  name: IRuntimeInsightsx
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html
-  commentId: T:Coree.NETStandard.Services.IRuntimeInsightsx
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx
-  nameWithType: IRuntimeInsightsx
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName
-  name: CallingAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CallingAssemblyName
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName
-  nameWithType: IRuntimeInsightsx.CallingAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName*
-  name: CallingAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CallingAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CallingAssemblyName
-  nameWithType: IRuntimeInsightsx.CallingAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory
-  name: CurrentDirectory
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentDirectory
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory
-  nameWithType: IRuntimeInsightsx.CurrentDirectory
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory*
-  name: CurrentDirectory
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentDirectory_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentDirectory
-  nameWithType: IRuntimeInsightsx.CurrentDirectory
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename
-  name: CurrentProcessMainModuleFilename
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentProcessMainModuleFilename
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename
-  nameWithType: IRuntimeInsightsx.CurrentProcessMainModuleFilename
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename*
-  name: CurrentProcessMainModuleFilename
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentProcessMainModuleFilename_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleFilename
-  nameWithType: IRuntimeInsightsx.CurrentProcessMainModuleFilename
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName
-  name: CurrentProcessMainModuleName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentProcessMainModuleName
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName
-  nameWithType: IRuntimeInsightsx.CurrentProcessMainModuleName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName*
-  name: CurrentProcessMainModuleName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_CurrentProcessMainModuleName_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.CurrentProcessMainModuleName
-  nameWithType: IRuntimeInsightsx.CurrentProcessMainModuleName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName
-  name: EntryAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_EntryAssemblyName
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName
-  nameWithType: IRuntimeInsightsx.EntryAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName*
-  name: EntryAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_EntryAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.EntryAssemblyName
-  nameWithType: IRuntimeInsightsx.EntryAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine
-  name: EnvironmentCommandLine
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_EnvironmentCommandLine
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine
-  nameWithType: IRuntimeInsightsx.EnvironmentCommandLine
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine*
-  name: EnvironmentCommandLine
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_EnvironmentCommandLine_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.EnvironmentCommandLine
-  nameWithType: IRuntimeInsightsx.EnvironmentCommandLine
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName
-  name: ExecutingAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_ExecutingAssemblyName
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName
-  nameWithType: IRuntimeInsightsx.ExecutingAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName*
-  name: ExecutingAssemblyName
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_ExecutingAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.ExecutingAssemblyName
-  nameWithType: IRuntimeInsightsx.ExecutingAssemblyName
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture
-  name: OSArchitecture
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_OSArchitecture
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture
-  nameWithType: IRuntimeInsightsx.OSArchitecture
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture*
-  name: OSArchitecture
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_OSArchitecture_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.OSArchitecture
-  nameWithType: IRuntimeInsightsx.OSArchitecture
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture
-  name: ProcessArchitecture
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_ProcessArchitecture
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture
-  nameWithType: IRuntimeInsightsx.ProcessArchitecture
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture*
-  name: ProcessArchitecture
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_ProcessArchitecture_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.ProcessArchitecture
-  nameWithType: IRuntimeInsightsx.ProcessArchitecture
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.Username
-  name: Username
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_Username
-  commentId: P:Coree.NETStandard.Services.IRuntimeInsightsx.Username
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.Username
-  nameWithType: IRuntimeInsightsx.Username
-- uid: Coree.NETStandard.Services.IRuntimeInsightsx.Username*
-  name: Username
-  href: api/Coree.NETStandard.Services.IRuntimeInsightsx.html#Coree_NETStandard_Services_IRuntimeInsightsx_Username_
-  commentId: Overload:Coree.NETStandard.Services.IRuntimeInsightsx.Username
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.IRuntimeInsightsx.Username
-  nameWithType: IRuntimeInsightsx.Username
 - uid: Coree.NETStandard.Services.Process
   name: Coree.NETStandard.Services.Process
   href: api/Coree.NETStandard.Services.Process.html
@@ -3964,263 +3603,368 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.Process.ProcessService.RunProcessWithCancellationSupportAsync
   nameWithType: ProcessService.RunProcessWithCancellationSupportAsync
-- uid: Coree.NETStandard.Services.RuntimeInsights
-  name: Coree.NETStandard.Services.RuntimeInsights
-  href: api/Coree.NETStandard.Services.RuntimeInsights.html
-  commentId: N:Coree.NETStandard.Services.RuntimeInsights
-  fullName: Coree.NETStandard.Services.RuntimeInsights
-  nameWithType: Coree.NETStandard.Services.RuntimeInsights
-- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsightsService
+  name: Coree.NETStandard.Services.RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.html
+  commentId: N:Coree.NETStandard.Services.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService
+  nameWithType: Coree.NETStandard.Services.RuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
   name: IRuntimeInsightsService
-  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html
-  commentId: T:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
-  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
   nameWithType: IRuntimeInsightsService
-- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  nameWithType: IRuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName*
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CallingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  nameWithType: IRuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  nameWithType: IRuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory*
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentDirectory_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  nameWithType: IRuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename*
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleFilename_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName*
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  nameWithType: IRuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName*
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EntryAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  nameWithType: IRuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: IRuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine*
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EnvironmentCommandLine_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: IRuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: IRuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName*
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ExecutingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: IRuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
   name: IsDebugBuild()
-  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuild
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
-  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild()
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild()
   nameWithType: IRuntimeInsightsService.IsDebugBuild()
-- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild*
   name: IsDebugBuild
-  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuild_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuild_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
   nameWithType: IRuntimeInsightsService.IsDebugBuild
-- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
   name: IsDebugBuildAsync(CancellationToken)
-  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
   nameWithType: IRuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
-- uid: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync*
   name: IsDebugBuildAsync
-  href: api/Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_IRuntimeInsightsService_IsDebugBuildAsync_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuildAsync_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsights.IRuntimeInsightsService.IsDebugBuildAsync
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync
   nameWithType: IRuntimeInsightsService.IsDebugBuildAsync
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_OSArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  nameWithType: IRuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture*
+  name: OSArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_OSArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  nameWithType: IRuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  nameWithType: IRuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture*
+  name: ProcessArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ProcessArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  nameWithType: IRuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  name: Username
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_Username
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  nameWithType: IRuntimeInsightsService.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username*
+  name: Username
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_Username_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  nameWithType: IRuntimeInsightsService.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
   name: RuntimeInsightsService
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html
-  commentId: T:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
   nameWithType: RuntimeInsightsService
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService},Microsoft.Extensions.Configuration.IConfiguration)
-  name: RuntimeInsightsService(ILogger<RuntimeInsightsService>, IConfiguration)
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__Microsoft_Extensions_Configuration_IConfiguration_
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService},Microsoft.Extensions.Configuration.IConfiguration)
-  name.vb: New(ILogger(Of RuntimeInsightsService), IConfiguration)
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.RuntimeInsightsService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService>, Microsoft.Extensions.Configuration.IConfiguration)
-  fullName.vb: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService), Microsoft.Extensions.Configuration.IConfiguration)
-  nameWithType: RuntimeInsightsService.RuntimeInsightsService(ILogger<RuntimeInsightsService>, IConfiguration)
-  nameWithType.vb: RuntimeInsightsService.New(ILogger(Of RuntimeInsightsService), IConfiguration)
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})
+  name: RuntimeInsightsService(ILogger<RuntimeInsightsService>?)
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService__
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})
+  name.vb: New(ILogger(Of RuntimeInsightsService))
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.RuntimeInsightsService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>?)
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService))
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService(ILogger<RuntimeInsightsService>?)
+  nameWithType.vb: RuntimeInsightsService.New(ILogger(Of RuntimeInsightsService))
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor*
   name: RuntimeInsightsService
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService__ctor_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.#ctor
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService__ctor_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor
   isSpec: "True"
   name.vb: New
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.RuntimeInsightsService
-  fullName.vb: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.New
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.RuntimeInsightsService
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.New
   nameWithType: RuntimeInsightsService.RuntimeInsightsService
   nameWithType.vb: RuntimeInsightsService.New
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName*
+  name: CallingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CallingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory*
+  name: CurrentDirectory
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentDirectory_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename*
+  name: CurrentProcessMainModuleFilename
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleFilename_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName*
+  name: CurrentProcessMainModuleName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName*
+  name: EntryAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EntryAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine*
+  name: EnvironmentCommandLine
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EnvironmentCommandLine_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName*
+  name: ExecutingAssemblyName
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ExecutingAssemblyName_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  isSpec: "True"
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
   name: IsDebugBuild()
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuild
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild()
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild()
   nameWithType: RuntimeInsightsService.IsDebugBuild()
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild*
   name: IsDebugBuild
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuild_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuild_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
   nameWithType: RuntimeInsightsService.IsDebugBuild
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
   name: IsDebugBuildAsync(CancellationToken)
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
   nameWithType: RuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync*
   name: IsDebugBuildAsync
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDebugBuildAsync_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuildAsync_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDebugBuildAsync
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync
   nameWithType: RuntimeInsightsService.IsDebugBuildAsync
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
   name: IsDevelopmentBuild()
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDevelopmentBuild
-  commentId: M:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild()
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDevelopmentBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild()
   nameWithType: RuntimeInsightsService.IsDevelopmentBuild()
-- uid: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild*
   name: IsDevelopmentBuild
-  href: api/Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsights_RuntimeInsightsService_IsDevelopmentBuild_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDevelopmentBuild_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsights.RuntimeInsightsService.IsDevelopmentBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
   nameWithType: RuntimeInsightsService.IsDevelopmentBuild
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex
-  name: RuntimeInsightsServicex
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html
-  commentId: T:Coree.NETStandard.Services.RuntimeInsightsServicex
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex
-  nameWithType: RuntimeInsightsServicex
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.IRuntimeInsightsx})
-  name: RuntimeInsightsServicex(ILogger<IRuntimeInsightsx>)
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_IRuntimeInsightsx__
-  commentId: M:Coree.NETStandard.Services.RuntimeInsightsServicex.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.IRuntimeInsightsx})
-  name.vb: New(ILogger(Of IRuntimeInsightsx))
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.RuntimeInsightsServicex(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.IRuntimeInsightsx>)
-  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsServicex.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.IRuntimeInsightsx))
-  nameWithType: RuntimeInsightsServicex.RuntimeInsightsServicex(ILogger<IRuntimeInsightsx>)
-  nameWithType.vb: RuntimeInsightsServicex.New(ILogger(Of IRuntimeInsightsx))
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.#ctor*
-  name: RuntimeInsightsServicex
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex__ctor_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.#ctor
-  isSpec: "True"
-  name.vb: New
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.RuntimeInsightsServicex
-  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsServicex.New
-  nameWithType: RuntimeInsightsServicex.RuntimeInsightsServicex
-  nameWithType.vb: RuntimeInsightsServicex.New
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName
-  name: CallingAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CallingAssemblyName
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName
-  nameWithType: RuntimeInsightsServicex.CallingAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName*
-  name: CallingAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CallingAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CallingAssemblyName
-  nameWithType: RuntimeInsightsServicex.CallingAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory
-  name: CurrentDirectory
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentDirectory
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory
-  nameWithType: RuntimeInsightsServicex.CurrentDirectory
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory*
-  name: CurrentDirectory
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentDirectory_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentDirectory
-  nameWithType: RuntimeInsightsServicex.CurrentDirectory
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-  name: CurrentProcessMainModuleFilename
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentProcessMainModuleFilename
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-  nameWithType: RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename*
-  name: CurrentProcessMainModuleFilename
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentProcessMainModuleFilename_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-  nameWithType: RuntimeInsightsServicex.CurrentProcessMainModuleFilename
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName
-  name: CurrentProcessMainModuleName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentProcessMainModuleName
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName
-  nameWithType: RuntimeInsightsServicex.CurrentProcessMainModuleName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName*
-  name: CurrentProcessMainModuleName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_CurrentProcessMainModuleName_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.CurrentProcessMainModuleName
-  nameWithType: RuntimeInsightsServicex.CurrentProcessMainModuleName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName
-  name: EntryAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_EntryAssemblyName
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName
-  nameWithType: RuntimeInsightsServicex.EntryAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName*
-  name: EntryAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_EntryAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.EntryAssemblyName
-  nameWithType: RuntimeInsightsServicex.EntryAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine
-  name: EnvironmentCommandLine
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_EnvironmentCommandLine
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine
-  nameWithType: RuntimeInsightsServicex.EnvironmentCommandLine
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine*
-  name: EnvironmentCommandLine
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_EnvironmentCommandLine_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.EnvironmentCommandLine
-  nameWithType: RuntimeInsightsServicex.EnvironmentCommandLine
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName
-  name: ExecutingAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_ExecutingAssemblyName
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName
-  nameWithType: RuntimeInsightsServicex.ExecutingAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName*
-  name: ExecutingAssemblyName
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_ExecutingAssemblyName_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName
-  isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.ExecutingAssemblyName
-  nameWithType: RuntimeInsightsServicex.ExecutingAssemblyName
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
   name: OSArchitecture
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_OSArchitecture
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture
-  nameWithType: RuntimeInsightsServicex.OSArchitecture
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture*
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_OSArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture*
   name: OSArchitecture
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_OSArchitecture_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_OSArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.OSArchitecture
-  nameWithType: RuntimeInsightsServicex.OSArchitecture
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
   name: ProcessArchitecture
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_ProcessArchitecture
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture
-  nameWithType: RuntimeInsightsServicex.ProcessArchitecture
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture*
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture*
   name: ProcessArchitecture
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_ProcessArchitecture_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ProcessArchitecture_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.ProcessArchitecture
-  nameWithType: RuntimeInsightsServicex.ProcessArchitecture
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
   name: Username
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_Username
-  commentId: P:Coree.NETStandard.Services.RuntimeInsightsServicex.Username
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.Username
-  nameWithType: RuntimeInsightsServicex.Username
-- uid: Coree.NETStandard.Services.RuntimeInsightsServicex.Username*
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_Username
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  nameWithType: RuntimeInsightsService.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username*
   name: Username
-  href: api/Coree.NETStandard.Services.RuntimeInsightsServicex.html#Coree_NETStandard_Services_RuntimeInsightsServicex_Username_
-  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsServicex.Username
+  href: api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_Username_
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
   isSpec: "True"
-  fullName: Coree.NETStandard.Services.RuntimeInsightsServicex.Username
-  nameWithType: RuntimeInsightsServicex.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  nameWithType: RuntimeInsightsService.Username
 - uid: Coree.NETStandard.SpectreConsole
   name: Coree.NETStandard.SpectreConsole
   href: api/Coree.NETStandard.SpectreConsole.html
@@ -5179,6 +4923,165 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.UnderConstruction.ScheduleCombiner.PeekNextSchedule
   nameWithType: ScheduleCombiner.PeekNextSchedule
+- uid: Coree.NETStandard.UnderConstruction.Scheduler
+  name: Scheduler
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler
+  nameWithType: Scheduler
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
+  name: Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Boolean_
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
+  name.vb: New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, bool)
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Boolean)
+  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
+  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
+  name: Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Int32_System_Boolean_
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
+  name.vb: New(Date, Date, TimeOfDay, Integer, Boolean)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, int, bool)
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Integer, Boolean)
+  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
+  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, Integer, Boolean)
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.#ctor*
+  name: Scheduler
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler__ctor_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.Scheduler
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler.New
+  nameWithType: Scheduler.Scheduler
+  nameWithType.vb: Scheduler.New
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules
+  name: CalculateDailySchedules()
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_CalculateDailySchedules
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules()
+  nameWithType: Scheduler.CalculateDailySchedules()
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules*
+  name: CalculateDailySchedules
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_CalculateDailySchedules_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.CalculateDailySchedules
+  nameWithType: Scheduler.CalculateDailySchedules
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules
+  name: CalculateRecuringSchedules()
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_CalculateRecuringSchedules
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules()
+  nameWithType: Scheduler.CalculateRecuringSchedules()
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules*
+  name: CalculateRecuringSchedules
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_CalculateRecuringSchedules_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.CalculateRecuringSchedules
+  nameWithType: Scheduler.CalculateRecuringSchedules
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore(System.DateTime)
+  name: ClearSchedulesBefore(DateTime)
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_ClearSchedulesBefore_System_DateTime_
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore(System.DateTime)
+  name.vb: ClearSchedulesBefore(Date)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore(System.DateTime)
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore(Date)
+  nameWithType: Scheduler.ClearSchedulesBefore(DateTime)
+  nameWithType.vb: Scheduler.ClearSchedulesBefore(Date)
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore*
+  name: ClearSchedulesBefore
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_ClearSchedulesBefore_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.ClearSchedulesBefore
+  nameWithType: Scheduler.ClearSchedulesBefore
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
+  name: RaiseTickEvent(TickerEventArgs, CancellationToken)
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_RaiseTickEvent_Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs, System.Threading.CancellationToken)
+  nameWithType: Scheduler.RaiseTickEvent(Scheduler.TickerEventArgs, CancellationToken)
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent*
+  name: RaiseTickEvent
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_RaiseTickEvent_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.RaiseTickEvent
+  nameWithType: Scheduler.RaiseTickEvent
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates
+  name: ScheduledDates
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_ScheduledDates
+  commentId: P:Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates
+  nameWithType: Scheduler.ScheduledDates
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates*
+  name: ScheduledDates
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_ScheduledDates_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.ScheduledDates
+  nameWithType: Scheduler.ScheduledDates
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickOccurred
+  name: TickOccurred
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.html#Coree_NETStandard_UnderConstruction_Scheduler_TickOccurred
+  commentId: E:Coree.NETStandard.UnderConstruction.Scheduler.TickOccurred
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickOccurred
+  nameWithType: Scheduler.TickOccurred
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs
+  name: Scheduler.TickerEventArgs
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs
+  nameWithType: Scheduler.TickerEventArgs
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation
+  name: Diviation
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_Diviation
+  commentId: P:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation
+  nameWithType: Scheduler.TickerEventArgs.Diviation
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation*
+  name: Diviation
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_Diviation_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.Diviation
+  nameWithType: Scheduler.TickerEventArgs.Diviation
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime
+  name: FormattedTickTime
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_FormattedTickTime
+  commentId: P:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime
+  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime*
+  name: FormattedTickTime
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_FormattedTickTime_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.FormattedTickTime
+  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime
+  name: TickTime
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_TickTime
+  commentId: P:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime
+  nameWithType: Scheduler.TickerEventArgs.TickTime
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime*
+  name: TickTime
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.html#Coree_NETStandard_UnderConstruction_Scheduler_TickerEventArgs_TickTime_
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime
+  isSpec: "True"
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventArgs.TickTime
+  nameWithType: Scheduler.TickerEventArgs.TickTime
+- uid: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventDelegate
+  name: Scheduler.TickerEventDelegate
+  href: api/Coree.NETStandard.UnderConstruction.Scheduler.TickerEventDelegate.html
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler.TickerEventDelegate
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler.TickerEventDelegate
+  nameWithType: Scheduler.TickerEventDelegate
 - uid: Coree.NETStandard.UnderConstruction.Scheduler2
   name: Scheduler2
   href: api/Coree.NETStandard.UnderConstruction.Scheduler2.html
