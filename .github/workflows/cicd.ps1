@@ -1,5 +1,12 @@
 $ErrorActionPreference = 'Stop'
 
+$version    = $PSVersionTable.PSVersion.ToString()
+$datetime   = Get-Date -f 'yyyyMMdd_HHmmss'
+$filename   = "Transcript-${version}-${datetime}.log"
+$Transcript = Join-Path -Path "$PSScriptRoot" -ChildPath $filename
+Start-Transcript -Path "$Transcript"
+
+
 . "$PSScriptRoot/cicd_helper.ps1"
 
 . "$PSScriptRoot/cicd_setup.ps1"
@@ -258,4 +265,4 @@ if ($branchNameSegment -ieq "master") {
 
 #git status --porcelain $sourceCodeFolder
 
-
+Stop-Transcript
