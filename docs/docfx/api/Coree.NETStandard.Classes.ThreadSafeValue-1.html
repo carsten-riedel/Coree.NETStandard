@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IE]><![endif]-->
 <html>
 
@@ -344,7 +344,7 @@
 
   <h1 id="Coree_NETStandard_Classes_ThreadSafeValue_1" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1" class="text-break">Class ThreadSafeValue&lt;T&gt;
 </h1>
-  <div class="markdown level0 summary"><p>Provides a thread-safe wrapper for a value of type <code class="typeparamref">T</code>.</p>
+  <div class="markdown level0 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">Provides a thread-safe wrapper for a value of type <code class="typeparamref">T</code>.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -369,13 +369,13 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td><p>The type of the value to be stored. This can be any type, including nullable and non-nullable types.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">The type of the value to be stored. This can be any type, including nullable and non-nullable types.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeValue_1_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>This class is designed to allow safe concurrent access to a value by multiple threads.
+  <div class="markdown level0 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">This class is designed to allow safe concurrent access to a value by multiple threads.
 It uses a locking mechanism to ensure that only one thread can read or modify the value at any time,
 preventing race conditions and ensuring consistency of the value across threads.
 The type <code class="typeparamref">T</code> can be either a value type or a reference type. If <code class="typeparamref">T</code> is a reference type.</p>
@@ -391,7 +391,7 @@ The type <code class="typeparamref">T</code> can be either a value type or a ref
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeValue_1__ctor_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.#ctor*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeValue_1__ctor__0_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.#ctor(`0)">ThreadSafeValue(T?)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> class, optionally with an initial value.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">Initializes a new instance of the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> class, optionally with an initial value.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -411,7 +411,7 @@ The type <code class="typeparamref">T</code> can be either a value type or a ref
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">initialValue</span></td>
-        <td><p>The initial value to store. Default is the default value of type <code class="typeparamref">T</code>,
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">The initial value to store. Default is the default value of type <code class="typeparamref">T</code>,
 which is null for reference types and zero or the default constructor value for value types.</p>
 </td>
       </tr>
@@ -428,7 +428,7 @@ which is null for reference types and zero or the default constructor value for 
   </span>
   <a id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value_" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.Value*"></a>
   <h4 id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value" data-uid="Coree.NETStandard.Classes.ThreadSafeValue`1.Value">Value</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the value in a thread-safe manner.</p>
+  <div class="markdown level1 summary"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">Gets or sets the value in a thread-safe manner.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -446,13 +446,13 @@ which is null for reference types and zero or the default constructor value for 
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td><p>The current value stored within the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> instance.</p>
+        <td><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">The current value stored within the <a class="xref" href="Coree.NETStandard.Classes.ThreadSafeValue-1.html">ThreadSafeValue&lt;T&gt;</a> instance.</p>
 </td>
       </tr>
     </tbody>
   </table>
   <h5 id="Coree_NETStandard_Classes_ThreadSafeValue_1_Value_remarks">Remarks</h5>
-  <div class="markdown level1 remarks"><p>Access to the value is synchronized, ensuring that read and write operations are safe to use from multiple threads concurrently.
+  <div class="markdown level1 remarks"><p sourcefile="api/Coree.NETStandard.Classes.ThreadSafeValue-1.yml" sourcestartlinenumber="1">Access to the value is synchronized, ensuring that read and write operations are safe to use from multiple threads concurrently.
 The property getter returns the current value, and the property setter updates the value.
 Both operations are performed with thread safety in mind, using a private lock to synchronize access.</p>
 </div>

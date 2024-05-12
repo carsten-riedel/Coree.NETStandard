@@ -1,8 +1,6 @@
 # Remove the line below if you want to inherit .editorconfig settings from higher directories
 root = true
 
-
-
 # C# files
 [*.cs]
 
@@ -233,15 +231,20 @@ dotnet_naming_style.begins_with_i.word_separator =
 dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 # custom
+dotnet_diagnostic.IDE0028.severity = none
 dotnet_diagnostic.IDE0063.severity = none
+dotnet_diagnostic.IDE0066.severity = none
+dotnet_diagnostic.IDE0074.severity = none
+dotnet_diagnostic.IDE0090.severity = none
+dotnet_diagnostic.IDE0019.severity = none
+dotnet_diagnostic.IDE0079.severity = none
 dotnet_diagnostic.IDE0090.severity = none
 dotnet_diagnostic.IDE0290.severity = none
-dotnet_diagnostic.IDE0028.severity = none
-dotnet_diagnostic.IDE0074.severity = none
 dotnet_diagnostic.IDE0300.severity = none
 dotnet_diagnostic.IDE0301.severity = none
 dotnet_diagnostic.IDE0305.severity = none
 dotnet_diagnostic.SYSLIB1054.severity = none
+
 
 [*.{cs,vb}]
 dotnet_style_operator_placement_when_wrapping = beginning_of_line

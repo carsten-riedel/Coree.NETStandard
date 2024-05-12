@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 using Spectre.Console.Cli;
 
@@ -49,4 +48,3 @@ namespace Coree.NETStandard.SpectreConsole
         }
     }
 }
-
