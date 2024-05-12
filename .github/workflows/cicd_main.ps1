@@ -6,9 +6,15 @@ $filename   = "cicd-${version}-${datetime}.log"
 $Transcript = Join-Path -Path "$PSScriptRoot" -ChildPath $filename
 Start-Transcript -Path "$Transcript"
 
-. "$PSScriptRoot/cicd_helper.ps1"
+. "$PSScriptRoot/0000_cicd_helper.ps1"
 
-. "$PSScriptRoot/cicd_setup.ps1"
+. "$PSScriptRoot/1000_cicd_prepare_enviroment.ps1"
+
+. "$PSScriptRoot/1500_cicd_check_enviroment.ps1"
+
+. "$PSScriptRoot/2000_cicd_configure_envars.ps1"
+
+. "$PSScriptRoot/2500_cicd_check_envars.ps1"
 
 . "$PSScriptRoot/cicd_preconditions.ps1"
 
