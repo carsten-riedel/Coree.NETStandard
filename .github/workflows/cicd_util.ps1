@@ -382,7 +382,10 @@ function Remove-FilesAndDirectories {
             Delete-Directories -Path $dir.FullName
             try {
                 $dir | Remove-Item -Force -Recurse -ErrorAction Stop
-                Write-Host "Deleted directory: $($dir.FullName)"
+                if ($DumpDeleted)
+                {
+                    Write-Host "Deleted directory: $($dir.FullName)"
+                }
             } catch {
                 Write-Host "Failed to delete directory: $($dir.FullName)"
             }

@@ -6,19 +6,19 @@ $filename   = "cicd-${version}-${datetime}.log"
 $Transcript = Join-Path -Path "$PSScriptRoot" -ChildPath $filename
 Start-Transcript -Path "$Transcript"
 
-. "$PSScriptRoot/0000_cicd_helper.ps1"
+. "$PSScriptRoot/cicd_util.ps1"
 
-. "$PSScriptRoot/1000_cicd_prepare_enviroment.ps1"
+. "$PSScriptRoot/cicd_prebuild_enviroment_prepare.ps1"
 
-. "$PSScriptRoot/1500_cicd_check_enviroment.ps1"
+. "$PSScriptRoot/cicd_prebuild_enviroment_check.ps1"
 
-. "$PSScriptRoot/2000_cicd_configure_envars.ps1"
+. "$PSScriptRoot/cicd_prebuild_envars_prepare.ps1"
 
-. "$PSScriptRoot/2500_cicd_check_envars.ps1"
+. "$PSScriptRoot/cicd_prebuild_envars_check.ps1"
 
 . "$PSScriptRoot/cicd_preconditions.ps1"
 
-. "$PSScriptRoot/cicd_clean.ps1"
+. "$PSScriptRoot/cicd_build_clean.ps1"
 
 . "$PSScriptRoot/cicd_build_config.ps1"
 
@@ -208,9 +208,9 @@ git config user.name $gitUserLocal
 git config user.email $gitMailLocal
 
 
-. "$PSScriptRoot/cicd_post_clean.ps1"
+. "$PSScriptRoot/cicd_postbuild_clean.ps1"
 
-. "$PSScriptRoot/cicd_post_run.ps1"
+. "$PSScriptRoot/cicd_postbuild_run.ps1"
 
 #git status --porcelain $sourceCodeFolder
 
