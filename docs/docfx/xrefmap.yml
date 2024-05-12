@@ -3408,15 +3408,6 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing
   nameWithType: IFileService.TryFixPathCaseing
-<<<<<<< HEAD
-- uid: Coree.NETStandard.Services.Process
-  name: Coree.NETStandard.Services.Process
-  href: api/Coree.NETStandard.Services.Process.html
-  commentId: N:Coree.NETStandard.Services.Process
-  fullName: Coree.NETStandard.Services.Process
-  nameWithType: Coree.NETStandard.Services.Process
-- uid: Coree.NETStandard.Services.Process.IProcessService
-=======
 - uid: Coree.NETStandard.Services.ProcessService
   name: Coree.NETStandard.Services.ProcessService
   href: api/Coree.NETStandard.Services.ProcessService.html
@@ -3424,7 +3415,6 @@ references:
   fullName: Coree.NETStandard.Services.ProcessService
   nameWithType: Coree.NETStandard.Services.ProcessService
 - uid: Coree.NETStandard.Services.ProcessService.IProcessService
->>>>>>> feature/MSTest
   name: IProcessService
   href: api/Coree.NETStandard.Services.ProcessService.IProcessService.html
   commentId: T:Coree.NETStandard.Services.ProcessService.IProcessService
