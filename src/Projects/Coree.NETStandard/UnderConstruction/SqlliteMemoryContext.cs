@@ -11,6 +11,8 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 
+#pragma warning disable
+
 namespace Coree.NETStandard.UnderConstruction
 {
     public class SqlliteMemoryContext : DbContext
@@ -242,3 +244,6 @@ namespace Coree.NETStandard.UnderConstruction
 
 
 }
+
+
+#pragma warning restore

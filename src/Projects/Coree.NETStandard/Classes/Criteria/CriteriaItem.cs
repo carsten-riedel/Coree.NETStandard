@@ -4,7 +4,7 @@
     /// Represents a single criteria item used for building dynamic filter expressions.
     /// </summary>
     /// <typeparam name="TValue">The type of the value used in the criteria comparison.</typeparam>
-    public class CriteriaItem<TValue> where TValue : notnull
+    public class CriteriaItem<TValue>
     {
         /// <summary>
         /// Gets or sets the name of the property to be evaluated by the criteria.
@@ -56,7 +56,7 @@
         /// <returns>A new <see cref="CriteriaItem{Object}"/> that contains the converted instance.</returns>
         public static implicit operator CriteriaItem<object>(CriteriaItem<TValue> expression)
         {
-            return new CriteriaItem<object>(expression.PropertyName, expression.ComparisonMethod, expression.Value, expression.Negate, expression.Operator);
+            return new CriteriaItem<object>(expression.PropertyName, expression.ComparisonMethod, expression.Value!, expression.Negate, expression.Operator);
         }
     }
 }

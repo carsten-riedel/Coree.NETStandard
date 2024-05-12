@@ -88,7 +88,7 @@ namespace Coree.NETStandard.UnderConstruction
         {
             public TimeSpan Diviation { get; set; }
             public DateTime TickTime { get; set; }
-            public string FormattedTickTime { get; set; }
+            public string? FormattedTickTime { get; set; }
         }
 
         public delegate Task TickerEventDelegate(object sender, TickerEventArgs e, CancellationToken cancellationToken);

@@ -27,11 +27,7 @@ namespace Coree.NETStandard.Classes.Criteria
             // Validate all properties exist on type T
             foreach (var filter in group.Filters)
             {
-                PropertyInfo propertyInfo = typeof(T).GetProperty(filter.PropertyName);
-                if (propertyInfo == null)
-                {
-                    throw new InvalidOperationException($"Property '{filter.PropertyName}' does not exist on type '{typeof(T).Name}'.");
-                }
+                _ = typeof(T).GetProperty(filter.PropertyName) ?? throw new InvalidOperationException($"Property '{filter.PropertyName}' does not exist on type '{typeof(T).Name}'.");
             }
 
             // Construct the filter expressions and combine them based on their specified logical operators
@@ -152,6 +148,14 @@ namespace Coree.NETStandard.Classes.Criteria
                     return Expression.GreaterThanOrEqual(property, constant);
                 case CriteriaComparisonMethod.LessThanOrEqual:
                     return Expression.LessThanOrEqual(property, constant);
+                case CriteriaComparisonMethod.Contains:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.StartsWith:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.EndsWith:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
+                case CriteriaComparisonMethod.IsNullOrWhiteSpace:
+                    throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
                 default:
                     throw new InvalidOperationException($"Unsupported comparison method '{filter.ComparisonMethod}' for integer properties.");
             }

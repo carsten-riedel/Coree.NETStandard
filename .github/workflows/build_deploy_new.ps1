@@ -132,7 +132,7 @@ if ($branchNameSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = $null
 
 } elseif ($branchNameSegment -ieq "develop") {
 
@@ -141,7 +141,7 @@ if ($branchNameSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = $null
 
 } elseif ($branchNameSegment -ieq "release") {
 
@@ -150,7 +150,7 @@ if ($branchNameSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = $null
 
 } elseif ($branchNameSegment -ieq "master") {
 
@@ -168,7 +168,7 @@ if ($branchNameSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = $null
 
 }
 
