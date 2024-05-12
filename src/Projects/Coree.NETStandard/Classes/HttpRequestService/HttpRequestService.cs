@@ -25,7 +25,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         private readonly ILogger<HttpRequestService> _logger;
 
         // Define the HTTP response condition as a property
-        private Func<HttpResponseMessage?, bool> httpResponseCondition => response =>
+        private Func<HttpResponseMessage?, bool> HttpResponseCondition => response =>
             response?.StatusCode == HttpStatusCode.RequestTimeout ||
             response?.StatusCode == HttpStatusCode.InternalServerError ||
             response?.StatusCode == HttpStatusCode.BadGateway ||
@@ -81,7 +81,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
                 return cachedResult;
             }
 
-            var exceptionConditionPolicy = Policy.Handle<Exception>(ex => ex is not OperationCanceledException).OrResult(httpResponseCondition);
+            var exceptionConditionPolicy = Policy.Handle<Exception>(ex => ex is not OperationCanceledException).OrResult(HttpResponseCondition);
 
             var retryPolicy = exceptionConditionPolicy.WaitAndRetryAsync(retryCount, _ => retryDelay.Value, async (outcome, timespan, retryCount, context) =>
             {

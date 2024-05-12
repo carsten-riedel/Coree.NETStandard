@@ -1,89 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
+using System.Threading;
+
+using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.Process
+namespace Coree.NETStandard.Services.ProcessService
 {
-    /// <summary>
-    /// Represents the result of running an external process.
-    /// </summary>
-    public class ProcessRunResult
-    {
-        /// <summary>
-        /// Gets or sets the state of the exit code indicating the outcome of the process run.
-        /// </summary>
-        public ProcessRunExitCodeState ExitCodeState { get; set; }
-
-        /// <summary>
-        /// Gets or sets the exit code returned by the process.
-        /// </summary>
-        public int ExitCode { get; set; }
-
-        /// <summary>
-        /// Gets or sets the output (both stdout and stderr) of the process.
-        /// </summary>
-        public string? Output { get; set; }
-
-        /// <summary>
-        /// Gets or sets the command line used to start the process.
-        /// </summary>
-        public string? Commandline { get; set; }
-
-        /// <summary>
-        /// Gets or sets the file name of the executable that was run.
-        /// </summary>
-        public string? Filename { get; set; }
-
-        /// <summary>
-        /// Gets or sets the arguments passed to the executable.
-        /// </summary>
-        public string? Arguments { get; set; }
-    }
-
-    /// <summary>
-    /// Represents various outcome states for process execution operations within the service. This enum is designed to be flexible and applicable to a range of process-related methods, providing a standardized way to communicate success, failure, and other states across different types of process executions.
-    /// </summary>
-    [Flags]
-    public enum ProcessRunExitCodeState : int
-    {
-        /// <summary>
-        /// The default state, indicating no specific outcome has been determined. This state is used before an operation is performed or when an operation's outcome does not fit any other defined state.
-        /// </summary>
-        None = 0,
-
-        /// <summary>
-        /// Indicates a successful execution where the process completed as expected without any errors, typically represented by an exit code of 0.
-        /// </summary>
-        IsValidSuccess = 1,
-
-        /// <summary>
-        /// Indicates the process failed to start, which could result from various issues such as executable not found, insufficient permissions, or invalid arguments.
-        /// </summary>
-        IsFailedStart = 2,
-
-        /// <summary>
-        /// Indicates the process ran but completed with an error, typically represented by a non-zero exit code. This state signifies an unsuccessful execution according to the process's own criteria.
-        /// </summary>
-        IsValidErrorCode = 4,
-
-        /// <summary>
-        /// Indicates the operation was canceled, either through user action or a timeout. This state reflects an intentional interruption of the process before completion.
-        /// </summary>
-        IsCanceledSet = 8,
-
-        /// <summary>
-        /// Indicates a valid exit code has been set, suggesting the process has concluded and an outcome is available for evaluation. This state is intended to signify the end of an operation, whether successful or not.
-        /// </summary>
-        IsValid = 16,
-    }
-
     /// <summary>
     /// Provides functionality for managing and executing external processes. This service supports a variety of operations including running processes with options for cancellation, timeouts, and potentially more features in the future.
     /// </summary>
-    public partial class ProcessService : IProcessService
+    public partial class ProcessService : ServiceFactory<ProcessService>, IProcessService
     {
         /// <summary>
         /// Runs an external process asynchronously with options for cancellation and timeout.
@@ -126,7 +56,7 @@ namespace Coree.NETStandard.Services.Process
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("StdOut: {OutputData}", e.Data);
+                            _logger?.LogDebug("StdOut: {OutputData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
@@ -138,7 +68,7 @@ namespace Coree.NETStandard.Services.Process
                     {
                         if (e.Data != null)
                         {
-                            logger.LogDebug("StdErr: {ErrorData}", e.Data);
+                            _logger?.LogDebug("StdErr: {ErrorData}", e.Data);
                             outputBuilder.AppendLine(e.Data);
                         }
                         else
@@ -156,12 +86,12 @@ namespace Coree.NETStandard.Services.Process
 
                     try
                     {
-                        logger.LogDebug("Starting process with arguments: {FileName} {Arguments}.", fileName, arguments);
+                        _logger?.LogDebug("Starting process with arguments: {FileName} {Arguments}.", fileName, arguments);
                         process.Start();
                     }
                     catch (Exception ex)
                     {
-                        logger.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
+                        _logger?.LogError(ex, "Failed to start process with arguments: {FileName} {Arguments}.", fileName, arguments);
                         returnValue.ExitCodeState |= ProcessRunExitCodeState.IsFailedStart;
                         returnValue.ExitCode = -1;
                         returnValue.Output = "Failed to start process.";
@@ -178,16 +108,16 @@ namespace Coree.NETStandard.Services.Process
                             try
                             {
                                 process.Kill();
-                                logger.LogDebug("Process kill requested due to cancellation.");
+                                _logger?.LogDebug("Process kill requested due to cancellation.");
                             }
                             catch (Exception ex)
                             {
-                                logger.LogError(ex, "Exception when trying to kill process.");
+                                _logger?.LogError(ex, "Exception when trying to kill process.");
                             }
                         }
                         else if (!killOnCancel && !processComplition.Task.IsCompleted)
                         {
-                            logger.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
+                            _logger?.LogTrace("Cancellation requested. The process will continue to run in a detached state as 'killOnCancel' is false. Output and errors may be incomplete.");
                         }
                         returnValue.ExitCodeState |= ProcessRunExitCodeState.IsCanceledSet;
                         outputComplition.TrySetCanceled();
@@ -201,7 +131,7 @@ namespace Coree.NETStandard.Services.Process
                         }
                         catch (TaskCanceledException ex)
                         {
-                            logger.LogTrace(ex, "Task canceled. Output and errors may be incomplete.");
+                            _logger?.LogTrace(ex, "Task canceled. Output and errors may be incomplete.");
                             returnValue.Output = outputBuilder.ToString();
                         }
                     }
@@ -228,7 +158,7 @@ namespace Coree.NETStandard.Services.Process
                         returnValue.Output = outputBuilder.ToString();
                     }
 
-                    logger.LogDebug("ExitCode state is {ExitCodeState}. Process exited with code {ExitCode}.", returnValue.ExitCodeState, returnValue.ExitCode);
+                    _logger?.LogDebug("ExitCode state is {ExitCodeState}. Process exited with code {ExitCode}.", returnValue.ExitCodeState, returnValue.ExitCode);
 
                     process.Exited -= ProcessExited;
                 }
@@ -236,5 +166,6 @@ namespace Coree.NETStandard.Services.Process
 
             return returnValue;
         }
+
     }
 }
