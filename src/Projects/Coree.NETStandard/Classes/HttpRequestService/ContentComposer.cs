@@ -28,7 +28,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             }
         }
 
-        private List<NamedHttpContent> contents = new List<NamedHttpContent>();
+        private readonly List<NamedHttpContent> contents = new List<NamedHttpContent>();
 
         private bool IsValidJson(string jsonString)
         {
