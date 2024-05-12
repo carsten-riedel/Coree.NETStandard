@@ -159,7 +159,7 @@ if ($branchNameSegment -ieq "feature") {
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $docfx_param = "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/build/docfx_local.json"
+    $docfx_param = "$topLevelPath/docfx/build/docfx_local.json"
 
 } elseif ($branchNameSegment -ieq "hotfix") {
 
