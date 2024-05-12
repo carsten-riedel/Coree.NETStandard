@@ -754,9 +754,6 @@
     },
     {
       "type": "ManagedReference",
-<<<<<<< HEAD
-      "source_relative_path": "api/Coree.NETStandard.Services.Process.IProcessService.yml",
-=======
       "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.yml",
       "output": {
         ".html": {
@@ -768,7 +765,6 @@
     {
       "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState.yml",
->>>>>>> feature/MSTest
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState.html"
@@ -818,24 +814,6 @@
     },
     {
       "type": "ManagedReference",
-<<<<<<< HEAD
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html"
-=======
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html"
->>>>>>> feature/MSTest
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-<<<<<<< HEAD
       "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.yml",
       "output": {
         ".html": {
@@ -849,11 +827,6 @@
       "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.yml",
       "output": {
         ".html": {
-=======
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.yml",
-      "output": {
-        ".html": {
->>>>>>> feature/MSTest
           "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.html"
         }
       },
