@@ -1219,6 +1219,171 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
   nameWithType: TransactionRecord.ResponseSuccess
+- uid: Coree.NETStandard.Classes.Scheduler
+  name: Coree.NETStandard.Classes.Scheduler
+  href: api/Coree.NETStandard.Classes.Scheduler.html
+  commentId: N:Coree.NETStandard.Classes.Scheduler
+  fullName: Coree.NETStandard.Classes.Scheduler
+  nameWithType: Coree.NETStandard.Classes.Scheduler
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+  name: Scheduler
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler
+  nameWithType: Scheduler
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
+  name: Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Boolean)
+  name.vb: New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, bool)
+  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Boolean)
+  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, TimeOfDay, bool)
+  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, TimeOfDay, Boolean)
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
+  name: Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_System_DateTime_System_DateTime_Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_System_Int32_System_Boolean_
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor(System.DateTime,System.DateTime,Coree.NETStandard.Classes.TimeOfDay.TimeOfDay,System.Int32,System.Boolean)
+  name.vb: New(Date, Date, TimeOfDay, Integer, Boolean)
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler(System.DateTime, System.DateTime, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, int, bool)
+  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New(Date, Date, Coree.NETStandard.Classes.TimeOfDay.TimeOfDay, Integer, Boolean)
+  nameWithType: Scheduler.Scheduler(DateTime, DateTime, TimeOfDay, int, bool)
+  nameWithType.vb: Scheduler.New(Date, Date, TimeOfDay, Integer, Boolean)
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor*
+  name: Scheduler
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler__ctor_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.Scheduler
+  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.New
+  nameWithType: Scheduler.Scheduler
+  nameWithType.vb: Scheduler.New
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
+  name: CalculateDailySchedules()
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateDailySchedules
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules()
+  nameWithType: Scheduler.CalculateDailySchedules()
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules*
+  name: CalculateDailySchedules
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateDailySchedules_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateDailySchedules
+  nameWithType: Scheduler.CalculateDailySchedules
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
+  name: CalculateRecuringSchedules()
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateRecuringSchedules
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules()
+  nameWithType: Scheduler.CalculateRecuringSchedules()
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules*
+  name: CalculateRecuringSchedules
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_CalculateRecuringSchedules_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.CalculateRecuringSchedules
+  nameWithType: Scheduler.CalculateRecuringSchedules
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
+  name: ClearSchedulesBefore(DateTime)
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ClearSchedulesBefore_System_DateTime_
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
+  name.vb: ClearSchedulesBefore(Date)
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(System.DateTime)
+  fullName.vb: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore(Date)
+  nameWithType: Scheduler.ClearSchedulesBefore(DateTime)
+  nameWithType.vb: Scheduler.ClearSchedulesBefore(Date)
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore*
+  name: ClearSchedulesBefore
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ClearSchedulesBefore_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ClearSchedulesBefore
+  nameWithType: Scheduler.ClearSchedulesBefore
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
+  name: RaiseTickEvent(TickerEventArgs, CancellationToken)
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_RaiseTickEvent_Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_System_Threading_CancellationToken_
+  commentId: M:Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs,System.Threading.CancellationToken)
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent(Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs, System.Threading.CancellationToken)
+  nameWithType: Scheduler.RaiseTickEvent(Scheduler.TickerEventArgs, CancellationToken)
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent*
+  name: RaiseTickEvent
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_RaiseTickEvent_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.RaiseTickEvent
+  nameWithType: Scheduler.RaiseTickEvent
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
+  name: ScheduledDates
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ScheduledDates
+  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
+  nameWithType: Scheduler.ScheduledDates
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates*
+  name: ScheduledDates
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_ScheduledDates_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.ScheduledDates
+  nameWithType: Scheduler.ScheduledDates
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
+  name: TickOccurred
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickOccurred
+  commentId: E:Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickOccurred
+  nameWithType: Scheduler.TickOccurred
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  name: Scheduler.TickerEventArgs
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  nameWithType: Scheduler.TickerEventArgs
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
+  name: FormattedTickTime
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_FormattedTickTime
+  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
+  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime*
+  name: FormattedTickTime
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_FormattedTickTime_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.FormattedTickTime
+  nameWithType: Scheduler.TickerEventArgs.FormattedTickTime
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
+  name: TickTime
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_TickTime
+  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
+  nameWithType: Scheduler.TickerEventArgs.TickTime
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime*
+  name: TickTime
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_TickTime_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.TickTime
+  nameWithType: Scheduler.TickerEventArgs.TickTime
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
+  name: diviation
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_diviation
+  commentId: P:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
+  nameWithType: Scheduler.TickerEventArgs.diviation
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation*
+  name: diviation
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html#Coree_NETStandard_Classes_Scheduler_Scheduler_TickerEventArgs_diviation_
+  commentId: Overload:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
+  isSpec: "True"
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.diviation
+  nameWithType: Scheduler.TickerEventArgs.diviation
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  name: Scheduler.TickerEventDelegate
+  href: api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  nameWithType: Scheduler.TickerEventDelegate
 - uid: Coree.NETStandard.Classes.ThreadSafeCollection
   name: Coree.NETStandard.Classes.ThreadSafeCollection
   href: api/Coree.NETStandard.Classes.ThreadSafeCollection.html

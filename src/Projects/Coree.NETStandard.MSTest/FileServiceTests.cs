@@ -3,6 +3,7 @@ using Coree.NETStandard.Classes.TimeOfDay;
 using System;
 using Coree.NETStandard.Services.FileService;
 using System.Runtime.Versioning;
+using System.Runtime.InteropServices;
 
 namespace Coree.NETStandard.MSTest
 {
@@ -21,15 +22,31 @@ namespace Coree.NETStandard.MSTest
         [TestMethod]
         public void IsValidLocation_ReturnsTrue()
         {
-            var result = fileservice?.IsValidLocation(@"C:\temp");
-            Assert.AreEqual(result, true);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                var result = fileservice?.IsValidLocation(@"C:\temp");
+                Assert.AreEqual(result, true);
+            }
+            else
+            {
+                Assert.Inconclusive("Test not supported on this OS.");
+            }
+
         }
 
         [TestMethod]
         public void IsValidLocationruntimes_ReturnsTrue()
         {
-            var result = fileservice?.IsValidLocation(@"Runtimes");
-            Assert.AreEqual(result, true);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                var result = fileservice?.IsValidLocation(@"Runtimes");
+                Assert.AreEqual(result, true);
+            }
+            else
+            {
+                Assert.Inconclusive("Test not supported on this OS.");
+            }
+
         }
 
         [TestMethod]
@@ -37,10 +54,23 @@ namespace Coree.NETStandard.MSTest
         public void TryFixPathCaseing_Check()
         {
             // Act
-            var actual = fileservice?.TryFixPathCaseing(@"c:\USERS\PuBLic");
-            var expected = @"C:\Users\Public";
+            //var actual = fileservice?.TryFixPathCaseing(@"c:\USERS\PuBLic");
+            //var expected = @"C:\Users\Public";
 
-            Assert.AreEqual(expected, actual);
+            //Assert.AreEqual(expected, actual);
+
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                // Act
+                var actual = fileservice?.TryFixPathCaseing(@"c:\USERS\PuBLic");
+                var expected = @"C:\Users\Public";
+
+                Assert.AreEqual(expected, actual);
+            }
+            else
+            {
+                Assert.Inconclusive("Test not supported on this OS.");
+            }
         }
     }
 }

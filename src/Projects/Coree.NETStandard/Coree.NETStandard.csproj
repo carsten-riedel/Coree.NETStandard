@@ -13,25 +13,11 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
-  <ItemGroup>
-    <Compile Remove="Classes\Scheduler\**" />
-    <EmbeddedResource Remove="Classes\Scheduler\**" />
-    <None Remove="Classes\Scheduler\**" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Remove="Services\DebugService\DebugService.cs" />
-    <None Remove="Services\ProcessService\ProcessService.cs" />
-    <None Remove="Services\ProcessService\RunProcessWithCancellationSupportAsync.cs" />
-    <None Remove="Services\RuntimeInsightsService\RuntimeInsightsService.cs" />
-  </ItemGroup>
 
 
   
   <ItemGroup>
-    <PackageReference Include="JsonPath.Net" Version="1.0.0" />
-
-    
-
+    <PackageReference Include="JsonPath.Net" Version="1.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[3.1.32, 4)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="[3.1.32, 4)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[3.1.32, 4)" />
@@ -42,7 +28,7 @@
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
     <PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
-    <PackageReference Include="Polly" Version="8.3.1" />
+    <PackageReference Include="Polly" Version="8.4.0" />
     <PackageReference Include="Serilog" Version="3.1.1" />
     <PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
     <PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />

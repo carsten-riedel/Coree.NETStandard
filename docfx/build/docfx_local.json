@@ -4,7 +4,7 @@
       "noRestore": true,
       "src": [
         {
-          "src": "../../../Coree.NETStandard",
+          "src": "../../src/Projects/Coree.NETStandard",
           "files": [
             "**/*.csproj"
           ]

@@ -1,5 +1,5 @@
 {
-  "source_base_path": "/home/runner/work/Coree.NETStandard/Coree.NETStandard/src/Projects/Coree.NETStandard/Docfx/build",
+  "source_base_path": "/home/runner/work/Coree.NETStandard/Coree.NETStandard/docfx/build",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -268,6 +268,46 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Classes.HttpRequestService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Scheduler.Scheduler.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.Scheduler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.Scheduler.html"
         }
       },
       "version": ""

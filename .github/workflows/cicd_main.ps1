@@ -6,6 +6,10 @@ $filename   = "cicd-${version}-${datetime}.log"
 $Transcript = Join-Path -Path "$PSScriptRoot" -ChildPath $filename
 Start-Transcript -Path "$Transcript"
 
+$PAT = $args[0]
+$NUGET_PAT = $args[1]
+$NUGET_TEST_PAT = $args[2]
+
 . "$PSScriptRoot/cicd_util.ps1"
 . "$PSScriptRoot/cicd_prebuild_enviroment_prepare.ps1"
 . "$PSScriptRoot/cicd_prebuild_enviroment_check.ps1"

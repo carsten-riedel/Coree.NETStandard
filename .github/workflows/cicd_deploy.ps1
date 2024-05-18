@@ -3,7 +3,7 @@ Log-Block -Stage "Build" -Section "Docfx" -Task "Copying the docs."
 
 if ($null -ne $docfx_param)
 {
-    Copy-Directory -sourceDir "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "$topLevelPath/docs/docfx" -exclusions @('.git', '.github')
+    Copy-Directory -sourceDir "$topLevelPath/docfx/result/local/" -destinationDir "$topLevelPath/docs/docfx" -exclusions @('.git', '.github')
 }
 
 ######################################################################################
@@ -30,7 +30,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
+    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
 
 } elseif ($branchNameSegment -ieq "master") {
 
@@ -39,7 +39,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
+    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 
 } elseif ($branchNameSegment -ieq "hotfix") {
 
@@ -48,7 +48,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
+    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 }
 
 ######################################################################################
@@ -61,7 +61,6 @@ if ($branchNameSegment -eq "master" -OR $branchNameSegment -eq "release" -OR $br
 else {
     $tag = "v$fullVersion-$branchNameSegment"
 }
-
 
 $gitUserLocal = git config user.name
 $gitMailLocal = git config user.email
@@ -78,11 +77,11 @@ if ([string]::IsNullOrWhiteSpace($gitUserLocal) -or [string]::IsNullOrWhiteSpace
 git config user.name $gitTempUser
 git config user.email $gitTempMail
 
-Execute-Command "git add --all"
-Execute-Command "git commit -m ""Updated form Workflow [no ci]"""
-Execute-Command "git push origin $branchName"
-Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
-Execute-Command "git push origin ""$tag"""
+Execute-Command -Command "git add --all"
+Execute-Command -Command "git commit -m ""Updated form Workflow [no ci]""" -ExpectedExitCodes @(0,1)
+Execute-Command -Command "git push origin $branchName"
+Execute-Command -Command "git tag -a ""$tag"" -m ""[no ci]"""
+Execute-Command -Command "git push origin ""$tag"""
 
 #restore
 git config user.name $gitUserLocal
