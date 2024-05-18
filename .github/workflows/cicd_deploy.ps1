@@ -3,7 +3,7 @@ Log-Block -Stage "Build" -Section "Docfx" -Task "Copying the docs."
 
 if ($null -ne $docfx_param)
 {
-    Copy-Directory -sourceDir "$topLevelPath/src/Projects/Coree.NETStandard/Docfx/result/local/" -destinationDir "$topLevelPath/docs/docfx" -exclusions @('.git', '.github')
+    Copy-Directory -sourceDir "$topLevelPath/docfx/result/local/" -destinationDir "$topLevelPath/docs/docfx" -exclusions @('.git', '.github')
 }
 
 ######################################################################################
