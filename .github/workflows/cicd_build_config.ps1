@@ -9,7 +9,7 @@ if ($branchNameSegment -ieq "feature") {
 
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_test_param = "";
+    $dotnet_test_param = "--configuration Release";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $docfx_param = $null
 
@@ -19,7 +19,7 @@ if ($branchNameSegment -ieq "feature") {
 
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_test_param = "";
+    $dotnet_test_param = "--configuration Release";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $docfx_param = $null
 
@@ -39,7 +39,7 @@ if ($branchNameSegment -ieq "feature") {
 
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_test_param = "";
+    $dotnet_test_param = "--configuration Release";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $docfx_param = "$topLevelPath/docfx/build/docfx_local.json"
 
@@ -49,7 +49,7 @@ if ($branchNameSegment -ieq "feature") {
 
     $dotnet_restore_param = "";
     $dotnet_build_param = "--no-restore --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
-    $dotnet_test_param = "";
+    $dotnet_test_param = "--configuration Release";
     $dotnet_pack_param =  "--force --configuration Release --property:ContinuousIntegrationBuild=true --property:WarningLevel=3 $version";
     $docfx_param = $null
 
