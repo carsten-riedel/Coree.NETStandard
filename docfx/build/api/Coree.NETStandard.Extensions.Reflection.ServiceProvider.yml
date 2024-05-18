@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  commentId: N:Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  id: Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  children:
+  - Coree.NETStandard.Extensions.Reflection.ServiceProvider.ReflectionServiceProviderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  nameWithType: Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  fullName: Coree.NETStandard.Extensions.Reflection.ServiceProvider
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Extensions.Reflection.ServiceProvider.ReflectionServiceProviderExtensions
+  commentId: T:Coree.NETStandard.Extensions.Reflection.ServiceProvider.ReflectionServiceProviderExtensions
+  href: Coree.NETStandard.Extensions.Reflection.ServiceProvider.ReflectionServiceProviderExtensions.html
+  name: ReflectionServiceProviderExtensions
+  nameWithType: ReflectionServiceProviderExtensions
+  fullName: Coree.NETStandard.Extensions.Reflection.ServiceProvider.ReflectionServiceProviderExtensions

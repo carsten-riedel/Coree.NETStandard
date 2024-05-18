@@ -1,0 +1,414 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Utilities.EventSubscription
+  commentId: T:Coree.NETStandard.Utilities.EventSubscription
+  id: EventSubscription
+  parent: Coree.NETStandard.Utilities
+  children:
+  - Coree.NETStandard.Utilities.EventSubscription.AddHandler``1(``0@,``0)
+  - Coree.NETStandard.Utilities.EventSubscription.RemoveHandler``1(``0@,``0)
+  langs:
+  - csharp
+  - vb
+  name: EventSubscription
+  nameWithType: EventSubscription
+  fullName: Coree.NETStandard.Utilities.EventSubscription
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/RemoveHandler.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: EventSubscription
+    path: ../../src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/RemoveHandler.cs
+    startLine: 8
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Utilities
+  summary: Provides methods for safe manipulation of event handlers using atomic operations.
+  example: []
+  syntax:
+    content: public static class EventSubscription
+    content.vb: Public Module EventSubscription
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Utilities.EventSubscription.AddHandler``1(``0@,``0)
+  commentId: M:Coree.NETStandard.Utilities.EventSubscription.AddHandler``1(``0@,``0)
+  id: AddHandler``1(``0@,``0)
+  parent: Coree.NETStandard.Utilities.EventSubscription
+  langs:
+  - csharp
+  - vb
+  name: AddHandler<TDelegate>(ref TDelegate?, TDelegate)
+  nameWithType: EventSubscription.AddHandler<TDelegate>(ref TDelegate?, TDelegate)
+  fullName: Coree.NETStandard.Utilities.EventSubscription.AddHandler<TDelegate>(ref TDelegate?, TDelegate)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/AddHandler.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddHandler
+    path: ../../src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/AddHandler.cs
+    startLine: 16
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Utilities
+  summary: Adds an event handler to the handler field atomically. Safe for null initial values.
+  example: []
+  syntax:
+    content: 'public static void AddHandler<TDelegate>(ref TDelegate? handlerField, TDelegate handlerToAdd) where TDelegate : Delegate?'
+    parameters:
+    - id: handlerField
+      type: '{TDelegate}'
+      description: The field holding the delegate to which the new handler will be added. Can be null initially.
+    - id: handlerToAdd
+      type: '{TDelegate}'
+      description: The event handler delegate to add.
+    typeParameters:
+    - id: TDelegate
+      description: The type of the delegate for the event handler.
+    content.vb: Public Shared Sub [AddHandler](Of TDelegate As [Delegate])(handlerField As TDelegate, handlerToAdd As TDelegate)
+  overload: Coree.NETStandard.Utilities.EventSubscription.AddHandler*
+  nameWithType.vb: EventSubscription.AddHandler(Of TDelegate)(TDelegate, TDelegate)
+  fullName.vb: Coree.NETStandard.Utilities.EventSubscription.AddHandler(Of TDelegate)(TDelegate, TDelegate)
+  name.vb: AddHandler(Of TDelegate)(TDelegate, TDelegate)
+- uid: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler``1(``0@,``0)
+  commentId: M:Coree.NETStandard.Utilities.EventSubscription.RemoveHandler``1(``0@,``0)
+  id: RemoveHandler``1(``0@,``0)
+  parent: Coree.NETStandard.Utilities.EventSubscription
+  langs:
+  - csharp
+  - vb
+  name: RemoveHandler<TDelegate>(ref TDelegate?, TDelegate)
+  nameWithType: EventSubscription.RemoveHandler<TDelegate>(ref TDelegate?, TDelegate)
+  fullName: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler<TDelegate>(ref TDelegate?, TDelegate)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/RemoveHandler.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: RemoveHandler
+    path: ../../src/Projects/Coree.NETStandard/Utilities/NETStandard/EventSubscription/RemoveHandler.cs
+    startLine: 16
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Utilities
+  summary: Removes an event handler from the handler field atomically. Safe for null values.
+  example: []
+  syntax:
+    content: 'public static void RemoveHandler<TDelegate>(ref TDelegate? handlerField, TDelegate handlerToRemove) where TDelegate : Delegate?'
+    parameters:
+    - id: handlerField
+      type: '{TDelegate}'
+      description: The field holding the delegate from which the handler will be removed. Can be null.
+    - id: handlerToRemove
+      type: '{TDelegate}'
+      description: The event handler delegate to remove.
+    typeParameters:
+    - id: TDelegate
+      description: The type of the delegate for the event handler.
+    content.vb: Public Shared Sub [RemoveHandler](Of TDelegate As [Delegate])(handlerField As TDelegate, handlerToRemove As TDelegate)
+  overload: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler*
+  nameWithType.vb: EventSubscription.RemoveHandler(Of TDelegate)(TDelegate, TDelegate)
+  fullName.vb: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler(Of TDelegate)(TDelegate, TDelegate)
+  name.vb: RemoveHandler(Of TDelegate)(TDelegate, TDelegate)
+references:
+- uid: Coree.NETStandard.Utilities
+  commentId: N:Coree.NETStandard.Utilities
+  href: Coree.html
+  name: Coree.NETStandard.Utilities
+  nameWithType: Coree.NETStandard.Utilities
+  fullName: Coree.NETStandard.Utilities
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Utilities
+    name: Utilities
+    href: Coree.NETStandard.Utilities.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Utilities
+    name: Utilities
+    href: Coree.NETStandard.Utilities.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Utilities.EventSubscription.AddHandler*
+  commentId: Overload:Coree.NETStandard.Utilities.EventSubscription.AddHandler
+  href: Coree.NETStandard.Utilities.EventSubscription.html#Coree_NETStandard_Utilities_EventSubscription_AddHandler__1___0____0_
+  name: AddHandler
+  nameWithType: EventSubscription.AddHandler
+  fullName: Coree.NETStandard.Utilities.EventSubscription.AddHandler
+- uid: '{TDelegate}'
+  commentId: '!:TDelegate'
+  definition: TDelegate
+  name: TDelegate
+  nameWithType: TDelegate
+  fullName: TDelegate
+- uid: TDelegate
+  name: TDelegate
+  nameWithType: TDelegate
+  fullName: TDelegate
+- uid: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler*
+  commentId: Overload:Coree.NETStandard.Utilities.EventSubscription.RemoveHandler
+  href: Coree.NETStandard.Utilities.EventSubscription.html#Coree_NETStandard_Utilities_EventSubscription_RemoveHandler__1___0____0_
+  name: RemoveHandler
+  nameWithType: EventSubscription.RemoveHandler
+  fullName: Coree.NETStandard.Utilities.EventSubscription.RemoveHandler

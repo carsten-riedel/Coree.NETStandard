@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Abstractions.FluentBase
+  commentId: N:Coree.NETStandard.Abstractions.FluentBase
+  id: Coree.NETStandard.Abstractions.FluentBase
+  children:
+  - Coree.NETStandard.Abstractions.FluentBase.FluentBase
+  - Coree.NETStandard.Abstractions.FluentBase.IFluentBase
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Abstractions.FluentBase
+  nameWithType: Coree.NETStandard.Abstractions.FluentBase
+  fullName: Coree.NETStandard.Abstractions.FluentBase
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Abstractions.FluentBase.FluentBase
+  commentId: T:Coree.NETStandard.Abstractions.FluentBase.FluentBase
+  href: Coree.NETStandard.Abstractions.FluentBase.FluentBase.html
+  name: FluentBase
+  nameWithType: FluentBase
+  fullName: Coree.NETStandard.Abstractions.FluentBase.FluentBase
+- uid: Coree.NETStandard.Abstractions.FluentBase.IFluentBase
+  commentId: T:Coree.NETStandard.Abstractions.FluentBase.IFluentBase
+  parent: Coree.NETStandard.Abstractions.FluentBase
+  href: Coree.NETStandard.Abstractions.FluentBase.IFluentBase.html
+  name: IFluentBase
+  nameWithType: IFluentBase
+  fullName: Coree.NETStandard.Abstractions.FluentBase.IFluentBase
+- uid: Coree.NETStandard.Abstractions.FluentBase
+  commentId: N:Coree.NETStandard.Abstractions.FluentBase
+  href: Coree.html
+  name: Coree.NETStandard.Abstractions.FluentBase
+  nameWithType: Coree.NETStandard.Abstractions.FluentBase
+  fullName: Coree.NETStandard.Abstractions.FluentBase
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.FluentBase
+    name: FluentBase
+    href: Coree.NETStandard.Abstractions.FluentBase.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.FluentBase
+    name: FluentBase
+    href: Coree.NETStandard.Abstractions.FluentBase.html

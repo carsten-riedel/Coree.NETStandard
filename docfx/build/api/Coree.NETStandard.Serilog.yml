@@ -1,0 +1,51 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Serilog
+  commentId: N:Coree.NETStandard.Serilog
+  id: Coree.NETStandard.Serilog
+  children:
+  - Coree.NETStandard.Serilog.ConditionalLevelSink
+  - Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions
+  - Coree.NETStandard.Serilog.OutputTemplates
+  - Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  - Coree.NETStandard.Serilog.SourceContextShortEnricher
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Serilog
+  nameWithType: Coree.NETStandard.Serilog
+  fullName: Coree.NETStandard.Serilog
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Serilog.ConditionalLevelSink
+  commentId: T:Coree.NETStandard.Serilog.ConditionalLevelSink
+  href: Coree.NETStandard.Serilog.ConditionalLevelSink.html
+  name: ConditionalLevelSink
+  nameWithType: ConditionalLevelSink
+  fullName: Coree.NETStandard.Serilog.ConditionalLevelSink
+- uid: Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions
+  commentId: T:Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions
+  href: Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.html
+  name: LoggerSinkConfigurationExtensions
+  nameWithType: LoggerSinkConfigurationExtensions
+  fullName: Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions
+- uid: Coree.NETStandard.Serilog.OutputTemplates
+  commentId: T:Coree.NETStandard.Serilog.OutputTemplates
+  href: Coree.NETStandard.Serilog.OutputTemplates.html
+  name: OutputTemplates
+  nameWithType: OutputTemplates
+  fullName: Coree.NETStandard.Serilog.OutputTemplates
+- uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  commentId: T:Coree.NETStandard.Serilog.ServiceCollectionExtensions
+  href: Coree.NETStandard.Serilog.ServiceCollectionExtensions.html
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Coree.NETStandard.Serilog.ServiceCollectionExtensions
+- uid: Coree.NETStandard.Serilog.SourceContextShortEnricher
+  commentId: T:Coree.NETStandard.Serilog.SourceContextShortEnricher
+  href: Coree.NETStandard.Serilog.SourceContextShortEnricher.html
+  name: SourceContextShortEnricher
+  nameWithType: SourceContextShortEnricher
+  fullName: Coree.NETStandard.Serilog.SourceContextShortEnricher

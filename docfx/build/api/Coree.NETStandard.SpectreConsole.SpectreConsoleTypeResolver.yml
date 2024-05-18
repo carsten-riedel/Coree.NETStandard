@@ -1,0 +1,540 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  id: SpectreConsoleTypeResolver
+  parent: Coree.NETStandard.SpectreConsole
+  children:
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleTypeResolver
+  nameWithType: SpectreConsoleTypeResolver
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: SpectreConsoleTypeResolver
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+    startLine: 9
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Resolves types from an <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref>, and optionally disposes it.
+  example: []
+  syntax:
+    content: 'public sealed class SpectreConsoleTypeResolver : ITypeResolver, IDisposable'
+    content.vb: Public NotInheritable Class SpectreConsoleTypeResolver Implements ITypeResolver, IDisposable
+  inheritance:
+  - System.Object
+  implements:
+  - Spectre.Console.Cli.ITypeResolver
+  - System.IDisposable
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
+  id: '#ctor(System.IServiceProvider,System.Boolean)'
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleTypeResolver(IServiceProvider, bool)
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(IServiceProvider, bool)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(System.IServiceProvider, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Initializes with a specified service provider.
+  example: []
+  syntax:
+    content: public SpectreConsoleTypeResolver(IServiceProvider provider, bool DisposeServiceProvider)
+    parameters:
+    - id: provider
+      type: System.IServiceProvider
+      description: Service provider for type resolution.
+    - id: DisposeServiceProvider
+      type: System.Boolean
+      description: True to dispose the service provider on disposal.
+    content.vb: Public Sub New(provider As IServiceProvider, DisposeServiceProvider As Boolean)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor*
+  nameWithType.vb: SpectreConsoleTypeResolver.New(IServiceProvider, Boolean)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.New(System.IServiceProvider, Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  id: Resolve(System.Type)
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  langs:
+  - csharp
+  - vb
+  name: Resolve(Type?)
+  nameWithType: SpectreConsoleTypeResolver.Resolve(Type?)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Resolve
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+    startLine: 30
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Resolves a service of the specified type.
+  example: []
+  syntax:
+    content: public object? Resolve(Type? type)
+    parameters:
+    - id: type
+      type: System.Type
+      description: Service type; returns null if type is null.
+    return:
+      type: System.Object
+      description: Service object or null if not found.
+    content.vb: Public Function Resolve(type As Type) As Object
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve*
+  implements:
+  - Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+  nameWithType.vb: SpectreConsoleTypeResolver.Resolve(Type)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)
+  name.vb: Resolve(Type)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  id: Dispose
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  langs:
+  - csharp
+  - vb
+  name: Dispose()
+  nameWithType: SpectreConsoleTypeResolver.Dispose()
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Dispose
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs
+    startLine: 38
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Disposes the service provider if disposable.
+  example: []
+  syntax:
+    content: public void Dispose()
+    content.vb: Public Sub Dispose()
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose*
+  implements:
+  - System.IDisposable.Dispose
+references:
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Coree.NETStandard.SpectreConsole
+  commentId: N:Coree.NETStandard.SpectreConsole
+  href: Coree.html
+  name: Coree.NETStandard.SpectreConsole
+  nameWithType: Coree.NETStandard.SpectreConsole
+  fullName: Coree.NETStandard.SpectreConsole
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Spectre.Console.Cli.ITypeResolver
+  commentId: T:Spectre.Console.Cli.ITypeResolver
+  parent: Spectre.Console.Cli
+  isExternal: true
+  name: ITypeResolver
+  nameWithType: ITypeResolver
+  fullName: Spectre.Console.Cli.ITypeResolver
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Spectre.Console.Cli
+  commentId: N:Spectre.Console.Cli
+  isExternal: true
+  name: Spectre.Console.Cli
+  nameWithType: Spectre.Console.Cli
+  fullName: Spectre.Console.Cli
+  spec.csharp:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+  spec.vb:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_
+  name: SpectreConsoleTypeResolver
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver
+  nameWithType.vb: SpectreConsoleTypeResolver.New
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Resolve_System_Type_
+  name: Resolve
+  nameWithType: SpectreConsoleTypeResolver.Resolve
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve
+- uid: Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+  commentId: M:Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+  parent: Spectre.Console.Cli.ITypeResolver
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Resolve(Type)
+  nameWithType: ITypeResolver.Resolve(Type)
+  fullName: Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+  spec.csharp:
+  - uid: Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+    name: Resolve
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Spectre.Console.Cli.ITypeResolver.Resolve(System.Type)
+    name: Resolve
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Dispose
+  name: Dispose
+  nameWithType: SpectreConsoleTypeResolver.Dispose
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose
+- uid: System.IDisposable.Dispose
+  commentId: M:System.IDisposable.Dispose
+  parent: System.IDisposable
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  name: Dispose()
+  nameWithType: IDisposable.Dispose()
+  fullName: System.IDisposable.Dispose()
+  spec.csharp:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.IDisposable.Dispose
+    name: Dispose
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.idisposable.dispose
+  - name: (
+  - name: )

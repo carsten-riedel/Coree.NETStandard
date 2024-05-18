@@ -1,0 +1,474 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaItems
+  id: CriteriaItems
+  parent: Coree.NETStandard.Classes.Criteria
+  children:
+  - Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor(Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[])
+  - Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+  langs:
+  - csharp
+  - vb
+  name: CriteriaItems
+  nameWithType: CriteriaItems
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CriteriaItems
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+    startLine: 5
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Represents a collection of criteria items to be used for building dynamic filter expressions.
+  example: []
+  syntax:
+    content: public class CriteriaItems
+    content.vb: Public Class CriteriaItems
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+  commentId: P:Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+  id: Filters
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  langs:
+  - csharp
+  - vb
+  name: Filters
+  nameWithType: CriteriaItems.Filters
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Filters
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+    startLine: 13
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Gets or sets an array of <xref href="Coree.NETStandard.Classes.Criteria.CriteriaItem%601" data-throw-if-not-resolved="false"></xref> which define the filters to apply.
+  remarks: This property holds an array of criteria items, where each item specifies a condition to be used in filtering operations.
+  example: []
+  syntax:
+    content: public CriteriaItem<object>[] Filters { get; set; }
+    parameters: []
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[]
+    content.vb: Public Property Filters As CriteriaItem(Of Object)()
+  overload: Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters*
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor(Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[])
+  commentId: M:Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor(Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[])
+  id: '#ctor(Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[])'
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  langs:
+  - csharp
+  - vb
+  name: CriteriaItems(params CriteriaItem<object>[])
+  nameWithType: CriteriaItems.CriteriaItems(params CriteriaItem<object>[])
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems.CriteriaItems(params Coree.NETStandard.Classes.Criteria.CriteriaItem<object>[])
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaItems.cs
+    startLine: 24
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Initializes a new instance of the <xref href="Coree.NETStandard.Classes.Criteria.CriteriaItems" data-throw-if-not-resolved="false"></xref> class with the specified array of filter criteria.
+  remarks: >-
+    This constructor allows for quick instantiation of <xref href="Coree.NETStandard.Classes.Criteria.CriteriaItems" data-throw-if-not-resolved="false"></xref> with an array of predefined criteria.
+
+    Each <xref href="Coree.NETStandard.Classes.Criteria.CriteriaItem%601" data-throw-if-not-resolved="false"></xref> in the array represents a specific filter criterion that can be combined logically
+
+    with others to perform complex queries.
+  example: []
+  syntax:
+    content: public CriteriaItems(params CriteriaItem<object>[] filters)
+    parameters:
+    - id: filters
+      type: Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[]
+      description: An array of <xref href="Coree.NETStandard.Classes.Criteria.CriteriaItem%601" data-throw-if-not-resolved="false"></xref> that defines the set of criteria to use for filtering.
+    content.vb: Public Sub New(ParamArray filters As CriteriaItem(Of Object)())
+  overload: Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor*
+  nameWithType.vb: CriteriaItems.New(ParamArray CriteriaItem(Of Object)())
+  fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaItems.New(ParamArray Coree.NETStandard.Classes.Criteria.CriteriaItem(Of Object)())
+  name.vb: New(ParamArray CriteriaItem(Of Object)())
+references:
+- uid: Coree.NETStandard.Classes.Criteria
+  commentId: N:Coree.NETStandard.Classes.Criteria
+  href: Coree.html
+  name: Coree.NETStandard.Classes.Criteria
+  nameWithType: Coree.NETStandard.Classes.Criteria
+  fullName: Coree.NETStandard.Classes.Criteria
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+  parent: Coree.NETStandard.Classes.Criteria
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  name: CriteriaItem<TValue>
+  nameWithType: CriteriaItem<TValue>
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItem<TValue>
+  nameWithType.vb: CriteriaItem(Of TValue)
+  fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaItem(Of TValue)
+  name.vb: CriteriaItem(Of TValue)
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+    name: CriteriaItem
+    href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  - name: <
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+    name: CriteriaItem
+    href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters*
+  commentId: Overload:Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItems.html#Coree_NETStandard_Classes_Criteria_CriteriaItems_Filters
+  name: Filters
+  nameWithType: CriteriaItems.Filters
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems.Filters
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItem{System.Object}[]
+  isExternal: true
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  name: CriteriaItem<object>[]
+  nameWithType: CriteriaItem<object>[]
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItem<object>[]
+  nameWithType.vb: CriteriaItem(Of Object)()
+  fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaItem(Of Object)()
+  name.vb: CriteriaItem(Of Object)()
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+    name: CriteriaItem
+    href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.Criteria.CriteriaItem`1
+    name: CriteriaItem
+    href: Coree.NETStandard.Classes.Criteria.CriteriaItem-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaItems
+  parent: Coree.NETStandard.Classes.Criteria
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItems.html
+  name: CriteriaItems
+  nameWithType: CriteriaItems
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor*
+  commentId: Overload:Coree.NETStandard.Classes.Criteria.CriteriaItems.#ctor
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItems.html#Coree_NETStandard_Classes_Criteria_CriteriaItems__ctor_Coree_NETStandard_Classes_Criteria_CriteriaItem_System_Object____
+  name: CriteriaItems
+  nameWithType: CriteriaItems.CriteriaItems
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems.CriteriaItems
+  nameWithType.vb: CriteriaItems.New
+  fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaItems.New
+  name.vb: New

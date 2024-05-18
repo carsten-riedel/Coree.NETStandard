@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Utilities
+  commentId: N:Coree.NETStandard.Utilities
+  id: Coree.NETStandard.Utilities
+  children:
+  - Coree.NETStandard.Utilities.EventSubscription
+  - Coree.NETStandard.Utilities.MainContext
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Utilities
+  nameWithType: Coree.NETStandard.Utilities
+  fullName: Coree.NETStandard.Utilities
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Utilities.EventSubscription
+  commentId: T:Coree.NETStandard.Utilities.EventSubscription
+  href: Coree.NETStandard.Utilities.EventSubscription.html
+  name: EventSubscription
+  nameWithType: EventSubscription
+  fullName: Coree.NETStandard.Utilities.EventSubscription
+- uid: Coree.NETStandard.Utilities.MainContext
+  commentId: T:Coree.NETStandard.Utilities.MainContext
+  href: Coree.NETStandard.Utilities.MainContext.html
+  name: MainContext
+  nameWithType: MainContext
+  fullName: Coree.NETStandard.Utilities.MainContext

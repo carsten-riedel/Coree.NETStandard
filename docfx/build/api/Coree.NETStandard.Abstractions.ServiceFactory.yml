@@ -1,0 +1,42 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Abstractions.ServiceFactory
+  commentId: N:Coree.NETStandard.Abstractions.ServiceFactory
+  id: Coree.NETStandard.Abstractions.ServiceFactory
+  children:
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Abstractions.ServiceFactory
+  nameWithType: Coree.NETStandard.Abstractions.ServiceFactory
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  commentId: T:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  name: ServiceFactory<T>
+  nameWithType: ServiceFactory<T>
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>
+  nameWithType.vb: ServiceFactory(Of T)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T)
+  name.vb: ServiceFactory(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

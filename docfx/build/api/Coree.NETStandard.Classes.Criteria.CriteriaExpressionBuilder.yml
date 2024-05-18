@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder
+  id: CriteriaExpressionBuilder
+  parent: Coree.NETStandard.Classes.Criteria
+  children:
+  - Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression``1(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  langs:
+  - csharp
+  - vb
+  name: CriteriaExpressionBuilder
+  nameWithType: CriteriaExpressionBuilder
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaExpressionBuilder.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CriteriaExpressionBuilder
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaExpressionBuilder.cs
+    startLine: 9
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Provides functionality to build dynamic LINQ expressions based on criteria items.
+  example: []
+  syntax:
+    content: public class CriteriaExpressionBuilder
+    content.vb: Public Class CriteriaExpressionBuilder
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression``1(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  commentId: M:Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression``1(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  id: BuildExpression``1(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder
+  langs:
+  - csharp
+  - vb
+  name: BuildExpression<T>(CriteriaItems)
+  nameWithType: CriteriaExpressionBuilder.BuildExpression<T>(CriteriaItems)
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression<T>(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaExpressionBuilder.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: BuildExpression
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaExpressionBuilder.cs
+    startLine: 18
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Builds a dynamic LINQ expression based on the provided criteria group.
+  example: []
+  syntax:
+    content: public static Expression<Func<T, bool>>? BuildExpression<T>(CriteriaItems group)
+    parameters:
+    - id: group
+      type: Coree.NETStandard.Classes.Criteria.CriteriaItems
+      description: The criteria items defining the filtering rules.
+    typeParameters:
+    - id: T
+      description: The type of the objects to filter.
+    return:
+      type: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+      description: An expression representing the combined criteria; or null if no filters are provided.
+    content.vb: Public Shared Function BuildExpression(Of T)(group As CriteriaItems) As Expression(Of Func(Of T, Boolean))
+  overload: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown when a property specified in any criteria item does not exist on type <code class="typeparamref">T</code>.
+  nameWithType.vb: CriteriaExpressionBuilder.BuildExpression(Of T)(CriteriaItems)
+  fullName.vb: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression(Of T)(Coree.NETStandard.Classes.Criteria.CriteriaItems)
+  name.vb: BuildExpression(Of T)(CriteriaItems)
+references:
+- uid: Coree.NETStandard.Classes.Criteria
+  commentId: N:Coree.NETStandard.Classes.Criteria
+  href: Coree.html
+  name: Coree.NETStandard.Classes.Criteria
+  nameWithType: Coree.NETStandard.Classes.Criteria
+  fullName: Coree.NETStandard.Classes.Criteria
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression*
+  commentId: Overload:Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression
+  href: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.html#Coree_NETStandard_Classes_Criteria_CriteriaExpressionBuilder_BuildExpression__1_Coree_NETStandard_Classes_Criteria_CriteriaItems_
+  name: BuildExpression
+  nameWithType: CriteriaExpressionBuilder.BuildExpression
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaExpressionBuilder.BuildExpression
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaItems
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaItems
+  parent: Coree.NETStandard.Classes.Criteria
+  href: Coree.NETStandard.Classes.Criteria.CriteriaItems.html
+  name: CriteriaItems
+  nameWithType: CriteriaItems
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaItems
+- uid: System.Linq.Expressions.Expression{System.Func{{T},System.Boolean}}
+  commentId: T:System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}}
+  parent: System.Linq.Expressions
+  definition: System.Linq.Expressions.Expression`1
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<Func<T, bool>>
+  nameWithType: Expression<Func<T, bool>>
+  fullName: System.Linq.Expressions.Expression<System.Func<T, bool>>
+  nameWithType.vb: Expression(Of Func(Of T, Boolean))
+  fullName.vb: System.Linq.Expressions.Expression(Of System.Func(Of T, Boolean))
+  name.vb: Expression(Of Func(Of T, Boolean))
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  - name: )
+- uid: System.Linq.Expressions.Expression`1
+  commentId: T:System.Linq.Expressions.Expression`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  name: Expression<TDelegate>
+  nameWithType: Expression<TDelegate>
+  fullName: System.Linq.Expressions.Expression<TDelegate>
+  nameWithType.vb: Expression(Of TDelegate)
+  fullName.vb: System.Linq.Expressions.Expression(Of TDelegate)
+  name.vb: Expression(Of TDelegate)
+  spec.csharp:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: <
+  - name: TDelegate
+  - name: '>'
+  spec.vb:
+  - uid: System.Linq.Expressions.Expression`1
+    name: Expression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions.expression-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDelegate
+  - name: )
+- uid: System.Linq.Expressions
+  commentId: N:System.Linq.Expressions
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Linq.Expressions
+  nameWithType: System.Linq.Expressions
+  fullName: System.Linq.Expressions
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Linq
+    name: Linq
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq
+  - name: .
+  - uid: System.Linq.Expressions
+    name: Expressions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.linq.expressions

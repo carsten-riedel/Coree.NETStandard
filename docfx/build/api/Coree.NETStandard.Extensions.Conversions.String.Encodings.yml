@@ -1,0 +1,287 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  commentId: T:Coree.NETStandard.Extensions.Conversions.String.Encodings
+  id: Encodings
+  parent: Coree.NETStandard.Extensions.Conversions.String
+  children:
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.ASCII
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.BigEndianUnicode
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.Default
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF32
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF7
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF8
+  - Coree.NETStandard.Extensions.Conversions.String.Encodings.Unicode
+  langs:
+  - csharp
+  - vb
+  name: Encodings
+  nameWithType: Encodings
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  type: Enum
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Encodings
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 8
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: Specifies the types of character encodings.
+  example: []
+  syntax:
+    content: public enum Encodings
+    content.vb: Public Enum Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.Default
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.Default
+  id: Default
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: Default
+  nameWithType: Encodings.Default
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.Default
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Default
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 13
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: The default encoding.
+  example: []
+  syntax:
+    content: Default = 0
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.ASCII
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.ASCII
+  id: ASCII
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: ASCII
+  nameWithType: Encodings.ASCII
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.ASCII
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ASCII
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 18
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: ASCII encoding.
+  example: []
+  syntax:
+    content: ASCII = 1
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF7
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF7
+  id: UTF7
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: UTF7
+  nameWithType: Encodings.UTF7
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF7
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: UTF7
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 23
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: UTF-7 encoding.
+  example: []
+  syntax:
+    content: UTF7 = 2
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF8
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF8
+  id: UTF8
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: UTF8
+  nameWithType: Encodings.UTF8
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF8
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: UTF8
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 28
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: UTF-8 encoding.
+  example: []
+  syntax:
+    content: UTF8 = 3
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF32
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF32
+  id: UTF32
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: UTF32
+  nameWithType: Encodings.UTF32
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.UTF32
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: UTF32
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 33
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: UTF-32 encoding.
+  example: []
+  syntax:
+    content: UTF32 = 4
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.Unicode
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.Unicode
+  id: Unicode
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: Unicode
+  nameWithType: Encodings.Unicode
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.Unicode
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Unicode
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 38
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: Unicode encoding.
+  example: []
+  syntax:
+    content: Unicode = 5
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings.BigEndianUnicode
+  commentId: F:Coree.NETStandard.Extensions.Conversions.String.Encodings.BigEndianUnicode
+  id: BigEndianUnicode
+  parent: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  langs:
+  - csharp
+  - vb
+  name: BigEndianUnicode
+  nameWithType: Encodings.BigEndianUnicode
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings.BigEndianUnicode
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: BigEndianUnicode
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/String/ToByteArray.cs
+    startLine: 43
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.String
+  summary: Big Endian Unicode encoding.
+  example: []
+  syntax:
+    content: BigEndianUnicode = 6
+    return:
+      type: Coree.NETStandard.Extensions.Conversions.String.Encodings
+references:
+- uid: Coree.NETStandard.Extensions.Conversions.String
+  commentId: N:Coree.NETStandard.Extensions.Conversions.String
+  href: Coree.html
+  name: Coree.NETStandard.Extensions.Conversions.String
+  nameWithType: Coree.NETStandard.Extensions.Conversions.String
+  fullName: Coree.NETStandard.Extensions.Conversions.String
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions
+    name: Extensions
+    href: Coree.NETStandard.Extensions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions
+    name: Conversions
+    href: Coree.NETStandard.Extensions.Conversions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions.String
+    name: String
+    href: Coree.NETStandard.Extensions.Conversions.String.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions
+    name: Extensions
+    href: Coree.NETStandard.Extensions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions
+    name: Conversions
+    href: Coree.NETStandard.Extensions.Conversions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions.String
+    name: String
+    href: Coree.NETStandard.Extensions.Conversions.String.html
+- uid: Coree.NETStandard.Extensions.Conversions.String.Encodings
+  commentId: T:Coree.NETStandard.Extensions.Conversions.String.Encodings
+  parent: Coree.NETStandard.Extensions.Conversions.String
+  href: Coree.NETStandard.Extensions.Conversions.String.Encodings.html
+  name: Encodings
+  nameWithType: Encodings
+  fullName: Coree.NETStandard.Extensions.Conversions.String.Encodings

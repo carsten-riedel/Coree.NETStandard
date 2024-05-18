@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  commentId: N:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  id: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  children:
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  nameWithType: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  commentId: T:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html
+  name: ConversionsHostApplicationBuilderExtensions
+  nameWithType: ConversionsHostApplicationBuilderExtensions
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions

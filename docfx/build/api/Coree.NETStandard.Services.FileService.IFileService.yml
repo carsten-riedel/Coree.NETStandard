@@ -1,0 +1,574 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.FileService.IFileService
+  commentId: T:Coree.NETStandard.Services.FileService.IFileService
+  id: IFileService
+  parent: Coree.NETStandard.Services.FileService
+  children:
+  - Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  - Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  - Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  - Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  - Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  - Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IFileService
+  nameWithType: IFileService
+  fullName: Coree.NETStandard.Services.FileService.IFileService
+  type: Interface
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IFileService
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 51
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Defines a service for file system operations.
+  example: []
+  syntax:
+    content: public interface IFileService
+    content.vb: Public Interface IFileService
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  id: IsCommandAvailable(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: IsCommandAvailable(string?)
+  nameWithType: IFileService.IsCommandAvailable(string?)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsCommandAvailable
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 82
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks if a specified command is available in the current directory or any of the directories listed in the system's PATH environment variable.
+  remarks: >-
+    This method performs the following operations:
+
+    - Validates the command input.
+
+    - Retrieves the current directory and the directories from the system's PATH environment using the GetValidUniquePaths method, which excludes invalid and duplicate paths.
+
+    - Checks each directory for the existence of the specified command.
+
+    - Utilizes the TryFixPathCaseing method to return the path in the correct casing.
+
+    - Logs various informational messages during the process, including errors encountered, invalid path entries, and successful detection of the executable.
+
+    This method ensures that the search includes the current directory, aligning with common command-line behaviors where the current directory is typically searched before the PATH directories.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string commandName = "example";
+
+    string executablePath = IsCommandAvailable(commandName);
+
+    if (executablePath != null)
+
+    {
+        Console.WriteLine($"Executable found: {executablePath}");
+    }
+
+    else
+
+    {
+        Console.WriteLine("Executable not found.");
+    }</code></pre>
+  syntax:
+    content: string? IsCommandAvailable(string? command)
+    parameters:
+    - id: command
+      type: System.String
+      description: The name of the executable file to search for.
+    return:
+      type: System.String
+      description: The full path of the executable file with corrected casing if found; otherwise, returns null. The method returns null if the command parameter is null, or if the executable cannot be found in the current or PATH directories.
+    content.vb: Function IsCommandAvailable(command As String) As String
+  overload: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable*
+  nameWithType.vb: IFileService.IsCommandAvailable(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(String)
+  name.vb: IsCommandAvailable(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  id: GetValidUniquePaths
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: GetValidUniquePaths()
+  nameWithType: IFileService.GetValidUniquePaths()
+  fullName: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: GetValidUniquePaths
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 105
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Retrieves a list of valid and unique directory paths from the system's PATH environment variable.
+  remarks: >-
+    This method processes each entry in the PATH environment variable by:
+
+    - Normalizing the casing of each path using the TryFixPathCaseing method.
+
+    - Checking each path for existence to ensure validity.
+
+    - Ensuring that each path is unique within the context of the PATH variable to avoid duplicates.
+
+    - Logging various statuses such as inaccessible PATH, skipped entries due to invalidity or duplication, and errors during processing.
+
+    The method is robust against non-existent directories, permission issues, and other filesystem anomalies by logging and skipping over problematic entries.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var validPaths = GetValidUniquePaths();
+
+    foreach (var path in validPaths)
+
+    {
+        Console.WriteLine(path); // Prints each valid and unique path
+    }</code></pre>
+  syntax:
+    content: List<string> GetValidUniquePaths()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of strings representing valid, unique, and normalized directory paths from the PATH environment. Returns an empty list if the PATH environment variable is not accessible or if no valid paths are found.
+    content.vb: Function GetValidUniquePaths() As List(Of String)
+  overload: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths*
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  id: IsExecutableFilePresent(System.String,System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: IsExecutableFilePresent(string?, string?)
+  nameWithType: IFileService.IsExecutableFilePresent(string?, string?)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsExecutableFilePresent
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 135
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks if an executable file with the specified command name is present in the given directory path, considering platform-specific executable extensions.
+  remarks: >-
+    This method supports different sets of executable extensions based on the operating system:
+
+    - Windows: Includes common executable and script extensions such as .exe, .bat, .cmd, .ps1, .msi, .vbs, .com, and .scr.
+
+    - Linux/macOS: Includes executable and script extensions like .sh, .bash, .run, .bin, as well as scripting languages such as .py, .pl, and .rb.
+
+    Files without extensions are also considered in Unix/Linux environments where executables often do not have an extension.
+
+    The method checks if the specified directory exists before attempting to find executables, improving efficiency by avoiding unnecessary file operations.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string commandName = "myapp";
+
+    string directoryPath = "/usr/local/bin";
+
+    string result = IsExecutableFilePresent(commandName, directoryPath);
+
+    if (result != null)
+
+    {
+        Console.WriteLine("Executable found: " + result);
+    }
+
+    else
+
+    {
+        Console.WriteLine("No executable found.");
+    }</code></pre>
+  syntax:
+    content: string? IsExecutableFilePresent(string? command, string? path)
+    parameters:
+    - id: command
+      type: System.String
+      description: The base name of the executable file to search for, without extension.
+    - id: path
+      type: System.String
+      description: The directory path where to look for the executable file.
+    return:
+      type: System.String
+      description: The full path of the executable file if found, otherwise null. The method returns null if the directory does not exist or the parameters are null or empty.
+    content.vb: Function IsExecutableFilePresent(command As String, path As String) As String
+  overload: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent*
+  nameWithType.vb: IFileService.IsExecutableFilePresent(String, String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(String, String)
+  name.vb: IsExecutableFilePresent(String, String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  id: IsValidLocation(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: IsValidLocation(string?)
+  nameWithType: IFileService.IsValidLocation(string?)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsValidLocation
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 148
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks whether the specified path is a valid file or directory.
+  remarks: >-
+    This method returns <code>false</code> if the provided path is null or empty.
+
+    It logs debug messages using the provided logger instance if any errors occur during the validation process.
+  example: []
+  syntax:
+    content: bool IsValidLocation(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to be checked.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the path points to an existing file or directory; otherwise, <code>false</code>.
+    content.vb: Function IsValidLocation(path As String) As Boolean
+  overload: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation*
+  nameWithType.vb: IFileService.IsValidLocation(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(String)
+  name.vb: IsValidLocation(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  id: TryCorrectDrivePathCase(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: TryCorrectDrivePathCase(string?)
+  nameWithType: IFileService.TryCorrectDrivePathCase(string?)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TryCorrectDrivePathCase
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 166
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Attempts to retrieve the correctly cased drive root path based on a provided drive name, ignoring case sensitivity.
+  remarks: >-
+    This method performs a case-insensitive comparison to find a matching drive among the available drives.
+
+    If no matching drive is found or if an exception occurs during the drive search, the original drivename is returned.
+
+    This ensures that the method fails gracefully, providing a fallback to the original input.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string drivePath = TryCorrectDrivePathCase("C:");
+
+    Console.WriteLine(drivePath); // Output might be "C:\", or "C:" if no match is found</code></pre>
+  syntax:
+    content: string? TryCorrectDrivePathCase(string? drivename)
+    parameters:
+    - id: drivename
+      type: System.String
+      description: The drive name to search for, case-insensitively.
+    return:
+      type: System.String
+      description: The correctly cased drive root path if found; otherwise, returns the original drivename.
+    content.vb: Function TryCorrectDrivePathCase(drivename As String) As String
+  overload: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase*
+  nameWithType.vb: IFileService.TryCorrectDrivePathCase(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(String)
+  name.vb: TryCorrectDrivePathCase(String)
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  id: TryFixPathCaseing(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: TryFixPathCaseing(string?)
+  nameWithType: IFileService.TryFixPathCaseing(string?)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TryFixPathCaseing
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 188
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Attempts to correct the casing of the provided file or directory path by traversing each segment and matching it against actual filesystem entries.
+  remarks: >-
+    This method operates by:
+
+    - Resolving the full path and starting with the root, attempting to correct its casing.
+
+    - Sequentially processing each subsequent segment of the path. Each segment's casing is corrected to match the actual filesystem entry if it exists.
+
+    - If a segment (directory or file) does not exist, the segment from the original path is used as is, and traversal stops at this point.
+
+    This approach ensures that the returned path is as accurate as possible up to the last existing segment. Errors and non-existing segments are handled gracefully by reverting to the original input for those segments.
+
+    Exceptional conditions are logged for diagnostic purposes.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string originalPath = "c:\\users\\Public\\DESKTOP\\nonExistingFile.txt";
+
+    string correctedPath = TryFixPathCaseing(originalPath);
+
+    Console.WriteLine(correctedPath); // Output might be "C:\\Users\\Public\\Desktop\\nonExistingFile.txt"</code></pre>
+  syntax:
+    content: string? TryFixPathCaseing(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory path to correct.
+    return:
+      type: System.String
+      description: The path with corrected casing for each existing segment. For segments that do not correspond to existing entries, the original casing is used.
+    content.vb: Function TryFixPathCaseing(path As String) As String
+  overload: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing*
+  nameWithType.vb: IFileService.TryFixPathCaseing(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(String)
+  name.vb: TryFixPathCaseing(String)
+references:
+- uid: Coree.NETStandard.Services.FileService
+  commentId: N:Coree.NETStandard.Services.FileService
+  href: Coree.html
+  name: Coree.NETStandard.Services.FileService
+  nameWithType: Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_System_String_
+  name: IsCommandAvailable
+  nameWithType: IFileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths
+  name: GetValidUniquePaths
+  nameWithType: IFileService.GetValidUniquePaths
+  fullName: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_System_String_System_String_
+  name: IsExecutableFilePresent
+  nameWithType: IFileService.IsExecutableFilePresent
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.IsValidLocation
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_System_String_
+  name: IsValidLocation
+  nameWithType: IFileService.IsValidLocation
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_System_String_
+  name: TryCorrectDrivePathCase
+  nameWithType: IFileService.TryCorrectDrivePathCase
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing*
+  commentId: Overload:Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_System_String_
+  name: TryFixPathCaseing
+  nameWithType: IFileService.TryFixPathCaseing
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing

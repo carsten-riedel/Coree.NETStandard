@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Utilities
+  commentId: N:Coree.NETStandard.Extensions.Utilities
+  id: Coree.NETStandard.Extensions.Utilities
+  children:
+  - Coree.NETStandard.Extensions.Utilities.DateTimeExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Extensions.Utilities
+  nameWithType: Coree.NETStandard.Extensions.Utilities
+  fullName: Coree.NETStandard.Extensions.Utilities
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Extensions.Utilities.DateTimeExtensions
+  commentId: T:Coree.NETStandard.Extensions.Utilities.DateTimeExtensions
+  href: Coree.NETStandard.Extensions.Utilities.DateTimeExtensions.html
+  name: DateTimeExtensions
+  nameWithType: DateTimeExtensions
+  fullName: Coree.NETStandard.Extensions.Utilities.DateTimeExtensions

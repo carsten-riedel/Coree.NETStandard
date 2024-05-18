@@ -1,0 +1,937 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  id: SpectreConsoleTypeRegistrar
+  parent: Coree.NETStandard.SpectreConsole
+  children:
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleTypeRegistrar
+  nameWithType: SpectreConsoleTypeRegistrar
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: SpectreConsoleTypeRegistrar
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 11
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Enables type registration for Spectre.Console applications, supporting both <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref> and <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class SpectreConsoleTypeRegistrar : ITypeRegistrar'
+    content.vb: Public Class SpectreConsoleTypeRegistrar Implements ITypeRegistrar
+  inheritance:
+  - System.Object
+  implements:
+  - Spectre.Console.Cli.ITypeRegistrar
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(System.IServiceProvider,System.Boolean)
+  id: '#ctor(System.IServiceProvider,System.Boolean)'
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceProvider, bool)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(System.IServiceProvider, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 22
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: >-
+    Constructs with an <xref href="System.IServiceProvider" data-throw-if-not-resolved="false"></xref>, typically for hosted applications using <code>builder.Build()</code>.
+
+    <param name="disposeServiceProvider">True to dispose the service provider on CommandApp disposal.</param>
+  example: []
+  syntax:
+    content: public SpectreConsoleTypeRegistrar(IServiceProvider serviceProvider, bool disposeServiceProvider)
+    parameters:
+    - id: serviceProvider
+      type: System.IServiceProvider
+      description: Service provider for type resolution.
+    - id: disposeServiceProvider
+      type: System.Boolean
+    content.vb: Public Sub New(serviceProvider As IServiceProvider, disposeServiceProvider As Boolean)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor*
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceProvider, Boolean)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.New(System.IServiceProvider, Boolean)
+  name.vb: New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)
+  id: '#ctor(Microsoft.Extensions.DependencyInjection.IServiceCollection,System.Boolean)'
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(IServiceCollection, bool)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar(Microsoft.Extensions.DependencyInjection.IServiceCollection, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 33
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Constructs with an <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref>, for manual service collection setups, e.g., simple console apps.
+  example: []
+  syntax:
+    content: public SpectreConsoleTypeRegistrar(IServiceCollection serviceCollection, bool disposeServiceProvider)
+    parameters:
+    - id: serviceCollection
+      type: Microsoft.Extensions.DependencyInjection.IServiceCollection
+      description: Service collection for registrations.
+    - id: disposeServiceProvider
+      type: System.Boolean
+      description: True to dispose the service provider on CommandApp disposal.
+    content.vb: Public Sub New(serviceCollection As IServiceCollection, disposeServiceProvider As Boolean)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor*
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New(IServiceCollection, Boolean)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.New(Microsoft.Extensions.DependencyInjection.IServiceCollection, Boolean)
+  name.vb: New(IServiceCollection, Boolean)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  id: Build
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: SpectreConsoleTypeRegistrar.Build()
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Build
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 44
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Builds a type resolver based on the provided service provider or service collection.
+  example: []
+  syntax:
+    content: public ITypeResolver Build()
+    return:
+      type: Spectre.Console.Cli.ITypeResolver
+      description: Type resolver for configured services.
+    content.vb: Public Function Build() As ITypeResolver
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if no service provider or collection is provided.
+  implements:
+  - Spectre.Console.Cli.ITypeRegistrar.Build
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type,System.Type)
+  id: Register(System.Type,System.Type)
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: Register(Type, Type)
+  nameWithType: SpectreConsoleTypeRegistrar.Register(Type, Type)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register(System.Type, System.Type)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Register
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 65
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Registers a service with its implementation in the service collection. Only for <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> usage.
+  example: []
+  syntax:
+    content: public void Register(Type service, Type implementation)
+    parameters:
+    - id: service
+      type: System.Type
+      description: Service type.
+    - id: implementation
+      type: System.Type
+      description: Implementation type.
+    content.vb: Public Sub Register(service As Type, implementation As Type)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register*
+  implements:
+  - Spectre.Console.Cli.ITypeRegistrar.Register(System.Type,System.Type)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type,System.Object)
+  id: RegisterInstance(System.Type,System.Object)
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: RegisterInstance(Type, object)
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance(Type, object)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, object)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: RegisterInstance
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 75
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Registers a service instance in the service collection. Only for <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> usage.
+  example: []
+  syntax:
+    content: public void RegisterInstance(Type service, object implementation)
+    parameters:
+    - id: service
+      type: System.Type
+      description: Service type.
+    - id: implementation
+      type: System.Object
+      description: Service instance.
+    content.vb: Public Sub RegisterInstance(service As Type, implementation As Object)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance*
+  implements:
+  - Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type,System.Object)
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterInstance(Type, Object)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance(System.Type, Object)
+  name.vb: RegisterInstance(Type, Object)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  id: RegisterLazy(System.Type,System.Func{System.Object})
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  langs:
+  - csharp
+  - vb
+  name: RegisterLazy(Type, Func<object>)
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func<object>)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: RegisterLazy
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeRegistrar.cs
+    startLine: 86
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: Registers a service with a factory function for deferred instantiation. Only for <xref href="Microsoft.Extensions.DependencyInjection.IServiceCollection" data-throw-if-not-resolved="false"></xref> usage.
+  example: []
+  syntax:
+    content: public void RegisterLazy(Type service, Func<object> func)
+    parameters:
+    - id: service
+      type: System.Type
+      description: Service type.
+    - id: func
+      type: System.Func{System.Object}
+      description: Factory function.
+    content.vb: Public Sub RegisterLazy(service As Type, func As Func(Of Object))
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy*
+  exceptions:
+  - type: System.ArgumentNullException
+    commentId: T:System.ArgumentNullException
+    description: Thrown if <code class="paramref">func</code> is null.
+  implements:
+  - Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  nameWithType.vb: SpectreConsoleTypeRegistrar.RegisterLazy(Type, Func(Of Object))
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
+  name.vb: RegisterLazy(Type, Func(Of Object))
+references:
+- uid: System.IServiceProvider
+  commentId: T:System.IServiceProvider
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.iserviceprovider
+  name: IServiceProvider
+  nameWithType: IServiceProvider
+  fullName: System.IServiceProvider
+- uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+  commentId: T:Microsoft.Extensions.DependencyInjection.IServiceCollection
+  parent: Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  name: IServiceCollection
+  nameWithType: IServiceCollection
+  fullName: Microsoft.Extensions.DependencyInjection.IServiceCollection
+- uid: Coree.NETStandard.SpectreConsole
+  commentId: N:Coree.NETStandard.SpectreConsole
+  href: Coree.html
+  name: Coree.NETStandard.SpectreConsole
+  nameWithType: Coree.NETStandard.SpectreConsole
+  fullName: Coree.NETStandard.SpectreConsole
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Spectre.Console.Cli.ITypeRegistrar
+  commentId: T:Spectre.Console.Cli.ITypeRegistrar
+  parent: Spectre.Console.Cli
+  isExternal: true
+  name: ITypeRegistrar
+  nameWithType: ITypeRegistrar
+  fullName: Spectre.Console.Cli.ITypeRegistrar
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.DependencyInjection
+  commentId: N:Microsoft.Extensions.DependencyInjection
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.DependencyInjection
+  nameWithType: Microsoft.Extensions.DependencyInjection
+  fullName: Microsoft.Extensions.DependencyInjection
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.DependencyInjection
+    name: DependencyInjection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection
+- uid: Spectre.Console.Cli
+  commentId: N:Spectre.Console.Cli
+  isExternal: true
+  name: Spectre.Console.Cli
+  nameWithType: Spectre.Console.Cli
+  fullName: Spectre.Console.Cli
+  spec.csharp:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+  spec.vb:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.#ctor
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeRegistrar__ctor_System_IServiceProvider_System_Boolean_
+  name: SpectreConsoleTypeRegistrar
+  nameWithType: SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.SpectreConsoleTypeRegistrar
+  nameWithType.vb: SpectreConsoleTypeRegistrar.New
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.New
+  name.vb: New
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeRegistrar_Build
+  name: Build
+  nameWithType: SpectreConsoleTypeRegistrar.Build
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Build
+- uid: Spectre.Console.Cli.ITypeRegistrar.Build
+  commentId: M:Spectre.Console.Cli.ITypeRegistrar.Build
+  parent: Spectre.Console.Cli.ITypeRegistrar
+  isExternal: true
+  name: Build()
+  nameWithType: ITypeRegistrar.Build()
+  fullName: Spectre.Console.Cli.ITypeRegistrar.Build()
+  spec.csharp:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.Build
+    name: Build
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.Build
+    name: Build
+    isExternal: true
+  - name: (
+  - name: )
+- uid: Spectre.Console.Cli.ITypeResolver
+  commentId: T:Spectre.Console.Cli.ITypeResolver
+  parent: Spectre.Console.Cli
+  isExternal: true
+  name: ITypeResolver
+  nameWithType: ITypeResolver
+  fullName: Spectre.Console.Cli.ITypeResolver
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeRegistrar_Register_System_Type_System_Type_
+  name: Register
+  nameWithType: SpectreConsoleTypeRegistrar.Register
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.Register
+- uid: Spectre.Console.Cli.ITypeRegistrar.Register(System.Type,System.Type)
+  commentId: M:Spectre.Console.Cli.ITypeRegistrar.Register(System.Type,System.Type)
+  parent: Spectre.Console.Cli.ITypeRegistrar
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Register(Type, Type)
+  nameWithType: ITypeRegistrar.Register(Type, Type)
+  fullName: Spectre.Console.Cli.ITypeRegistrar.Register(System.Type, System.Type)
+  spec.csharp:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.Register(System.Type,System.Type)
+    name: Register
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.Register(System.Type,System.Type)
+    name: Register
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterInstance_System_Type_System_Object_
+  name: RegisterInstance
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterInstance
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterInstance
+- uid: Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type,System.Object)
+  commentId: M:Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type,System.Object)
+  parent: Spectre.Console.Cli.ITypeRegistrar
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterInstance(Type, object)
+  nameWithType: ITypeRegistrar.RegisterInstance(Type, object)
+  fullName: Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type, object)
+  nameWithType.vb: ITypeRegistrar.RegisterInstance(Type, Object)
+  fullName.vb: Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type, Object)
+  name.vb: RegisterInstance(Type, Object)
+  spec.csharp:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type,System.Object)
+    name: RegisterInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.RegisterInstance(System.Type,System.Object)
+    name: RegisterInstance
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ArgumentNullException
+  commentId: T:System.ArgumentNullException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentnullexception
+  name: ArgumentNullException
+  nameWithType: ArgumentNullException
+  fullName: System.ArgumentNullException
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeRegistrar_RegisterLazy_System_Type_System_Func_System_Object__
+  name: RegisterLazy
+  nameWithType: SpectreConsoleTypeRegistrar.RegisterLazy
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.RegisterLazy
+- uid: Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  commentId: M:Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+  parent: Spectre.Console.Cli.ITypeRegistrar
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: RegisterLazy(Type, Func<object>)
+  nameWithType: ITypeRegistrar.RegisterLazy(Type, Func<object>)
+  fullName: Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type, System.Func<object>)
+  nameWithType.vb: ITypeRegistrar.RegisterLazy(Type, Func(Of Object))
+  fullName.vb: Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type, System.Func(Of Object))
+  name.vb: RegisterLazy(Type, Func(Of Object))
+  spec.csharp:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+    name: RegisterLazy
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Spectre.Console.Cli.ITypeRegistrar.RegisterLazy(System.Type,System.Func{System.Object})
+    name: RegisterLazy
+    isExternal: true
+  - name: (
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Func{System.Object}
+  commentId: T:System.Func{System.Object}
+  parent: System
+  definition: System.Func`1
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<object>
+  nameWithType: Func<object>
+  fullName: System.Func<object>
+  nameWithType.vb: Func(Of Object)
+  fullName.vb: System.Func(Of Object)
+  name.vb: Func(Of Object)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Func`1
+  commentId: T:System.Func`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-1
+  name: Func<TResult>
+  nameWithType: Func<TResult>
+  fullName: System.Func<TResult>
+  nameWithType.vb: Func(Of TResult)
+  fullName.vb: System.Func(Of TResult)
+  name.vb: Func(Of TResult)
+  spec.csharp:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`1
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

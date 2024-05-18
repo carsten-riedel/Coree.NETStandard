@@ -1,0 +1,729 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  id: SpectreConsoleHostedService
+  parent: Coree.NETStandard.SpectreConsole
+  children:
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleHostedService
+  nameWithType: SpectreConsoleHostedService
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: SpectreConsoleHostedService
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+    startLine: 16
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: >-
+    Provides a hosted service for running Spectre.Console CLI applications
+
+    within a .NET Core generic host. This class handles the application lifecycle,
+
+    processes commands, and manages application exit codes based on command execution results.
+  example: []
+  syntax:
+    content: 'public class SpectreConsoleHostedService : IHostedService'
+    content.vb: Public Class SpectreConsoleHostedService Implements IHostedService
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  id: '#ctor(Spectre.Console.Cli.ICommandApp,Microsoft.Extensions.Hosting.IHostApplicationLifetime)'
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  langs:
+  - csharp
+  - vb
+  name: SpectreConsoleHostedService(ICommandApp, IHostApplicationLifetime)
+  nameWithType: SpectreConsoleHostedService.SpectreConsoleHostedService(ICommandApp, IHostApplicationLifetime)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.SpectreConsoleHostedService(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+    startLine: 91
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: >-
+    Initializes a new instance of the <xref href="Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService" data-throw-if-not-resolved="false"></xref> class
+
+    with the specified Spectre.Console CLI application and application lifetime management services.
+  example: []
+  syntax:
+    content: public SpectreConsoleHostedService(ICommandApp commandApp, IHostApplicationLifetime appLifetime)
+    parameters:
+    - id: commandApp
+      type: Spectre.Console.Cli.ICommandApp
+      description: The Spectre.Console CLI application to be hosted.
+    - id: appLifetime
+      type: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+      description: The application lifetime management service.
+    content.vb: Public Sub New(commandApp As ICommandApp, appLifetime As IHostApplicationLifetime)
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor*
+  nameWithType.vb: SpectreConsoleHostedService.New(ICommandApp, IHostApplicationLifetime)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.New(Spectre.Console.Cli.ICommandApp, Microsoft.Extensions.Hosting.IHostApplicationLifetime)
+  name.vb: New(ICommandApp, IHostApplicationLifetime)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  id: StartAsync(System.Threading.CancellationToken)
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  langs:
+  - csharp
+  - vb
+  name: StartAsync(CancellationToken)
+  nameWithType: SpectreConsoleHostedService.StartAsync(CancellationToken)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: StartAsync
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+    startLine: 108
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: >-
+    Starts the hosted Spectre.Console CLI application asynchronously.
+
+    Parses the command line arguments, executes the corresponding command,
+
+    and sets the application exit code based on the outcome of the command execution.
+
+    This method employs a specialized set of exit codes defined by the <xref href="Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode" data-throw-if-not-resolved="false"></xref> enum,
+
+    which may deviate from standard exit code conventions to suit the specific behavior and requirements
+
+    of this application. For example, it includes codes for successful command execution that leads to application
+
+    continuation or termination, and for handling cases where help information is displayed or a command is not found.
+  example: []
+  syntax:
+    content: public Task StartAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that can be used to request cancellation of the operation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous start operation.
+    content.vb: Public Function StartAsync(cancellationToken As CancellationToken) As Task
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync*
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  id: StopAsync(System.Threading.CancellationToken)
+  parent: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  langs:
+  - csharp
+  - vb
+  name: StopAsync(CancellationToken)
+  nameWithType: SpectreConsoleHostedService.StopAsync(CancellationToken)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: StopAsync
+    path: ../../src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleHostedService.cs
+    startLine: 170
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.SpectreConsole
+  summary: >-
+    Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+
+    Currently, this method completes immediately as no cleanup is needed.
+  example: []
+  syntax:
+    content: public Task StopAsync(CancellationToken cancellationToken)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that can be used to request cancellation of the operation.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A task that represents the asynchronous stop operation.
+    content.vb: Public Function StopAsync(cancellationToken As CancellationToken) As Task
+  overload: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync*
+  implements:
+  - Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+references:
+- uid: Coree.NETStandard.SpectreConsole
+  commentId: N:Coree.NETStandard.SpectreConsole
+  href: Coree.html
+  name: Coree.NETStandard.SpectreConsole
+  nameWithType: Coree.NETStandard.SpectreConsole
+  fullName: Coree.NETStandard.SpectreConsole
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.Extensions.Hosting.IHostedService
+  commentId: T:Microsoft.Extensions.Hosting.IHostedService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice
+  name: IHostedService
+  nameWithType: IHostedService
+  fullName: Microsoft.Extensions.Hosting.IHostedService
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  name: SpectreConsoleHostedService
+  nameWithType: SpectreConsoleHostedService
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.#ctor
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_SpectreConsole_SpectreConsoleHostedService__ctor_Spectre_Console_Cli_ICommandApp_Microsoft_Extensions_Hosting_IHostApplicationLifetime_
+  name: SpectreConsoleHostedService
+  nameWithType: SpectreConsoleHostedService.SpectreConsoleHostedService
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.SpectreConsoleHostedService
+  nameWithType.vb: SpectreConsoleHostedService.New
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.New
+  name.vb: New
+- uid: Spectre.Console.Cli.ICommandApp
+  commentId: T:Spectre.Console.Cli.ICommandApp
+  parent: Spectre.Console.Cli
+  isExternal: true
+  name: ICommandApp
+  nameWithType: ICommandApp
+  fullName: Spectre.Console.Cli.ICommandApp
+- uid: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+  commentId: T:Microsoft.Extensions.Hosting.IHostApplicationLifetime
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationlifetime
+  name: IHostApplicationLifetime
+  nameWithType: IHostApplicationLifetime
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationLifetime
+- uid: Spectre.Console.Cli
+  commentId: N:Spectre.Console.Cli
+  isExternal: true
+  name: Spectre.Console.Cli
+  nameWithType: Spectre.Console.Cli
+  fullName: Spectre.Console.Cli
+  spec.csharp:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+  spec.vb:
+  - uid: Spectre
+    name: Spectre
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console
+    name: Console
+    isExternal: true
+  - name: .
+  - uid: Spectre.Console.Cli
+    name: Cli
+    isExternal: true
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  parent: Coree.NETStandard.SpectreConsole
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  name: SpectreConsoleHostedService.ExitCode
+  nameWithType: SpectreConsoleHostedService.ExitCode
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  spec.csharp:
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+    name: SpectreConsoleHostedService
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+    name: ExitCode
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.html
+  spec.vb:
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+    name: SpectreConsoleHostedService
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+    name: ExitCode
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.html
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_SpectreConsole_SpectreConsoleHostedService_StartAsync_System_Threading_CancellationToken_
+  name: StartAsync
+  nameWithType: SpectreConsoleHostedService.StartAsync
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StartAsync
+- uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  name: StartAsync(CancellationToken)
+  nameWithType: IHostedService.StartAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StartAsync(System.Threading.CancellationToken)
+    name: StartAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.startasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync*
+  commentId: Overload:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html#Coree_NETStandard_SpectreConsole_SpectreConsoleHostedService_StopAsync_System_Threading_CancellationToken_
+  name: StopAsync
+  nameWithType: SpectreConsoleHostedService.StopAsync
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.StopAsync
+- uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  commentId: M:Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  parent: Microsoft.Extensions.Hosting.IHostedService
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  name: StopAsync(CancellationToken)
+  nameWithType: IHostedService.StopAsync(CancellationToken)
+  fullName: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Microsoft.Extensions.Hosting.IHostedService.StopAsync(System.Threading.CancellationToken)
+    name: StopAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostedservice.stopasync
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )

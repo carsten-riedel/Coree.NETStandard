@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Validations.String
+  commentId: N:Coree.NETStandard.Extensions.Validations.String
+  id: Coree.NETStandard.Extensions.Validations.String
+  children:
+  - Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Extensions.Validations.String
+  nameWithType: Coree.NETStandard.Extensions.Validations.String
+  fullName: Coree.NETStandard.Extensions.Validations.String
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions
+  commentId: T:Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions
+  href: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.html
+  name: ValidationsStringExtensions
+  nameWithType: ValidationsStringExtensions
+  fullName: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions

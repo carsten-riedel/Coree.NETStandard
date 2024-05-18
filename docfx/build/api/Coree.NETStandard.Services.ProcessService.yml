@@ -1,0 +1,84 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.ProcessService
+  commentId: N:Coree.NETStandard.Services.ProcessService
+  id: Coree.NETStandard.Services.ProcessService
+  children:
+  - Coree.NETStandard.Services.ProcessService.IProcessService
+  - Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState
+  - Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  - Coree.NETStandard.Services.ProcessService.ProcessService
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Services.ProcessService
+  nameWithType: Coree.NETStandard.Services.ProcessService
+  fullName: Coree.NETStandard.Services.ProcessService
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Services.ProcessService.ProcessService
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessService
+  href: Coree.NETStandard.Services.ProcessService.ProcessService.html
+  name: ProcessService
+  nameWithType: ProcessService
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessService
+- uid: Coree.NETStandard.Services.ProcessService.IProcessService
+  commentId: T:Coree.NETStandard.Services.ProcessService.IProcessService
+  parent: Coree.NETStandard.Services.ProcessService
+  href: Coree.NETStandard.Services.ProcessService.IProcessService.html
+  name: IProcessService
+  nameWithType: IProcessService
+  fullName: Coree.NETStandard.Services.ProcessService.IProcessService
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessRunResult
+  href: Coree.NETStandard.Services.ProcessService.ProcessRunResult.html
+  name: ProcessRunResult
+  nameWithType: ProcessRunResult
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunResult
+- uid: Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState
+  commentId: T:Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState
+  parent: Coree.NETStandard.Services.ProcessService
+  href: Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState.html
+  name: ProcessRunExitCodeState
+  nameWithType: ProcessRunExitCodeState
+  fullName: Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState
+- uid: Coree.NETStandard.Services.ProcessService
+  commentId: N:Coree.NETStandard.Services.ProcessService
+  href: Coree.html
+  name: Coree.NETStandard.Services.ProcessService
+  nameWithType: Coree.NETStandard.Services.ProcessService
+  fullName: Coree.NETStandard.Services.ProcessService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.ProcessService
+    name: ProcessService
+    href: Coree.NETStandard.Services.ProcessService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.ProcessService
+    name: ProcessService
+    href: Coree.NETStandard.Services.ProcessService.html

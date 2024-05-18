@@ -1,0 +1,1120 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  id: ContentComposer
+  parent: Coree.NETStandard.Classes.HttpRequestService
+  children:
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Byte[],System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.IO.Stream,System.String,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.String,System.Text.Encoding,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.Text.Encoding,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(System.Byte[],System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream,System.String,System.String)
+  - Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer
+  nameWithType: ContentComposer
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ContentComposer
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 14
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Facilitates the creation and management of HTTP request content.
+  example: []
+  syntax:
+    content: public class ContentComposer
+    content.vb: Public Class ContentComposer
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  id: '#ctor'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer()
+  nameWithType: ContentComposer.ContentComposer()
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer()
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 62
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer with no initial content.
+  example: []
+  syntax:
+    content: public ContentComposer()
+    content.vb: Public Sub New()
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New()
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New()
+  name.vb: New()
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.Text.Encoding,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.Text.Encoding,System.String)
+  id: '#ctor(System.String,System.Text.Encoding,System.String)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer(string, Encoding?, string?)
+  nameWithType: ContentComposer.ContentComposer(string, Encoding?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(string, System.Text.Encoding?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 74
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer and adds string content automatically determining the media type.
+  remarks: The content type is determined based on whether the data is valid JSON or XML. If neither, 'text/plain' is used.
+  example: []
+  syntax:
+    content: public ContentComposer(string data, Encoding? encoding = null, string? name = null)
+    parameters:
+    - id: data
+      type: System.String
+      description: The string data to be added as content.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for the content. Defaults to UTF-8 if not specified.
+    - id: name
+      type: System.String
+      description: An optional name for the content part in a multipart form data context.
+    content.vb: Public Sub New(data As String, encoding As Encoding = Nothing, name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New(String, Encoding, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(String, System.Text.Encoding, String)
+  name.vb: New(String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  id: '#ctor(System.Collections.Generic.Dictionary{System.String,System.String},System.String)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer(Dictionary<string, string>, string?)
+  nameWithType: ContentComposer.ContentComposer(Dictionary<string, string>, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(System.Collections.Generic.Dictionary<string, string>, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 87
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer with form URL encoded content from a dictionary.
+  remarks: This constructor is ideal for constructing content for HTTP POST requests using 'application/x-www-form-urlencoded'.
+  example: []
+  syntax:
+    content: public ContentComposer(Dictionary<string, string> formData, string? name = null)
+    parameters:
+    - id: formData
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The form data as a dictionary of key-value pairs.
+    - id: name
+      type: System.String
+      description: An optional name for the content part in multipart form data.
+    content.vb: Public Sub New(formData As Dictionary(Of String, String), name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New(Dictionary(Of String, String), String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: New(Dictionary(Of String, String), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Byte[],System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.Byte[],System.String)
+  id: '#ctor(System.Byte[],System.String)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer(byte[], string?)
+  nameWithType: ContentComposer.ContentComposer(byte[], string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(byte[], string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 100
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer and adds byte array content.
+  remarks: The content type for the byte array is set to 'application/octet-stream' by default.
+  example: []
+  syntax:
+    content: public ContentComposer(byte[] bytes, string? name = null)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array to be added as content.
+    - id: name
+      type: System.String
+      description: An optional name for the content part, useful in multipart form data scenarios.
+    content.vb: Public Sub New(bytes As Byte(), name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New(Byte(), String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(Byte(), String)
+  name.vb: New(Byte(), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.String,System.Text.Encoding,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.String,System.String,System.Text.Encoding,System.String)
+  id: '#ctor(System.String,System.String,System.Text.Encoding,System.String)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer(string, string, Encoding?, string?)
+  nameWithType: ContentComposer.ContentComposer(string, string, Encoding?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(string, string, System.Text.Encoding?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 115
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer and adds plain string content with a specified media type.
+  remarks: This method directly adds string content with the specified media type, useful for simple text-based content types.
+  example: []
+  syntax:
+    content: public ContentComposer(string data, string mediaType, Encoding? encoding = null, string? name = null)
+    parameters:
+    - id: data
+      type: System.String
+      description: The string data to add as content.
+    - id: mediaType
+      type: System.String
+      description: The media type to use for the content (e.g., "text/plain", "application/json").
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding of the string content, defaulting to UTF-8 if not specified.
+    - id: name
+      type: System.String
+      description: An optional descriptor for the content part, useful in multipart scenarios.
+    content.vb: Public Sub New(data As String, mediaType As String, encoding As Encoding = Nothing, name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New(String, String, Encoding, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(String, String, System.Text.Encoding, String)
+  name.vb: New(String, String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.IO.Stream,System.String,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor(System.IO.Stream,System.String,System.String)
+  id: '#ctor(System.IO.Stream,System.String,System.String)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: ContentComposer(Stream, string?, string?)
+  nameWithType: ContentComposer.ContentComposer(Stream, string?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer(System.IO.Stream, string?, string?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 129
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of the ContentComposer and adds stream content, suitable for large data uploads like files.
+  remarks: Stream content is not read into memory all at once, making this method suitable for large file uploads.
+  example: []
+  syntax:
+    content: public ContentComposer(Stream stream, string? name = null, string? filename = null)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream representing the content to be uploaded.
+    - id: name
+      type: System.String
+      description: An optional name for the content part, used in multipart form data.
+    - id: filename
+      type: System.String
+      description: An optional filename for the content part, used when adding file-based content in multipart form data.
+    content.vb: Public Sub New(stream As Stream, name As String = Nothing, filename As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  nameWithType.vb: ContentComposer.New(Stream, String, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New(System.IO.Stream, String, String)
+  name.vb: New(Stream, String, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  id: AddPlainStringContent(System.String,System.String,System.Text.Encoding,System.String)
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: AddPlainStringContent(string, string, Encoding?, string?)
+  nameWithType: ContentComposer.AddPlainStringContent(string, string, Encoding?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(string, string, System.Text.Encoding?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddPlainStringContent
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 144
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Adds plain string content with a specified media type to the content composer.
+  remarks: This method directly adds string content with the specified media type, useful for simple text-based content types.
+  example: []
+  syntax:
+    content: public void AddPlainStringContent(string data, string mediaType, Encoding? encoding = null, string? name = null)
+    parameters:
+    - id: data
+      type: System.String
+      description: The string data to add as content.
+    - id: mediaType
+      type: System.String
+      description: The media type to use for the content (e.g., "text/plain", "application/json").
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding of the string content, defaulting to UTF-8 if not specified.
+    - id: name
+      type: System.String
+      description: An optional descriptor for the content part, useful in multipart scenarios.
+    content.vb: Public Sub AddPlainStringContent(data As String, mediaType As String, encoding As Encoding = Nothing, name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent*
+  nameWithType.vb: ContentComposer.AddPlainStringContent(String, String, Encoding, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent(String, String, System.Text.Encoding, String)
+  name.vb: AddPlainStringContent(String, String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  id: AddAutoStringContent(System.String,System.Text.Encoding,System.String)
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: AddAutoStringContent(string, Encoding?, string?)
+  nameWithType: ContentComposer.AddAutoStringContent(string, Encoding?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(string, System.Text.Encoding?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddAutoStringContent
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 160
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Adds string content to the composer, automatically determining the appropriate media type based on the content.
+  remarks: >-
+    This method checks if the data is valid JSON or XML and sets the content type accordingly.
+
+    If neither JSON nor XML is detected, the content type defaults to 'text/plain'.
+  example: []
+  syntax:
+    content: public void AddAutoStringContent(string data, Encoding? encoding = null, string? name = null)
+    parameters:
+    - id: data
+      type: System.String
+      description: The string data to be added as content.
+    - id: encoding
+      type: System.Text.Encoding
+      description: The encoding to use for the content. Defaults to UTF-8 if not specified.
+    - id: name
+      type: System.String
+      description: An optional name for the content part in a multipart form data context.
+    content.vb: Public Sub AddAutoStringContent(data As String, encoding As Encoding = Nothing, name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent*
+  nameWithType.vb: ContentComposer.AddAutoStringContent(String, Encoding, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent(String, System.Text.Encoding, String)
+  name.vb: AddAutoStringContent(String, Encoding, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  id: AddFormUrlEncodedContent(System.Collections.Generic.Dictionary{System.String,System.String},System.String)
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: AddFormUrlEncodedContent(Dictionary<string, string>, string?)
+  nameWithType: ContentComposer.AddFormUrlEncodedContent(Dictionary<string, string>, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary<string, string>, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddFormUrlEncodedContent
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 186
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Adds form URL encoded content constructed from a dictionary of key-value pairs.
+  remarks: Use this method to encode dictionary data as 'application/x-www-form-urlencoded', which is commonly used in HTTP POST requests.
+  example: []
+  syntax:
+    content: public void AddFormUrlEncodedContent(Dictionary<string, string> formData, string? name = null)
+    parameters:
+    - id: formData
+      type: System.Collections.Generic.Dictionary{System.String,System.String}
+      description: The dictionary containing form data as key-value pairs.
+    - id: name
+      type: System.String
+      description: An optional name for the content part in multipart form data.
+    content.vb: Public Sub AddFormUrlEncodedContent(formData As Dictionary(Of String, String), name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent*
+  nameWithType.vb: ContentComposer.AddFormUrlEncodedContent(Dictionary(Of String, String), String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent(System.Collections.Generic.Dictionary(Of String, String), String)
+  name.vb: AddFormUrlEncodedContent(Dictionary(Of String, String), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(System.Byte[],System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(System.Byte[],System.String)
+  id: AddByteArrayContent(System.Byte[],System.String)
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: AddByteArrayContent(byte[], string?)
+  nameWithType: ContentComposer.AddByteArrayContent(byte[], string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(byte[], string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddByteArrayContent
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 199
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Adds byte array content to the composer.
+  remarks: This method wraps the provided byte array into a ByteArrayContent and sets the content type to 'application/octet-stream' by default.
+  example: []
+  syntax:
+    content: public void AddByteArrayContent(byte[] bytes, string? name = null)
+    parameters:
+    - id: bytes
+      type: System.Byte[]
+      description: The byte array to be added as content.
+    - id: name
+      type: System.String
+      description: An optional name for the content part, useful in multipart form data scenarios.
+    content.vb: Public Sub AddByteArrayContent(bytes As Byte(), name As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent*
+  nameWithType.vb: ContentComposer.AddByteArrayContent(Byte(), String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent(Byte(), String)
+  name.vb: AddByteArrayContent(Byte(), String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream,System.String,System.String)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream,System.String,System.String)
+  id: AddStreamContent(System.IO.Stream,System.String,System.String)
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: AddStreamContent(Stream, string?, string?)
+  nameWithType: ContentComposer.AddStreamContent(Stream, string?, string?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream, string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddStreamContent
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 215
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Adds stream content to the composer, useful for large data uploads like files.
+  remarks: Stream content is not read into memory all at once, making this method suitable for large file uploads.
+  example: []
+  syntax:
+    content: public void AddStreamContent(Stream stream, string? name = null, string? filename = null)
+    parameters:
+    - id: stream
+      type: System.IO.Stream
+      description: The stream representing the content to be uploaded.
+    - id: name
+      type: System.String
+      description: An optional name for the content part, used in multipart form data.
+    - id: filename
+      type: System.String
+      description: An optional filename for the content part, used when adding file-based content in multipart form data.
+    content.vb: Public Sub AddStreamContent(stream As Stream, name As String = Nothing, filename As String = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent*
+  nameWithType.vb: ContentComposer.AddStreamContent(Stream, String, String)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent(System.IO.Stream, String, String)
+  name.vb: AddStreamContent(Stream, String, String)
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  id: Build
+  parent: Coree.NETStandard.Classes.HttpRequestService.ContentComposer
+  langs:
+  - csharp
+  - vb
+  name: Build()
+  nameWithType: ContentComposer.Build()
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Build
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/ContentComposer.cs
+    startLine: 228
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Consolidates all added content into a single HttpContent instance, suitable for HTTP transmission.
+  remarks: If multiple content pieces are added, they are combined into a MultipartFormDataContent. If only one piece is added, it is returned directly.
+  example: []
+  syntax:
+    content: public HttpContent? Build()
+    return:
+      type: System.Net.Http.HttpContent
+      description: A HttpContent instance containing all the previously added content pieces, or null if no content was added.
+    content.vb: Public Function Build() As HttpContent
+  overload: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build*
+references:
+- uid: Coree.NETStandard.Classes.HttpRequestService
+  commentId: N:Coree.NETStandard.Classes.HttpRequestService
+  href: Coree.html
+  name: Coree.NETStandard.Classes.HttpRequestService
+  nameWithType: Coree.NETStandard.Classes.HttpRequestService
+  fullName: Coree.NETStandard.Classes.HttpRequestService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.HttpRequestService
+    name: HttpRequestService
+    href: Coree.NETStandard.Classes.HttpRequestService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.HttpRequestService
+    name: HttpRequestService
+    href: Coree.NETStandard.Classes.HttpRequestService.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.#ctor
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer__ctor
+  name: ContentComposer
+  nameWithType: ContentComposer.ContentComposer
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.ContentComposer
+  nameWithType.vb: ContentComposer.New
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Text.Encoding
+  commentId: T:System.Text.Encoding
+  parent: System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.encoding
+  name: Encoding
+  nameWithType: Encoding
+  fullName: System.Text.Encoding
+- uid: System.Text
+  commentId: N:System.Text
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text
+  nameWithType: System.Text
+  fullName: System.Text
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+- uid: System.Collections.Generic.Dictionary{System.String,System.String}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, string>
+  nameWithType: Dictionary<string, string>
+  fullName: System.Collections.Generic.Dictionary<string, string>
+  nameWithType.vb: Dictionary(Of String, String)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, String)
+  name.vb: Dictionary(Of String, String)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: System.IO.Stream
+  commentId: T:System.IO.Stream
+  parent: System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.stream
+  name: Stream
+  nameWithType: Stream
+  fullName: System.IO.Stream
+- uid: System.IO
+  commentId: N:System.IO
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.IO
+  nameWithType: System.IO
+  fullName: System.IO
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.IO
+    name: IO
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.io
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddPlainStringContent_System_String_System_String_System_Text_Encoding_System_String_
+  name: AddPlainStringContent
+  nameWithType: ContentComposer.AddPlainStringContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddPlainStringContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddAutoStringContent_System_String_System_Text_Encoding_System_String_
+  name: AddAutoStringContent
+  nameWithType: ContentComposer.AddAutoStringContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddAutoStringContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddFormUrlEncodedContent_System_Collections_Generic_Dictionary_System_String_System_String__System_String_
+  name: AddFormUrlEncodedContent
+  nameWithType: ContentComposer.AddFormUrlEncodedContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddFormUrlEncodedContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddByteArrayContent_System_Byte___System_String_
+  name: AddByteArrayContent
+  nameWithType: ContentComposer.AddByteArrayContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddByteArrayContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_AddStreamContent_System_IO_Stream_System_String_System_String_
+  name: AddStreamContent
+  nameWithType: ContentComposer.AddStreamContent
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.AddStreamContent
+- uid: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+  href: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.html#Coree_NETStandard_Classes_HttpRequestService_ContentComposer_Build
+  name: Build
+  nameWithType: ContentComposer.Build
+  fullName: Coree.NETStandard.Classes.HttpRequestService.ContentComposer.Build
+- uid: System.Net.Http.HttpContent
+  commentId: T:System.Net.Http.HttpContent
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpcontent
+  name: HttpContent
+  nameWithType: HttpContent
+  fullName: System.Net.Http.HttpContent
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http

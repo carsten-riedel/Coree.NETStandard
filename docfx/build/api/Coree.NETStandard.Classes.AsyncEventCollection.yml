@@ -1,0 +1,115 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.AsyncEventCollection
+  commentId: N:Coree.NETStandard.Classes.AsyncEventCollection
+  id: Coree.NETStandard.Classes.AsyncEventCollection
+  children:
+  - Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+  - Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Classes.AsyncEventCollection
+  nameWithType: Coree.NETStandard.Classes.AsyncEventCollection
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+  commentId: T:Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+  href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  name: AsyncEventCollection<T>
+  nameWithType: AsyncEventCollection<T>
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection<T>
+  nameWithType.vb: AsyncEventCollection(Of T)
+  fullName.vb: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection(Of T)
+  name.vb: AsyncEventCollection(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+  commentId: T:Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+  parent: Coree.NETStandard.Classes.AsyncEventCollection
+  href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  name: AsyncEventCollection<T>.CustomEventDelegate
+  nameWithType: AsyncEventCollection<T>.CustomEventDelegate
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection<T>.CustomEventDelegate
+  nameWithType.vb: AsyncEventCollection(Of T).CustomEventDelegate
+  fullName.vb: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection(Of T).CustomEventDelegate
+  name.vb: AsyncEventCollection(Of T).CustomEventDelegate
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+    name: CustomEventDelegate
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.CustomEventDelegate.html
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+    name: CustomEventDelegate
+    href: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection-1.CustomEventDelegate.html
+- uid: Coree.NETStandard.Classes.AsyncEventCollection
+  commentId: N:Coree.NETStandard.Classes.AsyncEventCollection
+  href: Coree.html
+  name: Coree.NETStandard.Classes.AsyncEventCollection
+  nameWithType: Coree.NETStandard.Classes.AsyncEventCollection
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.html

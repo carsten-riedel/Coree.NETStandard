@@ -1,0 +1,1128 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  commentId: T:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  id: TimeOfDay
+  parent: Coree.NETStandard.Classes.TimeOfDay
+  children:
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add(System.TimeSpan)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours(System.Double)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes(System.Double)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds(System.Double)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime(System.Int32,System.Int32,System.Int32,System.Int32)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan(System.TimeSpan)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString(System.String)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract(System.TimeSpan)
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan
+  - Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit(System.String)~Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: TimeOfDay
+  nameWithType: TimeOfDay
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TimeOfDay
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 7
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Represents a specific time of day, independent of any date.
+  example: []
+  syntax:
+    content: public class TimeOfDay
+    content.vb: Public Class TimeOfDay
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+  commentId: P:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+  id: Hour
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Hour
+  nameWithType: TimeOfDay.Hour
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Hour
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 14
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Gets the hour component of the time.
+  example: []
+  syntax:
+    content: public int Hour { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Hour As Integer
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+  commentId: P:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+  id: Minute
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Minute
+  nameWithType: TimeOfDay.Minute
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Minute
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Gets the minute component of the time.
+  example: []
+  syntax:
+    content: public int Minute { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Minute As Integer
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+  commentId: P:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+  id: Second
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Second
+  nameWithType: TimeOfDay.Second
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Second
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 24
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Gets the second component of the time.
+  example: []
+  syntax:
+    content: public int Second { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Second As Integer
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+  commentId: P:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+  id: Millisecond
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Millisecond
+  nameWithType: TimeOfDay.Millisecond
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Millisecond
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 29
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Gets the millisecond component of the time.
+  example: []
+  syntax:
+    content: public int Millisecond { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Millisecond As Integer
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+  commentId: P:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+  id: Ticks
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Ticks
+  nameWithType: TimeOfDay.Ticks
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Ticks
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 34
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Gets the number of ticks that represent the time.
+  example: []
+  syntax:
+    content: public long Ticks { get; }
+    parameters: []
+    return:
+      type: System.Int64
+    content.vb: Public ReadOnly Property Ticks As Long
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32,System.Int32,System.Int32)'
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: TimeOfDay(int, int, int, int)
+  nameWithType: TimeOfDay.TimeOfDay(int, int, int, int)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.TimeOfDay(int, int, int, int)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 44
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Initializes a new instance of the TimeOfDay class to a specified number of hours, minutes, seconds, and milliseconds.
+  example: []
+  syntax:
+    content: public TimeOfDay(int hour = 0, int minute = 0, int second = 0, int millisecond = 0)
+    parameters:
+    - id: hour
+      type: System.Int32
+      description: The hour component of the time.
+    - id: minute
+      type: System.Int32
+      description: The minute component of the time.
+    - id: second
+      type: System.Int32
+      description: The second component of the time.
+    - id: millisecond
+      type: System.Int32
+      description: The millisecond component of the time.
+    content.vb: Public Sub New(hour As Integer = 0, minute As Integer = 0, second As Integer = 0, millisecond As Integer = 0)
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: Thrown when the specified time components are out of their expected range.
+  nameWithType.vb: TimeOfDay.New(Integer, Integer, Integer, Integer)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.New(Integer, Integer, Integer, Integer)
+  name.vb: New(Integer, Integer, Integer, Integer)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan(System.TimeSpan)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan(System.TimeSpan)
+  id: FromTimeSpan(System.TimeSpan)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: FromTimeSpan(TimeSpan)
+  nameWithType: TimeOfDay.FromTimeSpan(TimeSpan)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: FromTimeSpan
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 56
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Creates a TimeOfDay from a TimeSpan object.
+  example: []
+  syntax:
+    content: public static TimeOfDay FromTimeSpan(TimeSpan time)
+    parameters:
+    - id: time
+      type: System.TimeSpan
+      description: The TimeSpan object to convert.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A TimeOfDay object.
+    content.vb: Public Shared Function FromTimeSpan(time As TimeSpan) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString(System.String)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString(System.String)
+  id: FromTimeString(System.String)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: FromTimeString(string)
+  nameWithType: TimeOfDay.FromTimeString(string)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString(string)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: FromTimeString
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 67
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Converts a string representation of a time into a TimeOfDay object.
+  example: []
+  syntax:
+    content: public static TimeOfDay FromTimeString(string timeString)
+    parameters:
+    - id: timeString
+      type: System.String
+      description: A string that represents the time in "hh:mm:ss" format.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A TimeOfDay object.
+    content.vb: Public Shared Function FromTimeString(timeString As String) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString*
+  exceptions:
+  - type: System.FormatException
+    commentId: T:System.FormatException
+    description: Thrown when the time string is not in a valid format.
+  nameWithType.vb: TimeOfDay.FromTimeString(String)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString(String)
+  name.vb: FromTimeString(String)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime(System.Int32,System.Int32,System.Int32,System.Int32)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime(System.Int32,System.Int32,System.Int32,System.Int32)
+  id: FromTime(System.Int32,System.Int32,System.Int32,System.Int32)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: FromTime(int, int, int, int)
+  nameWithType: TimeOfDay.FromTime(int, int, int, int)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime(int, int, int, int)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: FromTime
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 84
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Creates a TimeOfDay from individual time components.
+  example: []
+  syntax:
+    content: public static TimeOfDay FromTime(int hours = 0, int minutes = 0, int seconds = 0, int milliseconds = 0)
+    parameters:
+    - id: hours
+      type: System.Int32
+      description: Hour component.
+    - id: minutes
+      type: System.Int32
+      description: Minute component.
+    - id: seconds
+      type: System.Int32
+      description: Second component.
+    - id: milliseconds
+      type: System.Int32
+      description: Millisecond component.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance.
+    content.vb: Public Shared Function FromTime(hours As Integer = 0, minutes As Integer = 0, seconds As Integer = 0, milliseconds As Integer = 0) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime*
+  nameWithType.vb: TimeOfDay.FromTime(Integer, Integer, Integer, Integer)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime(Integer, Integer, Integer, Integer)
+  name.vb: FromTime(Integer, Integer, Integer, Integer)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan
+  id: ToTimeSpan
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: ToTimeSpan()
+  nameWithType: TimeOfDay.ToTimeSpan()
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ToTimeSpan
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 93
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Converts this TimeOfDay instance to a TimeSpan.
+  example: []
+  syntax:
+    content: public TimeSpan ToTimeSpan()
+    return:
+      type: System.TimeSpan
+      description: A TimeSpan that represents the time.
+    content.vb: Public Function ToTimeSpan() As TimeSpan
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds(System.Double)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds(System.Double)
+  id: AddSeconds(System.Double)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: AddSeconds(double)
+  nameWithType: TimeOfDay.AddSeconds(double)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds(double)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddSeconds
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 103
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Adds a specified number of seconds to this TimeOfDay instance.
+  example: []
+  syntax:
+    content: public TimeOfDay AddSeconds(double duration)
+    parameters:
+    - id: duration
+      type: System.Double
+      description: The number of seconds to add.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance representing the added time.
+    content.vb: Public Function AddSeconds(duration As Double) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds*
+  nameWithType.vb: TimeOfDay.AddSeconds(Double)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds(Double)
+  name.vb: AddSeconds(Double)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes(System.Double)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes(System.Double)
+  id: AddMinutes(System.Double)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: AddMinutes(double)
+  nameWithType: TimeOfDay.AddMinutes(double)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes(double)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddMinutes
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 113
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Adds a specified number of minutes to this TimeOfDay instance.
+  example: []
+  syntax:
+    content: public TimeOfDay AddMinutes(double duration)
+    parameters:
+    - id: duration
+      type: System.Double
+      description: The number of minutes to add.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance representing the added time.
+    content.vb: Public Function AddMinutes(duration As Double) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes*
+  nameWithType.vb: TimeOfDay.AddMinutes(Double)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes(Double)
+  name.vb: AddMinutes(Double)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours(System.Double)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours(System.Double)
+  id: AddHours(System.Double)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: AddHours(double)
+  nameWithType: TimeOfDay.AddHours(double)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours(double)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: AddHours
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 123
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Adds a specified number of hours to this TimeOfDay instance.
+  example: []
+  syntax:
+    content: public TimeOfDay AddHours(double duration)
+    parameters:
+    - id: duration
+      type: System.Double
+      description: The number of hours to add.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance representing the added time.
+    content.vb: Public Function AddHours(duration As Double) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours*
+  nameWithType.vb: TimeOfDay.AddHours(Double)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours(Double)
+  name.vb: AddHours(Double)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add(System.TimeSpan)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add(System.TimeSpan)
+  id: Add(System.TimeSpan)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Add(TimeSpan)
+  nameWithType: TimeOfDay.Add(TimeSpan)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Add
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 133
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Adds a TimeSpan to this TimeOfDay instance.
+  example: []
+  syntax:
+    content: public TimeOfDay Add(TimeSpan duration)
+    parameters:
+    - id: duration
+      type: System.TimeSpan
+      description: The TimeSpan to add.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance representing the added time.
+    content.vb: Public Function Add(duration As TimeSpan) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract(System.TimeSpan)
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract(System.TimeSpan)
+  id: Subtract(System.TimeSpan)
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: Subtract(TimeSpan)
+  nameWithType: TimeOfDay.Subtract(TimeSpan)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract(System.TimeSpan)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Subtract
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 145
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Subtracts a TimeSpan from this TimeOfDay instance.
+  example: []
+  syntax:
+    content: public TimeOfDay Subtract(TimeSpan duration)
+    parameters:
+    - id: duration
+      type: System.TimeSpan
+      description: The TimeSpan to subtract.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A new TimeOfDay instance representing the subtracted time.
+    content.vb: Public Function Subtract(duration As TimeSpan) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract*
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit(System.String)~Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit(System.String)~Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  id: op_Implicit(System.String)~Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: implicit operator TimeOfDay(string)
+  nameWithType: TimeOfDay.implicit operator TimeOfDay(string)
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.implicit operator Coree.NETStandard.Classes.TimeOfDay.TimeOfDay(string)
+  type: Operator
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: op_Implicit
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 160
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Defines an implicit conversion of a string to a TimeOfDay.
+  example: []
+  syntax:
+    content: public static implicit operator TimeOfDay(string timeString)
+    parameters:
+    - id: timeString
+      type: System.String
+      description: The string to convert to TimeOfDay.
+    return:
+      type: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+      description: A TimeOfDay equivalent to the time contained in the string.
+    content.vb: Public Shared Widening Operator CType(timeString As String) As TimeOfDay
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit*
+  nameWithType.vb: TimeOfDay.CType(String)
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.CType(String)
+  name.vb: CType(String)
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString
+  commentId: M:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString
+  id: ToString
+  parent: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  langs:
+  - csharp
+  - vb
+  name: ToString()
+  nameWithType: TimeOfDay.ToString()
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ToString
+    path: ../../src/Projects/Coree.NETStandard/Classes/TimeOfDay/TimeOfDay.cs
+    startLine: 169
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.TimeOfDay
+  summary: Returns a string that represents the current object.
+  example: []
+  syntax:
+    content: public override string ToString()
+    return:
+      type: System.String
+      description: A string that represents the current object in "hh:mm:ss" format.
+    content.vb: Public Overrides Function ToString() As String
+  overridden: System.Object.ToString
+  overload: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString*
+references:
+- uid: Coree.NETStandard.Classes.TimeOfDay
+  commentId: N:Coree.NETStandard.Classes.TimeOfDay
+  href: Coree.html
+  name: Coree.NETStandard.Classes.TimeOfDay
+  nameWithType: Coree.NETStandard.Classes.TimeOfDay
+  fullName: Coree.NETStandard.Classes.TimeOfDay
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.TimeOfDay
+    name: TimeOfDay
+    href: Coree.NETStandard.Classes.TimeOfDay.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.TimeOfDay
+    name: TimeOfDay
+    href: Coree.NETStandard.Classes.TimeOfDay.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Hour
+  name: Hour
+  nameWithType: TimeOfDay.Hour
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Hour
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Minute
+  name: Minute
+  nameWithType: TimeOfDay.Minute
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Minute
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Second
+  name: Second
+  nameWithType: TimeOfDay.Second
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Second
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Millisecond
+  name: Millisecond
+  nameWithType: TimeOfDay.Millisecond
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Millisecond
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Ticks
+  name: Ticks
+  nameWithType: TimeOfDay.Ticks
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Ticks
+- uid: System.Int64
+  commentId: T:System.Int64
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int64
+  name: long
+  nameWithType: long
+  fullName: long
+  nameWithType.vb: Long
+  fullName.vb: Long
+  name.vb: Long
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.#ctor
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay__ctor_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: TimeOfDay
+  nameWithType: TimeOfDay.TimeOfDay
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.TimeOfDay
+  nameWithType.vb: TimeOfDay.New
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.New
+  name.vb: New
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_FromTimeSpan_System_TimeSpan_
+  name: FromTimeSpan
+  nameWithType: TimeOfDay.FromTimeSpan
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeSpan
+- uid: System.TimeSpan
+  commentId: T:System.TimeSpan
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.timespan
+  name: TimeSpan
+  nameWithType: TimeSpan
+  fullName: System.TimeSpan
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  commentId: T:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+  parent: Coree.NETStandard.Classes.TimeOfDay
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html
+  name: TimeOfDay
+  nameWithType: TimeOfDay
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay
+- uid: System.FormatException
+  commentId: T:System.FormatException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.formatexception
+  name: FormatException
+  nameWithType: FormatException
+  fullName: System.FormatException
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_FromTimeString_System_String_
+  name: FromTimeString
+  nameWithType: TimeOfDay.FromTimeString
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTimeString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_FromTime_System_Int32_System_Int32_System_Int32_System_Int32_
+  name: FromTime
+  nameWithType: TimeOfDay.FromTime
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.FromTime
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_ToTimeSpan
+  name: ToTimeSpan
+  nameWithType: TimeOfDay.ToTimeSpan
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToTimeSpan
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_AddSeconds_System_Double_
+  name: AddSeconds
+  nameWithType: TimeOfDay.AddSeconds
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddSeconds
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_AddMinutes_System_Double_
+  name: AddMinutes
+  nameWithType: TimeOfDay.AddMinutes
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddMinutes
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_AddHours_System_Double_
+  name: AddHours
+  nameWithType: TimeOfDay.AddHours
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.AddHours
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Add_System_TimeSpan_
+  name: Add
+  nameWithType: TimeOfDay.Add
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Add
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_Subtract_System_TimeSpan_
+  name: Subtract
+  nameWithType: TimeOfDay.Subtract
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.Subtract
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.op_Implicit
+  name: implicit operator
+  nameWithType: TimeOfDay.implicit operator
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.implicit operator
+  nameWithType.vb: TimeOfDay.CType
+  fullName.vb: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.CType
+  name.vb: CType
+  spec.csharp:
+  - name: implicit
+  - name: " "
+  - name: operator
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString*
+  commentId: Overload:Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString
+  href: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.html#Coree_NETStandard_Classes_TimeOfDay_TimeOfDay_ToString
+  name: ToString
+  nameWithType: TimeOfDay.ToString
+  fullName: Coree.NETStandard.Classes.TimeOfDay.TimeOfDay.ToString

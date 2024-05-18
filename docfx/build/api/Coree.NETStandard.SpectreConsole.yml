@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.SpectreConsole
+  commentId: N:Coree.NETStandard.SpectreConsole
+  id: Coree.NETStandard.SpectreConsole
+  children:
+  - Coree.NETStandard.SpectreConsole.CommandAppExtensions
+  - Coree.NETStandard.SpectreConsole.HostBuilderExtensions
+  - Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  - Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.SpectreConsole
+  nameWithType: Coree.NETStandard.SpectreConsole
+  fullName: Coree.NETStandard.SpectreConsole
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.SpectreConsole.CommandAppExtensions
+  commentId: T:Coree.NETStandard.SpectreConsole.CommandAppExtensions
+  href: Coree.NETStandard.SpectreConsole.CommandAppExtensions.html
+  name: CommandAppExtensions
+  nameWithType: CommandAppExtensions
+  fullName: Coree.NETStandard.SpectreConsole.CommandAppExtensions
+- uid: Coree.NETStandard.SpectreConsole.HostBuilderExtensions
+  commentId: T:Coree.NETStandard.SpectreConsole.HostBuilderExtensions
+  href: Coree.NETStandard.SpectreConsole.HostBuilderExtensions.html
+  name: HostBuilderExtensions
+  nameWithType: HostBuilderExtensions
+  fullName: Coree.NETStandard.SpectreConsole.HostBuilderExtensions
+- uid: Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions
+  commentId: T:Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions
+  href: Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions.html
+  name: ServiceCollectionExtensions
+  nameWithType: ServiceCollectionExtensions
+  fullName: Coree.NETStandard.SpectreConsole.ServiceCollectionExtensions
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  name: SpectreConsoleHostedService
+  nameWithType: SpectreConsoleHostedService
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  parent: Coree.NETStandard.SpectreConsole
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  name: SpectreConsoleHostedService.ExitCode
+  nameWithType: SpectreConsoleHostedService.ExitCode
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+  spec.csharp:
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+    name: SpectreConsoleHostedService
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+    name: ExitCode
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.html
+  spec.vb:
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService
+    name: SpectreConsoleHostedService
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode
+    name: ExitCode
+    href: Coree.NETStandard.SpectreConsole.SpectreConsoleHostedService.ExitCode.html
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar.html
+  name: SpectreConsoleTypeRegistrar
+  nameWithType: SpectreConsoleTypeRegistrar
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeRegistrar
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+  href: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html
+  name: SpectreConsoleTypeResolver
+  nameWithType: SpectreConsoleTypeResolver
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
+- uid: Coree.NETStandard.SpectreConsole
+  commentId: N:Coree.NETStandard.SpectreConsole
+  href: Coree.html
+  name: Coree.NETStandard.SpectreConsole
+  nameWithType: Coree.NETStandard.SpectreConsole
+  fullName: Coree.NETStandard.SpectreConsole
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.SpectreConsole
+    name: SpectreConsole
+    href: Coree.NETStandard.SpectreConsole.html

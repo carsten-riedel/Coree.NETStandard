@@ -1,0 +1,286 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+  commentId: T:Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection`1.CustomEventDelegate
+  id: AsyncEventCollection`1.CustomEventDelegate
+  parent: Coree.NETStandard.Classes.AsyncEventCollection
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: AsyncEventCollection<T>.CustomEventDelegate
+  nameWithType: AsyncEventCollection<T>.CustomEventDelegate
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection<T>.CustomEventDelegate
+  type: Delegate
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/AsyncEventCollection/AsyncEventCollection.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CustomEventDelegate
+    path: ../../src/Projects/Coree.NETStandard/Classes/AsyncEventCollection/AsyncEventCollection.cs
+    startLine: 27
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.AsyncEventCollection
+  summary: Defines a delegate for custom event handlers that support asynchronous operations.
+  example: []
+  syntax:
+    content: public delegate Task AsyncEventCollection<T>.CustomEventDelegate(object sender, ThreadSafeCollection<T> collection, CancellationToken cancellationToken, string dispatchKey)
+    parameters:
+    - id: sender
+      type: System.Object
+      description: The source of the event.
+    - id: collection
+      type: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection{{T}}
+      description: The thread-safe collection associated with the event.
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: A cancellation token that can be used to cancel the event handling.
+    - id: dispatchKey
+      type: System.String
+      description: A key used to identify the dispatch operation.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Delegate Function AsyncEventCollection(Of T).CustomEventDelegate(sender As Object, collection As ThreadSafeCollection(Of T), cancellationToken As CancellationToken, dispatchKey As String) As Task
+  nameWithType.vb: AsyncEventCollection(Of T).CustomEventDelegate
+  fullName.vb: Coree.NETStandard.Classes.AsyncEventCollection.AsyncEventCollection(Of T).CustomEventDelegate
+  name.vb: AsyncEventCollection(Of T).CustomEventDelegate
+references:
+- uid: Coree.NETStandard.Classes.AsyncEventCollection
+  commentId: N:Coree.NETStandard.Classes.AsyncEventCollection
+  href: Coree.html
+  name: Coree.NETStandard.Classes.AsyncEventCollection
+  nameWithType: Coree.NETStandard.Classes.AsyncEventCollection
+  fullName: Coree.NETStandard.Classes.AsyncEventCollection
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.AsyncEventCollection
+    name: AsyncEventCollection
+    href: Coree.NETStandard.Classes.AsyncEventCollection.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection{{T}}
+  commentId: T:Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection{`0}
+  parent: Coree.NETStandard.Classes.ThreadSafeCollection
+  definition: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+  href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  name: ThreadSafeCollection<T>
+  nameWithType: ThreadSafeCollection<T>
+  fullName: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection<T>
+  nameWithType.vb: ThreadSafeCollection(Of T)
+  fullName.vb: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection(Of T)
+  name.vb: ThreadSafeCollection(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+  commentId: T:Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+  href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  name: ThreadSafeCollection<T>
+  nameWithType: ThreadSafeCollection<T>
+  fullName: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection<T>
+  nameWithType.vb: ThreadSafeCollection(Of T)
+  fullName.vb: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection(Of T)
+  name.vb: ThreadSafeCollection(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection`1
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.ThreadSafeCollection-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Classes.ThreadSafeCollection
+  commentId: N:Coree.NETStandard.Classes.ThreadSafeCollection
+  href: Coree.html
+  name: Coree.NETStandard.Classes.ThreadSafeCollection
+  nameWithType: Coree.NETStandard.Classes.ThreadSafeCollection
+  fullName: Coree.NETStandard.Classes.ThreadSafeCollection
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.ThreadSafeCollection
+    name: ThreadSafeCollection
+    href: Coree.NETStandard.Classes.ThreadSafeCollection.html
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

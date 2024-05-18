@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Abstractions.DependencySingleton
+  commentId: N:Coree.NETStandard.Abstractions.DependencySingleton
+  id: Coree.NETStandard.Abstractions.DependencySingleton
+  children:
+  - Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton`1
+  - Coree.NETStandard.Abstractions.DependencySingleton.IDependencySingleton
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Abstractions.DependencySingleton
+  nameWithType: Coree.NETStandard.Abstractions.DependencySingleton
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton`1
+  commentId: T:Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton`1
+  href: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton-1.html
+  name: DependencySingleton<T>
+  nameWithType: DependencySingleton<T>
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton<T>
+  nameWithType.vb: DependencySingleton(Of T)
+  fullName.vb: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton(Of T)
+  name.vb: DependencySingleton(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton`1
+    name: DependencySingleton
+    href: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton`1
+    name: DependencySingleton
+    href: Coree.NETStandard.Abstractions.DependencySingleton.DependencySingleton-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Abstractions.DependencySingleton.IDependencySingleton
+  commentId: T:Coree.NETStandard.Abstractions.DependencySingleton.IDependencySingleton
+  parent: Coree.NETStandard.Abstractions.DependencySingleton
+  href: Coree.NETStandard.Abstractions.DependencySingleton.IDependencySingleton.html
+  name: IDependencySingleton
+  nameWithType: IDependencySingleton
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton.IDependencySingleton
+- uid: Coree.NETStandard.Abstractions.DependencySingleton
+  commentId: N:Coree.NETStandard.Abstractions.DependencySingleton
+  href: Coree.html
+  name: Coree.NETStandard.Abstractions.DependencySingleton
+  nameWithType: Coree.NETStandard.Abstractions.DependencySingleton
+  fullName: Coree.NETStandard.Abstractions.DependencySingleton
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.DependencySingleton
+    name: DependencySingleton
+    href: Coree.NETStandard.Abstractions.DependencySingleton.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.DependencySingleton
+    name: DependencySingleton
+    href: Coree.NETStandard.Abstractions.DependencySingleton.html

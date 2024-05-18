@@ -1,0 +1,1957 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  id: RuntimeInsightsService
+  parent: Coree.NETStandard.Services.RuntimeInsightsService
+  children:
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  - Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  langs:
+  - csharp
+  - vb
+  name: RuntimeInsightsService
+  nameWithType: RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: RuntimeInsightsService
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 20
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Manages and provides access to runtime and system insights.
+  example: []
+  syntax:
+    content: 'public class RuntimeInsightsService : ServiceFactory<RuntimeInsightsService>, IDisposable, IRuntimeInsightsService'
+    content.vb: Public Class RuntimeInsightsService Inherits ServiceFactory(Of RuntimeInsightsService) Implements IDisposable, IRuntimeInsightsService
+  inheritance:
+  - System.Object
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  implements:
+  - System.IDisposable
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  inheritedMembers:
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService})'
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: RuntimeInsightsService(ILogger<RuntimeInsightsService>?)
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService(ILogger<RuntimeInsightsService>?)
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.RuntimeInsightsService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 33
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Initializes a new instance of the <xref href="Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    The logger provided here can be used with the field within the class.
+
+    Be mindful that the logger may be null in scenarios where it's not explicitly provided.
+  example: []
+  syntax:
+    content: public RuntimeInsightsService(ILogger<RuntimeInsightsService>? logger = null)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+      description: Optional logger instance for logging purposes.
+    content.vb: Public Sub New(logger As ILogger(Of RuntimeInsightsService) = Nothing)
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor*
+  nameWithType.vb: RuntimeInsightsService.New(ILogger(Of RuntimeInsightsService))
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService))
+  name.vb: New(ILogger(Of RuntimeInsightsService))
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+  id: IsDebugBuild
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: IsDebugBuild()
+  nameWithType: RuntimeInsightsService.IsDebugBuild()
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsDebugBuild
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 46
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Checks if the current build is a debug build.
+  example: []
+  syntax:
+    content: public bool? IsDebugBuild()
+    return:
+      type: System.Nullable{System.Boolean}
+      description: >-
+        True if the current build is a debug build; otherwise, false.
+
+        If the operation is canceled or an exception occurs, returns null.
+    content.vb: Public Function IsDebugBuild() As Boolean?
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  id: IsDebugBuildAsync(System.Threading.CancellationToken)
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: IsDebugBuildAsync(CancellationToken)
+  nameWithType: RuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsDebugBuildAsync
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 60
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Checks if the current build is a debug build.
+  example: []
+  syntax:
+    content: public Task<bool?> IsDebugBuildAsync(CancellationToken cancellationToken = default)
+    parameters:
+    - id: cancellationToken
+      type: System.Threading.CancellationToken
+      description: The cancellation token to cancel the operation.
+    return:
+      type: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+      description: >-
+        True if the current build is a debug build; otherwise, false.
+
+        If the operation is canceled or an exception occurs, returns null.
+    content.vb: Public Function IsDebugBuildAsync(cancellationToken As CancellationToken = Nothing) As Task(Of Boolean?)
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+  id: IsDevelopmentBuild
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: IsDevelopmentBuild()
+  nameWithType: RuntimeInsightsService.IsDevelopmentBuild()
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsDevelopmentBuild
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 100
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Checks if the current build is a debug build.
+  example: []
+  syntax:
+    content: public static bool IsDevelopmentBuild()
+    return:
+      type: System.Boolean
+      description: True if the current build is a debug build; otherwise, false.
+    content.vb: Public Shared Function IsDevelopmentBuild() As Boolean
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild*
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  id: EntryAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: EntryAssemblyName
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 119
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the name of the entry assembly.
+  example: []
+  syntax:
+    content: public string? EntryAssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EntryAssemblyName As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  id: ExecutingAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ExecutingAssemblyName
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 124
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the name of the executing assembly.
+  example: []
+  syntax:
+    content: public string? ExecutingAssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ExecutingAssemblyName As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  id: CallingAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CallingAssemblyName
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 129
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the name of the calling assembly.
+  example: []
+  syntax:
+    content: public string? CallingAssemblyName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CallingAssemblyName As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  id: CurrentProcessMainModuleName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CurrentProcessMainModuleName
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 134
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the main module name of the current process.
+  example: []
+  syntax:
+    content: public string? CurrentProcessMainModuleName { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CurrentProcessMainModuleName As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  id: CurrentProcessMainModuleFilename
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CurrentProcessMainModuleFilename
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 139
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the main module filename of the current process.
+  example: []
+  syntax:
+    content: public string? CurrentProcessMainModuleFilename { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CurrentProcessMainModuleFilename As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  id: OSArchitecture
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: OSArchitecture
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 144
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the OS architecture.
+  example: []
+  syntax:
+    content: public string? OSArchitecture { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property OSArchitecture As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  id: ProcessArchitecture
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ProcessArchitecture
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 149
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the process architecture.
+  example: []
+  syntax:
+    content: public string? ProcessArchitecture { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property ProcessArchitecture As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  id: EnvironmentCommandLine
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: EnvironmentCommandLine
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 154
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the command line used to start the environment.
+  example: []
+  syntax:
+    content: public string? EnvironmentCommandLine { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property EnvironmentCommandLine As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  id: CurrentDirectory
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CurrentDirectory
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 159
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the current working directory.
+  example: []
+  syntax:
+    content: public string? CurrentDirectory { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property CurrentDirectory As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  id: Username
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  langs:
+  - csharp
+  - vb
+  name: Username
+  nameWithType: RuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Username
+    path: ../../src/Projects/Coree.NETStandard/Services/RuntimeInsightsService/RuntimeInsightsService.cs
+    startLine: 164
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.RuntimeInsightsService
+  summary: Gets the username of the process owner.
+  example: []
+  syntax:
+    content: public string? Username { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Username As String
+  overload: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username*
+  implements:
+  - Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+references:
+- uid: Coree.NETStandard.Services.RuntimeInsightsService
+  commentId: N:Coree.NETStandard.Services.RuntimeInsightsService
+  href: Coree.html
+  name: Coree.NETStandard.Services.RuntimeInsightsService
+  nameWithType: Coree.NETStandard.Services.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  commentId: T:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  parent: Coree.NETStandard.Abstractions.ServiceFactory
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  name: ServiceFactory<RuntimeInsightsService>
+  nameWithType: ServiceFactory<RuntimeInsightsService>
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService)
+  name.vb: ServiceFactory(Of RuntimeInsightsService)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: <
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  parent: Coree.NETStandard.Services.RuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html
+  name: IRuntimeInsightsService
+  nameWithType: IRuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IHostBuilder>)
+  nameWithType: ServiceFactory<RuntimeInsightsService>.CreateServiceFactory(Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.CreateServiceFactory(System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).CreateServiceFactory(Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  name: CreateServiceFactory(Action<IServiceCollection>)
+  nameWithType: ServiceFactory<RuntimeInsightsService>.CreateServiceFactory(Action<IServiceCollection>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).CreateServiceFactory(Action(Of IServiceCollection))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  nameWithType: ServiceFactory<RuntimeInsightsService>.CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>, System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection), System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder), System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  name: CreateServiceFactory()
+  nameWithType: ServiceFactory<RuntimeInsightsService>.CreateServiceFactory()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.CreateServiceFactory()
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).CreateServiceFactory()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).CreateServiceFactory()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  name: CreateServiceFactory(LogLevel)
+  nameWithType: ServiceFactory<RuntimeInsightsService>.CreateServiceFactory(LogLevel)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).CreateServiceFactory(LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.Dispose
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.Dispose
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  name: Dispose()
+  nameWithType: ServiceFactory<RuntimeInsightsService>.Dispose()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>.Dispose()
+  nameWithType.vb: ServiceFactory(Of RuntimeInsightsService).Dispose()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService).Dispose()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  commentId: T:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  name: ServiceFactory<T>
+  nameWithType: ServiceFactory<T>
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>
+  nameWithType.vb: ServiceFactory(Of T)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T)
+  name.vb: ServiceFactory(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory
+  commentId: N:Coree.NETStandard.Abstractions.ServiceFactory
+  href: Coree.html
+  name: Coree.NETStandard.Abstractions.ServiceFactory
+  nameWithType: Coree.NETStandard.Abstractions.ServiceFactory
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.html
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IHostBuilder>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  name: CreateServiceFactory(Action<IServiceCollection>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IServiceCollection>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IServiceCollection))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>, System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection), System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder), System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  name: CreateServiceFactory()
+  nameWithType: ServiceFactory<T>.CreateServiceFactory()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory()
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  name: CreateServiceFactory(LogLevel)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(LogLevel)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  name: Dispose()
+  nameWithType: ServiceFactory<T>.Dispose()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.Dispose()
+  nameWithType.vb: ServiceFactory(Of T).Dispose()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).Dispose()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  commentId: T:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  name: RuntimeInsightsService
+  nameWithType: RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.#ctor
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService__
+  name: RuntimeInsightsService
+  nameWithType: RuntimeInsightsService.RuntimeInsightsService
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.RuntimeInsightsService
+  nameWithType.vb: RuntimeInsightsService.New
+  fullName.vb: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<RuntimeInsightsService>
+  nameWithType: ILogger<RuntimeInsightsService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService>
+  nameWithType.vb: ILogger(Of RuntimeInsightsService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService)
+  name.vb: ILogger(Of RuntimeInsightsService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService
+    name: RuntimeInsightsService
+    href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuild
+  name: IsDebugBuild
+  nameWithType: RuntimeInsightsService.IsDebugBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuild
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuild
+  name: IsDebugBuild()
+  nameWithType: IRuntimeInsightsService.IsDebugBuild()
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild()
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+    name: IsDebugBuild
+    href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuild
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuild
+    name: IsDebugBuild
+    href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuild
+  - name: (
+  - name: )
+- uid: System.Nullable{System.Boolean}
+  commentId: T:System.Nullable{System.Boolean}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool?
+  nameWithType: bool?
+  fullName: bool?
+  nameWithType.vb: Boolean?
+  fullName.vb: Boolean?
+  name.vb: Boolean?
+  spec.csharp:
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  spec.vb:
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  name: IsDebugBuildAsync
+  nameWithType: RuntimeInsightsService.IsDebugBuildAsync
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDebugBuildAsync
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  commentId: M:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  isExternal: true
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  name: IsDebugBuildAsync(CancellationToken)
+  nameWithType: IRuntimeInsightsService.IsDebugBuildAsync(CancellationToken)
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+    name: IsDebugBuildAsync
+    href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.IsDebugBuildAsync(System.Threading.CancellationToken)
+    name: IsDebugBuildAsync
+    href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_IsDebugBuildAsync_System_Threading_CancellationToken_
+  - name: (
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: )
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  commentId: T:System.Threading.Tasks.Task{System.Nullable{System.Boolean}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<bool?>
+  nameWithType: Task<bool?>
+  fullName: System.Threading.Tasks.Task<bool?>
+  nameWithType.vb: Task(Of Boolean?)
+  fullName.vb: System.Threading.Tasks.Task(Of Boolean?)
+  name.vb: Task(Of Boolean?)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: '?'
+  - name: )
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_IsDevelopmentBuild
+  name: IsDevelopmentBuild
+  nameWithType: RuntimeInsightsService.IsDevelopmentBuild
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.IsDevelopmentBuild
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EntryAssemblyName
+  name: EntryAssemblyName
+  nameWithType: RuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EntryAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EntryAssemblyName
+  name: EntryAssemblyName
+  nameWithType: IRuntimeInsightsService.EntryAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EntryAssemblyName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  nameWithType: RuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ExecutingAssemblyName
+  name: ExecutingAssemblyName
+  nameWithType: IRuntimeInsightsService.ExecutingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ExecutingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CallingAssemblyName
+  name: CallingAssemblyName
+  nameWithType: RuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CallingAssemblyName
+  name: CallingAssemblyName
+  nameWithType: IRuntimeInsightsService.CallingAssemblyName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CallingAssemblyName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleName
+  name: CurrentProcessMainModuleName
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleName
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleName
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  nameWithType: RuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentProcessMainModuleFilename
+  name: CurrentProcessMainModuleFilename
+  nameWithType: IRuntimeInsightsService.CurrentProcessMainModuleFilename
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentProcessMainModuleFilename
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_OSArchitecture
+  name: OSArchitecture
+  nameWithType: RuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_OSArchitecture
+  name: OSArchitecture
+  nameWithType: IRuntimeInsightsService.OSArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.OSArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_ProcessArchitecture
+  name: ProcessArchitecture
+  nameWithType: RuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_ProcessArchitecture
+  name: ProcessArchitecture
+  nameWithType: IRuntimeInsightsService.ProcessArchitecture
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.ProcessArchitecture
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  nameWithType: RuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_EnvironmentCommandLine
+  name: EnvironmentCommandLine
+  nameWithType: IRuntimeInsightsService.EnvironmentCommandLine
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.EnvironmentCommandLine
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_CurrentDirectory
+  name: CurrentDirectory
+  nameWithType: RuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_CurrentDirectory
+  name: CurrentDirectory
+  nameWithType: IRuntimeInsightsService.CurrentDirectory
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.CurrentDirectory
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username*
+  commentId: Overload:Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+  href: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_RuntimeInsightsService_Username
+  name: Username
+  nameWithType: RuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.Username
+- uid: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  commentId: P:Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username
+  parent: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService
+  href: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html#Coree_NETStandard_Services_RuntimeInsightsService_IRuntimeInsightsService_Username
+  name: Username
+  nameWithType: IRuntimeInsightsService.Username
+  fullName: Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.Username

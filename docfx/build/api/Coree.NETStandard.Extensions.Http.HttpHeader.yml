@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader
+  commentId: N:Coree.NETStandard.Extensions.Http.HttpHeader
+  id: Coree.NETStandard.Extensions.Http.HttpHeader
+  children:
+  - Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Extensions.Http.HttpHeader
+  nameWithType: Coree.NETStandard.Extensions.Http.HttpHeader
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  commentId: T:Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions
+  href: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.html
+  name: HttpHeadersExtensions
+  nameWithType: HttpHeadersExtensions
+  fullName: Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions

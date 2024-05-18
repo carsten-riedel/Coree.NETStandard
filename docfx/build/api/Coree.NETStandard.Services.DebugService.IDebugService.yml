@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.DebugService.IDebugService
+  commentId: T:Coree.NETStandard.Services.DebugService.IDebugService
+  id: IDebugService
+  parent: Coree.NETStandard.Services.DebugService
+  children:
+  - Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IDebugService
+  nameWithType: IDebugService
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService
+  type: Interface
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IDebugService
+    path: ../../src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs
+    startLine: 52
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.DebugService
+  summary: Defines a service for logging debug messages.
+  example: []
+  syntax:
+    content: public interface IDebugService
+    content.vb: Public Interface IDebugService
+- uid: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(System.String)
+  commentId: M:Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(System.String)
+  id: LogMessage(System.String)
+  parent: Coree.NETStandard.Services.DebugService.IDebugService
+  langs:
+  - csharp
+  - vb
+  name: LogMessage(string)
+  nameWithType: IDebugService.LogMessage(string)
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(string)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: LogMessage
+    path: ../../src/Projects/Coree.NETStandard/Services/DebugService/DebugService.cs
+    startLine: 58
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.DebugService
+  summary: Logs a message to the logging infrastructure.
+  example: []
+  syntax:
+    content: void LogMessage(string message)
+    parameters:
+    - id: message
+      type: System.String
+      description: The message to log.
+    content.vb: Sub LogMessage(message As String)
+  overload: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage*
+  nameWithType.vb: IDebugService.LogMessage(String)
+  fullName.vb: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage(String)
+  name.vb: LogMessage(String)
+references:
+- uid: Coree.NETStandard.Services.DebugService
+  commentId: N:Coree.NETStandard.Services.DebugService
+  href: Coree.html
+  name: Coree.NETStandard.Services.DebugService
+  nameWithType: Coree.NETStandard.Services.DebugService
+  fullName: Coree.NETStandard.Services.DebugService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.DebugService
+    name: DebugService
+    href: Coree.NETStandard.Services.DebugService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.DebugService
+    name: DebugService
+    href: Coree.NETStandard.Services.DebugService.html
+- uid: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage*
+  commentId: Overload:Coree.NETStandard.Services.DebugService.IDebugService.LogMessage
+  href: Coree.NETStandard.Services.DebugService.IDebugService.html#Coree_NETStandard_Services_DebugService_IDebugService_LogMessage_System_String_
+  name: LogMessage
+  nameWithType: IDebugService.LogMessage
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService.LogMessage
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

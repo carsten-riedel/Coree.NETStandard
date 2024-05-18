@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.FileService
+  commentId: N:Coree.NETStandard.Services.FileService
+  id: Coree.NETStandard.Services.FileService
+  children:
+  - Coree.NETStandard.Services.FileService.FileService
+  - Coree.NETStandard.Services.FileService.IFileService
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Services.FileService
+  nameWithType: Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Services.FileService.FileService
+  commentId: T:Coree.NETStandard.Services.FileService.FileService
+  href: Coree.NETStandard.Services.FileService.FileService.html
+  name: FileService
+  nameWithType: FileService
+  fullName: Coree.NETStandard.Services.FileService.FileService
+- uid: Coree.NETStandard.Services.FileService.IFileService
+  commentId: T:Coree.NETStandard.Services.FileService.IFileService
+  parent: Coree.NETStandard.Services.FileService
+  href: Coree.NETStandard.Services.FileService.IFileService.html
+  name: IFileService
+  nameWithType: IFileService
+  fullName: Coree.NETStandard.Services.FileService.IFileService
+- uid: Coree.NETStandard.Services.FileService
+  commentId: N:Coree.NETStandard.Services.FileService
+  href: Coree.html
+  name: Coree.NETStandard.Services.FileService
+  nameWithType: Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html

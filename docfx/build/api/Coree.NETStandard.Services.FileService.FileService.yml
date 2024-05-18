@@ -1,0 +1,1818 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.FileService.FileService
+  commentId: T:Coree.NETStandard.Services.FileService.FileService
+  id: FileService
+  parent: Coree.NETStandard.Services.FileService
+  children:
+  - Coree.NETStandard.Services.FileService.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})
+  - Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  - Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(System.String)
+  - Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(System.String,System.String)
+  - Coree.NETStandard.Services.FileService.FileService.IsValidLocation(System.String)
+  - Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(System.String)
+  - Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(System.String)
+  langs:
+  - csharp
+  - vb
+  name: FileService
+  nameWithType: FileService
+  fullName: Coree.NETStandard.Services.FileService.FileService
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/TryFixPathCaseing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: FileService
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/TryFixPathCaseing.cs
+    startLine: 12
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Defines a service for file system operations.
+  remarks: >-
+    <pre><code class="lang-csharp">// Configuring a self-contained ServiceStack setup using Host builder's CreateDefaultBuilder method.
+
+    FileService fileServiceService = FileService.CreateServiceFactory();
+
+
+    // Instantiating the FileService class directly
+
+    FileService fileService = new FileService();
+
+
+    // Implementing FileService in a Dependency Injection (DI) scenario
+
+    var builder = Host.CreateDefaultBuilder();
+
+    builder.ConfigureServices((context, services) =&gt;
+
+    {
+        services.AddSingleton&gt;IFileService, FileService&lt;();
+    });</code></pre>
+  example: []
+  syntax:
+    content: 'public class FileService : ServiceFactory<FileService>, IDisposable, IFileService'
+    content.vb: Public Class FileService Inherits ServiceFactory(Of FileService) Implements IDisposable, IFileService
+  inheritance:
+  - System.Object
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  implements:
+  - System.IDisposable
+  - Coree.NETStandard.Services.FileService.IFileService
+  inheritedMembers:
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  - Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.Dispose
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Services.FileService.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})
+  id: '#ctor(Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService})'
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: FileService(ILogger<FileService>?)
+  nameWithType: FileService.FileService(ILogger<FileService>?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.FileService(Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.FileService.FileService>?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/FileService.cs
+    startLine: 42
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Initializes a new instance of the <xref href="Coree.NETStandard.Services.FileService.FileService" data-throw-if-not-resolved="false"></xref> class.
+  remarks: >-
+    The logger provided here can be used with the field within the class.
+
+    Be mindful that the logger may be null in scenarios where it's not explicitly provided.
+  example: []
+  syntax:
+    content: public FileService(ILogger<FileService>? logger = null)
+    parameters:
+    - id: logger
+      type: Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService}
+      description: Optional logger instance for logging purposes.
+    content.vb: Public Sub New(logger As ILogger(Of FileService) = Nothing)
+  overload: Coree.NETStandard.Services.FileService.FileService.#ctor*
+  nameWithType.vb: FileService.New(ILogger(Of FileService))
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.New(Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.FileService.FileService))
+  name.vb: New(ILogger(Of FileService))
+- uid: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  id: GetValidUniquePaths
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: GetValidUniquePaths()
+  nameWithType: FileService.GetValidUniquePaths()
+  fullName: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/GetValidUniquePaths.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: GetValidUniquePaths
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/GetValidUniquePaths.cs
+    startLine: 35
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Retrieves a list of valid and unique directory paths from the system's PATH environment variable.
+  remarks: >-
+    This method processes each entry in the PATH environment variable by:
+
+    - Normalizing the casing of each path using the TryFixPathCaseing method.
+
+    - Checking each path for existence to ensure validity.
+
+    - Ensuring that each path is unique within the context of the PATH variable to avoid duplicates.
+
+    - Logging various statuses such as inaccessible PATH, skipped entries due to invalidity or duplication, and errors during processing.
+
+    The method is robust against non-existent directories, permission issues, and other filesystem anomalies by logging and skipping over problematic entries.
+  example:
+  - >-
+    <pre><code class="lang-csharp">var validPaths = GetValidUniquePaths();
+
+    foreach (var path in validPaths)
+
+    {
+        Console.WriteLine(path); // Prints each valid and unique path
+    }</code></pre>
+  syntax:
+    content: public List<string> GetValidUniquePaths()
+    return:
+      type: System.Collections.Generic.List{System.String}
+      description: A list of strings representing valid, unique, and normalized directory paths from the PATH environment. Returns an empty list if the PATH environment variable is not accessible or if no valid paths are found.
+    content.vb: Public Function GetValidUniquePaths() As List(Of String)
+  overload: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+- uid: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(System.String)
+  id: IsCommandAvailable(System.String)
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: IsCommandAvailable(string?)
+  nameWithType: FileService.IsCommandAvailable(string?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/IsCommandAvailable.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsCommandAvailable
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/IsCommandAvailable.cs
+    startLine: 45
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks if a specified command is available in the current directory or any of the directories listed in the system's PATH environment variable.
+  remarks: >-
+    This method performs the following operations:
+
+    - Validates the command input.
+
+    - Retrieves the current directory and the directories from the system's PATH environment using the GetValidUniquePaths method, which excludes invalid and duplicate paths.
+
+    - Checks each directory for the existence of the specified command.
+
+    - Utilizes the TryFixPathCaseing method to return the path in the correct casing.
+
+    - Logs various informational messages during the process, including errors encountered, invalid path entries, and successful detection of the executable.
+
+    This method ensures that the search includes the current directory, aligning with common command-line behaviors where the current directory is typically searched before the PATH directories.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string commandName = "example";
+
+    string executablePath = IsCommandAvailable(commandName);
+
+    if (executablePath != null)
+
+    {
+        Console.WriteLine($"Executable found: {executablePath}");
+    }
+
+    else
+
+    {
+        Console.WriteLine("Executable not found.");
+    }</code></pre>
+  syntax:
+    content: public string? IsCommandAvailable(string? command)
+    parameters:
+    - id: command
+      type: System.String
+      description: The name of the executable file to search for.
+    return:
+      type: System.String
+      description: The full path of the executable file with corrected casing if found; otherwise, returns null. The method returns null if the command parameter is null, or if the executable cannot be found in the current or PATH directories.
+    content.vb: Public Function IsCommandAvailable(command As String) As String
+  overload: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  nameWithType.vb: FileService.IsCommandAvailable(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable(String)
+  name.vb: IsCommandAvailable(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(System.String,System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(System.String,System.String)
+  id: IsExecutableFilePresent(System.String,System.String)
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: IsExecutableFilePresent(string?, string?)
+  nameWithType: FileService.IsExecutableFilePresent(string?, string?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(string?, string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/IsExecutableFilePresent.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsExecutableFilePresent
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/IsExecutableFilePresent.cs
+    startLine: 41
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks if an executable file with the specified command name is present in the given directory path, considering platform-specific executable extensions.
+  remarks: >-
+    This method supports different sets of executable extensions based on the operating system:
+
+    - Windows: Includes common executable and script extensions such as .exe, .bat, .cmd, .ps1, .msi, .vbs, .com, and .scr.
+
+    - Linux/macOS: Includes executable and script extensions like .sh, .bash, .run, .bin, as well as scripting languages such as .py, .pl, and .rb.
+
+    Files without extensions are also considered in Unix/Linux environments where executables often do not have an extension.
+
+    The method checks if the specified directory exists before attempting to find executables, improving efficiency by avoiding unnecessary file operations.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string commandName = "myapp";
+
+    string directoryPath = "/usr/local/bin";
+
+    string result = IsExecutableFilePresent(commandName, directoryPath);
+
+    if (result != null)
+
+    {
+        Console.WriteLine("Executable found: " + result);
+    }
+
+    else
+
+    {
+        Console.WriteLine("No executable found.");
+    }</code></pre>
+  syntax:
+    content: public string? IsExecutableFilePresent(string? command, string? path)
+    parameters:
+    - id: command
+      type: System.String
+      description: The base name of the executable file to search for, without extension.
+    - id: path
+      type: System.String
+      description: The directory path where to look for the executable file.
+    return:
+      type: System.String
+      description: The full path of the executable file if found, otherwise null. The method returns null if the directory does not exist or the parameters are null or empty.
+    content.vb: Public Function IsExecutableFilePresent(command As String, path As String) As String
+  overload: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  nameWithType.vb: FileService.IsExecutableFilePresent(String, String)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent(String, String)
+  name.vb: IsExecutableFilePresent(String, String)
+- uid: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.IsValidLocation(System.String)
+  id: IsValidLocation(System.String)
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: IsValidLocation(string?)
+  nameWithType: FileService.IsValidLocation(string?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/IsValidLocation.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsValidLocation
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/IsValidLocation.cs
+    startLine: 24
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Checks whether the specified path is a valid file or directory.
+  remarks: >-
+    This method returns <code>false</code> if the provided path is null or empty.
+
+    It logs debug messages using the provided logger instance if any errors occur during the validation process.
+  example: []
+  syntax:
+    content: public bool IsValidLocation(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The path to be checked.
+    return:
+      type: System.Boolean
+      description: <code>true</code> if the path points to an existing file or directory; otherwise, <code>false</code>.
+    content.vb: Public Function IsValidLocation(path As String) As Boolean
+  overload: Coree.NETStandard.Services.FileService.FileService.IsValidLocation*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  nameWithType.vb: FileService.IsValidLocation(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.IsValidLocation(String)
+  name.vb: IsValidLocation(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(System.String)
+  id: TryCorrectDrivePathCase(System.String)
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: TryCorrectDrivePathCase(string?)
+  nameWithType: FileService.TryCorrectDrivePathCase(string?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/TryCorrectDrivePathCase.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TryCorrectDrivePathCase
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/TryCorrectDrivePathCase.cs
+    startLine: 30
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Attempts to retrieve the correctly cased drive root path based on a provided drive name, ignoring case sensitivity.
+  remarks: >-
+    This method performs a case-insensitive comparison to find a matching drive among the available drives.
+
+    If no matching drive is found or if an exception occurs during the drive search, the original drivename is returned.
+
+    This ensures that the method fails gracefully, providing a fallback to the original input.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string drivePath = TryCorrectDrivePathCase("C:");
+
+    Console.WriteLine(drivePath); // Output might be "C:\", or "C:" if no match is found</code></pre>
+  syntax:
+    content: public string? TryCorrectDrivePathCase(string? drivename)
+    parameters:
+    - id: drivename
+      type: System.String
+      description: The drive name to search for, case-insensitively.
+    return:
+      type: System.String
+      description: The correctly cased drive root path if found; otherwise, returns the original drivename.
+    content.vb: Public Function TryCorrectDrivePathCase(drivename As String) As String
+  overload: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  nameWithType.vb: FileService.TryCorrectDrivePathCase(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase(String)
+  name.vb: TryCorrectDrivePathCase(String)
+- uid: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(System.String)
+  id: TryFixPathCaseing(System.String)
+  parent: Coree.NETStandard.Services.FileService.FileService
+  langs:
+  - csharp
+  - vb
+  name: TryFixPathCaseing(string?)
+  nameWithType: FileService.TryFixPathCaseing(string?)
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(string?)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Services/FileService/TryFixPathCaseing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TryFixPathCaseing
+    path: ../../src/Projects/Coree.NETStandard/Services/FileService/TryFixPathCaseing.cs
+    startLine: 34
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Services.FileService
+  summary: Attempts to correct the casing of the provided file or directory path by traversing each segment and matching it against actual filesystem entries.
+  remarks: >-
+    This method operates by:
+
+    - Resolving the full path and starting with the root, attempting to correct its casing.
+
+    - Sequentially processing each subsequent segment of the path. Each segment's casing is corrected to match the actual filesystem entry if it exists.
+
+    - If a segment (directory or file) does not exist, the segment from the original path is used as is, and traversal stops at this point.
+
+    This approach ensures that the returned path is as accurate as possible up to the last existing segment. Errors and non-existing segments are handled gracefully by reverting to the original input for those segments.
+
+    Exceptional conditions are logged for diagnostic purposes.
+  example:
+  - >-
+    <pre><code class="lang-csharp">string originalPath = "c:\\users\\Public\\DESKTOP\\nonExistingFile.txt";
+
+    string correctedPath = TryFixPathCaseing(originalPath);
+
+    Console.WriteLine(correctedPath); // Output might be "C:\\Users\\Public\\Desktop\\nonExistingFile.txt"</code></pre>
+  syntax:
+    content: public string? TryFixPathCaseing(string? path)
+    parameters:
+    - id: path
+      type: System.String
+      description: The file or directory path to correct.
+    return:
+      type: System.String
+      description: The path with corrected casing for each existing segment. For segments that do not correspond to existing entries, the original casing is used.
+    content.vb: Public Function TryFixPathCaseing(path As String) As String
+  overload: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing*
+  implements:
+  - Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  nameWithType.vb: FileService.TryFixPathCaseing(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing(String)
+  name.vb: TryFixPathCaseing(String)
+references:
+- uid: Coree.NETStandard.Services.FileService
+  commentId: N:Coree.NETStandard.Services.FileService
+  href: Coree.html
+  name: Coree.NETStandard.Services.FileService
+  nameWithType: Coree.NETStandard.Services.FileService
+  fullName: Coree.NETStandard.Services.FileService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  commentId: T:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  parent: Coree.NETStandard.Abstractions.ServiceFactory
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  name: ServiceFactory<FileService>
+  nameWithType: ServiceFactory<FileService>
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>
+  nameWithType.vb: ServiceFactory(Of FileService)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService)
+  name.vb: ServiceFactory(Of FileService)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: <
+  - uid: Coree.NETStandard.Services.FileService.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.FileService.html
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Coree.NETStandard.Services.FileService.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.FileService.html
+  - name: )
+- uid: System.IDisposable
+  commentId: T:System.IDisposable
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.idisposable
+  name: IDisposable
+  nameWithType: IDisposable
+  fullName: System.IDisposable
+- uid: Coree.NETStandard.Services.FileService.IFileService
+  commentId: T:Coree.NETStandard.Services.FileService.IFileService
+  parent: Coree.NETStandard.Services.FileService
+  href: Coree.NETStandard.Services.FileService.IFileService.html
+  name: IFileService
+  nameWithType: IFileService
+  fullName: Coree.NETStandard.Services.FileService.IFileService
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IHostBuilder>)
+  nameWithType: ServiceFactory<FileService>.CreateServiceFactory(Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.CreateServiceFactory(System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of FileService).CreateServiceFactory(Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  name: CreateServiceFactory(Action<IServiceCollection>)
+  nameWithType: ServiceFactory<FileService>.CreateServiceFactory(Action<IServiceCollection>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  nameWithType.vb: ServiceFactory(Of FileService).CreateServiceFactory(Action(Of IServiceCollection))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  nameWithType: ServiceFactory<FileService>.CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>, System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of FileService).CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection), System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder), System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  name: CreateServiceFactory()
+  nameWithType: ServiceFactory<FileService>.CreateServiceFactory()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.CreateServiceFactory()
+  nameWithType.vb: ServiceFactory(Of FileService).CreateServiceFactory()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).CreateServiceFactory()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  name: CreateServiceFactory(LogLevel)
+  nameWithType: ServiceFactory<FileService>.CreateServiceFactory(LogLevel)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType.vb: ServiceFactory(Of FileService).CreateServiceFactory(LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.Dispose
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.Dispose
+  parent: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}
+  definition: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  name: Dispose()
+  nameWithType: ServiceFactory<FileService>.Dispose()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<Coree.NETStandard.Services.FileService.FileService>.Dispose()
+  nameWithType.vb: ServiceFactory(Of FileService).Dispose()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of Coree.NETStandard.Services.FileService.FileService).Dispose()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory{Coree.NETStandard.Services.FileService.FileService}.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  commentId: T:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  name: ServiceFactory<T>
+  nameWithType: ServiceFactory<T>
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>
+  nameWithType.vb: ServiceFactory(Of T)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T)
+  name.vb: ServiceFactory(Of T)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory
+  commentId: N:Coree.NETStandard.Abstractions.ServiceFactory
+  href: Coree.html
+  name: Coree.NETStandard.Abstractions.ServiceFactory
+  nameWithType: Coree.NETStandard.Abstractions.ServiceFactory
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions
+    name: Abstractions
+    href: Coree.NETStandard.Abstractions.html
+  - name: .
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory
+    name: ServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.html
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IHostBuilder>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  name: CreateServiceFactory(Action<IServiceCollection>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IServiceCollection>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IServiceCollection))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  name: CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(Action<IServiceCollection>, Action<ILoggingBuilder>, Action<IHostBuilder>)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>, System.Action<Microsoft.Extensions.Hosting.IHostBuilder>)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection), System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder), System.Action(Of Microsoft.Extensions.Hosting.IHostBuilder))
+  name.vb: CreateServiceFactory(Action(Of IServiceCollection), Action(Of ILoggingBuilder), Action(Of IHostBuilder))
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection},System.Action{Microsoft.Extensions.Logging.ILoggingBuilder},System.Action{Microsoft.Extensions.Hosting.IHostBuilder})
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_System_Action_Microsoft_Extensions_DependencyInjection_IServiceCollection__System_Action_Microsoft_Extensions_Logging_ILoggingBuilder__System_Action_Microsoft_Extensions_Hosting_IHostBuilder__
+  - name: (
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostBuilder
+    name: IHostBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostbuilder
+  - name: )
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  name: CreateServiceFactory()
+  nameWithType: ServiceFactory<T>.CreateServiceFactory()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory()
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  isExternal: true
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  name: CreateServiceFactory(LogLevel)
+  nameWithType: ServiceFactory<T>.CreateServiceFactory(LogLevel)
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  nameWithType.vb: ServiceFactory(Of T).CreateServiceFactory(LogLevel)
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.CreateServiceFactory(Microsoft.Extensions.Logging.LogLevel)
+    name: CreateServiceFactory
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_CreateServiceFactory_Microsoft_Extensions_Logging_LogLevel_
+  - name: (
+  - uid: Microsoft.Extensions.Logging.LogLevel
+    name: LogLevel
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.loglevel
+  - name: )
+- uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  commentId: M:Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+  href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  name: Dispose()
+  nameWithType: ServiceFactory<T>.Dispose()
+  fullName: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory<T>.Dispose()
+  nameWithType.vb: ServiceFactory(Of T).Dispose()
+  fullName.vb: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory(Of T).Dispose()
+  spec.csharp:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory`1.Dispose
+    name: Dispose
+    href: Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.html#Coree_NETStandard_Abstractions_ServiceFactory_ServiceFactory_1_Dispose
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Services.FileService.FileService
+  commentId: T:Coree.NETStandard.Services.FileService.FileService
+  href: Coree.NETStandard.Services.FileService.FileService.html
+  name: FileService
+  nameWithType: FileService
+  fullName: Coree.NETStandard.Services.FileService.FileService
+- uid: Coree.NETStandard.Services.FileService.FileService.#ctor*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.#ctor
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService__ctor_Microsoft_Extensions_Logging_ILogger_Coree_NETStandard_Services_FileService_FileService__
+  name: FileService
+  nameWithType: FileService.FileService
+  fullName: Coree.NETStandard.Services.FileService.FileService.FileService
+  nameWithType.vb: FileService.New
+  fullName.vb: Coree.NETStandard.Services.FileService.FileService.New
+  name.vb: New
+- uid: Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService}
+  commentId: T:Microsoft.Extensions.Logging.ILogger{Coree.NETStandard.Services.FileService.FileService}
+  parent: Microsoft.Extensions.Logging
+  definition: Microsoft.Extensions.Logging.ILogger`1
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<FileService>
+  nameWithType: ILogger<FileService>
+  fullName: Microsoft.Extensions.Logging.ILogger<Coree.NETStandard.Services.FileService.FileService>
+  nameWithType.vb: ILogger(Of FileService)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of Coree.NETStandard.Services.FileService.FileService)
+  name.vb: ILogger(Of FileService)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - uid: Coree.NETStandard.Services.FileService.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.FileService.html
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Coree.NETStandard.Services.FileService.FileService
+    name: FileService
+    href: Coree.NETStandard.Services.FileService.FileService.html
+  - name: )
+- uid: Microsoft.Extensions.Logging.ILogger`1
+  commentId: T:Microsoft.Extensions.Logging.ILogger`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  name: ILogger<TCategoryName>
+  nameWithType: ILogger<TCategoryName>
+  fullName: Microsoft.Extensions.Logging.ILogger<TCategoryName>
+  nameWithType.vb: ILogger(Of TCategoryName)
+  fullName.vb: Microsoft.Extensions.Logging.ILogger(Of TCategoryName)
+  name.vb: ILogger(Of TCategoryName)
+  spec.csharp:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: <
+  - name: TCategoryName
+  - name: '>'
+  spec.vb:
+  - uid: Microsoft.Extensions.Logging.ILogger`1
+    name: ILogger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TCategoryName
+  - name: )
+- uid: Microsoft.Extensions.Logging
+  commentId: N:Microsoft.Extensions.Logging
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Logging
+  nameWithType: Microsoft.Extensions.Logging
+  fullName: Microsoft.Extensions.Logging
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Logging
+    name: Logging
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_GetValidUniquePaths
+  name: GetValidUniquePaths
+  nameWithType: FileService.GetValidUniquePaths
+  fullName: Coree.NETStandard.Services.FileService.FileService.GetValidUniquePaths
+- uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths
+  name: GetValidUniquePaths()
+  nameWithType: IFileService.GetValidUniquePaths()
+  fullName: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths()
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+    name: GetValidUniquePaths
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.GetValidUniquePaths
+    name: GetValidUniquePaths
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_GetValidUniquePaths
+  - name: (
+  - name: )
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsCommandAvailable_System_String_
+  name: IsCommandAvailable
+  nameWithType: FileService.IsCommandAvailable
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsCommandAvailable
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  isExternal: true
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_System_String_
+  name: IsCommandAvailable(string)
+  nameWithType: IFileService.IsCommandAvailable(string)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(string)
+  nameWithType.vb: IFileService.IsCommandAvailable(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(String)
+  name.vb: IsCommandAvailable(String)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+    name: IsCommandAvailable
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsCommandAvailable(System.String)
+    name: IsCommandAvailable
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsCommandAvailable_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsExecutableFilePresent_System_String_System_String_
+  name: IsExecutableFilePresent
+  nameWithType: FileService.IsExecutableFilePresent
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsExecutableFilePresent
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  isExternal: true
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_System_String_System_String_
+  name: IsExecutableFilePresent(string, string)
+  nameWithType: IFileService.IsExecutableFilePresent(string, string)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(string, string)
+  nameWithType.vb: IFileService.IsExecutableFilePresent(String, String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(String, String)
+  name.vb: IsExecutableFilePresent(String, String)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+    name: IsExecutableFilePresent
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsExecutableFilePresent(System.String,System.String)
+    name: IsExecutableFilePresent
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsExecutableFilePresent_System_String_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Coree.NETStandard.Services.FileService.FileService.IsValidLocation*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.IsValidLocation
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_IsValidLocation_System_String_
+  name: IsValidLocation
+  nameWithType: FileService.IsValidLocation
+  fullName: Coree.NETStandard.Services.FileService.FileService.IsValidLocation
+- uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  isExternal: true
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_System_String_
+  name: IsValidLocation(string)
+  nameWithType: IFileService.IsValidLocation(string)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(string)
+  nameWithType.vb: IFileService.IsValidLocation(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(String)
+  name.vb: IsValidLocation(String)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+    name: IsValidLocation
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.IsValidLocation(System.String)
+    name: IsValidLocation
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_IsValidLocation_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryCorrectDrivePathCase_System_String_
+  name: TryCorrectDrivePathCase
+  nameWithType: FileService.TryCorrectDrivePathCase
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryCorrectDrivePathCase
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  isExternal: true
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_System_String_
+  name: TryCorrectDrivePathCase(string)
+  nameWithType: IFileService.TryCorrectDrivePathCase(string)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(string)
+  nameWithType.vb: IFileService.TryCorrectDrivePathCase(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(String)
+  name.vb: TryCorrectDrivePathCase(String)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+    name: TryCorrectDrivePathCase
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.TryCorrectDrivePathCase(System.String)
+    name: TryCorrectDrivePathCase
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryCorrectDrivePathCase_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing*
+  commentId: Overload:Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing
+  href: Coree.NETStandard.Services.FileService.FileService.html#Coree_NETStandard_Services_FileService_FileService_TryFixPathCaseing_System_String_
+  name: TryFixPathCaseing
+  nameWithType: FileService.TryFixPathCaseing
+  fullName: Coree.NETStandard.Services.FileService.FileService.TryFixPathCaseing
+- uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  commentId: M:Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+  parent: Coree.NETStandard.Services.FileService.IFileService
+  isExternal: true
+  href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_System_String_
+  name: TryFixPathCaseing(string)
+  nameWithType: IFileService.TryFixPathCaseing(string)
+  fullName: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(string)
+  nameWithType.vb: IFileService.TryFixPathCaseing(String)
+  fullName.vb: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(String)
+  name.vb: TryFixPathCaseing(String)
+  spec.csharp:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+    name: TryFixPathCaseing
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_System_String_
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Coree.NETStandard.Services.FileService.IFileService.TryFixPathCaseing(System.String)
+    name: TryFixPathCaseing
+    href: Coree.NETStandard.Services.FileService.IFileService.html#Coree_NETStandard_Services_FileService_IFileService_TryFixPathCaseing_System_String_
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )

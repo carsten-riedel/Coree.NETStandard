@@ -1,0 +1,109 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.Scheduler
+  commentId: N:Coree.NETStandard.Classes.Scheduler
+  id: Coree.NETStandard.Classes.Scheduler
+  children:
+  - Coree.NETStandard.Classes.Scheduler.Scheduler
+  - Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  - Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Classes.Scheduler
+  nameWithType: Coree.NETStandard.Classes.Scheduler
+  fullName: Coree.NETStandard.Classes.Scheduler
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler
+  href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  name: Scheduler
+  nameWithType: Scheduler
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  parent: Coree.NETStandard.Classes.Scheduler
+  href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  name: Scheduler.TickerEventArgs
+  nameWithType: Scheduler.TickerEventArgs
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventArgs.html
+- uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  commentId: T:Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  parent: Coree.NETStandard.Classes.Scheduler
+  href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  name: Scheduler.TickerEventDelegate
+  nameWithType: Scheduler.TickerEventDelegate
+  fullName: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+  spec.csharp:
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+    name: TickerEventDelegate
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html
+  spec.vb:
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate
+    name: TickerEventDelegate
+    href: Coree.NETStandard.Classes.Scheduler.Scheduler.TickerEventDelegate.html
+- uid: Coree.NETStandard.Classes.Scheduler
+  commentId: N:Coree.NETStandard.Classes.Scheduler
+  href: Coree.html
+  name: Coree.NETStandard.Classes.Scheduler
+  nameWithType: Coree.NETStandard.Classes.Scheduler
+  fullName: Coree.NETStandard.Classes.Scheduler
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Scheduler
+    name: Scheduler
+    href: Coree.NETStandard.Classes.Scheduler.html

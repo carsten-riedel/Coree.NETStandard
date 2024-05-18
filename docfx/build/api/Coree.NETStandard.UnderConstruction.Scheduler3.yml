@@ -1,0 +1,608 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler3
+  id: Scheduler3
+  parent: Coree.NETStandard.UnderConstruction
+  children:
+  - Coree.NETStandard.UnderConstruction.Scheduler3.#ctor(Coree.NETStandard.UnderConstruction.IScheduleProvider,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  - Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs)
+  - Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync
+  - Coree.NETStandard.UnderConstruction.Scheduler3.TickOccurred
+  langs:
+  - csharp
+  - vb
+  name: Scheduler3
+  nameWithType: Scheduler3
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Scheduler3
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+    startLine: 84
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public class Scheduler3
+    content.vb: Public Class Scheduler3
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickOccurred
+  commentId: E:Coree.NETStandard.UnderConstruction.Scheduler3.TickOccurred
+  id: TickOccurred
+  parent: Coree.NETStandard.UnderConstruction.Scheduler3
+  langs:
+  - csharp
+  - vb
+  name: TickOccurred
+  nameWithType: Scheduler3.TickOccurred
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.TickOccurred
+  type: Event
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TickOccurred
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+    startLine: 98
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public event Scheduler3.TickerEventDelegate TickOccurred
+    return:
+      type: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+    content.vb: Public Event TickOccurred As Scheduler3.TickerEventDelegate
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs)
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs)
+  id: RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs)
+  parent: Coree.NETStandard.UnderConstruction.Scheduler3
+  langs:
+  - csharp
+  - vb
+  name: RaiseTickEvent(TickerEventArgs)
+  nameWithType: Scheduler3.RaiseTickEvent(Scheduler3.TickerEventArgs)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent(Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: RaiseTickEvent
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+    startLine: 104
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: protected virtual void RaiseTickEvent(Scheduler3.TickerEventArgs args)
+    parameters:
+    - id: args
+      type: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+    content.vb: Protected Overridable Sub RaiseTickEvent(args As Scheduler3.TickerEventArgs)
+  overload: Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent*
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.#ctor(Coree.NETStandard.UnderConstruction.IScheduleProvider,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler3.#ctor(Coree.NETStandard.UnderConstruction.IScheduleProvider,System.Nullable{System.Threading.CancellationToken},System.Boolean)
+  id: '#ctor(Coree.NETStandard.UnderConstruction.IScheduleProvider,System.Nullable{System.Threading.CancellationToken},System.Boolean)'
+  parent: Coree.NETStandard.UnderConstruction.Scheduler3
+  langs:
+  - csharp
+  - vb
+  name: Scheduler3(IScheduleProvider, CancellationToken?, bool)
+  nameWithType: Scheduler3.Scheduler3(IScheduleProvider, CancellationToken?, bool)
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.Scheduler3(Coree.NETStandard.UnderConstruction.IScheduleProvider, System.Threading.CancellationToken?, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+    startLine: 130
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public Scheduler3(IScheduleProvider scheduleProvider, CancellationToken? cancellationToken = null, bool startInConstructor = true)
+    parameters:
+    - id: scheduleProvider
+      type: Coree.NETStandard.UnderConstruction.IScheduleProvider
+    - id: cancellationToken
+      type: System.Nullable{System.Threading.CancellationToken}
+    - id: startInConstructor
+      type: System.Boolean
+    content.vb: Public Sub New(scheduleProvider As IScheduleProvider, cancellationToken As CancellationToken? = Nothing, startInConstructor As Boolean = True)
+  overload: Coree.NETStandard.UnderConstruction.Scheduler3.#ctor*
+  nameWithType.vb: Scheduler3.New(IScheduleProvider, CancellationToken?, Boolean)
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler3.New(Coree.NETStandard.UnderConstruction.IScheduleProvider, System.Threading.CancellationToken?, Boolean)
+  name.vb: New(IScheduleProvider, CancellationToken?, Boolean)
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync
+  commentId: M:Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync
+  id: StartAsync
+  parent: Coree.NETStandard.UnderConstruction.Scheduler3
+  langs:
+  - csharp
+  - vb
+  name: StartAsync()
+  nameWithType: Scheduler3.StartAsync()
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: StartAsync
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Class2.cs
+    startLine: 140
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public Task StartAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function StartAsync() As Task
+  overload: Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync*
+references:
+- uid: Coree.NETStandard.UnderConstruction
+  commentId: N:Coree.NETStandard.UnderConstruction
+  href: Coree.html
+  name: Coree.NETStandard.UnderConstruction
+  nameWithType: Coree.NETStandard.UnderConstruction
+  fullName: Coree.NETStandard.UnderConstruction
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction
+    name: UnderConstruction
+    href: Coree.NETStandard.UnderConstruction.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction
+    name: UnderConstruction
+    href: Coree.NETStandard.UnderConstruction.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+  parent: Coree.NETStandard.UnderConstruction
+  href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  name: Scheduler3.TickerEventDelegate
+  nameWithType: Scheduler3.TickerEventDelegate
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+  spec.csharp:
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3
+    name: Scheduler3
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+    name: TickerEventDelegate
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate.html
+  spec.vb:
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3
+    name: Scheduler3
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate
+    name: TickerEventDelegate
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventDelegate.html
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent
+  href: Coree.NETStandard.UnderConstruction.Scheduler3.html#Coree_NETStandard_UnderConstruction_Scheduler3_RaiseTickEvent_Coree_NETStandard_UnderConstruction_Scheduler3_TickerEventArgs_
+  name: RaiseTickEvent
+  nameWithType: Scheduler3.RaiseTickEvent
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.RaiseTickEvent
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+  commentId: T:Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+  parent: Coree.NETStandard.UnderConstruction
+  href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  name: Scheduler3.TickerEventArgs
+  nameWithType: Scheduler3.TickerEventArgs
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+  spec.csharp:
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3
+    name: Scheduler3
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs.html
+  spec.vb:
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3
+    name: Scheduler3
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Scheduler3.TickerEventArgs.html
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.#ctor*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler3.#ctor
+  href: Coree.NETStandard.UnderConstruction.Scheduler3.html#Coree_NETStandard_UnderConstruction_Scheduler3__ctor_Coree_NETStandard_UnderConstruction_IScheduleProvider_System_Nullable_System_Threading_CancellationToken__System_Boolean_
+  name: Scheduler3
+  nameWithType: Scheduler3.Scheduler3
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.Scheduler3
+  nameWithType.vb: Scheduler3.New
+  fullName.vb: Coree.NETStandard.UnderConstruction.Scheduler3.New
+  name.vb: New
+- uid: Coree.NETStandard.UnderConstruction.IScheduleProvider
+  commentId: T:Coree.NETStandard.UnderConstruction.IScheduleProvider
+  parent: Coree.NETStandard.UnderConstruction
+  href: Coree.NETStandard.UnderConstruction.IScheduleProvider.html
+  name: IScheduleProvider
+  nameWithType: IScheduleProvider
+  fullName: Coree.NETStandard.UnderConstruction.IScheduleProvider
+- uid: System.Nullable{System.Threading.CancellationToken}
+  commentId: T:System.Nullable{System.Threading.CancellationToken}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken?
+  nameWithType: CancellationToken?
+  fullName: System.Threading.CancellationToken?
+  spec.csharp:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+  spec.vb:
+  - uid: System.Threading.CancellationToken
+    name: CancellationToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  - name: '?'
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync
+  href: Coree.NETStandard.UnderConstruction.Scheduler3.html#Coree_NETStandard_UnderConstruction_Scheduler3_StartAsync
+  name: StartAsync
+  nameWithType: Scheduler3.StartAsync
+  fullName: Coree.NETStandard.UnderConstruction.Scheduler3.StartAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks

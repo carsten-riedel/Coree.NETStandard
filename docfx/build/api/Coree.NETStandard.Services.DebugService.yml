@@ -1,0 +1,69 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Services.DebugService
+  commentId: N:Coree.NETStandard.Services.DebugService
+  id: Coree.NETStandard.Services.DebugService
+  children:
+  - Coree.NETStandard.Services.DebugService.DebugService
+  - Coree.NETStandard.Services.DebugService.IDebugService
+  langs:
+  - csharp
+  - vb
+  name: Coree.NETStandard.Services.DebugService
+  nameWithType: Coree.NETStandard.Services.DebugService
+  fullName: Coree.NETStandard.Services.DebugService
+  type: Namespace
+  assemblies:
+  - Coree.NETStandard
+references:
+- uid: Coree.NETStandard.Services.DebugService.DebugService
+  commentId: T:Coree.NETStandard.Services.DebugService.DebugService
+  href: Coree.NETStandard.Services.DebugService.DebugService.html
+  name: DebugService
+  nameWithType: DebugService
+  fullName: Coree.NETStandard.Services.DebugService.DebugService
+- uid: Coree.NETStandard.Services.DebugService.IDebugService
+  commentId: T:Coree.NETStandard.Services.DebugService.IDebugService
+  parent: Coree.NETStandard.Services.DebugService
+  href: Coree.NETStandard.Services.DebugService.IDebugService.html
+  name: IDebugService
+  nameWithType: IDebugService
+  fullName: Coree.NETStandard.Services.DebugService.IDebugService
+- uid: Coree.NETStandard.Services.DebugService
+  commentId: N:Coree.NETStandard.Services.DebugService
+  href: Coree.html
+  name: Coree.NETStandard.Services.DebugService
+  nameWithType: Coree.NETStandard.Services.DebugService
+  fullName: Coree.NETStandard.Services.DebugService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.DebugService
+    name: DebugService
+    href: Coree.NETStandard.Services.DebugService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Services
+    name: Services
+    href: Coree.NETStandard.Services.html
+  - name: .
+  - uid: Coree.NETStandard.Services.DebugService
+    name: DebugService
+    href: Coree.NETStandard.Services.DebugService.html

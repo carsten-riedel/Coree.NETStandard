@@ -1,0 +1,649 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  commentId: T:Coree.NETStandard.UnderConstruction.Timing.Ticker
+  id: Timing.Ticker
+  parent: Coree.NETStandard.UnderConstruction
+  children:
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick(Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.Start
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventHandler
+  - Coree.NETStandard.UnderConstruction.Timing.Ticker.tickeractive
+  langs:
+  - csharp
+  - vb
+  name: Timing.Ticker
+  nameWithType: Timing.Ticker
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Ticker
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 17
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public class Timing.Ticker
+    content.vb: Public Class Timing.Ticker
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventHandler
+  commentId: E:Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventHandler
+  id: TickerEventHandler
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: TickerEventHandler
+  nameWithType: Timing.Ticker.TickerEventHandler
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventHandler
+  type: Event
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TickerEventHandler
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 34
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public event EventHandler<Timing.Ticker.TickerEventArgs> TickerEventHandler
+    return:
+      type: System.EventHandler{Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs}
+    content.vb: Public Event TickerEventHandler As EventHandler(Of Timing.Ticker.TickerEventArgs)
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick(Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  commentId: M:Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick(Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  id: OnTick(Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: OnTick(TickerEventArgs)
+  nameWithType: Timing.Ticker.OnTick(Timing.Ticker.TickerEventArgs)
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick(Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: OnTick
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 60
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: protected virtual void OnTick(Timing.Ticker.TickerEventArgs e)
+    parameters:
+    - id: e
+      type: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+    content.vb: Protected Overridable Sub OnTick(e As Timing.Ticker.TickerEventArgs)
+  overload: Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick*
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.tickeractive
+  commentId: F:Coree.NETStandard.UnderConstruction.Timing.Ticker.tickeractive
+  id: tickeractive
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: tickeractive
+  nameWithType: Timing.Ticker.tickeractive
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.tickeractive
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: tickeractive
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 75
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public bool tickeractive
+    return:
+      type: System.Boolean
+    content.vb: Public tickeractive As Boolean
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  commentId: M:Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)
+  id: '#ctor(System.String,System.String,System.String,System.Boolean,System.Boolean)'
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: Ticker(string, string, string, bool, bool)
+  nameWithType: Timing.Ticker.Ticker(string, string, string, bool, bool)
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Ticker(string, string, string, bool, bool)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 90
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  summary: A ticker that ticks on a regular basis
+  example: []
+  syntax:
+    content: public Ticker(string Name = "default", string TickerIntervall = "00:00:00:00.50", string TickerOffset = "00:00:00:00.00", bool ForceStartingTick = true, bool StartAtEventAssignment = true)
+    parameters:
+    - id: Name
+      type: System.String
+      description: ''
+    - id: TickerIntervall
+      type: System.String
+      description: ''
+    - id: TickerOffset
+      type: System.String
+    - id: ForceStartingTick
+      type: System.Boolean
+      description: ''
+    - id: StartAtEventAssignment
+      type: System.Boolean
+    content.vb: Public Sub New(Name As String = "default", TickerIntervall As String = "00:00:00:00.50", TickerOffset As String = "00:00:00:00.00", ForceStartingTick As Boolean = True, StartAtEventAssignment As Boolean = True)
+  overload: Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor*
+  nameWithType.vb: Timing.Ticker.New(String, String, String, Boolean, Boolean)
+  fullName.vb: Coree.NETStandard.UnderConstruction.Timing.Ticker.New(String, String, String, Boolean, Boolean)
+  name.vb: New(String, String, String, Boolean, Boolean)
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.Start
+  commentId: M:Coree.NETStandard.UnderConstruction.Timing.Ticker.Start
+  id: Start
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: Start()
+  nameWithType: Timing.Ticker.Start()
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Start()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Start
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 101
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public void Start()
+    content.vb: Public Sub Start()
+  overload: Coree.NETStandard.UnderConstruction.Timing.Ticker.Start*
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop
+  commentId: M:Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop
+  id: Stop
+  parent: Coree.NETStandard.UnderConstruction.Timing.Ticker
+  langs:
+  - csharp
+  - vb
+  name: Stop()
+  nameWithType: Timing.Ticker.Stop()
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop()
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Stop
+    path: ../../src/Projects/Coree.NETStandard/UnderConstruction/Timing.cs
+    startLine: 156
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.UnderConstruction
+  syntax:
+    content: public void Stop()
+    content.vb: Public Sub [Stop]()
+  overload: Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop*
+references:
+- uid: Coree.NETStandard.UnderConstruction
+  commentId: N:Coree.NETStandard.UnderConstruction
+  href: Coree.html
+  name: Coree.NETStandard.UnderConstruction
+  nameWithType: Coree.NETStandard.UnderConstruction
+  fullName: Coree.NETStandard.UnderConstruction
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction
+    name: UnderConstruction
+    href: Coree.NETStandard.UnderConstruction.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction
+    name: UnderConstruction
+    href: Coree.NETStandard.UnderConstruction.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.EventHandler{Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs}
+  commentId: T:System.EventHandler{Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs}
+  parent: System
+  definition: System.EventHandler`1
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<Timing.Ticker.TickerEventArgs>
+  nameWithType: EventHandler<Timing.Ticker.TickerEventArgs>
+  fullName: System.EventHandler<Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs>
+  nameWithType.vb: EventHandler(Of Timing.Ticker.TickerEventArgs)
+  fullName.vb: System.EventHandler(Of Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs)
+  name.vb: EventHandler(Of Timing.Ticker.TickerEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - uid: Coree.NETStandard.UnderConstruction.Timing
+    name: Timing
+    href: Coree.NETStandard.UnderConstruction.Timing.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker
+    name: Ticker
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs.html
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Coree.NETStandard.UnderConstruction.Timing
+    name: Timing
+    href: Coree.NETStandard.UnderConstruction.Timing.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker
+    name: Ticker
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs.html
+  - name: )
+- uid: System.EventHandler`1
+  commentId: T:System.EventHandler`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  name: EventHandler<TEventArgs>
+  nameWithType: EventHandler<TEventArgs>
+  fullName: System.EventHandler<TEventArgs>
+  nameWithType.vb: EventHandler(Of TEventArgs)
+  fullName.vb: System.EventHandler(Of TEventArgs)
+  name.vb: EventHandler(Of TEventArgs)
+  spec.csharp:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: <
+  - name: TEventArgs
+  - name: '>'
+  spec.vb:
+  - uid: System.EventHandler`1
+    name: EventHandler
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.eventhandler-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TEventArgs
+  - name: )
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick
+  href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html#Coree_NETStandard_UnderConstruction_Timing_Ticker_OnTick_Coree_NETStandard_UnderConstruction_Timing_Ticker_TickerEventArgs_
+  name: OnTick
+  nameWithType: Timing.Ticker.OnTick
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.OnTick
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+  commentId: T:Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+  parent: Coree.NETStandard.UnderConstruction
+  href: Coree.NETStandard.UnderConstruction.Timing.html
+  name: Timing.Ticker.TickerEventArgs
+  nameWithType: Timing.Ticker.TickerEventArgs
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+  spec.csharp:
+  - uid: Coree.NETStandard.UnderConstruction.Timing
+    name: Timing
+    href: Coree.NETStandard.UnderConstruction.Timing.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker
+    name: Ticker
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs.html
+  spec.vb:
+  - uid: Coree.NETStandard.UnderConstruction.Timing
+    name: Timing
+    href: Coree.NETStandard.UnderConstruction.Timing.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker
+    name: Ticker
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html
+  - name: .
+  - uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs
+    name: TickerEventArgs
+    href: Coree.NETStandard.UnderConstruction.Timing.Ticker.TickerEventArgs.html
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Timing.Ticker.#ctor
+  href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html#Coree_NETStandard_UnderConstruction_Timing_Ticker__ctor_System_String_System_String_System_String_System_Boolean_System_Boolean_
+  name: Ticker
+  nameWithType: Timing.Ticker.Ticker
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Ticker
+  nameWithType.vb: Timing.Ticker.New
+  fullName.vb: Coree.NETStandard.UnderConstruction.Timing.Ticker.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.Start*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Timing.Ticker.Start
+  href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html#Coree_NETStandard_UnderConstruction_Timing_Ticker_Start
+  name: Start
+  nameWithType: Timing.Ticker.Start
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Start
+- uid: Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop*
+  commentId: Overload:Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop
+  href: Coree.NETStandard.UnderConstruction.Timing.Ticker.html#Coree_NETStandard_UnderConstruction_Timing_Ticker_Stop
+  name: Stop
+  nameWithType: Timing.Ticker.Stop
+  fullName: Coree.NETStandard.UnderConstruction.Timing.Ticker.Stop

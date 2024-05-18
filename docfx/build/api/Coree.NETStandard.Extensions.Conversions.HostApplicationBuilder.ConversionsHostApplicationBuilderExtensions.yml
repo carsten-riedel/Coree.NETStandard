@@ -1,0 +1,1173 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  commentId: T:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  id: ConversionsHostApplicationBuilderExtensions
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  children:
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.HostOptions})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  - Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostApplicationBuilder)
+  langs:
+  - csharp
+  - vb
+  name: ConversionsHostApplicationBuilderExtensions
+  nameWithType: ConversionsHostApplicationBuilderExtensions
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/UseConsoleLifetime.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConversionsHostApplicationBuilderExtensions
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/UseConsoleLifetime.cs
+    startLine: 10
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: >-
+    Provides extension methods for <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> to configure services, logging, app configuration, and host options in a manner similar to Host.CreateDefaultBuilder
+
+    These extensions offer a fluent interface for configuring the application host, enabling the customization of service dependencies, configuration sources, logging, and host behaviors.
+  example: []
+  syntax:
+    content: public static class ConversionsHostApplicationBuilderExtensions
+    content.vb: Public Module ConversionsHostApplicationBuilderExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  id: ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAppConfiguration(IHostApplicationBuilder, Action<IHostApplicationBuilder, IConfigurationBuilder>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(IHostApplicationBuilder, Action<IHostApplicationBuilder, IConfigurationBuilder>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Configuration.IConfigurationBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureAppConfiguration.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureAppConfiguration
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureAppConfiguration.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures application configuration for the host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureAppConfiguration(this IHostApplicationBuilder hostBuilder, Action<IHostApplicationBuilder, IConfigurationBuilder> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder}
+      description: The delegate to configure the application configuration with the host builder and configuration builder.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureAppConfiguration(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of IHostApplicationBuilder, IConfigurationBuilder)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, IConfigurationBuilder))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Configuration.IConfigurationBuilder))
+  name.vb: ConfigureAppConfiguration(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, IConfigurationBuilder))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  id: ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureAppConfiguration(IHostApplicationBuilder, Action<IConfigurationBuilder>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(IHostApplicationBuilder, Action<IConfigurationBuilder>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureAppConfiguration.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureAppConfiguration
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureAppConfiguration.cs
+    startLine: 31
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures application configuration for the host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureAppConfiguration(this IHostApplicationBuilder hostBuilder, Action<IConfigurationBuilder> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder}
+      description: The delegate to configure the application configuration with the configuration builder.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureAppConfiguration(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of IConfigurationBuilder)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(IHostApplicationBuilder, Action(Of IConfigurationBuilder))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Configuration.IConfigurationBuilder))
+  name.vb: ConfigureAppConfiguration(IHostApplicationBuilder, Action(Of IConfigurationBuilder))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions})
+  id: ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureHostOptions(IHostApplicationBuilder, Action<IHostApplicationBuilder, HostOptions>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(IHostApplicationBuilder, Action<IHostApplicationBuilder, HostOptions>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Hosting.HostOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureHostOptions.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureHostOptions
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureHostOptions.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures host options for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureHostOptions(this IHostApplicationBuilder hostBuilder, Action<IHostApplicationBuilder, HostOptions> configureOptions)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureOptions
+      type: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions}
+      description: The delegate to configure host options with the host builder and host options.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureHostOptions(hostBuilder As IHostApplicationBuilder, configureOptions As Action(Of IHostApplicationBuilder, HostOptions)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, HostOptions))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Hosting.HostOptions))
+  name.vb: ConfigureHostOptions(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, HostOptions))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.HostOptions})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.HostOptions})
+  id: ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.HostOptions})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureHostOptions(IHostApplicationBuilder, Action<HostOptions>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(IHostApplicationBuilder, Action<HostOptions>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Hosting.HostOptions>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureHostOptions.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureHostOptions
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureHostOptions.cs
+    startLine: 37
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures host options for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureHostOptions(this IHostApplicationBuilder hostBuilder, Action<HostOptions> configureOptions)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureOptions
+      type: System.Action{Microsoft.Extensions.Hosting.HostOptions}
+      description: The delegate to configure host options.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureHostOptions(hostBuilder As IHostApplicationBuilder, configureOptions As Action(Of HostOptions)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(IHostApplicationBuilder, Action(Of HostOptions))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Hosting.HostOptions))
+  name.vb: ConfigureHostOptions(IHostApplicationBuilder, Action(Of HostOptions))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder})
+  id: ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureLogging(IHostApplicationBuilder, Action<IHostApplicationBuilder, ILoggingBuilder>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureLogging(IHostApplicationBuilder, Action<IHostApplicationBuilder, ILoggingBuilder>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Logging.ILoggingBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureLogging.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureLogging
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureLogging.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures logging for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureLogging(this IHostApplicationBuilder hostBuilder, Action<IHostApplicationBuilder, ILoggingBuilder> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder}
+      description: The delegate to configure logging with the host builder and logging builder.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureLogging(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of IHostApplicationBuilder, ILoggingBuilder)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureLogging(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, ILoggingBuilder))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Logging.ILoggingBuilder))
+  name.vb: ConfigureLogging(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, ILoggingBuilder))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})
+  id: ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Logging.ILoggingBuilder})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureLogging(IHostApplicationBuilder, Action<ILoggingBuilder>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureLogging(IHostApplicationBuilder, Action<ILoggingBuilder>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureLogging.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureLogging
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureLogging.cs
+    startLine: 31
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures logging for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureLogging(this IHostApplicationBuilder hostBuilder, Action<ILoggingBuilder> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.Logging.ILoggingBuilder}
+      description: The delegate to configure logging with the logging builder.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureLogging(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of ILoggingBuilder)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureLogging(IHostApplicationBuilder, Action(Of ILoggingBuilder))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder))
+  name.vb: ConfigureLogging(IHostApplicationBuilder, Action(Of ILoggingBuilder))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  id: ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureServices(IHostApplicationBuilder, Action<IHostApplicationBuilder, IServiceCollection>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureServices(IHostApplicationBuilder, Action<IHostApplicationBuilder, IServiceCollection>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureServices.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureServices
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureServices.cs
+    startLine: 19
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures services for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureServices(this IHostApplicationBuilder hostBuilder, Action<IHostApplicationBuilder, IServiceCollection> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection}
+      description: The delegate to configure services with the host builder and service collection.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureServices(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of IHostApplicationBuilder, IServiceCollection)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureServices(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, IServiceCollection))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: ConfigureServices(IHostApplicationBuilder, Action(Of IHostApplicationBuilder, IServiceCollection))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  id: ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder,System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection})
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: ConfigureServices(IHostApplicationBuilder, Action<IServiceCollection>)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureServices(IHostApplicationBuilder, Action<IServiceCollection>)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureServices.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ConfigureServices
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/ConfigureServices.cs
+    startLine: 31
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures services for the application host builder using a delegate.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder ConfigureServices(this IHostApplicationBuilder hostBuilder, Action<IServiceCollection> configureDelegate)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    - id: configureDelegate
+      type: System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection}
+      description: The delegate to configure services with the service collection.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function ConfigureServices(hostBuilder As IHostApplicationBuilder, configureDelegate As Action(Of IServiceCollection)) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices*
+  nameWithType.vb: ConversionsHostApplicationBuilderExtensions.ConfigureServices(IHostApplicationBuilder, Action(Of IServiceCollection))
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices(Microsoft.Extensions.Hosting.IHostApplicationBuilder, System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection))
+  name.vb: ConfigureServices(IHostApplicationBuilder, Action(Of IServiceCollection))
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostApplicationBuilder)
+  commentId: M:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostApplicationBuilder)
+  id: UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostApplicationBuilder)
+  isExtensionMethod: true
+  parent: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseConsoleLifetime(IHostApplicationBuilder)
+  nameWithType: ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime(IHostApplicationBuilder)
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime(Microsoft.Extensions.Hosting.IHostApplicationBuilder)
+  type: Method
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/UseConsoleLifetime.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: UseConsoleLifetime
+    path: ../../src/Projects/Coree.NETStandard/Extensions/Conversions/HostApplicationBuilder/UseConsoleLifetime.cs
+    startLine: 17
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  summary: Configures the application host builder to use a console lifetime.
+  example: []
+  syntax:
+    content: public static IHostApplicationBuilder UseConsoleLifetime(this IHostApplicationBuilder hostBuilder)
+    parameters:
+    - id: hostBuilder
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The application host builder.
+    return:
+      type: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+      description: The <xref href="Microsoft.Extensions.Hosting.IHostApplicationBuilder" data-throw-if-not-resolved="false"></xref> for chaining.
+    content.vb: Public Shared Function UseConsoleLifetime(hostBuilder As IHostApplicationBuilder) As IHostApplicationBuilder
+  overload: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime*
+references:
+- uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  commentId: T:Microsoft.Extensions.Hosting.IHostApplicationBuilder
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  name: IHostApplicationBuilder
+  nameWithType: IHostApplicationBuilder
+  fullName: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  commentId: N:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  href: Coree.html
+  name: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  nameWithType: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions
+    name: Extensions
+    href: Coree.NETStandard.Extensions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions
+    name: Conversions
+    href: Coree.NETStandard.Extensions.Conversions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+    name: HostApplicationBuilder
+    href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions
+    name: Extensions
+    href: Coree.NETStandard.Extensions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions
+    name: Conversions
+    href: Coree.NETStandard.Extensions.Conversions.html
+  - name: .
+  - uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder
+    name: HostApplicationBuilder
+    href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration*
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html#Coree_NETStandard_Extensions_Conversions_HostApplicationBuilder_ConversionsHostApplicationBuilderExtensions_ConfigureAppConfiguration_Microsoft_Extensions_Hosting_IHostApplicationBuilder_System_Action_Microsoft_Extensions_Hosting_IHostApplicationBuilder_Microsoft_Extensions_Configuration_IConfigurationBuilder__
+  name: ConfigureAppConfiguration
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureAppConfiguration
+- uid: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder}
+  commentId: T:System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Configuration.IConfigurationBuilder}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IHostApplicationBuilder, IConfigurationBuilder>
+  nameWithType: Action<IHostApplicationBuilder, IConfigurationBuilder>
+  fullName: System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Configuration.IConfigurationBuilder>
+  nameWithType.vb: Action(Of IHostApplicationBuilder, IConfigurationBuilder)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Configuration.IConfigurationBuilder)
+  name.vb: Action(Of IHostApplicationBuilder, IConfigurationBuilder)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: )
+- uid: System.Action`2
+  commentId: T:System.Action`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<T1, T2>
+  nameWithType: Action<T1, T2>
+  fullName: System.Action<T1, T2>
+  nameWithType.vb: Action(Of T1, T2)
+  fullName.vb: System.Action(Of T1, T2)
+  name.vb: Action(Of T1, T2)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder}
+  commentId: T:System.Action{Microsoft.Extensions.Configuration.IConfigurationBuilder}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IConfigurationBuilder>
+  nameWithType: Action<IConfigurationBuilder>
+  fullName: System.Action<Microsoft.Extensions.Configuration.IConfigurationBuilder>
+  nameWithType.vb: Action(Of IConfigurationBuilder)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Configuration.IConfigurationBuilder)
+  name.vb: Action(Of IConfigurationBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Configuration.IConfigurationBuilder
+    name: IConfigurationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfigurationbuilder
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions*
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html#Coree_NETStandard_Extensions_Conversions_HostApplicationBuilder_ConversionsHostApplicationBuilderExtensions_ConfigureHostOptions_Microsoft_Extensions_Hosting_IHostApplicationBuilder_System_Action_Microsoft_Extensions_Hosting_IHostApplicationBuilder_Microsoft_Extensions_Hosting_HostOptions__
+  name: ConfigureHostOptions
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureHostOptions
+- uid: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions}
+  commentId: T:System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Hosting.HostOptions}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IHostApplicationBuilder, HostOptions>
+  nameWithType: Action<IHostApplicationBuilder, HostOptions>
+  fullName: System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Hosting.HostOptions>
+  nameWithType.vb: Action(Of IHostApplicationBuilder, HostOptions)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Hosting.HostOptions)
+  name.vb: Action(Of IHostApplicationBuilder, HostOptions)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.HostOptions
+    name: HostOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostoptions
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.HostOptions
+    name: HostOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostoptions
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Hosting.HostOptions}
+  commentId: T:System.Action{Microsoft.Extensions.Hosting.HostOptions}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<HostOptions>
+  nameWithType: Action<HostOptions>
+  fullName: System.Action<Microsoft.Extensions.Hosting.HostOptions>
+  nameWithType.vb: Action(Of HostOptions)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Hosting.HostOptions)
+  name.vb: Action(Of HostOptions)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.HostOptions
+    name: HostOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostoptions
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.HostOptions
+    name: HostOptions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.hostoptions
+  - name: )
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging*
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html#Coree_NETStandard_Extensions_Conversions_HostApplicationBuilder_ConversionsHostApplicationBuilderExtensions_ConfigureLogging_Microsoft_Extensions_Hosting_IHostApplicationBuilder_System_Action_Microsoft_Extensions_Hosting_IHostApplicationBuilder_Microsoft_Extensions_Logging_ILoggingBuilder__
+  name: ConfigureLogging
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureLogging
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureLogging
+- uid: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder}
+  commentId: T:System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.Logging.ILoggingBuilder}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IHostApplicationBuilder, ILoggingBuilder>
+  nameWithType: Action<IHostApplicationBuilder, ILoggingBuilder>
+  fullName: System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Logging.ILoggingBuilder>
+  nameWithType.vb: Action(Of IHostApplicationBuilder, ILoggingBuilder)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.Logging.ILoggingBuilder)
+  name.vb: Action(Of IHostApplicationBuilder, ILoggingBuilder)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+- uid: System.Action{Microsoft.Extensions.Logging.ILoggingBuilder}
+  commentId: T:System.Action{Microsoft.Extensions.Logging.ILoggingBuilder}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<ILoggingBuilder>
+  nameWithType: Action<ILoggingBuilder>
+  fullName: System.Action<Microsoft.Extensions.Logging.ILoggingBuilder>
+  nameWithType.vb: Action(Of ILoggingBuilder)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Logging.ILoggingBuilder)
+  name.vb: Action(Of ILoggingBuilder)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Logging.ILoggingBuilder
+    name: ILoggingBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.iloggingbuilder
+  - name: )
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices*
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html#Coree_NETStandard_Extensions_Conversions_HostApplicationBuilder_ConversionsHostApplicationBuilderExtensions_ConfigureServices_Microsoft_Extensions_Hosting_IHostApplicationBuilder_System_Action_Microsoft_Extensions_Hosting_IHostApplicationBuilder_Microsoft_Extensions_DependencyInjection_IServiceCollection__
+  name: ConfigureServices
+  nameWithType: ConversionsHostApplicationBuilderExtensions.ConfigureServices
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.ConfigureServices
+- uid: System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection}
+  commentId: T:System.Action{Microsoft.Extensions.Hosting.IHostApplicationBuilder,Microsoft.Extensions.DependencyInjection.IServiceCollection}
+  parent: System
+  definition: System.Action`2
+  href: https://learn.microsoft.com/dotnet/api/system.action-2
+  name: Action<IHostApplicationBuilder, IServiceCollection>
+  nameWithType: Action<IHostApplicationBuilder, IServiceCollection>
+  fullName: System.Action<Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.DependencyInjection.IServiceCollection>
+  nameWithType.vb: Action(Of IHostApplicationBuilder, IServiceCollection)
+  fullName.vb: System.Action(Of Microsoft.Extensions.Hosting.IHostApplicationBuilder, Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: Action(Of IHostApplicationBuilder, IServiceCollection)
+  spec.csharp:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: <
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`2
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.Hosting.IHostApplicationBuilder
+    name: IHostApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostapplicationbuilder
+  - name: ','
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+- uid: System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection}
+  commentId: T:System.Action{Microsoft.Extensions.DependencyInjection.IServiceCollection}
+  parent: System
+  definition: System.Action`1
+  href: https://learn.microsoft.com/dotnet/api/system.action-1
+  name: Action<IServiceCollection>
+  nameWithType: Action<IServiceCollection>
+  fullName: System.Action<Microsoft.Extensions.DependencyInjection.IServiceCollection>
+  nameWithType.vb: Action(Of IServiceCollection)
+  fullName.vb: System.Action(Of Microsoft.Extensions.DependencyInjection.IServiceCollection)
+  name.vb: Action(Of IServiceCollection)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: <
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.action-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: Microsoft.Extensions.DependencyInjection.IServiceCollection
+    name: IServiceCollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection
+  - name: )
+- uid: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime*
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime
+  href: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.html#Coree_NETStandard_Extensions_Conversions_HostApplicationBuilder_ConversionsHostApplicationBuilderExtensions_UseConsoleLifetime_Microsoft_Extensions_Hosting_IHostApplicationBuilder_
+  name: UseConsoleLifetime
+  nameWithType: ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime
+  fullName: Coree.NETStandard.Extensions.Conversions.HostApplicationBuilder.ConversionsHostApplicationBuilderExtensions.UseConsoleLifetime

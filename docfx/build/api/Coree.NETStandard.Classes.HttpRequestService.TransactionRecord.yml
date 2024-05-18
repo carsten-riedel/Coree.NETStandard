@@ -1,0 +1,739 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  commentId: T:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  id: TransactionRecord
+  parent: Coree.NETStandard.Classes.HttpRequestService
+  children:
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  - Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  langs:
+  - csharp
+  - vb
+  name: TransactionRecord
+  nameWithType: TransactionRecord
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  type: Class
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: TransactionRecord
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 12
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Represents a detailed record of an HTTP transaction, including the request, response, and any exception that occurred.
+  example: []
+  syntax:
+    content: public class TransactionRecord
+    content.vb: Public Class TransactionRecord
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  id: IsFromCache
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: IsFromCache
+  nameWithType: TransactionRecord.IsFromCache
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsFromCache
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 17
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Indicates whether the transaction record was retrieved from cache.
+  example: []
+  syntax:
+    content: public bool IsFromCache { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsFromCache As Boolean
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  id: HttpRequestMessage
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: HttpRequestMessage
+  nameWithType: TransactionRecord.HttpRequestMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: HttpRequestMessage
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 22
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: The HTTP request message associated with the transaction.
+  example: []
+  syntax:
+    content: public HttpRequestMessage? HttpRequestMessage { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Http.HttpRequestMessage
+    content.vb: Public Property HttpRequestMessage As HttpRequestMessage
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  id: HttpResponseMessage
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: HttpResponseMessage
+  nameWithType: TransactionRecord.HttpResponseMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: HttpResponseMessage
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 27
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: The HTTP response message received for the transaction.
+  example: []
+  syntax:
+    content: public HttpResponseMessage? HttpResponseMessage { get; set; }
+    parameters: []
+    return:
+      type: System.Net.Http.HttpResponseMessage
+    content.vb: Public Property HttpResponseMessage As HttpResponseMessage
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  id: LastException
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: LastException
+  nameWithType: TransactionRecord.LastException
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: LastException
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 32
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: The last exception encountered during the transaction, if any.
+  example: []
+  syntax:
+    content: public Exception? LastException { get; set; }
+    parameters: []
+    return:
+      type: System.Exception
+    content.vb: Public Property LastException As Exception
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  id: ResponseBytes
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: ResponseBytes
+  nameWithType: TransactionRecord.ResponseBytes
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ResponseBytes
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 37
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Retrieves the response as a byte array. Returns null if the response is unavailable or an error occurs during retrieval.
+  example: []
+  syntax:
+    content: public byte[]? ResponseBytes { get; }
+    parameters: []
+    return:
+      type: System.Byte[]
+    content.vb: Public ReadOnly Property ResponseBytes As Byte()
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  id: ResponseString
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: ResponseString
+  nameWithType: TransactionRecord.ResponseString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ResponseString
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 62
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Retrieves the response as a string, decoding it according to the response's content encoding. Returns null if the response is unavailable or decoding fails.
+  example: []
+  syntax:
+    content: public string? ResponseString { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property ResponseString As String
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  commentId: P:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  id: ResponseSuccess
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: ResponseSuccess
+  nameWithType: TransactionRecord.ResponseSuccess
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  type: Property
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: ResponseSuccess
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 87
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Indicates whether the HTTP response was successful and no exceptions occurred. Returns false if the response, its content, headers are null, or an exception was recorded.
+  example: []
+  syntax:
+    content: public bool ResponseSuccess { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property ResponseSuccess As Boolean
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess*
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)
+  commentId: M:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)
+  id: '#ctor(System.Net.Http.HttpRequestMessage,System.Net.Http.HttpResponseMessage,System.Exception)'
+  parent: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord
+  langs:
+  - csharp
+  - vb
+  name: TransactionRecord(HttpRequestMessage?, HttpResponseMessage?, Exception?)
+  nameWithType: TransactionRecord.TransactionRecord(HttpRequestMessage?, HttpResponseMessage?, Exception?)
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord(System.Net.Http.HttpRequestMessage?, System.Net.Http.HttpResponseMessage?, System.Exception?)
+  type: Constructor
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: .ctor
+    path: ../../src/Projects/Coree.NETStandard/Classes/HttpRequestService/TransactionRecord.cs
+    startLine: 116
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.HttpRequestService
+  summary: Initializes a new instance of TransactionRecord with the specified HTTP request and response messages, and an optional exception.
+  example: []
+  syntax:
+    content: public TransactionRecord(HttpRequestMessage? httpRequestMessage, HttpResponseMessage? httpResponseMessage, Exception? lastException = null)
+    parameters:
+    - id: httpRequestMessage
+      type: System.Net.Http.HttpRequestMessage
+      description: The HTTP request message associated with the transaction.
+    - id: httpResponseMessage
+      type: System.Net.Http.HttpResponseMessage
+      description: The HTTP response message received in response to the request.
+    - id: lastException
+      type: System.Exception
+      description: The exception, if any, that occurred during the transaction.
+    content.vb: Public Sub New(httpRequestMessage As HttpRequestMessage, httpResponseMessage As HttpResponseMessage, lastException As Exception = Nothing)
+  overload: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor*
+  nameWithType.vb: TransactionRecord.New(HttpRequestMessage, HttpResponseMessage, Exception)
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New(System.Net.Http.HttpRequestMessage, System.Net.Http.HttpResponseMessage, System.Exception)
+  name.vb: New(HttpRequestMessage, HttpResponseMessage, Exception)
+references:
+- uid: Coree.NETStandard.Classes.HttpRequestService
+  commentId: N:Coree.NETStandard.Classes.HttpRequestService
+  href: Coree.html
+  name: Coree.NETStandard.Classes.HttpRequestService
+  nameWithType: Coree.NETStandard.Classes.HttpRequestService
+  fullName: Coree.NETStandard.Classes.HttpRequestService
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.HttpRequestService
+    name: HttpRequestService
+    href: Coree.NETStandard.Classes.HttpRequestService.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.HttpRequestService
+    name: HttpRequestService
+    href: Coree.NETStandard.Classes.HttpRequestService.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_IsFromCache
+  name: IsFromCache
+  nameWithType: TransactionRecord.IsFromCache
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.IsFromCache
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpRequestMessage
+  name: HttpRequestMessage
+  nameWithType: TransactionRecord.HttpRequestMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpRequestMessage
+- uid: System.Net.Http.HttpRequestMessage
+  commentId: T:System.Net.Http.HttpRequestMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httprequestmessage
+  name: HttpRequestMessage
+  nameWithType: HttpRequestMessage
+  fullName: System.Net.Http.HttpRequestMessage
+- uid: System.Net.Http
+  commentId: N:System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Net.Http
+  nameWithType: System.Net.Http
+  fullName: System.Net.Http
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Net
+    name: Net
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net
+  - name: .
+  - uid: System.Net.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.net.http
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_HttpResponseMessage
+  name: HttpResponseMessage
+  nameWithType: TransactionRecord.HttpResponseMessage
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.HttpResponseMessage
+- uid: System.Net.Http.HttpResponseMessage
+  commentId: T:System.Net.Http.HttpResponseMessage
+  parent: System.Net.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.net.http.httpresponsemessage
+  name: HttpResponseMessage
+  nameWithType: HttpResponseMessage
+  fullName: System.Net.Http.HttpResponseMessage
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_LastException
+  name: LastException
+  nameWithType: TransactionRecord.LastException
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.LastException
+- uid: System.Exception
+  commentId: T:System.Exception
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseBytes
+  name: ResponseBytes
+  nameWithType: TransactionRecord.ResponseBytes
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseBytes
+- uid: System.Byte[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.byte
+  name: byte[]
+  nameWithType: byte[]
+  fullName: byte[]
+  nameWithType.vb: Byte()
+  fullName.vb: Byte()
+  name.vb: Byte()
+  spec.csharp:
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseString
+  name: ResponseString
+  nameWithType: TransactionRecord.ResponseString
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseString
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord_ResponseSuccess
+  name: ResponseSuccess
+  nameWithType: TransactionRecord.ResponseSuccess
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.ResponseSuccess
+- uid: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor*
+  commentId: Overload:Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.#ctor
+  href: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.html#Coree_NETStandard_Classes_HttpRequestService_TransactionRecord__ctor_System_Net_Http_HttpRequestMessage_System_Net_Http_HttpResponseMessage_System_Exception_
+  name: TransactionRecord
+  nameWithType: TransactionRecord.TransactionRecord
+  fullName: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.TransactionRecord
+  nameWithType.vb: TransactionRecord.New
+  fullName.vb: Coree.NETStandard.Classes.HttpRequestService.TransactionRecord.New
+  name.vb: New

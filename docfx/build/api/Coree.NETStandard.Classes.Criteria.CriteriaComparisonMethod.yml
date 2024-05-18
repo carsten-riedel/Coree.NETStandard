@@ -1,0 +1,337 @@
+### YamlMime:ManagedReference
+items:
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  id: CriteriaComparisonMethod
+  parent: Coree.NETStandard.Classes.Criteria
+  children:
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Contains
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.EndsWith
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Equals
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThan
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThanOrEqual
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.IsNullOrWhiteSpace
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThan
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThanOrEqual
+  - Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.StartsWith
+  langs:
+  - csharp
+  - vb
+  name: CriteriaComparisonMethod
+  nameWithType: CriteriaComparisonMethod
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  type: Enum
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: CriteriaComparisonMethod
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 5
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies the comparison methods available for evaluating string properties in criteria expressions.
+  example: []
+  syntax:
+    content: public enum CriteriaComparisonMethod
+    content.vb: Public Enum CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Contains
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Contains
+  id: Contains
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: Contains
+  nameWithType: CriteriaComparisonMethod.Contains
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Contains
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Contains
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 10
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that the string property should contain a specified substring.
+  example: []
+  syntax:
+    content: Contains = 0
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.StartsWith
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.StartsWith
+  id: StartsWith
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: StartsWith
+  nameWithType: CriteriaComparisonMethod.StartsWith
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.StartsWith
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: StartsWith
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 15
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that the string property should start with a specified substring.
+  example: []
+  syntax:
+    content: StartsWith = 1
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.EndsWith
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.EndsWith
+  id: EndsWith
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: EndsWith
+  nameWithType: CriteriaComparisonMethod.EndsWith
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.EndsWith
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: EndsWith
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 20
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that the string property should end with a specified substring.
+  example: []
+  syntax:
+    content: EndsWith = 2
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.IsNullOrWhiteSpace
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.IsNullOrWhiteSpace
+  id: IsNullOrWhiteSpace
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: IsNullOrWhiteSpace
+  nameWithType: CriteriaComparisonMethod.IsNullOrWhiteSpace
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.IsNullOrWhiteSpace
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: IsNullOrWhiteSpace
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 25
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that the string property should be either null, empty, or consist only of whitespace characters.
+  example: []
+  syntax:
+    content: IsNullOrWhiteSpace = 3
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Equals
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Equals
+  id: Equals
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: Equals
+  nameWithType: CriteriaComparisonMethod.Equals
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.Equals
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: Equals
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 30
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that the string property should be equal to a specified string, typically considering case-sensitivity.
+  example: []
+  syntax:
+    content: Equals = 4
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThan
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThan
+  id: GreaterThan
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: CriteriaComparisonMethod.GreaterThan
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThan
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: GreaterThan
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 35
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that a numeric or date/time property should be greater than a specified value.
+  example: []
+  syntax:
+    content: GreaterThan = 5
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThan
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThan
+  id: LessThan
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: CriteriaComparisonMethod.LessThan
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThan
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: LessThan
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 40
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that a numeric or date/time property should be less than a specified value.
+  example: []
+  syntax:
+    content: LessThan = 6
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThanOrEqual
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: CriteriaComparisonMethod.GreaterThanOrEqual
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.GreaterThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: GreaterThanOrEqual
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 45
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that a numeric or date/time property should be greater than or equal to a specified value.
+  example: []
+  syntax:
+    content: GreaterThanOrEqual = 7
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThanOrEqual
+  commentId: F:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: CriteriaComparisonMethod.LessThanOrEqual
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.LessThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+      branch: master
+      repo: https://github.com/carsten-riedel/Coree.NETStandard
+    id: LessThanOrEqual
+    path: ../../src/Projects/Coree.NETStandard/Classes/Criteria/CriteriaComparisonMethod.cs
+    startLine: 50
+  assemblies:
+  - Coree.NETStandard
+  namespace: Coree.NETStandard.Classes.Criteria
+  summary: Specifies that a numeric or date/time property should be less than or equal to a specified value.
+  example: []
+  syntax:
+    content: LessThanOrEqual = 8
+    return:
+      type: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+references:
+- uid: Coree.NETStandard.Classes.Criteria
+  commentId: N:Coree.NETStandard.Classes.Criteria
+  href: Coree.html
+  name: Coree.NETStandard.Classes.Criteria
+  nameWithType: Coree.NETStandard.Classes.Criteria
+  fullName: Coree.NETStandard.Classes.Criteria
+  spec.csharp:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+  spec.vb:
+  - uid: Coree
+    name: Coree
+    href: Coree.html
+  - name: .
+  - uid: Coree.NETStandard
+    name: NETStandard
+    href: Coree.NETStandard.html
+  - name: .
+  - uid: Coree.NETStandard.Classes
+    name: Classes
+    href: Coree.NETStandard.Classes.html
+  - name: .
+  - uid: Coree.NETStandard.Classes.Criteria
+    name: Criteria
+    href: Coree.NETStandard.Classes.Criteria.html
+- uid: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  commentId: T:Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
+  parent: Coree.NETStandard.Classes.Criteria
+  href: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.html
+  name: CriteriaComparisonMethod
+  nameWithType: CriteriaComparisonMethod
+  fullName: Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod
