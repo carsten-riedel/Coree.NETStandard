@@ -42,12 +42,6 @@ namespace Coree.NETStandard.MSTest
         }
 
         [TestMethod]
-        public void Fail()
-        {
-            Assert.AreEqual(false, true);
-        }
-
-        [TestMethod]
         [SupportedOSPlatform("windows")]
         public void TryFixPathCaseing_Check()
         {
