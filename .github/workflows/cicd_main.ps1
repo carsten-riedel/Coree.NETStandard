@@ -19,7 +19,7 @@ $NUGET_TEST_PAT = $args[2]
 . "$PSScriptRoot/cicd_build_config.ps1"
 . "$PSScriptRoot/cicd_build.ps1"
 . "$PSScriptRoot/cicd_deploy.ps1"
-#. "$PSScriptRoot/cicd_postdeploy_clean.ps1"
+. "$PSScriptRoot/cicd_postdeploy_clean.ps1"
 #. "$PSScriptRoot/cicd_postdeploy_run.ps1"
 
 #git status --porcelain $sourceCodeFolder
