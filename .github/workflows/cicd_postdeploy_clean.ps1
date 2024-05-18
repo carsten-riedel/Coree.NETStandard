@@ -7,6 +7,7 @@ $headers = @{
 }
 
 $GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers | Out-Null
+Write-Output $GitHubNugetPackagelist
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchNameSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
 foreach ($item in $GitHubNugetPackagelistOld)
 {
