@@ -244,18 +244,51 @@ function Get-GitRemoteOriginUrl {
     }
 }
 
+
+
+<# 
+.SYNOPSIS
+Executes a specified command and checks if the exit code is one of the expected codes.
+
+.DESCRIPTION
+The function executes a command using Invoke-Expression. It throws an error if the exit code of the command is not within the specified expected codes.
+
+.PARAMETER Command
+The command string to be executed.
+
+.PARAMETER ExpectedExitCodes
+An array of integers specifying acceptable exit codes. Defaults to 0.
+
+.EXAMPLE
+Execute-Command "ping 8.8.8.8"
+This example executes the ping command and checks if the exit code is 0.
+
+.EXAMPLE
+Execute-Command "ping 8.8.8.8" -ExpectedExitCodes 0,1
+This example executes the ping command and checks if the exit code is either 0 or 1.
+#>
 function Execute-Command {
+    [CmdletBinding()]
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
     param (
-        [string]$Command
+        [string]$Command,
+        [int[]]$ExpectedExitCodes = @(0)
     )
+
 
     # Output the command being executed for transparency
     Write-Output "Executing command: $Command"
 
     # Execute the command using Invoke-Expression
     Invoke-Expression -Command $Command
+
+    # Check if the exit code is not in the expected array
+    if (-not $ExpectedExitCodes.Contains($LASTEXITCODE)) {
+        throw "Unexpected exit code: $($LASTEXITCODE). Expected: $($ExpectedExitCodes -join ', ')"
+    }
 }
+
+
 
 function Ensure-VariableSet {
     [Diagnostics.CodeAnalysis.SuppressMessageAttribute("PSUseApprovedVerbs", "")]
