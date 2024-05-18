@@ -46,10 +46,6 @@ else {
 ######################################################################################
 Log-Block -Stage "Resolving" -Section "Preconditions" -Task "Secrets"
 
-$PAT = $args[0]
-$NUGET_PAT = $args[1]
-$NUGET_TEST_PAT = $args[2]
-
 $secretsPath = "$PSScriptRoot/cicd_secrets.ps1"
 # Check if the secrets file exists before importing
 if (Test-Path $secretsPath) {
