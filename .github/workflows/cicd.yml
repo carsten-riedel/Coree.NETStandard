@@ -20,7 +20,8 @@ on:
       - 'feature/**'
       - 'hotfix/**'
   repository_dispatch:
-    types: builddispatch
+    types: 
+      - builddispatch
   workflow_dispatch:
 
 jobs:
