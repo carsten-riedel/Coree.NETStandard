@@ -37,8 +37,16 @@ namespace Coree.NETStandard.MSTest
         [TestMethod]
         public void IsValidLocationruntimes_ReturnsTrue()
         {
-            var result = fileservice?.IsValidLocation(@"Runtimes");
-            Assert.AreEqual(result, true);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                var result = fileservice?.IsValidLocation(@"Runtimes");
+                Assert.AreEqual(result, true);
+            }
+            else
+            {
+                Assert.Inconclusive("Test not supported on this OS.");
+            }
+
         }
 
         [TestMethod]
