@@ -339,7 +339,8 @@ function Remove-FilesAndDirectories {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory = $true)]
-        [string]$FolderPath  # The root path where the cleanup will begin
+        [string]$FolderPath,  # The root path where the cleanup will begin
+        [bool]$DumpDeleted = $true
     )
 
     # Internal function to recursively delete files
@@ -355,7 +356,10 @@ function Remove-FilesAndDirectories {
         foreach ($file in $files) {
             try {
                 $file | Remove-Item -Force -ErrorAction Stop
-                Write-Host "Deleted file: $($file.FullName)"
+                if ($DumpDeleted)
+                {
+                    Write-Host "Deleted file: $($file.FullName)"
+                }
             } catch {
                 Write-Host "Failed to delete file: $($file.FullName)"
             }
@@ -378,7 +382,10 @@ function Remove-FilesAndDirectories {
             Delete-Directories -Path $dir.FullName
             try {
                 $dir | Remove-Item -Force -Recurse -ErrorAction Stop
-                Write-Host "Deleted directory: $($dir.FullName)"
+                if ($DumpDeleted)
+                {
+                    Write-Host "Deleted directory: $($dir.FullName)"
+                }
             } catch {
                 Write-Host "Failed to delete directory: $($dir.FullName)"
             }

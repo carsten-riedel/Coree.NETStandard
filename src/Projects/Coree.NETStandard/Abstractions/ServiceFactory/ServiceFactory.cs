@@ -115,13 +115,14 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             host.UseConsoleLifetime(lifeTimeOptions => { lifeTimeOptions.SuppressStatusMessages = true; });
         }
 
-        //    private static IServiceCollection AddLazySingletoX<TService>(this IServiceCollection services, Func<IServiceProvider, TService> implementationFactory)
-        //where TService : class
-        //    {
-        //        services.AddSingleton(provider => new Lazy<TService>(() => implementationFactory(provider)));
-        //        services.AddSingleton(provider => provider.GetRequiredService<Lazy<TService>>().Value);
-        //        return services;
-        //    }
+
+    //    private static IServiceCollection AddLazySingletoX<TService>(this IServiceCollection services, Func<IServiceProvider, TService> implementationFactory)
+    //where TService : class
+    //    {
+    //        services.AddSingleton(provider => new Lazy<TService>(() => implementationFactory(provider)));
+    //        services.AddSingleton(provider => provider.GetRequiredService<Lazy<TService>>().Value);
+    //        return services;
+    //    }
 
         /// <summary>
         /// Internally constructs and configures a service stack of type <typeparamref name="T"/> based on provided actions.
@@ -142,7 +143,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             try
             {
                 _hostBuilder = Host.CreateDefaultBuilder();
-
+                
                 _hostBuilder.ConfigureServices(services =>
                 {
                     services.AddHttpClient();
