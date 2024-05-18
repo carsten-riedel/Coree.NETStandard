@@ -286,6 +286,9 @@ function Execute-Command {
     if (-not $ExpectedExitCodes.Contains($LASTEXITCODE)) {
         throw "Unexpected exit code: $($LASTEXITCODE). Expected: $($ExpectedExitCodes -join ', ')"
     }
+    else {
+        Write-Output "Expected  exit code: $($LASTEXITCODE)"
+    }
 }
 
 

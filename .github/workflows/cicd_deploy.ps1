@@ -77,11 +77,11 @@ if ([string]::IsNullOrWhiteSpace($gitUserLocal) -or [string]::IsNullOrWhiteSpace
 git config user.name $gitTempUser
 git config user.email $gitTempMail
 
-Execute-Command "git add --all"
-Execute-Command "git commit -m ""Updated form Workflow [no ci]"""
-Execute-Command "git push origin $branchName"
-Execute-Command "git tag -a ""$tag"" -m ""[no ci]"""
-Execute-Command "git push origin ""$tag"""
+Execute-Command -Command "git add --all"
+Execute-Command -Command "git commit -m ""Updated form Workflow [no ci]""" -ExpectedExitCodes @(0,1)
+Execute-Command -Command "git push origin $branchName"
+Execute-Command -Command "git tag -a ""$tag"" -m ""[no ci]"""
+Execute-Command -Command "git push origin ""$tag"""
 
 #restore
 git config user.name $gitUserLocal
