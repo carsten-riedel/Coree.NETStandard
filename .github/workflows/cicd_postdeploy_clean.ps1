@@ -5,8 +5,9 @@ Log-Block -Stage "Post Deploy" -Section "Cleanup Packagelist" -Task ""
 $headers = @{
     Authorization = "Bearer $PAT"
 }
+$uri = "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions"
 
-$GitHubNugetPackagelist = Invoke-RestMethod -Uri "https://api.github.com/users/$gitOwner/packages/nuget/$gitRepo/versions" -Headers $headers | Out-Null
+$GitHubNugetPackagelist = Invoke-RestMethod -Uri $uri -Headers $headers
 $GitHubNugetPackagelistOld = $GitHubNugetPackagelist | Where-Object { $_.name -like "*$branchNameSegment" } | Sort-Object -Property created_at -Descending | Select-Object -Skip 2
 foreach ($item in $GitHubNugetPackagelistOld)
 {
