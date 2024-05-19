@@ -2639,6 +2639,70 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToByteArray
   nameWithType: ConversionsStringExtensions.ToByteArray
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument(System.String)
+  name: ToJsonDocument(string?)
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonDocument_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument(System.String)
+  name.vb: ToJsonDocument(String)
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument(string?)
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument(String)
+  nameWithType: ConversionsStringExtensions.ToJsonDocument(string?)
+  nameWithType.vb: ConversionsStringExtensions.ToJsonDocument(String)
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument*
+  name: ToJsonDocument
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonDocument_
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonDocument
+  nameWithType: ConversionsStringExtensions.ToJsonDocument
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode(System.String)
+  name: ToJsonNode(string?)
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonNode_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode(System.String)
+  name.vb: ToJsonNode(String)
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode(string?)
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode(String)
+  nameWithType: ConversionsStringExtensions.ToJsonNode(string?)
+  nameWithType.vb: ConversionsStringExtensions.ToJsonNode(String)
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode*
+  name: ToJsonNode
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonNode_
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonNode
+  nameWithType: ConversionsStringExtensions.ToJsonNode
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult(System.String,System.String)
+  name: ToJsonPathResult(string?, string)
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonPathResult_System_String_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult(System.String,System.String)
+  name.vb: ToJsonPathResult(String, String)
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult(string?, string)
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult(String, String)
+  nameWithType: ConversionsStringExtensions.ToJsonPathResult(string?, string)
+  nameWithType.vb: ConversionsStringExtensions.ToJsonPathResult(String, String)
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult*
+  name: ToJsonPathResult
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonPathResult_
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResult
+  nameWithType: ConversionsStringExtensions.ToJsonPathResult
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues*
+  name: ToJsonPathResultValues
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonPathResultValues_
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues
+  nameWithType: ConversionsStringExtensions.ToJsonPathResultValues
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues``1(System.String,System.String)
+  name: ToJsonPathResultValues<T>(string?, string)
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToJsonPathResultValues__1_System_String_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues``1(System.String,System.String)
+  name.vb: ToJsonPathResultValues(Of T)(String, String)
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues<T>(string?, string)
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues(Of T)(String, String)
+  nameWithType: ConversionsStringExtensions.ToJsonPathResultValues<T>(string?, string)
+  nameWithType.vb: ConversionsStringExtensions.ToJsonPathResultValues(Of T)(String, String)
 - uid: Coree.NETStandard.Extensions.Conversions.String.Encodings
   name: Encodings
   href: api/Coree.NETStandard.Extensions.Conversions.String.Encodings.html
