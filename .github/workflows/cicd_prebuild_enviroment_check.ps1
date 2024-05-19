@@ -3,7 +3,7 @@
 Log-Block -Stage "Checking" -Section "Preconditions" -Task "Commands setup."
 
 # Check availability of required commands
-$result = Test-CommandsAvailabilities -CommandList @("git", "dotnet", "pwsh" , "curl")
+$result = Test-CommandsAvailabilities -CommandList @("git", "dotnet", "pwsh" , "curl" , "gh")
 if (-not $result) {
     Write-Host "One or more required commands are unavailable. Stopping execution."
     exit 1
