@@ -14,3 +14,8 @@ git fetch --all
 git checkout release
 git reset --hard origin/master
 git push origin release --force
+
+git fetch --all
+git checkout develop
+git reset --hard origin/release
+git push origin develop --force
