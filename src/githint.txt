@@ -6,3 +6,11 @@ git branch -vv | Select-String "\: gone\]" | ForEach-Object { $branchName = $_.L
 git merge origin develop
 
 git merge feature MSTest
+
+
+
+### force backmerge
+git fetch --all
+git checkout release
+git reset --hard origin/master
+git push origin release --force
