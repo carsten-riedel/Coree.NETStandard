@@ -30,7 +30,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_TEST_PAT --source https://apiint.nugettest.org/v3/index.json
 
 } elseif ($branchNameSegment -ieq "master") {
 
@@ -39,7 +39,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 
 } elseif ($branchNameSegment -ieq "hotfix") {
 
@@ -48,7 +48,7 @@ if ($branchNameSegment -ieq "feature") {
     $firstFileMatch = Get-ChildItem -Path $basePath -Filter $pattern -File -Recurse | Select-Object -First 1
     Execute-Command "dotnet nuget push ""$($firstFileMatch.FullName)"" --api-key $PAT --source ""github"""
 
-    #dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
+    dotnet nuget push "$($firstFileMatch.FullName)" --api-key $NUGET_PAT --source https://api.nuget.org/v3/index.json
 }
 
 ######################################################################################
@@ -82,6 +82,8 @@ Execute-Command -Command "git commit -m ""Updated form Workflow [no ci]""" -Expe
 Execute-Command -Command "git push origin $branchName"
 Execute-Command -Command "git tag -a ""$tag"" -m ""[no ci]"""
 Execute-Command -Command "git push origin ""$tag"""
+Execute-Command -Command "gh release create ""$tag"" --notes ""auto release"""
+Execute-Command -Command "gh release upload ""$tag"" ""$($firstFileMatch.FullName)"" --clobber"
 
 #restore
 git config user.name $gitUserLocal
