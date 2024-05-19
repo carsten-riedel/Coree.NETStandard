@@ -13,11 +13,14 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
+  <ItemGroup>
+    <None Remove="Extensions\Conversions\String\ToJson.cs" />
+  </ItemGroup>
 
 
   
   <ItemGroup>
-    <PackageReference Include="JsonPath.Net" Version="1.0.4" />
+    <PackageReference Include="JsonPath.Net" Version="1.0.5" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[3.1.32, 4)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="[3.1.32, 4)" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[3.1.32, 4)" />
