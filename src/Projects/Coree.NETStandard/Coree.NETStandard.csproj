@@ -13,9 +13,6 @@
   <!-- NuGet Package configuration -->
   <Import Project="Package/Config/PackageMetadata.props" />
   <Import Project="Package/Config/PackageSpecs.props" />
-  <ItemGroup>
-    <None Remove="Extensions\Conversions\String\ToJson.cs" />
-  </ItemGroup>
 
 
   
