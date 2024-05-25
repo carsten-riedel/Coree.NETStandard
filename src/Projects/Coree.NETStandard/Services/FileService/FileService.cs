@@ -187,5 +187,9 @@ namespace Coree.NETStandard.Services.FileService
         /// </code>
         /// </example>
         string? TryFixPathCaseing(string? path);
+
+        Task CreateJsonPathInventoryAsync(string? path, string? inventoryFilename = "");
+
+        Task InventoryCopyAsync(string inventoryFilename, string target);
     }
 }
