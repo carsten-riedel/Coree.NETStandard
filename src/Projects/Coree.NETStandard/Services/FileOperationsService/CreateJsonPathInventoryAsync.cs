@@ -6,14 +6,14 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using System.Threading;
 using System.Threading.Tasks;
-
+using System.Threading;
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileOperationsService
 {
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileOperationsService : ServiceFactory<FileOperationsService>, IFileOperationsService
     {
         public class PathInventory
         {
@@ -45,168 +45,6 @@ namespace Coree.NETStandard.Services.FileService
 
             public string? ExceptionMessage { get; set; }
         }
-
-        //static async Task AddFileSystemEntriesAsync(string path, List<FileSystemInfo> list)
-        //{
-        //    try
-        //    {
-        //        // Asynchronously add all files in the current directory to the list.
-        //        var files = Directory.EnumerateFiles(path);
-        //        foreach (var filePath in files)
-        //        {
-        //            FileInfo fileInfo = new FileInfo(filePath);
-        //            list.Add(fileInfo);
-
-        //            // Introduce a delay every 5000 entries to avoid overwhelming resources
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //        }
-
-        //        // Asynchronously add directories and recurse.
-        //        var directories = Directory.EnumerateDirectories(path);
-        //        foreach (var directoryPath in directories)
-        //        {
-        //            DirectoryInfo dirInfo = new DirectoryInfo(directoryPath);
-        //            list.Add(dirInfo);
-
-        //            // Delay again every 5000 entries
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //            await AddFileSystemEntriesAsync(directoryPath, list); // Recursive async call
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log the error or handle it as needed
-        //        Console.WriteLine($"Error accessing {path}: {ex.Message}");
-        //    }
-        //}
-
-        //static async Task AddFileSystemEntriesAsync2(DirectoryInfo dirInfo, List<FileSystemInfo> list)
-        //{
-        //    try
-        //    {
-        //        // Asynchronously add all files in the current directory to the list.
-        //        var files = dirInfo.EnumerateFiles();
-        //        foreach (var fileInfo in files)
-        //        {
-        //            list.Add(fileInfo);
-
-        //            // Introduce a delay every 5000 entries to avoid overwhelming resources
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //        }
-
-        //        // Asynchronously add directories and recurse.
-        //        var directories = dirInfo.EnumerateDirectories();
-        //        foreach (var subDirInfo in directories)
-        //        {
-        //            list.Add(subDirInfo);
-
-        //            // Delay again every 5000 entries
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //            await AddFileSystemEntriesAsync2(subDirInfo, list); // Recursive async call
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log the error or handle it as needed
-        //        Console.WriteLine($"Error accessing {dirInfo.FullName}: {ex.Message}");
-        //    }
-        //}
-
-        //static async Task<List<FileSystemInfo>> AddFileSystemEntriesAsync3(DirectoryInfo dirInfo)
-        //{
-        //    List<FileSystemInfo> list = new List<FileSystemInfo>();
-        //    try
-        //    {
-        //        // Asynchronously add all files in the current directory to the list.
-        //        var files = dirInfo.EnumerateFiles();
-        //        foreach (var fileInfo in files)
-        //        {
-        //            list.Add(fileInfo);
-
-        //            // Introduce a delay every 5000 entries to avoid overwhelming resources
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //        }
-
-        //        // Asynchronously add directories and recurse.
-        //        var directories = dirInfo.EnumerateDirectories();
-        //        foreach (var subDirInfo in directories)
-        //        {
-        //            list.Add(subDirInfo);
-
-        //            // Delay again every 5000 entries
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100);
-        //            }
-        //            var recursiveList = await AddFileSystemEntriesAsync3(subDirInfo); // Recursive async call
-        //            list.AddRange(recursiveList); // Combine results from the recursion
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log the error or handle it as needed
-        //        Console.WriteLine($"Error accessing {dirInfo.FullName}: {ex.Message}");
-        //    }
-        //    return list;
-        //}
-
-        //static async Task<List<FileSystemInfo>> AddFileSystemEntriesAsync4(DirectoryInfo dirInfo, CancellationToken cancellationToken)
-        //{
-        //    List<FileSystemInfo> list = new List<FileSystemInfo>();
-        //    try
-        //    {
-        //        // Asynchronously add all files in the current directory to the list.
-        //        var files = dirInfo.EnumerateFiles();
-        //        foreach (var fileInfo in files)
-        //        {
-        //            cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
-        //            list.Add(fileInfo);
-
-        //            // Introduce a delay every 5000 entries to avoid overwhelming resources
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
-        //            }
-        //        }
-
-        //        // Asynchronously add directories and recurse.
-        //        var directories = dirInfo.EnumerateDirectories();
-        //        foreach (var subDirInfo in directories)
-        //        {
-        //            cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
-        //            list.Add(subDirInfo);
-
-        //            // Delay again every 5000 entries
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
-        //            }
-        //            var recursiveList = await AddFileSystemEntriesAsync4(subDirInfo, cancellationToken); // Recursive async call
-        //            list.AddRange(recursiveList); // Combine results from the recursion
-        //        }
-        //    }
-        //    catch (Exception ex) when (!(ex is OperationCanceledException))
-        //    {
-        //        // Log the error or handle it as needed
-        //        Console.WriteLine($"Error accessing {dirInfo.FullName}: {ex.Message}");
-        //    }
-        //    return list;
-        //}
 
         private static async Task<string?> ComputeMD5StringAsync(string input, CancellationToken cancellationToken)
         {
@@ -268,80 +106,6 @@ namespace Coree.NETStandard.Services.FileService
             }
         }
 
-        //private static async Task<List<PathInventory>> GetPathInventory(DirectoryInfo dirInfo, CancellationToken cancellationToken, bool withFileVersionHash = true, bool withFileHash = true)
-        //{
-        //    List<PathInventory> list = new List<PathInventory>();
-        //    try
-        //    {
-        //        // Asynchronously add all files in the current directory to the list.
-        //        var files = dirInfo.EnumerateFiles();
-
-        //        foreach (var fileInfo in files)
-        //        {
-        //            try
-        //            {
-        //                cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
-        //                string? versionHash = null;
-        //                string? fileHash = null;
-        //                if (withFileVersionHash)
-        //                {
-        //                    var fileVersionInfo = FileVersionInfo.GetVersionInfo(fileInfo.FullName);
-        //                    versionHash = await ComputeMD5StringAsync(fileVersionInfo.ToString(), cancellationToken);
-        //                }
-        //                if (withFileHash)
-        //                {
-        //                    fileHash = await ComputeMD5FileAsync(fileInfo.FullName, cancellationToken);
-        //                }
-
-        //                list.Add(new PathInventory() { FullName = fileInfo.FullName, Name = fileInfo.Name, Extension = fileInfo.Extension, IsDirectory = false, IsFile = true, Length = fileInfo.Length, LastWriteTimeUtc = fileInfo.LastWriteTimeUtc, FileVersionHash = versionHash, FileHash = fileHash, isOk = true });
-        //            }
-        //            catch (Exception ex)
-        //            {
-        //                Console.WriteLine($"Error processing file {fileInfo.FullName}: {ex.Message}");
-        //            }
-
-        //            // Introduce a delay every 5000 entries to avoid overwhelming resources
-        //            if (list.Count % 5000 == 0)
-        //            {
-        //                await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
-        //            }
-
-        //            // Asynchronously add directories and recurse.
-        //            var directories = dirInfo.EnumerateDirectories();
-        //            foreach (var subDirInfo in directories)
-        //            {
-        //                try
-        //                {
-        //                    cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
-        //                    list.Add(new PathInventory() { FullName = subDirInfo.FullName, Name = subDirInfo.Name, Extension = subDirInfo.Extension, IsDirectory = true, IsFile = false, LastWriteTimeUtc = subDirInfo.LastWriteTimeUtc, Length = 0, isOk = true });
-        //                    var recursiveList = await GetPathInventory(subDirInfo, cancellationToken, withFileVersionHash, withFileHash); // Recursive async call
-        //                    list.AddRange(recursiveList); // Combine results from the recursion
-        //                }
-        //                catch (Exception ex)
-        //                {
-        //                    Console.WriteLine($"Error processing directory {subDirInfo.FullName}: {ex.Message}");
-        //                    // Continue processing other directories despite the error
-        //                }
-
-        //                // Delay again every 5000 entries
-        //                if (list.Count % 5000 == 0)
-        //                {
-        //                    await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
-        //                }
-        //            }
-        //        }
-        //    }
-        //    catch (OperationCanceledException)
-        //    {
-        //        Console.WriteLine("Operation was canceled. Partial results will be returned.");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        // Log other errors as needed
-        //        Console.WriteLine($"Error accessing {dirInfo.FullName}: {ex.Message}");
-        //    }
-        //    return list; // Return the partial list gathered until the point of cancellation or complete list if not canceled
-        //}
 
         public enum FileVersionHash
         {
@@ -562,13 +326,12 @@ namespace Coree.NETStandard.Services.FileService
             List<PathInventory>? result = System.Text.Json.JsonSerializer.Deserialize<List<PathInventory>>(System.IO.File.ReadAllText(inventoryFilename));
             result = result.OrderBy(e => e.IsFile).ToList();
 
-            var targetlist = await GetRecursivePathInventoryAsync(new DirectoryInfo(target), cancellationTokenSource.Token, null, FileVersionHash.None, false);
+            List<PathInventory> targetlist = await GetRecursivePathInventoryAsync(new DirectoryInfo(target), cancellationTokenSource.Token, null, FileVersionHash.None, false);
             targetlist = targetlist.OrderByDescending(e => e.IsFile).ToList();
 
             for (int i = 0; i < result.Count; i++)
             {
                 var targetEntry = targetlist.FindIndex(e => e.PartialName == result[i].PartialName);
-       
 
                 if (result[i].IsDirectory)
                 {
@@ -593,13 +356,13 @@ namespace Coree.NETStandard.Services.FileService
                     {
                         if (targetEntry == -1)
                         {
-                            System.IO.File.Copy(result[i].FullName, @$"{target}{result[i].PartialName}", true);
+                            await RetryVerifyAndResumeFileCopyAsync(result[i].FullName, @$"{target}{result[i].PartialName}");
                         }
                         else
                         {
                             if (targetlist[targetEntry].Length != result[i].Length || targetlist[targetEntry].LastWriteTimeUtc != result[i].LastWriteTimeUtc)
                             {
-                                System.IO.File.Copy(result[i].FullName, @$"{target}{result[i].PartialName}", true);
+                                await RetryVerifyAndResumeFileCopyAsync(result[i].FullName, @$"{target}{result[i].PartialName}");
                             }
                         }
                     }
@@ -610,7 +373,7 @@ namespace Coree.NETStandard.Services.FileService
                         continue;
                     }
                 }
-                
+
                 if (targetEntry != -1)
                 {
                     targetlist.RemoveAt(targetEntry);
@@ -622,9 +385,16 @@ namespace Coree.NETStandard.Services.FileService
 
             foreach (var item in targetlist)
             {
+                _logger?.LogWarning("Extra item, {targetdirectoy} contains {target} that is in {inventoryFilename} but not present in {location}. ", target, item.FullName, inventoryFilename, result.FirstOrDefault()?.RootDir);
+                _logger?.LogWarning("{inventoryFilename} is outdated ",inventoryFilename);
+            }
+
+            foreach (var item in targetlist)
+            {
+                
                 if (item.IsFile)
                 {
-                    System.IO.File.Delete(item.FullName);
+                    DeleteFile(item.FullName);
                 }
 
                 if (item.IsDirectory)
@@ -635,3 +405,4 @@ namespace Coree.NETStandard.Services.FileService
         }
     }
 }
+
