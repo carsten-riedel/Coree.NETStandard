@@ -122,7 +122,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
             ".exe", ".dll", ""
         };
 
-        private static async Task<List<PathInventory>> GetRecursivePathInventoryAsync(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, FileVersionHash withFileVersionHash = FileVersionHash.None, bool withFileHash = true, string? partialName = null)
+        public async Task<List<PathInventory>> GetRecursivePathInventoryAsync(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, FileVersionHash withFileVersionHash = FileVersionHash.None, bool withFileHash = true, string? partialName = null)
         {
             List<PathInventory> list = new List<PathInventory>();
             partialName ??= dirInfo.FullName;
@@ -308,10 +308,6 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
             if (directoryInfo.Exists)
             {
                 var ss = await GetRecursivePathInventoryAsync(directoryInfo, cancellationTokenSource.Token, blacklist, FileVersionHash.None, false);
-                var testx = ss.Where(e => e.Extension == "" && e.IsFile == true);
-                var test = ss.Where(e => e.isOk == false);
-                var testa = ss.OrderByDescending(e => e.Length);
-
                 var result = System.Text.Json.JsonSerializer.Serialize(ss, new JsonSerializerOptions() { WriteIndented = true });
                 System.IO.File.WriteAllText(@$"{path}\{inventoryFilename}", result);
             }

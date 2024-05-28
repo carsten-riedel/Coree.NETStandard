@@ -9,6 +9,7 @@ using Microsoft.Extensions.Logging;
 using Coree.NETStandard.Services.HashManagement;
 using static Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
+using System.IO;
 
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
@@ -71,6 +72,8 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         Task CreateJsonPathInventoryAsync(string? path, string? inventoryFilename = "");
 
         Task InventoryCopyAsync(string inventoryFilename, string target);
+
+        Task<List<PathInventory>> GetRecursivePathInventoryAsync(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, FileVersionHash withFileVersionHash = FileVersionHash.None, bool withFileHash = true, string? partialName = null);
 
     }
 }
