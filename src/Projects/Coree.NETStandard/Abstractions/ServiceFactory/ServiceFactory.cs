@@ -48,7 +48,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
     public abstract class ServiceFactory<T> : IDisposable where T : class
     {
         private static IHostBuilder? _hostBuilder;
-        private static readonly IHost? _host;
+        private static IHost? _host;
 
         /// <summary>
         /// Creates a service instance with optional host configuration.
@@ -149,11 +149,11 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
 
                 configureHost?.Invoke(_hostBuilder);
 
-                IHost? app = _hostBuilder.Build();
+                _host = _hostBuilder.Build();
 
-                _host?.Start();
+                _host.Start();
 
-                var serviceProvider = app.Services.GetRequiredService<IServiceProvider>();
+                var serviceProvider = _host.Services.GetRequiredService<IServiceProvider>();
 
                 T instance = ActivatorUtilities.CreateInstance<T>(serviceProvider);
 
