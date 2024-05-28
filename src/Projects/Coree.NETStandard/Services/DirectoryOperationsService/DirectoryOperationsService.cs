@@ -5,7 +5,7 @@ using System.Text;
 using Coree.NETStandard.Abstractions.ServiceFactory;
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.DirectoryOperationsService
+namespace Coree.NETStandard.Services.DirectoryOperationsManagement
 {
     /// <summary>
     /// Provides services for performing operations on directories.
@@ -13,7 +13,7 @@ namespace Coree.NETStandard.Services.DirectoryOperationsService
     /// <remarks>
     /// This class can be used to ensure the existence of directories, potentially logging actions depending on configuration.
     /// </remarks>
-    public partial class DirectoryOperationsService : ServiceFactory<DirectoryOperationsService>, IDirectoryOperationsService
+    public partial class DirectoryOperationsService : ServiceFactoryEx<DirectoryOperationsService>, IDirectoryOperationsService
     {
         private readonly ILogger<DirectoryOperationsService>? _logger;
 

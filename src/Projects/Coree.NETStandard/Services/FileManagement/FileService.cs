@@ -7,7 +7,7 @@ using System.Threading;
 using Coree.NETStandard.Abstractions.ServiceFactory;
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileManagement
 {
     /// <summary>
     /// Defines a service for file system operations.
@@ -28,7 +28,7 @@ namespace Coree.NETStandard.Services.FileService
     /// });
     /// </code>
     /// </remarks>
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileService : ServiceFactoryEx<FileService>, IFileService
     {
         private readonly ILogger<FileService>? _logger;
 

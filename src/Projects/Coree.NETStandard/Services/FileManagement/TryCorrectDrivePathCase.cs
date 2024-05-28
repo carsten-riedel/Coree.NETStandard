@@ -8,9 +8,9 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileManagement
 {
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileService : ServiceFactoryEx<FileService>, IFileService
     {
         /// <summary>
         /// Attempts to retrieve the correctly cased drive root path based on a provided drive name, ignoring case sensitivity.

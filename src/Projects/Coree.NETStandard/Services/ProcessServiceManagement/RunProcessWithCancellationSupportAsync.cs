@@ -7,12 +7,12 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.ProcessService
+namespace Coree.NETStandard.Services.ProcessManagement
 {
     /// <summary>
     /// Provides functionality for managing and executing external processes. This service supports a variety of operations including running processes with options for cancellation, timeouts, and potentially more features in the future.
     /// </summary>
-    public partial class ProcessService : ServiceFactory<ProcessService>, IProcessService
+    public partial class ProcessService : ServiceFactoryEx<ProcessService>, IProcessService
     {
         /// <summary>
         /// Runs an external process asynchronously with options for cancellation and timeout.

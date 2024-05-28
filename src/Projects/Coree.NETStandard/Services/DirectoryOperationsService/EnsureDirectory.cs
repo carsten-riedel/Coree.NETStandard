@@ -6,9 +6,9 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.DirectoryOperationsService
+namespace Coree.NETStandard.Services.DirectoryOperationsManagement
 {
-    public partial class DirectoryOperationsService : ServiceFactory<DirectoryOperationsService>, IDirectoryOperationsService
+    public partial class DirectoryOperationsService : ServiceFactoryEx<DirectoryOperationsService>, IDirectoryOperationsService
     {
         /// <summary>
         /// Ensures that a specified directory exists. If the directory does not exist, it attempts to create it.

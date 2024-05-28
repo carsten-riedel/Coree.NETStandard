@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using System.Text;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
+using Coree.NETStandard.Services.HashManagement;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileOperationsService
+namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactory<FileOperationsService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
     {
 
         /// <summary>

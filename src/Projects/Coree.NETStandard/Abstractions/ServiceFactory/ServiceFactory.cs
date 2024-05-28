@@ -12,7 +12,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
     /// </summary>
     /// <typeparam name="T">The type of service to be created and managed. This type must be a class that implements IDisposable.</typeparam>
     /// <remarks>
-    /// The <see cref="ServiceFactory{T}"/> serves as a foundational component in applications requiring robust and configurable service instantiation.
+    /// The <see cref="ServiceFactoryEx{T}"/> serves as a foundational component in applications requiring robust and configurable service instantiation.
     /// It abstracts the complexity involved in the instantiation and management of services, thereby promoting a clean and maintainable architecture.
     /// This class should be inherited by specific service factory implementations that can provide concrete and custom instantiation logic.
     /// <example>
@@ -44,7 +44,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
     /// </code>
     /// </example>
     /// </remarks>
-    public abstract class ServiceFactory<T> : IDisposable where T : class
+    public abstract class ServiceFactoryEx<T> : IDisposable where T : class
     {
         private static IHostBuilder? _hostBuilder;
         private static readonly IHost? _host;
@@ -115,15 +115,6 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             host.UseConsoleLifetime(lifeTimeOptions => { lifeTimeOptions.SuppressStatusMessages = true; });
         }
 
-
-    //    private static IServiceCollection AddLazySingletoX<TService>(this IServiceCollection services, Func<IServiceProvider, TService> implementationFactory)
-    //where TService : class
-    //    {
-    //        services.AddSingleton(provider => new Lazy<TService>(() => implementationFactory(provider)));
-    //        services.AddSingleton(provider => provider.GetRequiredService<Lazy<TService>>().Value);
-    //        return services;
-    //    }
-
         /// <summary>
         /// Internally constructs and configures a service stack of type <typeparamref name="T"/> based on provided actions.
         /// </summary>
@@ -136,7 +127,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
         /// <remarks>
         /// This method is a critical part of the service factory infrastructure, encapsulating the complex logic of service setup.
         /// It ensures that the service, logging, and host configurations are applied before building and starting the host.
-        /// This method is not exposed publicly and should only be used within the <see cref="ServiceFactory{T}"/> class.
+        /// This method is not exposed publicly and should only be used within the <see cref="ServiceFactoryEx{T}"/> class.
         /// </remarks>
         private static T CreateServiceStack(Action<IServiceCollection>? configureServices = null, Action<ILoggingBuilder>? configureLogging = null, Action<IHostBuilder>? configureHost = null)
         {
@@ -185,4 +176,6 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             _host?.StopAsync().ConfigureAwait(false);
         }
     }
+
+
 }

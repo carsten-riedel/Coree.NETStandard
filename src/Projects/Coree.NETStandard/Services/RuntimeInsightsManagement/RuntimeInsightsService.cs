@@ -8,17 +8,17 @@ using System.Threading.Tasks;
 using System.Threading;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
-using Coree.NETStandard.Services.FileService;
+
 using Microsoft.Extensions.Logging;
 using Serilog.Core;
 using System.Runtime.InteropServices;
 
-namespace Coree.NETStandard.Services.RuntimeInsightsService
+namespace Coree.NETStandard.Services.RuntimeInsightsManagement
 {
     /// <summary>
     /// Manages and provides access to runtime and system insights.
     /// </summary>
-    public partial class RuntimeInsightsService : ServiceFactory<RuntimeInsightsService>, IRuntimeInsightsService
+    public partial class RuntimeInsightsService : ServiceFactoryEx<RuntimeInsightsService>, IRuntimeInsightsService
     {
 
         private readonly ILogger<RuntimeInsightsService>? _logger;

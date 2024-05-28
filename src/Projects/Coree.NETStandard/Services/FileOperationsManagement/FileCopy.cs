@@ -8,10 +8,12 @@ using System.Threading;
 using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
+using Coree.NETStandard.Services.HashManagement;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
-namespace Coree.NETStandard.Services.FileOperationsService
+namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactory<FileOperationsService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
     {
         /// <summary>
         /// Copies a file from a source path to a destination path, overwriting the destination file if it already exists.

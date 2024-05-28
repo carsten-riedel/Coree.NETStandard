@@ -7,7 +7,7 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.DebugService
+namespace Coree.NETStandard.Services.DebugManagement
 {
     /// <summary>
     /// Provides debugging services to log messages internally and via a provided logger.
@@ -16,7 +16,7 @@ namespace Coree.NETStandard.Services.DebugService
     /// This service should be used for development and debugging purposes only.
     /// It is designed to extend easily and integrates with the standard logging infrastructure.
     /// </remarks>
-    public class DebugService : ServiceFactory<DebugService>, IDebugService
+    public class DebugService : ServiceFactoryEx<DebugService>, IDebugService
     {
         private readonly ILogger<DebugService> logger;
 
