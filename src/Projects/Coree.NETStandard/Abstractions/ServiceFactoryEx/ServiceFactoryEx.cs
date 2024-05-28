@@ -454,7 +454,7 @@ namespace Coree.NETStandard.Abstractions.ServiceFactoryEx
     public abstract class ServiceFactoryEx<T, K, R, S, U, V, W, X, Y, Z> : IDisposable where T : class where K : class where R : class where S : class where U : class where V : class where W : class where X : class  where Y : class  where Z : class
     {
         private static IHostBuilder? _hostBuilder;
-        private static readonly IHost? _host;
+        private static IHost? _host;
 
         /// <summary>
         /// Creates a service instance with optional host configuration.
@@ -565,11 +565,11 @@ namespace Coree.NETStandard.Abstractions.ServiceFactoryEx
 
                 configureHost?.Invoke(_hostBuilder);
 
-                IHost? app = _hostBuilder.Build();
+                _host = _hostBuilder.Build();
 
-                _host?.Start();
+                _host.Start();
 
-                var serviceProvider = app.Services.GetRequiredService<IServiceProvider>();
+                var serviceProvider = _host.Services.GetRequiredService<IServiceProvider>();
 
                 T instance = ActivatorUtilities.CreateInstance<T>(serviceProvider);
 
