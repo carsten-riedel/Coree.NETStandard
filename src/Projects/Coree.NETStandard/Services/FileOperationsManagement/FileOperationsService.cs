@@ -48,13 +48,21 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// <returns>True if the file metadata was successfully copied; otherwise, false. If false is returned, check logs for the specific failure reason.</returns>
         bool CopyFileAttributes(string source, string destination, bool throwOnError = false);
 
+        /// <summary>
+        /// Attempts to delete a file at a specified location. It logs the operation and can optionally throw an exception on error.
+        /// </summary>
+        /// <param name="filePath">The path of the file to be deleted.</param>
+        /// <param name="throwOnError">Specifies whether to throw an exception if the deletion fails due to an error.</param>
+        /// <returns>True if the file was deleted successfully or did not exist; false if an error occurred during deletion.</returns>
+        bool DeleteFile(string filePath, bool throwOnError = false);
+
         bool FileCopy(string source,string destination);
 
         Task<bool> FileCopyAsync(string source, string destination, int maxRetryCount = 3, int retryDelay = 1000, CancellationToken cancellationToken = default);
 
         Task<bool> FileCopierAsync(string source, string destination, int maxRetryCount = 3, int retryDelay = 1000, int rewindBlocks = 3, CancellationToken cancellationToken = default);
 
-        bool DeleteFile(string location);
+        
 
         Task<VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000);
 

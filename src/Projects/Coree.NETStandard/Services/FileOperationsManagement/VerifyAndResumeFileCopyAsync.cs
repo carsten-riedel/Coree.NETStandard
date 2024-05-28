@@ -169,11 +169,12 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
 
                 long position = 0;
 
-                var tempFilenameSuffix = ".temporary";
-                var destinationTempFilenameSuffix = $"{destination}.{tempFilenameSuffix}";
+                var tempFilenameSuffix = ".temp";
+                var tempFilenameSuffixId = _hashService.ComputeCrc32Hash(destination);
+                var destinationTempFilenameSuffix = $"{destination}.{tempFilenameSuffixId}.{tempFilenameSuffix}";
 
                 using (FileStream sourceStream = new FileStream(source, FileMode.Open, FileAccess.Read, FileShare.Read, streamBufferSize))
-                using (FileStream destStream = new FileStream(destination, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, streamBufferSize))
+                using (FileStream destStream = new FileStream(destinationTempFilenameSuffix, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, streamBufferSize))
                 {
                     long sourceLength = sourceStream.Length;
                     long destLength = destStream.Length;
@@ -230,8 +231,17 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
                     }
                 }
 
+                try
+                {
+                    DeleteFile(destination,true);
+                    System.IO.File.Move(destinationTempFilenameSuffix, destination);
+                }
+                catch (Exception ex)
+                {
+                    _logger?.LogError(ex, "Failed to move temp file to normal.");
+                    return VerifiedCopyStatus.Error;
+                }
 
-                
                 try
                 {
                     CopyFileAttributes(source, destination, true);
