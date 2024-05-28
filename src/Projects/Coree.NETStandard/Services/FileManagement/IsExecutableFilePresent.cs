@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileManagement
 {

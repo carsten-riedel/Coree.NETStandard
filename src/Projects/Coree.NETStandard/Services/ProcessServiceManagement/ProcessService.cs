@@ -9,6 +9,7 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Serilog.Core;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.ProcessManagement
 {

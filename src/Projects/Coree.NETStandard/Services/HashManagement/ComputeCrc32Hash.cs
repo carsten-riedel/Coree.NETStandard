@@ -4,6 +4,7 @@ using System.IO.Hashing;
 using System.Text;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.HashManagement
 {

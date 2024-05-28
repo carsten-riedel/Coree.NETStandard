@@ -12,6 +12,7 @@ using Coree.NETStandard.Abstractions.ServiceFactory;
 using Microsoft.Extensions.Logging;
 using Serilog.Core;
 using System.Runtime.InteropServices;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.RuntimeInsightsManagement
 {

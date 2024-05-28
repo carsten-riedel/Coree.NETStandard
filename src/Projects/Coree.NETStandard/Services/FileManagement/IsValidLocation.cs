@@ -4,6 +4,7 @@ using System.IO;
 using System.Text;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 using Microsoft.Extensions.Logging;
 
