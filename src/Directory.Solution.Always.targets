@@ -1,0 +1,19 @@
+<Project InitialTargets="SolutionAlways">
+
+	<Target Name="SolutionAlways">
+
+		<PropertyGroup>
+			<IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' != ''">true</IsVisualStudioExecuted>
+		    <IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' == ''">false</IsVisualStudioExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' == ''">false</IsDotNetExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' != ''">true</IsDotNetExecuted>
+		</PropertyGroup>
+
+		<Message Importance="high" Text="==&gt; SolutionAlways &lt;== "></Message>
+		<Message Importance="high" Text="==> IsVisualStudioExecuted:      $(IsVisualStudioExecuted)"></Message>
+		<Message Importance="high" Text="==> IsDotNetExecuted:            $(IsDotNetExecuted)"></Message>
+		<Message Importance="high" Text="==> BuildingSolutionFile:        $(BuildingSolutionFile)"></Message>
+
+	</Target>
+	
+</Project>

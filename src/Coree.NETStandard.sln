@@ -8,10 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2444F213-9747-401D-B232-1578CA91AE6E}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Directory.Solution.targets = Directory.Solution.targets
 		githint.txt = githint.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coree.NETStandard.MSTest", "Projects\Coree.NETStandard.MSTest\Coree.NETStandard.MSTest.csproj", "{365B474C-8986-42EB-972D-7EEF334254B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coree.NETStandard.MSTest", "Projects\Coree.NETStandard.MSTest\Coree.NETStandard.MSTest.csproj", "{365B474C-8986-42EB-972D-7EEF334254B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

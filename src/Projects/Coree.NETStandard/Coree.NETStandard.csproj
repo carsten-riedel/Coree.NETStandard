@@ -1,4 +1,4 @@
-﻿<Project InitialTargets="AlwaysTarget" Sdk="Microsoft.NET.Sdk">
+﻿<Project InitialTargets="SolutionAlways;AlwaysTarget;v" Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
@@ -10,6 +10,9 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
 
+
+	<Import Project="$(SolutionDir)\Directory.Solution.Generated.props" Condition="'$(BuildingSolutionFile)' != ''"/>
+	<Import Project="$(SolutionDir)\Directory.Solution.Always.targets"/>
 
 	<ItemGroup>
 		<PackageReference Include="JsonPath.Net" Version="1.0.5" />
@@ -52,31 +55,40 @@
 	</ItemGroup>
 
 
-	<Target Name="AlwaysTarget"   >
+	<Target Name="AlwaysTarget" >
 		<!-- Get the top-level directory of the Git repository -->
-		<Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true">
+		<Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true" >
 			<Output TaskParameter="ConsoleOutput" PropertyName="GitTopLevelDir"/>
 		</Exec>
 		<!-- Get the current branch name -->
-		<Exec Command="git rev-parse --abbrev-ref HEAD" ConsoleToMSBuild="true">
+		<Exec Command="git rev-parse --abbrev-ref HEAD" ConsoleToMSBuild="true" >
 			<Output TaskParameter="ConsoleOutput" PropertyName="GitBranchName"/>
 		</Exec>
 
 		<PropertyGroup>
-			<DateTimeNowUtc Condition="$(DateTimeNowUtc) == ''">$([System.DateTime]::UtcNow.ToString("yyMMdd_HHmmss"))</DateTimeNowUtc>
 			<BinFolder>$(GitTopLevelDir)\bin</BinFolder>
 			<PublishRoot>$(BinFolder)\Publish\$(MSBuildProjectName)\$(Configuration)</PublishRoot>
 			<BuildRoot>$(BinFolder)\Build\$(MSBuildProjectName)\$(Configuration)</BuildRoot>
 			
-			<PublishDir Condition="$(PublishDir) == ''">$(PublishRoot)\$(GitBranchName)\$(DateTimeNowUtc)</PublishDir>
-			<OutDir Condition="$(OutDir) == ''" >$(BuildRoot)\$(GitBranchName)\$(DateTimeNowUtc)\</OutDir>
+			<PublishDir>$(PublishRoot)\$(GitBranchName)\$(SolutionNow)</PublishDir>
+			<OutDir>$(BuildRoot)\$(GitBranchName)\$(SolutionNow)\</OutDir>
+			<OutputPath>$(BuildRoot)\$(GitBranchName)\$(SolutionNow)\</OutputPath>
+			
 		</PropertyGroup>
 
 		<!-- Optional: Display fetched Git information -->
+		<Message Importance="high" Text="==> SolutionNow:                 $(SolutionNow)"></Message>
+		<Message Importance="high" Text="==> SolutionGitTopLevelDir:      $(SolutionGitTopLevelDir)"></Message>
+		<Message Importance="high" Text="==> SolutionGitBranchName:       $(SolutionGitBranchName)"></Message>
+		<Message Importance="high" Text="==> IsVisualStudioExecuted:      $(IsVisualStudioExecuted)"></Message>
+		<Message Importance="high" Text="==> IsDotNetExecuted:            $(IsDotNetExecuted)"></Message>
+
+		
 		<Message Text="Git Top-Level Directory: $(GitTopLevelDir)" Importance="high"/>
 		<Message Text="Git Branch Name: $(GitBranchName)" Importance="high"/>
 		<Message Text="Publish Directory: $(PublishRoot)" Importance="high"/>
 		<Message Text="OutputPath Directory: $(OutputPath)" Importance="high"/>
+		<Message Text="OutDir Directory: $(OutDir)" Importance="high"/>
 	</Target>
 
 
