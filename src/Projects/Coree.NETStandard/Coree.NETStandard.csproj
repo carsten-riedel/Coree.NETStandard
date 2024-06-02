@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project InitialTargets="AlwaysTarget" Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
@@ -45,12 +45,39 @@
 	  <None Remove="Services\FileOperationsManagement\CopyFileAttributes.cs" />
 	  <None Remove="Services\FileOperationsManagement\CreateJsonPathInventoryAsync.cs" />
 	  <None Remove="Services\FileOperationsManagement\DeleteFile.cs" />
+	  <None Remove="Services\FileOperationsManagement\GetRecursivePathInventoryAsync.cs" />
 	  <None Remove="Services\FileOperationsManagement\RetryVerifyAndResumeFileCopyAsync.cs" />
 	  <None Remove="Services\FileOperationsManagement\VerifyAndResumeFileCopyAsync.cs" />
 	  <None Remove="Services\HashManagement\ComputeCrc32Hash.cs" />
 	</ItemGroup>
 
-	<!-- Other -->
+
+	<Target Name="AlwaysTarget"   >
+		<!-- Get the top-level directory of the Git repository -->
+		<Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true">
+			<Output TaskParameter="ConsoleOutput" PropertyName="GitTopLevelDir"/>
+		</Exec>
+		<!-- Get the current branch name -->
+		<Exec Command="git rev-parse --abbrev-ref HEAD" ConsoleToMSBuild="true">
+			<Output TaskParameter="ConsoleOutput" PropertyName="GitBranchName"/>
+		</Exec>
+
+		<PropertyGroup>
+			<DateTimeNowUtc Condition="$(DateTimeNowUtc) == ''">$([System.DateTime]::UtcNow.ToString("yyMMdd_HHmmss"))</DateTimeNowUtc>
+			<BinFolder>$(GitTopLevelDir)\bin</BinFolder>
+			<PublishRoot>$(BinFolder)\Publish\$(MSBuildProjectName)\$(Configuration)</PublishRoot>
+			<BuildRoot>$(BinFolder)\Build\$(MSBuildProjectName)\$(Configuration)</BuildRoot>
+			
+			<PublishDir Condition="$(PublishDir) == ''">$(PublishRoot)\$(GitBranchName)\$(DateTimeNowUtc)</PublishDir>
+			<OutDir Condition="$(OutDir) == ''" >$(BuildRoot)\$(GitBranchName)\$(DateTimeNowUtc)\</OutDir>
+		</PropertyGroup>
+
+		<!-- Optional: Display fetched Git information -->
+		<Message Text="Git Top-Level Directory: $(GitTopLevelDir)" Importance="high"/>
+		<Message Text="Git Branch Name: $(GitBranchName)" Importance="high"/>
+		<Message Text="Publish Directory: $(PublishRoot)" Importance="high"/>
+		<Message Text="OutputPath Directory: $(OutputPath)" Importance="high"/>
+	</Target>
 
 
 </Project>
