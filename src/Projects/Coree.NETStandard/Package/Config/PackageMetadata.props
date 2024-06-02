@@ -24,7 +24,7 @@
 
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(DesignTimeBuild)' != 'true' OR '$(BuildingProject)' == 'true'">
+	<PropertyGroup Condition="'$(DesignTimeBuild)' == 'true' OR '$(BuildingProject)' != 'true'">
 		<VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
 		<VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
 		<VersionBuild Condition="'$(VersionPrefix)' == ''">0</VersionBuild>
