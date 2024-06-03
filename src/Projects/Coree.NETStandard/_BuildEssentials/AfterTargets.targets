@@ -1,0 +1,24 @@
+<Project>
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<Target Name="AfterTargetsBase" AfterTargets="Build;Clean;Rebuild;Publish;Pack;CoreCompile;CoreClean;ResolveAssemblyReferences">
+		<PropertyGroup>
+			<NewOutDir>bin\Build\$(Configuration)\$(TargetFramework)</NewOutDir>
+			<NewOutputPath>bin\Build\$(Configuration)\$(TargetFramework)</NewOutputPath>
+			<NewPublishDir>bin\Publish\$(Configuration)\$(TargetFramework)</NewPublishDir>
+			<NewPackageOutputPath>bin\Package\$(Configuration)\$(TargetFramework)</NewPackageOutputPath>
+		</PropertyGroup>
+
+		<CreateItem Include="$(OutDir)\**\*.*">
+			<Output TaskParameter="Include" ItemName="OutDirFilesToCopy" />
+		</CreateItem>
+
+		<Copy SourceFiles="@(OutDirFilesToCopy)" DestinationFolder="$(NewOutDir)\%(RecursiveDir)" />
+
+		
+
+		<Message Importance="high" Text="==&gt; OutDir:             $(OutDir) " />
+		<Message Importance="high" Text="==&gt; OutputPath:         $(OutputPath) " />
+		<Message Importance="high" Text="==&gt; PublishDir:         $(PublishDir) " />
+		<Message Importance="high" Text="==&gt; PackageOutputPath:  $(PackageOutputPath) " />
+	</Target>
+</Project>

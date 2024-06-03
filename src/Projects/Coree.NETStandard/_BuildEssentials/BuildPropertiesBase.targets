@@ -1,0 +1,21 @@
+<Project>
+
+	<Target Name="BuildPropertiesBase">
+		<Message Importance="high" Text="==&gt; Stage: BuildPropertiesBase"></Message>
+		<PropertyGroup>
+			<IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' != ''">true</IsVisualStudioExecuted>
+		    <IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' == ''">false</IsVisualStudioExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' == ''">false</IsDotNetExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' != ''">true</IsDotNetExecuted>
+			<IsRestore Condition="'$(BuildingSolutionFile)' == ''">true</IsRestore>
+			<IsRestore Condition="'$(BuildingSolutionFile)' == 'true'">false</IsRestore>
+		</PropertyGroup>
+		
+		<Message Importance="high" Text="==> IsVisualStudioExecuted:      $(IsVisualStudioExecuted)"></Message>
+		<Message Importance="high" Text="==> IsDotNetExecuted:            $(IsDotNetExecuted)"></Message>
+		<Message Importance="high" Text="==> IsRestore:					  $(IsRestore)"></Message>
+		<Message Importance="high" Text="==> BuildingSolutionFile:		  $(BuildingSolutionFile)"></Message>
+
+	</Target>
+	
+</Project>
