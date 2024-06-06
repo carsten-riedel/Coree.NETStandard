@@ -12,7 +12,7 @@ using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
         /// <summary>
         /// Attempts to verify and resume a file copy operation multiple times in case of failures during the copy process.

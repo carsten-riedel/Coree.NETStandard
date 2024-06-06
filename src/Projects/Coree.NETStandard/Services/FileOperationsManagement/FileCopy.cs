@@ -13,7 +13,7 @@ using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
         /// <summary>
         /// Copies a file from a source path to a destination path, overwriting the destination file if it already exists.

@@ -33,7 +33,6 @@ namespace Coree.NETStandard.Services.HashManagement
             return BitConverter.ToString(hashBytes).Replace("-", "").ToLowerInvariant();
         }
 
-
         /// <summary>
         /// Computes the CRC32 hash of data read from a stream asynchronously.
         /// </summary>
@@ -42,16 +41,22 @@ namespace Coree.NETStandard.Services.HashManagement
         /// <returns>A task that represents the asynchronous operation, resulting in the CRC32 hash as a hexadecimal string.</returns>
         public async Task<uint> ComputeCrc32Async(Stream stream, CancellationToken cancellationToken = default)
         {
-            if (stream == null)
+            try
             {
-                throw new ArgumentNullException(nameof(stream));
-            }
+                if (stream == null)
+                {
+                    throw new ArgumentNullException(nameof(stream));
+                }
+                var crc32 = new Crc32(); // Make sure Crc32 implements NonCryptographicHashAlgorithm
+                await crc32.AppendAsync(stream, cancellationToken);
+                uint hashBytes = crc32.GetCurrentHashAsUInt32(); // This retrieves the computed hash
 
-            var crc32 = new Crc32(); // Make sure Crc32 implements NonCryptographicHashAlgorithm
-            await crc32.AppendAsync(stream, cancellationToken);
-            uint hashBytes = crc32.GetCurrentHashAsUInt32(); // This retrieves the computed hash
-          
-            return hashBytes;
+                return hashBytes;
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         /// <summary>
@@ -67,10 +72,31 @@ namespace Coree.NETStandard.Services.HashManagement
                 throw new ArgumentNullException(nameof(filePath));
             }
 
-            using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, true))
+    
+            long fileSize = new FileInfo(filePath).Length;
+
+            int bufferSize = ChooseBufferSize(fileSize);
+
+            using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, bufferSize, true))
             {
-                return await ComputeCrc32Async(stream, cancellationToken);
+                var result = await ComputeCrc32Async(stream, cancellationToken);
+
+                return result;
             }
+        }
+
+        private int ChooseBufferSize(long fileSize)
+        {
+            const long size1MB = 1024 * 1024;
+            const long size10MB = 10 * size1MB;
+            const long size100MB = 100 * size1MB;
+            const long size1GB = 1024 * size1MB;
+
+            if (fileSize <= size1MB) return 4096;
+            if (fileSize <= size10MB) return 8192;
+            if (fileSize <= size100MB) return 16384;
+            if (fileSize <= size1GB) return 65536;
+            return 131072;
         }
     }
 }

@@ -12,7 +12,7 @@ using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
         /// <summary>
         /// Copies the file attributes and UTC timestamps from a source file to a destination file. 

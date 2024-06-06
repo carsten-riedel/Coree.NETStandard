@@ -24,36 +24,30 @@
 
 	</PropertyGroup>
 
-	<Target Name="v">
-		<Message Importance="high" Text="==> v"></Message>
-		<Message Importance="high" Text="==> SolutionNow $(SolutionNow)"></Message>
+	<PropertyGroup Condition="'$(DesignTimeBuild)' == 'true' OR '$(BuildingProject)' != 'true'">
+		<VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
+		<VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
+		<VersionBuild Condition="'$(VersionPrefix)' == ''">0</VersionBuild>
+		<VersionRevision Condition="'$(VersionPrefix)' == ''">0</VersionRevision>
 
-		
-		<PropertyGroup>
-			<VersionMajor Condition="'$(VersionPrefix)' == ''">0</VersionMajor>
-			<VersionMinor Condition="'$(VersionPrefix)' == ''">1</VersionMinor>
-			<VersionBuild Condition="'$(VersionPrefix)' == ''">0</VersionBuild>
-			<VersionRevision Condition="'$(VersionPrefix)' == ''">0</VersionRevision>
+		<AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
+		<TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
+		<TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
+		<AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
+		<AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
+		<AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
+		<AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
+		<VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
+		<VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
 
-			<AssemblyVersionBaseTicks>$([MSBuild]::Subtract($([System.DateTime]::UtcNow.Ticks), 630822816000000000))</AssemblyVersionBaseTicks>
-			<TicksPerDay>$([System.TimeSpan]::TicksPerDay)</TicksPerDay>
-			<TicksPerSecond>$([System.TimeSpan]::TicksPerSecond)</TicksPerSecond>
-			<AssemblyVersionBuild>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerDay)))))</AssemblyVersionBuild>
-			<AssemblyVersionTotalSeconds>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionBaseTicks), $(TicksPerSecond)))))</AssemblyVersionTotalSeconds>
-			<AssemblyVersionRemainingSeconds>$([System.Math]::Truncate($([MSBuild]::Modulo($(AssemblyVersionTotalSeconds), 86400))))</AssemblyVersionRemainingSeconds>
-			<AssemblyVersionRevision>$([System.Math]::Truncate($([MSBuild]::Divide($(AssemblyVersionRemainingSeconds), 2))))</AssemblyVersionRevision>
-			<VersionBuild Condition="'$(VersionBuild)' == '0'">$(AssemblyVersionBuild)</VersionBuild>
-			<VersionRevision Condition="'$(VersionRevision)' == '0'">$(AssemblyVersionRevision)</VersionRevision>
+		<VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
+		<VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
 
-			<VersionSuffix Condition="'$(VersionPrefix)' == ''">local</VersionSuffix>
-			<VersionPrefix Condition="'$(VersionPrefix)' == ''">$(VersionMajor).$(VersionMinor).$(VersionBuild).$(VersionRevision)</VersionPrefix>
+		<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
+		<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
 
-			<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' != ''">$(VersionPrefix)-$(VersionSuffix)</PackageVersion>
-			<PackageVersion Condition="'$(PackageVersion)' == '' AND '$(VersionSuffix)' == ''">$(VersionPrefix)</PackageVersion>
+		<InformationalVersion>$(PackageVersion)</InformationalVersion>
+		<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
 
-			<InformationalVersion>$(PackageVersion)</InformationalVersion>
-			<AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
-		</PropertyGroup>
-	</Target>
-	
+	</PropertyGroup>
 </Project>

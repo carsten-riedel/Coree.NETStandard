@@ -13,9 +13,8 @@ using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
-
         /// <summary>
         /// Defines the status outcomes for the VerifyAndResumeFileCopyAsync method.
         /// </summary>
@@ -86,12 +85,6 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </remarks>
         public async Task<VerifiedCopyStatus> VerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default)
         {
-            const int bufferFactor = 4;
-            const int bufferSize = (16 * 2 * 4 * 1024) * bufferFactor;
-            const int streamBufferSize = (2 * 4 * 1024) * bufferFactor;
-
-            byte[] sourceBuffer = new byte[bufferSize];
-            byte[] destBuffer = new byte[bufferSize];
             long totalBytesCopied = 0L;
 
             try
@@ -102,14 +95,20 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
                     return VerifiedCopyStatus.Error;
                 }
 
+                FileInfo fileInfo = new FileInfo(source);
+                
+                int bufferSize = ChooseFileStreamBufferSize(fileInfo.Length);
+                byte[] sourceBuffer = new byte[bufferSize];
+                byte[] destBuffer = new byte[bufferSize];
+
                 long position = 0;
 
                 var tempFilenameSuffix = ".temp";
                 var tempFilenameSuffixId = _hashService.ComputeCrc32Hash(destination);
                 var destinationTempFilenameSuffix = $"{destination}.{tempFilenameSuffixId}.{tempFilenameSuffix}";
 
-                using (FileStream sourceStream = new FileStream(source, FileMode.Open, FileAccess.Read, FileShare.Read, streamBufferSize))
-                using (FileStream destStream = new FileStream(destinationTempFilenameSuffix, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, streamBufferSize))
+                using (FileStream sourceStream = new FileStream(source, FileMode.Open, FileAccess.Read, FileShare.Read, bufferSize))
+                using (FileStream destStream = new FileStream(destinationTempFilenameSuffix, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, bufferSize))
                 {
                     long sourceLength = sourceStream.Length;
                     long destLength = destStream.Length;

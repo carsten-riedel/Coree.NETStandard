@@ -1,6 +1,6 @@
 <Project>
 	<PropertyGroup>
-		<SolutionNow>240603_054704</SolutionNow>
+		<SolutionNow>240603_182853</SolutionNow>
 		<SolutionGitTopLevelDir>C:/Users/Valgrind/source/VCS/github.com/carsten-riedel/Coree.NETStandard</SolutionGitTopLevelDir>
 		<SolutionGitBranchName>feature/fix_underconstruction</SolutionGitBranchName>
 	</PropertyGroup>

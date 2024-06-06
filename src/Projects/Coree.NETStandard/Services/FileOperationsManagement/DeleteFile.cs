@@ -10,7 +10,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
 
         /// <summary>

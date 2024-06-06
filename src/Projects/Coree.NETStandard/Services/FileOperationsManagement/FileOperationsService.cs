@@ -17,7 +17,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
     /// <summary>
     /// Provides comprehensive file management services.
     /// </summary>
-    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService, HashService>, IFileOperationsService
+    public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
         private readonly ILogger<FileOperationsService>? _logger;
         private readonly HashService _hashService;
@@ -25,11 +25,10 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// <summary>
         /// Initializes a new instance of the FileOperationsService with necessary dependencies.
         /// </summary>
-        /// <param name="hashService">Provides the hashing services required for file operations.</param>
         /// <param name="logger">The logger used to log service activity and errors, if any.</param>
-        public FileOperationsService(HashService hashService, ILogger<FileOperationsService>? logger = null)
+        public FileOperationsService(ILogger<FileOperationsService>? logger = null)
         {
-            this._hashService = hashService;
+            this._hashService = new HashService();
             this._logger = logger;
         }
     }
@@ -125,10 +124,13 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
 
         Task InventoryCopyAsync(string inventoryFilename, string target);
 
-        Task<List<PathInventory>> GetRecursivePathInventoryAsync(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, FileVersionHash withFileVersionHash = FileVersionHash.None, bool withFileHash = true, string? partialName = null);
 
-        Task<List<PathInventory2>> StripDownGetRecursivePathInventoryAsync2(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, string? partialName = null);
 
+
+
+
+
+        Task<FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false);
     }
 }
 

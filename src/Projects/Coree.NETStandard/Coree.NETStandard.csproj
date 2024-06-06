@@ -1,4 +1,4 @@
-﻿<Project InitialTargets="BuildInitialization;AlwaysTarget;v" Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<OutputType>Library</OutputType>
@@ -10,8 +10,14 @@
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	</PropertyGroup>
 
-	<Import Project="$(ProjectDir)_BuildEssentials\BuildInitialization.targets" />
-	<Import Project="$(SolutionDir)\Directory.Solution.Generated.props" Condition="'$(BuildingSolutionFile)' != ''" />
+
+	<!-- NuGet Package configuration -->
+	<Import Project="Package/Config/PackageMetadata.props" />
+	<Import Project="Package/Config/PackageSpecs.props" />
+	<ItemGroup>
+	  <None Remove="Services\FileOperationsManagement\ChooseFileStreamBufferSize.cs" />
+	  <None Remove="Services\FileOperationsManagement\ScanFileSystemEntriesAsync.cs" />
+	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="JsonPath.Net" Version="1.0.5" />
@@ -39,55 +45,7 @@
 		<PackageReference Include="System.IO.Hashing" Version="8.0.0" />
 	</ItemGroup>
 
-	<!-- NuGet Package configuration -->
-	<Import Project="Package/Config/PackageMetadata.props" />
-	<Import Project="Package/Config/PackageSpecs.props" />
-	<ItemGroup>
-	  <None Remove="Abstractions\ServiceFactoryEx\ServiceFactoryEx.cs" />
-	  <None Remove="Services\FileOperationsManagement\CopyFileAttributes.cs" />
-	  <None Remove="Services\FileOperationsManagement\CreateJsonPathInventoryAsync.cs" />
-	  <None Remove="Services\FileOperationsManagement\DeleteFile.cs" />
-	  <None Remove="Services\FileOperationsManagement\GetRecursivePathInventoryAsync.cs" />
-	  <None Remove="Services\FileOperationsManagement\RetryVerifyAndResumeFileCopyAsync.cs" />
-	  <None Remove="Services\FileOperationsManagement\VerifyAndResumeFileCopyAsync.cs" />
-	  <None Remove="Services\HashManagement\ComputeCrc32Hash.cs" />
-	</ItemGroup>
 
-
-
-	<Target Name="AlwaysTarget">
-		<!-- Get the top-level directory of the Git repository -->
-		<Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true">
-			<Output TaskParameter="ConsoleOutput" PropertyName="GitTopLevelDir" />
-		</Exec>
-		<!-- Get the current branch name -->
-		<Exec Command="git rev-parse --abbrev-ref HEAD" ConsoleToMSBuild="true">
-			<Output TaskParameter="ConsoleOutput" PropertyName="GitBranchName" />
-		</Exec>
-
-		<PropertyGroup>
-
-
-			
-		</PropertyGroup>
-
-		<!-- Optional: Display fetched Git information -->
-		<Message Importance="high" Text="==&gt; SolutionNow:                 $(SolutionNow)"></Message>
-		<Message Importance="high" Text="==&gt; SolutionGitTopLevelDir:      $(SolutionGitTopLevelDir)"></Message>
-		<Message Importance="high" Text="==&gt; SolutionGitBranchName:       $(SolutionGitBranchName)"></Message>
-		<Message Importance="high" Text="==&gt; IsVisualStudioExecuted:      $(IsVisualStudioExecuted)"></Message>
-		<Message Importance="high" Text="==&gt; IsDotNetExecuted:            $(IsDotNetExecuted)"></Message>
-
-		
-		<Message Text="Git Top-Level Directory: $(GitTopLevelDir)" Importance="high" />
-		<Message Text="Git Branch Name: $(GitBranchName)" Importance="high" />
-		<Message Text="Publish Directory: $(PublishRoot)" Importance="high" />
-		<Message Text="OutputPath Directory: $(OutputPath)" Importance="high" />
-		<Message Text="OutDir Directory: $(OutDir)" Importance="high" />
-		<Message Text="OutDir Directory: $(ProjectDir)" Importance="high" />
-	
-	
-	</Target>
 
 
 </Project>
