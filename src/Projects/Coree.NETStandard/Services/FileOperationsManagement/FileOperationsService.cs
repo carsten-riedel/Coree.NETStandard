@@ -109,28 +109,35 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </remarks>
         Task<VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000);
 
+        /// <summary>
+        /// Asynchronously copies a file from a source path to a destination path, overwriting the destination file if it already exists.
+        /// </summary>
+        /// <param name="source">The file path of the source file to be copied.</param>
+        /// <param name="destination">The file path of the destination where the file will be copied.</param>
+        /// <param name="cancellationToken">A cancellation token that can be used to cancel the file copy operation.</param>
+        /// <returns>Returns <c>true</c> if the file is copied successfully. If the file is not copied, the method throws an exception.</returns>
+        /// <remarks>
+        /// This method wraps the <see cref="RetryVerifyAndResumeFileCopyAsync"/> method to include asynchronous execution with cancellation support and retry logic. It logs the attempt, success, or failure of the file copying process. Use the provided <paramref name="cancellationToken"/> to cancel the operation if needed.
+        /// </remarks>
+        Task<bool> FileCopyAsync(string source, string destination, CancellationToken cancellationToken = default);
 
+        /// <summary>
+        /// Asynchronously scans the file system entries starting from the specified path, optionally performing CRC32 checks and applying a blacklist filter on file names.
+        /// </summary>
+        /// <param name="path">The starting path from which to begin scanning for file system entries.</param>
+        /// <param name="cancellationToken">A token to monitor for cancellation requests, which can abort the operation.</param>
+        /// <param name="failFast">If set to true, the operation will stop at the first error encountered; otherwise, it will continue despite errors.</param>
+        /// <param name="crc32">If set to true, a CRC32 checksum will be calculated for each file.</param>
+        /// <param name="fileNameBlacklist">An optional list of file names to exclude from scanning and processing.</param>
+        /// <returns>A <see cref="FileSystemInformation"/> object containing all scanned entries, including any errors encountered during the scan.</returns>
+        Task<FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false, List<string>? fileNameBlacklist = null);
 
-        bool FileCopy(string source,string destination);
-
-        Task<bool> FileCopyAsync(string source, string destination, int maxRetryCount = 3, int retryDelay = 1000, CancellationToken cancellationToken = default);
-
-        Task<bool> FileCopierAsync(string source, string destination, int maxRetryCount = 3, int retryDelay = 1000, int rewindBlocks = 3, CancellationToken cancellationToken = default);
-
-
-        
 
         Task CreateJsonPathInventoryAsync(string? path, string? inventoryFilename = "");
 
         Task InventoryCopyAsync(string inventoryFilename, string target);
 
-
-
-
-
-
-
-        Task<FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false);
+        
     }
 }
 

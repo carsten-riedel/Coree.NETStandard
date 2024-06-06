@@ -23,14 +23,13 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
             CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
             cancellationTokenSource.CancelAfter(60000);
 
-            var blacklist = new List<string>() { inventoryFilename };
+            var blacklist = new List<string>() { System.IO.Path.GetFileName(inventoryFilename) };
 
             if (directoryInfo.Exists)
             {
-                
-                FileSystemInformation ss = await ScanFileSystemEntriesAsync(directoryInfo.FullName, cancellationTokenSource.Token, false, false);
+                FileSystemInformation ss = await ScanFileSystemEntriesAsync(directoryInfo.FullName, cancellationTokenSource.Token, false, false, blacklist);
                 var result = System.Text.Json.JsonSerializer.Serialize(ss, new JsonSerializerOptions() { WriteIndented = true });
-                System.IO.File.WriteAllText(@$"{inventoryFilename}", result);
+                System.IO.File.WriteAllText(@$"{Path.Combine(path,inventoryFilename)}", result);
             }
         }
 
