@@ -1,14 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
-
 using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Services.HashManagement;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
@@ -83,7 +78,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </code>
         /// </example>
         /// </remarks>
-        public async Task<VerifiedCopyStatus> VerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default)
+        public async Task<FileOperationsService.VerifiedCopyStatus> VerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default)
         {
             long totalBytesCopied = 0L;
 

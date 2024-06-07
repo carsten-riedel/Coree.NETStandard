@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Threading;
+using System.Threading.Tasks;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
-using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Services.HashManagement;
-using static Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
-using System.IO;
+using Coree.NETStandard.Services.HashManagement;
+
+using Microsoft.Extensions.Logging;
 
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
@@ -76,7 +72,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </code>
         /// </example>
         /// </remarks>
-        Task<VerifiedCopyStatus> VerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default);
+        Task<FileOperationsService.VerifiedCopyStatus> VerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Attempts to verify and resume a file copy operation multiple times in case of failures during the copy process.
@@ -107,7 +103,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </code>
         /// </example>
         /// </remarks>
-        Task<VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000);
+        Task<FileOperationsService.VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000);
 
         /// <summary>
         /// Asynchronously copies a file from a source path to a destination path, overwriting the destination file if it already exists.
@@ -130,10 +126,10 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// <param name="crc32">If set to true, a CRC32 checksum will be calculated for each file.</param>
         /// <param name="fileNameBlacklist">An optional list of file names to exclude from scanning and processing.</param>
         /// <returns>A <see cref="FileSystemInformation"/> object containing all scanned entries, including any errors encountered during the scan.</returns>
-        Task<FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false, List<string>? fileNameBlacklist = null);
+        Task<FileOperationsService.FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false, List<string>? fileNameBlacklist = null);
 
 
-        Task CreateJsonPathInventoryAsync(string? path, string? inventoryFilename = "");
+        Task CreateJsonPathInventoryAsync(string? path, string inventoryFilename = "", CancellationToken cancellationToken = default);
 
         Task InventoryCopyAsync(string inventoryFilename, string target);
 

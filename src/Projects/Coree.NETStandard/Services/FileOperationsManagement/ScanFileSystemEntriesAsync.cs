@@ -187,7 +187,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// <param name="crc32">If set to true, a CRC32 checksum will be calculated for each file.</param>
         /// <param name="fileNameBlacklist">An optional list of file names to exclude from scanning and processing.</param>
         /// <returns>A <see cref="FileSystemInformation"/> object containing all scanned entries, including any errors encountered during the scan.</returns>
-        public async Task<FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false, List<string>? fileNameBlacklist = null)
+        public async Task<FileOperationsService.FileSystemInformation> ScanFileSystemEntriesAsync(string path, CancellationToken cancellationToken, bool failFast = false, bool crc32 = false, List<string>? fileNameBlacklist = null)
         {
             List<FileSystemEntry> entries = new List<FileSystemEntry>();
             CancellationTokenSource cancellationTokenSource = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken);
@@ -299,7 +299,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
             {
                 return;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 if (failFast) { cancellationTokenSource.Cancel(); return; }
             }

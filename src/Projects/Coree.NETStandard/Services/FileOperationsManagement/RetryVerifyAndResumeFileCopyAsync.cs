@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using System.Threading;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
-
 using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Services.HashManagement;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
@@ -43,7 +37,7 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
         /// </code>
         /// </example>
         /// </remarks>
-        public async Task<VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000)
+        public async Task<FileOperationsService.VerifiedCopyStatus> RetryVerifyAndResumeFileCopyAsync(string source, string destination, CancellationToken cancellationToken = default, int maxRetryCount = 3, int retryDelayMilliseconds = 1000)
         {
             int retryCount = 0;
             while (retryCount < maxRetryCount)

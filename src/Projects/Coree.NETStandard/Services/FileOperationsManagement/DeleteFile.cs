@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
-using Coree.NETStandard.Services.HashManagement;
 
 using Microsoft.Extensions.Logging;
 

@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
-using System.Threading;
-
-using Coree.NETStandard.Abstractions.ServiceFactory;
-using Microsoft.Extensions.Logging;
 using System.IO;
-using Coree.NETStandard.Services.HashManagement;
+
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
+
+using Microsoft.Extensions.Logging;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
 {
     public partial class FileOperationsService : ServiceFactoryEx<FileOperationsService>, IFileOperationsService
     {
         /// <summary>
-        /// Copies the file attributes and UTC timestamps from a source file to a destination file. 
+        /// Copies the file attributes and UTC timestamps from a source file to a destination file.
         /// This method provides an option to control exception handling based on the failure conditions encountered during the operation.
         /// </summary>
         /// <param name="source">The source file path. This must point to an existing file, or the method will handle the error based on the throwOnError parameter.</param>
@@ -81,7 +76,5 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
                 return false;
             }
         }
-
-
     }
 }

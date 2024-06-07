@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
 using System.IO.Hashing;
-using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.HashManagement

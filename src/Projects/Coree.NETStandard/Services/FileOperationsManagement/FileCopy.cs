@@ -1,14 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
+﻿using System.Threading;
 using System.Threading.Tasks;
-using System.Threading;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
-
-using Microsoft.Extensions.Logging;
-using Coree.NETStandard.Services.HashManagement;
 using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 namespace Coree.NETStandard.Services.FileOperationsManagement
@@ -35,7 +27,5 @@ namespace Coree.NETStandard.Services.FileOperationsManagement
             }
             return false;
         }
-
     }
 }
-
