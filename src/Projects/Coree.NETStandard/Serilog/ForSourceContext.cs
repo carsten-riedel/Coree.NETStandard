@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Runtime.Serialization;
 using System.Text;
 
@@ -29,6 +30,20 @@ namespace Coree.NETStandard.Serilog
         public static SerilogCore.ILogger ForSourceContext(this SerilogCore.ILogger logger, string value)
         {
             return logger.ForContext("SourceContext", value);
+        }
+
+        /// <summary>
+        /// Configures the logger to associate the calling method's name with log events as the source context.
+        /// </summary>
+        /// <param name="logger">The Serilog ILogger instance to configure.</param>
+        /// <returns>A new ILogger instance that includes the source context set to the calling method's name.</returns>
+        public static SerilogCore.ILogger ForMethodContext(this SerilogCore.ILogger logger)
+        {
+            // Get the calling method name from the stack trace
+            var stackTrace = new StackTrace();
+            var frame = stackTrace.GetFrame(1); // 1 to skip the current method frame
+            var method = frame?.GetMethod();
+            return logger.ForContext("SourceContext", method?.Name);
         }
     }
 }
