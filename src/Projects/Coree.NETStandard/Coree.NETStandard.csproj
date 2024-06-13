@@ -16,6 +16,8 @@
 	<Import Project="Package/Config/PackageMetadata.props" />
 	<Import Project="Package/Config/PackageSpecs.props" />
 	<ItemGroup>
+	  <None Remove="Extensions\ServiceCollection\SuppressConsoleLifetimeMessages.cs" />
+	  <None Remove="Serilog\ForSourceContext.cs" />
 	  <None Remove="Services\FileOperationsManagement\ChooseFileStreamBufferSize.cs" />
 	  <None Remove="Services\FileOperationsManagement\ScanFileSystemEntriesAsync.cs" />
 	</ItemGroup>
