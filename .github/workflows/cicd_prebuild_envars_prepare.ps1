@@ -17,7 +17,7 @@ $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToL
 
 if ($branchName -ieq "head")
 {
-    $branchName = [System.Environment]::GetEnvironmentVariable('GITHUB_BASE_REF', [System.EnvironmentVariableTarget]::User)
+    $branchName = $env:GITHUB_BASE_REF
     $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToLower()
 }
  
