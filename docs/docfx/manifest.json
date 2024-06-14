@@ -64,6 +64,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.InitializationDependentServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.InitializationDependentServices.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.InitializationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.InitializationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.InitializationService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactory.ServiceFactory-1.yml",
       "output": {
         ".html": {
@@ -78,6 +108,116 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactory.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-10.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-2.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-3.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-3.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-4.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-5.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-6.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-7.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-7.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-8.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-8.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-9.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.ServiceFactoryEx-9.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Abstractions.ServiceFactoryEx.html"
         }
       },
       "version": ""
@@ -564,6 +704,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.ServiceCollectionExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.ServiceCollection.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.Threading.CancellationToken.ThreadingCancellationTokenExtensions.yml",
       "output": {
         ".html": {
@@ -734,140 +894,260 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.DebugService.DebugService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DebugManagement.DebugService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.DebugService.DebugService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DebugManagement.DebugService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.DebugService.IDebugService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DebugManagement.IDebugService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.DebugService.IDebugService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DebugManagement.IDebugService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.DebugService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DebugManagement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.DebugService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DebugManagement.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.FileService.FileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.DirectoryOperationsService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.FileService.FileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.DirectoryOperationsService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.IDirectoryOperationsService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.FileService.IFileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.IDirectoryOperationsService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.FileService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.FileService.html"
+          "relative_path": "api/Coree.NETStandard.Services.DirectoryOperationsManagement.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileManagement.FileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.IProcessService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileManagement.FileService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileManagement.IFileService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunExitCodeState.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileManagement.IFileService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileManagement.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessRunResult.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileManagement.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.FileSystemEntry.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.ProcessService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.FileSystemEntry.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.ProcessService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.FileSystemInformation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.ProcessService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.FileSystemInformation.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.VerifiedCopyStatus.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.IRuntimeInsightsService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.VerifiedCopyStatus.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.RuntimeInsightsService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.FileOperationsService.html"
         }
       },
       "version": ""
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.yml",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.IFileOperationsService.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsService.html"
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.IFileOperationsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.FileOperationsManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.HashManagement.HashService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.HashManagement.HashService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.HashManagement.IHashService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.HashManagement.IHashService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.HashManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.HashManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessManagement.IProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessManagement.IProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessRunExitCodeState.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessRunExitCodeState.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessRunResult.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessRunResult.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessManagement.ProcessService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.ProcessManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.ProcessManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.IRuntimeInsightsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.IRuntimeInsightsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.RuntimeInsightsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.RuntimeInsightsService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.RuntimeInsightsManagement.html"
         }
       },
       "version": ""
