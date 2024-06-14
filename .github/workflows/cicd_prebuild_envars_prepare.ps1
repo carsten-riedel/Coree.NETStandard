@@ -37,7 +37,7 @@ $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" 
 
 if (-not($isValidBranchRootName.ToLower() -contains $branchNameSegment)) {
     Write-Host "No configuration for branches $branchNameSegment. Exiting"
-    [System.Environment]::Exit(1)
+    [System.Environment]::Exit(0)
 }
 else {
     Write-Host "Configuration for branch '$branchNameSegment' will be used."
