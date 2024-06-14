@@ -11,8 +11,15 @@ $fullVersion = "$versionMajor.$versionMinor.$versionBuild.$versionRevision"
 ######################################################################################
 Log-Block -Stage "Resolving" -Section "Preconditions" -Task "Branchnames and Paths."
 
+
 $branchName = Get-GitBranchName
 $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToLower()
+
+if ($branchName -ieq "head")
+{
+    $branchName = [System.Environment]::GetEnvironmentVariable('GITHUB_BASE_REF', [System.EnvironmentVariableTarget]::User)
+    $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToLower()
+}
  
 $topLevelPath = Get-GitTopLevelPath
 $topLevelDirectory = @(Get-NormalizedPathSegments -InputPath $topLevelPath)[-1]
