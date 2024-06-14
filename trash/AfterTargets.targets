@@ -1,0 +1,37 @@
+<Project>
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<Target Name="AfterTargetsBase" AfterTargets="Build;Clean;Rebuild;Publish;Pack;CoreCompile;CoreClean;ResolveAssemblyReferences">
+		<Message Text="==&gt; AfterTargetsBase &lt;==" Importance="high" />
+		<PropertyGroup>
+			<NewOutDir>bin\Build\$(Configuration)\$(TargetFramework)</NewOutDir>
+			<NewPublishDir>bin\Publish\$(Configuration)\$(TargetFramework)</NewPublishDir>
+			<NewPackageOutputPath>bin\Pack\$(Configuration)\$(TargetFramework)</NewPackageOutputPath>
+		</PropertyGroup>
+
+		<MakeDir   Directories="bin\Build"  />
+		<MakeDir   Directories="bin\Publish"  />
+		<MakeDir   Directories="bin\Pack"  />
+		<ItemGroup>
+			<OutDirFilesToCopySource Include="$(OutDir)\**\*.*" Exclude="$(OutDir)\publish\**\*.*" />
+			<OutDirFilesToCopyTarget Include="@(OutDirFilesToCopySource->'bin\Build\%(RecursiveDir)%(Filename)%(Extension)')" />
+			<PublishDirFilesToCopySource Include="$(PublishDir)\**\*.*"  />
+			<PublishDirFilesToCopyTarget Include="@(PublishDirFilesToCopySource->'bin\Publish\%(RecursiveDir)%(Filename)%(Extension)')" />
+			<PackageOutputPathSource Include="$(PackageOutputPath)\*.*"  />
+			<PackageOutputPathTarget Include="@(PackageOutputPathSource->'bin\Pack\%(RecursiveDir)%(Filename)%(Extension)')" />
+		</ItemGroup>
+		<Copy SourceFiles="@(OutDirFilesToCopySource)" DestinationFiles="@(OutDirFilesToCopyTarget)" />
+		<Copy SourceFiles="@(PublishDirFilesToCopySource)" DestinationFiles="@(PublishDirFilesToCopyTarget)" />
+		<Copy SourceFiles="@(PackageOutputPathSource)" DestinationFiles="@(PackageOutputPathTarget)" />
+	
+
+		<Message Importance="high" Text="==&gt; OutDir:             $(OutDir) " />
+		<Message Importance="high" Text="==&gt; OutputPath:         $(OutputPath) " />
+		<Message Importance="high" Text="==&gt; PublishDir:         $(PublishDir) " />
+		<Message Importance="high" Text="==&gt; PackageOutputPath:  $(PackageOutputPath) " />
+	</Target>
+
+	<Target Name="AfterTargetsBasex"  DependsOnTargets="ResolveNuGetPackageAssets">
+		<Message Text="xxResolveNuGetPackageAssets &lt;==" Importance="high" />
+
+	</Target>
+</Project>

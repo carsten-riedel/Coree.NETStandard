@@ -6,10 +6,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileManagement
 {
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileService : ServiceFactoryEx<FileService>, IFileService
     {
         /// <summary>
         /// Checks if an executable file with the specified command name is present in the given directory path, considering platform-specific executable extensions.

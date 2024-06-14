@@ -1,0 +1,32 @@
+<Project>
+
+	<Target Name="BuildPropertiesBase" BeforeTargets="ResolveAssemblyReferences">
+		<Message Importance="high" Text="==&gt; Stage: BuildPropertiesBase"></Message>
+		<PropertyGroup>
+			<IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' != ''">true</IsVisualStudioExecuted>
+		    <IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' == ''">false</IsVisualStudioExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' == ''">false</IsDotNetExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' != ''">true</IsDotNetExecuted>
+			<IsRestore Condition="'$(BuildingSolutionFile)' == ''">true</IsRestore>
+			<IsRestore Condition="'$(BuildingSolutionFile)' == 'true'">false</IsRestore>
+		</PropertyGroup>
+
+		<!-- Set IsManualBuild to false for non-design-time, project is building in CI/CD environment -->
+		<PropertyGroup Condition="'$(DesignTimeBuild)' != 'true' AND '$(BuildingProject)' == 'true'">
+			<IsManualBuild>false</IsManualBuild>
+		</PropertyGroup>
+
+		<!-- Set IsManualBuild to true for design-time builds or when the project is not building -->
+		<PropertyGroup Condition="'$(DesignTimeBuild)' == 'true' OR '$(BuildingProject)' != 'true'">
+			<IsManualBuild>true</IsManualBuild>
+		</PropertyGroup>
+		
+		<Message Importance="high" Text="==> IsVisualStudioExecuted:      $(IsVisualStudioExecuted)"></Message>
+		<Message Importance="high" Text="==> IsDotNetExecuted:            $(IsDotNetExecuted)"></Message>
+		<Message Importance="high" Text="==> IsRestore:					  $(IsRestore)"></Message>
+		<Message Importance="high" Text="==> BuildingSolutionFile:		  $(BuildingSolutionFile)"></Message>
+		<Message Importance="high" Text="==> IsManualBuild:				  $(IsManualBuild)"></Message>
+
+	</Target>
+	
+</Project>

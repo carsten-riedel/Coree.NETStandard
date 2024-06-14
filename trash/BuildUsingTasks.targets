@@ -1,0 +1,124 @@
+<Project>
+  
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	
+	<UsingTask TaskName="EnsureEmptyFileTask" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+              // Open the file with FileMode.Create which will either create the file or truncate it if it already exists
+              using (FileStream fs = File.Open(FilePath, FileMode.Create)) {
+                // No need to write anything; just close the stream which leaves the file empty
+                fs.Close();
+              }
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<UsingTask TaskName="AppendTaggedContent2" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+			<ContentToAppend ParameterType="System.String" Required="true"/>
+			<EncloseInTag ParameterType="System.Boolean" Required="false"/>
+			<IsClose ParameterType="System.Boolean" Required="false"/>
+			<Tabs ParameterType="System.Int32" Required="false"/>
+			<!-- Adjusted from System.Int to System.Int32 -->
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Using Namespace="System.Text"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+            // Ensure the directory exists
+            var directory = Path.GetDirectoryName(FilePath);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            // Prepare the content to be appended
+            StringBuilder sb = new StringBuilder();
+            if (Tabs > 0)
+            {
+                sb.Append(new string('\t', Tabs));
+            }
+
+            if (EncloseInTag)
+            {
+                if (IsClose)
+                {
+                    sb.Append($"</{ContentToAppend}>");
+                }
+                else
+                {
+                    sb.Append($"<{ContentToAppend}>");
+                }
+            }
+            else
+            {
+                sb.Append(ContentToAppend);
+            }
+
+            // Append the content to the file
+            using (StreamWriter sw = new StreamWriter(FilePath, true))
+            {
+                sw.WriteLine(sb.ToString());
+            }
+
+            // Log the action
+            Log.LogMessage(MessageImportance.High,$"Appended content to file: {FilePath}");
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<UsingTask TaskName="AppendTagged" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+			<PropertyName ParameterType="System.String" Required="true"/>
+			<PropertyValue ParameterType="System.String" Required="true"/>
+			<Tabs ParameterType="System.Int32" Required="false"/>
+			<!-- Adjusted from System.Int to System.Int32 -->
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Using Namespace="System.Text"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+            // Ensure the directory exists
+            var directory = Path.GetDirectoryName(FilePath);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            // Prepare the content to be appended
+            StringBuilder sb = new StringBuilder();
+            if (Tabs > 0)
+            {
+                sb.Append(new string('\t', Tabs));
+            }
+
+
+            sb.Append($"<{PropertyName}>{PropertyValue}</{PropertyName}>");
+    
+
+            // Append the content to the file
+            using (StreamWriter sw = new StreamWriter(FilePath, true))
+            {
+                sw.WriteLine(sb.ToString());
+            }
+
+            // Log the action
+            Log.LogMessage($"Appended content to file: {FilePath}");
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+</Project>
