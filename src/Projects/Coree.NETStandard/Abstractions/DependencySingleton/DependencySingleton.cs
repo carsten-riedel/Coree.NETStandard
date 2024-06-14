@@ -63,6 +63,7 @@ namespace Coree.NETStandard.Abstractions.DependencySingleton
     /// </code>
     /// </summary>
     /// <typeparam name="T">The type of the singleton instance.</typeparam>
+    [Obsolete("DependencySingleton<T> is deprecated and will be removed in future versions. Use ServiceFactoryEx<T> instead.")]
     public abstract class DependencySingleton<T> : IDependencySingleton
     {
         private static readonly Lazy<T> instance = new Lazy<T>(valueFactory: CreateInstance);

@@ -1,0 +1,169 @@
+<Project InitialTargets="SolutionTargetInitial">
+
+	<UsingTask TaskName="EnsureEmptyFileTask" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+              // Open the file with FileMode.Create which will either create the file or truncate it if it already exists
+              using (FileStream fs = File.Open(FilePath, FileMode.Create)) {
+                // No need to write anything; just close the stream which leaves the file empty
+                fs.Close();
+              }
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<UsingTask TaskName="AppendTaggedContent2" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+			<ContentToAppend ParameterType="System.String" Required="true"/>
+			<EncloseInTag ParameterType="System.Boolean" Required="false"/>
+			<IsClose ParameterType="System.Boolean" Required="false"/>
+			<Tabs ParameterType="System.Int32" Required="false"/>
+			<!-- Adjusted from System.Int to System.Int32 -->
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Using Namespace="System.Text"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+            // Ensure the directory exists
+            var directory = Path.GetDirectoryName(FilePath);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            // Prepare the content to be appended
+            StringBuilder sb = new StringBuilder();
+            if (Tabs > 0)
+            {
+                sb.Append(new string('\t', Tabs));
+            }
+
+            if (EncloseInTag)
+            {
+                if (IsClose)
+                {
+                    sb.Append($"</{ContentToAppend}>");
+                }
+                else
+                {
+                    sb.Append($"<{ContentToAppend}>");
+                }
+            }
+            else
+            {
+                sb.Append(ContentToAppend);
+            }
+
+            // Append the content to the file
+            using (StreamWriter sw = new StreamWriter(FilePath, true))
+            {
+                sw.WriteLine(sb.ToString());
+            }
+
+            // Log the action
+            Log.LogMessage(MessageImportance.High,$"Appended content to file: {FilePath}");
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+	<UsingTask TaskName="AppendTagged" TaskFactory="RoslynCodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.Core.dll">
+		<ParameterGroup>
+			<FilePath ParameterType="System.String" Required="true"/>
+			<PropertyName ParameterType="System.String" Required="true"/>
+			<PropertyValue ParameterType="System.String" Required="true"/>
+			<Tabs ParameterType="System.Int32" Required="false"/>
+			<!-- Adjusted from System.Int to System.Int32 -->
+		</ParameterGroup>
+		<Task>
+			<Using Namespace="System.IO"/>
+			<Using Namespace="System.Text"/>
+			<Code Type="Fragment" Language="cs">
+				<![CDATA[
+            // Ensure the directory exists
+            var directory = Path.GetDirectoryName(FilePath);
+            if (!Directory.Exists(directory))
+            {
+                Directory.CreateDirectory(directory);
+            }
+
+            // Prepare the content to be appended
+            StringBuilder sb = new StringBuilder();
+            if (Tabs > 0)
+            {
+                sb.Append(new string('\t', Tabs));
+            }
+
+
+            sb.Append($"<{PropertyName}>{PropertyValue}</{PropertyName}>");
+    
+
+            // Append the content to the file
+            using (StreamWriter sw = new StreamWriter(FilePath, true))
+            {
+                sw.WriteLine(sb.ToString());
+            }
+
+            // Log the action
+            Log.LogMessage($"Appended content to file: {FilePath}");
+            ]]>
+			</Code>
+		</Task>
+	</UsingTask>
+
+
+	<Target Name="SolutionTargetInitial">
+		<Message Importance="high" Text="==&gt; SolutionTargetInitial &lt;== "></Message>
+		<Message Importance="high" Text="==&gt; SolutionTargetInitial: Will be invoked on restore too. See SolutionTargetDefault BeforeTargets"></Message>
+	</Target>
+
+	<Target Name="SolutionTargetDefault" BeforeTargets="Clean;Rebuild;Publish;Build;Pack">
+		<Message Importance="high" Text="==&gt; SolutionTargetDefault &lt;== "></Message>
+
+		<Exec Command="git rev-parse --show-toplevel" ConsoleToMSBuild="true" EchoOff="true" StandardOutputImportance="low">
+			<Output TaskParameter="ConsoleOutput" PropertyName="GitTopLevelDir"/>
+		</Exec>
+		<Exec Command="git rev-parse --abbrev-ref HEAD" ConsoleToMSBuild="true" EchoOff="true" StandardOutputImportance="low">
+			<Output TaskParameter="ConsoleOutput" PropertyName="GitBranchName"/>
+		</Exec>
+
+		<PropertyGroup>
+			
+			<IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' != ''">true</IsVisualStudioExecuted>
+		    <IsVisualStudioExecuted Condition="'$(VSAPPIDNAME)' == ''">false</IsVisualStudioExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' == ''">false</IsDotNetExecuted>
+			<IsDotNetExecuted Condition="'$(DOTNET_HOST_PATH)' != ''">true</IsDotNetExecuted>
+			
+			<FileName>$(SolutionDir)Directory.Solution.Generated.props</FileName>
+			<SolutionNow>$([System.DateTime]::UtcNow.ToString("yyMMdd_HHmmss"))</SolutionNow>
+			<SolutionGitTopLevelDir>$(GitTopLevelDir)</SolutionGitTopLevelDir>
+			<SolutionGitBranchName>$(GitBranchName)</SolutionGitBranchName>
+		</PropertyGroup>
+
+		<Message Importance="high" Text="==> SolutionNow:                 $(SolutionNow)"></Message>
+		<Message Importance="high" Text="==> SolutionGitTopLevelDir:      $(SolutionGitTopLevelDir)"></Message>
+		<Message Importance="high" Text="==> SolutionGitBranchName:       $(SolutionGitBranchName)"></Message>
+		
+		<EnsureEmptyFileTask FilePath="$(FileName)" />
+		<AppendTaggedContent2 FilePath="$(FileName)" EncloseInTag="true" Tabs="0" ContentToAppend="Project" />
+		<AppendTaggedContent2 FilePath="$(FileName)" EncloseInTag="true" Tabs="1" ContentToAppend="PropertyGroup" />
+
+		<AppendTagged FilePath="$(FileName)" PropertyName="SolutionNow" PropertyValue="$(SolutionNow)" Tabs="2" />
+		<AppendTagged FilePath="$(FileName)" PropertyName="SolutionGitTopLevelDir" PropertyValue="$(SolutionGitTopLevelDir)" Tabs="2" />
+		<AppendTagged FilePath="$(FileName)" PropertyName="SolutionGitBranchName" PropertyValue="$(SolutionGitBranchName)" Tabs="2" />
+
+		<AppendTaggedContent2 FilePath="$(FileName)" EncloseInTag="true" Tabs="1" ContentToAppend="PropertyGroup" IsClose="true"  />
+		<AppendTaggedContent2 FilePath="$(FileName)" EncloseInTag="true" Tabs="0" ContentToAppend="Project" IsClose="true" />
+	</Target>
+
+
+
+</Project>

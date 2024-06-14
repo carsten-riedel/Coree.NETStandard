@@ -11,8 +11,15 @@ $fullVersion = "$versionMajor.$versionMinor.$versionBuild.$versionRevision"
 ######################################################################################
 Log-Block -Stage "Resolving" -Section "Preconditions" -Task "Branchnames and Paths."
 
+
 $branchName = Get-GitBranchName
 $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToLower()
+
+if ($branchName -ieq "head")
+{
+    $branchName = $env:GITHUB_BASE_REF
+    $branchNameSegment = @(Get-NormalizedPathSegments -InputPath $branchName)[0].ToLower()
+}
  
 $topLevelPath = Get-GitTopLevelPath
 $topLevelDirectory = @(Get-NormalizedPathSegments -InputPath $topLevelPath)[-1]
@@ -37,7 +44,7 @@ $isValidBranchRootName = @("feature", "develop", "release", "master" , "hotfix" 
 
 if (-not($isValidBranchRootName.ToLower() -contains $branchNameSegment)) {
     Write-Host "No configuration for branches $branchNameSegment. Exiting"
-    exit 1
+    [System.Environment]::Exit(0)
 }
 else {
     Write-Host "Configuration for branch '$branchNameSegment' will be used."

@@ -44,10 +44,11 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
     /// </code>
     /// </example>
     /// </remarks>
+    [Obsolete("ServiceFactory<T> is deprecated and will be removed in future versions. Use ServiceFactoryEx<T> instead.")]
     public abstract class ServiceFactory<T> : IDisposable where T : class
     {
         private static IHostBuilder? _hostBuilder;
-        private static readonly IHost? _host;
+        private static IHost? _host;
 
         /// <summary>
         /// Creates a service instance with optional host configuration.
@@ -115,15 +116,6 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             host.UseConsoleLifetime(lifeTimeOptions => { lifeTimeOptions.SuppressStatusMessages = true; });
         }
 
-
-    //    private static IServiceCollection AddLazySingletoX<TService>(this IServiceCollection services, Func<IServiceProvider, TService> implementationFactory)
-    //where TService : class
-    //    {
-    //        services.AddSingleton(provider => new Lazy<TService>(() => implementationFactory(provider)));
-    //        services.AddSingleton(provider => provider.GetRequiredService<Lazy<TService>>().Value);
-    //        return services;
-    //    }
-
         /// <summary>
         /// Internally constructs and configures a service stack of type <typeparamref name="T"/> based on provided actions.
         /// </summary>
@@ -157,11 +149,11 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
 
                 configureHost?.Invoke(_hostBuilder);
 
-                IHost? app = _hostBuilder.Build();
+                _host = _hostBuilder.Build();
 
-                _host?.Start();
+                _host.Start();
 
-                var serviceProvider = app.Services.GetRequiredService<IServiceProvider>();
+                var serviceProvider = _host.Services.GetRequiredService<IServiceProvider>();
 
                 T instance = ActivatorUtilities.CreateInstance<T>(serviceProvider);
 
@@ -185,4 +177,6 @@ namespace Coree.NETStandard.Abstractions.ServiceFactory
             _host?.StopAsync().ConfigureAwait(false);
         }
     }
+
+
 }
