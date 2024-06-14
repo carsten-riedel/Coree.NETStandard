@@ -1,3 +1,7 @@
+######################################################################################
+Log-Block -Stage "Checking" -Section "Preconditions" -Task "Envars dump"
+
+Get-ChildItem Env: | Format-Table Name, Value -AutoSize
 
 ######################################################################################
 Log-Block -Stage "Checking" -Section "Preconditions" -Task "Commands setup."
