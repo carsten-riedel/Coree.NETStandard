@@ -68,7 +68,7 @@ namespace Coree.NETStandard.Classes.HttpRequestService
         {
             cacheDuration ??= TimeSpan.FromSeconds(2);
             retryDelay ??= TimeSpan.FromSeconds(10);
-            requestTimeout ??= TimeSpan.FromSeconds(5);
+            requestTimeout ??= TimeSpan.FromSeconds(10);
             
             var requestTimeoutCts = new CancellationTokenSource(requestTimeout.Value);
             var requestCts = CancellationTokenSource.CreateLinkedTokenSource(cancellationToken,requestTimeoutCts.Token);

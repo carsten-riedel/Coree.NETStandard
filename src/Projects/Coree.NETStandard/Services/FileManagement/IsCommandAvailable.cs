@@ -10,10 +10,11 @@ using System.Threading;
 using Coree.NETStandard.Abstractions.ServiceFactory;
 
 using Microsoft.Extensions.Logging;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileManagement
 {
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileService : ServiceFactoryEx<FileService>, IFileService
     {
         /// <summary>
         /// Checks if a specified command is available in the current directory or any of the directories listed in the system's PATH environment variable.

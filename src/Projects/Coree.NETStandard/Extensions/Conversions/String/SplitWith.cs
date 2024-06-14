@@ -41,7 +41,7 @@ namespace Coree.NETStandard.Extensions.Conversions.String
         public static string[] SplitWith(this string? input, char[] delimiter, StringSplitOptions options = StringSplitOptions.None, bool removeDelimiters = true)
         {
             if (string.IsNullOrEmpty(input))
-                return Array.Empty<string>();
+                return System.Array.Empty<string>();
 
             var joined = string.Join("", delimiter);
             return input.SplitWith(new string[] { joined }, options, removeDelimiters);
@@ -62,7 +62,7 @@ namespace Coree.NETStandard.Extensions.Conversions.String
         public static string[] SplitWith(this string? input, string[] delimiters, StringSplitOptions options = StringSplitOptions.None, bool removeDelimiters = true)
         {
             if (string.IsNullOrEmpty(input))
-                return Array.Empty<string>();
+                return System.Array.Empty<string>();
 
             // Joining the delimiters into a regex pattern.
             string pattern = "(" + string.Join("|", delimiters.Select(Regex.Escape)) + ")";

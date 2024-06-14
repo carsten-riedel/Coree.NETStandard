@@ -1,0 +1,694 @@
+﻿        public enum VerifiedCopyStatus
+        {
+            Success,
+            Cancelled,
+            ErrorDuringCopy,
+            Error,
+            NoMetaData,
+        }
+
+        /// <summary>
+        /// Performs a verified copy of a file from source to destination, ensuring data integrity by comparing existing contents and resuming from the first mismatch.
+        /// </summary>
+        /// <param name="source">The source file path.</param>
+        /// <param name="destination">The destination file path.</param>
+        /// <param name="cancellationToken">Optional cancellation token to cancel the operation.</param>
+        /// <returns>A FileCopyStatus enum indicating the result of the copy operation.</returns>
+        /// <remarks>
+        /// This method checks for data integrity up to the last byte of the existing destination file and resumes copying only from the first discrepancy.
+        /// </remarks>
+        public async Task<VerifiedCopyStatus> VerifyAndResumeFileCopyAsync2(string source, string destination, CancellationToken cancellationToken = default)
+        {
+            const int bufferFactor = 4;
+            const int bufferSize = (16 * 2 * 4 * 1024) * bufferFactor;
+            const int streamBufferSize = (2 * 4 * 1024) * bufferFactor;
+
+            byte[] sourceBuffer = new byte[bufferSize];
+            byte[] destBuffer = new byte[bufferSize];
+            long totalBytesCopied = 0L;
+
+            try
+            {
+                if (!File.Exists(source))
+                {
+                    _logger?.LogError("Source file does not exist.");
+                    return VerifiedCopyStatus.Error;
+                }
+
+                long position = 0;
+
+                using (FileStream sourceStream = new FileStream(source, FileMode.Open, FileAccess.Read, FileShare.Read, streamBufferSize))
+                using (FileStream destStream = new FileStream(destination, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None, streamBufferSize))
+                {
+                    long sourceLength = sourceStream.Length;
+                    long destLength = destStream.Length;
+
+                    if (position < destLength)
+                    {
+                        _logger?.LogDebug("Starting to compare existing contents up to {length} bytes.", destLength);
+                        _logger?.LogInformation("Initiating verification and copy from source: {source} to destination: {destination}.", source, destination);
+                    }
+
+                    // Read and compare existing contents
+                    while (position < destLength)
+                    {
+                        int sourceBytesRead = await sourceStream.ReadAsync(sourceBuffer, 0, sourceBuffer.Length, cancellationToken);
+                        int destBytesRead = await destStream.ReadAsync(destBuffer, 0, destBuffer.Length, cancellationToken);
+
+                        if (!sourceBuffer.AsSpan(0, sourceBytesRead).SequenceEqual(destBuffer.AsSpan(0, destBytesRead)))
+                        {
+                            _logger?.LogWarning("Mismatch detected at position {position}. Preparing to truncate and resume copy.", position);
+                            // Mismatch handling logic here
+                            break;
+                        }
+
+                        position += sourceBytesRead;
+                        _logger?.LogDebug("Verified {position} bytes so far, no discrepancies found.", position);
+
+                        if (cancellationToken.IsCancellationRequested)
+                        {
+                            _logger?.LogWarning("Verification was cancelled by the user.");
+                            return VerifiedCopyStatus.Cancelled;
+                        }
+                    }
+
+                    // Adjust destination stream length to position
+                    destStream.SetLength(position);
+                    sourceStream.Seek(position, SeekOrigin.Begin);
+                    destStream.Seek(position, SeekOrigin.Begin);
+
+                    _logger?.LogInformation("Starting copying source: {source} to destination: {destination}.",source,destination);
+
+                    int bytesRead;
+                    while ((bytesRead = await sourceStream.ReadAsync(sourceBuffer, 0, sourceBuffer.Length, cancellationToken)) > 0)
+                    {
+                        if (cancellationToken.IsCancellationRequested)
+                        {
+                            _logger?.LogWarning("Copy operation was cancelled by the user.");
+                            return VerifiedCopyStatus.Cancelled;
+                        }
+
+                        await destStream.WriteAsync(sourceBuffer, 0, bytesRead, cancellationToken);
+                        destStream.Flush();
+                        totalBytesCopied += bytesRead;
+                        _logger?.LogDebug("Current position: {position} bytes. Total bytes copied in this session: {totalBytesCopied}.", destStream.Position, totalBytesCopied);
+                    }
+                }
+
+                try
+                {
+                    var sourceFileInfo = new FileInfo(source);
+                    var destFileInfo = new FileInfo(destination);
+                    File.SetAttributes(destination, sourceFileInfo.Attributes);
+                    File.SetCreationTime(destination, File.GetCreationTime(source));
+                    File.SetLastAccessTime(destination, File.GetLastAccessTime(source));
+                    File.SetLastWriteTime(destination, File.GetLastWriteTime(source));
+                    _logger?.LogDebug("Successfully copied metadata from source to destination.");
+                }
+                catch (Exception ex)
+                {
+                    _logger?.LogError(ex, "Failed to copy file metadata.");
+                    return VerifiedCopyStatus.NoMetaData;
+                }
+
+                _logger?.LogInformation("File has been successfully copied to {destination}. Total bytes transferred: {totalBytesCopied}.", destination, totalBytesCopied);
+                return VerifiedCopyStatus.Success;
+            }
+            catch (UnauthorizedAccessException uae)
+            {
+                _logger?.LogError(uae, "Access to the file was denied.");
+                return VerifiedCopyStatus.Error;
+            }
+            catch (IOException ioe)
+            {
+                _logger?.LogError(ioe, "A file I/O error occurred during the copy process.");
+                return VerifiedCopyStatus.ErrorDuringCopy;
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "An unexpected error occurred during the verified copy operation.");
+                return VerifiedCopyStatus.Error;
+            }
+        }
+
+
+
+        private static async Task<string?> ComputeMD5StringAsync(string input, CancellationToken cancellationToken)
+        {
+            // Convert the string to a byte array using Unicode encoding
+            byte[] inputBytes = Encoding.Unicode.GetBytes(input);
+
+            // Create a MemoryStream around the byte array
+            using (MemoryStream memoryStream = new MemoryStream(inputBytes))
+            {
+                // Compute the MD5 hash of the memory stream
+                return await ComputeMD5Async(memoryStream, cancellationToken);
+            }
+        }
+
+        // Overload for file path
+        private static async Task<string?> ComputeMD5FileAsync(string filePath, CancellationToken cancellationToken)
+        {
+            using (FileStream stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read, 4096, useAsync: true))
+            {
+                return await ComputeMD5StreamAsync(stream, cancellationToken);
+            }
+        }
+
+        // Overload for MemoryStream
+        private static async Task<string?> ComputeMD5Async(MemoryStream memoryStream, CancellationToken cancellationToken)
+        {
+            // Reset memory stream position to ensure correct data hashing
+            memoryStream.Position = 0;
+            return await ComputeMD5StreamAsync(memoryStream, cancellationToken);
+        }
+
+        private static async Task<string?> ComputeMD5StreamAsync(Stream inputStream, CancellationToken cancellationToken)
+        {
+            try
+            {
+                using (var md5 = MD5.Create())
+                {
+                    byte[] buffer = new byte[4096];
+                    int bytesRead;
+                    while ((bytesRead = await inputStream.ReadAsync(buffer, 0, buffer.Length, cancellationToken)) > 0)
+                    {
+                        md5.TransformBlock(buffer, 0, bytesRead, null, 0);
+                        cancellationToken.ThrowIfCancellationRequested();
+                    }
+                    md5.TransformFinalBlock(buffer, 0, 0);
+
+                    return BitConverter.ToString(md5.Hash).Replace("-", "").ToLowerInvariant();
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("MD5 computation was canceled.");
+                return null;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"An error occurred during MD5 computation: {ex.Message}");
+                return null;
+            }
+        }
+
+        public enum FileVersionHash
+        {
+            None,
+            All,
+            Exedll,
+        }
+
+        // Define a HashSet for allowed extensions with a case-insensitive comparer
+        private static readonly HashSet<string> allowedExtensions = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+        {
+            ".exe", ".dll", ""
+        };
+
+        public async Task<List<PathInventory>> GetRecursivePathInventoryAsync(DirectoryInfo dirInfo, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, FileVersionHash withFileVersionHash = FileVersionHash.None, bool withFileHash = true, string? partialName = null)
+        {
+            List<PathInventory> list = new List<PathInventory>();
+            partialName ??= dirInfo.FullName;
+            filenameBlacklist ??= new List<string>();
+            HashSet<string>? filenameBlacklistHashSet = null;
+            if (filenameBlacklist != null)
+            {
+                filenameBlacklistHashSet = new HashSet<string>(filenameBlacklist, StringComparer.OrdinalIgnoreCase);
+            }
+
+            try
+            {
+                // Asynchronously add all files in the current directory to the list.
+                var files = dirInfo.EnumerateFiles();
+                foreach (var fileInfo in files)
+                {
+                    if (filenameBlacklistHashSet != null)
+                    {
+                        if (filenameBlacklistHashSet.Contains(fileInfo.Name))
+                            continue; // Skip files that are in the blacklist
+                    }
+
+                    try
+                    {
+                        cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
+                        string? versionHash = null;
+                        string? fileHash = null;
+
+                        switch (withFileVersionHash)
+                        {
+                            case FileVersionHash.All:
+                                FileVersionInfo fileVersionInfoall = FileVersionInfo.GetVersionInfo(fileInfo.FullName);
+                                versionHash = await ComputeMD5StringAsync(fileVersionInfoall.ToString(), cancellationToken);
+                                break;
+
+                            case FileVersionHash.Exedll:
+                                if (allowedExtensions.Contains(fileInfo.Extension))
+                                {
+                                    FileVersionInfo fileVersionInfo = FileVersionInfo.GetVersionInfo(fileInfo.FullName);
+                                    versionHash = await ComputeMD5StringAsync(fileVersionInfo.ToString(), cancellationToken);
+                                }
+                                break;
+
+                            default:
+                                break;
+                        }
+
+                        if (withFileHash)
+                        {
+                            fileHash = await ComputeMD5FileAsync(fileInfo.FullName, cancellationToken);
+                        }
+
+                        list.Add(new PathInventory
+                        {
+                            FullName = fileInfo.FullName,
+                            PartialName = fileInfo.FullName.Substring(partialName.Length),
+                            Name = fileInfo.Name,
+                            RootDir = partialName,
+                            Extension = fileInfo.Extension,
+                            IsDirectory = false,
+                            IsFile = true,
+                            Length = fileInfo.Length,
+                            LastWriteTimeUtc = fileInfo.LastWriteTimeUtc,
+                            EntryDate = DateTime.UtcNow,
+                            FileVersionHash = versionHash,
+                            FileHash = fileHash,
+                            isOk = true
+                        });
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        Console.WriteLine("Operation was canceled. Partial results will be returned.");
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error processing file {fileInfo.FullName}: {ex.Message}");
+                        // Continue processing other files despite the error
+                        list.Add(new PathInventory
+                        {
+                            FullName = fileInfo.FullName,
+                            Name = fileInfo.Name,
+                            PartialName = fileInfo.FullName.Substring(partialName.Length),
+                            RootDir = partialName,
+                            Extension = fileInfo.Extension,
+                            IsDirectory = false,
+                            IsFile = true,
+                            Length = fileInfo.Length,
+                            LastWriteTimeUtc = fileInfo.LastWriteTimeUtc,
+                            EntryDate = DateTime.UtcNow,
+                            FileVersionHash = null,
+                            FileHash = null,
+                            isOk = false,
+                            ExceptionMessage = ex.Message
+                        });
+                    }
+
+                    // Introduce a delay every 5000 entries to avoid overwhelming resources
+                    if (list.Count % 5000 == 0)
+                    {
+                        await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
+                    }
+                }
+
+                // Asynchronously add directories and recurse.
+                var directories = dirInfo.EnumerateDirectories();
+                foreach (var subDirInfo in directories)
+                {
+                    try
+                    {
+                        cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
+                        list.Add(new PathInventory
+                        {
+                            FullName = subDirInfo.FullName,
+                            PartialName = subDirInfo.FullName.Substring(partialName.Length),
+                            Name = subDirInfo.Name,
+                            RootDir = partialName,
+                            Extension = subDirInfo.Extension,
+                            IsDirectory = true,
+                            IsFile = false,
+                            LastWriteTimeUtc = subDirInfo.LastWriteTimeUtc,
+                            EntryDate = DateTime.UtcNow,
+                            Length = 0,
+                            isOk = true
+                        });
+
+                        var recursiveList = await GetRecursivePathInventoryAsync(subDirInfo, cancellationToken, filenameBlacklist, withFileVersionHash, withFileHash, partialName); // Recursive async call
+                        list.AddRange(recursiveList); // Combine results from the recursion
+                    }
+                    catch (OperationCanceledException)
+                    {
+                        Console.WriteLine("Operation was canceled. Partial results will be returned.");
+                        break;
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine($"Error processing directory {subDirInfo.FullName}: {ex.Message}");
+                        // Continue processing other directories despite the error
+                    }
+
+                    // Delay again every 5000 entries
+                    if (list.Count % 5000 == 0)
+                    {
+                        await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
+                    }
+                }
+            }
+            catch (OperationCanceledException)
+            {
+                Console.WriteLine("Operation was canceled. Partial results will be returned.");
+            }
+            catch (Exception ex)
+            {
+                // Log other errors as needed
+                Console.WriteLine($"Error processing: {ex.Message}");
+                list.Add(new PathInventory
+                {
+                    FullName = dirInfo.FullName,
+                    PartialName = dirInfo.FullName.Substring(partialName.Length),
+                    Name = dirInfo.Name,
+                    RootDir = partialName,
+                    Extension = dirInfo.Extension,
+                    IsDirectory = true,
+                    IsFile = false,
+                    LastWriteTimeUtc = dirInfo.LastWriteTimeUtc,
+                    EntryDate = DateTime.UtcNow,
+                    Length = 0,
+                    isOk = false,
+                    ExceptionMessage = ex.Message
+                });
+            }
+            return list; // Return the partial list gathered until the point of cancellation or complete list if not canceled
+        }
+
+        public async Task<List<Entry>> StripDownGetRecursivePathInventoryAsync2(string path, CancellationToken cancellationToken, List<string>? filenameBlacklist = null, string? partialName = null)
+        {
+            List<Entry> returnValue = new List<Entry>();
+
+            DirectoryInfo currentDirInfo;
+            if (partialName != null)
+            {
+                currentDirInfo = new DirectoryInfo(partialName);
+            }
+            else
+            {
+                currentDirInfo = new DirectoryInfo(path);
+            }
+
+            filenameBlacklist ??= new List<string>();
+
+            IEnumerable<FileInfo> files;
+            IEnumerable<DirectoryInfo> directories;
+
+            try
+            {
+                files = currentDirInfo.EnumerateFiles();
+                directories = currentDirInfo.EnumerateDirectories();
+            }
+            catch (Exception ex)
+            {
+                _logger?.LogError(ex, "Exception", ex.Message);
+                throw;
+            }
+
+            foreach (var fileInfo in files)
+            {
+                if (filenameBlacklist != null)
+                {
+                    if (filenameBlacklist.ContainsOrdinalIgnoreCase(fileInfo.Name))
+                        continue; // Skip files that are in the blacklist
+                }
+
+                try
+                {
+                    cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
+
+                    uint? crc32Hash = null;
+                    crc32Hash = await _hashService.ComputeCrc32Async(fileInfo.FullName, cancellationToken);
+
+                    returnValue.Add(new Entry
+                    {
+                        FullName = fileInfo.FullName.Substring(path.Length).TrimStart(Path.DirectorySeparatorChar),
+                        Name = fileInfo.Name,
+                        Length = fileInfo.Length,
+                        LastWriteTimeUtc = fileInfo.LastWriteTimeUtc,
+                        EntryDateUtc = DateTime.UtcNow,
+                        Crc32 = crc32Hash,
+                    });
+                }
+                catch (Exception ex)
+                {
+                    _logger?.LogError(ex, "Error processing file {FullName}  {Message}", fileInfo.FullName, ex.Message);
+                    throw;
+                }
+
+                // Introduce a delay every 5000 entries to avoid overwhelming resources
+                if (returnValue.Count % 5000 == 0)
+                {
+                    await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
+                }
+            }
+
+            // ---------------------------------------------------------   Asynchronously add directories and recurse.
+
+            foreach (var subDirInfo in directories)
+            {
+                try
+                {
+                    cancellationToken.ThrowIfCancellationRequested(); // Check for cancellation
+                    returnValue.Add(new Entry
+                    {
+                        FullName = subDirInfo.FullName.Substring(path.Length).TrimStart(Path.DirectorySeparatorChar),
+                        Name = "",
+                        LastWriteTimeUtc = subDirInfo.LastWriteTimeUtc,
+                        EntryDateUtc = DateTime.UtcNow,
+                        Length = 0,
+                        Crc32 = null,
+                    }); ;
+
+                    var recursiveList = await StripDownGetRecursivePathInventoryAsync2(path, cancellationToken, filenameBlacklist, subDirInfo.FullName); // Recursive async call
+                    returnValue.AddRange(recursiveList); // Combine results from the recursion
+                }
+                catch (OperationCanceledException)
+                {
+                    Console.WriteLine("Operation was canceled. Partial results will be returned.");
+                    break;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Error processing directory {subDirInfo.FullName}: {ex.Message}");
+                    // Continue processing other directories despite the error
+                }
+
+                // Delay again every 5000 entries
+                if (returnValue.Count % 5000 == 0)
+                {
+                    await Task.Delay(100, cancellationToken); // Pass cancellation token to Task.Delay
+                }
+            }
+
+            return returnValue; // Return the partial list gathered until the point of cancellation or complete list if not canceled
+        }
+
+        public class AbortState
+        {
+            public bool ShouldAbort { get; set; } = false;
+        }
+
+
+        public async Task<List<Entry>> GetRecursivePathInventoryNewAsync(string path, CancellationToken cancellationToken, List<string>? filenameBlacklist = null)
+        {
+            var entries = new List<Entry>();
+            var abortState = new AbortState();
+
+            try
+            {
+                await ProcessDirectoryAsync(path, path, cancellationToken, filenameBlacklist, entries, abortState);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error during processing: {Message}", ex.Message);
+                throw; // Rethrow to signal that the operation should be aborted
+            }
+
+            return entries;
+        }
+
+        private async Task ProcessDirectoryAsync(string basePath, string currentPath, CancellationToken cancellationToken, List<string>? filenameBlacklist, List<Entry> entries, AbortState abortState)
+        {
+            if (abortState.ShouldAbort) return; // Check the abort flag
+
+            DirectoryInfo dirInfo = new DirectoryInfo(currentPath);
+            cancellationToken.ThrowIfCancellationRequested();
+
+            try
+            {
+                await ProcessFilesAsync(dirInfo, basePath, cancellationToken, filenameBlacklist, entries, abortState);
+                if (abortState.ShouldAbort) return;
+                await ProcessSubdirectoriesAsync(dirInfo, basePath, cancellationToken, filenameBlacklist, entries, abortState);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Failed to process directory {Path}", currentPath);
+                abortState.ShouldAbort = true; // Set abort flag
+            }
+        }
+
+        private async Task ProcessFilesAsync(DirectoryInfo directory, string basePath, CancellationToken cancellationToken, List<string>? filenameBlacklist, List<Entry> entries, AbortState abortState)
+        {
+            if (abortState.ShouldAbort) return; // Check the abort flag
+
+            cancellationToken.ThrowIfCancellationRequested();
+
+            try
+            {
+                IEnumerable<FileInfo> files = directory.EnumerateFiles();
+                foreach (var file in files)
+                {
+                    if (abortState.ShouldAbort) return; // Check the abort flag
+                    if (filenameBlacklist?.Contains(file.Name, StringComparer.OrdinalIgnoreCase) == true)
+                    {
+                        continue;
+                    }
+
+                    cancellationToken.ThrowIfCancellationRequested();
+                    uint crc32Hash = await _hashService.ComputeCrc32Async(file.FullName, cancellationToken);
+
+                    entries.Add(new Entry
+                    {
+                        FullName = file.FullName.Substring(basePath.Length).TrimStart(Path.DirectorySeparatorChar),
+                        Name = file.Name,
+                        Length = file.Length,
+                        LastWriteTimeUtc = file.LastWriteTimeUtc,
+                        EntryDateUtc = DateTime.UtcNow,
+                        Crc32 = crc32Hash,
+                    });
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error processing file");
+                abortState.ShouldAbort = true; // Set abort flag
+            }
+        }
+
+        private async Task ProcessSubdirectoriesAsync(DirectoryInfo directory, string basePath, CancellationToken cancellationToken, List<string>? filenameBlacklist, List<Entry> entries, AbortState abortState)
+        {
+            if (abortState.ShouldAbort) return; // Check the abort flag
+
+            cancellationToken.ThrowIfCancellationRequested();
+
+            try
+            {
+                IEnumerable<DirectoryInfo> directories = directory.EnumerateDirectories();
+                foreach (var subDir in directories)
+                {
+                    if (abortState.ShouldAbort) return; // Check the abort flag
+
+                    entries.Add(new Entry
+                    {
+                        FullName = subDir.FullName.Substring(basePath.Length).TrimStart(Path.DirectorySeparatorChar),
+                        Name = "",
+                        LastWriteTimeUtc = subDir.LastWriteTimeUtc,
+                        EntryDateUtc = DateTime.UtcNow,
+                        Length = 0,
+                        Crc32 = null,
+                    });
+
+                    await ProcessDirectoryAsync(basePath, subDir.FullName, cancellationToken, filenameBlacklist, entries, abortState);
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Error processing subdirectory");
+                abortState.ShouldAbort = true; // Set abort flag
+            }
+        }
+
+   
+        //public async Task InventoryCopyAsync2(string inventoryFilename, string target)
+        //{
+        //    if (!System.IO.Directory.Exists(target))
+        //    {
+        //        System.IO.Directory.CreateDirectory(target);
+        //    }
+
+        //    CancellationTokenSource cancellationTokenSource = new CancellationTokenSource();
+        //    List<Entry>? result = System.Text.Json.JsonSerializer.Deserialize<List<Entry>>(System.IO.File.ReadAllText(inventoryFilename));
+        //    result = result.OrderBy(e => e.IsFile).ToList();
+
+        //    List<Entry> targetlist = await EvolutionPathInventoryFullAsync(target, cancellationTokenSource.Token,false, true);;
+        //    targetlist = targetlist.OrderByDescending(e => e.IsFile).ToList();
+
+        //    for (int i = 0; i < result.Count; i++)
+        //    {
+        //        var targetEntry = targetlist.FindIndex(e => e.FullName == result[i].FullName);
+
+        //        if (result[i].IsDirectory)
+        //        {
+        //            if (System.IO.Directory.Exists(result[i].FullName))
+        //            {
+        //                if (!System.IO.Directory.Exists(@$"{target}{result[i].FullName}"))
+        //                {
+        //                    System.IO.Directory.CreateDirectory(@$"{target}{result[i].FullName}");
+        //                }
+        //            }
+        //            else
+        //            {
+        //                result.RemoveAt(i);
+        //                i--;
+        //                continue;
+        //            }
+        //        }
+
+        //        if (result[i].IsFile)
+        //        {
+        //            if (System.IO.File.Exists(result[i].FullName))
+        //            {
+        //                if (targetEntry == -1)
+        //                {
+        //                    await RetryVerifyAndResumeFileCopyAsync(result[i].FullName, @$"{target}{result[i].FullName}");
+        //                }
+        //                else
+        //                {
+        //                    if (targetlist[targetEntry].Length != result[i].Length || targetlist[targetEntry].LastWriteTimeUtc != result[i].LastWriteTimeUtc)
+        //                    {
+        //                        await RetryVerifyAndResumeFileCopyAsync(result[i].FullName, @$"{target}{result[i].FullName}");
+        //                    }
+        //                }
+        //            }
+        //            else
+        //            {
+        //                result.RemoveAt(i);
+        //                i--;
+        //                continue;
+        //            }
+        //        }
+
+        //        if (targetEntry != -1)
+        //        {
+        //            targetlist.RemoveAt(targetEntry);
+        //        }
+        //    }
+
+        //    targetlist = targetlist.OrderByDescending(e => e.FullName.Length).ToList();
+
+        //    foreach (var item in targetlist)
+        //    {
+        //        //_logger?.LogWarning("Extra item, {targetdirectoy} contains {target} that is in {inventoryFilename} but not present in {location}. ", target, item.FullName, inventoryFilename, result.FirstOrDefault()?.RootDir);
+        //        _logger?.LogWarning("{inventoryFilename} is outdated ",inventoryFilename);
+        //    }
+
+        //    foreach (var item in targetlist)
+        //    {
+        //        if (item.IsFile)
+        //        {
+        //            DeleteFile(item.FullName);
+        //        }
+
+        //        if (item.IsDirectory)
+        //        {
+        //            System.IO.Directory.Delete(item.FullName, true);
+        //        }
+        //    }
+        //}

@@ -1,0 +1,11 @@
+<Project>
+	<!-- See https://aka.ms/dotnet/msbuild/customize for more details on customizing your build -->
+	<Target Name="BeforeTargetsBase" BeforeTargets="Build;Clean;Rebuild;Publish;Pack;CoreCompile;CoreClean;">
+		<Message Text="==&gt; BeforeTargetsBase &lt;==" Importance="high" />
+
+		<RemoveDir Directories="bin\Build"  />
+		<RemoveDir Directories="bin\Publish"  />
+		<RemoveDir Directories="bin\Pack"  />
+
+	</Target>
+</Project>

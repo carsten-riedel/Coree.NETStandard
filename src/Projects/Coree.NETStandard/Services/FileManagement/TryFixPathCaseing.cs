@@ -5,12 +5,13 @@ using System.Linq;
 using System.Text;
 
 using Coree.NETStandard.Abstractions.ServiceFactory;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
 using Microsoft.Extensions.Logging;
 
-namespace Coree.NETStandard.Services.FileService
+namespace Coree.NETStandard.Services.FileManagement
 {
-    public partial class FileService : ServiceFactory<FileService>, IFileService
+    public partial class FileService : ServiceFactoryEx<FileService>, IFileService
     {
         /// <summary>
         /// Attempts to correct the casing of the provided file or directory path by traversing each segment and matching it against actual filesystem entries.

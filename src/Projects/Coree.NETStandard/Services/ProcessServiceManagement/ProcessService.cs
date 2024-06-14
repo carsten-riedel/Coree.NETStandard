@@ -1,21 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
 
-using Coree.NETStandard.Abstractions.ServiceFactory;
-
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Configuration;
-using Serilog.Core;
+using Coree.NETStandard.Abstractions.ServiceFactoryEx;
 
-namespace Coree.NETStandard.Services.ProcessService
+namespace Coree.NETStandard.Services.ProcessManagement
 {
     /// <summary>
     /// Provides functionality for managing and executing external processes. This service supports a variety of operations including running processes with options for cancellation, timeouts, and potentially more features in the future.
     /// </summary>
-    public partial class ProcessService : ServiceFactory<ProcessService>, IProcessService
+    public partial class ProcessService : ServiceFactoryEx<ProcessService>, IProcessService
     {
         private readonly ILogger<ProcessService>? _logger;
 

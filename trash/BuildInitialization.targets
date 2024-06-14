@@ -1,0 +1,14 @@
+<Project>
+
+	<Import Project="$(MSBuildThisFileDirectory)BuildPropertiesBase.targets" />
+	<Import Project="$(MSBuildThisFileDirectory)BuildUsingTasks.targets" />
+	<Import Project="$(MSBuildThisFileDirectory)BeforeTargets.targets" />
+	<Import Project="$(MSBuildThisFileDirectory)AfterTargets.targets" />
+
+	<Target Name="BuildInitialization">
+		<Message Text="==&gt; BuildInitialization &lt;==" Importance="high" />
+		<Message Importance="high" Text="==&gt; Calling: BuildPropertiesBase"></Message>
+		<CallTarget Targets="BuildPropertiesBase"/>
+	</Target>
+
+</Project>
