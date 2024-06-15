@@ -34,8 +34,8 @@
 			<BuildingSolutionFile>true</BuildingSolutionFile>
 		</PropertyGroup>
 
-		<PropertyGroup Condition="'$(BuildingSolutionFile)' != 'true'">
-			<BuildingSolutionFile>false</BuildingSolutionFile>
+		<PropertyGroup Condition="'$(DesignTimeBuild)' != 'true'">
+			<DesignTimeBuild>false</DesignTimeBuild>
 		</PropertyGroup>
 
 		<Message Importance="high" Text="==> IsVisualStudioExecuted:         $(IsVisualStudioExecuted)"></Message>
@@ -45,7 +45,8 @@
 		<Message Importance="high" Text="==> BuildingProject:			     $(BuildingProject)"></Message>
 		<Message Importance="high" Text="==> IsAutoTriggeredDesignTimeBuild: $(IsAutoTriggeredDesignTimeBuild)"></Message>
 		<Message Importance="high" Text="==> MSBuildRuntimeType:			 $(MSBuildRuntimeType)"></Message>
-		
+		<Message Importance="high" Text="==> DesignTimeBuild:			     $(DesignTimeBuild)"></Message>
+
 
 	</Target>
 	
