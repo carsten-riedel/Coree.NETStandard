@@ -1,6 +1,8 @@
 git fetch --prune
 git branch -vv | Select-String "\: gone\]" | ForEach-Object { $branchName = $_.Line.Trim().Substring(0, $_.Line.Trim().IndexOf(' ')); git branch -D $branchName }
 
+git branch -vv | Select-String -NotMatch "\[origin/" | ForEach-Object { $branchName = $_.Line.Trim().Split(' ')[0]; git branch -D $branchName; Write-Output "Deleted: $branchName" }
+
 
 ###
 git merge origin develop
