@@ -3,6 +3,10 @@ git branch -vv | Select-String "\: gone\]" | ForEach-Object { $branchName = $_.L
 
 git branch -vv | Select-String -NotMatch "\[origin/" | ForEach-Object { $branchName = $_.Line.Trim().Split(' ')[0]; git branch -D $branchName; Write-Output "Deleted: $branchName" }
 
+#list tags checkout detached and create a branch out of the tag.
+git tag
+git checkout --force --detach v0.1.8932.20257 & git switch -c v0.1.8932.20257
+git checkout --force --detach v0.1.8932.20257 & git switch -c tagged/v0.1.8932.20257 & git switch tagged/v0.1.8932.20257
 
 ###
 git merge origin develop

@@ -15,6 +15,15 @@
 	<Import Project="Package/Config/Information.targets" />
 	<Import Project="Package/Config/PackageMetadata.props" />
 	<Import Project="Package/Config/PackageSpecs.props" />
+	<ItemGroup>
+	  <None Remove="Classes\CommonDistinguishedNameBuilder\CommonDistinguishedNameBuilder.cs" />
+	  <None Remove="Services\NetworkManagement\NetworkService.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\EnsureWriteableDirectoryExists.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\IsWritableDirectory.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetAppName.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetOrCreateAppNameDirectory.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetPrimaryFileLocation.cs" />
+	</ItemGroup>
 
 
 	<ItemGroup>
@@ -42,6 +51,7 @@
 		<PackageReference Include="Spectre.Console" Version="[0.49.1,)" />
 		<PackageReference Include="Spectre.Console.Cli" Version="[0.49.1,)" />
 		<PackageReference Include="System.Collections.Immutable" Version="[8,)" />
+		<PackageReference Include="System.DirectoryServices" Version="8.0.0" />
 		<PackageReference Include="System.IO.Hashing" Version="[8,)" />
 	</ItemGroup>
 
