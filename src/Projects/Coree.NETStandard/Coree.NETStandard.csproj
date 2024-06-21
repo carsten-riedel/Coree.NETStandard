@@ -16,36 +16,43 @@
 	<Import Project="Package/Config/PackageMetadata.props" />
 	<Import Project="Package/Config/PackageSpecs.props" />
 	<ItemGroup>
-	  <None Remove="Extensions\ServiceCollection\SuppressConsoleLifetimeMessages.cs" />
-	  <None Remove="Serilog\ForSourceContext.cs" />
-	  <None Remove="Services\FileOperationsManagement\ChooseFileStreamBufferSize.cs" />
-	  <None Remove="Services\FileOperationsManagement\ScanFileSystemEntriesAsync.cs" />
+	  <None Remove="Classes\CommonDistinguishedNameBuilder\CommonDistinguishedNameBuilder.cs" />
+	  <None Remove="Services\NetworkManagement\NetworkService.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\EnsureWriteableDirectoryExists.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\IsWritableDirectory.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetAppName.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetOrCreateAppNameDirectory.cs" />
+	  <None Remove="Utilities\NETStandard\MainContext\TryGetPrimaryFileLocation.cs" />
 	</ItemGroup>
 
+
 	<ItemGroup>
-		<PackageReference Include="JsonPath.Net" Version="1.0.5" />
+		<PackageReference Include="JsonPath.Net" Version="[1.0.4,)" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="[3.1.32, 4)" />
-		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="[3.1.32, 4)" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="[3.1.32, 4)" />
+		<!--
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="[3.1.32, 4)" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="[3.1.32, 4)">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Hosting" Version="8.0.0" />
-		<PackageReference Include="Microsoft.Extensions.Http" Version="8.0.0" />
-		<PackageReference Include="Polly" Version="8.4.0" />
-		<PackageReference Include="Serilog" Version="3.1.1" />
-		<PackageReference Include="Serilog.Enrichers.Environment" Version="2.3.0" />
-		<PackageReference Include="Serilog.Extensions.Hosting" Version="8.0.0" />
-		<PackageReference Include="Serilog.Extensions.Logging" Version="8.0.0" />
-		<PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
-		<PackageReference Include="Serilog.Sinks.Debug" Version="2.0.0" />
-		<PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
-		<PackageReference Include="Spectre.Console" Version="0.49.1" />
-		<PackageReference Include="Spectre.Console.Cli" Version="0.49.1" />
-		<PackageReference Include="System.Collections.Immutable" Version="8.0.0" />
-		<PackageReference Include="System.IO.Hashing" Version="8.0.0" />
+		-->
+		<PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="[6,)" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="[8,)" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="[6,)" />
+		<PackageReference Include="Polly" Version="[6.0.1,)" />
+		<PackageReference Include="Serilog" Version="[3.1.1,)" />
+		<PackageReference Include="Serilog.Enrichers.Environment" Version="[2.3.0,)" />
+		<PackageReference Include="Serilog.Extensions.Hosting" Version="[7,)" />
+		<PackageReference Include="Serilog.Extensions.Logging" Version="[7,)" />
+		<PackageReference Include="Serilog.Sinks.Console" Version="[5.0.1,)" />
+		<PackageReference Include="Serilog.Sinks.Debug" Version="[2.0.0,)" />
+		<PackageReference Include="Serilog.Sinks.File" Version="[5.0.0,)" />
+		<PackageReference Include="Spectre.Console" Version="[0.49.1,)" />
+		<PackageReference Include="Spectre.Console.Cli" Version="[0.49.1,)" />
+		<PackageReference Include="System.Collections.Immutable" Version="[8,)" />
+		<PackageReference Include="System.DirectoryServices" Version="8.0.0" />
+		<PackageReference Include="System.IO.Hashing" Version="[8,)" />
 	</ItemGroup>
 
 
