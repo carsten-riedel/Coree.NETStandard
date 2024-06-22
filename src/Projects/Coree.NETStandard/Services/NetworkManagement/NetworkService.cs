@@ -106,4 +106,5 @@ namespace Coree.NETStandard.Services.NetworkManagement
         /// </example>
         List<NetworkService.IpAdressInformation> GetNetworkIpAdressUpDhcpDnsGateway();
     }
+
 }
