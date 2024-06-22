@@ -5,9 +5,9 @@
 name: CICD
 
 on:
-  pull_request:
-    types: [ closed ]
+  push:
     paths:
+      - '.github/**'
       - 'src/**'
     branches:
       - 'master'
@@ -26,8 +26,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
 
+  builddeploy:
+    if: (github.event_name == 'workflow_dispatch') || (github.event_name == 'repository_dispatch') ||  github.event.head_commit.committer.name == 'Github'
+ 
     runs-on: ubuntu-latest
     
     env:
@@ -36,6 +38,8 @@ jobs:
     steps:
     - name: Checkout
       uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
 
     - name: Setup-dotnet
       uses: actions/setup-dotnet@v4
@@ -54,3 +58,4 @@ jobs:
     - name: Workflow Build/Deploy
       run: .github/workflows/cicd_main.ps1 "${{ secrets.PAT }}" "${{ secrets.NUGET_PAT }}" "${{ secrets.NUGET_TEST_PAT }}"
       shell: pwsh 
+

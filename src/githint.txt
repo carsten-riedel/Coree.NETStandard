@@ -1,6 +1,12 @@
 git fetch --prune
 git branch -vv | Select-String "\: gone\]" | ForEach-Object { $branchName = $_.Line.Trim().Substring(0, $_.Line.Trim().IndexOf(' ')); git branch -D $branchName }
 
+git branch -vv | Select-String -NotMatch "\[origin/" | ForEach-Object { $branchName = $_.Line.Trim().Split(' ')[0]; git branch -D $branchName; Write-Output "Deleted: $branchName" }
+
+#list tags checkout detached and create a branch out of the tag.
+git tag
+git checkout --force --detach v0.1.8932.20257 & git switch -c v0.1.8932.20257
+git checkout --force --detach v0.1.8932.20257 & git switch -c tagged/v0.1.8932.20257 & git switch tagged/v0.1.8932.20257
 
 ###
 git merge origin develop
@@ -23,6 +29,7 @@ git push origin develop --force
 
 
 #
-git checkout develop
-git checkout -b feature/fix_underconstruction
-git push -u origin feature/fix_underconstruction
+git fetch --all
+git checkout feature/fix_underconstruction
+git reset --hard origin/develop
+git push origin feature/fix_underconstruction --force
