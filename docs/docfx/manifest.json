@@ -254,6 +254,36 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.CommonDistinguishedNameBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.CommonDistinguishedNameBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.DistinguishedName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.DistinguishedName.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Classes.CommonDistinguishedNameBuilder.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Classes.Criteria.CriteriaComparisonMethod.yml",
       "output": {
         ".html": {
@@ -1068,6 +1098,56 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Services.HashManagement.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.NetworkManagement.INetworkService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.NetworkManagement.INetworkService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.IpAdressInformation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.IpAdressInformation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.NetworkInterfaceDetail.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.NetworkInterfaceDetail.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.NetworkManagement.NetworkService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Services.NetworkManagement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Services.NetworkManagement.html"
         }
       },
       "version": ""
