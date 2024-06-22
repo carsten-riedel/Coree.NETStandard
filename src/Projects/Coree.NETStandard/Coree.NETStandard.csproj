@@ -17,6 +17,11 @@
 	<Import Project="Package/Config/PackageSpecs.props" />
 	<ItemGroup>
 	  <None Remove="Classes\CommonDistinguishedNameBuilder\CommonDistinguishedNameBuilder.cs" />
+	  <None Remove="Services\NetworkManagement\GetNetworkInterfaceDetails.cs" />
+	  <None Remove="Services\NetworkManagement\GetNetworkInterfaceDetailsUpDhcpDnsGateway.cs" />
+	  <None Remove="Services\NetworkManagement\GetNetworkIpAdressUpDhcpDnsGateway.cs" />
+	  <None Remove="Services\NetworkManagement\IpAdressInformation.cs" />
+	  <None Remove="Services\NetworkManagement\NetworkInterfaceDetail.cs" />
 	  <None Remove="Services\NetworkManagement\NetworkService.cs" />
 	  <None Remove="Utilities\NETStandard\MainContext\EnsureWriteableDirectoryExists.cs" />
 	  <None Remove="Utilities\NETStandard\MainContext\IsWritableDirectory.cs" />
