@@ -15,21 +15,6 @@
 	<Import Project="Package/Config/Information.targets" />
 	<Import Project="Package/Config/PackageMetadata.props" />
 	<Import Project="Package/Config/PackageSpecs.props" />
-	<ItemGroup>
-	  <None Remove="Classes\CommonDistinguishedNameBuilder\CommonDistinguishedNameBuilder.cs" />
-	  <None Remove="Services\NetworkManagement\GetNetworkInterfaceDetails.cs" />
-	  <None Remove="Services\NetworkManagement\GetNetworkInterfaceDetailsUpDhcpDnsGateway.cs" />
-	  <None Remove="Services\NetworkManagement\GetNetworkIpAdressUpDhcpDnsGateway.cs" />
-	  <None Remove="Services\NetworkManagement\IpAdressInformation.cs" />
-	  <None Remove="Services\NetworkManagement\NetworkInterfaceDetail.cs" />
-	  <None Remove="Services\NetworkManagement\NetworkService.cs" />
-	  <None Remove="Utilities\NETStandard\MainContext\EnsureWriteableDirectoryExists.cs" />
-	  <None Remove="Utilities\NETStandard\MainContext\IsWritableDirectory.cs" />
-	  <None Remove="Utilities\NETStandard\MainContext\TryGetAppName.cs" />
-	  <None Remove="Utilities\NETStandard\MainContext\TryGetOrCreateAppNameDirectory.cs" />
-	  <None Remove="Utilities\NETStandard\MainContext\TryGetPrimaryFileLocation.cs" />
-	</ItemGroup>
-
 
 	<ItemGroup>
 		<PackageReference Include="JsonPath.Net" Version="[1.0.4,)" />
