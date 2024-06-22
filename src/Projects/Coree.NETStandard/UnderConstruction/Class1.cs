@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Immutable;
+using System.Net;
 using System.Threading;
 
 #pragma warning disable
@@ -113,6 +114,8 @@ namespace Coree.NETStandard.UnderConstruction
             Dispose(false);
         }
     }
+
+
 
 }
 
