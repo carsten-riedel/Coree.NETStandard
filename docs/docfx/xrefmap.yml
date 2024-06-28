@@ -3252,6 +3252,22 @@ references:
   fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToJsonPathResultValues(Of T)(String, String)
   nameWithType: ConversionsStringExtensions.ToJsonPathResultValues<T>(string?, string)
   nameWithType.vb: ConversionsStringExtensions.ToJsonPathResultValues(Of T)(String, String)
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID(System.String)
+  name: ToShortUUID(string?)
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToShortUUID_System_String_
+  commentId: M:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID(System.String)
+  name.vb: ToShortUUID(String)
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID(string?)
+  fullName.vb: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID(String)
+  nameWithType: ConversionsStringExtensions.ToShortUUID(string?)
+  nameWithType.vb: ConversionsStringExtensions.ToShortUUID(String)
+- uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID*
+  name: ToShortUUID
+  href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_ToShortUUID_
+  commentId: Overload:Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.ToShortUUID
+  nameWithType: ConversionsStringExtensions.ToShortUUID
 - uid: Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.TrimSpecific(System.String,System.Char,System.Int32,System.Int32)
   name: TrimSpecific(string, char, int, int)
   href: api/Coree.NETStandard.Extensions.Conversions.String.ConversionsStringExtensions.html#Coree_NETStandard_Extensions_Conversions_String_ConversionsStringExtensions_TrimSpecific_System_String_System_Char_System_Int32_System_Int32_
@@ -3579,6 +3595,22 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.IsValidXml
   nameWithType: ValidationsStringExtensions.IsValidXml
+- uid: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  name: ValidateWhitelistBlacklist(string, List<string>?, List<string>?)
+  href: api/Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.html#Coree_NETStandard_Extensions_Validations_String_ValidationsStringExtensions_ValidateWhitelistBlacklist_System_String_System_Collections_Generic_List_System_String__System_Collections_Generic_List_System_String__
+  commentId: M:Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String})
+  name.vb: ValidateWhitelistBlacklist(String, List(Of String), List(Of String))
+  fullName: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(string, System.Collections.Generic.List<string>?, System.Collections.Generic.List<string>?)
+  fullName.vb: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(String, System.Collections.Generic.List(Of String), System.Collections.Generic.List(Of String))
+  nameWithType: ValidationsStringExtensions.ValidateWhitelistBlacklist(string, List<string>?, List<string>?)
+  nameWithType.vb: ValidationsStringExtensions.ValidateWhitelistBlacklist(String, List(Of String), List(Of String))
+- uid: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist*
+  name: ValidateWhitelistBlacklist
+  href: api/Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.html#Coree_NETStandard_Extensions_Validations_String_ValidationsStringExtensions_ValidateWhitelistBlacklist_
+  commentId: Overload:Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist
+  nameWithType: ValidationsStringExtensions.ValidateWhitelistBlacklist
 - uid: Coree.NETStandard.HostedServicesCollection
   name: Coree.NETStandard.HostedServicesCollection
   href: api/Coree.NETStandard.HostedServicesCollection.html
@@ -7620,15 +7652,15 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Utilities.MainContext.TryGetAppName
   nameWithType: MainContext.TryGetAppName
-- uid: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean)
-  name: TryGetOrCreateAppNameDirectory(string[]?, bool)
-  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_
-  commentId: M:Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean)
-  name.vb: TryGetOrCreateAppNameDirectory(String(), Boolean)
-  fullName: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(string[]?, bool)
-  fullName.vb: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(String(), Boolean)
-  nameWithType: MainContext.TryGetOrCreateAppNameDirectory(string[]?, bool)
-  nameWithType.vb: MainContext.TryGetOrCreateAppNameDirectory(String(), Boolean)
+- uid: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean,System.String[],System.Boolean)
+  name: TryGetOrCreateAppNameDirectory(string[]?, bool, string[]?, bool)
+  href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_System_String___System_Boolean_
+  commentId: M:Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean,System.String[],System.Boolean)
+  name.vb: TryGetOrCreateAppNameDirectory(String(), Boolean, String(), Boolean)
+  fullName: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(string[]?, bool, string[]?, bool)
+  fullName.vb: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(String(), Boolean, String(), Boolean)
+  nameWithType: MainContext.TryGetOrCreateAppNameDirectory(string[]?, bool, string[]?, bool)
+  nameWithType.vb: MainContext.TryGetOrCreateAppNameDirectory(String(), Boolean, String(), Boolean)
 - uid: Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory*
   name: TryGetOrCreateAppNameDirectory
   href: api/Coree.NETStandard.Utilities.MainContext.html#Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_

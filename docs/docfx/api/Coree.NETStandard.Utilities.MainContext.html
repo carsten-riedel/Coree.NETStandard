@@ -892,19 +892,27 @@ without relying on preprocessor directives.</p>
 
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_System_String___System_Boolean_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String%5B%5D%2CSystem.Boolean%2CSystem.String%5B%5D%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Utilities/NETStandard/MainContext/TryGetOrCreateAppNameDirectory.cs/#L23">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/Utilities/NETStandard/MainContext/TryGetOrCreateAppNameDirectory.cs/#L28">View Source</a>
   </span>
   <a id="Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_" data-uid="Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory*"></a>
-  <h4 id="Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_" data-uid="Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean)">TryGetOrCreateAppNameDirectory(string[]?, bool)</h4>
-  <div class="markdown level1 summary"><p>Attempts to get or create the configuration directory.</p>
+  <h4 id="Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean_System_String___System_Boolean_" data-uid="Coree.NETStandard.Utilities.MainContext.TryGetOrCreateAppNameDirectory(System.String[],System.Boolean,System.String[],System.Boolean)">TryGetOrCreateAppNameDirectory(string[]?, bool, string[]?, bool)</h4>
+  <div class="markdown level1 summary"><p>Attempts to get or create the application name directory.</p>
+<param name="baseDirectories">Optional array of base directories to search or create the application name directory in. If not provided, default directories will be used.
+<param name="useStartupAppLocation">Indicates whether to use a startup-specific application location.
+<param name="defaultDirectories">Optional array of default directories to ensure they exist within the application directory.
+<param name="throwIfFails">Indicates whether to throw an exception if the operation fails.
+<returns>The path to the application name directory, or null if not found or created.</returns>
+<example>
+<pre><code class="lang-csharp">var configDir = MainContext.TryGetOrCreateAppNameDirectory();</code></pre>
+</example>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static DirectoryInfo? TryGetOrCreateAppNameDirectory(string[]? baseDirectories = null, bool throwIfFails = false)</code></pre>
+    <pre><code class="lang-csharp hljs">public static DirectoryInfo? TryGetOrCreateAppNameDirectory(string[]? baseDirectories = null, bool useStartupAppLocation = true, string[]? defaultDirectories = null, bool throwIfFails = false)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -923,9 +931,18 @@ without relying on preprocessor directives.</p>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
+        <td><span class="parametername">useStartupAppLocation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</td>
+        <td><span class="parametername">defaultDirectories</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
         <td><span class="parametername">throwIfFails</span></td>
-        <td><p>Indicates whether to throw an exception if the operation fails.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
@@ -940,14 +957,10 @@ without relying on preprocessor directives.</p>
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.directoryinfo">DirectoryInfo</a></td>
-        <td><p>The path to the configuration directory, or null if not found or created.</p>
-</td>
+        <td></td>
       </tr>
     </tbody>
   </table>
-  <h5 id="Coree_NETStandard_Utilities_MainContext_TryGetOrCreateAppNameDirectory_System_String___System_Boolean__examples">Examples</h5>
-  <pre><code class="lang-csharp">var configDir = TryGetCreateConfigDir();</code></pre>
-
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_Utilities_MainContext_TryGetPrimaryFileLocation.md&amp;value=---%0Auid%3A%20Coree.NETStandard.Utilities.MainContext.TryGetPrimaryFileLocation%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
