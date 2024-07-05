@@ -25,7 +25,7 @@ namespace Coree.NETStandard.Utilities
         /// </code>
         /// </example>
         /// </summary>
-        public static DirectoryInfo? TryGetOrCreateAppNameDirectory(string[]? baseDirectories = null,bool useStartupAppLocation = true, string[]? defaultDirectories = null, bool throwIfFails = false)
+        public static DirectoryInfo? TryGetOrCreateAppNameDirectory(string[]? baseDirectories = null,bool useStartupAppLocation = false, string[]? defaultDirectories = null, bool throwIfFails = false)
         {
             var location = TryGetPrimaryFileLocation();
             var locationId = location.ToShortUUID();
