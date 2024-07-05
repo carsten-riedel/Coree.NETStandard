@@ -3360,6 +3360,31 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Extensions.Conversions.Stringbuilder.ConversionsStringbuilderExtension.AppendLineOrDefault
   nameWithType: ConversionsStringbuilderExtension.AppendLineOrDefault
+- uid: Coree.NETStandard.Extensions.Enums
+  name: Coree.NETStandard.Extensions.Enums
+  href: api/Coree.NETStandard.Extensions.Enums.html
+  commentId: N:Coree.NETStandard.Extensions.Enums
+  fullName: Coree.NETStandard.Extensions.Enums
+  nameWithType: Coree.NETStandard.Extensions.Enums
+- uid: Coree.NETStandard.Extensions.Enums.EnumExtensions
+  name: EnumExtensions
+  href: api/Coree.NETStandard.Extensions.Enums.EnumExtensions.html
+  commentId: T:Coree.NETStandard.Extensions.Enums.EnumExtensions
+  fullName: Coree.NETStandard.Extensions.Enums.EnumExtensions
+  nameWithType: EnumExtensions
+- uid: Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute(System.Enum)
+  name: GetDescriptionAttribute(Enum)
+  href: api/Coree.NETStandard.Extensions.Enums.EnumExtensions.html#Coree_NETStandard_Extensions_Enums_EnumExtensions_GetDescriptionAttribute_System_Enum_
+  commentId: M:Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute(System.Enum)
+  fullName: Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute(System.Enum)
+  nameWithType: EnumExtensions.GetDescriptionAttribute(Enum)
+- uid: Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute*
+  name: GetDescriptionAttribute
+  href: api/Coree.NETStandard.Extensions.Enums.EnumExtensions.html#Coree_NETStandard_Extensions_Enums_EnumExtensions_GetDescriptionAttribute_
+  commentId: Overload:Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute
+  isSpec: "True"
+  fullName: Coree.NETStandard.Extensions.Enums.EnumExtensions.GetDescriptionAttribute
+  nameWithType: EnumExtensions.GetDescriptionAttribute
 - uid: Coree.NETStandard.Extensions.Http.HttpHeader
   name: Coree.NETStandard.Extensions.Http.HttpHeader
   href: api/Coree.NETStandard.Extensions.Http.HttpHeader.html
@@ -3828,6 +3853,25 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Serilog.ConditionalLevelSink.Emit
   nameWithType: ConditionalLevelSink.Emit
+- uid: Coree.NETStandard.Serilog.CustomTheme
+  name: CustomTheme
+  href: api/Coree.NETStandard.Serilog.CustomTheme.html
+  commentId: T:Coree.NETStandard.Serilog.CustomTheme
+  fullName: Coree.NETStandard.Serilog.CustomTheme
+  nameWithType: CustomTheme
+- uid: Coree.NETStandard.Serilog.CustomTheme.ClarionDusk
+  name: ClarionDusk
+  href: api/Coree.NETStandard.Serilog.CustomTheme.html#Coree_NETStandard_Serilog_CustomTheme_ClarionDusk
+  commentId: P:Coree.NETStandard.Serilog.CustomTheme.ClarionDusk
+  fullName: Coree.NETStandard.Serilog.CustomTheme.ClarionDusk
+  nameWithType: CustomTheme.ClarionDusk
+- uid: Coree.NETStandard.Serilog.CustomTheme.ClarionDusk*
+  name: ClarionDusk
+  href: api/Coree.NETStandard.Serilog.CustomTheme.html#Coree_NETStandard_Serilog_CustomTheme_ClarionDusk_
+  commentId: Overload:Coree.NETStandard.Serilog.CustomTheme.ClarionDusk
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.CustomTheme.ClarionDusk
+  nameWithType: CustomTheme.ClarionDusk
 - uid: Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions
   name: LoggerSinkConfigurationExtensions
   href: api/Coree.NETStandard.Serilog.LoggerSinkConfigurationExtensions.html
@@ -3898,6 +3942,19 @@ references:
   isSpec: "True"
   fullName: Coree.NETStandard.Serilog.OutputTemplates.DefaultShort
   nameWithType: OutputTemplates.DefaultShort
+- uid: Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort
+  name: TwoLineShort()
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_TwoLineShort
+  commentId: M:Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort()
+  nameWithType: OutputTemplates.TwoLineShort()
+- uid: Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort*
+  name: TwoLineShort
+  href: api/Coree.NETStandard.Serilog.OutputTemplates.html#Coree_NETStandard_Serilog_OutputTemplates_TwoLineShort_
+  commentId: Overload:Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort
+  isSpec: "True"
+  fullName: Coree.NETStandard.Serilog.OutputTemplates.TwoLineShort
+  nameWithType: OutputTemplates.TwoLineShort
 - uid: Coree.NETStandard.Serilog.ServiceCollectionExtensions
   name: ServiceCollectionExtensions
   href: api/Coree.NETStandard.Serilog.ServiceCollectionExtensions.html

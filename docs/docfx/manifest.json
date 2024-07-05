@@ -674,6 +674,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enums.EnumExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enums.EnumExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Extensions.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Extensions.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Coree.NETStandard.Extensions.Http.HttpHeader.HttpHeadersExtensions.yml",
       "output": {
         ".html": {
@@ -868,6 +888,16 @@
       "output": {
         ".html": {
           "relative_path": "api/Coree.NETStandard.Serilog.ConditionalLevelSink.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Coree.NETStandard.Serilog.CustomTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Coree.NETStandard.Serilog.CustomTheme.html"
         }
       },
       "version": ""
