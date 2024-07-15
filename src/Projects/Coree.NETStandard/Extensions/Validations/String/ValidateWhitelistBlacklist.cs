@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 
@@ -77,6 +78,23 @@ namespace Coree.NETStandard.Extensions.Validations.String
         }
 
         /// <summary>
+        /// Extension method to evaluate this string instance against optional whitelist and blacklist patterns to determine
+        /// whether the operation should continue.
+        /// </summary>
+        /// <param name="input">The string instance to be evaluated.</param>
+        /// <param name="whitelist">An optional list of whitelist patterns. If the string matches any of these patterns,
+        /// the method immediately returns true, indicating that the operation should continue.</param>
+        /// <param name="blacklist">An optional list of blacklist patterns. If the string matches any of these patterns,
+        /// the method returns false, indicating that the operation should be halted.</param>
+        /// <returns>True if the operation should continue (either by passing a whitelist check or not failing a blacklist check),
+        /// or false if the string matches a blacklist pattern and should be halted.</returns>
+        public static bool ValidateWhitelistBlacklist(this string input, string[]? whitelist = null, string[]? blacklist = null)
+        {
+            // Utilize the ValidateWhitelistBlacklist method directly
+            return InternalValidateWhitelistBlacklist(input, whitelist?.ToList(), blacklist?.ToList());
+        }
+
+        /// <summary>
         /// Evaluates an input string against optional whitelist and blacklist to determine whether the operation should continue.
         /// This method returns true to signal that the operation should continue, either because the input matches a whitelist
         /// pattern, does not match a blacklist pattern, or no lists are provided.
@@ -107,6 +125,12 @@ namespace Coree.NETStandard.Extensions.Validations.String
                 var blacklistResult = MatchesAnyPattern(input, blacklist);
                 // If the input matches a blacklist pattern, halt the operation
                 return !blacklistResult;
+            }
+
+            //Only whitelist is provided so all is blacklisted
+            if (whitelist != null && blacklist == null)
+            {
+                return false;
             }
 
             // If no lists are provided or no matches found in blacklist, continue the operation
