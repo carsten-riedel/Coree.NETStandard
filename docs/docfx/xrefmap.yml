@@ -3629,6 +3629,15 @@ references:
   fullName.vb: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(String, System.Collections.Generic.List(Of String), System.Collections.Generic.List(Of String))
   nameWithType: ValidationsStringExtensions.ValidateWhitelistBlacklist(string, List<string>?, List<string>?)
   nameWithType.vb: ValidationsStringExtensions.ValidateWhitelistBlacklist(String, List(Of String), List(Of String))
+- uid: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(System.String,System.String[],System.String[])
+  name: ValidateWhitelistBlacklist(string, string[]?, string[]?)
+  href: api/Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.html#Coree_NETStandard_Extensions_Validations_String_ValidationsStringExtensions_ValidateWhitelistBlacklist_System_String_System_String___System_String___
+  commentId: M:Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(System.String,System.String[],System.String[])
+  name.vb: ValidateWhitelistBlacklist(String, String(), String())
+  fullName: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(string, string[]?, string[]?)
+  fullName.vb: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist(String, String(), String())
+  nameWithType: ValidationsStringExtensions.ValidateWhitelistBlacklist(string, string[]?, string[]?)
+  nameWithType.vb: ValidationsStringExtensions.ValidateWhitelistBlacklist(String, String(), String())
 - uid: Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.ValidateWhitelistBlacklist*
   name: ValidateWhitelistBlacklist
   href: api/Coree.NETStandard.Extensions.Validations.String.ValidationsStringExtensions.html#Coree_NETStandard_Extensions_Validations_String_ValidationsStringExtensions_ValidateWhitelistBlacklist_
