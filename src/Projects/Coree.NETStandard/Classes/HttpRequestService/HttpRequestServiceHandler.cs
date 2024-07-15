@@ -26,6 +26,8 @@ namespace Coree.NETStandard.Classes.HttpRequestService
             this.logger = logger;
             AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate;
             AllowAutoRedirect = true;
+            UseCookies = true;
+            CookieContainer = new CookieContainer();
             ServerCertificateCustomValidationCallback = ServerCertificateCustomValidation;
         }
 
