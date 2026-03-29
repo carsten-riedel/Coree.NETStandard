@@ -6195,15 +6195,15 @@ references:
   commentId: T:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
   fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver
   nameWithType: SpectreConsoleTypeResolver
-- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
-  name: SpectreConsoleTypeResolver(IServiceProvider, bool)
-  href: api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_
-  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)
-  name.vb: New(IServiceProvider, Boolean)
-  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(System.IServiceProvider, bool)
-  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.New(System.IServiceProvider, Boolean)
-  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(IServiceProvider, bool)
-  nameWithType.vb: SpectreConsoleTypeResolver.New(IServiceProvider, Boolean)
+- uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.IServiceProvider,System.Boolean)
+  name: SpectreConsoleTypeResolver(IServiceProvider, IServiceProvider, bool)
+  href: api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_IServiceProvider_System_Boolean_
+  commentId: M:Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.IServiceProvider,System.Boolean)
+  name.vb: New(IServiceProvider, IServiceProvider, Boolean)
+  fullName: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(System.IServiceProvider, System.IServiceProvider, bool)
+  fullName.vb: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.New(System.IServiceProvider, System.IServiceProvider, Boolean)
+  nameWithType: SpectreConsoleTypeResolver.SpectreConsoleTypeResolver(IServiceProvider, IServiceProvider, bool)
+  nameWithType.vb: SpectreConsoleTypeResolver.New(IServiceProvider, IServiceProvider, Boolean)
 - uid: Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor*
   name: SpectreConsoleTypeResolver
   href: api/Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html#Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_

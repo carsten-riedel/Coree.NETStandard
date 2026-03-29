@@ -769,7 +769,7 @@ processes commands, and manages application exit codes based on command executio
       <section><p>Enables type registration for Spectre.Console applications, supporting both <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.dependencyinjection.iservicecollection">IServiceCollection</a>.</p>
 </section>
       <h4><a class="xref" href="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.html">SpectreConsoleTypeResolver</a></h4>
-      <section><p>Resolves types from an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, and optionally disposes it.</p>
+      <section><p>Resolves types from the primary host provider first, and falls back to Spectre's late runtime registrations.</p>
 </section>
     <h3 id="enums">
 Enums

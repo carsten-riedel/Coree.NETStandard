@@ -747,7 +747,7 @@
 
   <h1 id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver" class="text-break">Class SpectreConsoleTypeResolver
 </h1>
-  <div class="markdown level0 summary"><p>Resolves types from an <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>, and optionally disposes it.</p>
+  <div class="markdown level0 summary"><p>Resolves types from the primary host provider first, and falls back to Spectre's late runtime registrations.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
@@ -791,19 +791,19 @@
 </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.%23ctor(System.IServiceProvider%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_IServiceProvider_System_Boolean_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.%23ctor(System.IServiceProvider%2CSystem.IServiceProvider%2CSystem.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L20">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L41">View Source</a>
   </span>
   <a id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor*"></a>
-  <h4 id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_Boolean_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.Boolean)">SpectreConsoleTypeResolver(IServiceProvider, bool)</h4>
-  <div class="markdown level1 summary"><p>Initializes with a specified service provider.</p>
+  <h4 id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver__ctor_System_IServiceProvider_System_IServiceProvider_System_Boolean_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.#ctor(System.IServiceProvider,System.IServiceProvider,System.Boolean)">SpectreConsoleTypeResolver(IServiceProvider, IServiceProvider, bool)</h4>
+  <div class="markdown level1 summary"><p>Initializes with the primary host provider and a secondary runtime provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SpectreConsoleTypeResolver(IServiceProvider provider, bool DisposeServiceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public SpectreConsoleTypeResolver(IServiceProvider primaryProvider, IServiceProvider runtimeProvider, bool disposePrimaryProvider)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-condensed">
@@ -817,14 +817,20 @@
     <tbody>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
-        <td><span class="parametername">provider</span></td>
-        <td><p>Service provider for type resolution.</p>
+        <td><span class="parametername">primaryProvider</span></td>
+        <td><p>Primary service provider for type resolution.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></td>
+        <td><span class="parametername">runtimeProvider</span></td>
+        <td><p>Runtime registration provider for late Spectre registrations.</p>
 </td>
       </tr>
       <tr>
         <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></td>
-        <td><span class="parametername">DisposeServiceProvider</span></td>
-        <td><p>True to dispose the service provider on disposal.</p>
+        <td><span class="parametername">disposePrimaryProvider</span></td>
+        <td><p>True to dispose the primary service provider on disposal.</p>
 </td>
       </tr>
     </tbody>
@@ -836,11 +842,11 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Dispose.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L39">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L99">View Source</a>
   </span>
   <a id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Dispose_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose*"></a>
   <h4 id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Dispose" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"><p>Disposes the service provider if disposable.</p>
+  <div class="markdown level1 summary"><p>Disposes the runtime provider, and optionally the primary provider.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="declaration">Declaration</h5>
@@ -852,7 +858,7 @@
     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Resolve_System_Type_.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L31">View Source</a>
+    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L53">View Source</a>
   </span>
   <a id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Resolve_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve*"></a>
   <h4 id="Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver_Resolve_System_Type_" data-uid="Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver.Resolve(System.Type)">Resolve(Type?)</h4>
@@ -916,7 +922,7 @@
                     <a href="https://github.com/carsten-riedel/Coree.NETStandard/new/master/apiSpec/new?filename=Coree_NETStandard_SpectreConsole_SpectreConsoleTypeResolver.md&amp;value=---%0Auid%3A%20Coree.NETStandard.SpectreConsole.SpectreConsoleTypeResolver%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
                   </li>
                   <li>
-                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/carsten-riedel/Coree.NETStandard/blob/master/src/Projects/Coree.NETStandard/SpectreConsole/SpectreConsoleTypeResolver.cs/#L29" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
