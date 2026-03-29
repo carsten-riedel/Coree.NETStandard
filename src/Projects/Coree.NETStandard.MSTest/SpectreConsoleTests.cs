@@ -201,5 +201,37 @@ namespace Coree.NETStandard.MSTest
             StringAssert.Contains(text, "DummyAsyncCommand");
             Assert.IsFalse(text.Contains("Could not resolve type", StringComparison.Ordinal));
         }
+
+        [TestMethod]
+        public void SpectreConsoleHostedService_NormalizeProcessExitCode_MapsHelpRequestToHelpVersionDisplayed()
+        {
+            var exitCode = SpectreConsoleHostedService.NormalizeProcessExitCode(0, new[] { "--help" });
+
+            Assert.AreEqual((int)SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed, exitCode);
+        }
+
+        [TestMethod]
+        public void SpectreConsoleHostedService_NormalizeProcessExitCode_MapsNoArgsToHelpVersionDisplayed()
+        {
+            var exitCode = SpectreConsoleHostedService.NormalizeProcessExitCode(0, Array.Empty<string>());
+
+            Assert.AreEqual((int)SpectreConsoleHostedService.ExitCode.HelpVersionDisplayed, exitCode);
+        }
+
+        [TestMethod]
+        public void SpectreConsoleHostedService_NormalizeProcessExitCode_KeepsCliXmldocSuccessAtZero()
+        {
+            var exitCode = SpectreConsoleHostedService.NormalizeProcessExitCode(0, new[] { "cli", "xmldoc" });
+
+            Assert.AreEqual(0, exitCode);
+        }
+
+        [TestMethod]
+        public void SpectreConsoleHostedService_ShouldStopApplication_OnlyContinuesForSuccessAndContinue()
+        {
+            Assert.IsFalse(SpectreConsoleHostedService.ShouldStopApplication((int)SpectreConsoleHostedService.ExitCode.SuccessAndContinue));
+            Assert.IsTrue(SpectreConsoleHostedService.ShouldStopApplication(0));
+            Assert.IsTrue(SpectreConsoleHostedService.ShouldStopApplication((int)SpectreConsoleHostedService.ExitCode.SuccessAndExit));
+        }
     }
 }

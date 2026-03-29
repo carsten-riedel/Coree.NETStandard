@@ -110,54 +110,23 @@ namespace Coree.NETStandard.SpectreConsole
         {
             var args = Environment.GetCommandLineArgs().Skip(1).ToArray();
 
-            //Exitcode 0 will be returned if just help is displayed, Exitcode -1 will be returned if command is not found.
             _ = Task.Run(async () =>
             {
                 Environment.ExitCode = (int)ExitCode.CommandFailedToRun;
-                var CommandAppExitCode = await commandApp.RunAsync(args);
+                var commandAppExitCode = await commandApp.RunAsync(args);
+                var processExitCode = NormalizeProcessExitCode(commandAppExitCode, args);
 
-                if (CommandAppExitCode == (int)SpectreConsole.HelpVersionSuccess)
+                Environment.ExitCode = processExitCode;
+                if (!ShouldStopApplication(commandAppExitCode))
                 {
-                    Environment.ExitCode = (int)ExitCode.HelpVersionDisplayed;
-                    appLifetime.ApplicationStopped.Register(() =>
-                    {
-                        Environment.ExitCode = (int)ExitCode.HelpVersionDisplayed;
-                    });
-                    appLifetime.StopApplication();
+                    return;
                 }
 
-                if (CommandAppExitCode == (int)SpectreConsole.CommandNotFound)
+                appLifetime.ApplicationStopped.Register(() =>
                 {
-                    Environment.ExitCode = (int)ExitCode.CommandNotFound;
-                    appLifetime.ApplicationStopped.Register(() =>
-                    {
-                        Environment.ExitCode = (int)ExitCode.CommandNotFound;
-                    });
-                    appLifetime.StopApplication();
-                }
-
-                if (CommandAppExitCode == (int)ExitCode.SuccessAndContinue)
-                {
-                    Environment.ExitCode = (int)GenericExitCode.Success;
-                }
-                else if (CommandAppExitCode == (int)ExitCode.SuccessAndExit)
-                {
-                    Environment.ExitCode = (int)GenericExitCode.Success;
-                    appLifetime.ApplicationStopped.Register(() =>
-                    {
-                        Environment.ExitCode = (int)GenericExitCode.Success;
-                    });
-                    appLifetime.StopApplication();
-                }
-                else
-                {
-                    Environment.ExitCode = CommandAppExitCode;
-                    appLifetime.ApplicationStopped.Register(() =>
-                    {
-                        Environment.ExitCode = CommandAppExitCode;
-                    });
-                    appLifetime.StopApplication();
-                }
+                    Environment.ExitCode = processExitCode;
+                });
+                appLifetime.StopApplication();
             });
             return Task.CompletedTask;
         }
@@ -171,6 +140,50 @@ namespace Coree.NETStandard.SpectreConsole
         public Task StopAsync(CancellationToken cancellationToken)
         {
             return Task.CompletedTask;
+        }
+
+        internal static int NormalizeProcessExitCode(int commandAppExitCode, string[] args)
+        {
+            if (commandAppExitCode == (int)SpectreConsole.HelpVersionSuccess)
+            {
+                return IsHelpOrVersionRequest(args)
+                    ? (int)ExitCode.HelpVersionDisplayed
+                    : (int)GenericExitCode.Success;
+            }
+
+            if (commandAppExitCode == (int)SpectreConsole.CommandNotFound)
+            {
+                return (int)ExitCode.CommandNotFound;
+            }
+
+            if (commandAppExitCode == (int)ExitCode.SuccessAndContinue ||
+                commandAppExitCode == (int)ExitCode.SuccessAndExit)
+            {
+                return (int)GenericExitCode.Success;
+            }
+
+            return commandAppExitCode;
+        }
+
+        internal static bool IsHelpOrVersionRequest(string[] args)
+        {
+            if (args == null || args.Length == 0)
+            {
+                return true;
+            }
+
+            return args.Any(arg =>
+                string.Equals(arg, "-h", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(arg, "--help", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(arg, "-?", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(arg, "/?", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(arg, "-v", StringComparison.OrdinalIgnoreCase) ||
+                string.Equals(arg, "--version", StringComparison.OrdinalIgnoreCase));
+        }
+
+        internal static bool ShouldStopApplication(int commandAppExitCode)
+        {
+            return commandAppExitCode != (int)ExitCode.SuccessAndContinue;
         }
     }
 }
