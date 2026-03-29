@@ -1,4 +1,5 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
 
 using Microsoft.Extensions.DependencyInjection;
 
@@ -14,6 +15,7 @@ namespace Coree.NETStandard.SpectreConsole
         private readonly IServiceProvider? serviceProvider;
         private readonly IServiceCollection? services;
         private readonly bool disposeServiceProvider;
+        private readonly List<Action<IServiceCollection, IServiceProvider>> runtimeRegistrations = new List<Action<IServiceCollection, IServiceProvider>>();
 
         /// <summary>
         /// Constructs with an <see cref="IServiceProvider"/>, typically for hosted applications using <c>builder.Build()</c>.
@@ -44,42 +46,57 @@ namespace Coree.NETStandard.SpectreConsole
         /// <exception cref="InvalidOperationException">Thrown if no service provider or collection is provided.</exception>
         public ITypeResolver Build()
         {
+            IServiceProvider rootProvider;
             if (serviceProvider != null)
             {
-                return new SpectreConsoleTypeResolver(serviceProvider, disposeServiceProvider);
+                rootProvider = serviceProvider;
             }
             else if (services != null)
             {
-                return new SpectreConsoleTypeResolver(services.BuildServiceProvider(), disposeServiceProvider);
+                rootProvider = services.BuildServiceProvider();
             }
             else
             {
                 throw new InvalidOperationException("Service provider or collection required.");
             }
+
+            var runtimeServices = new ServiceCollection();
+            foreach (var registration in runtimeRegistrations)
+            {
+                registration(runtimeServices, rootProvider);
+            }
+
+            return new SpectreConsoleTypeResolver(rootProvider, runtimeServices.BuildServiceProvider(), disposeServiceProvider);
         }
 
         /// <summary>
-        /// Registers a service with its implementation in the service collection. Only for <see cref="IServiceCollection"/> usage.
+        /// Registers a service with its implementation for Spectre's runtime-created services.
         /// </summary>
         /// <param name="service">Service type.</param>
         /// <param name="implementation">Implementation type.</param>
         public void Register(Type service, Type implementation)
         {
-            services?.AddSingleton(service, implementation);
+            runtimeRegistrations.Add((runtimeServices, rootProvider) =>
+            {
+                runtimeServices.AddSingleton(service, runtimeProvider =>
+                    ActivatorUtilities.CreateInstance(
+                        new SpectreConsoleCompositeServiceProvider(rootProvider, runtimeProvider),
+                        implementation));
+            });
         }
 
         /// <summary>
-        /// Registers a service instance in the service collection. Only for <see cref="IServiceCollection"/> usage.
+        /// Registers a service instance for Spectre's runtime-created services.
         /// </summary>
         /// <param name="service">Service type.</param>
         /// <param name="implementation">Service instance.</param>
         public void RegisterInstance(Type service, object implementation)
         {
-            services?.AddSingleton(service, implementation);
+            runtimeRegistrations.Add((runtimeServices, _) => runtimeServices.AddSingleton(service, implementation));
         }
 
         /// <summary>
-        /// Registers a service with a factory function for deferred instantiation. Only for <see cref="IServiceCollection"/> usage.
+        /// Registers a service with a factory function for deferred instantiation.
         /// </summary>
         /// <param name="service">Service type.</param>
         /// <param name="func">Factory function.</param>
@@ -87,7 +104,7 @@ namespace Coree.NETStandard.SpectreConsole
         public void RegisterLazy(Type service, Func<object> func)
         {
             if (func == null) throw new ArgumentNullException(nameof(func), "Factory function required.");
-            services?.AddSingleton(service, provider => func());
+            runtimeRegistrations.Add((runtimeServices, _) => runtimeServices.AddSingleton(service, _ => func()));
         }
     }
 }
